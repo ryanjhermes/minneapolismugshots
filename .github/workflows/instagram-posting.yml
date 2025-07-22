@@ -2,13 +2,13 @@ name: Instagram Posting
 
 on:
   schedule:
-    # Post inmates every 5 minutes from 6:05 PM to 11:00 PM UTC
-    - cron: '5,10,15,20,25,30,35,40,45,50,55 18 * * *'  # 6:05-6:55 PM
-    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 19 * * *'  # 7:00-7:55 PM  
-    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 20 * * *'  # 8:00-8:55 PM
-    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 21 * * *'  # 9:00-9:55 PM
-    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 22 * * *'  # 10:00-10:55 PM
-    - cron: '0 23 * * *'  # 11:00 PM (final check)
+    # Post inmates every 5 minutes from 6:05 PM to 11:00 PM Central Time
+    - cron: '5,10,15,20,25,30,35,40,45,50,55 23 * * *'  # 6:05-6:55 PM Central
+    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 0 * * *'  # 7:00-7:55 PM Central  
+    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 1 * * *'  # 8:00-8:55 PM Central
+    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 2 * * *'  # 9:00-9:55 PM Central
+    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 3 * * *'  # 10:00-10:55 PM Central
+    - cron: '0 4 * * *'  # 11:00 PM Central (final check)
   workflow_dispatch: # Allow manual trigger
 
 jobs:
