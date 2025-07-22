@@ -11,6 +11,10 @@ from selenium.webdriver.support.ui import Select
 import csv
 import base64
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file (if it exists)
+load_dotenv()
 
 def convert_base64_to_image(data_url, filename_prefix="mugshot"):
     """Convert base64 data URL to an actual image file in mugshots folder"""
@@ -51,11 +55,11 @@ def convert_base64_to_image(data_url, filename_prefix="mugshot"):
         return None
 
 def get_api_credentials():
-    """Get API credentials (from original funcs.py)"""
+    """Get API credentials from environment variables"""
     return {
-        'access_token': "EAAWOZCVJwFSMBPM1UVqV0lUMwkKNsdkkXsZBxpUym1j72VXykRgMCxpQz1cha1wRVqoTDgTSbdjcshvQvxJZCkWEKbLTmoDQZBYLYFD486qyEdZB4yE7A4S37m42RWpc27NtZARIAkxE4NgVKuaZBo9DD1QxoR5MIHzpdqZB7lqb4QGV3nKEJpdwrUHLeZAZCnbEZB1",
-        'app_id': "1564593544500515",
-        'business_id': "17841475748763927"
+        'access_token': os.getenv('ACCESS_TOKEN', ''),
+        'app_id': os.getenv('APP_ID', ''),
+        'business_id': os.getenv('BUSINESS_ID', '')
     }
 
 def get_current_date():
@@ -1171,10 +1175,20 @@ def open_hennepin_jail_roster():
     
     # Configure Chrome options
     options = webdriver.ChromeOptions()
-    # options.add_argument('--headless')  # Uncomment for headless mode
+    
+    # Check if running in CI environment (GitHub Actions)
+    is_ci = os.getenv('CI') or os.getenv('GITHUB_ACTIONS')
+    
+    if is_ci:
+        print("🤖 Running in CI environment - using headless mode")
+        options.add_argument('--headless=new')  # Use new headless mode
+    
+    # Essential options for stability
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument('--disable-blink-features=AutomationControlled')
+    options.add_argument('--disable-web-security')
+    options.add_argument('--disable-features=VizDisplayCompositor')
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
     

@@ -1,0 +1,116 @@
+name: Daily Jail Roster Scrape
+
+on:
+  schedule:
+    # Run daily at 6:00 AM UTC (adjust timezone as needed)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual trigger
+  push:
+    branches: [ main ] # Also run on push for testing
+
+jobs:
+  scrape-and-deploy:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write # Allow pushing to repository
+      pages: write   # Allow GitHub Pages deployment
+      id-token: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install Chrome
+      uses: browser-actions/setup-chrome@v1
+      with:
+        chrome-version: stable
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Create .env file with secrets
+      run: |
+        echo "ACCESS_TOKEN=${{ secrets.META_ACCESS_TOKEN }}" >> .env
+        echo "APP_ID=${{ secrets.META_APP_ID }}" >> .env
+        echo "BUSINESS_ID=${{ secrets.META_BUSINESS_ID }}" >> .env
+    
+    - name: Run jail roster scraper
+      run: |
+        python data.py
+    
+    - name: Create GitHub Pages structure
+      run: |
+        mkdir -p docs
+        cp -r mugshots docs/
+        cp jail_roster_data.csv docs/
+        echo '<!DOCTYPE html>
+        <html>
+        <head>
+            <title>Minneapolis Mugshots Data</title>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <h1>Minneapolis Jail Roster Data</h1>
+            <p>Last updated: '"$(date)"'</p>
+            <ul>
+                <li><a href="jail_roster_data.csv">Download CSV Data</a></li>
+                <li><a href="mugshots/">View Mugshots Folder</a></li>
+            </ul>
+        </body>
+        </html>' > docs/index.html
+    
+    - name: Generate mugshots index
+      run: |
+        cd docs/mugshots
+        echo '<!DOCTYPE html>
+        <html>
+        <head>
+            <title>Mugshots Directory</title>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <h1>Mugshots Directory</h1>
+            <p>Last updated: '"$(date)"'</p>
+            <ul>' > index.html
+        for img in *.jpg; do
+          if [ -f "$img" ]; then
+            echo "                <li><a href=\"$img\">$img</a></li>" >> index.html
+          fi
+        done
+        echo '            </ul>
+        </body>
+        </html>' >> index.html
+    
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Daily jail roster update - $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+        fi
+    
+    - name: Setup GitHub Pages
+      uses: actions/configure-pages@v3
+    
+    - name: Upload to GitHub Pages
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: docs
+    
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2 
