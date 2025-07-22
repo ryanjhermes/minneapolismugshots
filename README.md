@@ -1,154 +1,70 @@
-# Minneapolis Mugshots Scraper
+# Minneapolis Mugshots 🚨
 
-Automated daily scraping of Hennepin County Jail Roster with GitHub Actions deployment.
+**Automated tracking and transparency of Minneapolis jail arrests with public data access.**
 
-## 🚀 Features
+## About This Project
 
-- **Daily automation** via GitHub Actions
-- **Mugshot extraction** and organization
-- **Public hosting** via GitHub Pages
-- **CSV data export** with image references
-- **Zero cost** operation
+This system automatically monitors the Hennepin County Jail Roster daily and provides public access to arrest records and booking photos for transparency and community awareness.
 
-## 📁 File Structure
+## What We Track
 
-```
-├── .github/workflows/daily-scrape.yml  # GitHub Actions workflow
-├── data.py                             # Main scraper script
-├── mugshots/                           # Mugshot images folder
-├── jail_roster_data.csv               # Extracted data
-├── requirements.txt                    # Python dependencies
-└── docs/                              # GitHub Pages content (auto-generated)
-```
+- **Daily Arrests** - All new bookings in Hennepin County  
+- **Booking Photos** - Official mugshots when available
+- **Charges** - Criminal charges filed  
+- **Bail Information** - Bond amounts and conditions
+- **Arrest Details** - Dates, locations, and case info
 
-## 🛠️ Local Setup
+## Public Data Access
 
-1. **Clone this repository**
-   ```bash
-   git clone <your-repo-url>
-   cd minneapolismugshots
-   ```
+All collected data is made freely available to the public:
 
-2. **Create virtual environment**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+📊 **Live Data:** [minneapolismugshots.com](https://ryanjhermes.github.io/minneapolismugshots/)  
+📄 **CSV Download:** [jail_roster_data.csv](https://ryanjhermes.github.io/minneapolismugshots/jail_roster_data.csv)  
+📸 **Mugshot Gallery:** [View All Photos](https://ryanjhermes.github.io/minneapolismugshots/mugshots/)  
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Social Media Updates
 
-4. **Configure environment variables**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your actual Meta API credentials
-   ```
+Follow [@MinneapolisMugshots](https://instagram.com/minneapolismugshots) on Instagram for:
+- **Real-time arrest alerts** posted every 5 minutes
+- **High-quality mugshots** and case details  
+- **Community awareness** of local criminal activity
+- **Transparency** in law enforcement bookings
 
-5. **Test locally**
-   ```bash
-   python data.py
-   ```
+## Data Collection Schedule
 
-## ⚙️ GitHub Repository Setup
+| Time | Activity |
+|------|----------|
+| **6:00 PM Daily** | Scan Hennepin County Jail for new arrests |
+| **6:05-11:00 PM** | Share arrest alerts on social media |
+| **Continuous** | Update public database with new records |
 
-### 1. Push to GitHub
-```bash
-git add .
-git commit -m "Initial commit"
-git push origin main
-```
+## Why This Matters
 
-### 2. Configure GitHub Secrets
-Go to your GitHub repository → Settings → Secrets and variables → Actions
+**Public Safety Awareness:** Community members can stay informed about local arrests and criminal activity in their neighborhoods.
 
-Add these repository secrets:
-- `META_ACCESS_TOKEN`: Your Meta API access token
-- `META_APP_ID`: Your Meta app ID  
-- `META_BUSINESS_ID`: Your Meta business ID
+**Government Transparency:** All arrest records are public information. We make this data more accessible and searchable.
 
-### 3. Enable GitHub Pages
-1. Go to Settings → Pages
-2. Source: "GitHub Actions"
-3. Save
+**Accountability:** Public oversight of law enforcement booking procedures and jail population trends.
 
-### 4. Enable Actions
-1. Go to Actions tab
-2. Enable workflows if prompted
-3. The workflow will run automatically daily at 6 AM UTC
+**Research & Journalism:** Provides data for reporters, researchers, and advocates studying criminal justice trends.
 
-## 🔄 Manual Trigger
+## Data Sources
 
-You can manually trigger the workflow:
-1. Go to Actions tab
-2. Select "Daily Jail Roster Scrape"
-3. Click "Run workflow"
+- **Primary:** Hennepin County Sheriff's Office Jail Roster
+- **Updated:** Daily at 6:00 PM Central Time  
+- **Coverage:** Minneapolis and surrounding Hennepin County areas
+- **Records:** Only includes individuals officially booked and processed
 
-## 📊 Data Access
+## Privacy & Legal
 
-Once deployed, your data will be available at:
+All information displayed is:
+- ✅ **Public record** per Minnesota Statute
+- ✅ **Officially released** by Hennepin County  
+- ✅ **Automatically updated** when records change
+- ✅ **Factual booking information** only
 
-- **CSV Data**: `https://yourusername.github.io/repo-name/jail_roster_data.csv`
-- **Mugshots**: `https://yourusername.github.io/repo-name/mugshots/mugshot_NAME.jpg`
-- **Web Interface**: `https://yourusername.github.io/repo-name/`
-
-## 📱 Instagram API Integration
-
-Use the public URLs in your Instagram API calls:
-
-```python
-# Example: Using the public mugshot URLs
-image_url = "https://yourusername.github.io/repo-name/mugshots/mugshot_JOHN_DOE.jpg"
-```
-
-## ⏰ Schedule
-
-- **Runs daily** at 6:00 AM UTC
-- **Configurable** in `.github/workflows/daily-scrape.yml`
-- **Manual trigger** available anytime
-
-## 🔧 Customization
-
-### Change Schedule
-Edit `.github/workflows/daily-scrape.yml`:
-```yaml
-schedule:
-  - cron: '0 6 * * *'  # 6 AM UTC daily
-```
-
-### Modify Data Fields
-Edit `data.py` to change extracted fields in the `extract_key_details()` function.
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **Workflow fails**: Check Actions tab for error logs
-2. **Images not loading**: Verify GitHub Pages is enabled
-3. **No data extracted**: Check if jail roster website changed
-
-### Debug Locally
-```bash
-# Run with debug output
-python data.py
-
-# Check environment variables
-python -c "from dotenv import load_dotenv; load_dotenv(); import os; print(os.getenv('ACCESS_TOKEN')[:10] + '...')"
-```
-
-## 📄 License
-
-MIT License - See LICENSE file for details
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make changes
-4. Test locally
-5. Submit a pull request
+*Note: Booking does not imply guilt. All individuals are presumed innocent until proven guilty in court.*
 
 ---
 
-**⚡ Fully automated, zero-cost solution for daily jail roster data collection and public hosting!** 
+**Data updated daily • Follow for real-time alerts • Public records transparency**

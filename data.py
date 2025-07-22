@@ -11,6 +11,8 @@ from selenium.webdriver.support.ui import Select
 import csv
 import base64
 import os
+import requests
+import json
 from dotenv import load_dotenv
 
 # Load environment variables from .env file (if it exists)
@@ -61,6 +63,353 @@ def get_api_credentials():
         'app_id': os.getenv('APP_ID', ''),
         'business_id': os.getenv('BUSINESS_ID', '')
     }
+
+def generate_caption(data):
+    """Generate Instagram caption from extracted data"""
+    try:
+        name = data.get('Full Name', 'Unknown')
+        charge = data.get('Charge 1', 'No charge listed')
+        bail = data.get('Bail', 'No bail information')
+        
+        # Clean up the data
+        name = name.strip()
+        charge = charge.strip()
+        bail = bail.strip()
+        
+        # Create caption
+        caption = f"""
+NAME: {name}
+CHARGE: {charge}
+BAIL: {bail}
+
+Arrest Date: {datetime.now().strftime('%m/%d/%Y')}
+Hennepin County, MN
+
+#MinneapolisMugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
+        
+        return caption
+        
+    except Exception as e:
+        print(f"❌ Error generating caption: {e}")
+        return f"🚨 Minneapolis Arrest Alert - {data.get('Full Name', 'Unknown')}"
+
+def post_to_instagram(image_url, caption, credentials, test_mode=False):
+    """Post image to Instagram using Meta API"""
+    try:
+        access_token = credentials['access_token']
+        business_id = credentials['business_id']
+        
+        if not access_token or not business_id:
+            print("❌ Missing Meta API credentials")
+            return False
+        
+        # Test mode - just simulate posting
+        if test_mode:
+            print(f"🧪 TEST MODE - Would post to Instagram:")
+            print(f"   📸 Image: {image_url}")
+            print(f"   📝 Caption: {caption[:100]}...")
+            print(f"   🎯 Business ID: {business_id}")
+            print(f"✅ TEST MODE - Post simulation successful")
+            return True
+        
+        # Step 1: Create media object
+        print(f"📸 Creating Instagram media for: {image_url}")
+        
+        media_url = f"https://graph.facebook.com/v23.0/{business_id}/media"
+        media_params = {
+            'image_url': image_url,
+            'caption': caption,
+            'access_token': access_token
+        }
+        
+        media_response = requests.post(media_url, data=media_params)
+        
+        if media_response.status_code != 200:
+            print(f"❌ Failed to create media: {media_response.status_code}")
+            print(f"Response: {media_response.text}")
+            return False
+        
+        media_data = media_response.json()
+        media_id = media_data.get('id')
+        
+        if not media_id:
+            print(f"❌ No media ID returned: {media_data}")
+            return False
+        
+        print(f"✅ Media created with ID: {media_id}")
+        
+        # Step 2: Publish the media
+        print(f"📤 Publishing media to Instagram...")
+        
+        publish_url = f"https://graph.facebook.com/v23.0/{business_id}/media_publish"
+        publish_params = {
+            'creation_id': media_id,
+            'access_token': access_token
+        }
+        
+        publish_response = requests.post(publish_url, data=publish_params)
+        
+        if publish_response.status_code != 200:
+            print(f"❌ Failed to publish media: {publish_response.status_code}")
+            print(f"Response: {publish_response.text}")
+            return False
+        
+        publish_data = publish_response.json()
+        post_id = publish_data.get('id')
+        
+        if post_id:
+            print(f"🎉 Successfully posted to Instagram! Post ID: {post_id}")
+            return True
+        else:
+            print(f"❌ No post ID returned: {publish_data}")
+            return False
+            
+    except Exception as e:
+        print(f"❌ Error posting to Instagram: {e}")
+        return False
+
+def save_to_posting_queue(data_list):
+    """Save inmates to posting queue for staggered posting"""
+    try:
+        print(f"💾 Creating posting queue with {len(data_list)} inmates...")
+        
+        # Add timestamp and posting status to each inmate
+        queue_data = {
+            'created_at': datetime.now().isoformat(),
+            'total_inmates': len(data_list),
+            'posted_count': 0,
+            'inmates': []
+        }
+        
+        for i, data in enumerate(data_list):
+            inmate = {
+                'id': i + 1,
+                'data': data,
+                'posted': False,
+                'posted_at': None
+            }
+            queue_data['inmates'].append(inmate)
+        
+        # Save to JSON file
+        with open('posting_queue.json', 'w', encoding='utf-8') as f:
+            json.dump(queue_data, f, indent=2, ensure_ascii=False)
+        
+        print(f"✅ Posting queue saved successfully")
+        print(f"📊 Queue stats: {len(data_list)} inmates ready for posting")
+        return True
+        
+    except Exception as e:
+        print(f"❌ Error saving posting queue: {e}")
+        return False
+
+def get_next_inmates_to_post(batch_size=2):
+    """Get next batch of inmates to post from queue"""
+    try:
+        # Load queue
+        try:
+            with open('posting_queue.json', 'r', encoding='utf-8') as f:
+                queue_data = json.load(f)
+        except FileNotFoundError:
+            print("📭 No posting queue found")
+            return []
+        
+        # Find unposted inmates
+        unposted_inmates = [inmate for inmate in queue_data['inmates'] if not inmate['posted']]
+        
+        if not unposted_inmates:
+            print("✅ All inmates have been posted!")
+            return []
+        
+        # Get next batch
+        next_batch = unposted_inmates[:batch_size]
+        
+        print(f"📋 Found {len(next_batch)} inmates ready to post")
+        print(f"📊 Remaining in queue: {len(unposted_inmates)} total")
+        
+        return next_batch
+        
+    except Exception as e:
+        print(f"❌ Error reading posting queue: {e}")
+        return []
+
+def mark_inmates_as_posted(inmate_ids):
+    """Mark inmates as posted in the queue"""
+    try:
+        # Load queue
+        with open('posting_queue.json', 'r', encoding='utf-8') as f:
+            queue_data = json.load(f)
+        
+        # Mark as posted
+        posted_count = 0
+        for inmate in queue_data['inmates']:
+            if inmate['id'] in inmate_ids:
+                inmate['posted'] = True
+                inmate['posted_at'] = datetime.now().isoformat()
+                posted_count += 1
+        
+        # Update stats
+        queue_data['posted_count'] = sum(1 for inmate in queue_data['inmates'] if inmate['posted'])
+        
+        # Save updated queue
+        with open('posting_queue.json', 'w', encoding='utf-8') as f:
+            json.dump(queue_data, f, indent=2, ensure_ascii=False)
+        
+        print(f"✅ Marked {posted_count} inmates as posted")
+        print(f"📊 Total posted: {queue_data['posted_count']}/{queue_data['total_inmates']}")
+        
+        return True
+        
+    except Exception as e:
+        print(f"❌ Error updating posting queue: {e}")
+        return False
+
+def post_next_inmates(batch_size=2, repo_name="minneapolismugshots", username="ryanjhermes", test_mode=False):
+    """Post next batch of inmates from queue"""
+    try:
+        print(f"\n📱 Starting batch Instagram posting...")
+        
+        # Get next inmates to post
+        inmates_to_post = get_next_inmates_to_post(batch_size)
+        
+        if not inmates_to_post:
+            print("📭 No inmates to post at this time")
+            return True
+        
+        # Get API credentials
+        credentials = get_api_credentials()
+        
+        if not credentials['access_token']:
+            print("⚠️  No Meta API credentials found - skipping Instagram posting")
+            return False
+        
+        successful_posts = []
+        failed_posts = []
+        
+        for inmate in inmates_to_post:
+            try:
+                inmate_data = inmate['data']
+                inmate_id = inmate['id']
+                
+                print(f"\n{'='*40}")
+                print(f"📱 Posting inmate #{inmate_id}: {inmate_data.get('Full Name', 'Unknown')}")
+                print(f"{'='*40}")
+                
+                # Convert local file path to GitHub Pages URL
+                mugshot_file = inmate_data.get('Mugshot_File', '')
+                if mugshot_file.startswith('mugshots/'):
+                    filename = mugshot_file.replace('mugshots/', '')
+                else:
+                    filename = os.path.basename(mugshot_file)
+                
+                image_url = f"https://{username}.github.io/{repo_name}/mugshots/{filename}"
+                print(f"🖼️  Image URL: {image_url}")
+                
+                # Generate caption
+                caption = generate_caption(inmate_data)
+                print(f"📝 Caption preview: {caption[:100]}...")
+                
+                # Post to Instagram
+                success = post_to_instagram(image_url, caption, credentials, test_mode)
+                
+                if success:
+                    successful_posts.append(inmate_id)
+                    print(f"✅ Successfully posted {inmate_data.get('Full Name', 'Unknown')}")
+                else:
+                    failed_posts.append(inmate_id)
+                    print(f"❌ Failed to post {inmate_data.get('Full Name', 'Unknown')}")
+                
+                # Wait between posts in the same batch
+                if len(inmates_to_post) > 1 and inmate != inmates_to_post[-1]:
+                    print("⏳ Waiting 10 seconds before next post...")
+                    time.sleep(10)
+                
+            except Exception as e:
+                print(f"❌ Error processing inmate #{inmate_id}: {e}")
+                failed_posts.append(inmate_id)
+                continue
+        
+        # Mark successful posts as completed
+        if successful_posts:
+            mark_inmates_as_posted(successful_posts)
+        
+        # Summary
+        print(f"\n📊 BATCH POSTING SUMMARY:")
+        print(f"   ✅ Successful posts: {len(successful_posts)}")
+        print(f"   ❌ Failed posts: {len(failed_posts)}")
+        print(f"   📱 Total in batch: {len(inmates_to_post)}")
+        
+        return len(successful_posts) > 0
+        
+    except Exception as e:
+        print(f"❌ Error in batch posting process: {e}")
+        return False
+
+def post_all_to_instagram(data_list, repo_name="minneapolismugshots", username="ryanjhermes", test_mode=False):
+    """Post all scraped data to Instagram"""
+    try:
+        print(f"\n📱 Starting Instagram posting process...")
+        
+        # Get API credentials
+        credentials = get_api_credentials()
+        
+        if not credentials['access_token']:
+            print("⚠️  No Meta API credentials found - skipping Instagram posting")
+            return False
+        
+        successful_posts = 0
+        failed_posts = 0
+        
+        for i, data in enumerate(data_list, 1):
+            try:
+                print(f"\n{'='*50}")
+                print(f"📱 Posting {i}/{len(data_list)}: {data.get('Full Name', 'Unknown')}")
+                print(f"{'='*50}")
+                
+                # Convert local file path to GitHub Pages URL
+                mugshot_file = data.get('Mugshot_File', '')
+                if mugshot_file.startswith('mugshots/'):
+                    filename = mugshot_file.replace('mugshots/', '')
+                else:
+                    filename = os.path.basename(mugshot_file)
+                
+                image_url = f"https://{username}.github.io/{repo_name}/mugshots/{filename}"
+                print(f"🖼️  Image URL: {image_url}")
+                
+                # Generate caption
+                caption = generate_caption(data)
+                print(f"📝 Caption preview: {caption[:100]}...")
+                
+                # Post to Instagram
+                success = post_to_instagram(image_url, caption, credentials, test_mode)
+                
+                if success:
+                    successful_posts += 1
+                    print(f"✅ Successfully posted {data.get('Full Name', 'Unknown')}")
+                    
+                    # Wait between posts to avoid rate limiting
+                    if i < len(data_list):  # Don't wait after the last post
+                        print("⏳ Waiting 30 seconds before next post...")
+                        time.sleep(30)
+                else:
+                    failed_posts += 1
+                    print(f"❌ Failed to post {data.get('Full Name', 'Unknown')}")
+                
+            except Exception as e:
+                print(f"❌ Error processing {data.get('Full Name', 'Unknown')}: {e}")
+                failed_posts += 1
+                continue
+        
+        # Summary
+        print(f"\n📊 INSTAGRAM POSTING SUMMARY:")
+        print(f"   ✅ Successful posts: {successful_posts}")
+        print(f"   ❌ Failed posts: {failed_posts}")
+        print(f"   📱 Total processed: {len(data_list)}")
+        
+        return successful_posts > 0
+        
+    except Exception as e:
+        print(f"❌ Error in Instagram posting process: {e}")
+        return False
 
 def get_current_date():
     """
@@ -913,7 +1262,7 @@ def save_to_csv(data_list, filename="jail_roster_data.csv"):
         print(f"❌ Error saving to CSV: {e}")
         return False
 
-def get_all_booking_ids(driver, limit=3):
+def get_all_booking_ids(driver, limit=100):
     """
     Get all booking IDs from the search results (limited for testing)
     """
@@ -1002,8 +1351,21 @@ def process_multiple_bookings(driver, limit=3):
                 # Don't add Booking ID to match CSV headers exactly
                 
                 if extracted_data['Full Name']:  # Only add if we got some data
-                    all_extracted_data.append(extracted_data)
-                    print(f"✅ Successfully extracted data for {booking_id}")
+                    # Check if inmate has required data (mugshot AND charge)
+                    has_mugshot = extracted_data.get('Mugshot_File') and extracted_data.get('Mugshot_File') != 'No Image'
+                    has_charge = extracted_data.get('Charge 1') and extracted_data.get('Charge 1').strip()
+                    
+                    if has_mugshot and has_charge:
+                        all_extracted_data.append(extracted_data)
+                        print(f"✅ Successfully extracted data for {booking_id}")
+                        print(f"   📸 Mugshot: ✅")
+                        print(f"   ⚖️  Charge: ✅")
+                    else:
+                        print(f"⏭️  SKIPPING {booking_id} - Missing required data:")
+                        print(f"   👤 Name: {extracted_data['Full Name']}")
+                        print(f"   📸 Mugshot: {'✅' if has_mugshot else '❌'}")
+                        print(f"   ⚖️  Charge: {'✅' if has_charge else '❌'}")
+                        print(f"   🔄 Only inmates with both mugshot AND charge will be saved")
                 else:
                     print(f"⚠️  No data extracted for {booking_id}")
                 
@@ -1019,7 +1381,8 @@ def process_multiple_bookings(driver, limit=3):
         
         print(f"\n📊 PROCESSING COMPLETE:")
         print(f"   Total IDs processed: {len(booking_ids)}")
-        print(f"   Successful extractions: {len(all_extracted_data)}")
+        print(f"   Inmates with mugshot + charge: {len(all_extracted_data)}")
+        print(f"   Filtered out (no mugshot or charge): {len(booking_ids) - len(all_extracted_data)}")
         
         return all_extracted_data
         
@@ -1078,11 +1441,21 @@ def fill_form_with_current_date(driver):
         success_save = save_to_csv(extracted_data_list, filename)
         
         if success_save:
-            print(f"\n🎉 SUCCESS! Data saved to {filename}")
-            print(f"\n📊 SUMMARY:")
+            print(f"\n🎉 SUCCESS! Quality inmates (with mugshots + charges) saved to {filename}")
+            print(f"\n📊 SUMMARY - READY FOR POSTING:")
             for i, data in enumerate(extracted_data_list, 1):
                 mugshot_info = data.get('Mugshot_File', 'N/A')
                 print(f"   {i}. {data.get('Full Name', 'N/A')} - {data.get('Charge 1', 'N/A')} - {data.get('Bail', 'N/A')} - Image: {mugshot_info}")
+            
+            # Save to posting queue instead of posting immediately
+            print(f"\n📋 Saving quality inmates to posting queue...")
+            queue_success = save_to_posting_queue(extracted_data_list)
+            
+            if queue_success:
+                print(f"\n🚀 COMPLETE SUCCESS! Quality data scraped, saved, and queued for posting!")
+                print(f"📅 Inmates will be posted every 5 minutes starting at 6:05 PM UTC")
+            else:
+                print(f"\n⚠️  Data scraped and saved, but failed to create posting queue")
         else:
             print(f"\n⚠️  Data extracted but failed to save to CSV")
     else:
@@ -1262,6 +1635,102 @@ def open_hennepin_jail_roster():
         driver.quit()
         print("Browser closed.")
 
+def test_instagram_posting():
+    """Test Instagram posting with existing CSV data"""
+    try:
+        print("🧪 Testing Instagram posting with existing data...")
+        
+        # Read existing CSV data
+        import csv
+        data_list = []
+        
+        try:
+            with open('jail_roster_data.csv', 'r', encoding='utf-8') as csvfile:
+                reader = csv.DictReader(csvfile)
+                for row in reader:
+                    data_list.append(row)
+            
+            print(f"📊 Found {len(data_list)} records in CSV")
+            
+            if data_list:
+                # Test posting (simulation mode)
+                post_all_to_instagram(data_list, test_mode=True)
+            else:
+                print("❌ No data found in CSV file")
+                
+        except FileNotFoundError:
+            print("❌ jail_roster_data.csv not found. Run scraping first.")
+        except Exception as e:
+            print(f"❌ Error reading CSV: {e}")
+            
+    except Exception as e:
+        print(f"❌ Error in test: {e}")
+
+def check_posting_queue():
+    """Check status of posting queue"""
+    try:
+        print("📋 Checking posting queue status...")
+        
+        try:
+            with open('posting_queue.json', 'r', encoding='utf-8') as f:
+                queue_data = json.load(f)
+            
+            total = queue_data.get('total_inmates', 0)
+            posted = queue_data.get('posted_count', 0)
+            pending = total - posted
+            
+            print(f"📊 QUEUE STATUS:")
+            print(f"   Total inmates: {total}")
+            print(f"   Posted: {posted}")
+            print(f"   Pending: {pending}")
+            print(f"   Created: {queue_data.get('created_at', 'Unknown')}")
+            
+            if pending > 0:
+                print(f"\n📋 Next {min(2, pending)} inmates to post:")
+                unposted = [inmate for inmate in queue_data['inmates'] if not inmate['posted']]
+                for i, inmate in enumerate(unposted[:2], 1):
+                    name = inmate['data'].get('Full Name', 'Unknown')
+                    print(f"   {i}. {name}")
+            else:
+                print("✅ All inmates have been posted!")
+                
+        except FileNotFoundError:
+            print("📭 No posting queue found")
+            print("💡 Run 'python data.py' to create a queue")
+            
+    except Exception as e:
+        print(f"❌ Error checking queue: {e}")
+
 if __name__ == "__main__":
-    open_hennepin_jail_roster()
+    import sys
+    
+    # Check for command line arguments
+    if len(sys.argv) > 1:
+        command = sys.argv[1]
+        if command == "test-instagram":
+            test_instagram_posting()
+        elif command == "post-next":
+            # Post next batch of inmates from queue
+            post_next_inmates()
+        elif command == "post-next-test":
+            # Post next batch in test mode (no actual posting)
+            post_next_inmates(test_mode=True)
+        elif command == "test":
+            # Full scraping in test mode (limit to 3 inmates)
+            print("🧪 Running in TEST MODE - limited to 3 inmates")
+            open_hennepin_jail_roster()
+        elif command == "check-queue":
+            # Check posting queue status
+            check_posting_queue()
+        else:
+            print(f"Unknown command: {command}")
+            print("Available commands:")
+            print("  python data.py                # Full scraping")
+            print("  python data.py test           # Test scraping (3 inmates only)")
+            print("  python data.py test-instagram # Test posting with existing data")
+            print("  python data.py post-next      # Post next batch from queue")
+            print("  python data.py post-next-test # Test posting (simulation only)")
+            print("  python data.py check-queue    # Check posting queue status")
+    else:
+        open_hennepin_jail_roster()
 

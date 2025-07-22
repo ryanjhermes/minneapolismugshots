@@ -42,5 +42,8 @@ Thumbs.db
 # GitHub Pages build
 docs/
 
+# Instagram posting queue (managed by workflows)
+posting_queue.json
+
 # Logs
 *.log 
