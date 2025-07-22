@@ -25,9 +25,9 @@ All collected data is made freely available to the public:
 ## Social Media Updates
 
 Follow [@MinneapolisMugshots](https://instagram.com/minneapolismugshots) on Instagram for:
-- **Real-time arrest alerts** posted every 5 minutes
+- **High-priority arrest alerts** featuring the 10 highest bail cases daily
 - **High-quality mugshots** and case details  
-- **Community awareness** of local criminal activity
+- **Community awareness** of significant criminal activity
 - **Transparency** in law enforcement bookings
 
 ## Data Collection Schedule
@@ -35,8 +35,25 @@ Follow [@MinneapolisMugshots](https://instagram.com/minneapolismugshots) on Inst
 | Time | Activity |
 |------|----------|
 | **6:00 PM Daily** | Scan Hennepin County Jail for new arrests |
-| **6:05-11:00 PM** | Share arrest alerts on social media |
+| **6:00-8:00 PM** | Share top 10 highest bail cases on social media |
 | **Continuous** | Update public database with new records |
+
+## Intelligent Filtering System
+
+Our system prioritizes the most significant cases:
+
+🏆 **Top 10 Highest Bail** - Focus on serious charges and high-profile cases  
+🚫 **"Hold Without Bail"** - Prioritized as most serious cases  
+💰 **Bail Amounts** - Sorted from highest to lowest dollar amounts  
+📊 **Quality Control** - Only cases with both mugshots AND charges  
+
+## Anti-Detection Technology
+
+To ensure reliable service:
+- **Randomized posting times** (±1 minute variation)
+- **Human-like delays** between posts (8-15 seconds)
+- **Varied caption formats** with different emojis
+- **Reduced posting frequency** for sustainability
 
 ## Why This Matters
 

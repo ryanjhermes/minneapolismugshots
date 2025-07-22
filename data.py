@@ -14,6 +14,7 @@ import os
 import requests
 import json
 from dotenv import load_dotenv
+import re
 
 # Load environment variables from .env file (if it exists)
 load_dotenv()
@@ -65,7 +66,7 @@ def get_api_credentials():
     }
 
 def generate_caption(data):
-    """Generate Instagram caption from extracted data"""
+    """Generate Instagram caption from extracted data with slight variations"""
     try:
         name = data.get('Full Name', 'Unknown')
         charge = data.get('Charge 1', 'No charge listed')
@@ -76,17 +77,51 @@ def generate_caption(data):
         charge = charge.strip()
         bail = bail.strip()
         
-        # Create caption
-        caption = f"""
+        # Add slight variations to caption format to avoid detection
+        import random
+        
+        # Random emoji variations
+        alert_emojis = ['🚨', '⚖️', '🚔', '📢']
+        location_emojis = ['📍', '🏛️', '📌']
+        
+        alert_emoji = random.choice(alert_emojis)
+        location_emoji = random.choice(location_emojis)
+        
+        # Slight variations in format
+        formats = [
+            f"""{alert_emoji} ARREST ALERT {alert_emoji}
+
 NAME: {name}
 CHARGE: {charge}
 BAIL: {bail}
 
 Arrest Date: {datetime.now().strftime('%m/%d/%Y')}
-Hennepin County, MN
+{location_emoji} Hennepin County, MN
+
+#minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis""",
+            
+            f"""NAME: {name}
+CHARGE: {charge}
+BAIL: {bail}
+
+{alert_emoji} Arrest Date: {datetime.now().strftime('%m/%d/%Y')}
+{location_emoji} Hennepin County, Minnesota
+
+#minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis""",
+            
+            f"""{alert_emoji} Minneapolis Arrest Update
+
+Full Name: {name}
+Primary Charge: {charge}
+Bail Amount: {bail}
+
+Booked: {datetime.now().strftime('%m/%d/%Y')}
+Location: Hennepin County Jail
 
 #minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
+        ]
         
+        caption = random.choice(formats)
         return caption
         
     except Exception as e:
@@ -168,20 +203,113 @@ def post_to_instagram(image_url, caption, credentials, test_mode=False):
         print(f"❌ Error posting to Instagram: {e}")
         return False
 
+def parse_bail_amount(bail_string):
+    """
+    Parse bail string and return numeric value for sorting
+    Returns 999999999 for 'NO BAIL' cases (highest priority)
+    Returns 0 for unparseable amounts
+    """
+    try:
+        if not bail_string or bail_string.strip() == '':
+            return 0
+        
+        bail_upper = bail_string.upper().strip()
+        
+        # Handle special cases
+        if 'NO BAIL' in bail_upper or 'HOLD WITHOUT BAIL' in bail_upper:
+            return 999999999  # Highest priority
+        
+        if 'RELEASED' in bail_upper or 'NO BAIL INFORMATION' in bail_upper:
+            return 0  # Lowest priority
+        
+        # Extract dollar amount using regex
+        money_pattern = r'\$[\d,]+\.?\d*'
+        matches = re.findall(money_pattern, bail_string)
+        
+        if matches:
+            # Take the first dollar amount found
+            amount_str = matches[0].replace('$', '').replace(',', '')
+            return float(amount_str)
+        
+        return 0
+        
+    except Exception as e:
+        print(f"⚠️  Error parsing bail amount '{bail_string}': {e}")
+        return 0
+
+def filter_top_bail_inmates(data_list, top_n=10):
+    """
+    Filter inmates to only include the top N highest bail amounts
+    
+    Args:
+        data_list: List of inmate dictionaries
+        top_n: Number of top inmates to return (default 10)
+    
+    Returns:
+        List of top N inmates sorted by bail amount (highest first)
+    """
+    try:
+        print(f"\n🔍 Filtering to top {top_n} highest bail inmates...")
+        
+        if not data_list:
+            print("❌ No inmates to filter")
+            return []
+        
+        # Add parsed bail amount to each inmate for sorting
+        inmates_with_bail = []
+        for inmate in data_list:
+            bail_str = inmate.get('Bail', '')
+            bail_amount = parse_bail_amount(bail_str)
+            
+            inmates_with_bail.append({
+                **inmate,
+                '_bail_amount': bail_amount
+            })
+            
+            print(f"📊 {inmate.get('Full Name', 'Unknown')}: {bail_str} → ${bail_amount:,.2f}")
+        
+        # Sort by bail amount (highest first)
+        sorted_inmates = sorted(inmates_with_bail, key=lambda x: x['_bail_amount'], reverse=True)
+        
+        # Take top N and remove the temporary _bail_amount field
+        top_inmates = []
+        for i, inmate in enumerate(sorted_inmates[:top_n]):
+            # Remove the temporary sorting field
+            filtered_inmate = {k: v for k, v in inmate.items() if k != '_bail_amount'}
+            top_inmates.append(filtered_inmate)
+            
+            bail_amount = inmate['_bail_amount']
+            if bail_amount == 999999999:
+                bail_display = "NO BAIL"
+            else:
+                bail_display = f"${bail_amount:,.2f}"
+            
+            print(f"🏆 #{i+1}: {inmate.get('Full Name', 'Unknown')} - {bail_display}")
+        
+        print(f"\n✅ Filtered from {len(data_list)} to {len(top_inmates)} highest bail inmates")
+        return top_inmates
+        
+    except Exception as e:
+        print(f"❌ Error filtering top bail inmates: {e}")
+        return data_list  # Return original list on error
+
 def save_to_posting_queue(data_list):
     """Save inmates to posting queue for staggered posting"""
     try:
         print(f"💾 Creating posting queue with {len(data_list)} inmates...")
         
+        # Filter to top 10 highest bail inmates BEFORE creating queue
+        filtered_inmates = filter_top_bail_inmates(data_list, top_n=10)
+        
         # Add timestamp and posting status to each inmate
         queue_data = {
             'created_at': datetime.now().isoformat(),
-            'total_inmates': len(data_list),
+            'total_inmates': len(filtered_inmates),
             'posted_count': 0,
             'inmates': []
         }
         
-        for i, data in enumerate(data_list):
+        for i, data in enumerate(filtered_inmates):
             inmate = {
                 'id': i + 1,
                 'data': data,
@@ -195,7 +323,8 @@ def save_to_posting_queue(data_list):
             json.dump(queue_data, f, indent=2, ensure_ascii=False)
         
         print(f"✅ Posting queue saved successfully")
-        print(f"📊 Queue stats: {len(data_list)} inmates ready for posting")
+        print(f"📊 Queue stats: {len(filtered_inmates)} TOP BAIL inmates ready for posting")
+        print(f"🎯 Filtered from {len(data_list)} total inmates to top 10 highest bail")
         return True
         
     except Exception as e:
@@ -318,10 +447,13 @@ def post_next_inmates(batch_size=2, repo_name="minneapolismugshots", username="r
                     failed_posts.append(inmate_id)
                     print(f"❌ Failed to post {inmate_data.get('Full Name', 'Unknown')}")
                 
-                # Wait between posts in the same batch
+                # Randomized wait between posts in the same batch (human-like behavior)
                 if len(inmates_to_post) > 1 and inmate != inmates_to_post[-1]:
-                    print("⏳ Waiting 10 seconds before next post...")
-                    time.sleep(10)
+                    import random
+                    # Random delay between 8-15 seconds instead of fixed 10 seconds
+                    random_delay = random.randint(8, 15)
+                    print(f"⏳ Waiting {random_delay} seconds before next post (randomized for detection avoidance)...")
+                    time.sleep(random_delay)
                 
             except Exception as e:
                 print(f"❌ Error processing inmate #{inmate_id}: {e}")
@@ -1392,7 +1524,7 @@ def process_multiple_bookings(driver, limit=3):
 
 def fill_form_with_current_date(driver):
     """
-    Fill the form, process multiple booking IDs (3 for testing), and save to CSV
+    Fill the form, process multiple booking IDs, and save to CSV with top 10 highest bail filter
     """
     print("\n🗓️  Using current date for form input...")
     current_date = get_current_date()
@@ -1429,9 +1561,9 @@ def fill_form_with_current_date(driver):
     print("\n⏳ Waiting for search results to load...")
     time.sleep(3)
     
-    # Process multiple booking IDs (3 for testing)
+    # Process more booking IDs to get better selection for filtering
     print(f"\n🚀 Starting batch processing of booking IDs...")
-    extracted_data_list = process_multiple_bookings(driver, limit=3)
+    extracted_data_list = process_multiple_bookings(driver, limit=25)
     
     # Save to CSV if we got data
     if extracted_data_list:
@@ -1447,13 +1579,14 @@ def fill_form_with_current_date(driver):
                 mugshot_info = data.get('Mugshot_File', 'N/A')
                 print(f"   {i}. {data.get('Full Name', 'N/A')} - {data.get('Charge 1', 'N/A')} - {data.get('Bail', 'N/A')} - Image: {mugshot_info}")
             
-            # Save to posting queue instead of posting immediately
+            # Save to posting queue (this will now filter to top 10 highest bail)
             print(f"\n📋 Saving quality inmates to posting queue...")
             queue_success = save_to_posting_queue(extracted_data_list)
             
             if queue_success:
-                print(f"\n🚀 COMPLETE SUCCESS! Quality data scraped, saved, and queued for posting!")
-                print(f"📅 Inmates will be posted every 5 minutes starting at 6:05 PM UTC")
+                print(f"\n🚀 COMPLETE SUCCESS! Data scraped, filtered to TOP 10 HIGHEST BAIL, and queued for posting!")
+                print(f"📅 Top 10 inmates will be posted every 15 minutes starting at 6:00 PM Central")
+                print(f"🎲 Random delays added to avoid Instagram automation detection")
             else:
                 print(f"\n⚠️  Data scraped and saved, but failed to create posting queue")
         else:
@@ -1716,8 +1849,8 @@ if __name__ == "__main__":
             # Post next batch in test mode (no actual posting)
             post_next_inmates(test_mode=True)
         elif command == "test":
-            # Full scraping in test mode (limit to 3 inmates)
-            print("🧪 Running in TEST MODE - limited to 3 inmates")
+            # Full scraping in test mode (limit to 25 inmates, filter to top 10 bail)
+            print("🧪 Running in TEST MODE - processing 25 inmates, filtering to top 10 highest bail")
             open_hennepin_jail_roster()
         elif command == "check-queue":
             # Check posting queue status
@@ -1725,8 +1858,8 @@ if __name__ == "__main__":
         else:
             print(f"Unknown command: {command}")
             print("Available commands:")
-            print("  python data.py                # Full scraping")
-            print("  python data.py test           # Test scraping (3 inmates only)")
+            print("  python data.py                # Full scraping with top 10 bail filtering")
+            print("  python data.py test           # Test scraping (25 inmates → top 10 bail)")
             print("  python data.py test-instagram # Test posting with existing data")
             print("  python data.py post-next      # Post next batch from queue")
             print("  python data.py post-next-test # Test posting (simulation only)")

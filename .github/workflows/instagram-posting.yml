@@ -2,13 +2,17 @@ name: Instagram Posting
 
 on:
   schedule:
-    # Post inmates every 5 minutes from 6:05 PM to 11:00 PM Central Time
-    - cron: '5,10,15,20,25,30,35,40,45,50,55 23 * * *'  # 6:05-6:55 PM Central
-    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 0 * * *'  # 7:00-7:55 PM Central  
-    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 1 * * *'  # 8:00-8:55 PM Central
-    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 2 * * *'  # 9:00-9:55 PM Central
-    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 3 * * *'  # 10:00-10:55 PM Central
-    - cron: '0 4 * * *'  # 11:00 PM Central (final check)
+    # Post inmates every 15 minutes from 6:00 PM to 8:00 PM Central Time
+    # With 10 total inmates (2 per batch), we only need ~5 posting cycles
+    - cron: '0 23 * * *'   # 6:00 PM Central
+    - cron: '15 23 * * *'  # 6:15 PM Central  
+    - cron: '30 23 * * *'  # 6:30 PM Central
+    - cron: '45 23 * * *'  # 6:45 PM Central
+    - cron: '0 0 * * *'    # 7:00 PM Central
+    - cron: '15 0 * * *'   # 7:15 PM Central
+    - cron: '30 0 * * *'   # 7:30 PM Central
+    - cron: '45 0 * * *'   # 7:45 PM Central
+    - cron: '0 1 * * *'    # 8:00 PM Central (final check)
   workflow_dispatch: # Allow manual trigger
 
 jobs:
@@ -23,23 +27,30 @@ jobs:
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-    
+
+    - name: Add randomized delay for Instagram detection avoidance
+      run: |
+        # Generate random delay between 0-120 seconds (±1 minute)
+        RANDOM_DELAY=$((RANDOM % 121))
+        echo "🎲 Adding random delay of $RANDOM_DELAY seconds to avoid detection patterns"
+        sleep $RANDOM_DELAY
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-    
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install requests python-dotenv
-    
+
     - name: Create .env file with secrets
       run: |
         echo "ACCESS_TOKEN=${{ secrets.META_ACCESS_TOKEN }}" >> .env
         echo "APP_ID=${{ secrets.META_APP_ID }}" >> .env
         echo "BUSINESS_ID=${{ secrets.META_BUSINESS_ID }}" >> .env
-    
+
     - name: Check for posting queue
       id: check_queue
       run: |
@@ -50,14 +61,22 @@ jobs:
           echo "queue_exists=false" >> $GITHUB_OUTPUT
           echo "📭 No posting queue found"
         fi
-    
+
     - name: Post next inmates to Instagram
       if: steps.check_queue.outputs.queue_exists == 'true'
       run: |
         echo "📱 Posting next batch of inmates to Instagram..."
         python data.py post-next
         echo "✅ Posting batch completed"
-    
+
+    - name: Add random delay between posts for human-like behavior
+      if: steps.check_queue.outputs.queue_exists == 'true'
+      run: |
+        # Add another small random delay after posting
+        RANDOM_DELAY=$((RANDOM % 31 + 10))  # 10-40 seconds
+        echo "😴 Adding random post-posting delay of $RANDOM_DELAY seconds"
+        sleep $RANDOM_DELAY
+
     - name: Commit queue updates
       if: steps.check_queue.outputs.queue_exists == 'true'
       run: |
@@ -73,7 +92,7 @@ jobs:
           git push
           echo "✅ Queue updates committed"
         fi
-    
+
     - name: Skip if no queue
       if: steps.check_queue.outputs.queue_exists == 'false'
       run: |
