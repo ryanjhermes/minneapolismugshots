@@ -85,7 +85,7 @@ BAIL: {bail}
 Arrest Date: {datetime.now().strftime('%m/%d/%Y')}
 Hennepin County, MN
 
-#MinneapolisMugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
+#minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
         
         return caption
         
