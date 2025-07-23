@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-23T13:17:24.978693",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "No Bail Information",
         "Mugshot_File": "mugshots/mugshot_BAKER_KEITH_ALAN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-23T23:21:56.389867"
     },
     {
       "id": 2,
@@ -22,8 +22,8 @@
         "Bail": "No Bail Information",
         "Mugshot_File": "mugshots/mugshot_BEISSEL_MAXIMILLIAN_CHARLES.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-23T23:21:56.389882"
     },
     {
       "id": 3,
