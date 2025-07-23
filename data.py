@@ -545,11 +545,29 @@ def post_all_to_instagram(data_list, repo_name="minneapolismugshots", username="
 
 def get_current_date():
     """
-    Get the current date in MM/DD/YYYY format (as expected by this website)
+    Get the current date in Central Time in MM/DD/YYYY format (as expected by this website)
+    Always uses Central Time regardless of server timezone
     """
-    current_date = datetime.now().strftime("%m/%d/%Y")
-    print(f"📅 Current date: {current_date}")
-    return current_date
+    from datetime import datetime
+    import pytz
+    
+    try:
+        # Get current time in Central Time zone
+        central_tz = pytz.timezone('US/Central')
+        central_time = datetime.now(central_tz)
+        current_date = central_time.strftime("%m/%d/%Y")
+        print(f"📅 Current date (Central Time): {current_date}")
+        return current_date
+    except ImportError:
+        # Fallback if pytz not available - subtract 6 hours (Central is UTC-6 in summer, UTC-5 in winter)
+        # This is a rough approximation for cases where pytz isn't installed
+        from datetime import datetime, timedelta
+        utc_time = datetime.utcnow()
+        # Approximate Central Time (CST/CDT is UTC-6 in summer)
+        central_time = utc_time - timedelta(hours=6)
+        current_date = central_time.strftime("%m/%d/%Y")
+        print(f"📅 Current date (Central Time approx): {current_date}")
+        return current_date
 
 def get_date_range(days_back=7):
     """
