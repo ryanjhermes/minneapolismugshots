@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-23T00:23:25.923862",
   "total_inmates": 10,
-  "posted_count": 6,
+  "posted_count": 8,
   "inmates": [
     {
       "id": 1,
@@ -77,8 +77,8 @@
         "Bail": "No Bail Information",
         "Mugshot_File": "mugshots/mugshot_CHAKOURI_ABDELLAH.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-23T01:15:14.590006"
     },
     {
       "id": 8,
@@ -88,8 +88,8 @@
         "Bail": "$0.00 NO BAIL REQUIRED",
         "Mugshot_File": "mugshots/mugshot_DARROW_KEVIN_PATRICK.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-23T01:15:14.590020"
     },
     {
       "id": 9,
