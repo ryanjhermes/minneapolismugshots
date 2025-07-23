@@ -1,117 +1,117 @@
 {
-  "created_at": "2025-07-23T00:23:25.923862",
+  "created_at": "2025-07-23T13:17:24.978693",
   "total_inmates": 10,
-  "posted_count": 10,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "AIDEED, ABDIMUJIID ADEN",
-        "Charge 1": "Severity of Charge:",
+        "Full Name": "BAKER, KEITH ALAN",
+        "Charge 1": "DRIVING AFTER CANCELLATION IPS",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_AIDEED_ABDIMUJIID_ADEN.jpg"
+        "Mugshot_File": "mugshots/mugshot_BAKER_KEITH_ALAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-23T00:25:33.272461"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "ALFONSO-CERVANTES, RAMOS ISRAEL",
-        "Charge 1": "Severity of Charge:",
+        "Full Name": "BEISSEL, MAXIMILLIAN CHARLES",
+        "Charge 1": "THREATS OF VIOLENCE",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_ALFONSO-CERVANTES_RAMOS_ISRAEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_BEISSEL_MAXIMILLIAN_CHARLES.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-23T00:25:33.272471"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "AUSTINSON, ANDREW DAVID",
-        "Charge 1": "Severity of Charge:",
+        "Full Name": "BROWN, ERIC MANDELL",
+        "Charge 1": "HENNEPIN WARRANT",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_AUSTINSON_ANDREW_DAVID.jpg"
+        "Mugshot_File": "mugshots/mugshot_BROWN_ERIC_MANDELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-23T00:51:25.375152"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "AYSHFORD-LAU, GAVIN JAMES",
-        "Charge 1": "Severity of Charge:",
+        "Full Name": "BURKS, BRELAND CORTEZ",
+        "Charge 1": "ASSAULT-2ND DEGREE",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_AYSHFORD-LAU_GAVIN_JAMES.jpg"
+        "Mugshot_File": "mugshots/mugshot_BURKS_BRELAND_CORTEZ.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-23T00:51:25.375159"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "CASTILLO SEQUERA, JOSEELIN JOSIMAR",
-        "Charge 1": "Severity of Charge:",
+        "Full Name": "BYARS, AULTIN PAUL",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_CASTILLO_SEQUERA_JOSEELIN_JOSIMAR.jpg"
+        "Mugshot_File": "mugshots/mugshot_BYARS_AULTIN_PAUL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-23T00:57:21.372443"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 6,
       "data": {
-        "Full Name": "CHAIRSE, OSHEA LEDALE",
-        "Charge 1": "Severity of Charge:",
-        "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_CHAIRSE_OSHEA_LEDALE.jpg"
+        "Full Name": "CARAWAY, DONTAY LEE",
+        "Charge 1": "Charge information not available",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_CARAWAY_DONTAY_LEE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-23T00:57:21.372455"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 7,
       "data": {
-        "Full Name": "CHAKOURI, ABDELLAH",
-        "Charge 1": "Severity of Charge:",
+        "Full Name": "DAVIS, ROMERO",
+        "Charge 1": "DRUGS - 5TH DEG",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_CHAKOURI_ABDELLAH.jpg"
+        "Mugshot_File": "mugshots/mugshot_DAVIS_ROMERO.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-23T01:15:14.590006"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 8,
       "data": {
-        "Full Name": "DARROW, KEVIN PATRICK",
-        "Charge 1": "Severity of Charge:",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_DARROW_KEVIN_PATRICK.jpg"
+        "Full Name": "DOMINGUEZ, ANTONIO MIGUEL",
+        "Charge 1": "HENNEPIN WARRANT",
+        "Bail": "No Bail Information",
+        "Mugshot_File": "mugshots/mugshot_DOMINGUEZ_ANTONIO_MIGUEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-23T01:15:14.590020"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 9,
       "data": {
-        "Full Name": "EHRMANTRAUT, CHRISTOPHER JOHN",
-        "Charge 1": "Severity of Charge:",
+        "Full Name": "HALL, MARQUITA JANET",
+        "Charge 1": "Charge information not available",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_EHRMANTRAUT_CHRISTOPHER_JOHN.jpg"
+        "Mugshot_File": "mugshots/mugshot_HALL_MARQUITA_JANET.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-23T02:12:37.237891"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 10,
       "data": {
-        "Full Name": "FERGUSON, RICCO BLAIR JR",
-        "Charge 1": "Severity of Charge:",
+        "Full Name": "JOHNSON, RODNEY JAROD",
+        "Charge 1": "HENNEPIN WARRANT",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_FERGUSON_RICCO_BLAIR_JR.jpg"
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_RODNEY_JAROD.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-23T02:12:37.237899"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }

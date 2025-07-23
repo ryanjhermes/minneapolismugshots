@@ -62,7 +62,7 @@ def get_api_credentials():
     }
 
 def generate_caption(data):
-    """Generate Instagram caption from extracted data with slight variations"""
+    """Generate consistent Instagram caption from extracted data"""
     try:
         name = data.get('Full Name', 'Unknown')
         charge = data.get('Charge 1', 'No charge listed')
@@ -73,51 +73,17 @@ def generate_caption(data):
         charge = charge.strip()
         bail = bail.strip()
         
-        # Add slight variations to caption format to avoid detection
-        import random
-        
-        # Random emoji variations
-        alert_emojis = ['🚨', '⚖️', '🚔', '📢']
-        location_emojis = ['📍', '🏛️', '📌']
-        
-        alert_emoji = random.choice(alert_emojis)
-        location_emoji = random.choice(location_emojis)
-        
-        # Slight variations in format
-        formats = [
-            f"""{alert_emoji} ARREST ALERT {alert_emoji}
-
+        # Single consistent caption format
+        caption = f"""
 NAME: {name}
 CHARGE: {charge}
 BAIL: {bail}
 
 Arrest Date: {datetime.now().strftime('%m/%d/%Y')}
-{location_emoji} Hennepin County, MN
-
-#minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis""",
-            
-            f"""NAME: {name}
-CHARGE: {charge}
-BAIL: {bail}
-
-{alert_emoji} Arrest Date: {datetime.now().strftime('%m/%d/%Y')}
-{location_emoji} Hennepin County, Minnesota
-
-#minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis""",
-            
-            f"""{alert_emoji} Minneapolis Arrest Update
-
-Full Name: {name}
-Primary Charge: {charge}
-Bail Amount: {bail}
-
-Booked: {datetime.now().strftime('%m/%d/%Y')}
-Location: Hennepin County Jail
+Hennepin County, MN
 
 #minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
-        ]
         
-        caption = random.choice(formats)
         return caption
         
     except Exception as e:
@@ -236,6 +202,7 @@ def parse_bail_amount(bail_string):
 def filter_top_bail_inmates(data_list, top_n=10):
     """
     Filter inmates to only include the top N highest bail amounts
+    Excludes inmates with "No Bail Information" - only includes actual bail amounts
     
     Args:
         data_list: List of inmate dictionaries
@@ -245,17 +212,25 @@ def filter_top_bail_inmates(data_list, top_n=10):
         List of top N inmates sorted by bail amount (highest first)
     """
     try:
-        print(f"\n🔍 Filtering to top {top_n} highest bail inmates...")
+        print(f"\n🔍 Filtering to top {top_n} highest bail inmates (excluding 'No Bail Information')...")
         
         if not data_list:
             print("❌ No inmates to filter")
             return []
         
-        # Add parsed bail amount to each inmate for sorting
+        # Add parsed bail amount to each inmate for sorting, excluding "No Bail Information"
         inmates_with_bail = []
+        excluded_count = 0
+        
         for inmate in data_list:
             bail_str = inmate.get('Bail', '')
             bail_amount = parse_bail_amount(bail_str)
+            
+            # Exclude inmates with "No Bail Information" or zero bail
+            if 'No Bail Information' in bail_str or bail_amount <= 0:
+                excluded_count += 1
+                print(f"⏭️  EXCLUDING: {inmate.get('Full Name', 'Unknown')}: {bail_str} (no bail info)")
+                continue
             
             inmates_with_bail.append({
                 **inmate,
@@ -263,6 +238,9 @@ def filter_top_bail_inmates(data_list, top_n=10):
             })
             
             print(f"📊 {inmate.get('Full Name', 'Unknown')}: {bail_str} → ${bail_amount:,.2f}")
+        
+        print(f"\n📊 Excluded {excluded_count} inmates with no bail information")
+        print(f"📊 {len(inmates_with_bail)} inmates with actual bail amounts available for ranking")
         
         # Sort by bail amount (highest first)
         sorted_inmates = sorted(inmates_with_bail, key=lambda x: x['_bail_amount'], reverse=True)
@@ -1229,16 +1207,43 @@ def extract_key_details(driver):
                         print(f"✅ Found Full Name: {extracted_data['Full Name']}")
                     break
             
-            # Extract first charge description
+            # Extract first charge description with improved logic
+            charge_found = False
             for i, line in enumerate(lines):
                 if line == 'Charge: 1':
                     # Look for the description line after "Description:"
-                    for j in range(i + 1, min(i + 5, len(lines))):
+                    for j in range(i + 1, min(i + 10, len(lines))):  # Increased search range
                         if lines[j] == 'Description:' and j + 1 < len(lines):
-                            extracted_data['Charge 1'] = lines[j + 1]
-                            print(f"✅ Found Charge 1: {extracted_data['Charge 1']}")
-                            break
-                    break
+                            charge_desc = lines[j + 1]
+                            # Make sure it's not a field label like "Severity of Charge:"
+                            if not charge_desc.endswith(':') and len(charge_desc) > 3:
+                                extracted_data['Charge 1'] = charge_desc
+                                print(f"✅ Found Charge 1: {extracted_data['Charge 1']}")
+                                charge_found = True
+                                break
+                    if charge_found:
+                        break
+            
+            # Fallback: Look for common charge patterns if the above didn't work
+            if not extracted_data['Charge 1'] or extracted_data['Charge 1'].endswith(':'):
+                print("🔄 Using fallback charge extraction...")
+                for i, line in enumerate(lines):
+                    # Look for lines that contain common charge keywords but aren't field labels
+                    charge_keywords = ['ASSAULT', 'THEFT', 'BURGLARY', 'DWI', 'DOMESTIC', 'DRUG', 'WARRANT', 'VIOLATION', 'DRIVING', 'POSSESSION']
+                    if (any(keyword in line.upper() for keyword in charge_keywords) and 
+                        not line.endswith(':') and 
+                        len(line) > 10 and
+                        'Severity of Charge' not in line):
+                        extracted_data['Charge 1'] = line
+                        print(f"✅ Found Charge 1 (fallback): {extracted_data['Charge 1']}")
+                        break
+            
+            # Final check: If we still have a field label, clear it
+            if (not extracted_data['Charge 1'] or 
+                extracted_data['Charge 1'].endswith(':') or 
+                extracted_data['Charge 1'] in ['Severity of Charge:', 'Description:', 'Charge Status:']):
+                extracted_data['Charge 1'] = 'Charge information not available'
+                print(f"⚠️  Using default charge value: {extracted_data['Charge 1']}")
             
             # Extract Bail information with better logic
             for i, line in enumerate(lines):
@@ -1596,8 +1601,8 @@ def fill_form_with_current_date(driver):
     time.sleep(3)
     
     # Process more booking IDs to get better selection for filtering
-    print(f"\n🚀 Starting batch processing of booking IDs...")
-    extracted_data_list = process_multiple_bookings(driver, limit=25)
+    print(f"\n🚀 Starting batch processing of booking IDs (limit: {inmate_limit})...")
+    extracted_data_list = process_multiple_bookings(driver, limit=inmate_limit)
     
     # Save to CSV if we got data
     if extracted_data_list:
@@ -1706,9 +1711,12 @@ def fill_search_form(driver, min_date=None, max_date=None):
     
     return success_min or success_max
 
-def open_hennepin_jail_roster():
+def open_hennepin_jail_roster(inmate_limit=100):
     """
     Opens the Hennepin County jail roster website using Selenium
+    
+    Args:
+        inmate_limit: Maximum number of inmates to process (default 100 for production)
     """
     # Import selenium only when needed for scraping
     from selenium import webdriver
@@ -1893,21 +1901,23 @@ if __name__ == "__main__":
             # Post next batch in test mode (no actual posting)
             post_next_inmates(test_mode=True)
         elif command == "test":
-            # Full scraping in test mode (limit to 25 inmates, filter to top 10 bail)
-            print("🧪 Running in TEST MODE - processing 25 inmates, filtering to top 10 highest bail")
-            open_hennepin_jail_roster()
+            # Full scraping in test mode (limit to 25 inmates, filter to top 10 highest bail)
+            print("🧪 Running in TEST MODE - processing 25 inmates, filtering to top 10 highest bail (excluding 'No Bail Information')")
+            open_hennepin_jail_roster(inmate_limit=25)
         elif command == "check-queue":
             # Check posting queue status
             check_posting_queue()
         else:
             print(f"Unknown command: {command}")
             print("Available commands:")
-            print("  python data.py                # Full scraping with top 10 bail filtering")
-            print("  python data.py test           # Test scraping (25 inmates → top 10 bail)")
+            print("  python data.py                # Full scraping (100 inmates) with top 10 highest bail filtering")
+            print("  python data.py test           # Test scraping (25 inmates → top 10 highest bail)")
             print("  python data.py test-instagram # Test posting with existing data")
             print("  python data.py post-next      # Post next batch from queue")
             print("  python data.py post-next-test # Test posting (simulation only)")
             print("  python data.py check-queue    # Check posting queue status")
     else:
-        open_hennepin_jail_roster()
+        # Production mode - scrape 100 inmates and filter to top 10 with actual bail amounts
+        print("🚀 Running in PRODUCTION MODE - processing 100 inmates, filtering to top 10 highest bail (excluding 'No Bail Information')")
+        open_hennepin_jail_roster(inmate_limit=100)
 
