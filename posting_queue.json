@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-23T00:23:25.923862",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "No Bail Information",
         "Mugshot_File": "mugshots/mugshot_AIDEED_ABDIMUJIID_ADEN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-23T00:25:33.272461"
     },
     {
       "id": 2,
@@ -22,8 +22,8 @@
         "Bail": "No Bail Information",
         "Mugshot_File": "mugshots/mugshot_ALFONSO-CERVANTES_RAMOS_ISRAEL.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-23T00:25:33.272471"
     },
     {
       "id": 3,
