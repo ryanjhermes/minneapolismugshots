@@ -1,13 +1,6 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
-from webdriver_manager.chrome import ChromeDriverManager
+# Essential imports for all functions
 import time
 from datetime import datetime, timedelta
-from selenium.webdriver.support.ui import Select
 import csv
 import base64
 import os
@@ -18,6 +11,9 @@ import re
 
 # Load environment variables from .env file (if it exists)
 load_dotenv()
+
+# Selenium imports are moved to functions that need them to avoid import errors
+# in workflows that only need posting functionality
 
 def convert_base64_to_image(data_url, filename_prefix="mugshot"):
     """Convert base64 data URL to an actual image file in mugshots folder"""
@@ -597,6 +593,12 @@ def input_date_field(driver, date_value, field_identifier="minDate"):
         date_value: Date string in MM/DD/YYYY format
         field_identifier: How to identify the field (formcontrolname, id, etc.)
     """
+    # Import selenium components needed for this function
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+    from selenium.webdriver.common.keys import Keys
+    
     try:
         print(f"Looking for date field with identifier: {field_identifier}")
         
@@ -783,6 +785,10 @@ def select_dropdown_option(driver, option_text="100", dropdown_type="results_per
         option_text: Text of the option to select (e.g., "100")
         dropdown_type: Type of dropdown to identify
     """
+    # Import selenium components needed for this function
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import Select
+    
     try:
         print(f"🔽 Looking for dropdown to select option: {option_text}")
         
@@ -1178,6 +1184,9 @@ def extract_key_details(driver):
     """
     Extract only the key details we need: Full Name, Charge 1, Bail, and Mugshot
     """
+    # Import selenium components needed for this function
+    from selenium.webdriver.common.by import By
+    
     try:
         print("\n📋 Extracting key details (Full Name, Charge 1, Bail, Mugshot)...")
         
@@ -1318,6 +1327,10 @@ def close_modal(driver):
     """
     Close the current modal/dialog with better overlay handling
     """
+    # Import selenium components needed for this function
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.common.keys import Keys
+    
     try:
         print("\n❌ Closing modal...")
         
@@ -1416,6 +1429,9 @@ def get_all_booking_ids(driver, limit=100):
     """
     Get all booking IDs from the search results (limited for testing)
     """
+    # Import selenium components needed for this function
+    from selenium.webdriver.common.by import By
+    
     try:
         print(f"\n🔍 Finding all booking IDs (limit: {limit})...")
         
@@ -1694,6 +1710,16 @@ def open_hennepin_jail_roster():
     """
     Opens the Hennepin County jail roster website using Selenium
     """
+    # Import selenium only when needed for scraping
+    from selenium import webdriver
+    from selenium.webdriver.chrome.service import Service
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+    from selenium.webdriver.common.keys import Keys
+    from webdriver_manager.chrome import ChromeDriverManager
+    from selenium.webdriver.support.ui import Select
+    
     # Set up ChromeDriver service
     service = Service(ChromeDriverManager().install())
     
