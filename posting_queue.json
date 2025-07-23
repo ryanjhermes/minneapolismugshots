@@ -1,37 +1,37 @@
 {
-  "created_at": "2025-07-22T17:29:34.345619",
+  "created_at": "2025-07-23T00:11:38.372707",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ALFONSO-CERVANTES, RAMOS ISRAEL",
-        "Charge 1": "OTHER COUNTY/GM & MISD",
+        "Full Name": "AIDEED, ABDIMUJIID ADEN",
+        "Charge 1": "Severity of Charge:",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_ALFONSO-CERVANTES_RAMOS_ISRAEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_AIDEED_ABDIMUJIID_ADEN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-22T17:30:06.681231"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "AUSTINSON, ANDREW DAVID",
-        "Charge 1": "RECEIVING/CONCEALING STOLEN PROPERTY",
+        "Full Name": "ALFONSO-CERVANTES, RAMOS ISRAEL",
+        "Charge 1": "Severity of Charge:",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_AUSTINSON_ANDREW_DAVID.jpg"
+        "Mugshot_File": "mugshots/mugshot_ALFONSO-CERVANTES_RAMOS_ISRAEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-22T17:30:06.681260"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "CASTILLO SEQUERA, JOSEELIN JOSIMAR",
-        "Charge 1": "CRIMINAL SEXUAL CONDUCT",
+        "Full Name": "AUSTINSON, ANDREW DAVID",
+        "Charge 1": "Severity of Charge:",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_CASTILLO_SEQUERA_JOSEELIN_JOSIMAR.jpg"
+        "Mugshot_File": "mugshots/mugshot_AUSTINSON_ANDREW_DAVID.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "DARROW, KEVIN PATRICK",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ANY AMOUNT SCHEDULE I/II DRUGS/METABOLITE; NOT CANNABIS/HEMP",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_DARROW_KEVIN_PATRICK.jpg"
+        "Full Name": "AYSHFORD-LAU, GAVIN JAMES",
+        "Charge 1": "Severity of Charge:",
+        "Bail": "No Bail Information",
+        "Mugshot_File": "mugshots/mugshot_AYSHFORD-LAU_GAVIN_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "EHRMANTRAUT, CHRISTOPHER JOHN",
-        "Charge 1": "OTHER COUNTY/FELONY",
+        "Full Name": "CASTILLO SEQUERA, JOSEELIN JOSIMAR",
+        "Charge 1": "Severity of Charge:",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_EHRMANTRAUT_CHRISTOPHER_JOHN.jpg"
+        "Mugshot_File": "mugshots/mugshot_CASTILLO_SEQUERA_JOSEELIN_JOSIMAR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "HAEFLIGER, JAYDEN EDWARD",
-        "Charge 1": "OTHER COUNTY/FELONY",
+        "Full Name": "CHAIRSE, OSHEA LEDALE",
+        "Charge 1": "Severity of Charge:",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_HAEFLIGER_JAYDEN_EDWARD.jpg"
+        "Mugshot_File": "mugshots/mugshot_CHAIRSE_OSHEA_LEDALE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "HANSON, IAN SAMUEL",
-        "Charge 1": "BURGLARY-1ST DEG-ASSAULT PERSON IN BUILD/ON PROPERTY",
+        "Full Name": "CHAKOURI, ABDELLAH",
+        "Charge 1": "Severity of Charge:",
         "Bail": "No Bail Information",
-        "Mugshot_File": "mugshots/mugshot_HANSON_IAN_SAMUEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_CHAKOURI_ABDELLAH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "ATHEIY, PAKIJWOK PAULINO OSHONG",
-        "Charge 1": "AIDING AN OFFENDER - ACCOMPLICE AFTER THE FACT",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ATHEIY_PAKIJWOK_PAULINO_OSHONG.jpg"
+        "Full Name": "DARROW, KEVIN PATRICK",
+        "Charge 1": "Severity of Charge:",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_DARROW_KEVIN_PATRICK.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "GIBBA, SULAYMAN",
-        "Charge 1": "AGGRAVATED ROBBERY-1ST DEGREE",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GIBBA_SULAYMAN.jpg"
+        "Full Name": "EHRMANTRAUT, CHRISTOPHER JOHN",
+        "Charge 1": "Severity of Charge:",
+        "Bail": "No Bail Information",
+        "Mugshot_File": "mugshots/mugshot_EHRMANTRAUT_CHRISTOPHER_JOHN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "CORTEZ, DAVID JR JR",
-        "Charge 1": "MAIL THEFT-INTENTIONALLY REMOVES MAIL FROM DEPOSITORY WITHOUT CLAIM OF RIGHT",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CORTEZ_DAVID_JR_JR.jpg"
+        "Full Name": "FERGUSON, RICCO BLAIR JR",
+        "Charge 1": "Severity of Charge:",
+        "Bail": "No Bail Information",
+        "Mugshot_File": "mugshots/mugshot_FERGUSON_RICCO_BLAIR_JR.jpg"
       },
       "posted": false,
       "posted_at": null
