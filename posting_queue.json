@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-23T00:23:25.923862",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 6,
   "inmates": [
     {
       "id": 1,
@@ -55,8 +55,8 @@
         "Bail": "No Bail Information",
         "Mugshot_File": "mugshots/mugshot_CASTILLO_SEQUERA_JOSEELIN_JOSIMAR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-23T00:57:21.372443"
     },
     {
       "id": 6,
@@ -66,8 +66,8 @@
         "Bail": "No Bail Information",
         "Mugshot_File": "mugshots/mugshot_CHAIRSE_OSHEA_LEDALE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-23T00:57:21.372455"
     },
     {
       "id": 7,
