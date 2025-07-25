@@ -1207,15 +1207,16 @@ def extract_key_details(driver):
                         print(f"✅ Found Full Name: {extracted_data['Full Name']}")
                     break
             
-            # Extract first charge description with improved logic
+            # Extract first charge description
             charge_found = False
+            
             for i, line in enumerate(lines):
                 if line == 'Charge: 1':
                     # Look for the description line after "Description:"
-                    for j in range(i + 1, min(i + 10, len(lines))):  # Increased search range
+                    for j in range(i + 1, min(i + 10, len(lines))):
                         if lines[j] == 'Description:' and j + 1 < len(lines):
                             charge_desc = lines[j + 1]
-                            # Make sure it's not a field label like "Severity of Charge:"
+                            # Simple validation - avoid obvious field labels
                             if not charge_desc.endswith(':') and len(charge_desc) > 3:
                                 extracted_data['Charge 1'] = charge_desc
                                 print(f"✅ Found Charge 1: {extracted_data['Charge 1']}")
@@ -1224,26 +1225,22 @@ def extract_key_details(driver):
                     if charge_found:
                         break
             
-            # Fallback: Look for common charge patterns if the above didn't work
-            if not extracted_data['Charge 1'] or extracted_data['Charge 1'].endswith(':'):
-                print("🔄 Using fallback charge extraction...")
+            # Simple fallback: Look for lines with common charge keywords
+            if not extracted_data['Charge 1']:
+                print("🔄 Using keyword fallback for charge...")
+                charge_keywords = ['ASSAULT', 'THEFT', 'BURGLARY', 'DWI', 'DOMESTIC', 'DRUG', 'WARRANT', 'VIOLATION', 'DRIVING', 'POSSESSION']
                 for i, line in enumerate(lines):
-                    # Look for lines that contain common charge keywords but aren't field labels
-                    charge_keywords = ['ASSAULT', 'THEFT', 'BURGLARY', 'DWI', 'DOMESTIC', 'DRUG', 'WARRANT', 'VIOLATION', 'DRIVING', 'POSSESSION']
                     if (any(keyword in line.upper() for keyword in charge_keywords) and 
                         not line.endswith(':') and 
-                        len(line) > 10 and
-                        'Severity of Charge' not in line):
+                        len(line) > 10):
                         extracted_data['Charge 1'] = line
-                        print(f"✅ Found Charge 1 (fallback): {extracted_data['Charge 1']}")
+                        print(f"✅ Found charge via keyword fallback: {extracted_data['Charge 1']}")
                         break
             
-            # Final check: If we still have a field label, clear it
-            if (not extracted_data['Charge 1'] or 
-                extracted_data['Charge 1'].endswith(':') or 
-                extracted_data['Charge 1'] in ['Severity of Charge:', 'Description:', 'Charge Status:']):
-                extracted_data['Charge 1'] = 'Charge information not available'
-                print(f"⚠️  Using default charge value: {extracted_data['Charge 1']}")
+            # Set default if still empty
+            if not extracted_data['Charge 1']:
+                extracted_data['Charge 1'] = 'No valid charge found'
+                print(f"⚠️  No charge found - using default: {extracted_data['Charge 1']}")
             
             # Extract Bail information with better logic
             for i, line in enumerate(lines):
@@ -1522,21 +1519,51 @@ def process_multiple_bookings(driver, limit=3):
                 # Don't add Booking ID to match CSV headers exactly
                 
                 if extracted_data['Full Name']:  # Only add if we got some data
-                    # Check if inmate has required data (mugshot AND charge)
+                    # Check if inmate has required data (mugshot, valid charge, and valid bail)
                     has_mugshot = extracted_data.get('Mugshot_File') and extracted_data.get('Mugshot_File') != 'No Image'
-                    has_charge = extracted_data.get('Charge 1') and extracted_data.get('Charge 1').strip()
-                    
-                    if has_mugshot and has_charge:
+                    charge_text = extracted_data.get('Charge 1', '').strip()
+                    bail_text = extracted_data.get('Bail', '').strip()
+
+                    # Define invalid charge patterns that should be filtered out
+                    invalid_charges = [
+                        'No valid charge found',
+                        'Charge information not available', 
+                        'Severity of Charge:',
+                        'Description:',
+                        'Charge Status:',
+                        'No charge listed'
+                    ]
+                    has_valid_charge = (charge_text and 
+                                       not charge_text.endswith(':') and 
+                                       charge_text not in invalid_charges and
+                                       len(charge_text) > 5)
+
+                    # Define invalid bail patterns
+                    invalid_bails = [
+                        '',
+                        'No Bail Information',
+                        'NO BAIL INFORMATION',
+                        'NO BAIL',
+                        'HOLD WITHOUT BAIL',
+                        'RELEASED',
+                        'NO BAIL REQUIRED',
+                        'No bail information',
+                        'No bail',
+                        'No Bail',
+                        'No bail required',
+                    ]
+                    # Accept any bail with a dollar sign
+                    has_valid_bail = ('$' in bail_text and not any(bail_text.strip().upper() == b.upper() for b in invalid_bails))
+
+                    if has_mugshot and has_valid_charge and has_valid_bail:
                         all_extracted_data.append(extracted_data)
-                        print(f"✅ Successfully extracted data for {booking_id}")
-                        print(f"   📸 Mugshot: ✅")
-                        print(f"   ⚖️  Charge: ✅")
+                        print(f"✅ ACCEPTED: {extracted_data['Full Name']} - {charge_text} - {bail_text}")
                     else:
-                        print(f"⏭️  SKIPPING {booking_id} - Missing required data:")
-                        print(f"   👤 Name: {extracted_data['Full Name']}")
-                        print(f"   📸 Mugshot: {'✅' if has_mugshot else '❌'}")
-                        print(f"   ⚖️  Charge: {'✅' if has_charge else '❌'}")
-                        print(f"   🔄 Only inmates with both mugshot AND charge will be saved")
+                        missing = []
+                        if not has_mugshot: missing.append("mugshot")
+                        if not has_valid_charge: missing.append(f"valid charge (got: '{charge_text}')")
+                        if not has_valid_bail: missing.append(f"valid bail (got: '{bail_text}')")
+                        print(f"⏭️  REJECTED: {extracted_data['Full Name']} - Missing: {', '.join(missing)}")
                 else:
                     print(f"⚠️  No data extracted for {booking_id}")
                 
@@ -1561,7 +1588,7 @@ def process_multiple_bookings(driver, limit=3):
         print(f"❌ Error processing multiple bookings: {e}")
         return []
 
-def fill_form_with_current_date(driver):
+def fill_form_with_current_date(driver, inmate_limit=25):
     """
     Fill the form, process multiple booking IDs, and save to CSV with top 10 highest bail filter
     """
@@ -1601,7 +1628,8 @@ def fill_form_with_current_date(driver):
     time.sleep(3)
     
     # Process more booking IDs to get better selection for filtering
-    print(f"\n🚀 Starting batch processing of booking IDs (limit: {inmate_limit})...")
+    # inmate_limit is passed to the function as a parameter
+    print(f"\n🚀 Starting batch processing of booking IDs (limit: inmate_limit)...")
     extracted_data_list = process_multiple_bookings(driver, limit=inmate_limit)
     
     # Save to CSV if we got data
@@ -1785,7 +1813,7 @@ def open_hennepin_jail_roster(inmate_limit=100):
                 
             # Always try to fill the form, regardless of initial detection
             print("\n🗓️  Attempting to fill form with current date...")
-            fill_form_with_current_date(driver)
+            fill_form_with_current_date(driver, inmate_limit)
                 
             # Try to find and print some basic page info
             try:
