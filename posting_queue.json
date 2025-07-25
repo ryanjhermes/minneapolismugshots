@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-24T23:43:06.828063-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_IVERSEN_CONNER_MICHAEL.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-25T10:24:33.104312-05:00"
     },
     {
       "id": 2,
@@ -22,8 +22,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MOTAMED_KAYVAN_KARIM.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-25T10:24:33.104342-05:00"
     },
     {
       "id": 3,
