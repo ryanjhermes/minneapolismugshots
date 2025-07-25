@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-25T01:01:04.230629",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 6,
   "inmates": [
     {
       "id": 1,
@@ -55,8 +55,8 @@
         "Bail": "$60,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_DEZIEL_LEAH_ELVERA.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-25T01:30:49.470945"
     },
     {
       "id": 6,
@@ -66,8 +66,8 @@
         "Bail": "$20,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ABDULKADIR_FADUMA_ABDULLAH.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-25T01:30:49.470954"
     },
     {
       "id": 7,
