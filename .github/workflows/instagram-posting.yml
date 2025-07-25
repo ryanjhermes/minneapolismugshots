@@ -2,17 +2,8 @@ name: Instagram Posting
 
 on:
   schedule:
-    # Post inmates every 15 minutes from 6:00 PM to 8:00 PM Central Time
-    # With 10 total inmates (2 per batch), we only need ~5 posting cycles
-    - cron: '0 23 * * *'   # 6:00 PM Central
-    - cron: '15 23 * * *'  # 6:15 PM Central  
-    - cron: '30 23 * * *'  # 6:30 PM Central
-    - cron: '45 23 * * *'  # 6:45 PM Central
-    - cron: '0 0 * * *'    # 7:00 PM Central
-    - cron: '15 0 * * *'   # 7:15 PM Central
-    - cron: '30 0 * * *'   # 7:30 PM Central
-    - cron: '45 0 * * *'   # 7:45 PM Central
-    - cron: '0 1 * * *'    # 8:00 PM Central (final check)
+    # Every hour from 10:00 AM to 7:00 PM Central (CDT, UTC-5)
+    - cron: '0 15-21 * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:

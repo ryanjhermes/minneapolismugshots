@@ -2,8 +2,8 @@ name: Daily Jail Roster Scrape
 
 on:
   schedule:
-    # Run daily at 6:00 PM Central Time (11:00 PM UTC)
-    - cron: '0 23 * * *'
+    # Run daily at 11:00 PM Central Time (4:00 AM UTC next day)
+    - cron: '0 4 * * *'
   workflow_dispatch: # Allow manual trigger
   push:
     branches: [ main ] # Also run on push for testing

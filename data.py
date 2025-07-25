@@ -79,7 +79,7 @@ NAME: {name}
 CHARGE: {charge}
 BAIL: {bail}
 
-Arrest Date: {datetime.now().strftime('%m/%d/%Y')}
+Arrest Date: {get_current_date()}
 Hennepin County, MN
 
 #minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
@@ -277,7 +277,7 @@ def save_to_posting_queue(data_list):
         
         # Add timestamp and posting status to each inmate
         queue_data = {
-            'created_at': datetime.now().isoformat(),
+            'created_at': get_current_datetime_iso(),
             'total_inmates': len(filtered_inmates),
             'posted_count': 0,
             'inmates': []
@@ -347,7 +347,7 @@ def mark_inmates_as_posted(inmate_ids):
         for inmate in queue_data['inmates']:
             if inmate['id'] in inmate_ids:
                 inmate['posted'] = True
-                inmate['posted_at'] = datetime.now().isoformat()
+                inmate['posted_at'] = get_current_datetime_iso()
                 posted_count += 1
         
         # Update stats
@@ -542,6 +542,27 @@ def get_current_date():
         current_date = central_time.strftime("%m/%d/%Y")
         print(f"📅 Current date (Central Time approx): {current_date}")
         return current_date
+
+def get_current_datetime_iso():
+    """
+    Get the current datetime in Central Time in ISO format for internal tracking
+    Always uses Central Time regardless of server timezone
+    """
+    from datetime import datetime
+    import pytz
+    
+    try:
+        # Get current time in Central Time zone
+        central_tz = pytz.timezone('US/Central')
+        central_time = datetime.now(central_tz)
+        return central_time.isoformat()
+    except ImportError:
+        # Fallback if pytz not available
+        from datetime import datetime, timedelta
+        utc_time = datetime.utcnow()
+        # Approximate Central Time (CST/CDT is UTC-6 in summer)
+        central_time = utc_time - timedelta(hours=6)
+        return central_time.isoformat()
 
 def get_date_range(days_back=7):
     """
@@ -1198,7 +1219,13 @@ def extract_key_details(driver):
         if modal_content:
             modal_text = modal_content.text
             lines = [line.strip() for line in modal_text.split('\n') if line.strip()]
-            
+
+            # Debug: Print all modal lines for this inmate
+            print("\n--- MODAL LINES ---")
+            for idx, line in enumerate(lines):
+                print(f"{idx:2d}: {line}")
+            print("--- END MODAL LINES ---\n")
+
             # Extract Full Name
             for i, line in enumerate(lines):
                 if 'Full Name:' in line:
@@ -1206,17 +1233,14 @@ def extract_key_details(driver):
                         extracted_data['Full Name'] = lines[i + 1]
                         print(f"✅ Found Full Name: {extracted_data['Full Name']}")
                     break
-            
+
             # Extract first charge description
             charge_found = False
-            
             for i, line in enumerate(lines):
                 if line == 'Charge: 1':
-                    # Look for the description line after "Description:"
                     for j in range(i + 1, min(i + 10, len(lines))):
                         if lines[j] == 'Description:' and j + 1 < len(lines):
                             charge_desc = lines[j + 1]
-                            # Simple validation - avoid obvious field labels
                             if not charge_desc.endswith(':') and len(charge_desc) > 3:
                                 extracted_data['Charge 1'] = charge_desc
                                 print(f"✅ Found Charge 1: {extracted_data['Charge 1']}")
@@ -1224,8 +1248,6 @@ def extract_key_details(driver):
                                 break
                     if charge_found:
                         break
-            
-            # Simple fallback: Look for lines with common charge keywords
             if not extracted_data['Charge 1']:
                 print("🔄 Using keyword fallback for charge...")
                 charge_keywords = ['ASSAULT', 'THEFT', 'BURGLARY', 'DWI', 'DOMESTIC', 'DRUG', 'WARRANT', 'VIOLATION', 'DRIVING', 'POSSESSION']
@@ -1236,6 +1258,11 @@ def extract_key_details(driver):
                         extracted_data['Charge 1'] = line
                         print(f"✅ Found charge via keyword fallback: {extracted_data['Charge 1']}")
                         break
+            if not extracted_data['Charge 1']:
+                extracted_data['Charge 1'] = 'No valid charge found'
+                print(f"⚠️  No charge found - using default: {extracted_data['Charge 1']}")
+            # Print the final extracted charge for debugging
+            print(f"[DEBUG] Final extracted charge: {extracted_data['Charge 1']}")
             
             # Set default if still empty
             if not extracted_data['Charge 1']:
@@ -1533,10 +1560,13 @@ def process_multiple_bookings(driver, limit=3):
                         'Charge Status:',
                         'No charge listed'
                     ]
+                    # Prevent charge from being set to the inmate's name
+                    is_charge_name = (charge_text.lower() == extracted_data['Full Name'].lower())
                     has_valid_charge = (charge_text and 
                                        not charge_text.endswith(':') and 
                                        charge_text not in invalid_charges and
-                                       len(charge_text) > 5)
+                                       len(charge_text) > 5 and
+                                       not is_charge_name)
 
                     # Define invalid bail patterns
                     invalid_bails = [
@@ -1552,8 +1582,14 @@ def process_multiple_bookings(driver, limit=3):
                         'No Bail',
                         'No bail required',
                     ]
-                    # Accept any bail with a dollar sign
-                    has_valid_bail = ('$' in bail_text and not any(bail_text.strip().upper() == b.upper() for b in invalid_bails))
+                    # Accept any bail with a dollar sign, but reject $0.00 or NO BAIL REQUIRED
+                    bail_text_upper = bail_text.upper()
+                    has_valid_bail = (
+                        ('$' in bail_text) and
+                        ('$0.00' not in bail_text_upper) and
+                        ('NO BAIL REQUIRED' not in bail_text_upper) and
+                        not any(bail_text.strip().upper() == b.upper() for b in invalid_bails)
+                    )
 
                     if has_mugshot and has_valid_charge and has_valid_bail:
                         all_extracted_data.append(extracted_data)
