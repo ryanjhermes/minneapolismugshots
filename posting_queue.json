@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-24T23:43:06.828063-05:00",
   "total_inmates": 10,
-  "posted_count": 8,
+  "posted_count": 10,
   "inmates": [
     {
       "id": 1,
@@ -99,8 +99,8 @@
         "Bail": "$3,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BRYANT_BRANDON_CORDERO.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-25T13:37:20.638892-05:00"
     },
     {
       "id": 10,
@@ -110,8 +110,8 @@
         "Bail": "$3,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_COGSHELL_LAVONTE_LAVANDAS.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-25T13:37:20.638927-05:00"
     }
   ]
 }
