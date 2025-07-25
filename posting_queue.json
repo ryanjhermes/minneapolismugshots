@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-24T23:43:06.828063-05:00",
   "total_inmates": 10,
-  "posted_count": 6,
+  "posted_count": 8,
   "inmates": [
     {
       "id": 1,
@@ -77,8 +77,8 @@
         "Bail": "$10,000.00 BAIL/BOND W/ CR",
         "Mugshot_File": "mugshots/mugshot_GARCIA_MYLOANTONIO_L.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-25T12:25:46.071320-05:00"
     },
     {
       "id": 8,
@@ -88,8 +88,8 @@
         "Bail": "$5,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_KELLEY_ANDRE_ANTONIO.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-25T12:25:46.071353-05:00"
     },
     {
       "id": 9,
