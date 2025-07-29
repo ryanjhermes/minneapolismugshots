@@ -1668,7 +1668,7 @@ def process_multiple_bookings(driver, limit=3):
                 # Don't add Booking ID to match CSV headers exactly
                 
                 if extracted_data['Full Name']:  # Only add if we got some data
-                    # Check if inmate has required data (mugshot, valid charge, and valid bail)
+                    # Check if inmate has required data (mugshot and valid bail - charge is optional)
                     has_mugshot = extracted_data.get('Mugshot_File') and extracted_data.get('Mugshot_File') != 'No Image'
                     charge_text = extracted_data.get('Charge 1', '').strip()
                     bail_text = extracted_data.get('Bail', '').strip()
@@ -1713,13 +1713,13 @@ def process_multiple_bookings(driver, limit=3):
                         not any(bail_text.strip().upper() == b.upper() for b in invalid_bails)
                     )
 
-                    if has_mugshot and has_valid_charge and has_valid_bail:
+                    # Make charge field optional - only require mugshot and valid bail
+                    if has_mugshot and has_valid_bail:
                         all_extracted_data.append(extracted_data)
                         print(f"✅ ACCEPTED: {extracted_data['Full Name']} - {charge_text} - {bail_text}")
                     else:
                         missing = []
                         if not has_mugshot: missing.append("mugshot")
-                        if not has_valid_charge: missing.append(f"valid charge (got: '{charge_text}')")
                         if not has_valid_bail: missing.append(f"valid bail (got: '{bail_text}')")
                         print(f"⏭️  REJECTED: {extracted_data['Full Name']} - Missing: {', '.join(missing)}")
                 else:
@@ -1737,8 +1737,8 @@ def process_multiple_bookings(driver, limit=3):
         
         print(f"\n📊 PROCESSING COMPLETE:")
         print(f"   Total IDs processed: {len(booking_ids)}")
-        print(f"   Inmates with mugshot + charge: {len(all_extracted_data)}")
-        print(f"   Filtered out (no mugshot or charge): {len(booking_ids) - len(all_extracted_data)}")
+        print(f"   Inmates with mugshot + valid bail: {len(all_extracted_data)}")
+        print(f"   Filtered out (no mugshot or valid bail): {len(booking_ids) - len(all_extracted_data)}")
         
         return all_extracted_data
         
