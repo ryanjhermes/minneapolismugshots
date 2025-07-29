@@ -104,7 +104,12 @@ jobs:
           echo "No changes to commit"
         else
           git commit -m "Daily jail roster update - $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
+          # Try to push, and if it fails due to conflicts, pull and push again
+          if ! git push; then
+            echo "Push failed, pulling latest changes and trying again..."
+            git pull --rebase origin main
+            git push
+          fi
         fi
     
     - name: Setup GitHub Pages

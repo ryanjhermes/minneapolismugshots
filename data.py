@@ -73,10 +73,9 @@ def generate_caption(data):
         charge = charge.strip()
         bail = bail.strip()
         
-        # Single consistent caption format
+        # Single consistent caption format (without charge field)
         caption = f"""
 NAME: {name}
-CHARGE: {charge}
 BAIL: {bail}
 
 Arrest Date: {get_current_date()}
