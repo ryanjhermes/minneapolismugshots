@@ -1199,6 +1199,38 @@ def extract_key_details(driver):
             'Mugshot_File': ''
         }
         
+        # First, try to get the name from the main page before modal
+        try:
+            # Look for name in the main page content
+            page_text = driver.find_element(By.TAG_NAME, 'body').text
+            page_lines = [line.strip() for line in page_text.split('\n') if line.strip()]
+            
+            # Look for name patterns in the page content
+            name_patterns = [
+                'Full Name:',
+                'Name:',
+                'Inmate Name:',
+                'Arrestee Name:',
+                'Defendant Name:'
+            ]
+            
+            for pattern in name_patterns:
+                for i, line in enumerate(page_lines):
+                    if pattern in line and i + 1 < len(page_lines):
+                        potential_name = page_lines[i + 1]
+                        # Check if it looks like a name (contains letters and spaces)
+                        if (potential_name and 
+                            any(c.isalpha() for c in potential_name) and 
+                            ' ' in potential_name and
+                            len(potential_name) > 5):
+                            extracted_data['Full Name'] = potential_name
+                            print(f"✅ Found Full Name from page: {extracted_data['Full Name']}")
+                            break
+                if extracted_data['Full Name']:
+                    break
+        except Exception as e:
+            print(f"⚠️  Error extracting name from page: {e}")
+        
         # Find the modal content
         modal_content = None
         modal_selectors = [
@@ -1226,13 +1258,48 @@ def extract_key_details(driver):
                 print(f"{idx:2d}: {line}")
             print("--- END MODAL LINES ---\n")
 
-            # Extract Full Name
-            for i, line in enumerate(lines):
-                if 'Full Name:' in line:
-                    if i + 1 < len(lines):
-                        extracted_data['Full Name'] = lines[i + 1]
-                        print(f"✅ Found Full Name: {extracted_data['Full Name']}")
-                    break
+            # Extract Full Name from modal if not already found
+            if not extracted_data['Full Name']:
+                # Look for name patterns in modal
+                name_patterns = [
+                    'Full Name:',
+                    'Name:',
+                    'Inmate Name:',
+                    'Arrestee Name:',
+                    'Defendant Name:',
+                    'Subject Name:'
+                ]
+                
+                for pattern in name_patterns:
+                    for i, line in enumerate(lines):
+                        if pattern in line:
+                            if i + 1 < len(lines):
+                                potential_name = lines[i + 1]
+                                # Check if it looks like a name (contains letters and spaces)
+                                if (potential_name and 
+                                    any(c.isalpha() for c in potential_name) and 
+                                    ' ' in potential_name and
+                                    len(potential_name) > 5):
+                                    extracted_data['Full Name'] = potential_name
+                                    print(f"✅ Found Full Name from modal: {extracted_data['Full Name']}")
+                                    break
+                    if extracted_data['Full Name']:
+                        break
+                
+                # If still no name, look for any line that looks like a name (contains letters, spaces, and is reasonably long)
+                if not extracted_data['Full Name']:
+                    for line in lines:
+                        # Look for lines that look like names (contains letters, spaces, and reasonable length)
+                        if (line and 
+                            any(c.isalpha() for c in line) and 
+                            ' ' in line and
+                            len(line) > 8 and len(line) < 50 and
+                            not any(keyword in line.upper() for keyword in ['CASE', 'CHARGE', 'BAIL', 'COURT', 'DATE', 'TIME', 'STATUTE', 'DESCRIPTION'])):
+                            # Additional check: should contain at least one uppercase letter (likely a name)
+                            if any(c.isupper() for c in line):
+                                extracted_data['Full Name'] = line
+                                print(f"✅ Found potential name from modal content: {extracted_data['Full Name']}")
+                                break
 
             # Extract first charge description
             charge_found = False
@@ -1543,6 +1610,12 @@ def process_multiple_bookings(driver, limit=3):
                 
                 # Extract key details
                 extracted_data = extract_key_details(driver)
+                
+                # If no name was found, use booking ID as fallback
+                if not extracted_data['Full Name']:
+                    extracted_data['Full Name'] = f"Booking_{booking_id}"
+                    print(f"⚠️  No name found, using booking ID as fallback: {extracted_data['Full Name']}")
+                
                 # Don't add Booking ID to match CSV headers exactly
                 
                 if extracted_data['Full Name']:  # Only add if we got some data
