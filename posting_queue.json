@@ -1,18 +1,18 @@
 {
-  "created_at": "2025-07-29T09:55:39.719576-05:00",
+  "created_at": "2025-07-29T10:59:55.723838-05:00",
   "total_inmates": 1,
-  "posted_count": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "CHARETTE, LAURENCE JOHN",
-        "Charge 1": "HENNEPIN WARRANT",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CHARETTE_LAURENCE_JOHN.jpg"
+        "Full Name": "KAMINSKI, KYLEE ROSE MARIE",
+        "Charge 1": "No valid charge found",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KAMINSKI_KYLEE_ROSE_MARIE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-29T10:29:56.439469-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
