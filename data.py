@@ -1263,45 +1263,15 @@ def extract_key_details(driver):
         if modal_content:
             # Try to get modal content with retries for CI environment
             modal_text = ""
-            max_retries = 5  # Increased retries for CI
+            max_retries = 3
             for attempt in range(max_retries):
                 modal_text = modal_content.text
                 lines = [line.strip() for line in modal_text.split('\n') if line.strip()]
                 
                 # Check if we have enough content (should have more than just headers)
                 if len(lines) > 20:  # Should have substantial content
-                    # Additional check: look for charge components in DOM
-                    try:
-                        charge_components = modal_content.find_elements(By.CSS_SELECTOR, 'jr-charge-detail')
-                        print(f"[DEBUG] Found {len(charge_components)} charge components in attempt {attempt + 1}")
-                        
-                        if charge_components:
-                            # Check if any charge component has description content
-                            has_charge_content = False
-                            for charge_comp in charge_components:
-                                desc_elements = charge_comp.find_elements(By.CSS_SELECTOR, 'hcso-read-only-element[label="Description"]')
-                                for desc_elem in desc_elements:
-                                    p_elements = desc_elem.find_elements(By.CSS_SELECTOR, 'p[slot="input"]')
-                                    for p_elem in p_elements:
-                                        if p_elem.text.strip() and len(p_elem.text.strip()) > 10:
-                                            has_charge_content = True
-                                            print(f"[DEBUG] Found charge content in component: '{p_elem.text.strip()[:50]}...'")
-                                            break
-                                if has_charge_content:
-                                    break
-                            
-                            if has_charge_content:
-                                print(f"✅ Modal content loaded successfully with charge components (attempt {attempt + 1})")
-                                break
-                            else:
-                                print(f"⚠️  Charge components found but no content (attempt {attempt + 1}), waiting...")
-                                time.sleep(3)  # Longer wait for charge content
-                        else:
-                            print(f"⚠️  No charge components found (attempt {attempt + 1}), waiting...")
-                            time.sleep(2)
-                    except Exception as e:
-                        print(f"⚠️  Error checking charge components (attempt {attempt + 1}): {e}")
-                        time.sleep(2)
+                    print(f"✅ Modal content loaded successfully (attempt {attempt + 1})")
+                    break
                 else:
                     print(f"⚠️  Modal content seems incomplete (attempt {attempt + 1}), waiting...")
                     time.sleep(2)
@@ -1355,64 +1325,27 @@ def extract_key_details(driver):
                                 print(f"✅ Found potential name from modal content: {extracted_data['Full Name']}")
                                 break
 
-            # Extract first charge description using direct HTML targeting
+            # Extract first charge description
             charge_found = False
-            print("\n🔍 [CHARGE EXTRACTION] Starting charge extraction...")
-            
-            # Method 1: Direct HTML targeting for charge descriptions
-            try:
-                print("🔄 [CHARGE EXTRACTION] Method 1: Direct HTML targeting")
-                
-                # Look for p elements with slot="input" that contain charge descriptions
-                p_elements = modal_content.find_elements(By.CSS_SELECTOR, 'p[slot="input"]')
-                print(f"[DEBUG] Found {len(p_elements)} p elements with slot='input'")
-                
-                for p_idx, p_elem in enumerate(p_elements):
-                    charge_text = p_elem.text.strip()
-                    print(f"[DEBUG] P element {p_idx + 1} text: '{charge_text}'")
-                    
-                    # Check if this looks like a charge description (not bail, not empty, not a label)
-                    if (charge_text and 
-                        len(charge_text) > 10 and
-                        not charge_text.endswith(':') and
-                        not any(keyword in charge_text.upper() for keyword in ['BAIL', 'BOND', 'RELEASE', 'HOLD', 'NO BAIL']) and
-                        any(keyword in charge_text.upper() for keyword in ['ASSAULT', 'THEFT', 'DRUG', 'DWI', 'DOMESTIC', 'WEAPONS', 'TRAFFIC', 'POSSESSION', 'WARRANT'])):
-                        
-                        extracted_data['Charge 1'] = charge_text
-                        print(f"✅ [CHARGE EXTRACTION] Found Charge 1 via direct HTML: {extracted_data['Charge 1']}")
-                        charge_found = True
+            for i, line in enumerate(lines):
+                if line == 'Charge: 1':
+                    print(f"[DEBUG] Found 'Charge: 1' at line {i}")
+                    for j in range(i + 1, min(i + 15, len(lines))):
+                        print(f"[DEBUG] Checking line {j}: '{lines[j]}'")
+                        if lines[j] == 'Description:':
+                            print(f"[DEBUG] Found 'Description:' at line {j}")
+                            if j + 1 < len(lines):
+                                charge_desc = lines[j + 1]
+                                print(f"[DEBUG] Next line ({j+1}) contains: '{charge_desc}'")
+                                if not charge_desc.endswith(':') and len(charge_desc) > 3:
+                                    extracted_data['Charge 1'] = charge_desc
+                                    print(f"✅ Found Charge 1: {extracted_data['Charge 1']}")
+                                    charge_found = True
+                                    break
+                            else:
+                                print(f"[DEBUG] No line after 'Description:' at line {j}")
+                    if charge_found:
                         break
-                        
-            except Exception as e:
-                print(f"❌ [CHARGE EXTRACTION] Method 1 error: {e}")
-            
-            # Method 2: Fallback to original line-by-line approach
-            if not charge_found:
-                print("🔄 [CHARGE EXTRACTION] Method 2: Line-by-line text parsing")
-                for i, line in enumerate(lines):
-                    if line == 'Charge: 1':
-                        print(f"[DEBUG] Found 'Charge: 1' at line {i}")
-                        for j in range(i + 1, min(i + 15, len(lines))):
-                            print(f"[DEBUG] Checking line {j}: '{lines[j]}'")
-                            if lines[j] == 'Description:':
-                                print(f"[DEBUG] Found 'Description:' at line {j}")
-                                if j + 1 < len(lines):
-                                    charge_desc = lines[j + 1]
-                                    print(f"[DEBUG] Next line ({j+1}) contains: '{charge_desc}'")
-                                    # Check if the next line is actually a charge description (not another label)
-                                    if (not charge_desc.endswith(':') and 
-                                        len(charge_desc) > 3 and
-                                        not any(keyword in charge_desc.upper() for keyword in ['SEVERITY', 'STATUTE', 'CHARGE STATUS', 'CASE TYPE', 'MNCIS', 'CHARGED BY'])):
-                                        extracted_data['Charge 1'] = charge_desc
-                                        print(f"✅ [CHARGE EXTRACTION] Found Charge 1 via line parsing: {extracted_data['Charge 1']}")
-                                        charge_found = True
-                                        break
-                                    else:
-                                        print(f"[DEBUG] Next line appears to be a label, not charge description: '{charge_desc}'")
-                                else:
-                                    print(f"[DEBUG] No line after 'Description:' at line {j}")
-                        if charge_found:
-                            break
             if not extracted_data['Charge 1']:
                 print("🔄 Using keyword fallback for charge...")
                 charge_keywords = ['ASSAULT', 'THEFT', 'BURGLARY', 'DWI', 'DOMESTIC', 'DRUG', 'WARRANT', 'VIOLATION', 'DRIVING', 'POSSESSION', 'WEAPONS', 'TRAFFIC']
