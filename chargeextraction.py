@@ -53,492 +53,6 @@ def convert_base64_to_image(data_url, filename_prefix="mugshot"):
         print(f"❌ Error converting image: {e}")
         return None
 
-def get_api_credentials():
-    """Get API credentials from environment variables"""
-    return {
-        'access_token': os.getenv('ACCESS_TOKEN', ''),
-        'app_id': os.getenv('APP_ID', ''),
-        'business_id': os.getenv('BUSINESS_ID', '')
-    }
-
-def generate_caption(data):
-    """Generate consistent Instagram caption from extracted data"""
-    try:
-        name = data.get('Full Name', 'Unknown')
-        charge = data.get('Charge 1', 'No charge listed')
-        bail = data.get('Bail', 'No bail information')
-        
-        # Clean up the data
-        name = name.strip()
-        charge = charge.strip()
-        bail = bail.strip()
-        
-        # Validate and clean bail information
-        # If bail is missing, empty, or contains invalid content, show N/A
-        invalid_bail_patterns = [
-            'No bail information',
-            'No Bail Information',
-            'Next Court Appearance:',
-            'Next Court Appearance',
-            'None',
-            'Unknown'
-        ]
-        
-        # Check if bail should be N/A
-        bail_upper = bail.upper()
-        should_show_na = (
-            not bail or 
-            bail.strip() == '' or
-            any(pattern in bail for pattern in invalid_bail_patterns) or
-            'NEXT COURT APPEARANCE' in bail_upper
-        )
-        
-        # Set bail display value
-        if should_show_na:
-            bail_display = 'N/A'
-        else:
-            bail_display = bail
-        
-        # Single consistent caption format (without charge field)
-        caption = f"""
-NAME: {name}
-BAIL: {bail_display}
-
-Arrest Date: {get_current_date()}
-Hennepin County, MN
-
-#minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
-        
-        return caption
-        
-    except Exception as e:
-        print(f"❌ Error generating caption: {e}")
-        return f"🚨 Minneapolis Arrest Alert - {data.get('Full Name', 'Unknown')}"
-
-def post_to_instagram(image_url, caption, credentials, test_mode=False):
-    """Post image to Instagram using Meta API"""
-    try:
-        access_token = credentials['access_token']
-        business_id = credentials['business_id']
-        
-        if not access_token or not business_id:
-            print("❌ Missing Meta API credentials")
-            return False
-        
-        # Test mode - just simulate posting
-        if test_mode:
-            print(f"🧪 TEST MODE - Would post to Instagram:")
-            print(f"   📸 Image: {image_url}")
-            print(f"   📝 Caption: {caption[:100]}...")
-            print(f"   🎯 Business ID: {business_id}")
-            print(f"✅ TEST MODE - Post simulation successful")
-            return True
-        
-        # Step 1: Create media object
-        print(f"📸 Creating Instagram media for: {image_url}")
-        
-        media_url = f"https://graph.facebook.com/v23.0/{business_id}/media"
-        media_params = {
-            'image_url': image_url,
-            'caption': caption,
-            'access_token': access_token
-        }
-        
-        media_response = requests.post(media_url, data=media_params)
-        
-        if media_response.status_code != 200:
-            print(f"❌ Failed to create media: {media_response.status_code}")
-            print(f"Response: {media_response.text}")
-            return False
-        
-        media_data = media_response.json()
-        media_id = media_data.get('id')
-        
-        if not media_id:
-            print(f"❌ No media ID returned: {media_data}")
-            return False
-        
-        print(f"✅ Media created with ID: {media_id}")
-        
-        # Step 2: Publish the media
-        print(f"📤 Publishing media to Instagram...")
-        
-        publish_url = f"https://graph.facebook.com/v23.0/{business_id}/media_publish"
-        publish_params = {
-            'creation_id': media_id,
-            'access_token': access_token
-        }
-        
-        publish_response = requests.post(publish_url, data=publish_params)
-        
-        if publish_response.status_code != 200:
-            print(f"❌ Failed to publish media: {publish_response.status_code}")
-            print(f"Response: {publish_response.text}")
-            return False
-        
-        publish_data = publish_response.json()
-        post_id = publish_data.get('id')
-        
-        if post_id:
-            print(f"🎉 Successfully posted to Instagram! Post ID: {post_id}")
-            return True
-        else:
-            print(f"❌ No post ID returned: {publish_data}")
-            return False
-            
-    except Exception as e:
-        print(f"❌ Error posting to Instagram: {e}")
-        return False
-
-def parse_bail_amount(bail_string):
-    """
-    Parse bail string and return numeric value for sorting
-    Returns 999999999 for 'NO BAIL' cases (highest priority)
-    Returns 0 for unparseable amounts
-    """
-    try:
-        if not bail_string or bail_string.strip() == '':
-            return 0
-        
-        bail_upper = bail_string.upper().strip()
-        
-        # Handle special cases
-        if 'NO BAIL' in bail_upper or 'HOLD WITHOUT BAIL' in bail_upper:
-            return 999999999  # Highest priority
-        
-        if 'RELEASED' in bail_upper or 'NO BAIL INFORMATION' in bail_upper:
-            return 0  # Lowest priority
-        
-        # Extract dollar amount using regex
-        money_pattern = r'\$[\d,]+\.?\d*'
-        matches = re.findall(money_pattern, bail_string)
-        
-        if matches:
-            # Take the first dollar amount found
-            amount_str = matches[0].replace('$', '').replace(',', '')
-            return float(amount_str)
-        
-        return 0
-        
-    except Exception as e:
-        print(f"⚠️  Error parsing bail amount '{bail_string}': {e}")
-        return 0
-
-def filter_top_bail_inmates(data_list, top_n=10):
-    """
-    Filter inmates for Instagram posting prioritization
-    Takes all inmates with mugshots and charges, sorts by bail amount (highest first)
-    For posting: prioritizes highest bail first, then includes those without bail
-    
-    Args:
-        data_list: List of inmate dictionaries (already filtered for mugshot + charge)
-        top_n: Number of top inmates to return (default 10)
-    
-    Returns:
-        List of top N inmates sorted by bail amount (highest first)
-    """
-    try:
-        print(f"\n🔍 Prioritizing {top_n} inmates for Instagram posting (by bail amount)...")
-        
-        if not data_list:
-            print("❌ No inmates to filter")
-            return []
-        
-        # Add parsed bail amount to each inmate for sorting
-        inmates_for_posting = []
-        
-        for inmate in data_list:
-            bail_str = inmate.get('Bail', '')
-            bail_amount = parse_bail_amount(bail_str)
-            
-            # All inmates in data_list already have mugshots and charges
-            inmates_for_posting.append({
-                **inmate,
-                '_bail_amount': bail_amount
-            })
-            
-            bail_display = f"${bail_amount:,.2f}" if bail_amount > 0 else "No bail info"
-            print(f"📊 {inmate.get('Full Name', 'Unknown')}: {bail_str} → {bail_display}")
-        
-        print(f"\n📊 {len(inmates_for_posting)} inmates available for posting prioritization")
-        
-        # Sort by bail amount (highest first), but include all regardless of bail status
-        sorted_inmates = sorted(inmates_for_posting, key=lambda x: x['_bail_amount'], reverse=True)
-        
-        # Take top N and remove the temporary _bail_amount field
-        top_inmates = []
-        for i, inmate in enumerate(sorted_inmates[:top_n]):
-            # Remove the temporary sorting field
-            filtered_inmate = {k: v for k, v in inmate.items() if k != '_bail_amount'}
-            top_inmates.append(filtered_inmate)
-            
-            bail_amount = inmate['_bail_amount']
-            if bail_amount == 999999999:
-                bail_display = "NO BAIL"
-            elif bail_amount > 0:
-                bail_display = f"${bail_amount:,.2f}"
-            else:
-                bail_display = "No bail info"
-            
-            print(f"🏆 #{i+1}: {inmate.get('Full Name', 'Unknown')} - {bail_display}")
-        
-        print(f"\n✅ Prioritized {len(top_inmates)} inmates for Instagram posting (by bail amount)")
-        return top_inmates
-        
-    except Exception as e:
-        print(f"❌ Error filtering inmates: {e}")
-        return data_list  # Return original list on error
-
-def save_to_posting_queue(data_list):
-    """Save inmates to posting queue for staggered posting"""
-    try:
-        print(f"💾 Creating posting queue with {len(data_list)} inmates...")
-        
-        # Filter to top 10 highest bail inmates BEFORE creating queue
-        filtered_inmates = filter_top_bail_inmates(data_list, top_n=10)
-        
-        # Add timestamp and posting status to each inmate
-        queue_data = {
-            'created_at': get_current_datetime_iso(),
-            'total_inmates': len(filtered_inmates),
-            'posted_count': 0,
-            'inmates': []
-        }
-        
-        for i, data in enumerate(filtered_inmates):
-            inmate = {
-                'id': i + 1,
-                'data': data,
-                'posted': False,
-                'posted_at': None
-            }
-            queue_data['inmates'].append(inmate)
-        
-        # Save to JSON file
-        with open('posting_queue.json', 'w', encoding='utf-8') as f:
-            json.dump(queue_data, f, indent=2, ensure_ascii=False)
-        
-        print(f"✅ Posting queue saved successfully")
-        print(f"📊 Queue stats: {len(filtered_inmates)} inmates prioritized for posting")
-        print(f"🎯 Prioritized from {len(data_list)} total inmates to top 10 by bail amount")
-        return True
-        
-    except Exception as e:
-        print(f"❌ Error saving posting queue: {e}")
-        return False
-
-def get_next_inmates_to_post(batch_size=2):
-    """Get next batch of inmates to post from queue"""
-    try:
-        # Load queue
-        try:
-            with open('posting_queue.json', 'r', encoding='utf-8') as f:
-                queue_data = json.load(f)
-        except FileNotFoundError:
-            print("📭 No posting queue found")
-            return []
-        
-        # Find unposted inmates
-        unposted_inmates = [inmate for inmate in queue_data['inmates'] if not inmate['posted']]
-        
-        if not unposted_inmates:
-            print("✅ All inmates have been posted!")
-            return []
-        
-        # Get next batch
-        next_batch = unposted_inmates[:batch_size]
-        
-        print(f"📋 Found {len(next_batch)} inmates ready to post")
-        print(f"📊 Remaining in queue: {len(unposted_inmates)} total")
-        
-        return next_batch
-        
-    except Exception as e:
-        print(f"❌ Error reading posting queue: {e}")
-        return []
-
-def mark_inmates_as_posted(inmate_ids):
-    """Mark inmates as posted in the queue"""
-    try:
-        # Load queue
-        with open('posting_queue.json', 'r', encoding='utf-8') as f:
-            queue_data = json.load(f)
-        
-        # Mark as posted
-        posted_count = 0
-        for inmate in queue_data['inmates']:
-            if inmate['id'] in inmate_ids:
-                inmate['posted'] = True
-                inmate['posted_at'] = get_current_datetime_iso()
-                posted_count += 1
-        
-        # Update stats
-        queue_data['posted_count'] = sum(1 for inmate in queue_data['inmates'] if inmate['posted'])
-        
-        # Save updated queue
-        with open('posting_queue.json', 'w', encoding='utf-8') as f:
-            json.dump(queue_data, f, indent=2, ensure_ascii=False)
-        
-        print(f"✅ Marked {posted_count} inmates as posted")
-        print(f"📊 Total posted: {queue_data['posted_count']}/{queue_data['total_inmates']}")
-        
-        return True
-        
-    except Exception as e:
-        print(f"❌ Error updating posting queue: {e}")
-        return False
-
-def post_next_inmates(batch_size=2, repo_name="minneapolismugshots", username="ryanjhermes", test_mode=False):
-    """Post next batch of inmates from queue"""
-    try:
-        print(f"\n📱 Starting batch Instagram posting...")
-        
-        # Get next inmates to post
-        inmates_to_post = get_next_inmates_to_post(batch_size)
-        
-        if not inmates_to_post:
-            print("📭 No inmates to post at this time")
-            return True
-        
-        # Get API credentials
-        credentials = get_api_credentials()
-        
-        if not credentials['access_token']:
-            print("⚠️  No Meta API credentials found - skipping Instagram posting")
-            return False
-        
-        successful_posts = []
-        failed_posts = []
-        
-        for inmate in inmates_to_post:
-            try:
-                inmate_data = inmate['data']
-                inmate_id = inmate['id']
-                
-                print(f"\n{'='*40}")
-                print(f"📱 Posting inmate #{inmate_id}: {inmate_data.get('Full Name', 'Unknown')}")
-                print(f"{'='*40}")
-                
-                # Convert local file path to GitHub Pages URL
-                mugshot_file = inmate_data.get('Mugshot_File', '')
-                if mugshot_file.startswith('mugshots/'):
-                    filename = mugshot_file.replace('mugshots/', '')
-                else:
-                    filename = os.path.basename(mugshot_file)
-                
-                image_url = f"https://{username}.github.io/{repo_name}/mugshots/{filename}"
-                print(f"🖼️  Image URL: {image_url}")
-                
-                # Generate caption
-                caption = generate_caption(inmate_data)
-                print(f"📝 Caption preview: {caption[:100]}...")
-                
-                # Post to Instagram
-                success = post_to_instagram(image_url, caption, credentials, test_mode)
-                
-                if success:
-                    successful_posts.append(inmate_id)
-                    print(f"✅ Successfully posted {inmate_data.get('Full Name', 'Unknown')}")
-                else:
-                    failed_posts.append(inmate_id)
-                    print(f"❌ Failed to post {inmate_data.get('Full Name', 'Unknown')}")
-                
-                # Randomized wait between posts in the same batch (human-like behavior)
-                if len(inmates_to_post) > 1 and inmate != inmates_to_post[-1]:
-                    import random
-                    # Random delay between 8-15 seconds instead of fixed 10 seconds
-                    random_delay = random.randint(8, 15)
-                    print(f"⏳ Waiting {random_delay} seconds before next post (randomized for detection avoidance)...")
-                    time.sleep(random_delay)
-                
-            except Exception as e:
-                print(f"❌ Error processing inmate #{inmate_id}: {e}")
-                failed_posts.append(inmate_id)
-                continue
-        
-        # Mark successful posts as completed
-        if successful_posts:
-            mark_inmates_as_posted(successful_posts)
-        
-        # Summary
-        print(f"\n📊 BATCH POSTING SUMMARY:")
-        print(f"   ✅ Successful posts: {len(successful_posts)}")
-        print(f"   ❌ Failed posts: {len(failed_posts)}")
-        print(f"   📱 Total in batch: {len(inmates_to_post)}")
-        
-        return len(successful_posts) > 0
-        
-    except Exception as e:
-        print(f"❌ Error in batch posting process: {e}")
-        return False
-
-def post_all_to_instagram(data_list, repo_name="minneapolismugshots", username="ryanjhermes", test_mode=False):
-    """Post all scraped data to Instagram"""
-    try:
-        print(f"\n📱 Starting Instagram posting process...")
-        
-        # Get API credentials
-        credentials = get_api_credentials()
-        
-        if not credentials['access_token']:
-            print("⚠️  No Meta API credentials found - skipping Instagram posting")
-            return False
-        
-        successful_posts = 0
-        failed_posts = 0
-        
-        for i, data in enumerate(data_list, 1):
-            try:
-                print(f"\n{'='*50}")
-                print(f"📱 Posting {i}/{len(data_list)}: {data.get('Full Name', 'Unknown')}")
-                print(f"{'='*50}")
-                
-                # Convert local file path to GitHub Pages URL
-                mugshot_file = data.get('Mugshot_File', '')
-                if mugshot_file.startswith('mugshots/'):
-                    filename = mugshot_file.replace('mugshots/', '')
-                else:
-                    filename = os.path.basename(mugshot_file)
-                
-                image_url = f"https://{username}.github.io/{repo_name}/mugshots/{filename}"
-                print(f"🖼️  Image URL: {image_url}")
-                
-                # Generate caption
-                caption = generate_caption(data)
-                print(f"📝 Caption preview: {caption[:100]}...")
-                
-                # Post to Instagram
-                success = post_to_instagram(image_url, caption, credentials, test_mode)
-                
-                if success:
-                    successful_posts += 1
-                    print(f"✅ Successfully posted {data.get('Full Name', 'Unknown')}")
-                    
-                    # Wait between posts to avoid rate limiting
-                    if i < len(data_list):  # Don't wait after the last post
-                        print("⏳ Waiting 30 seconds before next post...")
-                        time.sleep(30)
-                else:
-                    failed_posts += 1
-                    print(f"❌ Failed to post {data.get('Full Name', 'Unknown')}")
-                
-            except Exception as e:
-                print(f"❌ Error processing {data.get('Full Name', 'Unknown')}: {e}")
-                failed_posts += 1
-                continue
-        
-        # Summary
-        print(f"\n📊 INSTAGRAM POSTING SUMMARY:")
-        print(f"   ✅ Successful posts: {successful_posts}")
-        print(f"   ❌ Failed posts: {failed_posts}")
-        print(f"   📱 Total processed: {len(data_list)}")
-        
-        return successful_posts > 0
-        
-    except Exception as e:
-        print(f"❌ Error in Instagram posting process: {e}")
-        return False
-
 def get_current_date():
     """
     Get the current date in Central Time in MM/DD/YYYY format (as expected by this website)
@@ -1204,7 +718,6 @@ def click_first_booking_id(driver):
 def extract_key_details(driver):
     """
     Extract only the key details we need: Full Name, Charge 1, Bail, and Mugshot
-    Uses improved extraction method with modal content boundaries
     """
     # Import selenium components needed for this function
     from selenium.webdriver.common.by import By
@@ -1227,7 +740,7 @@ def extract_key_details(driver):
             # Look for name in the main page content
             page_text = driver.find_element(By.TAG_NAME, 'body').text
             print("📍 Full page text:")
-            print(page_text)
+            # print(page_text)
             
             # Extract modal content between boundaries
             modal_start = "Beginning of modal content"
@@ -1270,183 +783,37 @@ def extract_key_details(driver):
                                 break
                     
                     # Extract Bail information (look for bail-related fields)
-                    elif "Bail Options:" in line and i + 1 < len(lines):
-                        bail_value = lines[i + 1]
-                        # Only accept if it contains dollar sign or specific bail keywords
-                        if (bail_value.strip() and 
-                            ('$' in bail_value or 
-                             'NO BAIL' in bail_value.upper() or
-                             'RELEASED' in bail_value.upper() or
-                             'BOND' in bail_value.upper())):
-                            extracted_data['Bail'] = bail_value.strip()
-                            print(f"✅ Found Bail: {bail_value.strip()}")
-                    elif "Bail:" in line and ":" in line:
+                    elif "Bail" in line and ":" in line:
                         # Extract the value after the colon
-                        bail_label, bail_value = line.split(":", 1)
-                        if bail_value.strip():
-                            extracted_data['Bail'] = bail_value.strip()
-                            print(f"✅ Found Bail: {bail_value.strip()}")
+                        if ":" in line:
+                            bail_label, bail_value = line.split(":", 1)
+                            if bail_value.strip():
+                                extracted_data['Bail'] = bail_value.strip()
+                                print(f"✅ Found Bail: {bail_value.strip()}")
                 
                 # Look for mugshot image
                 try:
-                    print("\n🖼️  Looking for mugshot image...")
-                    # Look for image elements in the modal
+                    # Look for img elements that might be mugshots
                     img_elements = driver.find_elements(By.CSS_SELECTOR, 'img')
-                    mugshot_saved = False
-                    
                     for img in img_elements:
                         src = img.get_attribute('src')
-                        alt = img.get_attribute('alt') or ""
-                        
-                        # Check if this looks like a booking photo
-                        if (src and 
-                            ('data:image' in src or 'booking' in alt.lower() or 'photo' in alt.lower() or 'mugshot' in alt.lower())):
-                            
-                            print(f"📸 Found potential mugshot: {alt}")
-                            
-                            # Use full name for filename if available
-                            if extracted_data['Full Name']:
-                                # Clean filename (remove special characters)
-                                clean_name = "".join(c for c in extracted_data['Full Name'] if c.isalnum() or c in (' ', '-', '_')).rstrip()
-                                clean_name = clean_name.replace(' ', '_')
-                                filename_prefix = f"mugshot_{clean_name}"
-                            else:
-                                filename_prefix = f"mugshot_{int(time.time())}"
-                            
-                            # Convert and save the image
-                            saved_filename = convert_base64_to_image(src, filename_prefix)
-                            if saved_filename:
-                                extracted_data['Mugshot_File'] = saved_filename
-                                mugshot_saved = True
-                                print(f"✅ Found and saved mugshot: {saved_filename}")
-                                break
-                    
-                    if not mugshot_saved:
-                        print("⚠️  No mugshot image found or saved")
-                        extracted_data['Mugshot_File'] = 'No Image'
-                        
+                        if src and ('mugshot' in src.lower() or 'photo' in src.lower() or 'image' in src.lower()):
+                            # Convert base64 image to file
+                            if src.startswith('data:image'):
+                                filename = f"mugshot_{extracted_data['Full Name'].replace(' ', '_').replace(',', '')}.jpg"
+                                filepath = convert_base64_to_image(src, filename)
+                                if filepath:
+                                    extracted_data['Mugshot_File'] = filepath
+                                    print(f"✅ Found and saved mugshot: {filepath}")
+                            break
                 except Exception as e:
-                    print(f"❌ Error looking for mugshot: {e}")
-                    extracted_data['Mugshot_File'] = 'Error'
+                    print(f"⚠️  Error looking for mugshot: {e}")
                 
             else:
                 print("❌ Could not find modal boundaries in page text")
                 
-                # Fallback to original method if modal boundaries not found
-                print("🔄 Falling back to original extraction method...")
-                
-                # Find the modal content
-                modal_content = None
-                modal_selectors = [
-                    '[role="dialog"]',
-                    '.modal',
-                    '[class*="modal"]',
-                    '[class*="dialog"]'
-                ]
-                
-                for selector in modal_selectors:
-                    try:
-                        modal_content = driver.find_element(By.CSS_SELECTOR, selector)
-                        print(f"✅ Found modal with selector: {selector}")
-                        break
-                    except:
-                        continue
-                
-                if modal_content:
-                    # Use original extraction logic as fallback
-                    modal_text = modal_content.text
-                    lines = [line.strip() for line in modal_text.split('\n') if line.strip()]
-                    
-                    print(f"\n🔍 Fallback parsing {len(lines)} lines...")
-                    
-                    # Extract Full Name from modal if not already found
-                    if not extracted_data['Full Name']:
-                        name_patterns = [
-                            'Full Name:',
-                            'Name:',
-                            'Inmate Name:',
-                            'Arrestee Name:',
-                            'Defendant Name:',
-                            'Subject Name:'
-                        ]
-                        
-                        for pattern in name_patterns:
-                            for i, line in enumerate(lines):
-                                if pattern in line and i + 1 < len(lines):
-                                    potential_name = lines[i + 1]
-                                    if (potential_name and 
-                                        any(c.isalpha() for c in potential_name) and 
-                                        ' ' in potential_name and
-                                        len(potential_name) > 5):
-                                        extracted_data['Full Name'] = potential_name
-                                        print(f"✅ Found Full Name (fallback): {extracted_data['Full Name']}")
-                                        break
-                            if extracted_data['Full Name']:
-                                break
-                    
-                    # Extract charge using original logic
-                    if not extracted_data['Charge 1']:
-                        for i, line in enumerate(lines):
-                            if line == 'Charge: 1':
-                                for j in range(i + 1, min(i + 15, len(lines))):
-                                    if lines[j] == 'Description:' and j + 1 < len(lines):
-                                        charge_desc = lines[j + 1]
-                                        if not charge_desc.endswith(':') and len(charge_desc) > 3:
-                                            extracted_data['Charge 1'] = charge_desc
-                                            print(f"✅ Found Charge 1 (fallback): {extracted_data['Charge 1']}")
-                                            break
-                                break
-                    
-                    # Extract bail using original logic
-                    if not extracted_data['Bail']:
-                        for i, line in enumerate(lines):
-                            if 'Bail Options:' in line and i + 1 < len(lines):
-                                bail_candidate = lines[i + 1]
-                                if (bail_candidate.strip() and 
-                                    ('$' in bail_candidate or 
-                                     'NO BAIL' in bail_candidate.upper() or
-                                     'RELEASED' in bail_candidate.upper() or
-                                     'BOND' in bail_candidate.upper())):
-                                    extracted_data['Bail'] = bail_candidate.strip()
-                                    print(f"✅ Found Bail (fallback): {extracted_data['Bail']}")
-                                    break
-                    
-                    # Extract mugshot using original logic
-                    if extracted_data['Mugshot_File'] == 'No Image':
-                        try:
-                            img_elements = modal_content.find_elements(By.CSS_SELECTOR, 'img')
-                            for img in img_elements:
-                                src = img.get_attribute('src')
-                                alt = img.get_attribute('alt') or ""
-                                
-                                if (src and 
-                                    ('data:image' in src or 'booking' in alt.lower() or 'photo' in alt.lower() or 'mugshot' in alt.lower())):
-                                    
-                                    if extracted_data['Full Name']:
-                                        clean_name = "".join(c for c in extracted_data['Full Name'] if c.isalnum() or c in (' ', '-', '_')).rstrip()
-                                        clean_name = clean_name.replace(' ', '_')
-                                        filename_prefix = f"mugshot_{clean_name}"
-                                    else:
-                                        filename_prefix = f"mugshot_{int(time.time())}"
-                                    
-                                    saved_filename = convert_base64_to_image(src, filename_prefix)
-                                    if saved_filename:
-                                        extracted_data['Mugshot_File'] = saved_filename
-                                        print(f"✅ Found and saved mugshot (fallback): {saved_filename}")
-                                        break
-                        except Exception as e:
-                            print(f"❌ Error extracting mugshot (fallback): {e}")
-                
         except Exception as e:
             print(f"❌ Error extracting page text: {e}")
-        
-        # Set defaults for missing fields
-        if not extracted_data['Full Name']:
-            extracted_data['Full Name'] = 'Unknown'
-        if not extracted_data['Charge 1']:
-            extracted_data['Charge 1'] = 'No charge listed'
-        if not extracted_data['Bail']:
-            extracted_data['Bail'] = 'No bail information'
         
         # Print final extracted data
         print(f"\n📊 EXTRACTED DATA:")
@@ -1458,9 +825,9 @@ def extract_key_details(driver):
     except Exception as e:
         print(f"❌ Error in extract_key_details: {e}")
         return {
-            'Full Name': 'Unknown',
-            'Charge 1': 'No charge listed',
-            'Bail': 'No bail information',
+            'Full Name': '',
+            'Charge 1': '',
+            'Bail': '',
             'Mugshot_File': 'No Image'
         }
 
@@ -1709,14 +1076,14 @@ def process_multiple_bookings(driver, limit=3):
                         not any(bail_text.strip().upper() == b.upper() for b in invalid_bails)
                     )
 
-                    # Require both mugshot and charge - bail is optional
-                    if has_mugshot and has_valid_charge:
+                    # Make charge field optional - only require mugshot and valid bail
+                    if has_mugshot and has_valid_bail:
                         all_extracted_data.append(extracted_data)
                         print(f"✅ ACCEPTED: {extracted_data['Full Name']} - {charge_text} - {bail_text}")
                     else:
                         missing = []
                         if not has_mugshot: missing.append("mugshot")
-                        if not has_valid_charge: missing.append("valid charge")
+                        if not has_valid_bail: missing.append(f"valid bail (got: '{bail_text}')")
                         print(f"⏭️  REJECTED: {extracted_data['Full Name']} - Missing: {', '.join(missing)}")
                 else:
                     print(f"⚠️  No data extracted for {booking_id}")
@@ -1733,8 +1100,8 @@ def process_multiple_bookings(driver, limit=3):
         
         print(f"\n📊 PROCESSING COMPLETE:")
         print(f"   Total IDs processed: {len(booking_ids)}")
-        print(f"   Inmates with mugshot + charge: {len(all_extracted_data)}")
-        print(f"   Filtered out (no mugshot or charge): {len(booking_ids) - len(all_extracted_data)}")
+        print(f"   Inmates with mugshot + valid bail: {len(all_extracted_data)}")
+        print(f"   Filtered out (no mugshot or valid bail): {len(booking_ids) - len(all_extracted_data)}")
         
         return all_extracted_data
         
@@ -2002,104 +1369,27 @@ def open_hennepin_jail_roster(inmate_limit=100):
         driver.quit()
         print("Browser closed.")
 
-def test_instagram_posting():
-    """Test Instagram posting with existing CSV data"""
-    try:
-        print("🧪 Testing Instagram posting with existing data...")
-        
-        # Read existing CSV data
-        import csv
-        data_list = []
-        
-        try:
-            with open('jail_roster_data.csv', 'r', encoding='utf-8') as csvfile:
-                reader = csv.DictReader(csvfile)
-                for row in reader:
-                    data_list.append(row)
-            
-            print(f"📊 Found {len(data_list)} records in CSV")
-            
-            if data_list:
-                # Test posting (simulation mode)
-                post_all_to_instagram(data_list, test_mode=True)
-            else:
-                print("❌ No data found in CSV file")
-                
-        except FileNotFoundError:
-            print("❌ jail_roster_data.csv not found. Run scraping first.")
-        except Exception as e:
-            print(f"❌ Error reading CSV: {e}")
-            
-    except Exception as e:
-        print(f"❌ Error in test: {e}")
-
-def check_posting_queue():
-    """Check status of posting queue"""
-    try:
-        print("📋 Checking posting queue status...")
-        
-        try:
-            with open('posting_queue.json', 'r', encoding='utf-8') as f:
-                queue_data = json.load(f)
-            
-            total = queue_data.get('total_inmates', 0)
-            posted = queue_data.get('posted_count', 0)
-            pending = total - posted
-            
-            print(f"📊 QUEUE STATUS:")
-            print(f"   Total inmates: {total}")
-            print(f"   Posted: {posted}")
-            print(f"   Pending: {pending}")
-            print(f"   Created: {queue_data.get('created_at', 'Unknown')}")
-            
-            if pending > 0:
-                print(f"\n📋 Next {min(2, pending)} inmates to post:")
-                unposted = [inmate for inmate in queue_data['inmates'] if not inmate['posted']]
-                for i, inmate in enumerate(unposted[:2], 1):
-                    name = inmate['data'].get('Full Name', 'Unknown')
-                    print(f"   {i}. {name}")
-            else:
-                print("✅ All inmates have been posted!")
-                
-        except FileNotFoundError:
-            print("📭 No posting queue found")
-            print("💡 Run 'python data.py' to create a queue")
-            
-    except Exception as e:
-        print(f"❌ Error checking queue: {e}")
-
 if __name__ == "__main__":
     import sys
     
-    # Check for command line arguments
-    if len(sys.argv) > 1:
-        command = sys.argv[1]
-        if command == "test-instagram":
-            test_instagram_posting()
-        elif command == "post-next":
-            # Post next batch of inmates from queue
-            post_next_inmates()
-        elif command == "post-next-test":
-            # Post next batch in test mode (no actual posting)
-            post_next_inmates(test_mode=True)
-        elif command == "test":
-            # Full scraping in test mode (limit to 25 inmates, filter to top 10 highest bail)
-            print("🧪 Running in TEST MODE - processing 25 inmates, filtering to top 10 highest bail (excluding 'No Bail Information')")
-            open_hennepin_jail_roster(inmate_limit=25)
-        elif command == "check-queue":
-            # Check posting queue status
-            check_posting_queue()
-        else:
-            print(f"Unknown command: {command}")
-            print("Available commands:")
-            print("  python data.py                # Full scraping (100 inmates) with top 10 highest bail filtering")
-            print("  python data.py test           # Test scraping (25 inmates → top 10 highest bail)")
-            print("  python data.py test-instagram # Test posting with existing data")
-            print("  python data.py post-next      # Post next batch from queue")
-            print("  python data.py post-next-test # Test posting (simulation only)")
-            print("  python data.py check-queue    # Check posting queue status")
+# Check for command line arguments
+if len(sys.argv) > 1:
+    command = sys.argv[1]
+    if command == "test":
+        # Full scraping in test mode (limit to 25 inmates, filter to top 10 highest bail)
+        print("🧪 Running in TEST MODE - processing 25 inmates, filtering to top 10 highest bail (excluding 'No Bail Information')")
+        open_hennepin_jail_roster(inmate_limit=25)
     else:
-        # Production mode - scrape 100 inmates and filter to top 10 with actual bail amounts
-        print("🚀 Running in PRODUCTION MODE - processing 100 inmates, filtering to top 10 highest bail (excluding 'No Bail Information')")
-        open_hennepin_jail_roster(inmate_limit=100)
+        print(f"Unknown command: {command}")
+        print("Available commands:")
+        print("  python data.py                # Full scraping (100 inmates) with top 10 highest bail filtering")
+        print("  python data.py test           # Test scraping (25 inmates → top 10 highest bail)")
+        print("  python data.py test-instagram # Test posting with existing data")
+        print("  python data.py post-next      # Post next batch from queue")
+        print("  python data.py post-next-test # Test posting (simulation only)")
+        print("  python data.py check-queue    # Check posting queue status")
+else:
+    # Production mode - scrape 100 inmates and filter to top 10 with actual bail amounts
+    print("🚀 Running in PRODUCTION MODE - processing 100 inmates, filtering to top 10 highest bail (excluding 'No Bail Information')")
+    open_hennepin_jail_roster(inmate_limit=100)
 
