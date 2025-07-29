@@ -1355,46 +1355,32 @@ def extract_key_details(driver):
                                 print(f"✅ Found potential name from modal content: {extracted_data['Full Name']}")
                                 break
 
-            # Extract first charge description using direct component targeting
+            # Extract first charge description using direct HTML targeting
             charge_found = False
             print("\n🔍 [CHARGE EXTRACTION] Starting charge extraction...")
             
-            # Method 1: Try direct component targeting for charge details
+            # Method 1: Direct HTML targeting for charge descriptions
             try:
-                print("🔄 [CHARGE EXTRACTION] Method 1: Direct component targeting")
+                print("🔄 [CHARGE EXTRACTION] Method 1: Direct HTML targeting")
                 
-                # Look for jr-charge-detail components
-                charge_components = modal_content.find_elements(By.CSS_SELECTOR, 'jr-charge-detail')
-                print(f"[DEBUG] Found {len(charge_components)} jr-charge-detail components")
+                # Look for p elements with slot="input" that contain charge descriptions
+                p_elements = modal_content.find_elements(By.CSS_SELECTOR, 'p[slot="input"]')
+                print(f"[DEBUG] Found {len(p_elements)} p elements with slot='input'")
                 
-                for comp_idx, charge_comp in enumerate(charge_components):
-                    print(f"[DEBUG] Examining charge component {comp_idx + 1}")
+                for p_idx, p_elem in enumerate(p_elements):
+                    charge_text = p_elem.text.strip()
+                    print(f"[DEBUG] P element {p_idx + 1} text: '{charge_text}'")
                     
-                    # Look for description elements within this charge component
-                    desc_elements = charge_comp.find_elements(By.CSS_SELECTOR, 'hcso-read-only-element[label="Description"]')
-                    print(f"[DEBUG] Found {len(desc_elements)} description elements in component {comp_idx + 1}")
-                    
-                    for desc_idx, desc_elem in enumerate(desc_elements):
-                        print(f"[DEBUG] Examining description element {desc_idx + 1}")
+                    # Check if this looks like a charge description (not bail, not empty, not a label)
+                    if (charge_text and 
+                        len(charge_text) > 10 and
+                        not charge_text.endswith(':') and
+                        not any(keyword in charge_text.upper() for keyword in ['BAIL', 'BOND', 'RELEASE', 'HOLD', 'NO BAIL']) and
+                        any(keyword in charge_text.upper() for keyword in ['ASSAULT', 'THEFT', 'DRUG', 'DWI', 'DOMESTIC', 'WEAPONS', 'TRAFFIC', 'POSSESSION', 'WARRANT'])):
                         
-                        # Look for the p tag with the actual charge text
-                        p_elements = desc_elem.find_elements(By.CSS_SELECTOR, 'p[slot="input"]')
-                        print(f"[DEBUG] Found {len(p_elements)} p elements with slot='input'")
-                        
-                        for p_idx, p_elem in enumerate(p_elements):
-                            charge_text = p_elem.text.strip()
-                            print(f"[DEBUG] P element {p_idx + 1} text: '{charge_text}'")
-                            
-                            if charge_text and len(charge_text) > 10:
-                                extracted_data['Charge 1'] = charge_text
-                                print(f"✅ [CHARGE EXTRACTION] Found Charge 1 via direct targeting: {extracted_data['Charge 1']}")
-                                charge_found = True
-                                break
-                        
-                        if charge_found:
-                            break
-                    
-                    if charge_found:
+                        extracted_data['Charge 1'] = charge_text
+                        print(f"✅ [CHARGE EXTRACTION] Found Charge 1 via direct HTML: {extracted_data['Charge 1']}")
+                        charge_found = True
                         break
                         
             except Exception as e:
