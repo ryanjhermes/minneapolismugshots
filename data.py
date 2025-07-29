@@ -1189,8 +1189,8 @@ def extract_key_details(driver):
     try:
         print("\n📋 Extracting key details (Full Name, Charge 1, Bail, Mugshot)...")
         
-        # Wait for modal to fully load
-        time.sleep(2)
+        # Wait for modal to fully load - longer wait for CI environment
+        time.sleep(5)
         
         extracted_data = {
             'Full Name': '',
@@ -1244,14 +1244,38 @@ def extract_key_details(driver):
             try:
                 modal_content = driver.find_element(By.CSS_SELECTOR, selector)
                 print(f"✅ Found modal with selector: {selector}")
+                
+                # Wait for modal to be fully loaded and interactive
+                try:
+                    from selenium.webdriver.support.ui import WebDriverWait
+                    from selenium.webdriver.support import expected_conditions as EC
+                    WebDriverWait(driver, 10).until(
+                        EC.presence_of_element_located((By.CSS_SELECTOR, selector))
+                    )
+                    print("✅ Modal is fully loaded and interactive")
+                except Exception as e:
+                    print(f"⚠️  Modal wait timeout: {e}")
+                
                 break
             except:
                 continue
         
         if modal_content:
-            modal_text = modal_content.text
-            lines = [line.strip() for line in modal_text.split('\n') if line.strip()]
-
+            # Try to get modal content with retries for CI environment
+            modal_text = ""
+            max_retries = 3
+            for attempt in range(max_retries):
+                modal_text = modal_content.text
+                lines = [line.strip() for line in modal_text.split('\n') if line.strip()]
+                
+                # Check if we have enough content (should have more than just headers)
+                if len(lines) > 20:  # Should have substantial content
+                    print(f"✅ Modal content loaded successfully (attempt {attempt + 1})")
+                    break
+                else:
+                    print(f"⚠️  Modal content seems incomplete (attempt {attempt + 1}), waiting...")
+                    time.sleep(2)
+            
             # Debug: Print all modal lines for this inmate
             print("\n--- MODAL LINES ---")
             for idx, line in enumerate(lines):
@@ -1305,19 +1329,26 @@ def extract_key_details(driver):
             charge_found = False
             for i, line in enumerate(lines):
                 if line == 'Charge: 1':
-                    for j in range(i + 1, min(i + 10, len(lines))):
-                        if lines[j] == 'Description:' and j + 1 < len(lines):
-                            charge_desc = lines[j + 1]
-                            if not charge_desc.endswith(':') and len(charge_desc) > 3:
-                                extracted_data['Charge 1'] = charge_desc
-                                print(f"✅ Found Charge 1: {extracted_data['Charge 1']}")
-                                charge_found = True
-                                break
+                    print(f"[DEBUG] Found 'Charge: 1' at line {i}")
+                    for j in range(i + 1, min(i + 15, len(lines))):
+                        print(f"[DEBUG] Checking line {j}: '{lines[j]}'")
+                        if lines[j] == 'Description:':
+                            print(f"[DEBUG] Found 'Description:' at line {j}")
+                            if j + 1 < len(lines):
+                                charge_desc = lines[j + 1]
+                                print(f"[DEBUG] Next line ({j+1}) contains: '{charge_desc}'")
+                                if not charge_desc.endswith(':') and len(charge_desc) > 3:
+                                    extracted_data['Charge 1'] = charge_desc
+                                    print(f"✅ Found Charge 1: {extracted_data['Charge 1']}")
+                                    charge_found = True
+                                    break
+                            else:
+                                print(f"[DEBUG] No line after 'Description:' at line {j}")
                     if charge_found:
                         break
             if not extracted_data['Charge 1']:
                 print("🔄 Using keyword fallback for charge...")
-                charge_keywords = ['ASSAULT', 'THEFT', 'BURGLARY', 'DWI', 'DOMESTIC', 'DRUG', 'WARRANT', 'VIOLATION', 'DRIVING', 'POSSESSION']
+                charge_keywords = ['ASSAULT', 'THEFT', 'BURGLARY', 'DWI', 'DOMESTIC', 'DRUG', 'WARRANT', 'VIOLATION', 'DRIVING', 'POSSESSION', 'WEAPONS', 'TRAFFIC']
                 for i, line in enumerate(lines):
                     if (any(keyword in line.upper() for keyword in charge_keywords) and 
                         not line.endswith(':') and 
@@ -1325,6 +1356,24 @@ def extract_key_details(driver):
                         extracted_data['Charge 1'] = line
                         print(f"✅ Found charge via keyword fallback: {extracted_data['Charge 1']}")
                         break
+                
+                # If still no charge, try to extract from case details section
+                if not extracted_data['Charge 1']:
+                    print("🔄 Looking for charge in case details section...")
+                    for i, line in enumerate(lines):
+                        if 'Case Details' in line and i + 1 < len(lines):
+                            # Look for charge-like content in the next few lines
+                            for j in range(i + 1, min(i + 10, len(lines))):
+                                potential_charge = lines[j]
+                                if (potential_charge and 
+                                    not potential_charge.endswith(':') and 
+                                    len(potential_charge) > 10 and
+                                    any(keyword in potential_charge.upper() for keyword in charge_keywords)):
+                                    extracted_data['Charge 1'] = potential_charge
+                                    print(f"✅ Found charge in case details: {extracted_data['Charge 1']}")
+                                    break
+                            if extracted_data['Charge 1']:
+                                break
             if not extracted_data['Charge 1']:
                 extracted_data['Charge 1'] = 'No valid charge found'
                 print(f"⚠️  No charge found - using default: {extracted_data['Charge 1']}")
