@@ -1,18 +1,73 @@
 {
-  "created_at": "2025-07-29T10:59:55.723838-05:00",
-  "total_inmates": 1,
-  "posted_count": 1,
+  "created_at": "2025-07-29T17:10:55.520249-05:00",
+  "total_inmates": 6,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "KAMINSKI, KYLEE ROSE MARIE",
-        "Charge 1": "No valid charge found",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KAMINSKI_KYLEE_ROSE_MARIE.jpg"
+        "Full Name": "BRINDA, RICHARD JEROME",
+        "Charge 1": "ASSAULT-5TH DEGREE-MISDEMEANOR",
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BRINDA_RICHARD_JEROME.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-07-29T11:31:02.074038-05:00"
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 2,
+      "data": {
+        "Full Name": "ABERA, YODIT HAGOS",
+        "Charge 1": "OTHER COUNTY/GM & MISD",
+        "Bail": "$600.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ABERA_YODIT_HAGOS.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 3,
+      "data": {
+        "Full Name": "HAID, ABDULAZIZ ALI D JAMA",
+        "Charge 1": "DAMAGE TO PROPERTY",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_HAID_ABDULAZIZ_ALI_D_JAMA.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 4,
+      "data": {
+        "Full Name": "CLARK, TERRY RENEE III",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_CLARK_TERRY_RENEE_III.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 5,
+      "data": {
+        "Full Name": "GRAVES, QUENTIN TOBIAS",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GRAVES_QUENTIN_TOBIAS.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 6,
+      "data": {
+        "Full Name": "GUERRERO, VICTOR MANUEL",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GUERRERO_VICTOR_MANUEL.jpg"
+      },
+      "posted": false,
+      "posted_at": null
     }
   ]
 }

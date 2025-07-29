@@ -12,14 +12,480 @@ import re
 # Load environment variables from .env file (if it exists)
 load_dotenv()
 
-# Selenium imports are moved to functions that need them to avoid import errors
-# in workflows that only need posting functionality
+class Config:
+    """Centralized configuration for the scraping application"""
+    
+    # Scraping settings
+    DEFAULT_INMATE_LIMIT = 100
+    TEST_INMATE_LIMIT = 25
+    MODAL_WAIT_TIME = 5
+    CLICK_WAIT_TIME = 3
+    
+    # Quality thresholds
+    MIN_NAME_LENGTH = 3
+    MAX_NAME_LENGTH = 50
+    MIN_CHARGE_LENGTH = 5
+    
+    # File paths
+    CSV_FILENAME = "jail_roster_data.csv"
+    QUEUE_FILENAME = "posting_queue.json"
+    MUGSHOTS_DIR = "mugshots"
+    
+    # Website settings
+    JAIL_ROSTER_URL = "https://jailroster.hennepin.us/"
+    
+    # Date format
+    DATE_FORMAT = "%m/%d/%Y"
+    HTML5_DATE_FORMAT = "%Y-%m-%d"
+    
+    # Invalid patterns for filtering
+    INVALID_CHARGES = [
+        'No charge listed',
+        'Charge information not available',
+        'Severity of Charge:',
+        'Description:',
+        'Charge Status:'
+    ]
+    
+    INVALID_BAILS = [
+        'NO BAIL INFORMATION',
+        'NO BAIL REQUIRED',
+        'No bail information',
+        'No bail',
+        'No Bail',
+        'No bail required',
+    ]
+    
+    # Name patterns for extraction
+    NAME_PATTERNS = [
+        'Full Name:',
+        'Name:',
+        'Inmate Name:',
+        'Arrestee Name:',
+        'Defendant Name:',
+        'Subject Name:'
+    ]
+    
+    # CSS selectors
+    BOOKING_SELECTORS = [
+        'a[href*="booking"]',
+        'button[class*="booking"]',
+        'td a',
+        '[class*="booking-number"] a',
+        'a[href*="detail"]',
+        '.booking-id a',
+    ]
+    
+    MODAL_SELECTORS = [
+        '[role="dialog"]',
+        '.modal',
+        '[class*="modal"]',
+        '[class*="dialog"]'
+    ]
+
+class FieldExtractor:
+    """Dedicated class for extracting inmate data fields with better debugging"""
+    
+    def __init__(self, driver):
+        self.driver = driver
+        self.debug_mode = True
+        self.extracted_data = {
+            'Full Name': '',
+            'Charge 1': '',
+            'Bail': '',
+            'Mugshot_File': 'No Image'
+        }
+    
+    def log(self, message, level="INFO"):
+        """Centralized logging with levels"""
+        if self.debug_mode:
+            prefix = {"INFO": "ℹ️", "SUCCESS": "✅", "ERROR": "❌", "WARNING": "⚠️", "DEBUG": "🔍"}
+            print(f"{prefix.get(level, 'ℹ️')} {message}")
+    
+    def extract_all_fields(self):
+        """Main extraction method that orchestrates all field extraction"""
+        # Import selenium components needed for this method
+        from selenium.webdriver.common.by import By
+        
+        self.log("Starting field extraction...", "INFO")
+        
+        # Reset extracted data for each new inmate
+        self.extracted_data = {
+            'Full Name': '',
+            'Charge 1': '',
+            'Bail': '',
+            'Mugshot_File': 'No Image'
+        }
+        
+        # Wait for modal to load
+        time.sleep(Config.MODAL_WAIT_TIME)
+        
+        # Get page content
+        page_text = self.driver.find_element(By.TAG_NAME, 'body').text
+        self.log(f"Page content length: {len(page_text)} characters", "DEBUG")
+        
+        # Extract each field
+        self._extract_name(page_text)
+        self._extract_charge(page_text)
+        self._extract_bail(page_text)
+        self._extract_mugshot()
+        
+        # Set defaults for missing fields
+        self._set_defaults()
+        
+        # Log final results
+        self._log_extraction_summary()
+        
+        return self.extracted_data
+    
+    def _extract_name(self, page_text):
+        """Extract full name using multiple strategies"""
+        self.log("Extracting full name...", "DEBUG")
+        
+        lines = page_text.split('\n')
+        for i, line in enumerate(lines):
+            line = line.strip()
+            for pattern in Config.NAME_PATTERNS:
+                if pattern in line and i + 1 < len(lines):
+                    potential_name = lines[i + 1].strip()
+                    if self._is_valid_name(potential_name):
+                        self.extracted_data['Full Name'] = potential_name
+                        self.log(f"Found name: {potential_name}", "SUCCESS")
+                        return
+        
+        self.log("No valid name found", "WARNING")
+    
+    def _is_valid_name(self, name):
+        """Validate if a string looks like a real name"""
+        if not name or len(name) < Config.MIN_NAME_LENGTH:
+            return False
+        
+        # Must contain at least one space (first and last name)
+        if ' ' not in name:
+            return False
+        
+        # Must contain alphabetic characters
+        if not any(c.isalpha() for c in name):
+            return False
+        
+        # Must be reasonable length
+        if len(name) > Config.MAX_NAME_LENGTH:
+            return False
+        
+        return True
+    
+    def _extract_charge(self, page_text):
+        """Extract primary charge using multiple strategies"""
+        self.log("Extracting charge information...", "DEBUG")
+        
+        lines = page_text.split('\n')
+        for i, line in enumerate(lines):
+            line = line.strip()
+            
+            # Look for charge patterns
+            if line == 'Charge: 1':
+                # Look for description in next few lines
+                for j in range(i + 1, min(i + 10, len(lines))):
+                    if lines[j].strip() == 'Description:' and j + 1 < len(lines):
+                        charge_desc = lines[j + 1].strip()
+                        if self._is_valid_charge(charge_desc):
+                            self.extracted_data['Charge 1'] = charge_desc
+                            self.log(f"Found charge: {charge_desc}", "SUCCESS")
+                            return
+        
+        self.log("No valid charge found", "WARNING")
+    
+    def _is_valid_charge(self, charge):
+        """Validate if a string looks like a real charge"""
+        if not charge or len(charge) < Config.MIN_CHARGE_LENGTH:
+            return False
+        
+        # Must not end with colon
+        if charge.endswith(':'):
+            return False
+        
+        # Must not be just a label
+        if charge in Config.INVALID_CHARGES:
+            return False
+        
+        return True
+    
+    def _extract_bail(self, page_text):
+        """Extract bail information using multiple strategies"""
+        self.log("Extracting bail information...", "DEBUG")
+        
+        lines = page_text.split('\n')
+        for i, line in enumerate(lines):
+            line = line.strip()
+            
+            # Look for bail patterns
+            if 'Bail Options:' in line and i + 1 < len(lines):
+                bail_value = lines[i + 1].strip()
+                if self._is_valid_bail(bail_value):
+                    self.extracted_data['Bail'] = bail_value
+                    self.log(f"Found bail: {bail_value}", "SUCCESS")
+                    return
+            
+            elif 'Bail:' in line and ':' in line:
+                try:
+                    bail_label, bail_value = line.split(":", 1)
+                    if self._is_valid_bail(bail_value.strip()):
+                        self.extracted_data['Bail'] = bail_value.strip()
+                        self.log(f"Found bail: {bail_value.strip()}", "SUCCESS")
+                        return
+                except:
+                    continue
+        
+        self.log("No valid bail information found", "WARNING")
+    
+    def _is_valid_bail(self, bail):
+        """Validate if a string looks like real bail information"""
+        if not bail or not bail.strip():
+            return False
+        
+        bail_upper = bail.upper()
+        
+        # Must contain dollar sign or specific bail keywords
+        if not ('$' in bail or 
+                'NO BAIL' in bail_upper or
+                'RELEASED' in bail_upper or
+                'BOND' in bail_upper):
+            return False
+        
+        # Reject invalid patterns
+        if any(bail.strip().upper() == pattern.upper() for pattern in Config.INVALID_BAILS):
+            return False
+        
+        return True
+    
+    def _extract_mugshot(self):
+        """Extract and save mugshot image"""
+        # Import selenium components needed for this method
+        from selenium.webdriver.common.by import By
+        
+        self.log("Looking for mugshot image...", "DEBUG")
+        
+        try:
+            img_elements = self.driver.find_elements(By.CSS_SELECTOR, 'img')
+            self.log(f"Found {len(img_elements)} image elements", "DEBUG")
+            
+            for img in img_elements:
+                src = img.get_attribute('src')
+                alt = img.get_attribute('alt') or ""
+                
+                # Check if this looks like a booking photo
+                if (src and 
+                    ('data:image' in src or 
+                     'booking' in alt.lower() or 
+                     'photo' in alt.lower() or 
+                     'mugshot' in alt.lower())):
+                    
+                    self.log(f"Found potential mugshot: {alt}", "DEBUG")
+                    
+                    # Generate filename
+                    if self.extracted_data['Full Name']:
+                        clean_name = "".join(c for c in self.extracted_data['Full Name'] 
+                                           if c.isalnum() or c in (' ', '-', '_')).rstrip()
+                        clean_name = clean_name.replace(' ', '_')
+                        filename_prefix = f"mugshot_{clean_name}"
+                    else:
+                        filename_prefix = f"mugshot_{int(time.time())}"
+                    
+                    # Save the image
+                    saved_filename = convert_base64_to_image(src, filename_prefix)
+                    if saved_filename:
+                        self.extracted_data['Mugshot_File'] = saved_filename
+                        self.log(f"Saved mugshot: {saved_filename}", "SUCCESS")
+                        return
+            
+            self.log("No mugshot image found", "WARNING")
+            
+        except Exception as e:
+            self.log(f"Error extracting mugshot: {e}", "ERROR")
+    
+    def _set_defaults(self):
+        """Set default values for missing fields"""
+        if not self.extracted_data['Full Name']:
+            self.extracted_data['Full Name'] = 'Unknown'
+        if not self.extracted_data['Charge 1']:
+            self.extracted_data['Charge 1'] = 'No charge listed'
+        if not self.extracted_data['Bail']:
+            self.extracted_data['Bail'] = 'No bail information'
+    
+    def _log_extraction_summary(self):
+        """Log a summary of all extracted data"""
+        self.log("=== EXTRACTION SUMMARY ===", "INFO")
+        for key, value in self.extracted_data.items():
+            self.log(f"{key}: {value}", "INFO")
+
+class DataValidator:
+    """Validates extracted inmate data for quality control"""
+    
+    @staticmethod
+    def validate_inmate_data(data):
+        """Validate if inmate data meets basic requirements (mugshot + name required)"""
+        issues = []
+        
+        # Check name (REQUIRED)
+        if not data.get('Full Name') or data['Full Name'] == 'Unknown':
+            issues.append("Missing or invalid name")
+        
+        # Check mugshot (REQUIRED)
+        if not data.get('Mugshot_File') or data['Mugshot_File'] == 'No Image':
+            issues.append("Missing mugshot")
+        
+        # Charge and bail are OPTIONAL - don't add to issues
+        has_charge = data.get('Charge 1') and data['Charge 1'] != 'No charge listed'
+        has_bail = data.get('Bail') and data['Bail'] != 'No bail information'
+        
+        return len(issues) == 0, issues, has_charge, has_bail
+    
+    @staticmethod
+    def get_posting_priority(data):
+        """Calculate posting priority based on optional fields (charge + bail)"""
+        priority = 0
+        
+        # Charge: +1 priority point
+        if data.get('Charge 1') and data['Charge 1'] != 'No charge listed':
+            priority += 1
+        
+        # Bail: +1 priority point  
+        if data.get('Bail') and data['Bail'] != 'No bail information':
+            priority += 1
+        
+        return priority
+
+class BookingProcessor:
+    """Handles booking ID processing with better debugging"""
+    
+    def __init__(self, driver):
+        self.driver = driver
+        self.extractor = FieldExtractor(driver)
+        self.validator = DataValidator()
+    
+    def find_booking_ids(self, limit=10):
+        """Find clickable booking IDs on the page"""
+        # Import selenium components needed for this method
+        from selenium.webdriver.common.by import By
+        
+        print(f"\n🔍 Looking for booking IDs (limit: {limit})...")
+        
+        booking_ids = []
+        all_clickable = self.driver.find_elements(By.CSS_SELECTOR, 'a, button[onclick], [role="button"], cds-button')
+        
+        for element in all_clickable:
+            text = element.text.strip()
+            if (text and text.isdigit() and len(text) >= 8 and len(text) <= 12 and int(text) > 10000000):
+                booking_ids.append({
+                    'element': element,
+                    'id': text
+                })
+                print(f"📋 Found booking ID: {text}")
+                
+                if len(booking_ids) >= limit:
+                    break
+        
+        print(f"✅ Found {len(booking_ids)} booking IDs")
+        return booking_ids
+    
+    def process_booking(self, booking_info, index, total):
+        """Process a single booking ID and extract data"""
+        booking_element = booking_info['element']
+        booking_id = booking_info['id']
+        
+        print(f"\n{'='*50}")
+        print(f"🔄 Processing booking {index+1}/{total}: {booking_id}")
+        print(f"{'='*50}")
+        
+        try:
+            # Scroll to element and highlight
+            self.driver.execute_script("arguments[0].scrollIntoView(true);", booking_element)
+            time.sleep(0.5)
+            
+            # Highlight briefly
+            try:
+                self.driver.execute_script("arguments[0].style.border='3px solid blue';", booking_element)
+                time.sleep(0.5)
+                self.driver.execute_script("arguments[0].style.border='';", booking_element)
+            except:
+                pass
+            
+            # Click the booking ID
+            print(f"🖱️  Clicking booking ID: {booking_id}")
+            booking_element.click()
+            time.sleep(Config.CLICK_WAIT_TIME)
+            
+            # Extract data using FieldExtractor
+            extracted_data = self.extractor.extract_all_fields()
+            
+            # Validate data quality (mugshot + name required)
+            is_valid, issues, has_charge, has_bail = self.validator.validate_inmate_data(extracted_data)
+            priority = self.validator.get_posting_priority(extracted_data)
+            
+            print(f"📊 Posting Priority: {priority}/2 (Charge: {'✅' if has_charge else '❌'}, Bail: {'✅' if has_bail else '❌'})")
+            if not is_valid:
+                print(f"⚠️  Validation Issues: {', '.join(issues)}")
+            
+            # Use booking ID as fallback name if needed
+            if not extracted_data['Full Name'] or extracted_data['Full Name'] == 'Unknown':
+                extracted_data['Full Name'] = f"Booking_{booking_id}"
+                print(f"⚠️  Using booking ID as fallback name: {extracted_data['Full Name']}")
+            
+            return extracted_data, priority
+            
+        except Exception as e:
+            print(f"❌ Error processing booking {booking_id}: {e}")
+            return None, 0
+    
+    def process_multiple_bookings(self, limit=10):
+        """Process multiple booking IDs with basic filtering (mugshot + name required)"""
+        print(f"\n🚀 Starting batch processing (limit: {limit})...")
+        
+        # Find booking IDs
+        booking_ids = self.find_booking_ids(limit)
+        
+        if not booking_ids:
+            print("❌ No booking IDs found")
+            return []
+        
+        all_extracted_data = []
+        priorities = []
+        
+        for i, booking_info in enumerate(booking_ids):
+            extracted_data, priority = self.process_booking(booking_info, i, len(booking_ids))
+            
+            if extracted_data:
+                # Only accept inmates with mugshot + name (basic requirements)
+                is_valid, issues, _, _ = self.validator.validate_inmate_data(extracted_data)
+                if is_valid:
+                    all_extracted_data.append(extracted_data)
+                    priorities.append(priority)
+                    print(f"✅ ACCEPTED: {extracted_data['Full Name']} (Priority: {priority}/2)")
+                else:
+                    print(f"⏭️  REJECTED: {extracted_data['Full Name']} - Missing: {', '.join(issues)}")
+            
+            # Close modal
+            # Import selenium components needed for modal closing
+            from selenium.webdriver.common.by import By
+            modal = self.driver.find_element(By.CSS_SELECTOR, '[role="dialog"], .modal, [class*="modal"]')
+            self.driver.execute_script("arguments[0].style.display = 'none';", modal)
+            time.sleep(1)
+        
+        # Print summary
+        print(f"\n📊 PROCESSING SUMMARY:")
+        print(f"   Total IDs processed: {len(booking_ids)}")
+        print(f"   Accepted inmates: {len(all_extracted_data)}")
+        print(f"   Rejected inmates: {len(booking_ids) - len(all_extracted_data)}")
+        if priorities:
+            print(f"   Average priority: {sum(priorities)/len(priorities):.1f}/2")
+        
+        return all_extracted_data
 
 def convert_base64_to_image(data_url, filename_prefix="mugshot"):
     """Convert base64 data URL to an actual image file in mugshots folder"""
     try:
         # Create mugshots directory if it doesn't exist
-        mugshots_dir = "mugshots"
+        mugshots_dir = Config.MUGSHOTS_DIR
         if not os.path.exists(mugshots_dir):
             os.makedirs(mugshots_dir)
             print(f"📁 Created directory: {mugshots_dir}/")
@@ -227,52 +693,66 @@ def parse_bail_amount(bail_string):
 def filter_top_bail_inmates(data_list, top_n=10):
     """
     Filter inmates for Instagram posting prioritization
-    Takes all inmates with mugshots and charges, sorts by bail amount (highest first)
-    For posting: prioritizes highest bail first, then includes those without bail
+    Takes all inmates with mugshots, prioritizes by charge status then bail amount
+    Priority order: 1) Mugshot + Charge + Highest Bail, 2) Mugshot + Charge + Lower/No Bail, 3) Mugshot + No Charge
     
     Args:
-        data_list: List of inmate dictionaries (already filtered for mugshot + charge)
+        data_list: List of inmate dictionaries (already filtered for mugshot)
         top_n: Number of top inmates to return (default 10)
     
     Returns:
-        List of top N inmates sorted by bail amount (highest first)
+        List of top N inmates sorted by priority (charge first, then bail amount)
     """
     try:
-        print(f"\n🔍 Prioritizing {top_n} inmates for Instagram posting (by bail amount)...")
+        print(f"\n🔍 Prioritizing {top_n} inmates for Instagram posting (by charge status then bail amount)...")
         
         if not data_list:
             print("❌ No inmates to filter")
             return []
         
-        # Add parsed bail amount to each inmate for sorting
+        # Add charge status and parsed bail amount to each inmate for sorting
         inmates_for_posting = []
         
         for inmate in data_list:
             bail_str = inmate.get('Bail', '')
+            charge_str = inmate.get('Charge 1', '')
             bail_amount = parse_bail_amount(bail_str)
             
-            # All inmates in data_list already have mugshots and charges
+            # Determine charge status (valid charge = True, no charge = False)
+            has_valid_charge = (
+                charge_str and 
+                charge_str.strip() and
+                charge_str != 'No charge listed' and
+                not charge_str.endswith(':') and
+                len(charge_str) > 5
+            )
+            
+            # All inmates in data_list already have mugshots
             inmates_for_posting.append({
                 **inmate,
-                '_bail_amount': bail_amount
+                '_bail_amount': bail_amount,
+                '_has_charge': has_valid_charge
             })
             
+            charge_status = "✅ Has charge" if has_valid_charge else "❌ No charge"
             bail_display = f"${bail_amount:,.2f}" if bail_amount > 0 else "No bail info"
-            print(f"📊 {inmate.get('Full Name', 'Unknown')}: {bail_str} → {bail_display}")
+            print(f"📊 {inmate.get('Full Name', 'Unknown')}: {charge_status} | {bail_str} → {bail_display}")
         
         print(f"\n📊 {len(inmates_for_posting)} inmates available for posting prioritization")
         
-        # Sort by bail amount (highest first), but include all regardless of bail status
-        sorted_inmates = sorted(inmates_for_posting, key=lambda x: x['_bail_amount'], reverse=True)
+        # Sort by charge status first (True before False), then by bail amount (highest first)
+        sorted_inmates = sorted(inmates_for_posting, key=lambda x: (not x['_has_charge'], -x['_bail_amount']))
         
-        # Take top N and remove the temporary _bail_amount field
+        # Take top N and remove the temporary sorting fields
         top_inmates = []
         for i, inmate in enumerate(sorted_inmates[:top_n]):
-            # Remove the temporary sorting field
-            filtered_inmate = {k: v for k, v in inmate.items() if k != '_bail_amount'}
+            # Remove the temporary sorting fields
+            filtered_inmate = {k: v for k, v in inmate.items() if k not in ['_bail_amount', '_has_charge']}
             top_inmates.append(filtered_inmate)
             
             bail_amount = inmate['_bail_amount']
+            has_charge = inmate['_has_charge']
+            
             if bail_amount == 999999999:
                 bail_display = "NO BAIL"
             elif bail_amount > 0:
@@ -280,9 +760,10 @@ def filter_top_bail_inmates(data_list, top_n=10):
             else:
                 bail_display = "No bail info"
             
-            print(f"🏆 #{i+1}: {inmate.get('Full Name', 'Unknown')} - {bail_display}")
+            charge_status = "✅ Has charge" if has_charge else "❌ No charge"
+            print(f"🏆 #{i+1}: {inmate.get('Full Name', 'Unknown')} - {charge_status} | {bail_display}")
         
-        print(f"\n✅ Prioritized {len(top_inmates)} inmates for Instagram posting (by bail amount)")
+        print(f"\n✅ Prioritized {len(top_inmates)} inmates for Instagram posting (by charge status then bail amount)")
         return top_inmates
         
     except Exception as e:
@@ -291,48 +772,69 @@ def filter_top_bail_inmates(data_list, top_n=10):
 
 def save_to_posting_queue(data_list):
     """Save inmates to posting queue for staggered posting"""
-    try:
-        print(f"💾 Creating posting queue with {len(data_list)} inmates...")
+
+    def filter_priority_inmates(d, n=10):
+        """Filter inmates by posting priority (charge + bail = higher priority)"""
+        def get_priority(inmate):
+            priority = 0
+            # Charge: +1 priority point
+            if inmate.get('Charge 1') and inmate['Charge 1'] != 'No charge listed':
+                priority += 1
+            # Bail: +1 priority point
+            if inmate.get('Bail') and inmate['Bail'] != 'No bail information':
+                priority += 1
+            return priority
         
-        # Filter to top 10 highest bail inmates BEFORE creating queue
-        filtered_inmates = filter_top_bail_inmates(data_list, top_n=10)
+        # Sort by priority (highest first), then by bail amount for tie-breaking
+        def get_bail_amount(bail_str):
+            if not bail_str or bail_str == 'No bail information':
+                return 0
+            # Extract dollar amount from bail string
+            match = re.search(r'\$[\d,]+\.?\d*', bail_str)
+            if match:
+                return float(match.group()[1:].replace(',', ''))
+            return 0
         
-        # Add timestamp and posting status to each inmate
-        queue_data = {
-            'created_at': get_current_datetime_iso(),
-            'total_inmates': len(filtered_inmates),
-            'posted_count': 0,
-            'inmates': []
+        return sorted(d, key=lambda i: (-get_priority(i), -get_bail_amount(i.get('Bail', ''))))[:n]
+    
+    print(f"💾 Creating posting queue with {len(data_list)} inmates...")
+    
+    # Filter to top 10 highest priority inmates BEFORE creating queue
+    filtered_inmates = filter_priority_inmates(data_list, n=10)
+    
+    # Add timestamp and posting status to each inmate
+    queue_data = {
+        'created_at': get_current_datetime_iso(),
+        'total_inmates': len(filtered_inmates),
+        'posted_count': 0,
+        'inmates': []
+    }
+    
+    for i, data in enumerate(filtered_inmates):
+        inmate = {
+            'id': i + 1,
+            'data': data,
+            'posted': False,
+            'posted_at': None
         }
-        
-        for i, data in enumerate(filtered_inmates):
-            inmate = {
-                'id': i + 1,
-                'data': data,
-                'posted': False,
-                'posted_at': None
-            }
-            queue_data['inmates'].append(inmate)
-        
-        # Save to JSON file
-        with open('posting_queue.json', 'w', encoding='utf-8') as f:
-            json.dump(queue_data, f, indent=2, ensure_ascii=False)
-        
-        print(f"✅ Posting queue saved successfully")
-        print(f"📊 Queue stats: {len(filtered_inmates)} inmates prioritized for posting")
-        print(f"🎯 Prioritized from {len(data_list)} total inmates to top 10 by bail amount")
-        return True
-        
-    except Exception as e:
-        print(f"❌ Error saving posting queue: {e}")
-        return False
+        queue_data['inmates'].append(inmate)
+    
+    # Save to JSON file
+    with open(Config.QUEUE_FILENAME, 'w', encoding='utf-8') as f:
+        json.dump(queue_data, f, indent=2, ensure_ascii=False)
+    
+    print(f"✅ Posting queue saved successfully")
+    print(f"📊 Queue stats: {len(filtered_inmates)} inmates prioritized for posting")
+    print(f"🎯 Prioritized from {len(data_list)} total inmates to top 10 by posting priority (charge + bail)")
+
+    return True
 
 def get_next_inmates_to_post(batch_size=2):
     """Get next batch of inmates to post from queue"""
     try:
         # Load queue
         try:
-            with open('posting_queue.json', 'r', encoding='utf-8') as f:
+            with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
                 queue_data = json.load(f)
         except FileNotFoundError:
             print("📭 No posting queue found")
@@ -361,7 +863,7 @@ def mark_inmates_as_posted(inmate_ids):
     """Mark inmates as posted in the queue"""
     try:
         # Load queue
-        with open('posting_queue.json', 'r', encoding='utf-8') as f:
+        with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
             queue_data = json.load(f)
         
         # Mark as posted
@@ -376,7 +878,7 @@ def mark_inmates_as_posted(inmate_ids):
         queue_data['posted_count'] = sum(1 for inmate in queue_data['inmates'] if inmate['posted'])
         
         # Save updated queue
-        with open('posting_queue.json', 'w', encoding='utf-8') as f:
+        with open(Config.QUEUE_FILENAME, 'w', encoding='utf-8') as f:
             json.dump(queue_data, f, indent=2, ensure_ascii=False)
         
         print(f"✅ Marked {posted_count} inmates as posted")
@@ -1204,254 +1706,17 @@ def click_first_booking_id(driver):
 def extract_key_details(driver):
     """
     Extract only the key details we need: Full Name, Charge 1, Bail, and Mugshot
-    Uses improved extraction method with modal content boundaries
+    Uses the new FieldExtractor class for better organization and debugging
     """
     # Import selenium components needed for this function
     from selenium.webdriver.common.by import By
     
     try:
-        print("\n📋 Extracting key details (Full Name, Charge 1, Bail, Mugshot)...")
+        print("\n📋 Extracting key details using FieldExtractor...")
         
-        # Wait for modal to fully load - longer wait for CI environment
-        time.sleep(5)
-
-        # Initialize data structure
-        extracted_data = {
-            'Full Name': '',
-            'Charge 1': '',
-            'Bail': '',
-            'Mugshot_File': 'No Image'  # Default, will be updated if mugshot found
-        }
-
-        try:
-            # Look for name in the main page content
-            page_text = driver.find_element(By.TAG_NAME, 'body').text
-            print("📍 Full page text:")
-            print(page_text)
-            
-            # Extract modal content between boundaries
-            modal_start = "Beginning of modal content"
-            modal_end = "End of modal content"
-            
-            if modal_start in page_text and modal_end in page_text:
-                start_idx = page_text.find(modal_start) + len(modal_start)
-                end_idx = page_text.find(modal_end)
-                modal_content = page_text[start_idx:end_idx].strip()
-                
-                print(f"\n📋 Modal content extracted:")
-                print(modal_content)
-                
-                # Parse the modal content line by line
-                lines = [line.strip() for line in modal_content.split('\n') if line.strip()]
-                
-                print(f"\n🔍 Parsing {len(lines)} lines...")
-                
-                # Extract specific fields
-                for i, line in enumerate(lines):
-                    print(f"   {i+1:2d}. {line}")
-                    
-                    # Extract Full Name (line after "Full Name:")
-                    if line == "Full Name:" and i + 1 < len(lines):
-                        extracted_data['Full Name'] = lines[i + 1]
-                        print(f"✅ Found Full Name: {lines[i + 1]}")
-                    
-                    # Extract Age (line after "Age:")
-                    elif line == "Age:" and i + 1 < len(lines):
-                        age = lines[i + 1]
-                        print(f"✅ Found Age: {age}")
-                    
-                    # Extract Charge Description (line after "Charge: 1" and "Description:")
-                    elif line == "Charge: 1" and i + 2 < len(lines):
-                        # Look for "Description:" in the next few lines
-                        for j in range(i + 1, min(i + 5, len(lines))):
-                            if lines[j] == "Description:" and j + 1 < len(lines):
-                                extracted_data['Charge 1'] = lines[j + 1]
-                                print(f"✅ Found Charge 1: {lines[j + 1]}")
-                                break
-                    
-                    # Extract Bail information (look for bail-related fields)
-                    elif "Bail Options:" in line and i + 1 < len(lines):
-                        bail_value = lines[i + 1]
-                        # Only accept if it contains dollar sign or specific bail keywords
-                        if (bail_value.strip() and 
-                            ('$' in bail_value or 
-                             'NO BAIL' in bail_value.upper() or
-                             'RELEASED' in bail_value.upper() or
-                             'BOND' in bail_value.upper())):
-                            extracted_data['Bail'] = bail_value.strip()
-                            print(f"✅ Found Bail: {bail_value.strip()}")
-                    elif "Bail:" in line and ":" in line:
-                        # Extract the value after the colon
-                        bail_label, bail_value = line.split(":", 1)
-                        if bail_value.strip():
-                            extracted_data['Bail'] = bail_value.strip()
-                            print(f"✅ Found Bail: {bail_value.strip()}")
-                
-                # Look for mugshot image
-                try:
-                    print("\n🖼️  Looking for mugshot image...")
-                    # Look for image elements in the modal
-                    img_elements = driver.find_elements(By.CSS_SELECTOR, 'img')
-                    mugshot_saved = False
-                    
-                    for img in img_elements:
-                        src = img.get_attribute('src')
-                        alt = img.get_attribute('alt') or ""
-                        
-                        # Check if this looks like a booking photo
-                        if (src and 
-                            ('data:image' in src or 'booking' in alt.lower() or 'photo' in alt.lower() or 'mugshot' in alt.lower())):
-                            
-                            print(f"📸 Found potential mugshot: {alt}")
-                            
-                            # Use full name for filename if available
-                            if extracted_data['Full Name']:
-                                # Clean filename (remove special characters)
-                                clean_name = "".join(c for c in extracted_data['Full Name'] if c.isalnum() or c in (' ', '-', '_')).rstrip()
-                                clean_name = clean_name.replace(' ', '_')
-                                filename_prefix = f"mugshot_{clean_name}"
-                            else:
-                                filename_prefix = f"mugshot_{int(time.time())}"
-                            
-                            # Convert and save the image
-                            saved_filename = convert_base64_to_image(src, filename_prefix)
-                            if saved_filename:
-                                extracted_data['Mugshot_File'] = saved_filename
-                                mugshot_saved = True
-                                print(f"✅ Found and saved mugshot: {saved_filename}")
-                                break
-                    
-                    if not mugshot_saved:
-                        print("⚠️  No mugshot image found or saved")
-                        extracted_data['Mugshot_File'] = 'No Image'
-                        
-                except Exception as e:
-                    print(f"❌ Error looking for mugshot: {e}")
-                    extracted_data['Mugshot_File'] = 'Error'
-                
-            else:
-                print("❌ Could not find modal boundaries in page text")
-                
-                # Fallback to original method if modal boundaries not found
-                print("🔄 Falling back to original extraction method...")
-                
-                # Find the modal content
-                modal_content = None
-                modal_selectors = [
-                    '[role="dialog"]',
-                    '.modal',
-                    '[class*="modal"]',
-                    '[class*="dialog"]'
-                ]
-                
-                for selector in modal_selectors:
-                    try:
-                        modal_content = driver.find_element(By.CSS_SELECTOR, selector)
-                        print(f"✅ Found modal with selector: {selector}")
-                        break
-                    except:
-                        continue
-                
-                if modal_content:
-                    # Use original extraction logic as fallback
-                    modal_text = modal_content.text
-                    lines = [line.strip() for line in modal_text.split('\n') if line.strip()]
-                    
-                    print(f"\n🔍 Fallback parsing {len(lines)} lines...")
-                    
-                    # Extract Full Name from modal if not already found
-                    if not extracted_data['Full Name']:
-                        name_patterns = [
-                            'Full Name:',
-                            'Name:',
-                            'Inmate Name:',
-                            'Arrestee Name:',
-                            'Defendant Name:',
-                            'Subject Name:'
-                        ]
-                        
-                        for pattern in name_patterns:
-                            for i, line in enumerate(lines):
-                                if pattern in line and i + 1 < len(lines):
-                                    potential_name = lines[i + 1]
-                                    if (potential_name and 
-                                        any(c.isalpha() for c in potential_name) and 
-                                        ' ' in potential_name and
-                                        len(potential_name) > 5):
-                                        extracted_data['Full Name'] = potential_name
-                                        print(f"✅ Found Full Name (fallback): {extracted_data['Full Name']}")
-                                        break
-                            if extracted_data['Full Name']:
-                                break
-                    
-                    # Extract charge using original logic
-                    if not extracted_data['Charge 1']:
-                        for i, line in enumerate(lines):
-                            if line == 'Charge: 1':
-                                for j in range(i + 1, min(i + 15, len(lines))):
-                                    if lines[j] == 'Description:' and j + 1 < len(lines):
-                                        charge_desc = lines[j + 1]
-                                        if not charge_desc.endswith(':') and len(charge_desc) > 3:
-                                            extracted_data['Charge 1'] = charge_desc
-                                            print(f"✅ Found Charge 1 (fallback): {extracted_data['Charge 1']}")
-                                            break
-                                break
-                    
-                    # Extract bail using original logic
-                    if not extracted_data['Bail']:
-                        for i, line in enumerate(lines):
-                            if 'Bail Options:' in line and i + 1 < len(lines):
-                                bail_candidate = lines[i + 1]
-                                if (bail_candidate.strip() and 
-                                    ('$' in bail_candidate or 
-                                     'NO BAIL' in bail_candidate.upper() or
-                                     'RELEASED' in bail_candidate.upper() or
-                                     'BOND' in bail_candidate.upper())):
-                                    extracted_data['Bail'] = bail_candidate.strip()
-                                    print(f"✅ Found Bail (fallback): {extracted_data['Bail']}")
-                                    break
-                    
-                    # Extract mugshot using original logic
-                    if extracted_data['Mugshot_File'] == 'No Image':
-                        try:
-                            img_elements = modal_content.find_elements(By.CSS_SELECTOR, 'img')
-                            for img in img_elements:
-                                src = img.get_attribute('src')
-                                alt = img.get_attribute('alt') or ""
-                                
-                                if (src and 
-                                    ('data:image' in src or 'booking' in alt.lower() or 'photo' in alt.lower() or 'mugshot' in alt.lower())):
-                                    
-                                    if extracted_data['Full Name']:
-                                        clean_name = "".join(c for c in extracted_data['Full Name'] if c.isalnum() or c in (' ', '-', '_')).rstrip()
-                                        clean_name = clean_name.replace(' ', '_')
-                                        filename_prefix = f"mugshot_{clean_name}"
-                                    else:
-                                        filename_prefix = f"mugshot_{int(time.time())}"
-                                    
-                                    saved_filename = convert_base64_to_image(src, filename_prefix)
-                                    if saved_filename:
-                                        extracted_data['Mugshot_File'] = saved_filename
-                                        print(f"✅ Found and saved mugshot (fallback): {saved_filename}")
-                                        break
-                        except Exception as e:
-                            print(f"❌ Error extracting mugshot (fallback): {e}")
-                
-        except Exception as e:
-            print(f"❌ Error extracting page text: {e}")
-        
-        # Set defaults for missing fields
-        if not extracted_data['Full Name']:
-            extracted_data['Full Name'] = 'Unknown'
-        if not extracted_data['Charge 1']:
-            extracted_data['Charge 1'] = 'No charge listed'
-        if not extracted_data['Bail']:
-            extracted_data['Bail'] = 'No bail information'
-        
-        # Print final extracted data
-        print(f"\n📊 EXTRACTED DATA:")
-        for key, value in extracted_data.items():
-            print(f"   {key}: {value}")
+        # Use the new FieldExtractor class
+        extractor = FieldExtractor(driver)
+        extracted_data = extractor.extract_all_fields()
         
         return extracted_data
         
@@ -1535,7 +1800,7 @@ def close_modal(driver):
         print(f"❌ Error closing modal: {e}")
         return False
 
-def save_to_csv(data_list, filename="jail_roster_data.csv"):
+def save_to_csv(data_list, filename=Config.CSV_FILENAME):
     """
     Save the extracted data to a CSV file (overwrites existing file)
     """
@@ -1613,128 +1878,14 @@ def get_all_booking_ids(driver, limit=100):
 
 def process_multiple_bookings(driver, limit=3):
     """
-    Process multiple booking IDs and extract data from each
+    Process multiple booking IDs and extract data from each using BookingProcessor
     """
     try:
-        print(f"\n🔄 Processing multiple bookings (limit: {limit})...")
+        print(f"\n🔄 Processing multiple bookings using BookingProcessor (limit: {limit})...")
         
-        # Get all booking IDs
-        booking_ids = get_all_booking_ids(driver, limit)
-        
-        if not booking_ids:
-            print("❌ No booking IDs found")
-            return []
-        
-        all_extracted_data = []
-        
-        for i, booking_info in enumerate(booking_ids):
-            try:
-                booking_element = booking_info['element']
-                booking_id = booking_info['id']
-                
-                print(f"\n{'='*50}")
-                print(f"🔄 Processing booking {i+1}/{len(booking_ids)}: {booking_id}")
-                print(f"{'='*50}")
-                
-                # Scroll to element and highlight briefly
-                driver.execute_script("arguments[0].scrollIntoView(true);", booking_element)
-                time.sleep(0.5)
-                
-                # Highlight the element
-                try:
-                    driver.execute_script("arguments[0].style.border='3px solid blue';", booking_element)
-                    time.sleep(0.5)
-                    driver.execute_script("arguments[0].style.border='';", booking_element)
-                except:
-                    pass
-                
-                # Click the booking ID
-                print(f"🖱️  Clicking booking ID: {booking_id}")
-                booking_element.click()
-                time.sleep(3)
-                
-                # Extract key details
-                extracted_data = extract_key_details(driver)
-                
-                # If no name was found, use booking ID as fallback
-                if not extracted_data['Full Name']:
-                    extracted_data['Full Name'] = f"Booking_{booking_id}"
-                    print(f"⚠️  No name found, using booking ID as fallback: {extracted_data['Full Name']}")
-                
-                # Don't add Booking ID to match CSV headers exactly
-                
-                if extracted_data['Full Name']:  # Only add if we got some data
-                    # Check if inmate has required data (mugshot and valid bail - charge is optional)
-                    has_mugshot = extracted_data.get('Mugshot_File') and extracted_data.get('Mugshot_File') != 'No Image'
-                    charge_text = extracted_data.get('Charge 1', '').strip()
-                    bail_text = extracted_data.get('Bail', '').strip()
-
-                    # Define invalid charge patterns that should be filtered out
-                    invalid_charges = [
-                        'No valid charge found',
-                        'Charge information not available', 
-                        'Severity of Charge:',
-                        'Description:',
-                        'Charge Status:',
-                        'No charge listed'
-                    ]
-                    # Prevent charge from being set to the inmate's name
-                    is_charge_name = (charge_text.lower() == extracted_data['Full Name'].lower())
-                    has_valid_charge = (charge_text and 
-                                       not charge_text.endswith(':') and 
-                                       charge_text not in invalid_charges and
-                                       len(charge_text) > 5 and
-                                       not is_charge_name)
-
-                    # Define invalid bail patterns
-                    invalid_bails = [
-                        '',
-                        'No Bail Information',
-                        'NO BAIL INFORMATION',
-                        'NO BAIL',
-                        'HOLD WITHOUT BAIL',
-                        'RELEASED',
-                        'NO BAIL REQUIRED',
-                        'No bail information',
-                        'No bail',
-                        'No Bail',
-                        'No bail required',
-                    ]
-                    # Accept any bail with a dollar sign, but reject $0.00 or NO BAIL REQUIRED
-                    bail_text_upper = bail_text.upper()
-                    has_valid_bail = (
-                        ('$' in bail_text) and
-                        ('$0.00' not in bail_text_upper) and
-                        ('NO BAIL REQUIRED' not in bail_text_upper) and
-                        not any(bail_text.strip().upper() == b.upper() for b in invalid_bails)
-                    )
-
-                    # Require both mugshot and charge - bail is optional
-                    if has_mugshot and has_valid_charge:
-                        all_extracted_data.append(extracted_data)
-                        print(f"✅ ACCEPTED: {extracted_data['Full Name']} - {charge_text} - {bail_text}")
-                    else:
-                        missing = []
-                        if not has_mugshot: missing.append("mugshot")
-                        if not has_valid_charge: missing.append("valid charge")
-                        print(f"⏭️  REJECTED: {extracted_data['Full Name']} - Missing: {', '.join(missing)}")
-                else:
-                    print(f"⚠️  No data extracted for {booking_id}")
-                
-                # Close the modal
-                close_modal(driver)
-                time.sleep(1)
-                
-            except Exception as e:
-                print(f"❌ Error processing booking {booking_id}: {e}")
-                # Try to close modal anyway
-                close_modal(driver)
-                continue
-        
-        print(f"\n📊 PROCESSING COMPLETE:")
-        print(f"   Total IDs processed: {len(booking_ids)}")
-        print(f"   Inmates with mugshot + charge: {len(all_extracted_data)}")
-        print(f"   Filtered out (no mugshot or charge): {len(booking_ids) - len(all_extracted_data)}")
+        # Use the new BookingProcessor class
+        processor = BookingProcessor(driver)
+        all_extracted_data = processor.process_multiple_bookings(limit)
         
         return all_extracted_data
         
@@ -1742,7 +1893,7 @@ def process_multiple_bookings(driver, limit=3):
         print(f"❌ Error processing multiple bookings: {e}")
         return []
 
-def fill_form_with_current_date(driver, inmate_limit=25):
+def fill_form_with_current_date(driver, inmate_limit=Config.TEST_INMATE_LIMIT):
     """
     Fill the form, process multiple booking IDs, and save to CSV with top 10 highest bail filter
     """
@@ -1789,7 +1940,7 @@ def fill_form_with_current_date(driver, inmate_limit=25):
     # Save to CSV if we got data
     if extracted_data_list:
         # Use fixed filename (overwrites previous data)
-        filename = "jail_roster_data.csv"
+        filename = Config.CSV_FILENAME
         
         success_save = save_to_csv(extracted_data_list, filename)
         
@@ -1800,12 +1951,12 @@ def fill_form_with_current_date(driver, inmate_limit=25):
                 mugshot_info = data.get('Mugshot_File', 'N/A')
                 print(f"   {i}. {data.get('Full Name', 'N/A')} - {data.get('Charge 1', 'N/A')} - {data.get('Bail', 'N/A')} - Image: {mugshot_info}")
             
-            # Save to posting queue (this will now filter to top 10 highest bail)
+            # Save to posting queue (this will now filter to top 10 highest priority)
             print(f"\n📋 Saving quality inmates to posting queue...")
             queue_success = save_to_posting_queue(extracted_data_list)
             
             if queue_success:
-                print(f"\n🚀 COMPLETE SUCCESS! Data scraped, filtered to TOP 10 HIGHEST BAIL, and queued for posting!")
+                print(f"\n🚀 COMPLETE SUCCESS! Data scraped, filtered to TOP 10 HIGHEST PRIORITY, and queued for posting!")
                 print(f"📅 Top 10 inmates will be posted every 15 minutes starting at 6:00 PM Central")
                 print(f"🎲 Random delays added to avoid Instagram automation detection")
             else:
@@ -1893,12 +2044,12 @@ def fill_search_form(driver, min_date=None, max_date=None):
     
     return success_min or success_max
 
-def open_hennepin_jail_roster(inmate_limit=100):
+def open_hennepin_jail_roster(inmate_limit=Config.DEFAULT_INMATE_LIMIT):
     """
     Opens the Hennepin County jail roster website using Selenium
     
     Args:
-        inmate_limit: Maximum number of inmates to process (default 100 for production)
+        inmate_limit: Maximum number of inmates to process (default from Config)
     """
     # Import selenium only when needed for scraping
     from selenium import webdriver
@@ -1941,7 +2092,7 @@ def open_hennepin_jail_roster(inmate_limit=100):
     try:
         print("Opening Hennepin County Jail Roster...")
         # Navigate to the jail roster website
-        driver.get("https://jailroster.hennepin.us/")
+        driver.get(Config.JAIL_ROSTER_URL)
         
         # Wait a moment for the page to load
         time.sleep(3)
@@ -2012,7 +2163,7 @@ def test_instagram_posting():
         data_list = []
         
         try:
-            with open('jail_roster_data.csv', 'r', encoding='utf-8') as csvfile:
+            with open(Config.CSV_FILENAME, 'r', encoding='utf-8') as csvfile:
                 reader = csv.DictReader(csvfile)
                 for row in reader:
                     data_list.append(row)
@@ -2026,7 +2177,7 @@ def test_instagram_posting():
                 print("❌ No data found in CSV file")
                 
         except FileNotFoundError:
-            print("❌ jail_roster_data.csv not found. Run scraping first.")
+            print(f"❌ {Config.CSV_FILENAME} not found. Run scraping first.")
         except Exception as e:
             print(f"❌ Error reading CSV: {e}")
             
@@ -2039,7 +2190,7 @@ def check_posting_queue():
         print("📋 Checking posting queue status...")
         
         try:
-            with open('posting_queue.json', 'r', encoding='utf-8') as f:
+            with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
                 queue_data = json.load(f)
             
             total = queue_data.get('total_inmates', 0)
@@ -2083,23 +2234,23 @@ if __name__ == "__main__":
             # Post next batch in test mode (no actual posting)
             post_next_inmates(test_mode=True)
         elif command == "test":
-            # Full scraping in test mode (limit to 25 inmates, filter to top 10 highest bail)
-            print("🧪 Running in TEST MODE - processing 25 inmates, filtering to top 10 highest bail (excluding 'No Bail Information')")
-            open_hennepin_jail_roster(inmate_limit=25)
+            # Full scraping in test mode (limit to 25 inmates, filter to top 10 highest priority)
+            print("🧪 Running in TEST MODE - processing 25 inmates, filtering to top 10 highest priority (charge + bail)")
+            open_hennepin_jail_roster(inmate_limit=Config.TEST_INMATE_LIMIT)
         elif command == "check-queue":
             # Check posting queue status
             check_posting_queue()
         else:
             print(f"Unknown command: {command}")
             print("Available commands:")
-            print("  python data.py                # Full scraping (100 inmates) with top 10 highest bail filtering")
-            print("  python data.py test           # Test scraping (25 inmates → top 10 highest bail)")
+            print("  python data.py                # Full scraping (100 inmates) with top 10 highest priority filtering")
+            print("  python data.py test           # Test scraping (25 inmates → top 10 highest priority)")
             print("  python data.py test-instagram # Test posting with existing data")
             print("  python data.py post-next      # Post next batch from queue")
             print("  python data.py post-next-test # Test posting (simulation only)")
             print("  python data.py check-queue    # Check posting queue status")
     else:
-        # Production mode - scrape 100 inmates and filter to top 10 with actual bail amounts
-        print("🚀 Running in PRODUCTION MODE - processing 100 inmates, filtering to top 10 highest bail (excluding 'No Bail Information')")
-        open_hennepin_jail_roster(inmate_limit=100)
+        # Production mode - scrape 100 inmates and filter to top 10 with highest priority
+        print("🚀 Running in PRODUCTION MODE - processing 100 inmates, filtering to top 10 highest priority (charge + bail)")
+        open_hennepin_jail_roster(inmate_limit=Config.DEFAULT_INMATE_LIMIT)
 
