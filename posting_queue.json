@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-29T23:49:17.362149-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_CLARK_TERRY_RENEE_III.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-30T10:30:15.808809-05:00"
     },
     {
       "id": 2,
@@ -22,8 +22,8 @@
         "Bail": "$25,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_COLEMAN_LEE_EDWARD.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-30T10:30:15.808841-05:00"
     },
     {
       "id": 3,
