@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-29T23:49:17.362149-05:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -33,8 +33,8 @@
         "Bail": "$12,000.00 BAIL/BOND W/ CR",
         "Mugshot_File": "mugshots/mugshot_TAYLOR-HENDRIX_ALEX_JOSEPH.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-30T11:33:00.139729-05:00"
     },
     {
       "id": 4,
@@ -44,8 +44,8 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_KAMINSKI_KYLEE_ROSE_MARIE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-30T11:33:00.139759-05:00"
     },
     {
       "id": 5,
