@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-29T17:27:53.068095-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$250,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_GRAVES_QUENTIN_TOBIAS.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-29T20:27:32.007144-05:00"
     },
     {
       "id": 2,
@@ -22,8 +22,8 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_KAMINSKI_KYLEE_ROSE_MARIE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-29T20:27:32.007175-05:00"
     },
     {
       "id": 3,
