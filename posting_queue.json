@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-30T23:47:04.633222-05:00",
   "total_inmates": 10,
-  "posted_count": 9,
+  "posted_count": 10,
   "inmates": [
     {
       "id": 1,
@@ -110,8 +110,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_GARNER_MICHAEL_CHRISTOPHER.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T15:30:12.663378-05:00"
     }
   ]
 }
