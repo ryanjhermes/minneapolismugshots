@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-30T23:47:04.633222-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$30,000.00 CASH BAIL W/O CR",
         "Mugshot_File": "mugshots/mugshot_WORKMAN_DAVIAN_LAQUAN_RAINEER_ROBER.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T10:29:09.150850-05:00"
     },
     {
       "id": 2,
@@ -22,8 +22,8 @@
         "Bail": "$6,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_VITAL_GARCIA_ADAN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T10:29:09.150882-05:00"
     },
     {
       "id": 3,
