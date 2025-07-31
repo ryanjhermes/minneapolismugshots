@@ -1,117 +1,117 @@
 {
-  "created_at": "2025-07-29T17:27:53.068095-05:00",
+  "created_at": "2025-07-30T23:47:04.633222-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 10,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "GRAVES, QUENTIN TOBIAS",
+        "Full Name": "WORKMAN, DAVIAN LAQUAN RAINEER ROBER",
         "Charge 1": "No charge listed",
-        "Bail": "$250,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GRAVES_QUENTIN_TOBIAS.jpg"
+        "Bail": "$30,000.00 CASH BAIL W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WORKMAN_DAVIAN_LAQUAN_RAINEER_ROBER.jpg"
       },
       "posted": true,
-      "posted_at": "2025-07-31T12:33:09.074943-05:00"
+      "posted_at": "2025-07-31T10:29:09.150850-05:00"
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "KAMINSKI, KYLEE ROSE MARIE",
+        "Full Name": "VITAL GARCIA, ADAN",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KAMINSKI_KYLEE_ROSE_MARIE.jpg"
+        "Bail": "$6,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_VITAL_GARCIA_ADAN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T10:29:09.150882-05:00"
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "BRINDA, RICHARD JEROME",
+        "Full Name": "LANGLOIS, WILLIAM JOSEPH 3RD",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BRINDA_RICHARD_JEROME.jpg"
+        "Bail": "$100.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_LANGLOIS_WILLIAM_JOSEPH_3RD.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T11:34:45.337311-05:00"
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "ABERA, YODIT HAGOS",
+        "Full Name": "AHMED, ABDIKADIR ALI",
         "Charge 1": "No charge listed",
-        "Bail": "$600.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ABERA_YODIT_HAGOS.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_AHMED_ABDIKADIR_ALI.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T11:34:45.337345-05:00"
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "KOUKOL, NICOLE MARIE",
+        "Full Name": "ALVAREZ HERNANDEZ, ERICK JORGE DIEGO",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KOUKOL_NICOLE_MARIE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ALVAREZ_HERNANDEZ_ERICK_JORGE_DIEGO.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T12:25:29.181855-05:00"
     },
     {
       "id": 6,
       "data": {
-        "Full Name": "CLARK, TERRY RENEE III",
+        "Full Name": "ARON, DOMINIC LARSON",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CLARK_TERRY_RENEE_III.jpg"
+        "Mugshot_File": "mugshots/mugshot_ARON_DOMINIC_LARSON.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T13:38:49.470517-05:00"
     },
     {
       "id": 7,
       "data": {
-        "Full Name": "GUERRERO, VICTOR MANUEL",
+        "Full Name": "BELLANGER, ALICIA RUBY",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GUERRERO_VICTOR_MANUEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_BELLANGER_ALICIA_RUBY.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T13:38:49.470552-05:00"
     },
     {
       "id": 8,
       "data": {
-        "Full Name": "HAID, ABDULAZIZ ALI D JAMA",
+        "Full Name": "DZIEDZIC, KAYLA MONROE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HAID_ABDULAZIZ_ALI_D_JAMA.jpg"
+        "Mugshot_File": "mugshots/mugshot_DZIEDZIC_KAYLA_MONROE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T14:24:41.791028-05:00"
     },
     {
       "id": 9,
       "data": {
-        "Full Name": "JONES, DUWAYNE ELLIS",
+        "Full Name": "FERNALD, REX DALLAS DAVID",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JONES_DUWAYNE_ELLIS.jpg"
+        "Mugshot_File": "mugshots/mugshot_FERNALD_REX_DALLAS_DAVID.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T14:24:41.791061-05:00"
     },
     {
       "id": 10,
       "data": {
-        "Full Name": "LACKRAM, BRYNN HAILEY",
+        "Full Name": "GARNER, MICHAEL CHRISTOPHER",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LACKRAM_BRYNN_HAILEY.jpg"
+        "Mugshot_File": "mugshots/mugshot_GARNER_MICHAEL_CHRISTOPHER.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T15:30:12.663378-05:00"
     }
   ]
 }
