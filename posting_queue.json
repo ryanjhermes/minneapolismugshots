@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-30T23:47:04.633222-05:00",
   "total_inmates": 10,
-  "posted_count": 7,
+  "posted_count": 9,
   "inmates": [
     {
       "id": 1,
@@ -88,8 +88,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_DZIEDZIC_KAYLA_MONROE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T14:24:41.791028-05:00"
     },
     {
       "id": 9,
@@ -99,8 +99,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_FERNALD_REX_DALLAS_DAVID.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T14:24:41.791061-05:00"
     },
     {
       "id": 10,
