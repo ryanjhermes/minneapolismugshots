@@ -8,9 +8,18 @@ import requests
 import json
 from dotenv import load_dotenv
 import re
+import pytz
 
 # Load environment variables from .env file (if it exists)
 load_dotenv()
+
+# Import OpenAI filter
+try:
+    from openai_filter import OpenAIImageFilter
+    OPENAI_AVAILABLE = True
+except ImportError:
+    print("⚠️  OpenAI filter not available - install openai package")
+    OPENAI_AVAILABLE = False
 
 class Config:
     """Centralized configuration for the scraping application"""
@@ -20,6 +29,12 @@ class Config:
     TEST_INMATE_LIMIT = 25
     MODAL_WAIT_TIME = 5
     CLICK_WAIT_TIME = 3
+    
+    # Posting limits and scheduling
+    DAILY_POST_LIMIT = 5
+    POSTING_INTERVAL_HOURS = 2
+    POSTING_START_HOUR = 6  # 6:00 PM Central Time
+    POSTING_END_HOUR = 22   # 10:00 PM Central Time
     
     # Quality thresholds
     MIN_NAME_LENGTH = 3
@@ -829,8 +844,8 @@ def save_to_posting_queue(data_list):
 
     return True
 
-def get_next_inmates_to_post(batch_size=2):
-    """Get next batch of inmates to post from queue"""
+def get_next_inmates_to_post(batch_size=1):
+    """Get next inmate to post from queue (single posting) with AI filtering"""
     try:
         # Load queue
         try:
@@ -847,13 +862,34 @@ def get_next_inmates_to_post(batch_size=2):
             print("✅ All inmates have been posted!")
             return []
         
-        # Get next batch
-        next_batch = unposted_inmates[:batch_size]
+        # Get next single inmate
+        next_inmate = unposted_inmates[:batch_size]
         
-        print(f"📋 Found {len(next_batch)} inmates ready to post")
+        print(f"📋 Found {len(next_inmate)} inmate ready for AI filtering")
         print(f"📊 Remaining in queue: {len(unposted_inmates)} total")
         
-        return next_batch
+        # Apply AI filtering if available
+        if OPENAI_AVAILABLE and os.getenv('OPENAI_API_KEY'):
+            print(f"\n🤖 Applying AI mugshot filtering...")
+            try:
+                ai_filter = OpenAIImageFilter()
+                approved_inmates, rejected_inmates = ai_filter.filter_inmates_by_ai(next_inmate)
+                
+                if approved_inmates:
+                    print(f"✅ AI approved {len(approved_inmates)} inmate(s) for posting")
+                    return approved_inmates
+                else:
+                    print(f"❌ AI rejected all {len(next_inmate)} inmate(s)")
+                    print(f"💡 Consider running 'python data.py post-next' again to try next inmate")
+                    return []
+                    
+            except Exception as e:
+                print(f"⚠️  AI filtering failed: {e}")
+                print(f"💡 Proceeding with original inmate without AI filtering")
+                return next_inmate
+        else:
+            print(f"⚠️  AI filtering not available - proceeding without AI analysis")
+            return next_inmate
         
     except Exception as e:
         print(f"❌ Error reading posting queue: {e}")
@@ -890,12 +926,17 @@ def mark_inmates_as_posted(inmate_ids):
         print(f"❌ Error updating posting queue: {e}")
         return False
 
-def post_next_inmates(batch_size=2, repo_name="minneapolismugshots", username="ryanjhermes", test_mode=False):
-    """Post next batch of inmates from queue"""
+def post_next_inmates(batch_size=1, repo_name="minneapolismugshots", username="ryanjhermes", test_mode=False):
+    """Post next inmate from queue (single posting) with AI filtering"""
     try:
-        print(f"\n📱 Starting batch Instagram posting...")
+        print(f"\n📱 Starting single Instagram posting...")
         
-        # Get next inmates to post
+        # Check if posting is allowed
+        if not test_mode and not is_posting_allowed():
+            print("❌ Posting not allowed at this time")
+            return False
+        
+        # Get next inmate to post
         inmates_to_post = get_next_inmates_to_post(batch_size)
         
         if not inmates_to_post:
@@ -945,13 +986,7 @@ def post_next_inmates(batch_size=2, repo_name="minneapolismugshots", username="r
                     failed_posts.append(inmate_id)
                     print(f"❌ Failed to post {inmate_data.get('Full Name', 'Unknown')}")
                 
-                # Randomized wait between posts in the same batch (human-like behavior)
-                if len(inmates_to_post) > 1 and inmate != inmates_to_post[-1]:
-                    import random
-                    # Random delay between 8-15 seconds instead of fixed 10 seconds
-                    random_delay = random.randint(8, 15)
-                    print(f"⏳ Waiting {random_delay} seconds before next post (randomized for detection avoidance)...")
-                    time.sleep(random_delay)
+                # No need for delays between posts since we're only posting one at a time
                 
             except Exception as e:
                 print(f"❌ Error processing inmate #{inmate_id}: {e}")
@@ -963,15 +998,15 @@ def post_next_inmates(batch_size=2, repo_name="minneapolismugshots", username="r
             mark_inmates_as_posted(successful_posts)
         
         # Summary
-        print(f"\n📊 BATCH POSTING SUMMARY:")
+        print(f"\n📊 SINGLE POSTING SUMMARY:")
         print(f"   ✅ Successful posts: {len(successful_posts)}")
         print(f"   ❌ Failed posts: {len(failed_posts)}")
-        print(f"   📱 Total in batch: {len(inmates_to_post)}")
+        print(f"   📱 Total posted: {len(inmates_to_post)}")
         
         return len(successful_posts) > 0
         
     except Exception as e:
-        print(f"❌ Error in batch posting process: {e}")
+        print(f"❌ Error in single posting process: {e}")
         return False
 
 def post_all_to_instagram(data_list, repo_name="minneapolismugshots", username="ryanjhermes", test_mode=False):
@@ -2204,9 +2239,9 @@ def check_posting_queue():
             print(f"   Created: {queue_data.get('created_at', 'Unknown')}")
             
             if pending > 0:
-                print(f"\n📋 Next {min(2, pending)} inmates to post:")
+                print(f"\n📋 Next inmate to post:")
                 unposted = [inmate for inmate in queue_data['inmates'] if not inmate['posted']]
-                for i, inmate in enumerate(unposted[:2], 1):
+                for i, inmate in enumerate(unposted[:1], 1):
                     name = inmate['data'].get('Full Name', 'Unknown')
                     print(f"   {i}. {name}")
             else:
@@ -2219,6 +2254,89 @@ def check_posting_queue():
     except Exception as e:
         print(f"❌ Error checking queue: {e}")
 
+def get_daily_post_count():
+    """Get the number of posts made today"""
+    try:
+        # Load queue to count today's posts
+        with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
+            queue_data = json.load(f)
+        
+        # Count posts made today
+        today = get_current_date()
+        today_posts = 0
+        
+        for inmate in queue_data['inmates']:
+            if inmate.get('posted') and inmate.get('posted_at'):
+                # Parse the posted_at timestamp
+                posted_time = datetime.fromisoformat(inmate['posted_at'].replace('Z', '+00:00'))
+                # Convert to Central Time
+                central_tz = pytz.timezone('US/Central')
+                posted_central = posted_time.astimezone(central_tz)
+                posted_date = posted_central.strftime("%m/%d/%Y")
+                
+                if posted_date == today:
+                    today_posts += 1
+        
+        return today_posts
+        
+    except Exception as e:
+        print(f"⚠️  Error getting daily post count: {e}")
+        return 0
+
+def is_posting_allowed():
+    """Check if posting is allowed based on daily limit and time intervals"""
+    try:
+        # Check daily limit
+        daily_posts = get_daily_post_count()
+        if daily_posts >= Config.DAILY_POST_LIMIT:
+            print(f"❌ Daily post limit reached ({daily_posts}/{Config.DAILY_POST_LIMIT})")
+            return False
+        
+        # Check if we're within posting hours
+        central_tz = pytz.timezone('US/Central')
+        current_time = datetime.now(central_tz)
+        current_hour = current_time.hour
+        
+        if current_hour < Config.POSTING_START_HOUR or current_hour >= Config.POSTING_END_HOUR:
+            print(f"❌ Outside posting hours ({Config.POSTING_START_HOUR}:00-{Config.POSTING_END_HOUR}:00)")
+            return False
+        
+        # Check if enough time has passed since last post
+        try:
+            with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
+                queue_data = json.load(f)
+            
+            # Find the most recent post
+            last_post_time = None
+            for inmate in queue_data['inmates']:
+                if inmate.get('posted') and inmate.get('posted_at'):
+                    posted_time = datetime.fromisoformat(inmate['posted_at'].replace('Z', '+00:00'))
+                    if last_post_time is None or posted_time > last_post_time:
+                        last_post_time = posted_time
+            
+            if last_post_time:
+                # Convert to Central Time
+                last_post_central = last_post_time.astimezone(central_tz)
+                time_since_last = current_time - last_post_central
+                hours_since_last = time_since_last.total_seconds() / 3600
+                
+                if hours_since_last < Config.POSTING_INTERVAL_HOURS:
+                    remaining_hours = Config.POSTING_INTERVAL_HOURS - hours_since_last
+                    print(f"⏳ Too soon since last post ({hours_since_last:.1f}h ago, need {Config.POSTING_INTERVAL_HOURS}h)")
+                    print(f"   Next post allowed in {remaining_hours:.1f} hours")
+                    return False
+            
+            print(f"✅ Posting allowed - {daily_posts}/{Config.DAILY_POST_LIMIT} posts today")
+            return True
+            
+        except Exception as e:
+            print(f"⚠️  Error checking posting intervals: {e}")
+            return True  # Allow posting if we can't check intervals
+        
+    except Exception as e:
+        print(f"❌ Error checking posting permissions: {e}")
+        return False
+
 if __name__ == "__main__":
     import sys
     
@@ -2228,15 +2346,67 @@ if __name__ == "__main__":
         if command == "test-instagram":
             test_instagram_posting()
         elif command == "post-next":
-            # Post next batch of inmates from queue
+            # Post next inmate from queue
             post_next_inmates()
         elif command == "post-next-test":
-            # Post next batch in test mode (no actual posting)
+            # Post next inmate in test mode (no actual posting)
             post_next_inmates(test_mode=True)
         elif command == "test":
             # Full scraping in test mode (limit to 25 inmates, filter to top 10 highest priority)
             print("🧪 Running in TEST MODE - processing 25 inmates, filtering to top 10 highest priority (charge + bail)")
             open_hennepin_jail_roster(inmate_limit=Config.TEST_INMATE_LIMIT)
+        elif command == "test-ai-filter":
+            # Test AI mugshot filtering
+            if OPENAI_AVAILABLE:
+                from openai_filter import test_ai_filter
+                test_ai_filter()
+            else:
+                print("❌ OpenAI filter not available")
+                print("💡 Install openai package: pip install openai")
+        elif command == "check-posting-status":
+            # Check posting status and limits
+            daily_posts = get_daily_post_count()
+            posting_allowed = is_posting_allowed()
+            
+            print(f"📊 POSTING STATUS:")
+            print(f"   Daily posts: {daily_posts}/{Config.DAILY_POST_LIMIT}")
+            print(f"   Posting allowed: {'✅ Yes' if posting_allowed else '❌ No'}")
+            print(f"   Posting hours: {Config.POSTING_START_HOUR}:00-{Config.POSTING_END_HOUR}:00")
+            print(f"   Posting interval: Every {Config.POSTING_INTERVAL_HOURS} hours")
+            
+            if not posting_allowed:
+                print(f"\n💡 Next posting window:")
+                # Calculate next posting time
+                central_tz = pytz.timezone('US/Central')
+                current_time = datetime.now(central_tz)
+                
+                if daily_posts >= Config.DAILY_POST_LIMIT:
+                    print(f"   Tomorrow (daily limit reached)")
+                elif current_time.hour < Config.POSTING_START_HOUR:
+                    print(f"   Today at {Config.POSTING_START_HOUR}:00")
+                elif current_time.hour >= Config.POSTING_END_HOUR:
+                    print(f"   Tomorrow at {Config.POSTING_START_HOUR}:00")
+                else:
+                    # Check interval
+                    try:
+                        with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
+                            queue_data = json.load(f)
+                        
+                        last_post_time = None
+                        for inmate in queue_data['inmates']:
+                            if inmate.get('posted') and inmate.get('posted_at'):
+                                posted_time = datetime.fromisoformat(inmate['posted_at'].replace('Z', '+00:00'))
+                                if last_post_time is None or posted_time > last_post_time:
+                                    last_post_time = posted_time
+                        
+                        if last_post_time:
+                            last_post_central = last_post_time.astimezone(central_tz)
+                            next_post_time = last_post_central + timedelta(hours=Config.POSTING_INTERVAL_HOURS)
+                            print(f"   {next_post_time.strftime('%m/%d/%Y at %I:%M %p')}")
+                        else:
+                            print(f"   Now (no previous posts)")
+                    except:
+                        print(f"   Now (unable to calculate)")
         elif command == "check-queue":
             # Check posting queue status
             check_posting_queue()
@@ -2246,8 +2416,10 @@ if __name__ == "__main__":
             print("  python data.py                # Full scraping (100 inmates) with top 10 highest priority filtering")
             print("  python data.py test           # Test scraping (25 inmates → top 10 highest priority)")
             print("  python data.py test-instagram # Test posting with existing data")
-            print("  python data.py post-next      # Post next batch from queue")
+            print("  python data.py post-next      # Post next inmate from queue (with AI filtering)")
             print("  python data.py post-next-test # Test posting (simulation only)")
+            print("  python data.py test-ai-filter # Test AI mugshot filtering")
+            print("  python data.py check-posting-status # Check posting limits and timing")
             print("  python data.py check-queue    # Check posting queue status")
     else:
         # Production mode - scrape 100 inmates and filter to top 10 with highest priority

@@ -35,8 +35,26 @@ Follow [@MinneapolisMugshots](https://instagram.com/minneapolismugshots) on Inst
 | Time | Activity |
 |------|----------|
 | **6:00 PM Daily** | Scan Hennepin County Jail for new arrests |
-| **6:00-8:00 PM** | Share top 10 highest bail cases on social media |
+| **6:00-10:00 PM** | Post 5 inmates every 2 hours (6:00, 8:00, 10:00 PM) |
 | **Continuous** | Update public database with new records |
+
+## Posting Schedule & Limits
+
+The system now operates with strict posting limits:
+
+- **Daily Limit**: Maximum 5 posts per day
+- **Posting Hours**: 6:00 PM - 10:00 PM Central Time
+- **Posting Interval**: Every 2 hours (6:00, 8:00, 10:00 PM)
+- **Single Posting**: One inmate per post (no batches)
+- **AI Filtering**: All mugshots analyzed before posting
+
+### Posting Schedule:
+- **6:00 PM** - First post of the day
+- **8:00 PM** - Second post of the day  
+- **10:00 PM** - Third post of the day
+- **Next Day** - Cycle repeats
+
+*Note: If daily limit is reached, posting resumes the next day at 6:00 PM*
 
 ## Intelligent Filtering System
 
@@ -46,6 +64,22 @@ Our system prioritizes the most significant cases:
 🚫 **"Hold Without Bail"** - Prioritized as most serious cases  
 💰 **Bail Amounts** - Sorted from highest to lowest dollar amounts  
 📊 **Quality Control** - Only cases with both mugshots AND charges  
+🤖 **AI Image Filtering** - OpenAI Vision API analyzes mugshot quality before posting
+
+## AI-Powered Quality Control
+
+The system now uses OpenAI's Vision API to analyze mugshots before posting:
+
+- **Image Quality Assessment** - Evaluates clarity, lighting, and framing
+- **Professional Appearance** - Ensures images are suitable for public viewing
+- **Technical Issue Detection** - Identifies blur, distortion, or other problems
+- **Content Appropriateness** - Validates images are appropriate for social media
+
+### AI Filtering Criteria:
+1. **Image Quality** - Clear, well-lit, properly framed
+2. **Professional Appearance** - Presentable and appropriate for public viewing
+3. **Technical Issues** - No blur, distortion, or technical problems
+4. **Content Appropriateness** - Suitable for public social media posting
 
 ## Anti-Detection Technology
 
@@ -54,6 +88,7 @@ To ensure reliable service:
 - **Human-like delays** between posts (8-15 seconds)
 - **Varied caption formats** with different emojis
 - **Reduced posting frequency** for sustainability
+- **Single posting mode** - Posts one inmate at a time instead of batches
 
 ## Why This Matters
 
@@ -81,6 +116,42 @@ All information displayed is:
 - ✅ **Factual booking information** only
 
 *Note: Booking does not imply guilt. All individuals are presumed innocent until proven guilty in court.*
+
+## Setup Instructions
+
+### Prerequisites
+- Python 3.8+
+- Chrome browser (for web scraping)
+- OpenAI API key (for AI filtering)
+
+### Installation
+1. Clone the repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Create `.env` file with your API keys:
+   ```
+   OPENAI_API_KEY=your_openai_api_key_here
+   ACCESS_TOKEN=your_meta_access_token_here
+   APP_ID=your_meta_app_id_here
+   BUSINESS_ID=your_meta_business_id_here
+   ```
+
+### Usage
+```bash
+# Full scraping with AI filtering
+python data.py
+
+# Test scraping (25 inmates)
+python data.py test
+
+# Post next inmate with AI filtering
+python data.py post-next
+
+# Test AI filtering
+python data.py test-ai-filter
+
+# Check posting queue
+python data.py check-queue
+```
 
 ---
 
