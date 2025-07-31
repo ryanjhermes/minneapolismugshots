@@ -1,7 +1,7 @@
 {
   "created_at": "2025-07-30T23:47:04.633222-05:00",
   "total_inmates": 10,
-  "posted_count": 5,
+  "posted_count": 7,
   "inmates": [
     {
       "id": 1,
@@ -66,8 +66,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_ARON_DOMINIC_LARSON.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T13:38:49.470517-05:00"
     },
     {
       "id": 7,
@@ -77,8 +77,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_BELLANGER_ALICIA_RUBY.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-07-31T13:38:49.470552-05:00"
     },
     {
       "id": 8,
