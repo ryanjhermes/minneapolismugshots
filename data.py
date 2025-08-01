@@ -17,8 +17,13 @@ load_dotenv()
 try:
     from openai_filter import BLIPImageFilter
     BLIP_AVAILABLE = True
-except ImportError:
-    print("⚠️  BLIP filter not available - install transformers and torch packages")
+    print("✅ BLIP filter imported successfully")
+except ImportError as e:
+    print(f"⚠️  BLIP filter not available - install transformers and torch packages")
+    print(f"🔍 Import error details: {e}")
+    BLIP_AVAILABLE = False
+except Exception as e:
+    print(f"⚠️  BLIP filter error during import: {e}")
     BLIP_AVAILABLE = False
 
 class Config:
