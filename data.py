@@ -13,13 +13,13 @@ import pytz
 # Load environment variables from .env file (if it exists)
 load_dotenv()
 
-# Import OpenAI filter
+# Import BLIP filter
 try:
-    from openai_filter import OpenAIImageFilter
-    OPENAI_AVAILABLE = True
+    from openai_filter import BLIPImageFilter
+    BLIP_AVAILABLE = True
 except ImportError:
-    print("⚠️  OpenAI filter not available - install openai package")
-    OPENAI_AVAILABLE = False
+    print("⚠️  BLIP filter not available - install transformers and torch packages")
+    BLIP_AVAILABLE = False
 
 class Config:
     """Centralized configuration for the scraping application"""
@@ -869,26 +869,29 @@ def get_next_inmates_to_post(batch_size=1):
         print(f"📊 Remaining in queue: {len(unposted_inmates)} total")
         
         # Apply AI filtering if available
-        if OPENAI_AVAILABLE and os.getenv('OPENAI_API_KEY'):
-            print(f"\n🤖 Applying AI mugshot filtering...")
+        if BLIP_AVAILABLE:
+            print(f"\n🤖 Applying BLIP mugshot filtering...")
+            print(f"🔍 Debug: BLIP_AVAILABLE={BLIP_AVAILABLE}")
             try:
-                ai_filter = OpenAIImageFilter()
+                ai_filter = BLIPImageFilter()
                 approved_inmates, rejected_inmates = ai_filter.filter_inmates_by_ai(next_inmate)
                 
                 if approved_inmates:
-                    print(f"✅ AI approved {len(approved_inmates)} inmate(s) for posting")
+                    print(f"✅ BLIP approved {len(approved_inmates)} inmate(s) for posting")
                     return approved_inmates
                 else:
-                    print(f"❌ AI rejected all {len(next_inmate)} inmate(s)")
+                    print(f"❌ BLIP rejected all {len(next_inmate)} inmate(s)")
                     print(f"💡 Consider running 'python data.py post-next' again to try next inmate")
                     return []
                     
             except Exception as e:
-                print(f"⚠️  AI filtering failed: {e}")
-                print(f"💡 Proceeding with original inmate without AI filtering")
+                print(f"⚠️  BLIP filtering failed: {e}")
+                print(f"🔄 FALLBACK MODE: Proceeding with original inmate without AI filtering")
+                print(f"💡 BLIP filtering will be skipped until model issues are resolved")
                 return next_inmate
         else:
-            print(f"⚠️  AI filtering not available - proceeding without AI analysis")
+            print(f"⚠️  BLIP filtering not available - proceeding without AI analysis")
+            print(f"🔍 Debug: BLIP_AVAILABLE={BLIP_AVAILABLE}")
             return next_inmate
         
     except Exception as e:
@@ -2356,13 +2359,13 @@ if __name__ == "__main__":
             print("🧪 Running in TEST MODE - processing 25 inmates, filtering to top 10 highest priority (charge + bail)")
             open_hennepin_jail_roster(inmate_limit=Config.TEST_INMATE_LIMIT)
         elif command == "test-ai-filter":
-            # Test AI mugshot filtering
-            if OPENAI_AVAILABLE:
+            # Test BLIP mugshot filtering
+            if BLIP_AVAILABLE:
                 from openai_filter import test_ai_filter
                 test_ai_filter()
             else:
-                print("❌ OpenAI filter not available")
-                print("💡 Install openai package: pip install openai")
+                print("❌ BLIP filter not available")
+                print("💡 Install transformers and torch packages: pip install transformers torch pillow")
         elif command == "check-posting-status":
             # Check posting status and limits
             daily_posts = get_daily_post_count()

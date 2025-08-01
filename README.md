@@ -64,11 +64,11 @@ Our system prioritizes the most significant cases:
 🚫 **"Hold Without Bail"** - Prioritized as most serious cases  
 💰 **Bail Amounts** - Sorted from highest to lowest dollar amounts  
 📊 **Quality Control** - Only cases with both mugshots AND charges  
-🤖 **AI Image Filtering** - OpenAI Vision API analyzes mugshot quality before posting
+🤖 **AI Image Filtering** - BLIP VQA model analyzes mugshot quality before posting
 
 ## AI-Powered Quality Control
 
-The system now uses OpenAI's Vision API to analyze mugshots before posting:
+The system now uses BLIP VQA (Visual Question Answering) model to analyze mugshots before posting:
 
 - **Image Quality Assessment** - Evaluates clarity, lighting, and framing
 - **Professional Appearance** - Ensures images are suitable for public viewing
@@ -122,14 +122,13 @@ All information displayed is:
 ### Prerequisites
 - Python 3.8+
 - Chrome browser (for web scraping)
-- OpenAI API key (for AI filtering)
+- Transformers and PyTorch (for AI filtering)
 
 ### Installation
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
 3. Create `.env` file with your API keys:
    ```
-   OPENAI_API_KEY=your_openai_api_key_here
    ACCESS_TOKEN=your_meta_access_token_here
    APP_ID=your_meta_app_id_here
    BUSINESS_ID=your_meta_business_id_here
