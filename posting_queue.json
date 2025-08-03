@@ -1,48 +1,48 @@
 {
-  "created_at": "2025-08-01T23:43:44.310341-05:00",
-  "total_inmates": 10,
-  "posted_count": 3,
+  "created_at": "2025-08-02T23:54:23.889671-05:00",
+  "total_inmates": 8,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "HUNTER, JAMES ANTHONY",
+        "Full Name": "ROJAS-ORTIZ, RENE",
         "Charge 1": "No charge listed",
-        "Bail": "$6,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HUNTER_JAMES_ANTHONY.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROJAS-ORTIZ_RENE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-02T10:25:57.227775-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "DAVIS, ANTIONE ALVIN",
+        "Full Name": "TAKO, JEFFREY ALLEN",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DAVIS_ANTIONE_ALVIN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TAKO_JEFFREY_ALLEN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-02T13:35:59.128886-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "ROBINSON, CHAUNCEY RAMON",
+        "Full Name": "HUMPHREY, EMANUEL RAY 3RD",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROBINSON_CHAUNCEY_RAMON.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_HUMPHREY_EMANUEL_RAY_3RD.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-02T16:22:48.084624-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "CORTES, AMANDA VALENTINA",
+        "Full Name": "MARTIN, SHAUN DIANTE",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CORTES_AMANDA_VALENTINA.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MARTIN_SHAUN_DIANTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "BETZ, JAMES FREDERICK",
+        "Full Name": "MANLEY, TERRANCE PARNELL",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BETZ_JAMES_FREDERICK.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MANLEY_TERRANCE_PARNELL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "BYRD, THOMAS CHRISTOPHER",
+        "Full Name": "LOGAN, GEORGE",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BYRD_THOMAS_CHRISTOPHER.jpg"
+        "Bail": "$100.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LOGAN_GEORGE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "COUNCE, DARNTRA REGINALD",
+        "Full Name": "HITE, JAMES ARRON",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_COUNCE_DARNTRA_REGINALD.jpg"
+        "Mugshot_File": "mugshots/mugshot_HITE_JAMES_ARRON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,32 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "JENSEN, SARAH MARIE",
+        "Full Name": "MONTERROSO MONTERROSO, DAVE STEVEN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JENSEN_SARAH_MARIE.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 9,
-      "data": {
-        "Full Name": "KRASKEY, LUCAS PATRICK",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KRASKEY_LUCAS_PATRICK.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 10,
-      "data": {
-        "Full Name": "LEE, ANTWION ELLIS II",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LEE_ANTWION_ELLIS_II.jpg"
+        "Mugshot_File": "mugshots/mugshot_MONTERROSO_MONTERROSO_DAVE_STEVEN.jpg"
       },
       "posted": false,
       "posted_at": null
