@@ -35,6 +35,23 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install requests python-dotenv pytz
+        # Install ML dependencies for BLIP filtering
+        pip install transformers torch pillow
+        echo "✅ All dependencies installed including BLIP requirements"
+
+    - name: Test BLIP availability
+      run: |
+        echo "🤖 Testing BLIP AI filter availability..."
+        python -c "
+        try:
+            from transformers import pipeline, AutoProcessor, AutoModelForVisualQuestionAnswering
+            from PIL import Image
+            print('✅ BLIP dependencies available')
+        except ImportError as e:
+            print(f'❌ BLIP import error: {e}')
+        except Exception as e:
+            print(f'⚠️  BLIP setup error: {e}')
+        "
 
     - name: Create .env file with secrets
       run: |
@@ -60,6 +77,13 @@ jobs:
         python data.py post-next
         echo "✅ Posting batch completed"
 
+    - name: Clean up posted mugshot files
+      if: steps.check_queue.outputs.queue_exists == 'true'
+      run: |
+        echo "🗑️  Cleaning up posted inmates' mugshot files..."
+        python data.py cleanup-mugshots
+        echo "✅ Mugshot cleanup completed"
+
     - name: Add random delay between posts for human-like behavior
       if: steps.check_queue.outputs.queue_exists == 'true'
       run: |
@@ -82,6 +106,17 @@ jobs:
           git commit -m "Update posting queue - $(date '+%Y-%m-%d %H:%M:%S')"
           git push
           echo "✅ Queue updates committed"
+        fi
+        
+        # Check if any mugshot files were deleted
+        if git status --porcelain | grep -q "D.*mugshots/"; then
+          echo "🗑️  Committing deleted mugshot files..."
+          git add -A mugshots/
+          git commit -m "Clean up posted mugshot files - $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+          echo "✅ Mugshot cleanup committed"
+        else
+          echo "📭 No mugshot files to clean up"
         fi
 
     - name: Skip if no queue
