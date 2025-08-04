@@ -1,92 +1,48 @@
 {
-  "created_at": "2025-08-02T23:54:23.889671-05:00",
-  "total_inmates": 8,
-  "posted_count": 3,
+  "created_at": "2025-08-03T19:55:23.164218-05:00",
+  "total_inmates": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ROJAS-ORTIZ, RENE",
+        "Full Name": "FRAHER, BRANDON JAMES",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROJAS-ORTIZ_RENE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_FRAHER_BRANDON_JAMES.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-03T10:26:43.412097-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "TAKO, JEFFREY ALLEN",
+        "Full Name": "JONES, DEANNA MAUREEN",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TAKO_JEFFREY_ALLEN.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_JONES_DEANNA_MAUREEN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-03T13:36:13.508323-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "HUMPHREY, EMANUEL RAY 3RD",
+        "Full Name": "LOPEZ MARTINEZ, JADER ANTONIO",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_HUMPHREY_EMANUEL_RAY_3RD.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_LOPEZ_MARTINEZ_JADER_ANTONIO.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-03T16:25:08.588905-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "MARTIN, SHAUN DIANTE",
-        "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MARTIN_SHAUN_DIANTE.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 5,
-      "data": {
-        "Full Name": "MANLEY, TERRANCE PARNELL",
-        "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MANLEY_TERRANCE_PARNELL.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 6,
-      "data": {
-        "Full Name": "LOGAN, GEORGE",
-        "Charge 1": "No charge listed",
-        "Bail": "$100.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LOGAN_GEORGE.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 7,
-      "data": {
-        "Full Name": "HITE, JAMES ARRON",
+        "Full Name": "SPENCER, ARCH WILLIAM 3RD",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HITE_JAMES_ARRON.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 8,
-      "data": {
-        "Full Name": "MONTERROSO MONTERROSO, DAVE STEVEN",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MONTERROSO_MONTERROSO_DAVE_STEVEN.jpg"
+        "Mugshot_File": "mugshots/mugshot_SPENCER_ARCH_WILLIAM_3RD.jpg"
       },
       "posted": false,
       "posted_at": null
