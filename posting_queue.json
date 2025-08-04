@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-03T23:58:52.867976-05:00",
   "total_inmates": 7,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_YUPA_QUISPHI_LUIS_HUMBERTO.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-04T10:33:01.737195-05:00"
     },
     {
       "id": 2,
