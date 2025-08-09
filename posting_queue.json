@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-08T23:36:27.909904-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SMITH_DAMIAN_MARCELL.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-09T13:36:54.579673-05:00"
     },
     {
       "id": 3,
