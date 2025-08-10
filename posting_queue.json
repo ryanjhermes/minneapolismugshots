@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-09T23:45:26.713256-05:00",
   "total_inmates": 8,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$4,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_WILLIAMS_SHANNON_ANTIONETTE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-10T13:34:56.026755-05:00"
     },
     {
       "id": 3,
