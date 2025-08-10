@@ -2,13 +2,21 @@ name: Instagram Posting
 
 on:
   schedule:
-    # Every hour from 10:00 AM to 7:00 PM Central (CDT, UTC-5)
-    - cron: '0 15-21 * * *'
+    # Target posting windows for US/Central. We run at 6pm, 8pm, 10pm Central.
+    # UTC equivalents:
+    # - During CDT (UTC-5): 23:00, 01:00, 03:00 UTC
+    # - During CST (UTC-6): 00:00, 02:00, 04:00 UTC
+    # We include both sets to cover DST without complex logic; preflight will still gate off-hours.
+    - cron: '0 23,1,3 * * *'
+    - cron: '0 0,2,4 * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
   post-inmates:
     runs-on: ubuntu-latest
+    concurrency:
+      group: instagram-posting
+      cancel-in-progress: true
     
     permissions:
       contents: write # Allow pushing updates to repository
@@ -19,19 +27,93 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Add randomized delay for Instagram detection avoidance
+    - name: Preflight readiness check (queue, window, limits, interval)
+      id: preflight
       run: |
-        # Generate random delay between 0-120 seconds (±1 minute)
-        RANDOM_DELAY=$((RANDOM % 121))
-        echo "🎲 Adding random delay of $RANDOM_DELAY seconds to avoid detection patterns"
-        sleep $RANDOM_DELAY
+        echo "🔎 Running preflight readiness check..."
+        python3 - << 'PY'
+        import json, os
+        from datetime import datetime, timedelta
+        from zoneinfo import ZoneInfo
+        queue_path = 'posting_queue.json'
+        ready = False
+        reason = ''
+        pending = 0
+        next_allowed_in_minutes = ''
+        # Posting policy (keep in sync with README/data.py)
+        DAILY_LIMIT = 5
+        START_HOUR = 18  # inclusive
+        END_HOUR = 22    # exclusive
+        INTERVAL_HOURS = 2
+        now = datetime.now(ZoneInfo('America/Chicago'))
+        if not os.path.exists(queue_path):
+            reason = 'no_queue'
+        else:
+            try:
+                with open(queue_path, 'r', encoding='utf-8') as f:
+                    q = json.load(f)
+                inmates = q.get('inmates', [])
+                unposted = [i for i in inmates if not i.get('posted')]
+                pending = len(unposted)
+                if pending == 0:
+                    reason = 'queue_empty'
+                else:
+                    # Daily limit check
+                    today_posts = 0
+                    last_post_dt = None
+                    for i in inmates:
+                        if i.get('posted') and i.get('posted_at'):
+                            try:
+                                dt = datetime.fromisoformat(i['posted_at'].replace('Z','+00:00'))
+                                dt_local = dt.astimezone(ZoneInfo('America/Chicago'))
+                                if dt_local.date() == now.date():
+                                    today_posts += 1
+                                if (last_post_dt is None) or (dt > last_post_dt):
+                                    last_post_dt = dt
+                            except Exception:
+                                pass
+                    if today_posts >= DAILY_LIMIT:
+                        reason = f'daily_limit_reached_{today_posts}'
+                    elif not (START_HOUR <= now.hour < END_HOUR):
+                        reason = f'outside_hours_{now.hour}'
+                    else:
+                        # Interval gating
+                        if last_post_dt is not None:
+                            last_local = last_post_dt.astimezone(ZoneInfo('America/Chicago'))
+                            delta = now - last_local
+                            if delta < timedelta(hours=INTERVAL_HOURS):
+                                mins = int((timedelta(hours=INTERVAL_HOURS) - delta).total_seconds() // 60)
+                                next_allowed_in_minutes = str(mins)
+                                reason = f'too_soon_{mins}m_left'
+                            else:
+                                ready = True
+                        else:
+                            # No prior posts today; within window
+                            ready = True
+            except Exception as e:
+                reason = f'error:{e.__class__.__name__}'
+        # Emit outputs
+        print(f"ready={str(ready).lower()}")
+        print(f"reason={reason}")
+        print(f"pending={pending}")
+        if next_allowed_in_minutes:
+            print(f"next_allowed_in_minutes={next_allowed_in_minutes}")
+        with open(os.environ['GITHUB_OUTPUT'], 'a') as gh:
+            gh.write(f"ready={str(ready).lower()}\n")
+            gh.write(f"reason={reason}\n")
+            gh.write(f"pending={pending}\n")
+            if next_allowed_in_minutes:
+                gh.write(f"next_allowed_in_minutes={next_allowed_in_minutes}\n")
+        PY
 
     - name: Set up Python
+      if: steps.preflight.outputs.ready == 'true'
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
 
     - name: Install dependencies
+      if: steps.preflight.outputs.ready == 'true'
       run: |
         python -m pip install --upgrade pip
         pip install requests python-dotenv pytz
@@ -40,6 +122,7 @@ jobs:
         echo "✅ All dependencies installed including BLIP requirements"
 
     - name: Test BLIP availability
+      if: steps.preflight.outputs.ready == 'true'
       run: |
         echo "🤖 Testing BLIP AI filter availability..."
         python -c "
@@ -54,46 +137,32 @@ jobs:
         "
 
     - name: Create .env file with secrets
+      if: steps.preflight.outputs.ready == 'true'
       run: |
         echo "ACCESS_TOKEN=${{ secrets.META_ACCESS_TOKEN }}" >> .env
         echo "APP_ID=${{ secrets.META_APP_ID }}" >> .env
         echo "BUSINESS_ID=${{ secrets.META_BUSINESS_ID }}" >> .env
 
-    - name: Check for posting queue
-      id: check_queue
-      run: |
-        if [ -f "posting_queue.json" ]; then
-          echo "queue_exists=true" >> $GITHUB_OUTPUT
-          echo "📋 Posting queue found"
-        else
-          echo "queue_exists=false" >> $GITHUB_OUTPUT
-          echo "📭 No posting queue found"
-        fi
-
     - name: Post next inmates to Instagram
-      if: steps.check_queue.outputs.queue_exists == 'true'
+      if: steps.preflight.outputs.ready == 'true'
       run: |
+        # Short randomization only when actually posting
+        RANDOM_DELAY=$((RANDOM % 61))
+        echo "🎲 Adding small random delay of $RANDOM_DELAY seconds"
+        sleep $RANDOM_DELAY
         echo "📱 Posting next batch of inmates to Instagram..."
         python data.py post-next
         echo "✅ Posting batch completed"
 
     - name: Clean up posted mugshot files
-      if: steps.check_queue.outputs.queue_exists == 'true'
+      if: steps.preflight.outputs.ready == 'true'
       run: |
         echo "🗑️  Cleaning up posted inmates' mugshot files..."
         python data.py cleanup-mugshots
         echo "✅ Mugshot cleanup completed"
 
-    - name: Add random delay between posts for human-like behavior
-      if: steps.check_queue.outputs.queue_exists == 'true'
-      run: |
-        # Add another small random delay after posting
-        RANDOM_DELAY=$((RANDOM % 31 + 10))  # 10-40 seconds
-        echo "😴 Adding random post-posting delay of $RANDOM_DELAY seconds"
-        sleep $RANDOM_DELAY
-
     - name: Commit queue updates
-      if: steps.check_queue.outputs.queue_exists == 'true'
+      if: steps.preflight.outputs.ready == 'true'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
@@ -119,8 +188,7 @@ jobs:
           echo "📭 No mugshot files to clean up"
         fi
 
-    - name: Skip if no queue
-      if: steps.check_queue.outputs.queue_exists == 'false'
+    - name: Skip (not ready to post)
+      if: steps.preflight.outputs.ready != 'true'
       run: |
-        echo "⏭️  No posting queue found - skipping this run"
-        echo "💡 Queue will be created when daily scraping runs at 6:00 PM UTC" 
+        echo "⏭️  Skipping: not ready to post (reason=${{ steps.preflight.outputs.reason }}, pending=${{ steps.preflight.outputs.pending }})"
