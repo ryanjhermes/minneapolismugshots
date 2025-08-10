@@ -1,37 +1,37 @@
 {
-  "created_at": "2025-08-09T23:45:26.713256-05:00",
-  "total_inmates": 8,
-  "posted_count": 2,
+  "created_at": "2025-08-10T15:34:55.621016-05:00",
+  "total_inmates": 7,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ALEXANDER, MASON COOPER",
+        "Full Name": "CHUNUNLLO CRIOLLO, JONATHANA MOISES",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALEXANDER_MASON_COOPER.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CHUNUNLLO_CRIOLLO_JONATHANA_MOISES.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-10T10:27:39.140229-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "WILLIAMS, SHANNON ANTIONETTE",
+        "Full Name": "FARLEY, AKOS DEBORAH",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_SHANNON_ANTIONETTE.jpg"
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FARLEY_AKOS_DEBORAH.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-10T13:34:56.026755-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "CARTER, ERNEST",
+        "Full Name": "ROMERO, ADRIAN JACK PHILLIP",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CARTER_ERNEST.jpg"
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROMERO_ADRIAN_JACK_PHILLIP.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "FREDRICKSON, KENDRA SUZANNE",
+        "Full Name": "PORTIS, JENNIFER JEANNE",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FREDRICKSON_KENDRA_SUZANNE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_PORTIS_JENNIFER_JEANNE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "MCGILBERRY, DEMARCO MARTEZ",
+        "Full Name": "RILEY, ELYSSA LEE MAE",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MCGILBERRY_DEMARCO_MARTEZ.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_RILEY_ELYSSA_LEE_MAE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "SEVERIN, LUDMILA DIMITROV",
+        "Full Name": "TWO HEARTS, LORENDA SIOUX",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SEVERIN_LUDMILA_DIMITROV.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_TWO_HEARTS_LORENDA_SIOUX.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,21 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "LONG, DAWN MICHELLE",
+        "Full Name": "WILLIAMS, AMARI SANTRELL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LONG_DAWN_MICHELLE.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 8,
-      "data": {
-        "Full Name": "STEWART, CHRISTOPHER JOSEPH",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_STEWART_CHRISTOPHER_JOSEPH.jpg"
+        "Mugshot_File": "mugshots/mugshot_WILLIAMS_AMARI_SANTRELL.jpg"
       },
       "posted": false,
       "posted_at": null
