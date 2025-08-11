@@ -903,8 +903,21 @@ def get_next_inmates_to_post(batch_size=1):
         print(f"❌ Error reading posting queue: {e}")
         return []
 
+def _delete_file_if_exists(path: str, label: str = ""):
+    try:
+        if os.path.exists(path):
+            os.remove(path)
+            print(f"🗑️  Deleted {label or 'file'}: {path}")
+            return True
+        else:
+            print(f"⚠️  {label or 'File'} not found: {path}")
+            return False
+    except Exception as e:
+        print(f"❌ Failed to delete {label or 'file'} {path}: {e}")
+        return False
+
 def delete_mugshot_files(inmate_ids):
-    """Delete mugshot files for posted inmates to save disk space"""
+    """Delete mugshot files for posted inmates to save disk space (both repo and docs copies)."""
     try:
         # Load queue to get mugshot file paths
         with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
@@ -923,16 +936,15 @@ def delete_mugshot_files(inmate_ids):
                     if not mugshot_file.startswith('mugshots/'):
                         mugshot_file = f"mugshots/{mugshot_file}"
                     
-                    try:
-                        if os.path.exists(mugshot_file):
-                            os.remove(mugshot_file)
-                            deleted_count += 1
-                            print(f"🗑️  Deleted mugshot: {mugshot_file} ({name})")
-                        else:
-                            print(f"⚠️  Mugshot file not found: {mugshot_file} ({name})")
-                    except Exception as e:
-                        failed_deletions.append((mugshot_file, str(e)))
-                        print(f"❌ Failed to delete {mugshot_file}: {e}")
+                    # Delete from repo mugshots/
+                    if _delete_file_if_exists(mugshot_file, label="mugshot"):
+                        deleted_count += 1
+                    else:
+                        failed_deletions.append((mugshot_file, "not_found"))
+
+                    # Delete corresponding docs/mugshots copy if present
+                    docs_copy = os.path.join('docs', 'mugshots', os.path.basename(mugshot_file))
+                    _ = _delete_file_if_exists(docs_copy, label="docs mugshot")
         
         print(f"🗑️  Cleanup Summary: {deleted_count} files deleted")
         if failed_deletions:
@@ -980,6 +992,62 @@ def mark_inmates_as_posted(inmate_ids):
         
     except Exception as e:
         print(f"❌ Error updating posting queue: {e}")
+        return False
+
+def cleanup_unposted_mugshots():
+    """Delete mugshot files for all inmates that remain unposted, and prune them from the queue."""
+    try:
+        print("🧹 Cleaning up UNPOSTED inmates' mugshots and pruning queue...")
+        with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
+            queue_data = json.load(f)
+
+        unposted_ids = [i['id'] for i in queue_data['inmates'] if not i.get('posted')]
+        posted_ids = [i['id'] for i in queue_data['inmates'] if i.get('posted')]
+
+        # Delete files for all unposted inmates (both repo and docs copies)
+        for inmate in queue_data['inmates']:
+            if inmate['id'] in unposted_ids:
+                mugshot_file = inmate['data'].get('Mugshot_File', '')
+                if mugshot_file and mugshot_file != 'No Image':
+                    if not mugshot_file.startswith('mugshots/'):
+                        mugshot_file = f"mugshots/{mugshot_file}"
+                    _delete_file_if_exists(mugshot_file, label="mugshot")
+                    docs_copy = os.path.join('docs', 'mugshots', os.path.basename(mugshot_file))
+                    _delete_file_if_exists(docs_copy, label="docs mugshot")
+
+        # Prune unposted inmates from queue
+        queue_data['inmates'] = [i for i in queue_data['inmates'] if i['id'] in posted_ids]
+        queue_data['total_inmates'] = len(queue_data['inmates'])
+        queue_data['posted_count'] = sum(1 for i in queue_data['inmates'] if i.get('posted'))
+
+        with open(Config.QUEUE_FILENAME, 'w', encoding='utf-8') as f:
+            json.dump(queue_data, f, indent=2, ensure_ascii=False)
+
+        print("✅ Unposted mugshots cleaned and queue pruned")
+        return True
+    except FileNotFoundError:
+        print("📭 No posting queue found; nothing to clean")
+        return True
+    except Exception as e:
+        print(f"❌ Error cleaning unposted mugshots: {e}")
+        return False
+
+def cleanup_all_mugshots():
+    """Delete ALL mugshot files from repo and docs regardless of queue."""
+    try:
+        print("🧹 Cleaning up ALL mugshot files (repo and docs)...")
+        deleted = 0
+        for base in ['mugshots', os.path.join('docs', 'mugshots')]:
+            if os.path.isdir(base):
+                for fn in os.listdir(base):
+                    if fn.lower().endswith(('.jpg', '.jpeg', '.png')):
+                        path = os.path.join(base, fn)
+                        if _delete_file_if_exists(path, label="mugshot"):
+                            deleted += 1
+        print(f"✅ All cleanup complete. Files deleted: {deleted}")
+        return True
+    except Exception as e:
+        print(f"❌ Error cleaning all mugshots: {e}")
         return False
 
 def post_next_inmates(batch_size=1, repo_name="minneapolismugshots", username="ryanjhermes", test_mode=False):
@@ -2516,7 +2584,13 @@ if __name__ == "__main__":
             # Check posting queue status
             check_posting_queue()
         elif command == "cleanup-mugshots":
-            # Clean up existing posted inmates' mugshots
+            # Clean up ALL mugshot files
+            cleanup_all_mugshots()
+        elif command == "cleanup-unposted":
+            # Clean up unposted inmates' mugshots and prune queue
+            cleanup_unposted_mugshots()
+        elif command == "cleanup-posted":
+            # Clean up existing posted inmates' mugshots (legacy)
             cleanup_existing_posted_mugshots()
         else:
             print(f"Unknown command: {command}")
@@ -2529,7 +2603,9 @@ if __name__ == "__main__":
             print("  python data.py test-ai-filter # Test AI mugshot filtering")
             print("  python data.py check-posting-status # Check posting limits and timing")
             print("  python data.py check-queue    # Check posting queue status")
-            print("  python data.py cleanup-mugshots # Clean up posted inmates' mugshot files")
+            print("  python data.py cleanup-mugshots # Clean up ALL mugshot files (repo + docs)")
+            print("  python data.py cleanup-unposted # Clean up unposted inmates' mugshots and prune queue")
+            print("  python data.py cleanup-posted   # Clean up only posted inmates' mugshots (legacy)")
     else:
         # Production mode - scrape 100 inmates and filter to top 10 with highest priority
         print("🚀 Running in PRODUCTION MODE - processing 100 inmates, filtering to top 10 highest priority (charge + bail)")
