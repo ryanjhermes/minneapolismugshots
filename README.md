@@ -35,26 +35,26 @@ Follow [@MinneapolisMugshots](https://instagram.com/minneapolismugshots) on Inst
 | Time | Activity |
 |------|----------|
 | **6:00 PM Daily** | Scan Hennepin County Jail for new arrests |
-| **6:00-10:00 PM** | Post 5 inmates every 2 hours (6:00, 8:00, 10:00 PM) |
+| **24/7 Posting** | Post up to 8 inmates daily, every 3 hours |
 | **Continuous** | Update public database with new records |
 
 ## Posting Schedule & Limits
 
-The system now operates with strict posting limits:
+The system operates with flexible 24-hour posting:
 
-- **Daily Limit**: Maximum 5 posts per day
-- **Posting Hours**: 6:00 PM - 10:00 PM Central Time
-- **Posting Interval**: Every 2 hours (6:00, 8:00, 10:00 PM)
+- **Daily Limit**: Maximum 8 posts per day
+- **Posting Hours**: 24/7 (all day, every day)
+- **Posting Interval**: Every 3 hours minimum between posts
 - **Single Posting**: One inmate per post (no batches)
 - **AI Filtering**: All mugshots analyzed before posting
 
 ### Posting Schedule:
-- **6:00 PM** - First post of the day
-- **8:00 PM** - Second post of the day  
-- **10:00 PM** - Third post of the day
-- **Next Day** - Cycle repeats
+- **Every 3 Hours**: Automated posting attempts throughout the day
+- **8 Posts Max**: Distributed across 24 hours for better reach
+- **Intelligent Spacing**: 3-hour intervals prevent spam and maximize engagement
+- **Reset Daily**: Counter resets each day at midnight Central Time
 
-*Note: If daily limit is reached, posting resumes the next day at 6:00 PM*
+*Note: Posts are spread throughout the day for maximum visibility and engagement*
 
 ## Intelligent Filtering System
 

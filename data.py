@@ -36,10 +36,10 @@ class Config:
     CLICK_WAIT_TIME = 3
     
     # Posting limits and scheduling
-    DAILY_POST_LIMIT = 5
-    POSTING_INTERVAL_HOURS = 2
-    POSTING_START_HOUR = 6  # 6:00 PM Central Time
-    POSTING_END_HOUR = 22   # 10:00 PM Central Time
+    DAILY_POST_LIMIT = 8  # Increased from 5 to 8 for better coverage
+    POSTING_INTERVAL_HOURS = 3  # Increased from 2 to 3 hours for better spread
+    POSTING_START_HOUR = 0   # 12:00 AM - Allow posting all day
+    POSTING_END_HOUR = 24    # 11:59 PM - 24-hour posting window
     
     # Quality thresholds
     MIN_NAME_LENGTH = 3
@@ -2116,7 +2116,7 @@ def fill_form_with_current_date(driver, inmate_limit=Config.TEST_INMATE_LIMIT):
             
             if queue_success:
                 print(f"\n🚀 COMPLETE SUCCESS! Data scraped, filtered to TOP 10 HIGHEST PRIORITY, and queued for posting!")
-                print(f"📅 Top 10 inmates will be posted every 15 minutes starting at 6:00 PM Central")
+                print(f"📅 Top 10 inmates will be posted throughout the day (up to 8 posts, every 3 hours)")
                 print(f"🎲 Random delays added to avoid Instagram automation detection")
             else:
                 print(f"\n⚠️  Data scraped and saved, but failed to create posting queue")

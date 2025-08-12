@@ -92,7 +92,9 @@ class BLIPImageFilter:
             dis_label, dis_conf, dis_raw = self._ask_vqa(image, self.question_disheveled)
             print(f"   Q: disheveled/violence/extreme drugs\n   A: {dis_raw} (canonical: {dis_label}, confidence: {dis_conf:.3f})")
 
-            if dis_label == "strong_yes" or (dis_label == "yes" and dis_conf >= 0.8):
+            # Since BLIP always returns 0.5 confidence, ignore confidence and focus on labels
+            # Step 1: Check disheveled/violent appearance
+            if dis_label in ["strong_yes", "yes"]:
                 result = {
                     "approved": True,
                     "reason": "Approved - notably disheveled/violent/extreme drug use appearance",
@@ -109,7 +111,7 @@ class BLIPImageFilter:
             att_label, att_conf, att_raw = self._ask_vqa(image, self.question_attractive)
             print(f"   Q: conventionally attractive\n   A: {att_raw} (canonical: {att_label}, confidence: {att_conf:.3f})")
 
-            if att_label == "strong_yes" or (att_label == "yes" and att_conf >= 0.8):
+            if att_label in ["strong_yes", "yes"]:
                 result = {
                     "approved": True,
                     "reason": "Approved - conventionally attractive",
@@ -123,10 +125,10 @@ class BLIPImageFilter:
                 print(f"✅ Analysis complete - Approved: True, Score: {result['quality_score']}/10")
                 return result
 
-            # Neither condition strongly met → reject
+            # Final rejection - neither condition met
             result = {
                 "approved": False,
-                "reason": "Rejected - not notably disheveled/violent/extreme use and not conventionally attractive",
+                "reason": "Rejected - does not meet minimum thresholds for either criteria",
                 "quality_score": 0,
                 "issues": ["Low social media interest"],
                 "responses": {
