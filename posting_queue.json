@@ -1,15 +1,15 @@
 {
-  "created_at": "2025-08-10T23:46:33.826232-05:00",
+  "created_at": "2025-08-11T19:15:12.874718-05:00",
   "total_inmates": 10,
   "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BLUCHER, DIANE",
+        "Full Name": "SCHROEDL, CHARLES JESSE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BLUCHER_DIANE.jpg"
+        "Bail": "$250,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SCHROEDL_CHARLES_JESSE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -17,10 +17,10 @@
     {
       "id": 2,
       "data": {
-        "Full Name": "FARLEY, AKOS DEBORAH",
+        "Full Name": "CONSTANS, DAMON ANDREAS JR",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FARLEY_AKOS_DEBORAH.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CONSTANS_DAMON_ANDREAS_JR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "data": {
-        "Full Name": "MORRIS, CHRISTINE ANN",
+        "Full Name": "LITTLE, NADINE",
         "Charge 1": "No charge listed",
-        "Bail": "$500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MORRIS_CHRISTINE_ANN.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LITTLE_NADINE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "BYRON, FREDERICK ELLSWORTH JR",
+        "Full Name": "WASHINGTON, KETAYRIO SALMIQ",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BYRON_FREDERICK_ELLSWORTH_JR.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WASHINGTON_KETAYRIO_SALMIQ.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "FULKERSON, ERIC ALAN",
+        "Full Name": "FOSSUM, JEFFERY THOMAS",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FULKERSON_ERIC_ALAN.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_FOSSUM_JEFFERY_THOMAS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "HIRSI, ADEN HASSAN",
+        "Full Name": "PETERSON, WILLIAM DELOY",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HIRSI_ADEN_HASSAN.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PETERSON_WILLIAM_DELOY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "HUNT, CURTIS JOSEPH",
+        "Full Name": "VEIT, MICHAEL PHILLIP",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HUNT_CURTIS_JOSEPH.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_VEIT_MICHAEL_PHILLIP.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "MOLNAR, JAMES PAUL",
+        "Full Name": "DAVIS, AL DIOR",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MOLNAR_JAMES_PAUL.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DAVIS_AL_DIOR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "STERRETT, ADONIS SHANTE",
+        "Full Name": "LIGHTSEY, TAMARA ALISHA",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_STERRETT_ADONIS_SHANTE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LIGHTSEY_TAMARA_ALISHA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "VAUGHN, RYAN SCOTT",
+        "Full Name": "MATHIS, KEVON MARTRELL",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_VAUGHN_RYAN_SCOTT.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MATHIS_KEVON_MARTRELL.jpg"
       },
       "posted": false,
       "posted_at": null
