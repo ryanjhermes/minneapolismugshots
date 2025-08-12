@@ -873,6 +873,22 @@ def get_next_inmates_to_post(batch_size=1):
         print(f"📋 Found {len(next_inmate)} inmate ready for AI filtering")
         print(f"📊 Remaining in queue: {len(unposted_inmates)} total")
         
+        # DEBUG: Check if mugshot files exist before processing
+        for inmate in next_inmate:
+            mugshot_path = inmate['data'].get('Mugshot_File', '')
+            name = inmate['data'].get('Full Name', 'Unknown')
+            print(f"🔍 DEBUG: Processing {name}")
+            print(f"🔍 DEBUG: Expected mugshot path: {mugshot_path}")
+            print(f"🔍 DEBUG: File exists: {os.path.exists(mugshot_path) if mugshot_path else False}")
+            
+            # Check current working directory and file listing
+            print(f"🔍 DEBUG: Current working directory: {os.getcwd()}")
+            if os.path.exists('mugshots'):
+                mugshot_files = [f for f in os.listdir('mugshots') if f.endswith('.jpg')]
+                print(f"🔍 DEBUG: Available mugshot files: {mugshot_files}")
+            else:
+                print(f"🔍 DEBUG: Mugshots directory does not exist!")
+        
         # Apply AI filtering if available
         if BLIP_AVAILABLE:
             print(f"\n🤖 Applying BLIP mugshot filtering...")
@@ -886,8 +902,23 @@ def get_next_inmates_to_post(batch_size=1):
                     return approved_inmates
                 else:
                     print(f"❌ BLIP rejected all {len(next_inmate)} inmate(s)")
-                    print(f"💡 Consider running 'python data.py post-next' again to try next inmate")
-                    return []
+                    print(f"🔄 FALLBACK MODE: Checking if rejection was due to missing files...")
+                    
+                    # Check if rejection was due to missing mugshot files
+                    missing_files = True
+                    for inmate in next_inmate:
+                        mugshot_path = inmate['data'].get('Mugshot_File', '')
+                        if mugshot_path and os.path.exists(mugshot_path):
+                            missing_files = False
+                            break
+                    
+                    if missing_files:
+                        print(f"⚠️  All rejections due to missing files - skipping AI filtering as fallback")
+                        print(f"📱 Proceeding with posting without AI analysis (emergency mode)")
+                        return next_inmate
+                    else:
+                        print(f"💡 Consider running 'python data.py post-next' again to try next inmate")
+                        return []
                     
             except Exception as e:
                 print(f"⚠️  BLIP filtering failed: {e}")

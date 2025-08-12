@@ -55,7 +55,15 @@ jobs:
     - name: Create GitHub Pages structure
       run: |
         mkdir -p docs
-        cp -r mugshots docs/
+        # Ensure mugshots directory exists before copying
+        if [ -d "mugshots" ]; then
+          echo "📁 Copying mugshots directory to docs..."
+          cp -r mugshots docs/
+          echo "✅ Mugshots copied: $(ls -1 mugshots/*.jpg 2>/dev/null | wc -l) files"
+        else
+          echo "⚠️  Mugshots directory not found, creating empty one..."
+          mkdir -p docs/mugshots
+        fi
         cp jail_roster_data.csv docs/
         echo '<!DOCTYPE html>
         <html>
@@ -99,10 +107,19 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        
+        # Debug: Check what files we have
+        echo "🔍 DEBUG: Files to commit:"
+        echo "📄 CSV file: $(ls -la jail_roster_data.csv 2>/dev/null || echo 'Not found')"
+        echo "📁 Mugshots directory: $(ls -la mugshots/ 2>/dev/null | head -5 || echo 'Not found')"
+        echo "📄 Queue file: $(ls -la posting_queue.json 2>/dev/null || echo 'Not found')"
+        
         git add .
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
+          echo "📝 Committing changes..."
+          git status --porcelain
           git commit -m "Daily jail roster update - $(date '+%Y-%m-%d %H:%M:%S')"
           # Try to push, and if it fails due to conflicts, pull and push again
           if ! git push; then
@@ -110,6 +127,7 @@ jobs:
             git pull --rebase origin main
             git push
           fi
+          echo "✅ Changes committed and pushed"
         fi
     
     - name: Setup GitHub Pages

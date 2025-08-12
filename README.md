@@ -18,7 +18,7 @@ This system automatically monitors the Hennepin County Jail Roster daily and pro
 
 All collected data is made freely available to the public:
 
-📊 **Live Data:** [minneapolismugshots.com](https://ryanjhermes.github.io/minneapolismugshots/)  
+📊 **Live Data:** [https://ryanjhermes.github.io/minneapolismugshots/](https://ryanjhermes.github.io/minneapolismugshots/)  
 📄 **CSV Download:** [jail_roster_data.csv](https://ryanjhermes.github.io/minneapolismugshots/jail_roster_data.csv)  
 📸 **Mugshot Gallery:** [View All Photos](https://ryanjhermes.github.io/minneapolismugshots/mugshots/)  
 

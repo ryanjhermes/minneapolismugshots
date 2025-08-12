@@ -154,9 +154,9 @@ jobs:
     - name: Clean up posted mugshot files
       if: steps.preflight.outputs.ready == 'true'
       run: |
-        echo "🗑️  Cleaning up posted inmates' mugshot files..."
-        python data.py cleanup-mugshots
-        echo "✅ Mugshot cleanup completed"
+        echo "🗑️  Cleaning up ONLY posted inmates' mugshot files..."
+        python data.py cleanup-posted
+        echo "✅ Posted mugshot cleanup completed"
 
     - name: Commit queue updates
       if: steps.preflight.outputs.ready == 'true'

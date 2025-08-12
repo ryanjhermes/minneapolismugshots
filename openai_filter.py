@@ -40,15 +40,52 @@ class BLIPImageFilter:
     def load_image(self, image_path):
         """Load and prepare image for BLIP model"""
         try:
+            print(f"🔍 DEBUG: Checking image path: {image_path}")
+            print(f"🔍 DEBUG: Current working directory: {os.getcwd()}")
+            print(f"🔍 DEBUG: File exists check: {os.path.exists(image_path)}")
+            
+            # Check if mugshots directory exists
+            mugshots_dir = os.path.dirname(image_path)
+            if not os.path.exists(mugshots_dir):
+                print(f"❌ Mugshots directory not found: {mugshots_dir}")
+                print(f"🔍 DEBUG: Creating mugshots directory...")
+                os.makedirs(mugshots_dir, exist_ok=True)
+                print(f"✅ Created directory: {mugshots_dir}")
+                
+            # List contents of mugshots directory for debugging
+            if os.path.exists(mugshots_dir):
+                files = os.listdir(mugshots_dir)
+                print(f"🔍 DEBUG: Files in {mugshots_dir}: {files}")
+            
             if not os.path.exists(image_path):
                 print(f"❌ Image file not found: {image_path}")
+                # Additional debugging
+                base_name = os.path.basename(image_path)
+                print(f"🔍 DEBUG: Looking for similar files...")
+                if os.path.exists(mugshots_dir):
+                    similar_files = [f for f in os.listdir(mugshots_dir) if base_name.lower() in f.lower()]
+                    if similar_files:
+                        print(f"🔍 DEBUG: Found similar files: {similar_files}")
+                        # Try to use the first similar file
+                        similar_path = os.path.join(mugshots_dir, similar_files[0])
+                        print(f"💡 Attempting to use similar file: {similar_path}")
+                        try:
+                            image = Image.open(similar_path).convert('RGB')
+                            print(f"✅ Successfully loaded similar file: {similar_path}")
+                            return image
+                        except Exception as e:
+                            print(f"❌ Failed to load similar file: {e}")
+                    else:
+                        print(f"🔍 DEBUG: No similar files found")
                 return None
             
             # Load image with PIL
             image = Image.open(image_path).convert('RGB')
+            print(f"✅ Successfully loaded image: {image_path}")
             return image
         except Exception as e:
             print(f"❌ Error loading image {image_path}: {e}")
+            print(f"🔍 DEBUG: Exception type: {type(e).__name__}")
             return None
     
     def _canonicalize_answer(self, raw_answer: str) -> str:
