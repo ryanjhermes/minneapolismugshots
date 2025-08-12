@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-12T11:39:10.591946-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_NATOLE_JOHN_JOSEPH.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-12T11:54:57.759174-05:00"
     },
     {
       "id": 2,
