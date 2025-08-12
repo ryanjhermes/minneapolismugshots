@@ -1,7 +1,7 @@
 {
-  "created_at": "2025-08-11T19:43:47.527342-05:00",
+  "created_at": "2025-08-11T23:32:56.214205-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$250,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SCHROEDL_CHARLES_JESSE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-11T19:51:42.864928-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "LIGHTSEY, TAMARA ALISHA",
+        "Full Name": "SNEED, JOSHUA SAMUEL",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LIGHTSEY_TAMARA_ALISHA.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SNEED_JOSHUA_SAMUEL.jpg"
       },
       "posted": false,
       "posted_at": null
