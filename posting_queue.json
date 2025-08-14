@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-08-12T23:35:00.782109-05:00",
+  "created_at": "2025-08-13T23:33:29.858118-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "THIGPEN, DAMOND ANDRE",
+        "Full Name": "MCCLELLAN, JASMINE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_THIGPEN_DAMOND_ANDRE.jpg"
+        "Bail": "$200,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MCCLELLAN_JASMINE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-13T01:36:24.099787-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "HARGROVE, BRIAN CHERRON",
+        "Full Name": "MOSBY, MARTELL DEANTE",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HARGROVE_BRIAN_CHERRON.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOSBY_MARTELL_DEANTE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-13T07:50:55.772532-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "RASMUSSEN, MICHAEL LEE",
+        "Full Name": "WILLIAMS, NICHOLAS DELRAY",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RASMUSSEN_MICHAEL_LEE.jpg"
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WILLIAMS_NICHOLAS_DELRAY.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-13T13:34:45.941527-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "BARBER, ANTHONY DRAKE JR",
+        "Full Name": "WILLIAMSON, CHRISTIAN MARCELLOUS",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_BARBER_ANTHONY_DRAKE_JR.jpg"
+        "Bail": "$60,000.00 CASH BAIL W/ CR",
+        "Mugshot_File": "mugshots/mugshot_WILLIAMSON_CHRISTIAN_MARCELLOUS.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-13T20:54:27.132043-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "JOVEL-RECINOS, JONATHON ISAAC",
+        "Full Name": "CLERK, KENNARD LEEVLE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOVEL-RECINOS_JONATHON_ISAAC.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CLERK_KENNARD_LEEVLE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "JUMPER, ALEXANDER WILLINGTON",
+        "Full Name": "JOHNSON, SAMUEL RINALDO",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JUMPER_ALEXANDER_WILLINGTON.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_SAMUEL_RINALDO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "ALI, ABDALLA SHARIF MOHAMED",
+        "Full Name": "FLEISCHMAN, MIRANDA NICOLE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALI_ABDALLA_SHARIF_MOHAMED.jpg"
+        "Bail": "$35,200.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FLEISCHMAN_MIRANDA_NICOLE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "HENDERSON, TION ELIJAH",
+        "Full Name": "VERDUZCO, ROSA ROSE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HENDERSON_TION_ELIJAH.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_VERDUZCO_ROSA_ROSE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "NATOLE, JOHN JOSEPH",
+        "Full Name": "HARRIS, JOSEPH MILLIE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NATOLE_JOHN_JOSEPH.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HARRIS_JOSEPH_MILLIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "SAYERS, DEZMYN KOREE",
+        "Full Name": "CLABON, SARAH LAVERNE",
         "Charge 1": "No charge listed",
-        "Bail": "$7,500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SAYERS_DEZMYN_KOREE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CLABON_SARAH_LAVERNE.jpg"
       },
       "posted": false,
       "posted_at": null
