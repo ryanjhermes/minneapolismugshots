@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-13T23:33:29.858118-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$60,000.00 CASH BAIL W/ CR",
         "Mugshot_File": "mugshots/mugshot_WILLIAMSON_CHRISTIAN_MARCELLOUS.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-14T20:55:14.488028-05:00"
     },
     {
       "id": 5,
