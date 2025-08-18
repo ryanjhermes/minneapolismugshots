@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-17T23:42:33.853542-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MUNOZ_ISABELLA.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-18T01:39:13.001627-05:00"
     },
     {
       "id": 2,
