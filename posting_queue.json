@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-17T23:42:33.853542-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_HOST_COLLIN_LEE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-18T20:48:24.676152-05:00"
     },
     {
       "id": 5,
