@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-08-20T23:25:32.941468-05:00",
+  "created_at": "2025-08-21T23:24:00.506405-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "GREGORY, DESHON KANYE",
+        "Full Name": "EAGLE, ANDRU KWSIND",
         "Charge 1": "No charge listed",
-        "Bail": "$1,500,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_GREGORY_DESHON_KANYE.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EAGLE_ANDRU_KWSIND.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-21T01:43:36.137936-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "COX, ALBERT GEORGE",
+        "Full Name": "HICKS, COREY JERMAIN",
         "Charge 1": "No charge listed",
-        "Bail": "$80,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COX_ALBERT_GEORGE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HICKS_COREY_JERMAIN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-21T07:46:37.844651-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "WARREN, JIMMEL MALIK RAHIM",
+        "Full Name": "PONCE, EDDIE SANTIAGO",
         "Charge 1": "No charge listed",
-        "Bail": "$70,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WARREN_JIMMEL_MALIK_RAHIM.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PONCE_EDDIE_SANTIAGO.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-21T13:32:42.786157-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "STEVENS, LESLIELYN KAYE",
+        "Full Name": "MOOT, JEROME FRANKLIN",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STEVENS_LESLIELYN_KAYE.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOOT_JEROME_FRANKLIN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-21T20:46:14.468111-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "SMITH, RICHARD HARRISON",
+        "Full Name": "HENDRICKS, DANTE MICHAEL LAMONT",
         "Charge 1": "No charge listed",
-        "Bail": "$45,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SMITH_RICHARD_HARRISON.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HENDRICKS_DANTE_MICHAEL_LAMONT.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "JENNETT, DEMETRIUS LASHAWN JR",
+        "Full Name": "CAVEN, TODD STEVEN",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JENNETT_DEMETRIUS_LASHAWN_JR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CAVEN_TODD_STEVEN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "AGAPOVA, KARINA VALERIEVNA",
+        "Full Name": "ESPINOZA, EVELYN YADIRA",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AGAPOVA_KARINA_VALERIEVNA.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ESPINOZA_EVELYN_YADIRA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "ROBERTS, MARIE",
+        "Full Name": "HOLTHAUS, JOHN VINCENT",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROBERTS_MARIE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HOLTHAUS_JOHN_VINCENT.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "ARGUIJO DUARTE, ANDRES FERNANDO",
+        "Full Name": "PULLING, CHRISTOPHER CLARK",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ARGUIJO_DUARTE_ANDRES_FERNANDO.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_PULLING_CHRISTOPHER_CLARK.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "BONORDEN, SERENA STAR",
+        "Full Name": "ALDRICH, MICHAEL NEAL",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BONORDEN_SERENA_STAR.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ALDRICH_MICHAEL_NEAL.jpg"
       },
       "posted": false,
       "posted_at": null
