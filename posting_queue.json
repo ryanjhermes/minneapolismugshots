@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-21T23:24:00.506405-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_HICKS_COREY_JERMAIN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-22T07:44:48.867673-05:00"
     },
     {
       "id": 3,
