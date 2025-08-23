@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-22T23:24:04.612701-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$75,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SCHMOTTER_NICHOLAS_WILLIAM.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-23T07:42:09.135378-05:00"
     },
     {
       "id": 3,
