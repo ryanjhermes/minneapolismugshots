@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-22T23:24:04.612701-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$200,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_NGUYEN_EDWARD_HUY.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-23T01:31:48.083375-05:00"
     },
     {
       "id": 2,
