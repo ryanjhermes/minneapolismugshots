@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-23T23:30:52.290792-05:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "id": 1,
@@ -33,8 +33,8 @@
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_OLIHA_PHILIP.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-24T13:30:57.451151-05:00"
     },
     {
       "id": 4,
