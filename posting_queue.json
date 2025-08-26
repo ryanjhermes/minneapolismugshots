@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-08-24T23:29:52.735192-05:00",
+  "created_at": "2025-08-25T23:29:06.731306-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "GREENE, MARC ANTHONY",
+        "Full Name": "NORRIS, MOSES CHRIS PATRICK",
         "Charge 1": "No charge listed",
-        "Bail": "$80,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GREENE_MARC_ANTHONY.jpg"
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NORRIS_MOSES_CHRIS_PATRICK.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-25T01:37:42.280458-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "YOUNG, ISAAC CORY",
+        "Full Name": "AGUILAR, CHRISTOPHER",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_YOUNG_ISAAC_CORY.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AGUILAR_CHRISTOPHER.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-25T07:48:10.520555-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "MORROW, WILLIE EARL",
+        "Full Name": "BANKS-LOWE, JANAE MARLENE",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MORROW_WILLIE_EARL.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_BANKS-LOWE_JANAE_MARLENE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-25T13:34:00.284948-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "ALLEN, ANDRE DARNELL",
+        "Full Name": "GRIFFIN, ALIX CENTRELL",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_ALLEN_ANDRE_DARNELL.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GRIFFIN_ALIX_CENTRELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-25T20:47:14.918937-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "AHMED, ABDULHAQ HASSAN",
+        "Full Name": "STEVENS, ROBERT CORNELIUS",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AHMED_ABDULHAQ_HASSAN.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_STEVENS_ROBERT_CORNELIUS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "MORGAN, MICHAEL WADE",
+        "Full Name": "SUTCLIFFE, JARED JOSEPH",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MORGAN_MICHAEL_WADE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SUTCLIFFE_JARED_JOSEPH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "OSIAGO, BARRACK MONGI",
+        "Full Name": "LAMSON, SAMUEL JONATHON",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_OSIAGO_BARRACK_MONGI.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LAMSON_SAMUEL_JONATHON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "QUARLES, ANDRE",
+        "Full Name": "STATELY, ALBERT DUANE JOSEPH",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_QUARLES_ANDRE.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_STATELY_ALBERT_DUANE_JOSEPH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "FARAH, YAHYA AHMED",
+        "Full Name": "ANDERSON, CORY LINN",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FARAH_YAHYA_AHMED.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ANDERSON_CORY_LINN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "SPEARS, JIMMY EDWARD 3RD",
+        "Full Name": "ARIAS, ALEXANDER MODESTO",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 CASH BAIL W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SPEARS_JIMMY_EDWARD_3RD.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ARIAS_ALEXANDER_MODESTO.jpg"
       },
       "posted": false,
       "posted_at": null
