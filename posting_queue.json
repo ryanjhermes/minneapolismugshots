@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-26T23:24:22.504005-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$1,000,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BURGESS_QUENTIN_ELLIOTT.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-27T01:32:52.952093-05:00"
     },
     {
       "id": 2,
