@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-08-26T23:24:22.504005-05:00",
+  "created_at": "2025-08-27T23:25:29.097418-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BURGESS, QUENTIN ELLIOTT",
+        "Full Name": "LIVINGSTON, JOSEPHINE",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BURGESS_QUENTIN_ELLIOTT.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LIVINGSTON_JOSEPHINE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-27T01:32:52.952093-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "REED, BRITTANY NIKITAA",
+        "Full Name": "ESPINOSA, CRISTOBAL ALEXANDER",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_REED_BRITTANY_NIKITAA.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ESPINOSA_CRISTOBAL_ALEXANDER.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-27T07:45:44.622801-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "KINCHELOW, AKPAN SHANGO",
+        "Full Name": "WILL, ERIC RYAN",
         "Charge 1": "No charge listed",
-        "Bail": "$80,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KINCHELOW_AKPAN_SHANGO.jpg"
+        "Bail": "$30,000.00 CASH BAIL W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WILL_ERIC_RYAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-27T13:31:33.515591-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "MARTINSON, AMY JEAN",
+        "Full Name": "GIERSDORF, TERRY JAY",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MARTINSON_AMY_JEAN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GIERSDORF_TERRY_JAY.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-27T20:44:11.476516-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "DUDLEY, FREDDIE TYRONE JR",
+        "Full Name": "OLIVARES CORONA, JOSE LUIS",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_DUDLEY_FREDDIE_TYRONE_JR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_OLIVARES_CORONA_JOSE_LUIS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "ASTUDILLO TAIPE, DANIEL ALEJANDRO",
+        "Full Name": "PINOS PINOS, EDWIN ORLANDO",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ASTUDILLO_TAIPE_DANIEL_ALEJANDRO.jpg"
+        "Mugshot_File": "mugshots/mugshot_PINOS_PINOS_EDWIN_ORLANDO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "DALY, MEGAN EILEEN",
+        "Full Name": "HALLING, JESSICA LYNN",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DALY_MEGAN_EILEEN.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HALLING_JESSICA_LYNN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "JOHNSON, GREGORY JR",
+        "Full Name": "KURKOWSKI, SARAH JEAN",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_GREGORY_JR.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KURKOWSKI_SARAH_JEAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "BETTS, DEXTER DEVONTE",
+        "Full Name": "LANDA, ISAAC",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BETTS_DEXTER_DEVONTE.jpg"
+        "Mugshot_File": "mugshots/mugshot_LANDA_ISAAC.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "BROWN, ALEXIS MARIE PAIGE",
+        "Full Name": "LOPEZ ARIZA, LUIS GERMAN",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROWN_ALEXIS_MARIE_PAIGE.jpg"
+        "Mugshot_File": "mugshots/mugshot_LOPEZ_ARIZA_LUIS_GERMAN.jpg"
       },
       "posted": false,
       "posted_at": null
