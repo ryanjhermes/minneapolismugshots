@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-08-27T23:25:29.097418-05:00",
+  "created_at": "2025-08-28T23:25:59.542416-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "LIVINGSTON, JOSEPHINE",
+        "Full Name": "KIM, HYESUN",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LIVINGSTON_JOSEPHINE.jpg"
+        "Bail": "$200,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_KIM_HYESUN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-28T01:34:55.593211-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "ESPINOSA, CRISTOBAL ALEXANDER",
+        "Full Name": "KOO, YEWON",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ESPINOSA_CRISTOBAL_ALEXANDER.jpg"
+        "Bail": "$200,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_KOO_YEWON.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-28T07:44:44.508755-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "WILL, ERIC RYAN",
+        "Full Name": "MONTREAL, CLAYTON JOSEPH",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 CASH BAIL W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILL_ERIC_RYAN.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_MONTREAL_CLAYTON_JOSEPH.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-28T13:33:03.817143-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "GIERSDORF, TERRY JAY",
+        "Full Name": "ADKINS, DEBUNAIR DEPRIST",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GIERSDORF_TERRY_JAY.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ADKINS_DEBUNAIR_DEPRIST.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-28T20:44:02.738714-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "OLIVARES CORONA, JOSE LUIS",
+        "Full Name": "ABDULLE, MOHAMED ADEN",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_OLIVARES_CORONA_JOSE_LUIS.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ABDULLE_MOHAMED_ADEN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "PINOS PINOS, EDWIN ORLANDO",
+        "Full Name": "MILES, AUSTIN TIMOTHY",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PINOS_PINOS_EDWIN_ORLANDO.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MILES_AUSTIN_TIMOTHY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "HALLING, JESSICA LYNN",
+        "Full Name": "ANDERSON, ARTRAIL DOMINIC",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HALLING_JESSICA_LYNN.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ANDERSON_ARTRAIL_DOMINIC.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "KURKOWSKI, SARAH JEAN",
+        "Full Name": "FLYINGHORSE, MICHAEL ROBERT",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KURKOWSKI_SARAH_JEAN.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FLYINGHORSE_MICHAEL_ROBERT.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "LANDA, ISAAC",
+        "Full Name": "ANDERSON, JEREMIAH LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LANDA_ISAAC.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ANDERSON_JEREMIAH_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "LOPEZ ARIZA, LUIS GERMAN",
+        "Full Name": "WOIAK, ALYSSA CHEVONNE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LOPEZ_ARIZA_LUIS_GERMAN.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WOIAK_ALYSSA_CHEVONNE.jpg"
       },
       "posted": false,
       "posted_at": null
