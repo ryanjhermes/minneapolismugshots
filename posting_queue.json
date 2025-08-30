@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-29T23:23:28.347463-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$300,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MOHAMED_ABDI_HASSAN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-30T01:30:05.781486-05:00"
     },
     {
       "id": 2,
