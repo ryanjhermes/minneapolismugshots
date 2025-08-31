@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-08-29T23:23:28.347463-05:00",
+  "created_at": "2025-08-30T23:24:49.156934-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MOHAMED, ABDI HASSAN",
+        "Full Name": "BROWN, DAYSHAUN SEMAJ",
         "Charge 1": "No charge listed",
-        "Bail": "$300,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOHAMED_ABDI_HASSAN.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROWN_DAYSHAUN_SEMAJ.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-30T01:30:05.781486-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "CURRY, JULIUS EDMOND JR",
+        "Full Name": "MAYOKOK, DOMINIC HENRY HARRISON",
         "Charge 1": "No charge listed",
-        "Bail": "$150,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CURRY_JULIUS_EDMOND_JR.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MAYOKOK_DOMINIC_HENRY_HARRISON.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-30T07:40:03.871803-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "HAMPTON, REUBEN ISAAC",
+        "Full Name": "LIPSEY, LAWRENCE VINCENTE",
         "Charge 1": "No charge listed",
-        "Bail": "$150,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HAMPTON_REUBEN_ISAAC.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LIPSEY_LAWRENCE_VINCENTE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-30T13:29:01.496302-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "BUCKINGHAM, GRACIE SHAVEZ",
+        "Full Name": "JAVA, TIMOTHY LANDON",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BUCKINGHAM_GRACIE_SHAVEZ.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JAVA_TIMOTHY_LANDON.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-08-30T20:48:06.187565-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "JONES, PHILLIP ANDREW",
+        "Full Name": "LOR, YEEPHENG JOSEPH",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JONES_PHILLIP_ANDREW.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LOR_YEEPHENG_JOSEPH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "CRUZ CRUZ, SELENA",
+        "Full Name": "BROOKS, DEONTA JAMAR",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CRUZ_CRUZ_SELENA.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROOKS_DEONTA_JAMAR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "HOSKINS, CODY JOEL",
+        "Full Name": "HUMPHREY, JUSTINE JANAE",
         "Charge 1": "No charge listed",
-        "Bail": "$45,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOSKINS_CODY_JOEL.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HUMPHREY_JUSTINE_JANAE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "MBOMA, PENGI GRACE",
+        "Full Name": "IBARRA, RICHARD ROY",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MBOMA_PENGI_GRACE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_IBARRA_RICHARD_ROY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "NORMAN, STEVEN LAROY JR",
+        "Full Name": "SMITH, MYA JEANETTE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NORMAN_STEVEN_LAROY_JR.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SMITH_MYA_JEANETTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "SMITH, TYRONE",
+        "Full Name": "ZEEB, BREANNA FAITH",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SMITH_TYRONE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ZEEB_BREANNA_FAITH.jpg"
       },
       "posted": false,
       "posted_at": null
