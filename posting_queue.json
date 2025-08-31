@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-30T23:24:49.156934-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$50,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MAYOKOK_DOMINIC_HENRY_HARRISON.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-08-31T07:40:57.768284-05:00"
     },
     {
       "id": 3,
