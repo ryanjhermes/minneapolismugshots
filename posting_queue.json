@@ -1,7 +1,7 @@
 {
   "created_at": "2025-08-31T23:34:50.140703-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_LUNA_HERNANDEZ_REYNALDO_DE_JESUS.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-01T07:46:30.803005-05:00"
     },
     {
       "id": 3,
