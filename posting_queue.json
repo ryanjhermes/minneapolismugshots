@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-08-31T23:34:50.140703-05:00",
+  "created_at": "2025-09-01T23:22:57.769341-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "FREEMAN, EDDIE JAMES",
+        "Full Name": "MOHAMED, ABDIRIZAK AHMED",
         "Charge 1": "No charge listed",
-        "Bail": "$500,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FREEMAN_EDDIE_JAMES.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_MOHAMED_ABDIRIZAK_AHMED.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-01T01:37:39.357884-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "LUNA HERNANDEZ, REYNALDO DE JESUS",
+        "Full Name": "THOMAS, KENNETH EUGENE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LUNA_HERNANDEZ_REYNALDO_DE_JESUS.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_THOMAS_KENNETH_EUGENE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-01T07:46:30.803005-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "WEISER, ALICEA GRACE",
+        "Full Name": "ROBINSON, JOSEPH KENNYONN",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 CASH BAIL W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WEISER_ALICEA_GRACE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROBINSON_JOSEPH_KENNYONN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-01T13:31:38.556190-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "BARRETT, LAWRENCE JOSEPH",
+        "Full Name": "MILLER, MAURICE LAMONT 1ST",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BARRETT_LAWRENCE_JOSEPH.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MILLER_MAURICE_LAMONT_1ST.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-01T20:45:02.504010-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "VENCES-LOPEZ, ARIEL",
+        "Full Name": "ROSEBUD, TERRANCE DWAYNE",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_VENCES-LOPEZ_ARIEL.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_ROSEBUD_TERRANCE_DWAYNE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "WILLIAMS, LEAMOR ARMON",
+        "Full Name": "SCHNEIDER, MALLORI ANN",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_LEAMOR_ARMON.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SCHNEIDER_MALLORI_ANN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "DETIENNE, JASON DALE",
+        "Full Name": "GILBERT, MARTY PAUL",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DETIENNE_JASON_DALE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_GILBERT_MARTY_PAUL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "BOYD, GWENDOLYN DENIECE",
+        "Full Name": "MOE, RICKY LEE",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BOYD_GWENDOLYN_DENIECE.jpg"
+        "Mugshot_File": "mugshots/mugshot_MOE_RICKY_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "NICKENS, MARTAVIUS TAUYON",
+        "Full Name": "BLUM, EDISON JAMES",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NICKENS_MARTAVIUS_TAUYON.jpg"
+        "Bail": "$6,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_BLUM_EDISON_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "WHITE, JAMES MARVIN",
+        "Full Name": "KACZMAREK, GEORGE FRANK",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WHITE_JAMES_MARVIN.jpg"
+        "Bail": "$6,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KACZMAREK_GEORGE_FRANK.jpg"
       },
       "posted": false,
       "posted_at": null
