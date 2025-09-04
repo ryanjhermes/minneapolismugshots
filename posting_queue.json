@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-09-02T23:26:10.961680-05:00",
+  "created_at": "2025-09-03T23:24:26.642887-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "WILSON, NATHANIEL JAMES",
-        "Charge 1": "No charge listed",
-        "Bail": "$400,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILSON_NATHANIEL_JAMES.jpg"
+        "Full Name": "VIKTORA, ROBERT ANTHONY",
+        "Charge 1": "OTHER COUNTY/FELONY",
+        "Bail": "$75,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_VIKTORA_ROBERT_ANTHONY.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-03T01:31:56.139282-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BYNUM, ANTWAND DESHAY",
+        "Full Name": "ALI, ANAS ABDIHAKIM",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BYNUM_ANTWAND_DESHAY.jpg"
+        "Bail": "$150,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ALI_ANAS_ABDIHAKIM.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-03T07:43:50.151519-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "MCCANN, SHAWN RYAN",
+        "Full Name": "BANDY, JOSEPH HENRY IV",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MCCANN_SHAWN_RYAN.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BANDY_JOSEPH_HENRY_IV.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-03T13:31:12.668107-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "ALDERSON, SEAN TRENTON",
+        "Full Name": "EARLY, JAMES DEVON",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALDERSON_SEAN_TRENTON.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EARLY_JAMES_DEVON.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-03T20:39:40.684284-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "CURTIS, ANTHONY JOSE",
+        "Full Name": "ROSS, CHRISTOPHER TRACY",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_CURTIS_ANTHONY_JOSE.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROSS_CHRISTOPHER_TRACY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "ALZOUHAYLI, ALLEN LOUAI",
+        "Full Name": "GARCIA-STARR, SAVON MARCELLUS",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALZOUHAYLI_ALLEN_LOUAI.jpg"
+        "Bail": "$80,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GARCIA-STARR_SAVON_MARCELLUS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "JATENY, GUYO DIDO",
+        "Full Name": "VIKTORA, ROBERT ANTHONY",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JATENY_GUYO_DIDO.jpg"
+        "Bail": "$75,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_VIKTORA_ROBERT_ANTHONY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "AGUIRRE VASQUEZ, JAIME",
+        "Full Name": "ADAMS, RAYMOND",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AGUIRRE_VASQUEZ_JAIME.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ADAMS_RAYMOND.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "BARTICK, ELIZABETH MARIE",
+        "Full Name": "DECASPER, PHILLIP GARTH",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BARTICK_ELIZABETH_MARIE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DECASPER_PHILLIP_GARTH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "CASA DIAZ, ANDERSON MAURICIO",
+        "Full Name": "LEWIS, DWIGHT PIERRE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CASA_DIAZ_ANDERSON_MAURICIO.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LEWIS_DWIGHT_PIERRE.jpg"
       },
       "posted": false,
       "posted_at": null
