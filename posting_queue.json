@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-04T23:25:11.589281-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$2,000,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_JONES_JOSHUA_ANTHONY.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-05T01:33:16.740548-05:00"
     },
     {
       "id": 2,
