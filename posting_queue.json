@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-03T23:24:26.642887-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_EARLY_JAMES_DEVON.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-04T20:41:37.869719-05:00"
     },
     {
       "id": 5,
