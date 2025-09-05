@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-04T23:25:11.589281-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$125,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_NDON_DERRICK_KEITH.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-05T07:43:20.596563-05:00"
     },
     {
       "id": 3,
