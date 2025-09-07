@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-06T23:21:20.404766-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$50,000.00 CASH BAIL W/O CR",
         "Mugshot_File": "mugshots/mugshot_FORD_DANIEL_LAMAR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-07T07:39:48.067907-05:00"
     },
     {
       "id": 3,
