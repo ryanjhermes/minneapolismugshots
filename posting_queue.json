@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-07T23:25:07.887898-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$150,000.00 BAIL/BOND W/ CR",
         "Mugshot_File": "mugshots/mugshot_PERSONS_SARA_ANNE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-08T07:47:17.110458-05:00"
     },
     {
       "id": 3,
