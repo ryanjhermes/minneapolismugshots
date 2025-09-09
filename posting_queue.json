@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-08T23:23:53.204777-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$300,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_GARAY_PAUL_DAVID.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-09T07:47:56.981801-05:00"
     },
     {
       "id": 3,
