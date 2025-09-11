@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-10T23:19:18.248725-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$150,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_JARMUZEK_PATRICK_WAYNE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-11T01:33:27.626177-05:00"
     },
     {
       "id": 2,
