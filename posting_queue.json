@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-11T23:15:56.697980-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$20,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BRINER_NICHOLAS_JEFFREY.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-12T20:27:05.416421-05:00"
     },
     {
       "id": 5,
