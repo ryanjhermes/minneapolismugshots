@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-12T23:20:18.967792-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_STEVENS_LESLIELYN_KAYE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-13T07:39:43.247958-05:00"
     },
     {
       "id": 3,
