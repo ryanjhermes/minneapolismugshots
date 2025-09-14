@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-09-12T23:20:18.967792-05:00",
+  "created_at": "2025-09-13T23:14:24.595669-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "THAO, DOUA",
+        "Full Name": "RODRIGUEZ, MICHAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$150,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_THAO_DOUA.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_RODRIGUEZ_MICHAEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-13T01:29:30.958014-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "STEVENS, LESLIELYN KAYE",
+        "Full Name": "ABBOTT, BENJAMIN RAE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STEVENS_LESLIELYN_KAYE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ABBOTT_BENJAMIN_RAE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-13T07:39:43.247958-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "NIESEN, JAMES ANTHONY",
+        "Full Name": "MACARTHUR, ALLEN THEODORE",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NIESEN_JAMES_ANTHONY.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MACARTHUR_ALLEN_THEODORE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-13T13:27:01.324612-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "LEWIS, DARCY TRAVIS",
+        "Full Name": "JORDAN, TERRENCE LAVELL",
         "Charge 1": "No charge listed",
-        "Bail": "$65,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_LEWIS_DARCY_TRAVIS.jpg"
+        "Bail": "$6,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JORDAN_TERRENCE_LAVELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-13T20:46:03.816049-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "KOSOLAPOV, MARK",
+        "Full Name": "MOHOMES, RASHAAD TOMIAS",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KOSOLAPOV_MARK.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOHOMES_RASHAAD_TOMIAS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "LEACH, RAAHEEM QUAVEZ",
+        "Full Name": "NIXON, OYATA MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEACH_RAAHEEM_QUAVEZ.jpg"
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NIXON_OYATA_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "CASTILLO, ROJELIO",
+        "Full Name": "MOORE, JAYSEN JON ROBERTS",
         "Charge 1": "No charge listed",
-        "Bail": "$35,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CASTILLO_ROJELIO.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOORE_JAYSEN_JON_ROBERTS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "GRASSMAN, TYLER MICHAEL",
+        "Full Name": "STREMPKE, DEVIN RAY",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_GRASSMAN_TYLER_MICHAEL.jpg"
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_STREMPKE_DEVIN_RAY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "JACKSON, CALVION CHAVELLE",
+        "Full Name": "WILLIAMS, SHAMONT RAYQUIN",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JACKSON_CALVION_CHAVELLE.jpg"
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WILLIAMS_SHAMONT_RAYQUIN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "LOVETT, DEANTHONY EMMANUEL",
+        "Full Name": "DANQUAH, LINCOLN JOSEPH",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LOVETT_DEANTHONY_EMMANUEL.jpg"
+        "Bail": "$500.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DANQUAH_LINCOLN_JOSEPH.jpg"
       },
       "posted": false,
       "posted_at": null
