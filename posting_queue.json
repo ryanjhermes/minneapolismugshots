@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-13T23:14:24.595669-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ABBOTT_BENJAMIN_RAE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-14T07:39:02.841860-05:00"
     },
     {
       "id": 3,
