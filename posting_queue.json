@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-14T23:22:31.273652-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$45,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_WESTLUND_STEPHAN_LARSON.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-15T01:36:27.314738-05:00"
     },
     {
       "id": 2,
