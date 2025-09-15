@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-09-13T23:14:24.595669-05:00",
+  "created_at": "2025-09-14T23:22:31.273652-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "RODRIGUEZ, MICHAEL",
+        "Full Name": "WESTLUND, STEPHAN LARSON",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RODRIGUEZ_MICHAEL.jpg"
+        "Bail": "$45,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WESTLUND_STEPHAN_LARSON.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-14T01:30:28.085784-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "ABBOTT, BENJAMIN RAE",
+        "Full Name": "JACKSON, PHILLIP EDWARD",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ABBOTT_BENJAMIN_RAE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JACKSON_PHILLIP_EDWARD.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-14T07:39:02.841860-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "MACARTHUR, ALLEN THEODORE",
+        "Full Name": "MARTINSON, JOSHUA ROBERT",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MACARTHUR_ALLEN_THEODORE.jpg"
+        "Mugshot_File": "mugshots/mugshot_MARTINSON_JOSHUA_ROBERT.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-14T13:27:47.121476-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "JORDAN, TERRENCE LAVELL",
+        "Full Name": "NYANGWESO, ASHANTI ANYANGO",
         "Charge 1": "No charge listed",
-        "Bail": "$6,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JORDAN_TERRENCE_LAVELL.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NYANGWESO_ASHANTI_ANYANGO.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-14T20:47:31.630417-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "MOHOMES, RASHAAD TOMIAS",
+        "Full Name": "TURNER, CORDARIUS ARNELL",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOHOMES_RASHAAD_TOMIAS.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TURNER_CORDARIUS_ARNELL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "NIXON, OYATA MARIE",
+        "Full Name": "UPSON, CHRISTIAN WILLIS",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NIXON_OYATA_MARIE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_UPSON_CHRISTIAN_WILLIS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "MOORE, JAYSEN JON ROBERTS",
+        "Full Name": "GAVRIELOVA, NATELLA",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOORE_JAYSEN_JON_ROBERTS.jpg"
+        "Bail": "$600.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GAVRIELOVA_NATELLA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "STREMPKE, DEVIN RAY",
+        "Full Name": "COLLINS-DICKERSON, CELINA ISHARA",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STREMPKE_DEVIN_RAY.jpg"
+        "Bail": "$500.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_COLLINS-DICKERSON_CELINA_ISHARA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "WILLIAMS, SHAMONT RAYQUIN",
+        "Full Name": "JOHNS, MICHAEL JOSEPH",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_SHAMONT_RAYQUIN.jpg"
+        "Bail": "$500.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOHNS_MICHAEL_JOSEPH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "DANQUAH, LINCOLN JOSEPH",
+        "Full Name": "JIRON, ARYANNA SHEA",
         "Charge 1": "No charge listed",
-        "Bail": "$500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DANQUAH_LINCOLN_JOSEPH.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JIRON_ARYANNA_SHEA.jpg"
       },
       "posted": false,
       "posted_at": null
