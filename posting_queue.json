@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-14T23:22:31.273652-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_JACKSON_PHILLIP_EDWARD.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-15T07:45:58.280668-05:00"
     },
     {
       "id": 3,
