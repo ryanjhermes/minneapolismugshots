@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-18T23:22:40.992211-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$50,000.00 BAIL/BOND W/ CR",
         "Mugshot_File": "mugshots/mugshot_JAMISON_BRIAN_ERIK.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-19T07:44:37.956738-05:00"
     },
     {
       "id": 3,
