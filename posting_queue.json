@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-19T23:28:58.849381-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$75,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_STRAND_JAMEY_SCOTT_RALPH.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-20T01:30:41.247705-05:00"
     },
     {
       "id": 2,
