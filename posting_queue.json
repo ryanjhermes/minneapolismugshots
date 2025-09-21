@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-20T23:14:07.644926-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_GRAHAM_TERRENCE_ALFRED.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-21T07:41:11.019401-05:00"
     },
     {
       "id": 3,
