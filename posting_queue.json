@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-09-19T23:28:58.849381-05:00",
+  "created_at": "2025-09-20T23:14:07.644926-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "STRAND, JAMEY SCOTT RALPH",
+        "Full Name": "CORTES JIMENEZ, OMAR",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STRAND_JAMEY_SCOTT_RALPH.jpg"
+        "Bail": "$250,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CORTES_JIMENEZ_OMAR.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-20T01:30:41.247705-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "STRICKER, CAMERON JAMES",
+        "Full Name": "GRAHAM, TERRENCE ALFRED",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STRICKER_CAMERON_JAMES.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GRAHAM_TERRENCE_ALFRED.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-20T07:41:06.221343-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "COLEMAN, KHAUIM ARTES",
+        "Full Name": "JEFFRIES, JAMIE JAMIAL",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COLEMAN_KHAUIM_ARTES.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JEFFRIES_JAMIE_JAMIAL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-20T13:28:55.371519-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "HUNTER, MELVIN JUNIOR JR",
+        "Full Name": "GUEVARA, ELEAZAR GERARDO",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_HUNTER_MELVIN_JUNIOR_JR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GUEVARA_ELEAZAR_GERARDO.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-20T20:48:38.308764-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "JIMENEZ-ALVAREZ, CARLOS EVELIO",
+        "Full Name": "HERNANDES LOPEZ, JENRRI JOSE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JIMENEZ-ALVAREZ_CARLOS_EVELIO.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HERNANDES_LOPEZ_JENRRI_JOSE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "HENRY, HARDEN HAIRSTON JR",
+        "Full Name": "MURPHY, KAY MARIE JEON",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HENRY_HARDEN_HAIRSTON_JR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MURPHY_KAY_MARIE_JEON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "JEFFREY, JAMES GLENN",
+        "Full Name": "NAWROCKI, MARK ANTHONY",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JEFFREY_JAMES_GLENN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NAWROCKI_MARK_ANTHONY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "MCGILBERRY, DEMARCO MARTEZ",
+        "Full Name": "PENA ROCHINA, PEDRO FABIAN",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MCGILBERRY_DEMARCO_MARTEZ.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PENA_ROCHINA_PEDRO_FABIAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "ROMAN, TESS LYUBOV",
+        "Full Name": "POVEDA ALVAREZ, CHRISTIAN JAVIER",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROMAN_TESS_LYUBOV.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_POVEDA_ALVAREZ_CHRISTIAN_JAVIER.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "GOBERNATZ, DYLAN RICHARD",
+        "Full Name": "SAFFOLD, ROSLYN TONICE THOMAS",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GOBERNATZ_DYLAN_RICHARD.jpg"
+        "Mugshot_File": "mugshots/mugshot_SAFFOLD_ROSLYN_TONICE_THOMAS.jpg"
       },
       "posted": false,
       "posted_at": null
