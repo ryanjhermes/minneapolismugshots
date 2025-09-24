@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-09-22T23:18:59.359534-05:00",
+  "created_at": "2025-09-23T23:24:19.603571-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "JOHNSON, ISAAC EMMANUEL",
+        "Full Name": "ONEAL, MICHAEL JERNAINE",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_ISAAC_EMMANUEL.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ONEAL_MICHAEL_JERNAINE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-23T01:34:07.914440-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BERG, RICHARD PAUL",
+        "Full Name": "SEVERSON, SEAN THOMAS",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_BERG_RICHARD_PAUL.jpg"
+        "Bail": "$75,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SEVERSON_SEAN_THOMAS.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-23T07:44:28.606298-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "ZURITA, CRISTOFER",
+        "Full Name": "IRIZARRY ARROYO, DAVID AMED",
         "Charge 1": "No charge listed",
         "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ZURITA_CRISTOFER.jpg"
+        "Mugshot_File": "mugshots/mugshot_IRIZARRY_ARROYO_DAVID_AMED.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-23T13:33:38.635361-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "ANASCO CHACHA, VICTOR ANTONIO",
+        "Full Name": "LARKINS, DTRELL DAVID",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ANASCO_CHACHA_VICTOR_ANTONIO.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LARKINS_DTRELL_DAVID.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-09-23T20:41:19.904707-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "DAVIS, TIONNE ELAINE",
+        "Full Name": "REBOLLEDO GARAY, RANFERI",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_DAVIS_TIONNE_ELAINE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_REBOLLEDO_GARAY_RANFERI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "EDMONDSON, JODI LEE",
+        "Full Name": "ARIDGE, DAIQUAWN VONDELL",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EDMONDSON_JODI_LEE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ARIDGE_DAIQUAWN_VONDELL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "THOMPSON, KAITLIN ANN",
+        "Full Name": "DAVIS, JEFFIE ALLEN",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_THOMPSON_KAITLIN_ANN.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DAVIS_JEFFIE_ALLEN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "DORANTES SANCHEZ, CHRISTIAN EDUARDO",
+        "Full Name": "WALKER, JEREMY CLARENCE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DORANTES_SANCHEZ_CHRISTIAN_EDUARDO.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_WALKER_JEREMY_CLARENCE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "HOFKER, AUSTYN MARCEL ALLEN",
+        "Full Name": "NEAL, ANDREW JOHN",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOFKER_AUSTYN_MARCEL_ALLEN.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NEAL_ANDREW_JOHN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "MARTINSON-PACKER, EVAN ROBERT",
+        "Full Name": "SENOGLES, LAVONNE JOSEPHINE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MARTINSON-PACKER_EVAN_ROBERT.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SENOGLES_LAVONNE_JOSEPHINE.jpg"
       },
       "posted": false,
       "posted_at": null
