@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-23T23:24:19.603571-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$75,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SEVERSON_SEAN_THOMAS.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-24T07:45:27.126415-05:00"
     },
     {
       "id": 3,
