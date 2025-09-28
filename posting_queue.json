@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-27T23:22:01.652778-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_DAVIS_MARQUIS_DESHON.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-28T07:42:38.993315-05:00"
     },
     {
       "id": 3,
