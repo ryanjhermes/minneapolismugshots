@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-28T23:22:52.910909-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MARTIN_CHANICE_MARIE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-29T10:23:42.930153-05:00"
     },
     {
       "id": 3,
