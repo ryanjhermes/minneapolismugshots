@@ -1,7 +1,7 @@
 {
   "created_at": "2025-09-29T23:24:10.906638-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$49,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_DANIEL_SHAMON_DEWIGHT.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-09-30T22:45:18.707802-05:00"
     },
     {
       "id": 5,
