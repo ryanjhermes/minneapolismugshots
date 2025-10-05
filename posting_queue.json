@@ -1,48 +1,48 @@
 {
-  "created_at": "2025-10-03T23:27:14.424837-05:00",
+  "created_at": "2025-10-04T23:24:07.838284-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "FIELDS, LEMUEAL LEMON",
+        "Full Name": "HOOKER, ANTHONY SCOTT",
         "Charge 1": "No charge listed",
-        "Bail": "$500,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FIELDS_LEMUEAL_LEMON.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HOOKER_ANTHONY_SCOTT.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-04T01:31:11.006963-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "EDWARDS, MONROE CURTIS",
+        "Full Name": "JEFFERSON, DEVANTE LAMAR",
         "Charge 1": "No charge listed",
-        "Bail": "$300,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_EDWARDS_MONROE_CURTIS.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JEFFERSON_DEVANTE_LAMAR.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-04T13:29:08.058842-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "POWELL, CHARLES YOVONTRE",
+        "Full Name": "LITTLE, RAYMON DESZAL",
         "Charge 1": "No charge listed",
-        "Bail": "$200,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_POWELL_CHARLES_YOVONTRE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LITTLE_RAYMON_DESZAL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-04T20:48:59.229671-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "HOUGE, JOSHUA RYAN",
+        "Full Name": "FORBES, RASHIKI DEZMON",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOUGE_JOSHUA_RYAN.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FORBES_RASHIKI_DEZMON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "HUIKKO, JOHN MICHAEL",
+        "Full Name": "GLEASON, STANLEY",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HUIKKO_JOHN_MICHAEL.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GLEASON_STANLEY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "JARA, ALEJANDRO ALEJAX",
+        "Full Name": "JONES, LEVONSHAY",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JARA_ALEJANDRO_ALEJAX.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JONES_LEVONSHAY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "RICHARDSON, RAYTAVIEN RASHAD",
+        "Full Name": "BARTHOLOMEW, CRISTA MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RICHARDSON_RAYTAVIEN_RASHAD.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BARTHOLOMEW_CRISTA_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "GRAY, FREDERICK TYRONE",
+        "Full Name": "CHAVAN, GAURI",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GRAY_FREDERICK_TYRONE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CHAVAN_GAURI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "HARRIS, MALIK JAMIR",
+        "Full Name": "NYANDORO, LEROY MAINGA",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_HARRIS_MALIK_JAMIR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NYANDORO_LEROY_MAINGA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "LOUIS, CHRISTOPHIL",
+        "Full Name": "YANG, ALAN KWAN",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_LOUIS_CHRISTOPHIL.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_YANG_ALAN_KWAN.jpg"
       },
       "posted": false,
       "posted_at": null
