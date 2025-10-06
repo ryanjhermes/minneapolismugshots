@@ -1,7 +1,7 @@
 {
   "created_at": "2025-10-05T23:24:56.492413-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SWANSON_ALEXANDER_SEBASTIAN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-10-06T10:24:49.484758-05:00"
     },
     {
       "id": 3,
