@@ -1,7 +1,7 @@
 {
   "created_at": "2025-10-05T23:24:56.492413-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$20,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ABDIRAHMAN_ABDINAIM_MOHAMED.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-10-06T20:40:07.819980-05:00"
     },
     {
       "id": 5,
