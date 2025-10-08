@@ -1,7 +1,7 @@
 {
   "created_at": "2025-10-07T23:26:46.779397-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$54,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_KEISER_ERIC_ADAM.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-10-08T01:35:18.231041-05:00"
     },
     {
       "id": 2,
