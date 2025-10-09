@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-10-07T23:26:46.779397-05:00",
+  "created_at": "2025-10-08T23:27:52.512466-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "KEISER, ERIC ADAM",
+        "Full Name": "ISIAKPERE, LAMARIO DARELL",
         "Charge 1": "No charge listed",
-        "Bail": "$54,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KEISER_ERIC_ADAM.jpg"
+        "Bail": "$400,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ISIAKPERE_LAMARIO_DARELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-08T01:35:18.231041-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MORMAN, DETERRIO FRANK ALLEN",
+        "Full Name": "WISE, RICH JOHNNIE",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MORMAN_DETERRIO_FRANK_ALLEN.jpg"
+        "Bail": "$250,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WISE_RICH_JOHNNIE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-08T07:47:35.365825-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "EARTHMAN, PEPPINO SANTOS",
+        "Full Name": "BRISTOW, MATTHEW DUANE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 CASH BAIL W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EARTHMAN_PEPPINO_SANTOS.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BRISTOW_MATTHEW_DUANE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-08T13:34:04.467222-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "MCCULLOUGH, LAVONTE DAWONE",
+        "Full Name": "COX, JAKIRA JOY",
         "Charge 1": "No charge listed",
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MCCULLOUGH_LAVONTE_DAWONE.jpg"
+        "Mugshot_File": "mugshots/mugshot_COX_JAKIRA_JOY.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-08T20:41:12.087624-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "ROBERTS, JAY KYLE",
+        "Full Name": "MORAN, DOHNTREL DOHNAVONTA",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROBERTS_JAY_KYLE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MORAN_DOHNTREL_DOHNAVONTA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "PULPHUS, LLOYD",
+        "Full Name": "WILSON, ALISHA MARIA",
         "Charge 1": "No charge listed",
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PULPHUS_LLOYD.jpg"
+        "Mugshot_File": "mugshots/mugshot_WILSON_ALISHA_MARIA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "GROVES, ANDREW CHRISTOPHER",
+        "Full Name": "LUMBAR, KYLE JAMES",
         "Charge 1": "No charge listed",
         "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GROVES_ANDREW_CHRISTOPHER.jpg"
+        "Mugshot_File": "mugshots/mugshot_LUMBAR_KYLE_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "MCNEAL, SHANGE MARTIN",
+        "Full Name": "YONDA, TAMBA LAME",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MCNEAL_SHANGE_MARTIN.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_YONDA_TAMBA_LAME.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "THOMPSON, LEONARD DESTER ELIAS",
+        "Full Name": "HERNANDEZ-MELENDEZ, WILFREDO",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_THOMPSON_LEONARD_DESTER_ELIAS.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HERNANDEZ-MELENDEZ_WILFREDO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "LAO, CHOUA",
+        "Full Name": "REINAUD SANTAMARIA, FRANKLIN ALEXANDER",
         "Charge 1": "No charge listed",
-        "Bail": "$18,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LAO_CHOUA.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_REINAUD_SANTAMARIA_FRANKLIN_ALEXANDER.jpg"
       },
       "posted": false,
       "posted_at": null
