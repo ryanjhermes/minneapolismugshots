@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-10-08T23:27:52.512466-05:00",
+  "created_at": "2025-10-09T23:27:48.638776-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ISIAKPERE, LAMARIO DARELL",
+        "Full Name": "HILL, VINCENT MICHAEL JR",
         "Charge 1": "No charge listed",
-        "Bail": "$400,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ISIAKPERE_LAMARIO_DARELL.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_HILL_VINCENT_MICHAEL_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-09T01:35:14.159735-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "WISE, RICH JOHNNIE",
+        "Full Name": "RUEMMELE, THOMAS JOHN 3RD",
         "Charge 1": "No charge listed",
-        "Bail": "$250,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WISE_RICH_JOHNNIE.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_RUEMMELE_THOMAS_JOHN_3RD.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-09T07:47:26.876118-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "BRISTOW, MATTHEW DUANE",
+        "Full Name": "CEASER, BYRON ALLEN",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BRISTOW_MATTHEW_DUANE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CEASER_BYRON_ALLEN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-09T16:20:46.046374-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "COX, JAKIRA JOY",
+        "Full Name": "IZQUIERDO CASTILLO, GRINLEY",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COX_JAKIRA_JOY.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_IZQUIERDO_CASTILLO_GRINLEY.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-09T20:41:44.259986-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "MORAN, DOHNTREL DOHNAVONTA",
+        "Full Name": "MCCRAY, JEFFREY QUINTEN",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MORAN_DOHNTREL_DOHNAVONTA.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MCCRAY_JEFFREY_QUINTEN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "WILSON, ALISHA MARIA",
+        "Full Name": "SAMPLE, TAYLOR ANN",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILSON_ALISHA_MARIA.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SAMPLE_TAYLOR_ANN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "LUMBAR, KYLE JAMES",
+        "Full Name": "GOINS, GEORGE STACY",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LUMBAR_KYLE_JAMES.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GOINS_GEORGE_STACY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "YONDA, TAMBA LAME",
+        "Full Name": "LEE, KIJA DESTINY",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_YONDA_TAMBA_LAME.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LEE_KIJA_DESTINY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "HERNANDEZ-MELENDEZ, WILFREDO",
+        "Full Name": "TAYLOR, LAMONT BERNARD",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HERNANDEZ-MELENDEZ_WILFREDO.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TAYLOR_LAMONT_BERNARD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "REINAUD SANTAMARIA, FRANKLIN ALEXANDER",
+        "Full Name": "AKBAR-BEY, JIHAD ISLAM",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_REINAUD_SANTAMARIA_FRANKLIN_ALEXANDER.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_AKBAR-BEY_JIHAD_ISLAM.jpg"
       },
       "posted": false,
       "posted_at": null
