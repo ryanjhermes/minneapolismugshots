@@ -1,7 +1,7 @@
 {
   "created_at": "2025-10-10T23:24:41.090007-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/ CR",
         "Mugshot_File": "mugshots/mugshot_GRIFFIN_ANTONIO_LERON.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-10-11T20:45:06.658522-05:00"
     },
     {
       "id": 5,
