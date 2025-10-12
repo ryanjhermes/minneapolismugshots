@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-10-10T23:24:41.090007-05:00",
+  "created_at": "2025-10-11T23:24:03.627512-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "STREITZ, MARY JOHANNA",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STREITZ_MARY_JOHANNA.jpg"
+        "Full Name": "WEBB, DEONTE DYWANE",
+        "Charge 1": "STALKING - ENGAGES IN STALKING",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WEBB_DEONTE_DYWANE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-11T01:30:15.108087-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MOHAMUD, AHMED ABDI",
+        "Full Name": "EMERY-MINOR, CHAE ALLUA SHAVAUN",
         "Charge 1": "No charge listed",
-        "Bail": "$55,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOHAMUD_AHMED_ABDI.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EMERY-MINOR_CHAE_ALLUA_SHAVAUN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-11T07:40:32.462474-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "BALAMI, JOSHUA",
+        "Full Name": "MEEKS, MARCUS TERELL",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BALAMI_JOSHUA.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MEEKS_MARCUS_TERELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-11T13:27:45.568044-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "GRIFFIN, ANTONIO LERON",
+        "Full Name": "HADLEY, JAMES LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_GRIFFIN_ANTONIO_LERON.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HADLEY_JAMES_LEE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-11T20:45:06.658522-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "STONE, DONTAVIUS PHILLIP",
+        "Full Name": "RAMOS, FRANK 3RD",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STONE_DONTAVIUS_PHILLIP.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_RAMOS_FRANK_3RD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "JACKSON, TERESA LASHUNDA",
+        "Full Name": "JOURDAIN, DANIEL WAYNE SR",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JACKSON_TERESA_LASHUNDA.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOURDAIN_DANIEL_WAYNE_SR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "MUDEY, HINDIYO OMAR",
+        "Full Name": "MENARD, DARCY MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MUDEY_HINDIYO_OMAR.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MENARD_DARCY_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "ARREOLA-MORALES, ERIK ARREOLA",
+        "Full Name": "HEIL, ALEXANDER STEVEN",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ARREOLA-MORALES_ERIK_ARREOLA.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HEIL_ALEXANDER_STEVEN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "GOINS, CHRISTOPHER MICHEAL JR",
+        "Full Name": "SANCHEZ-TERRAZO, ALDO RENE",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GOINS_CHRISTOPHER_MICHEAL_JR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SANCHEZ-TERRAZO_ALDO_RENE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "LITTLEOWL, JAYCIA LACE",
+        "Full Name": "ABDUS-SALAM, AYYOOB DAWOOD",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LITTLEOWL_JAYCIA_LACE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_ABDUS-SALAM_AYYOOB_DAWOOD.jpg"
       },
       "posted": false,
       "posted_at": null
