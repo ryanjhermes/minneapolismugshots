@@ -1,48 +1,48 @@
 {
-  "created_at": "2025-10-12T23:23:39.566278-05:00",
+  "created_at": "2025-10-13T23:26:34.857813-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "VASQUEZ-RODRIGUEZ, VICTOR JOSEPH",
+        "Full Name": "GONTORWON, RAHIME",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_VASQUEZ-RODRIGUEZ_VICTOR_JOSEPH.jpg"
+        "Bail": "$500,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GONTORWON_RAHIME.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-13T04:28:25.059620-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "VAZQUEZ-RODRIGUEZ, JOSE DAVID",
+        "Full Name": "DENNIS, JOHNTA WILLIAM",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_VAZQUEZ-RODRIGUEZ_JOSE_DAVID.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DENNIS_JOHNTA_WILLIAM.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-13T07:46:26.449783-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "CRUZ BERNAL, EDGAR",
+        "Full Name": "REYES, CARMEN MUNECA",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CRUZ_BERNAL_EDGAR.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_REYES_CARMEN_MUNECA.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-13T13:31:55.791728-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "KRENIK, JOSEPH RYAN",
+        "Full Name": "WINSTON, TAJUAN JOHOLLIS",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KRENIK_JOSEPH_RYAN.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WINSTON_TAJUAN_JOHOLLIS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "RATCLIFF, CORDERO ORLANDO JR",
+        "Full Name": "FORD, LAMAR DAESHAUN",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RATCLIFF_CORDERO_ORLANDO_JR.jpg"
+        "Bail": "$75,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_FORD_LAMAR_DAESHAUN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "PALMER, JANIECE LAMAE CHANTE",
+        "Full Name": "PARKER, ABDULLAHI AMIN",
         "Charge 1": "No charge listed",
-        "Bail": "$6,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PALMER_JANIECE_LAMAE_CHANTE.jpg"
+        "Bail": "$75,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PARKER_ABDULLAHI_AMIN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "GALVAN OSORIO, BRIAN",
+        "Full Name": "MUTANDA, TSHIBANGU GLOIRE",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GALVAN_OSORIO_BRIAN.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_MUTANDA_TSHIBANGU_GLOIRE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "PIRICH, SHAWN PATRICK SR",
+        "Full Name": "EIDE, CRAIG STEVEN",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PIRICH_SHAWN_PATRICK_SR.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EIDE_CRAIG_STEVEN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "CLIFTON, DANIEL ALAN 2ND",
+        "Full Name": "YANG, PENG",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CLIFTON_DANIEL_ALAN_2ND.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_YANG_PENG.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "HALL, MARQUITA JANET",
+        "Full Name": "ERICKSON, ZACHARY ROBERT",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HALL_MARQUITA_JANET.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ERICKSON_ZACHARY_ROBERT.jpg"
       },
       "posted": false,
       "posted_at": null
