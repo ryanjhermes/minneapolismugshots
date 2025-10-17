@@ -1,48 +1,48 @@
 {
-  "created_at": "2025-10-15T23:15:47.156946-05:00",
+  "created_at": "2025-10-16T23:28:04.141372-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "LEZAMA, CRYSTAL",
+        "Full Name": "LEWIS, ANTHONY LARELL",
         "Charge 1": "No charge listed",
-        "Bail": "$250,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEZAMA_CRYSTAL.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_LEWIS_ANTHONY_LARELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-16T01:34:53.550166-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "SIMMONS, JERMAINE DAVAHN",
+        "Full Name": "BROWN, AMARIE MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$200,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SIMMONS_JERMAINE_DAVAHN.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROWN_AMARIE_MARIE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-16T10:26:24.989161-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "HAMPTON, REUBEN ISAAC",
+        "Full Name": "JOHNSON, SHARRON",
         "Charge 1": "No charge listed",
-        "Bail": "$150,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HAMPTON_REUBEN_ISAAC.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_SHARRON.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-16T13:33:17.938703-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "WALKER, TROY HENRY JR",
+        "Full Name": "RIVERA, JULIAN TYLER",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WALKER_TROY_HENRY_JR.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_RIVERA_JULIAN_TYLER.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "MORALES VELAQUEZ, JUAN MANUEL",
+        "Full Name": "SEVERIN, LUDMILA DIMITROV",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MORALES_VELAQUEZ_JUAN_MANUEL.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SEVERIN_LUDMILA_DIMITROV.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "GALE, RENEE ZHOUSHKOGESHIG",
+        "Full Name": "TATUM, JIMMY LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GALE_RENEE_ZHOUSHKOGESHIG.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TATUM_JIMMY_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "MARTINEZ, JUANA MARY",
+        "Full Name": "HORTON, DAUVEA JEAN",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MARTINEZ_JUANA_MARY.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HORTON_DAUVEA_JEAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "CAMPBELL, NATHAN JOSEPH",
+        "Full Name": "KING, DALLAS LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CAMPBELL_NATHAN_JOSEPH.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KING_DALLAS_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "FEIGH, OMAR PATRICK",
+        "Full Name": "CHICAIZA MOGROVEJO, CHRISTIAN ROBERTO",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FEIGH_OMAR_PATRICK.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CHICAIZA_MOGROVEJO_CHRISTIAN_ROBERTO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "OIAN, LEBRON JAMES",
+        "Full Name": "POHLEN, MICHAEL EDWARD",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_OIAN_LEBRON_JAMES.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_POHLEN_MICHAEL_EDWARD.jpg"
       },
       "posted": false,
       "posted_at": null
