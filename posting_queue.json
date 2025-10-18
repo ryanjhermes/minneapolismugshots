@@ -1,7 +1,7 @@
 {
   "created_at": "2025-10-17T23:23:40.307630-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_HARWELL_COREY.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-10-18T07:42:11.254658-05:00"
     },
     {
       "id": 3,
