@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-10-16T23:28:04.141372-05:00",
+  "created_at": "2025-10-17T23:23:40.307630-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "LEWIS, ANTHONY LARELL",
+        "Full Name": "CURRIE, SCHNAUT DEANTE",
         "Charge 1": "No charge listed",
         "Bail": "$100,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_LEWIS_ANTHONY_LARELL.jpg"
+        "Mugshot_File": "mugshots/mugshot_CURRIE_SCHNAUT_DEANTE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-17T01:34:06.212451-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BROWN, AMARIE MARIE",
+        "Full Name": "HARWELL, COREY",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROWN_AMARIE_MARIE.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HARWELL_COREY.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-17T07:45:36.983260-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "JOHNSON, SHARRON",
+        "Full Name": "CHA, VINCENT VAMENG",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_SHARRON.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CHA_VINCENT_VAMENG.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-17T13:32:36.810214-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "RIVERA, JULIAN TYLER",
+        "Full Name": "SCHATZLEIN, TOM EDWARD",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RIVERA_JULIAN_TYLER.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SCHATZLEIN_TOM_EDWARD.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-17T20:30:04.567560-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "SEVERIN, LUDMILA DIMITROV",
+        "Full Name": "AHMED, ABDIHAFED MOHAMED",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SEVERIN_LUDMILA_DIMITROV.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AHMED_ABDIHAFED_MOHAMED.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "TATUM, JIMMY LEE",
+        "Full Name": "BABATZ, JAMES PATRICK",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TATUM_JIMMY_LEE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BABATZ_JAMES_PATRICK.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "HORTON, DAUVEA JEAN",
+        "Full Name": "HART, DACIA JADE",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HORTON_DAUVEA_JEAN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HART_DACIA_JADE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "KING, DALLAS LEE",
+        "Full Name": "MORMANT, PATRICK",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KING_DALLAS_LEE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MORMANT_PATRICK.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "CHICAIZA MOGROVEJO, CHRISTIAN ROBERTO",
+        "Full Name": "ZAMORANO, BRYAN ROJAS",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CHICAIZA_MOGROVEJO_CHRISTIAN_ROBERTO.jpg"
+        "Mugshot_File": "mugshots/mugshot_ZAMORANO_BRYAN_ROJAS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "POHLEN, MICHAEL EDWARD",
+        "Full Name": "BROWN, DEVRON JEREL",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_POHLEN_MICHAEL_EDWARD.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_BROWN_DEVRON_JEREL.jpg"
       },
       "posted": false,
       "posted_at": null
