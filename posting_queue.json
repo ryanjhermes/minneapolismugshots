@@ -1,7 +1,7 @@
 {
   "created_at": "2025-10-18T23:23:22.133363-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_COLEMAN_MARCELLUS_DARRELL_JR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-10-19T01:32:07.855268-05:00"
     },
     {
       "id": 2,
