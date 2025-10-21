@@ -1,7 +1,7 @@
 {
   "created_at": "2025-10-20T23:18:21.608517-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BRASSON_DESHAWN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-10-21T01:34:52.075612-05:00"
     },
     {
       "id": 2,
