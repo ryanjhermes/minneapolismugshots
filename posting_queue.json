@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-10-20T23:18:21.608517-05:00",
+  "created_at": "2025-10-21T23:28:59.912911-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BRASSON, DESHAWN",
+        "Full Name": "DIMMEN, TYLER THOMAS",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BRASSON_DESHAWN.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DIMMEN_TYLER_THOMAS.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-21T01:34:52.075612-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "HARRIS, DEONTAY DRAY",
+        "Full Name": "MIDDLEBROOK, ISHAMEL PORTWOOD",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HARRIS_DEONTAY_DRAY.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_MIDDLEBROOK_ISHAMEL_PORTWOOD.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-21T07:49:36.013251-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "SHAMBLEY, KAMORA MARIA",
+        "Full Name": "MOSELEY, SIDNEY DENYELL",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SHAMBLEY_KAMORA_MARIA.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOSELEY_SIDNEY_DENYELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-21T13:33:17.084191-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "SHEARD, RICKY LEANDRE",
+        "Full Name": "TAFT, MARSTYN RYAN",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SHEARD_RICKY_LEANDRE.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TAFT_MARSTYN_RYAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-21T20:48:53.611662-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "YUQUILIMA, KEVIN FERNANDO",
+        "Full Name": "JORDAN, DEONTA LAPREE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_YUQUILIMA_KEVIN_FERNANDO.jpg"
+        "Bail": "$75,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JORDAN_DEONTA_LAPREE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "GAYE, AJOKO",
+        "Full Name": "CAMACHO, RUBEN CAMPOS",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GAYE_AJOKO.jpg"
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CAMACHO_RUBEN_CAMPOS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "TURCOTTE, MEGAN NICOLE",
+        "Full Name": "EARLY, JEROME",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TURCOTTE_MEGAN_NICOLE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EARLY_JEROME.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "JULIUS, PATIENCE",
+        "Full Name": "ABDALLA, ALI MOHAMED",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_JULIUS_PATIENCE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ABDALLA_ALI_MOHAMED.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "WILLIAMS, LEAMOR ARMON",
+        "Full Name": "AUSTIN, PRESIDENT PIMPING",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_LEAMOR_ARMON.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AUSTIN_PRESIDENT_PIMPING.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "BAUER, SHANIA CHRISTINE",
+        "Full Name": "HOPKINS, ERIC JAMARE",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BAUER_SHANIA_CHRISTINE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HOPKINS_ERIC_JAMARE.jpg"
       },
       "posted": false,
       "posted_at": null
