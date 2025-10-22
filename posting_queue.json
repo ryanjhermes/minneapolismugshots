@@ -1,7 +1,7 @@
 {
   "created_at": "2025-10-21T23:28:59.912911-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_DIMMEN_TYLER_THOMAS.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-10-22T01:36:19.558048-05:00"
     },
     {
       "id": 2,
