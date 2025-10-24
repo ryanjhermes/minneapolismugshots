@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-10-22T23:25:21.210292-05:00",
+  "created_at": "2025-10-23T23:18:37.382192-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MOORE, FREDDIE BETHLEY",
+        "Full Name": "ALI, ABDIAZIZ AHMED",
         "Charge 1": "No charge listed",
-        "Bail": "$150,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOORE_FREDDIE_BETHLEY.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ALI_ABDIAZIZ_AHMED.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-23T01:35:11.005521-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "NELSON, VICTOR JOSEPH",
+        "Full Name": "WHITEBULL, DANIEL JONATHAN",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_NELSON_VICTOR_JOSEPH.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WHITEBULL_DANIEL_JONATHAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-23T07:50:59.380449-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "JOHNSON, OLIVER DEFRANCIS",
+        "Full Name": "ALLEN-BROWN, JABRIEL MARTAE",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_OLIVER_DEFRANCIS.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ALLEN-BROWN_JABRIEL_MARTAE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-23T13:33:39.501520-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "KIFFE, ADAM ROBERT",
+        "Full Name": "FINEDAY-BARRETT, BROOKLYN LANAE",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KIFFE_ADAM_ROBERT.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FINEDAY-BARRETT_BROOKLYN_LANAE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-23T20:41:15.420666-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "RILEY, RONNIE LEE",
+        "Full Name": "DURAN, SAMUEL",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RILEY_RONNIE_LEE.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DURAN_SAMUEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "VETAW, GREVANNA DESHEAUNA",
+        "Full Name": "STEWART, JOHN HENRY III",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_VETAW_GREVANNA_DESHEAUNA.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_STEWART_JOHN_HENRY_III.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "ZITEK, DUSTEN CHASE",
+        "Full Name": "BRENNA, ERIK",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ZITEK_DUSTEN_CHASE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_BRENNA_ERIK.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "ODELIUS, STEVEN LEE",
+        "Full Name": "MOCHAMA, DUBEN ASOTI",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ODELIUS_STEVEN_LEE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOCHAMA_DUBEN_ASOTI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "KING, JOHN BENJAMIN JR",
+        "Full Name": "MARTNER, JUSTIN JOHN",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KING_JOHN_BENJAMIN_JR.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MARTNER_JUSTIN_JOHN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "LEE, TANAYA CHADAE",
+        "Full Name": "MOORE, BRANDON DERELL",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEE_TANAYA_CHADAE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOORE_BRANDON_DERELL.jpg"
       },
       "posted": false,
       "posted_at": null
