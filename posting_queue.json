@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-10-24T23:27:45.563460-05:00",
+  "created_at": "2025-10-25T23:17:40.858770-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "JACKSON, MAXXE STEVENS",
+        "Full Name": "GORDON, TYAJSHA EMANIE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JACKSON_MAXXE_STEVENS.jpg"
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GORDON_TYAJSHA_EMANIE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-25T01:31:34.280182-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "KIGOZI, ELIJAH KIRAO",
+        "Full Name": "LUCIO, ANA HERLINDA",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KIGOZI_ELIJAH_KIRAO.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LUCIO_ANA_HERLINDA.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-25T10:21:41.698586-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "REED, MORECE JACKSON",
+        "Full Name": "GARCIA, MYLOANTONIO L",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_REED_MORECE_JACKSON.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GARCIA_MYLOANTONIO_L.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-25T16:20:45.981231-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "EGAL, ABDIHAKIM MOHMED",
+        "Full Name": "HASHI, MOHAMED ABDIRIZAQ",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EGAL_ABDIHAKIM_MOHMED.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HASHI_MOHAMED_ABDIRIZAQ.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-25T22:43:40.704565-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "BANKS, ULTARE DENIELL",
+        "Full Name": "AMARA, AUGUSTINE JUMA",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BANKS_ULTARE_DENIELL.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AMARA_AUGUSTINE_JUMA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "HOWARD, CARL LASHAUN",
+        "Full Name": "FRIESZ, ELIZABETH FARR",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOWARD_CARL_LASHAUN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FRIESZ_ELIZABETH_FARR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "SOINE, ASA ALDEN",
+        "Full Name": "LOPEZ BARRIENTOS, DARWIN ESTUARDO",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SOINE_ASA_ALDEN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LOPEZ_BARRIENTOS_DARWIN_ESTUARDO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "BERG, JASON BRANDON",
+        "Full Name": "CISNEROS, JESUS CORNEJO",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BERG_JASON_BRANDON.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CISNEROS_JESUS_CORNEJO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "WALKER, JARION MAURICE",
+        "Full Name": "GUAMAN PALOMO, JAIRO DANIEL",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WALKER_JARION_MAURICE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GUAMAN_PALOMO_JAIRO_DANIEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "ALTRICHTER, JEFFREY ROBERT",
+        "Full Name": "PIDOR, DUOP",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALTRICHTER_JEFFREY_ROBERT.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PIDOR_DUOP.jpg"
       },
       "posted": false,
       "posted_at": null
