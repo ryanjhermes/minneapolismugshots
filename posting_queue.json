@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-10-26T23:32:36.876314-05:00",
+  "created_at": "2025-10-27T23:26:14.236956-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BOLDEN, CHANTAL MARDELL",
+        "Full Name": "FIELDS, LEMUEL LEMON",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BOLDEN_CHANTAL_MARDELL.jpg"
+        "Bail": "$300,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FIELDS_LEMUEL_LEMON.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-27T01:38:44.935195-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "DAY, ANDREW JONATHAN",
+        "Full Name": "LYLES, ARTHUR LEE JR",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DAY_ANDREW_JONATHAN.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LYLES_ARTHUR_LEE_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-27T07:51:22.962649-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "NALEWAJA, NICHOLE MARIE",
+        "Full Name": "WHITE, DAJUAN ALLEN",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NALEWAJA_NICHOLE_MARIE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WHITE_DAJUAN_ALLEN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-27T13:34:41.574966-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "WAKO, BADRU HANGASU",
+        "Full Name": "ELLIS, CHARLES QUENARD",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WAKO_BADRU_HANGASU.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ELLIS_CHARLES_QUENARD.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-27T20:44:26.580199-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "JOHNSON, GREGORY JR",
+        "Full Name": "BJUR, JONATHAN PAUL",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_GREGORY_JR.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BJUR_JONATHAN_PAUL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "MAHANNA, CATHERINE JOSEPH",
+        "Full Name": "MATTHEWS, JABAR LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MAHANNA_CATHERINE_JOSEPH.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MATTHEWS_JABAR_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "ARMSTRONG, TIEREIN EVAN",
+        "Full Name": "WATTLEY, BRIAN STEPHON",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ARMSTRONG_TIEREIN_EVAN.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WATTLEY_BRIAN_STEPHON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "GARCIA, CLIFTON LEE",
+        "Full Name": "HIDALGO PEREZ, FRANCISCO JAVIER",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GARCIA_CLIFTON_LEE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HIDALGO_PEREZ_FRANCISCO_JAVIER.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "JAHR, TYLER JAMES",
+        "Full Name": "SUIN SANCHEZ, LUIS FABIAN",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JAHR_TYLER_JAMES.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SUIN_SANCHEZ_LUIS_FABIAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "LUND, JOHNATHON SCOTT",
+        "Full Name": "TARIS AVILES, CHRISTOPHER SAUL",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LUND_JOHNATHON_SCOTT.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TARIS_AVILES_CHRISTOPHER_SAUL.jpg"
       },
       "posted": false,
       "posted_at": null
