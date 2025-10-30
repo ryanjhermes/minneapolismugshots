@@ -1,48 +1,48 @@
 {
-  "created_at": "2025-10-28T23:29:23.674747-05:00",
+  "created_at": "2025-10-29T23:31:05.904866-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MARTINEZ, GIOVANNI",
+        "Full Name": "OMARA, DION AJAIS",
         "Charge 1": "No charge listed",
-        "Bail": "$200,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MARTINEZ_GIOVANNI.jpg"
+        "Bail": "$500,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_OMARA_DION_AJAIS.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-29T01:37:04.808164-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MYERS, ANDREW MERCELIS",
+        "Full Name": "KIRKWOOD, VIRGIL LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$150,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MYERS_ANDREW_MERCELIS.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KIRKWOOD_VIRGIL_LEE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-29T10:27:57.213399-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "MICLESCU, COMISARU",
+        "Full Name": "MARKS, ETHAN",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_MICLESCU_COMISARU.jpg"
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MARKS_ETHAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-10-29T16:22:15.458406-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "PATTERSON, REGINALD",
+        "Full Name": "LOFTON, MARCEL KENNETH JR",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PATTERSON_REGINALD.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LOFTON_MARCEL_KENNETH_JR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "FLEMING, LIONEL LUKE",
+        "Full Name": "KIRSCHT, ERICH LLOYD",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_FLEMING_LIONEL_LUKE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_KIRSCHT_ERICH_LLOYD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "SMITH, RANDY KELVON",
+        "Full Name": "AHMED, BILISE NURU",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SMITH_RANDY_KELVON.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AHMED_BILISE_NURU.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "WILSON, KRISTOPHER ALLEN OZELL",
+        "Full Name": "EVANS, CODY JAMES",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILSON_KRISTOPHER_ALLEN_OZELL.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EVANS_CODY_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "RABB, MARCELLOUS SAVON",
+        "Full Name": "PEASHA, CAMERON THOMAS",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RABB_MARCELLOUS_SAVON.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PEASHA_CAMERON_THOMAS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "SMITH, FREDRIGO MAURICE",
+        "Full Name": "MAY, CAMERON LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_SMITH_FREDRIGO_MAURICE.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MAY_CAMERON_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "GARNER, XAVIER KEITH",
+        "Full Name": "DALEY, MAXWELL PATRICK",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GARNER_XAVIER_KEITH.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DALEY_MAXWELL_PATRICK.jpg"
       },
       "posted": false,
       "posted_at": null
