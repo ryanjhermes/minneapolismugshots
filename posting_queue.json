@@ -1,37 +1,37 @@
 {
-  "created_at": "2025-11-01T23:25:17.069245-05:00",
+  "created_at": "2025-11-02T22:29:44.720913-06:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ANDERSON, MICHAEL CURTIS",
+        "Full Name": "FLOMO, JESPER MELVIN JR",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_ANDERSON_MICHAEL_CURTIS.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FLOMO_JESPER_MELVIN_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-02T06:41:41.730110-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "WILLIAMS, TYRONE JAMES III",
+        "Full Name": "MCCOWEN, MARVIN RAY",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_TYRONE_JAMES_III.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MCCOWEN_MARVIN_RAY.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-02T21:53:33.096569-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "LORENTSON, LANDEN MICHAEL",
+        "Full Name": "MCCLAIN, DELEON NATHAN",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LORENTSON_LANDEN_MICHAEL.jpg"
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MCCLAIN_DELEON_NATHAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "GRAYSON, NIVEA DEBRIANNE JANESE DORISTEIN",
+        "Full Name": "ALI, KAMAL SAID OMAR",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GRAYSON_NIVEA_DEBRIANNE_JANESE_DORISTEIN.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ALI_KAMAL_SAID_OMAR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "WILEY, KAHLIL C MARKELL",
+        "Full Name": "BONSANTE, JONTE FELTON",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILEY_KAHLIL_C_MARKELL.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BONSANTE_JONTE_FELTON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "GALE, JADE MARIE",
+        "Full Name": "REDDEN, FREDRICK KEITHSHON",
         "Charge 1": "No charge listed",
-        "Bail": "$7,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GALE_JADE_MARIE.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_REDDEN_FREDRICK_KEITHSHON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "AHMED, HARUN OMAR",
+        "Full Name": "AGUILAR, JACOB BLADIMIR",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AHMED_HARUN_OMAR.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_AGUILAR_JACOB_BLADIMIR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "COOK, ASHLEY MARIE",
+        "Full Name": "GOOLSBY, DAWUD ANDREW",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COOK_ASHLEY_MARIE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GOOLSBY_DAWUD_ANDREW.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "HER, BRYANT YEE VANG",
+        "Full Name": "JARA, JUAN CARLOS",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HER_BRYANT_YEE_VANG.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JARA_JUAN_CARLOS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "MERRITT, TRAVIN WILLIE",
+        "Full Name": "BELL, JUSTIN EUGENE",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MERRITT_TRAVIN_WILLIE.jpg"
+        "Bail": "$6,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BELL_JUSTIN_EUGENE.jpg"
       },
       "posted": false,
       "posted_at": null
