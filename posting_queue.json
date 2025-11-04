@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-03T22:26:21.192970-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$500,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_STEWART_BRANDON_JOHN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-04T00:35:41.833549-06:00"
     },
     {
       "id": 2,
