@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-11-05T22:29:45.621634-06:00",
+  "created_at": "2025-11-06T22:29:43.977420-06:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "WHEELER, DANIEL LEE",
+        "Full Name": "COOPER, AIONEL BLAMO",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WHEELER_DANIEL_LEE.jpg"
+        "Bail": "$300,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_COOPER_AIONEL_BLAMO.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-06T00:35:32.442093-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BOOKER, FREDRICKA KENTRELL",
+        "Full Name": "HASSAN, KHALID MOHAMED RASHID",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_BOOKER_FREDRICKA_KENTRELL.jpg"
+        "Bail": "$300,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HASSAN_KHALID_MOHAMED_RASHID.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-06T06:53:58.604637-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "PORTER, JAMES CLEVELAND",
+        "Full Name": "MARTIN, JAMIAN JADARIAN",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PORTER_JAMES_CLEVELAND.jpg"
+        "Bail": "$300,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MARTIN_JAMIAN_JADARIAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-06T12:35:36.646556-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "HERNANDEZ, RAMIRO MARQUEZ JR",
+        "Full Name": "GRAY, ALFRED JERMAINE JR",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HERNANDEZ_RAMIRO_MARQUEZ_JR.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GRAY_ALFRED_JERMAINE_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-06T19:48:17.869505-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "TOWNSEL, JOSHUA",
+        "Full Name": "JONES, THOMAS WILLIAM",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TOWNSEL_JOSHUA.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JONES_THOMAS_WILLIAM.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "DEE, DEVIN MICHAEL",
+        "Full Name": "SMOLLEY, SAMUEL JAY",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DEE_DEVIN_MICHAEL.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SMOLLEY_SAMUEL_JAY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "AGUILAR GUZMAN, GUSTAVO ANGEL",
+        "Full Name": "GRAY, CAROLYN ASHAYLA",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AGUILAR_GUZMAN_GUSTAVO_ANGEL.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GRAY_CAROLYN_ASHAYLA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "HERVEY, JOHN WAYNE JR",
+        "Full Name": "CUNNINGHAM, GREYSON DANTE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HERVEY_JOHN_WAYNE_JR.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CUNNINGHAM_GREYSON_DANTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "ABDULLE, KADAR ABDULLAHI",
+        "Full Name": "GARY, DREA CHRISTINA RENEE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ABDULLE_KADAR_ABDULLAHI.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GARY_DREA_CHRISTINA_RENEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "BLANCHARD, REBEKAH DIANNE",
+        "Full Name": "CLOUD, CEAPHAS ANTHONY",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BLANCHARD_REBEKAH_DIANNE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CLOUD_CEAPHAS_ANTHONY.jpg"
       },
       "posted": false,
       "posted_at": null
