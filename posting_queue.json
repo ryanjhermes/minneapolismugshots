@@ -1,48 +1,48 @@
 {
-  "created_at": "2025-11-07T22:25:41.415852-06:00",
+  "created_at": "2025-11-08T22:22:33.635053-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "COMBS, TAKAI THURMAINE",
+        "Full Name": "URRUTIA, BRITTNEY LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$250,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COMBS_TAKAI_THURMAINE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_URRUTIA_BRITTNEY_LEE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-08T00:31:57.189015-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "GONZALEZ, ARMONI ANTONIO",
+        "Full Name": "QUINGA SANTIAGO, CHRISTIAN",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_GONZALEZ_ARMONI_ANTONIO.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_QUINGA_SANTIAGO_CHRISTIAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-08T06:42:26.149640-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "LUKAT, TYLER MANFRED",
+        "Full Name": "JOHNSON, CHARLES IRWIN",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LUKAT_TYLER_MANFRED.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_CHARLES_IRWIN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-08T15:20:09.286915-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "BROADWAY, IRA VIDAL",
+        "Full Name": "MASON, LANCE WILLIAM",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROADWAY_IRA_VIDAL.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MASON_LANCE_WILLIAM.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "SMITH, RICHARD HARRISON",
+        "Full Name": "OWENS-THOMPSON, TAYVION DAKARIO",
         "Charge 1": "No charge listed",
-        "Bail": "$45,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SMITH_RICHARD_HARRISON.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_OWENS-THOMPSON_TAYVION_DAKARIO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "ANDRUS, DAMOND JAMAL",
+        "Full Name": "EISCHENS, TANYA JO",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ANDRUS_DAMOND_JAMAL.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EISCHENS_TANYA_JO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "KUEK, REHAB MUSA",
+        "Full Name": "IGEL, DANIEL THOMAS",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KUEK_REHAB_MUSA.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_IGEL_DANIEL_THOMAS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "PEIPUS, LINDSEY RAE",
+        "Full Name": "SCOTT, JACKIE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PEIPUS_LINDSEY_RAE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SCOTT_JACKIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "BALFANZ, JAMIE MICHAEL",
+        "Full Name": "WASHINGTON, ASHLEY AMBER",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_BALFANZ_JAMIE_MICHAEL.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WASHINGTON_ASHLEY_AMBER.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "BAUTISTA TORRES, JORGE OSCAR",
+        "Full Name": "BERGREN, DEAN ALAN",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BAUTISTA_TORRES_JORGE_OSCAR.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BERGREN_DEAN_ALAN.jpg"
       },
       "posted": false,
       "posted_at": null
