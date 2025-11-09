@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-08T22:22:33.635053-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$50,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_URRUTIA_BRITTNEY_LEE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-09T03:22:13.783799-06:00"
     },
     {
       "id": 2,
