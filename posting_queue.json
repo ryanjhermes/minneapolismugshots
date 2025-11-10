@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-09T22:28:41.031873-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_CRABTREE_CASEY_WARREN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-10T06:50:14.992234-06:00"
     },
     {
       "id": 3,
