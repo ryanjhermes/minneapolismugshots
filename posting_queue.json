@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-11-09T22:28:41.031873-06:00",
+  "created_at": "2025-11-10T22:28:24.355468-06:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BLACKMER, ELISJAH NASARA",
+        "Full Name": "STEWART, LAZERRICK ALANTE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BLACKMER_ELISJAH_NASARA.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_STEWART_LAZERRICK_ALANTE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-10T00:37:49.160118-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "CRABTREE, CASEY WARREN",
+        "Full Name": "ANDERSON, KARI ROSE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CRABTREE_CASEY_WARREN.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ANDERSON_KARI_ROSE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-10T06:50:14.992234-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "FARAH, MOHAMED HACHI",
+        "Full Name": "BROWN, HAROLD LOUIS",
         "Charge 1": "No charge listed",
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FARAH_MOHAMED_HACHI.jpg"
+        "Mugshot_File": "mugshots/mugshot_BROWN_HAROLD_LOUIS.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-10T12:34:31.326344-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "OLSON, WESLEY JAMES",
+        "Full Name": "ROGERS, NIKKOLAS JULIAN",
         "Charge 1": "No charge listed",
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_OLSON_WESLEY_JAMES.jpg"
+        "Mugshot_File": "mugshots/mugshot_ROGERS_NIKKOLAS_JULIAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-10T19:49:58.383495-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "PAUKNER, SEAN DAVID",
+        "Full Name": "WILLIAMS, QUENTON TYRONE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PAUKNER_SEAN_DAVID.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WILLIAMS_QUENTON_TYRONE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "RODRIGUEZ HERNANDEZ, ESDRAS AARON",
+        "Full Name": "BROWN, AMIR ZANEKEE RASHAD",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RODRIGUEZ_HERNANDEZ_ESDRAS_AARON.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROWN_AMIR_ZANEKEE_RASHAD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "STANSBURY, JOSEPH CALLEN",
+        "Full Name": "LAMB, DARRYL ANTHONY",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STANSBURY_JOSEPH_CALLEN.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LAMB_DARRYL_ANTHONY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "NECHYTAILO, SERHII",
+        "Full Name": "BARNES, SHANE ANTHONY",
         "Charge 1": "No charge listed",
-        "Bail": "$6,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NECHYTAILO_SERHII.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BARNES_SHANE_ANTHONY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "NOVOTNY, CHRISTOPHER MICHAEL",
+        "Full Name": "GONZALEZ GAIBOR, MARCO VINICIO",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NOVOTNY_CHRISTOPHER_MICHAEL.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GONZALEZ_GAIBOR_MARCO_VINICIO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "ARIDGE, DAIQUAWN VONDELL",
+        "Full Name": "PUENTE CENTENO, CRISTIAN GEOVANNY",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ARIDGE_DAIQUAWN_VONDELL.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_PUENTE_CENTENO_CRISTIAN_GEOVANNY.jpg"
       },
       "posted": false,
       "posted_at": null
