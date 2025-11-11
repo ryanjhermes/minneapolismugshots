@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-09T22:28:41.031873-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_OLSON_WESLEY_JAMES.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-10T19:49:58.383495-06:00"
     },
     {
       "id": 5,
