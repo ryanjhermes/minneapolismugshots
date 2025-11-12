@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-11-10T22:28:24.355468-06:00",
+  "created_at": "2025-11-11T22:20:50.750638-06:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "STEWART, LAZERRICK ALANTE",
+        "Full Name": "ROBINSON, CHARLES PAUL JR",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STEWART_LAZERRICK_ALANTE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROBINSON_CHARLES_PAUL_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-11T00:37:19.107631-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "ANDERSON, KARI ROSE",
+        "Full Name": "BERRY, PARIS TERRILL",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ANDERSON_KARI_ROSE.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BERRY_PARIS_TERRILL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-11T06:47:59.918666-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "BROWN, HAROLD LOUIS",
+        "Full Name": "MOHAMED, ZAKARIA ABDULAHI",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROWN_HAROLD_LOUIS.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOHAMED_ZAKARIA_ABDULAHI.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-11T12:34:34.536560-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "ROGERS, NIKKOLAS JULIAN",
+        "Full Name": "MOHAMUD, MOHAMMED ABDIRISAQ",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROGERS_NIKKOLAS_JULIAN.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_MOHAMUD_MOHAMMED_ABDIRISAQ.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-11T19:48:46.372819-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "WILLIAMS, QUENTON TYRONE",
+        "Full Name": "STANKE, DAWN MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_QUENTON_TYRONE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_STANKE_DAWN_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "BROWN, AMIR ZANEKEE RASHAD",
+        "Full Name": "JONES, DUWAYNE ELLIS",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROWN_AMIR_ZANEKEE_RASHAD.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JONES_DUWAYNE_ELLIS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "LAMB, DARRYL ANTHONY",
+        "Full Name": "ALVAREZ AMAGUANA, CHRISTIAN ALEJANDRO",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LAMB_DARRYL_ANTHONY.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ALVAREZ_AMAGUANA_CHRISTIAN_ALEJANDRO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "BARNES, SHANE ANTHONY",
+        "Full Name": "SOUTHARD, ASHLEY RAE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BARNES_SHANE_ANTHONY.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SOUTHARD_ASHLEY_RAE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "GONZALEZ GAIBOR, MARCO VINICIO",
+        "Full Name": "BROWN, ADRAIEN OSHEA",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GONZALEZ_GAIBOR_MARCO_VINICIO.jpg"
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROWN_ADRAIEN_OSHEA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "PUENTE CENTENO, CRISTIAN GEOVANNY",
+        "Full Name": "RICHARDSON, EBONIE LATRICE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_PUENTE_CENTENO_CRISTIAN_GEOVANNY.jpg"
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_RICHARDSON_EBONIE_LATRICE.jpg"
       },
       "posted": false,
       "posted_at": null
