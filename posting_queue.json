@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-10T22:28:24.355468-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ROGERS_NIKKOLAS_JULIAN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-11T19:48:46.372819-06:00"
     },
     {
       "id": 5,
