@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-11T22:20:50.750638-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$50,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ROBINSON_CHARLES_PAUL_JR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-12T00:36:29.651683-06:00"
     },
     {
       "id": 2,
