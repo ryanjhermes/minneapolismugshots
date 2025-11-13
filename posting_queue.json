@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-11T22:20:50.750638-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$10,000.00 BAIL/BOND W/ CR",
         "Mugshot_File": "mugshots/mugshot_MOHAMUD_MOHAMMED_ABDIRISAQ.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-12T19:50:32.297448-06:00"
     },
     {
       "id": 5,
