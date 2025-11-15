@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-14T22:25:21.639336-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$400,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_WHITE_JESSE_TRAVIS.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-15T00:33:02.835009-06:00"
     },
     {
       "id": 2,
