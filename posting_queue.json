@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-16T22:26:22.425242-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$5,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ASHFORD_KEVIN_DEANDRE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-17T06:49:29.653943-06:00"
     },
     {
       "id": 3,
