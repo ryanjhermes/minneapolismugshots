@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-11-15T22:26:30.686759-06:00",
+  "created_at": "2025-11-16T22:26:22.425242-06:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "HOLLIDAY, JULEON ALONZO",
+        "Full Name": "ZACHARY, JOHN RAYMOND 4TH",
         "Charge 1": "No charge listed",
-        "Bail": "$50,500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOLLIDAY_JULEON_ALONZO.jpg"
+        "Bail": "$6,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ZACHARY_JOHN_RAYMOND_4TH.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-16T00:33:38.063331-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "COLEMAN, SCHANTA MARSHELL",
+        "Full Name": "ASHFORD, KEVIN DEANDRE",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COLEMAN_SCHANTA_MARSHELL.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ASHFORD_KEVIN_DEANDRE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-16T06:43:07.640840-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "BERGER, JESSY JAMES",
+        "Full Name": "CARDENAS-QUIZHPI, BRYAN JOE",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BERGER_JESSY_JAMES.jpg"
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CARDENAS-QUIZHPI_BRYAN_JOE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-16T12:31:24.006418-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "BROOKS, MICHAEL ANTONIO",
+        "Full Name": "CLARK, MYNA NICOLE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROOKS_MICHAEL_ANTONIO.jpg"
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CLARK_MYNA_NICOLE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-16T19:50:15.085894-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "SPAULDING, WILLIAM JACOB ANTONIO",
+        "Full Name": "COLLINS, MELVIN ALYSON JR",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SPAULDING_WILLIAM_JACOB_ANTONIO.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_COLLINS_MELVIN_ALYSON_JR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "LINDAHL, JAMES CLIFFORD",
+        "Full Name": "WADE, TONIYA ARMYLL",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LINDAHL_JAMES_CLIFFORD.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WADE_TONIYA_ARMYLL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "LOVE, MARK EUGENE",
+        "Full Name": "HIGGINS, BRIAN LEO",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LOVE_MARK_EUGENE.jpg"
+        "Bail": "$2,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HIGGINS_BRIAN_LEO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "SILVERS, DALILA TAHIRAH",
+        "Full Name": "MAPP, DEVON ANTHONY SANTRELL",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SILVERS_DALILA_TAHIRAH.jpg"
+        "Bail": "$500.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MAPP_DEVON_ANTHONY_SANTRELL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "WILBOURN, DIMONDES MONTRESSA",
+        "Full Name": "BUCK, AIYANA ANN",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILBOURN_DIMONDES_MONTRESSA.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BUCK_AIYANA_ANN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "SMITH, WILLIAM TYMONT LE JOYCE",
+        "Full Name": "GREEN, RANDLE",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SMITH_WILLIAM_TYMONT_LE_JOYCE.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GREEN_RANDLE.jpg"
       },
       "posted": false,
       "posted_at": null
