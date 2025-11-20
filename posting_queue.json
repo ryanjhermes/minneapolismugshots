@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-19T22:25:11.270284-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ARMENDARIZ_ZACHARY_CADOR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-20T00:36:00.201543-06:00"
     },
     {
       "id": 2,
