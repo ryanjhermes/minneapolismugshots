@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-11-19T22:25:11.270284-06:00",
+  "created_at": "2025-11-20T22:25:40.258202-06:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ARMENDARIZ, ZACHARY CADOR",
+        "Full Name": "JONES, SENECA LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ARMENDARIZ_ZACHARY_CADOR.jpg"
+        "Bail": "$2,000,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JONES_SENECA_LEE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-20T00:36:00.201543-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "HINES, JETON DEJON",
+        "Full Name": "HARO CHAVEZ, LUIS GONZALO",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HINES_JETON_DEJON.jpg"
+        "Bail": "$1,000,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HARO_CHAVEZ_LUIS_GONZALO.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-20T06:48:49.712688-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "REYNOLDS, DAVID BRIAN",
+        "Full Name": "WEBBER, THOMAS LADON",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_REYNOLDS_DAVID_BRIAN.jpg"
+        "Bail": "$1,000,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_WEBBER_THOMAS_LADON.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-20T12:35:40.706640-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "ZUNIGA-TOLEDO, MICHAEL",
+        "Full Name": "HARRIS, TREVON",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_ZUNIGA-TOLEDO_MICHAEL.jpg"
+        "Bail": "$250,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HARRIS_TREVON.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-20T19:48:03.201497-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "HAGLUND, BRENDON LEE",
+        "Full Name": "FOHRENKAM DIFFERENT-HORSE, QUENTIN RAYE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HAGLUND_BRENDON_LEE.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FOHRENKAM_DIFFERENT-HORSE_QUENTIN_RAYE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "GUZMAN HUAMAN, ANDREA MELIZA",
+        "Full Name": "MCKENZIE, MICHAEL DUANE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GUZMAN_HUAMAN_ANDREA_MELIZA.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MCKENZIE_MICHAEL_DUANE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "HARRIS, PRESTON ORLANDO",
+        "Full Name": "ALFANO, DAVID BRYAN",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HARRIS_PRESTON_ORLANDO.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ALFANO_DAVID_BRYAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "JAMA, GULED AHMED",
+        "Full Name": "ALLYN, DAVION MASSON",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JAMA_GULED_AHMED.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ALLYN_DAVION_MASSON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "ALVARADO, JORGE ANTONIO",
+        "Full Name": "EDRIS, NEHEMIAH JOLOMI",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALVARADO_JORGE_ANTONIO.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EDRIS_NEHEMIAH_JOLOMI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "CISNEROS, JESUS CORNEJO",
+        "Full Name": "HERNANDEZ-MELENDEZ, WILFREDO",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CISNEROS_JESUS_CORNEJO.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HERNANDEZ-MELENDEZ_WILFREDO.jpg"
       },
       "posted": false,
       "posted_at": null
