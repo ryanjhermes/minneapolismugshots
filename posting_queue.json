@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-22T22:34:13.042696-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_PETERSON_ANDREW_THOMAS.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-23T09:22:04.824948-06:00"
     },
     {
       "id": 3,
