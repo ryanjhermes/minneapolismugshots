@@ -1,26 +1,26 @@
 {
-  "created_at": "2025-11-21T22:13:22.402944-06:00",
+  "created_at": "2025-11-22T22:34:13.042696-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MOUSSEAUX, ALLEN WADE",
+        "Full Name": "JACKSON-KING, TESHAUN ROMAINNE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_MOUSSEAUX_ALLEN_WADE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_JACKSON-KING_TESHAUN_ROMAINNE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-22T15:20:55.589342-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BECKMAN, KRISTIN ANNE",
+        "Full Name": "PETERSON, ANDREW THOMAS",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BECKMAN_KRISTIN_ANNE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PETERSON_ANDREW_THOMAS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "data": {
-        "Full Name": "DZIUK, MASON TREVOR",
+        "Full Name": "LAMB, DARRYL ANTHONY",
         "Charge 1": "No charge listed",
         "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DZIUK_MASON_TREVOR.jpg"
+        "Mugshot_File": "mugshots/mugshot_LAMB_DARRYL_ANTHONY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "ALDRICH, LISA HESS",
+        "Full Name": "JAUHOLA, JESSICA MARIE",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALDRICH_LISA_HESS.jpg"
+        "Mugshot_File": "mugshots/mugshot_JAUHOLA_JESSICA_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "GBAHN, KELVIN HILARY",
+        "Full Name": "JORDAN, WILLIAM JAY",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GBAHN_KELVIN_HILARY.jpg"
+        "Mugshot_File": "mugshots/mugshot_JORDAN_WILLIAM_JAY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "WILLIAMS, HANZ MATTHEW",
+        "Full Name": "RODRIGUEZ-MEJIA, RITA ESPERANZA",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_HANZ_MATTHEW.jpg"
+        "Mugshot_File": "mugshots/mugshot_RODRIGUEZ-MEJIA_RITA_ESPERANZA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "WORKS, ZACHARY WILLIAM",
+        "Full Name": "VENCES, EDGAR ALEXANDER",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WORKS_ZACHARY_WILLIAM.jpg"
+        "Bail": "$6,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_VENCES_EDGAR_ALEXANDER.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "ALLEN, EARL",
+        "Full Name": "ALI, MOHAMED ABDULLAHI",
         "Charge 1": "No charge listed",
         "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALLEN_EARL.jpg"
+        "Mugshot_File": "mugshots/mugshot_ALI_MOHAMED_ABDULLAHI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "DOCHNIAK, GINA MAE",
+        "Full Name": "BLANTON, DANONTAE NAURICE",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DOCHNIAK_GINA_MAE.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BLANTON_DANONTAE_NAURICE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "SHEIKH, GULED MOHAMUD",
+        "Full Name": "FELT, DAWN MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SHEIKH_GULED_MOHAMUD.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FELT_DAWN_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
