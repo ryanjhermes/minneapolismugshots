@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-24T22:31:26.393870-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$300,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_HOWARD_HILDA_ROSALIE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-25T09:28:04.418435-06:00"
     },
     {
       "id": 3,
