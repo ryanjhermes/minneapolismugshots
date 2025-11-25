@@ -1,48 +1,48 @@
 {
-  "created_at": "2025-11-23T22:36:44.410794-06:00",
+  "created_at": "2025-11-24T22:31:26.393870-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "JEFFERSON, DEONDRE LUCUS",
+        "Full Name": "JORDAN, AARON MICHAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JEFFERSON_DEONDRE_LUCUS.jpg"
+        "Bail": "$500,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JORDAN_AARON_MICHAEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-24T03:31:21.151913-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "JOHNSON, BRINAL CHERON",
+        "Full Name": "HOWARD, HILDA ROSALIE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_BRINAL_CHERON.jpg"
+        "Bail": "$300,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HOWARD_HILDA_ROSALIE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-24T15:24:45.382161-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "GOODMAN, WILLIAM JAY",
+        "Full Name": "BROWN, JESSE FRENCH",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GOODMAN_WILLIAM_JAY.jpg"
+        "Bail": "$250,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROWN_JESSE_FRENCH.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-24T19:50:35.595793-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "SHEIKH-MURSAL, ABDILAH ABDILKADIR",
+        "Full Name": "MARSYLA, MATTHEW MICHAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SHEIKH-MURSAL_ABDILAH_ABDILKADIR.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MARSYLA_MATTHEW_MICHAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "EDWARD, KATLIBET",
+        "Full Name": "MARTINSON, AMY JEAN",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EDWARD_KATLIBET.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MARTINSON_AMY_JEAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "ADKINS, YAZMAND MASHA",
+        "Full Name": "MILLER, DEZMOND THOMAS",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ADKINS_YAZMAND_MASHA.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MILLER_DEZMOND_THOMAS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "SORRELL, JOHN WAYNE",
+        "Full Name": "MOHAMED, ABDIRIZAK OSMAN",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SORRELL_JOHN_WAYNE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOHAMED_ABDIRIZAK_OSMAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "TEJADA JIMENEZ, PEDRO MARTIR",
+        "Full Name": "BORGAN, JESSICA MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TEJADA_JIMENEZ_PEDRO_MARTIR.jpg"
+        "Bail": "$45,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BORGAN_JESSICA_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "ALLEN, AERIUS ADAIR",
+        "Full Name": "BINNS, KEVIN RONZELL JR",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALLEN_AERIUS_ADAIR.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BINNS_KEVIN_RONZELL_JR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "EMERSON-CURTIS, JEROME JOSEPH JR",
+        "Full Name": "MCCLORY, ALEXANDER WILLIAM",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EMERSON-CURTIS_JEROME_JOSEPH_JR.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MCCLORY_ALEXANDER_WILLIAM.jpg"
       },
       "posted": false,
       "posted_at": null
