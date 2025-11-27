@@ -1,37 +1,37 @@
 {
-  "created_at": "2025-11-25T22:25:16.724922-06:00",
+  "created_at": "2025-11-26T22:24:45.079256-06:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MASON-KIMMONS, TESCIL ROMALIS",
+        "Full Name": "ROBINSON, LEROY ANTONIO",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MASON-KIMMONS_TESCIL_ROMALIS.jpg"
+        "Bail": "$500,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_ROBINSON_LEROY_ANTONIO.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-26T03:28:48.712593-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MARSHALL, NICO QUARTEZ",
+        "Full Name": "BROWN, AMARIE MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$130,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MARSHALL_NICO_QUARTEZ.jpg"
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROWN_AMARIE_MARIE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-26T15:22:17.127382-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "LARKINS, DEANGELO ARMOND",
+        "Full Name": "DABNEY, MYANDRE LAMAR",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LARKINS_DEANGELO_ARMOND.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DABNEY_MYANDRE_LAMAR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "FRANKLIN, MARKING JAMES",
+        "Full Name": "KNUTSON, JORDAN ANTON",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FRANKLIN_MARKING_JAMES.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KNUTSON_JORDAN_ANTON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "BETTS, DEXTER DEVONTE",
+        "Full Name": "NEVAREZ, ZACHARY CIANO",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BETTS_DEXTER_DEVONTE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_NEVAREZ_ZACHARY_CIANO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "COLEMAN, JAMAL DAQUAN",
+        "Full Name": "DEFOE, KALEY MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COLEMAN_JAMAL_DAQUAN.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DEFOE_KALEY_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "MCDERMOTT, NATHAN JOHN",
+        "Full Name": "HUNT, TYRICE DARNELL",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MCDERMOTT_NATHAN_JOHN.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HUNT_TYRICE_DARNELL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "MOHOMES, RASHAAD TOMIAS",
+        "Full Name": "JACKSON, MASCEO ALAN",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 CASH BAIL W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOHOMES_RASHAAD_TOMIAS.jpg"
+        "Bail": "$19,999.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JACKSON_MASCEO_ALAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "ELLIOTT, RONALD STEVEN",
+        "Full Name": "BELGARDE, DAWN MARY",
         "Charge 1": "No charge listed",
-        "Bail": "$6,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ELLIOTT_RONALD_STEVEN.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BELGARDE_DAWN_MARY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "DOO, T MUI",
+        "Full Name": "BELL, DONALD JAY",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DOO_T_MUI.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BELL_DONALD_JAY.jpg"
       },
       "posted": false,
       "posted_at": null
