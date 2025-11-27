@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-26T22:24:45.079256-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$60,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BROWN_AMARIE_MARIE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-27T09:25:29.064302-06:00"
     },
     {
       "id": 3,
