@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-27T22:25:03.434467-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$300,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_HASSAN_KHALID_MOHAMED_RASHID.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-28T00:38:25.441902-06:00"
     },
     {
       "id": 2,
