@@ -1,7 +1,7 @@
 {
   "created_at": "2025-11-28T22:22:02.999294-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_CAHLANDER_RAQUEL_DANAE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-11-29T21:59:45.615905-06:00"
     },
     {
       "id": 5,
