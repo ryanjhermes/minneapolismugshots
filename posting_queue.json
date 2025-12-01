@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-11-29T22:35:19.066399-06:00",
+  "created_at": "2025-11-30T22:48:59.332751-06:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "HOLM, CHRISTIANA MARIE",
+        "Full Name": "APEDO, MICHAEL DANIEL",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOLM_CHRISTIANA_MARIE.jpg"
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_APEDO_MICHAEL_DANIEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-30T00:35:28.765446-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "WILSON, AMANI LENISE",
+        "Full Name": "NABORS, DWAYNE LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILSON_AMANI_LENISE.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NABORS_DWAYNE_LEE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-30T06:44:23.917700-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "HERNANDEZ OLARTE, RAMON",
+        "Full Name": "JACKSON, FRANK ALEXANDER",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HERNANDEZ_OLARTE_RAMON.jpg"
+        "Mugshot_File": "mugshots/mugshot_JACKSON_FRANK_ALEXANDER.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-30T12:33:09.369153-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "FOWLER, JMAR DARNELL",
+        "Full Name": "DOMINGUEZ CRIOLLO, JUAN CARLOS",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FOWLER_JMAR_DARNELL.jpg"
+        "Mugshot_File": "mugshots/mugshot_DOMINGUEZ_CRIOLLO_JUAN_CARLOS.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-11-30T22:13:58.509723-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "FRANKLIN, JOSHUA JOSEPH",
+        "Full Name": "PARKER, CHRISTOPHER THOMAS",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FRANKLIN_JOSHUA_JOSEPH.jpg"
+        "Mugshot_File": "mugshots/mugshot_PARKER_CHRISTOPHER_THOMAS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "MARTY, BREA ANN",
+        "Full Name": "RAMEY, IZAYAH MICHAEL EDWARD",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MARTY_BREA_ANN.jpg"
+        "Mugshot_File": "mugshots/mugshot_RAMEY_IZAYAH_MICHAEL_EDWARD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "RIVERA CHRISTOBAL, KEIMIY ALEXANDER",
+        "Full Name": "SMITH, MARCUS DUPREE",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RIVERA_CHRISTOBAL_KEIMIY_ALEXANDER.jpg"
+        "Mugshot_File": "mugshots/mugshot_SMITH_MARCUS_DUPREE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "EAKMAN, PAULA RAE",
+        "Full Name": "VASQUEZ, SYDNEY DANIELLE",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EAKMAN_PAULA_RAE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_VASQUEZ_SYDNEY_DANIELLE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "BAKKE, ERIK ANDREW",
+        "Full Name": "JOHNSON, ALVIN WAYNE",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BAKKE_ERIK_ANDREW.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_ALVIN_WAYNE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "FLYINGHORSE, ROBERTA ROSE",
+        "Full Name": "OMAR, ABDULAHI AHMED",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FLYINGHORSE_ROBERTA_ROSE.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_OMAR_ABDULAHI_AHMED.jpg"
       },
       "posted": false,
       "posted_at": null
