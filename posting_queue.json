@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-12-02T22:35:33.564111-06:00",
+  "created_at": "2025-12-03T22:32:27.528570-06:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "WILLIAMS, JAKEESE XZAVIOR",
+        "Full Name": "DARRING, ROME",
         "Charge 1": "No charge listed",
-        "Bail": "$1,500,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_JAKEESE_XZAVIOR.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_DARRING_ROME.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-03T03:30:02.470905-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BRUMMETT, JEFFERY ROSS",
+        "Full Name": "LOYD-VANBUREN, DARRYL LEON",
         "Charge 1": "No charge listed",
-        "Bail": "$400,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_BRUMMETT_JEFFERY_ROSS.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LOYD-VANBUREN_DARRYL_LEON.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-03T06:53:42.332851-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "CLINKSCALE, LEON LAMOND",
+        "Full Name": "MORROW, BRYAN LONAN",
         "Charge 1": "No charge listed",
-        "Bail": "$250,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CLINKSCALE_LEON_LAMOND.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MORROW_BRYAN_LONAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-03T12:38:34.240889-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "OMAR, MUSTAFE YUSUF",
+        "Full Name": "RYAN, MICHAEL JOSEPH",
         "Charge 1": "No charge listed",
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_OMAR_MUSTAFE_YUSUF.jpg"
+        "Mugshot_File": "mugshots/mugshot_RYAN_MICHAEL_JOSEPH.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-03T21:55:20.016725-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "BENSON, CHARLES EDWARD",
+        "Full Name": "BUCKANAGA, PATRICK DWAYNE 3RD",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BENSON_CHARLES_EDWARD.jpg"
+        "Bail": "$70,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BUCKANAGA_PATRICK_DWAYNE_3RD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "GLENN, SHANNON",
+        "Full Name": "MANOBANDA QUENALOA, EDISON ISRAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GLENN_SHANNON.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MANOBANDA_QUENALOA_EDISON_ISRAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "WOODS, IKEA ROSELLE",
+        "Full Name": "WALKER-ROBINSON, ASHJAUN",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WOODS_IKEA_ROSELLE.jpg"
+        "Bail": "$12,500.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WALKER-ROBINSON_ASHJAUN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "EVERMORE, RHONDA ASHLYN PHYRE",
+        "Full Name": "SILAS, WILLIAM DARNELL",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EVERMORE_RHONDA_ASHLYN_PHYRE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SILAS_WILLIAM_DARNELL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "GREEN, LELAND JAHARA",
+        "Full Name": "CARTER, KEDRICK JAMES",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GREEN_LELAND_JAHARA.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CARTER_KEDRICK_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "JAMA, MOHAMED ABDIRZAK",
+        "Full Name": "ESSWEIN, CRAIG WILLIAM",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JAMA_MOHAMED_ABDIRZAK.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ESSWEIN_CRAIG_WILLIAM.jpg"
       },
       "posted": false,
       "posted_at": null
