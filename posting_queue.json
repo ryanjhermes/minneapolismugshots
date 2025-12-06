@@ -1,48 +1,48 @@
 {
-  "created_at": "2025-12-04T22:33:20.819317-06:00",
+  "created_at": "2025-12-05T22:12:09.372779-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "LOVE, ANTONE",
+        "Full Name": "WILLIAMS, LARRY ARNELL",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LOVE_ANTONE.jpg"
+        "Bail": "$100,000.00 CASH BAIL W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WILLIAMS_LARRY_ARNELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-05T00:38:30.804290-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MITCHELL-MOMOH, JON ANTHONY",
+        "Full Name": "LIVINGSTON, JOSEPHINE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MITCHELL-MOMOH_JON_ANTHONY.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LIVINGSTON_JOSEPHINE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-05T09:28:05.368749-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "HASSAN, BILAAL AHMED",
+        "Full Name": "KERSHAW, HENRY JAMES",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HASSAN_BILAAL_AHMED.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KERSHAW_HENRY_JAMES.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-05T19:46:50.949076-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "MIMS, ARRAMOND JR",
+        "Full Name": "BRINER, NICHOLAS JEFFREY",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MIMS_ARRAMOND_JR.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BRINER_NICHOLAS_JEFFREY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "PONCE, EDDIE SANTIAGO",
+        "Full Name": "GREEN, SABRINA LYNNE",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PONCE_EDDIE_SANTIAGO.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GREEN_SABRINA_LYNNE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "WINSTON, CHARLES",
+        "Full Name": "REMMER, CRAIG",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WINSTON_CHARLES.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_REMMER_CRAIG.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "TURNER, DAJONE LAMAR",
+        "Full Name": "GARCIA, MANUEL",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TURNER_DAJONE_LAMAR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GARCIA_MANUEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "CABRERA-PACHECO, ANGEL DAVID",
+        "Full Name": "LUMBI MANOBANDA, EDISON ALEJANDRO",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CABRERA-PACHECO_ANGEL_DAVID.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LUMBI_MANOBANDA_EDISON_ALEJANDRO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "TYSON, MYASIA NATRICE",
+        "Full Name": "MWALILINO, ENA ANDREA",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TYSON_MYASIA_NATRICE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MWALILINO_ENA_ANDREA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "JATENY, GUYO DIDO",
+        "Full Name": "PISARSKI, KAMILLE ALMA",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JATENY_GUYO_DIDO.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PISARSKI_KAMILLE_ALMA.jpg"
       },
       "posted": false,
       "posted_at": null
