@@ -1,7 +1,7 @@
 {
   "created_at": "2025-12-07T22:33:43.834628-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_FARAH_AYAN_HASHI.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-12-08T12:37:50.561101-06:00"
     },
     {
       "id": 3,
