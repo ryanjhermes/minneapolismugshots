@@ -1,7 +1,7 @@
 {
   "created_at": "2025-12-08T22:35:20.632788-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_LINDSEY_RASHEEN_QUANTE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-12-09T06:53:35.822104-06:00"
     },
     {
       "id": 3,
