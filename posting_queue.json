@@ -1,48 +1,48 @@
 {
-  "created_at": "2025-12-08T22:35:20.632788-06:00",
+  "created_at": "2025-12-09T22:33:43.541444-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "GARNER, XAVIER KEITH",
+        "Full Name": "HILDERBRAND, KEITH ARNAZ",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GARNER_XAVIER_KEITH.jpg"
+        "Bail": "$500,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HILDERBRAND_KEITH_ARNAZ.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-09T00:39:03.286259-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "LINDSEY, RASHEEN QUANTE",
+        "Full Name": "WING, AMBER LYNN",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LINDSEY_RASHEEN_QUANTE.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WING_AMBER_LYNN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-09T06:53:35.822104-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "DALTON, CASSANDRA ALESHEA",
+        "Full Name": "JOHNSON, TORIAN LYNN",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DALTON_CASSANDRA_ALESHEA.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_TORIAN_LYNN.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-09T12:33:45.115162-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "HALICKI, JOSEPH MARK",
+        "Full Name": "HIPPLER, VINCENT LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_HALICKI_JOSEPH_MARK.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HIPPLER_VINCENT_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "KING, DALLAS LEE",
+        "Full Name": "PARRETT, TALANI SHONTE",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KING_DALLAS_LEE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PARRETT_TALANI_SHONTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "ALI, ISMAIL MAHAMED",
+        "Full Name": "PERSE, SHAYJEA LASHAWN",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALI_ISMAIL_MAHAMED.jpg"
+        "Mugshot_File": "mugshots/mugshot_PERSE_SHAYJEA_LASHAWN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "DYSON, JEWANN MAURICE",
+        "Full Name": "KERR, ALLAN KINGSLEY",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DYSON_JEWANN_MAURICE.jpg"
+        "Bail": "$6,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KERR_ALLAN_KINGSLEY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "PEREZ PONCE, MARCOS OMAR",
+        "Full Name": "SCHMITZ, KIMBERLY ROSE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PEREZ_PONCE_MARCOS_OMAR.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SCHMITZ_KIMBERLY_ROSE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "SOTO MARTINEZ, RAMONA YVONNE",
+        "Full Name": "TAYLOR, COREY TRISTIAN",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SOTO_MARTINEZ_RAMONA_YVONNE.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TAYLOR_COREY_TRISTIAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "ROMERO MARTINEZ, FEDERICO",
+        "Full Name": "ALLEN, EVERETT SAVOY JR",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROMERO_MARTINEZ_FEDERICO.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ALLEN_EVERETT_SAVOY_JR.jpg"
       },
       "posted": false,
       "posted_at": null
