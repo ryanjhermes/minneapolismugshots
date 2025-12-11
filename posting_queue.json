@@ -1,7 +1,7 @@
 {
   "created_at": "2025-12-10T22:35:27.157442-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$80,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_HOGHAUG_MICHAEL_BRYAN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-12-11T12:36:47.704829-06:00"
     },
     {
       "id": 3,
