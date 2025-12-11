@@ -1,7 +1,7 @@
 {
   "created_at": "2025-12-10T22:35:27.157442-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$150,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BOLDEN_VINCENT_DORNELL.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-12-11T03:31:38.417599-06:00"
     },
     {
       "id": 2,
