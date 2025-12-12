@@ -1,37 +1,37 @@
 {
-  "created_at": "2025-12-10T22:35:27.157442-06:00",
+  "created_at": "2025-12-11T22:33:38.336787-06:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BOLDEN, VINCENT DORNELL",
+        "Full Name": "HARDIN, JERMAINE",
         "Charge 1": "No charge listed",
-        "Bail": "$150,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BOLDEN_VINCENT_DORNELL.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HARDIN_JERMAINE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-11T03:31:38.417599-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "HOGHAUG, MICHAEL BRYAN",
+        "Full Name": "SANDERS, MARQUAIS JEIMAH",
         "Charge 1": "No charge listed",
-        "Bail": "$80,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOGHAUG_MICHAEL_BRYAN.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SANDERS_MARQUAIS_JEIMAH.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-11T12:36:47.704829-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "HUSSEIN, MAHAD ABDI",
+        "Full Name": "SANDERS, CHRISTOPHER MACK",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HUSSEIN_MAHAD_ABDI.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SANDERS_CHRISTOPHER_MACK.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "SMITH, MICHAEL DARELL",
+        "Full Name": "DUDLEY, FREDDIE TYRONE JR",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SMITH_MICHAEL_DARELL.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DUDLEY_FREDDIE_TYRONE_JR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "KANNEH, MANADEE JOHNSON",
+        "Full Name": "SIMON, FILMON MUSSIE",
         "Charge 1": "No charge listed",
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KANNEH_MANADEE_JOHNSON.jpg"
+        "Mugshot_File": "mugshots/mugshot_SIMON_FILMON_MUSSIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "WILLIAMS, DENISE LATRICE LASHAY",
+        "Full Name": "HUSSEIN, HANAN ALI",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_DENISE_LATRICE_LASHAY.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HUSSEIN_HANAN_ALI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "HOBBS, DAVID STUART",
+        "Full Name": "KOIVU, TERREL STEVEN",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOBBS_DAVID_STUART.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KOIVU_TERREL_STEVEN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "SARMIENTO MIRANDA, JOSE JR",
+        "Full Name": "REH, PO",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SARMIENTO_MIRANDA_JOSE_JR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_REH_PO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "WALKER, QUINTIN CHARLES",
+        "Full Name": "CICERO-MENA, JUAN CARLOS",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WALKER_QUINTIN_CHARLES.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_CICERO-MENA_JUAN_CARLOS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "OBACH, ARIET OTHOW",
+        "Full Name": "GALES, QUANTRELL LAVONTE",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_OBACH_ARIET_OTHOW.jpg"
+        "Mugshot_File": "mugshots/mugshot_GALES_QUANTRELL_LAVONTE.jpg"
       },
       "posted": false,
       "posted_at": null
