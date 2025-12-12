@@ -1,7 +1,7 @@
 {
   "created_at": "2025-12-11T22:33:38.336787-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SANDERS_MARQUAIS_JEIMAH.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-12-12T06:52:48.569975-06:00"
     },
     {
       "id": 3,
