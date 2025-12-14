@@ -1,48 +1,48 @@
 {
-  "created_at": "2025-12-12T22:28:33.398603-06:00",
+  "created_at": "2025-12-13T22:36:38.588441-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ENGEBRETSON, ARLYSS MICHELLE",
+        "Full Name": "FIELDS-EL, HUKM AKEEM",
         "Charge 1": "No charge listed",
-        "Bail": "$500,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ENGEBRETSON_ARLYSS_MICHELLE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FIELDS-EL_HUKM_AKEEM.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-13T00:36:22.803554-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MOHAMED, DOLLARA MUKTAR",
+        "Full Name": "CHARLESTON, RAFAIEL ERIC",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOHAMED_DOLLARA_MUKTAR.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CHARLESTON_RAFAIEL_ERIC.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-13T06:45:19.557232-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "NORRIS, DEMETRICE RAMON",
+        "Full Name": "CALLE RIVERA, ALEX JAVIER",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NORRIS_DEMETRICE_RAMON.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CALLE_RIVERA_ALEX_JAVIER.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-13T12:32:42.576930-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "GARCIA-HERNANDEZ, JESUS",
+        "Full Name": "CARDONA CASTILLO, ABRAHAM",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GARCIA-HERNANDEZ_JESUS.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CARDONA_CASTILLO_ABRAHAM.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "LUMBAR, TESSIA STAR",
+        "Full Name": "MARTINEZ-MORALES, ALAN",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LUMBAR_TESSIA_STAR.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_MARTINEZ-MORALES_ALAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "HOWARD, CARL LASHAUN",
+        "Full Name": "TURNEY, MACAN SHALAUN",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOWARD_CARL_LASHAUN.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TURNEY_MACAN_SHALAUN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "BANKS, CHRISTOPHER MICHAEL JR",
+        "Full Name": "ABDUL-HAKEEM, AASIYYAH BINT",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_BANKS_CHRISTOPHER_MICHAEL_JR.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ABDUL-HAKEEM_AASIYYAH_BINT.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "HENNINGSGAARD, RYAN JAMES",
+        "Full Name": "BANKS, TERRENCE JAMAL",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HENNINGSGAARD_RYAN_JAMES.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BANKS_TERRENCE_JAMAL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "MILTICH, BAIRD WILLIAM",
+        "Full Name": "EDWARDS, SHAI TROUBLE KERZEL",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MILTICH_BAIRD_WILLIAM.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EDWARDS_SHAI_TROUBLE_KERZEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "ALI, ABDINASIR ABDUL",
+        "Full Name": "FREEMAN, JEREMIAH JAMES",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALI_ABDINASIR_ABDUL.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FREEMAN_JEREMIAH_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
