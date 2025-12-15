@@ -1,37 +1,37 @@
 {
-  "created_at": "2025-12-13T22:36:38.588441-06:00",
+  "created_at": "2025-12-14T22:43:17.750643-06:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "FIELDS-EL, HUKM AKEEM",
+        "Full Name": "SANDOVAL-GONZALEZ, JAIR",
         "Charge 1": "No charge listed",
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FIELDS-EL_HUKM_AKEEM.jpg"
+        "Mugshot_File": "mugshots/mugshot_SANDOVAL-GONZALEZ_JAIR.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-14T06:46:16.738948-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "CHARLESTON, RAFAIEL ERIC",
+        "Full Name": "WILEY, DOMINIQUE TAMARR",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CHARLESTON_RAFAIEL_ERIC.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WILEY_DOMINIQUE_TAMARR.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-14T19:59:44.360423-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "CALLE RIVERA, ALEX JAVIER",
+        "Full Name": "ELLIS, ALEXANDRIA ARIANA",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CALLE_RIVERA_ALEX_JAVIER.jpg"
+        "Mugshot_File": "mugshots/mugshot_ELLIS_ALEXANDRIA_ARIANA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "CARDONA CASTILLO, ABRAHAM",
+        "Full Name": "FULTON, TALIYAH RAE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CARDONA_CASTILLO_ABRAHAM.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FULTON_TALIYAH_RAE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "MARTINEZ-MORALES, ALAN",
+        "Full Name": "GOODERUM, JACOB ROBERT",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_MARTINEZ-MORALES_ALAN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GOODERUM_JACOB_ROBERT.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "TURNEY, MACAN SHALAUN",
+        "Full Name": "SMITH, KENNETH AUBREY",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TURNEY_MACAN_SHALAUN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SMITH_KENNETH_AUBREY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "ABDUL-HAKEEM, AASIYYAH BINT",
+        "Full Name": "SOMMA, CRAIG ANDREW",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ABDUL-HAKEEM_AASIYYAH_BINT.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SOMMA_CRAIG_ANDREW.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "BANKS, TERRENCE JAMAL",
+        "Full Name": "DIXON, JABARI EUGENE",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BANKS_TERRENCE_JAMAL.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DIXON_JABARI_EUGENE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "EDWARDS, SHAI TROUBLE KERZEL",
+        "Full Name": "MACARTHUR, ALLEN THEODORE",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EDWARDS_SHAI_TROUBLE_KERZEL.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MACARTHUR_ALLEN_THEODORE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "FREEMAN, JEREMIAH JAMES",
+        "Full Name": "KAKEYERE, KESIENA MUESIRI",
         "Charge 1": "No charge listed",
         "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FREEMAN_JEREMIAH_JAMES.jpg"
+        "Mugshot_File": "mugshots/mugshot_KAKEYERE_KESIENA_MUESIRI.jpg"
       },
       "posted": false,
       "posted_at": null
