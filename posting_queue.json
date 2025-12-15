@@ -1,7 +1,7 @@
 {
   "created_at": "2025-12-14T22:43:17.750643-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_WILEY_DOMINIQUE_TAMARR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-12-15T06:55:41.081267-06:00"
     },
     {
       "id": 3,
