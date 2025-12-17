@@ -1,7 +1,7 @@
 {
   "created_at": "2025-12-15T22:37:21.312328-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_HATCHER_LARRY_TAVORES_JR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-12-16T19:51:28.879877-06:00"
     },
     {
       "id": 5,
