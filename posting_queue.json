@@ -1,48 +1,48 @@
 {
-  "created_at": "2025-12-17T22:36:21.036919-06:00",
+  "created_at": "2025-12-18T22:38:51.726706-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ABDI, MOHAMED SALMAN",
+        "Full Name": "TAYLOR, DEMONTREY LAMONT",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ABDI_MOHAMED_SALMAN.jpg"
+        "Bail": "$150,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_TAYLOR_DEMONTREY_LAMONT.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-18T00:39:25.456290-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "THOMAS, MARLON CHAZ",
+        "Full Name": "BONDESON, FAYELEE MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_THOMAS_MARLON_CHAZ.jpg"
+        "Bail": "$105,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BONDESON_FAYELEE_MARIE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-18T06:51:57.017274-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "VASQUEZ, AUBRIANA JADE",
+        "Full Name": "CHRISTENSEN, LANDON BLAKE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_VASQUEZ_AUBRIANA_JADE.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CHRISTENSEN_LANDON_BLAKE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-18T12:38:27.029333-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "WOLLER, JOHN DONALD",
+        "Full Name": "ROGERS, SHAY LOVELL",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WOLLER_JOHN_DONALD.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROGERS_SHAY_LOVELL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "GORDILLO CRUZ, CARLOS ENRIQUE",
+        "Full Name": "GORDON, DEVON DESHAWN",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GORDILLO_CRUZ_CARLOS_ENRIQUE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GORDON_DEVON_DESHAWN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "ORNDORFF, BRADLEY ALAN",
+        "Full Name": "MOORE, KEYUANA MONIQUE",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ORNDORFF_BRADLEY_ALAN.jpg"
+        "Bail": "$45,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOORE_KEYUANA_MONIQUE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "WILKINS, FREDDIE D JR",
+        "Full Name": "GATES, LOUIS TAVAROUS",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILKINS_FREDDIE_D_JR.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GATES_LOUIS_TAVAROUS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "IBRAHIM, AHMED ALI",
+        "Full Name": "CARTER, ERNEST",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_IBRAHIM_AHMED_ALI.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CARTER_ERNEST.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "MARTIN, DEASIJA MONIQUE",
+        "Full Name": "WILLIS, FREDERICK DUVAL",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MARTIN_DEASIJA_MONIQUE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WILLIS_FREDERICK_DUVAL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "ALI, ABDULLAH BIN",
+        "Full Name": "MINER, MARTEZ LAMAR JR",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALI_ABDULLAH_BIN.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MINER_MARTEZ_LAMAR_JR.jpg"
       },
       "posted": false,
       "posted_at": null
