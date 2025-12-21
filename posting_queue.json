@@ -1,48 +1,48 @@
 {
-  "created_at": "2025-12-19T22:27:26.491234-06:00",
+  "created_at": "2025-12-20T22:38:58.582239-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "RICHARDS, RICHMEL VAN",
-        "Charge 1": "VIOLATE NO CONTACT ORDER - WITHIN 10 YEARS OF THE FIRST OF TWO OR MORE CONVICTIONS",
-        "Bail": "$45,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RICHARDS_RICHMEL_VAN.jpg"
+        "Full Name": "HARRIS, JARELL LEE",
+        "Charge 1": "No charge listed",
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HARRIS_JARELL_LEE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-20T03:25:29.027771-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "CHARLES, DAVID DAVID CHARLES",
+        "Full Name": "LAGARDE, AARON JAY",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CHARLES_DAVID_DAVID_CHARLES.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LAGARDE_AARON_JAY.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-20T06:45:43.124853-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "FELDER, MONTREZ DEE",
+        "Full Name": "DUBAR, ERIC KPAZAYEE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FELDER_MONTREZ_DEE.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DUBAR_ERIC_KPAZAYEE.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-20T12:32:19.699288-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "TROBAUGH-SHAFFER, DESIREE LYNN",
+        "Full Name": "ACOSTA MORA, JASMIN",
         "Charge 1": "No charge listed",
-        "Bail": "$80,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TROBAUGH-SHAFFER_DESIREE_LYNN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ACOSTA_MORA_JASMIN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "ANDERSON, CHRISTOPHER LAMAR",
+        "Full Name": "GAMARRA SAGNAY, JHON MARCELO",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_ANDERSON_CHRISTOPHER_LAMAR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GAMARRA_SAGNAY_JHON_MARCELO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "HILL, DARTANION DWAYNE",
+        "Full Name": "KROYER, NICHOLAS CHRISTEN",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HILL_DARTANION_DWAYNE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KROYER_NICHOLAS_CHRISTEN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "HORTON, ANTEJUAN STEVEN",
+        "Full Name": "MANOS, CHAD ROTH",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HORTON_ANTEJUAN_STEVEN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MANOS_CHAD_ROTH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "RICHARDS, RICHMEL VAN",
+        "Full Name": "QUINATOA, ANGEL ANIBAL",
         "Charge 1": "No charge listed",
-        "Bail": "$45,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RICHARDS_RICHMEL_VAN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_QUINATOA_ANGEL_ANIBAL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "ALLEN, TYRELL ALEXANDER",
+        "Full Name": "WOODS, JARNESHA SHERRAE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_ALLEN_TYRELL_ALEXANDER.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WOODS_JARNESHA_SHERRAE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "TRAINER, NAOMI",
+        "Full Name": "CORSEY, RENA LORENE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_TRAINER_NAOMI.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CORSEY_RENA_LORENE.jpg"
       },
       "posted": false,
       "posted_at": null
