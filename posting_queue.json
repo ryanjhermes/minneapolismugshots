@@ -1,37 +1,37 @@
 {
-  "created_at": "2025-12-20T22:38:58.582239-06:00",
+  "created_at": "2025-12-21T22:44:10.216957-06:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "HARRIS, JARELL LEE",
+        "Full Name": "CURRY, DEZIRE LINTORIA MOCHAA",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HARRIS_JARELL_LEE.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CURRY_DEZIRE_LINTORIA_MOCHAA.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-21T12:34:25.152693-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "LAGARDE, AARON JAY",
+        "Full Name": "SUTCLIFFE, JAY BASSAM",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LAGARDE_AARON_JAY.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SUTCLIFFE_JAY_BASSAM.jpg"
       },
-      "posted": true,
-      "posted_at": "2025-12-21T20:01:30.009721-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "DUBAR, ERIC KPAZAYEE",
+        "Full Name": "NICHOLS, REGINALD LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DUBAR_ERIC_KPAZAYEE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NICHOLS_REGINALD_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "ACOSTA MORA, JASMIN",
+        "Full Name": "BAUER, BRIANA ROSE",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ACOSTA_MORA_JASMIN.jpg"
+        "Mugshot_File": "mugshots/mugshot_BAUER_BRIANA_ROSE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "GAMARRA SAGNAY, JHON MARCELO",
+        "Full Name": "JONES, MARK TYRONE",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GAMARRA_SAGNAY_JHON_MARCELO.jpg"
+        "Mugshot_File": "mugshots/mugshot_JONES_MARK_TYRONE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "KROYER, NICHOLAS CHRISTEN",
+        "Full Name": "MOHABIR, STEVEN DEVANAND",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KROYER_NICHOLAS_CHRISTEN.jpg"
+        "Mugshot_File": "mugshots/mugshot_MOHABIR_STEVEN_DEVANAND.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "MANOS, CHAD ROTH",
+        "Full Name": "MORSE, DAKOTA ALAN",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MANOS_CHAD_ROTH.jpg"
+        "Mugshot_File": "mugshots/mugshot_MORSE_DAKOTA_ALAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "QUINATOA, ANGEL ANIBAL",
+        "Full Name": "SCHMALZ, NEIL CHRIST",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_QUINATOA_ANGEL_ANIBAL.jpg"
+        "Mugshot_File": "mugshots/mugshot_SCHMALZ_NEIL_CHRIST.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "WOODS, JARNESHA SHERRAE",
+        "Full Name": "XAYAVONG, KHAM",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WOODS_JARNESHA_SHERRAE.jpg"
+        "Mugshot_File": "mugshots/mugshot_XAYAVONG_KHAM.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "CORSEY, RENA LORENE",
+        "Full Name": "BEATTIE, KATLYN ANN",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CORSEY_RENA_LORENE.jpg"
+        "Mugshot_File": "mugshots/mugshot_BEATTIE_KATLYN_ANN.jpg"
       },
       "posted": false,
       "posted_at": null
