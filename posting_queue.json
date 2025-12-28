@@ -1,7 +1,7 @@
 {
   "created_at": "2025-12-26T22:34:36.955143-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ONYAMBU_MICHAEL_MAGHARE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-12-27T20:07:24.780425-06:00"
     },
     {
       "id": 5,
