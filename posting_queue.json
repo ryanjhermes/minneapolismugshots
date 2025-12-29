@@ -1,7 +1,7 @@
 {
   "created_at": "2025-12-28T22:49:46.209486-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$150,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_CORDERO-DANIELS_LAVON_JAY.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-12-29T00:42:27.227293-06:00"
     },
     {
       "id": 2,
