@@ -1,7 +1,7 @@
 {
   "created_at": "2025-12-29T22:39:00.352100-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_OLD_ROCK_ROSALIE_GERTRUDE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-12-30T19:58:02.003423-06:00"
     },
     {
       "id": 5,
