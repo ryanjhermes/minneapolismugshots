@@ -1,7 +1,7 @@
 {
   "created_at": "2025-12-30T22:41:33.435081-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$50,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_KELLERMANN_MICHAEL_JOHN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2025-12-31T06:52:19.375970-06:00"
     },
     {
       "id": 3,
