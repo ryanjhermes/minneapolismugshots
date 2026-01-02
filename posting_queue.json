@@ -1,59 +1,59 @@
 {
-  "created_at": "2025-12-31T22:52:28.495857-06:00",
+  "created_at": "2026-01-01T22:46:46.212170-06:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BROWN, DAMARIO MONTE",
+        "Full Name": "INGRAM, ANITRA DONTRICE",
         "Charge 1": "No charge listed",
-        "Bail": "$150,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROWN_DAMARIO_MONTE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_INGRAM_ANITRA_DONTRICE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-01T00:39:48.760066-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "ANDERSON-LARCOM, TRAVIS ANDREW",
+        "Full Name": "NELSON, VINCENT EDWARD JR",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ANDERSON-LARCOM_TRAVIS_ANDREW.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_NELSON_VINCENT_EDWARD_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-01T06:52:16.350426-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "LEITH, JOSHUA JON",
+        "Full Name": "TRICE, NYAKOOJO KWABENBA",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_LEITH_JOSHUA_JON.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_TRICE_NYAKOOJO_KWABENBA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-01T12:36:46.646594-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "CHAISON, KEVIN DEWAYNE",
+        "Full Name": "JARMUZEK, PATRICK WAYNE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CHAISON_KEVIN_DEWAYNE.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JARMUZEK_PATRICK_WAYNE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-01T22:07:13.604415-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "WELLS, AQEISHA TYJONNE",
+        "Full Name": "BANKS, STACEY DIANA",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WELLS_AQEISHA_TYJONNE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BANKS_STACEY_DIANA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "POPE, ASIA LASEAN",
+        "Full Name": "SWINJAKOW, CASSANDRA LYNN",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_POPE_ASIA_LASEAN.jpg"
+        "Mugshot_File": "mugshots/mugshot_SWINJAKOW_CASSANDRA_LYNN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "TATTING, TROY FREDRIC",
+        "Full Name": "CUZCO GUAMANGATE, KLEBER WILFRIDO",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TATTING_TROY_FREDRIC.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CUZCO_GUAMANGATE_KLEBER_WILFRIDO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "COLLAZO-RICO, MELVA EDITH",
+        "Full Name": "GOMEZ LOPEZ, REYNALDO",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COLLAZO-RICO_MELVA_EDITH.jpg"
+        "Mugshot_File": "mugshots/mugshot_GOMEZ_LOPEZ_REYNALDO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "JOHNSON, ABYGAYLE LYNN",
+        "Full Name": "LOPEZ CONTRERAS, HOMERO",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_ABYGAYLE_LYNN.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_LOPEZ_CONTRERAS_HOMERO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "LEE, ELLERY LENELLE",
+        "Full Name": "MARTIN, DASMIN DEVON",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEE_ELLERY_LENELLE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_MARTIN_DASMIN_DEVON.jpg"
       },
       "posted": false,
       "posted_at": null
