@@ -1,59 +1,59 @@
 {
-  "created_at": "2026-01-02T22:34:24.893346-06:00",
+  "created_at": "2026-01-03T22:52:05.005557-06:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MOATS, TIMOTHY TROY",
+        "Full Name": "MCGRATH, JOSEPH JOHN",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOATS_TIMOTHY_TROY.jpg"
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MCGRATH_JOSEPH_JOHN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-03T00:37:15.957545-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "PHILLIPS-GADDY, MELVIN",
+        "Full Name": "SANDERS, MARQUAIS JEIMAH",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_PHILLIPS-GADDY_MELVIN.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SANDERS_MARQUAIS_JEIMAH.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-03T09:24:20.035207-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "RICHARDS, RICHMEL VAN",
+        "Full Name": "BINNS, KEVIN RONZELL JR",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RICHARDS_RICHMEL_VAN.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BINNS_KEVIN_RONZELL_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-03T12:34:42.611951-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "WATSON, MARSHALL VONDALE",
+        "Full Name": "BUSTER, RONALD BRUCE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WATSON_MARSHALL_VONDALE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BUSTER_RONALD_BRUCE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-03T20:10:46.285303-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "SCHERBER, JACOBEE JOHN PAUL",
+        "Full Name": "ABILD, KIMBERLY ANN",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SCHERBER_JACOBEE_JOHN_PAUL.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ABILD_KIMBERLY_ANN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "WARD, BIANCA MONET",
+        "Full Name": "KIEHL, CHARLES MARTIN IV",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WARD_BIANCA_MONET.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KIEHL_CHARLES_MARTIN_IV.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "WATSON, MICHAEL STEPHEN JR",
+        "Full Name": "WIELAND, JEFFREY ALLEN",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WATSON_MICHAEL_STEPHEN_JR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WIELAND_JEFFREY_ALLEN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "PEARSON, BRANDON MICHAEL",
+        "Full Name": "AHMED, SHOUEIB ABDOURAHMAN",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PEARSON_BRANDON_MICHAEL.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AHMED_SHOUEIB_ABDOURAHMAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "REINOSO MARTINEZ, KEVIN STEVEN",
+        "Full Name": "LOONEY, MCCLAIN MICHAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_REINOSO_MARTINEZ_KEVIN_STEVEN.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LOONEY_MCCLAIN_MICHAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "HORNES, SIDNEY",
+        "Full Name": "NELSON, BREANNA LYNN",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HORNES_SIDNEY.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NELSON_BREANNA_LYNN.jpg"
       },
       "posted": false,
       "posted_at": null
