@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-01-05T22:45:38.512739-06:00",
+  "created_at": "2026-01-06T22:44:34.222233-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "HILL, VINCENT MICHAEL JR",
+        "Full Name": "HARRIS, MYKEL LAMAR",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HILL_VINCENT_MICHAEL_JR.jpg"
+        "Bail": "$500,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HARRIS_MYKEL_LAMAR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-06T00:41:48.657086-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MIMS, ARRAMOND JR",
+        "Full Name": "FRANKLIN, DANIEL JOSEPH",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MIMS_ARRAMOND_JR.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FRANKLIN_DANIEL_JOSEPH.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-06T06:53:59.840217-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "HAMILTON, RASHAD JAMAL",
+        "Full Name": "MUSSE, SULTAN SAHAL",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HAMILTON_RASHAD_JAMAL.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MUSSE_SULTAN_SAHAL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-06T19:58:42.361182-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "EARDLEY, ALEC DAVID",
+        "Full Name": "JANSSEN, ZANE ROBERT",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EARDLEY_ALEC_DAVID.jpg"
+        "Bail": "$75,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JANSSEN_ZANE_ROBERT.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "ADAMS-PRIOR, ERIC CHARLES",
+        "Full Name": "ADAMS, ALEXANDER RAY",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ADAMS-PRIOR_ERIC_CHARLES.jpg"
+        "Bail": "$49,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ADAMS_ALEXANDER_RAY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "MAXWELL, MARQUITA YVONNE",
+        "Full Name": "MUNOZ, ISABELLA",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_MAXWELL_MARQUITA_YVONNE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MUNOZ_ISABELLA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "WILLS, JAVONTE RAEVAUN",
+        "Full Name": "ALI, AYUUB ABDISHAKUR",
         "Charge 1": "No charge listed",
         "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLS_JAVONTE_RAEVAUN.jpg"
+        "Mugshot_File": "mugshots/mugshot_ALI_AYUUB_ABDISHAKUR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "BAZOFF, PARKER ANTHONY MARKUS",
+        "Full Name": "ANTON, JUSTIN JAMES",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BAZOFF_PARKER_ANTHONY_MARKUS.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ANTON_JUSTIN_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "BUENO SUMBA, ANGEL ARMANDO",
+        "Full Name": "STEWART, CHARMEL ALICE",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BUENO_SUMBA_ANGEL_ARMANDO.jpg"
+        "Mugshot_File": "mugshots/mugshot_STEWART_CHARMEL_ALICE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "CHINIKAILO, SABRINA PETROVNA",
+        "Full Name": "BALDERSTON, JOHN WAYNE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CHINIKAILO_SABRINA_PETROVNA.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BALDERSTON_JOHN_WAYNE.jpg"
       },
       "posted": false,
       "posted_at": null
