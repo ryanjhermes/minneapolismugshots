@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-09T22:34:58.079603-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_JACQUES_DYLAN_ROBERT.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-10T20:08:54.288025-06:00"
     },
     {
       "id": 5,
