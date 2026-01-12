@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-11T22:50:55.058182-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_JOHNSON_CHRIS_KOREN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-12T06:56:48.966189-06:00"
     },
     {
       "id": 3,
