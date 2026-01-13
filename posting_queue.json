@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-12T22:43:03.222788-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_DRAKE_TERRY_WAYNE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-13T12:37:46.832570-06:00"
     },
     {
       "id": 3,
