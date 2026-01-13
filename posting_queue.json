@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-11T22:50:55.058182-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$20,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MEZA_BRITTNEY_MARIE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-12T19:57:08.729368-06:00"
     },
     {
       "id": 5,
