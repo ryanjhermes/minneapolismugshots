@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-01-12T22:43:03.222788-06:00",
+  "created_at": "2026-01-13T22:51:43.245461-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ADDE, MOHAMED AWEIS",
+        "Full Name": "MOHAMED, DOLLARA MUKTAR",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_ADDE_MOHAMED_AWEIS.jpg"
+        "Bail": "$75,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOHAMED_DOLLARA_MUKTAR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-13T06:56:11.791412-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "DRAKE, TERRY WAYNE",
+        "Full Name": "BRUESS, TREVOR DONN",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DRAKE_TERRY_WAYNE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BRUESS_TREVOR_DONN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-13T12:37:46.832570-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "PAYNE, MEGAN FAYE",
+        "Full Name": "CLOUD, CEAPHAS ANTHONY",
         "Charge 1": "No charge listed",
-        "Bail": "$70,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PAYNE_MEGAN_FAYE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CLOUD_CEAPHAS_ANTHONY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-13T22:12:49.204974-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "BAGGIO, ANTHONY JOSEPH",
+        "Full Name": "DOBBS, CLYDE EDWARD",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BAGGIO_ANTHONY_JOSEPH.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DOBBS_CLYDE_EDWARD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "BERTRAND, ASHLEY 2ND",
+        "Full Name": "CALDWELL, EARL IV",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BERTRAND_ASHLEY_2ND.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CALDWELL_EARL_IV.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "HUFF, SHORONE DARNELL",
+        "Full Name": "ABDILAHI, AYUB MOHAMED",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HUFF_SHORONE_DARNELL.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ABDILAHI_AYUB_MOHAMED.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "WILLIAMS, BRYCE JAIMAR",
+        "Full Name": "CEMAN, DAMIEN MATTHEW",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_BRYCE_JAIMAR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_CEMAN_DAMIEN_MATTHEW.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "MOORE, CARMALITHA FURTIMHA",
+        "Full Name": "FRANCIS, JOHN MICHAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOORE_CARMALITHA_FURTIMHA.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FRANCIS_JOHN_MICHAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "HOWARD, ALEXIS ANN",
+        "Full Name": "GLESENER, TAYLOR NICHOLAS",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOWARD_ALEXIS_ANN.jpg"
+        "Mugshot_File": "mugshots/mugshot_GLESENER_TAYLOR_NICHOLAS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "PITTMAN, JERALD LEE",
+        "Full Name": "SMITH, ELLEN KIMBERLY",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PITTMAN_JERALD_LEE.jpg"
+        "Mugshot_File": "mugshots/mugshot_SMITH_ELLEN_KIMBERLY.jpg"
       },
       "posted": false,
       "posted_at": null
