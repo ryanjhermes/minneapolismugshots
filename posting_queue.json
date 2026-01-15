@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-13T22:51:43.245461-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_DOBBS_CLYDE_EDWARD.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-14T19:59:39.987579-06:00"
     },
     {
       "id": 5,
