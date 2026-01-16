@@ -1,59 +1,59 @@
 {
-  "created_at": "2026-01-14T22:42:47.297556-06:00",
+  "created_at": "2026-01-15T22:41:05.460693-06:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "HOLLMAN, RAVINDRA ANAND",
+        "Full Name": "DIXON, EMMETT CHUCKIE",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_HOLLMAN_RAVINDRA_ANAND.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DIXON_EMMETT_CHUCKIE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-15T00:40:24.388671-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BRADLEY, HARVEY JAMES JR",
+        "Full Name": "MUNOZ, RODOLFO CARLOS",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BRADLEY_HARVEY_JAMES_JR.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MUNOZ_RODOLFO_CARLOS.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-15T06:55:27.178050-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "PETTUS, ZACHARY GEORGE",
+        "Full Name": "OMAR, ZOO MOHAMED",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PETTUS_ZACHARY_GEORGE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_OMAR_ZOO_MOHAMED.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-15T12:43:21.905825-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "ROHR-DEPASS, TALVIN BENJAMIN",
+        "Full Name": "HASSAN, KHALID IBRAHIM",
         "Charge 1": "No charge listed",
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROHR-DEPASS_TALVIN_BENJAMIN.jpg"
+        "Mugshot_File": "mugshots/mugshot_HASSAN_KHALID_IBRAHIM.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-15T22:05:53.497910-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "SPARK, VINCENT LEE",
+        "Full Name": "MORRIS, KESHAWN DESMOND",
         "Charge 1": "No charge listed",
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SPARK_VINCENT_LEE.jpg"
+        "Mugshot_File": "mugshots/mugshot_MORRIS_KESHAWN_DESMOND.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "BIBBS, TITO WILLIS",
+        "Full Name": "HAID, ABDULAZIZ ALI D JAMA",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BIBBS_TITO_WILLIS.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HAID_ABDULAZIZ_ALI_D_JAMA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "EDWARDS, JOE DARRELL JR",
+        "Full Name": "MARTIN, SHAUN DIANTE",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EDWARDS_JOE_DARRELL_JR.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MARTIN_SHAUN_DIANTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "JOHNSON, TERRANCE JAMES",
+        "Full Name": "NEWELL, MARIO KEREEM",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_TERRANCE_JAMES.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NEWELL_MARIO_KEREEM.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "JOHNSON, GADDIS DOLOMITE",
+        "Full Name": "DAHL, JON MICHAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_GADDIS_DOLOMITE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DAHL_JON_MICHAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "YONDA, TAMBA LAME",
+        "Full Name": "BEATTIE, ALLISON CAROLINE",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_YONDA_TAMBA_LAME.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BEATTIE_ALLISON_CAROLINE.jpg"
       },
       "posted": false,
       "posted_at": null
