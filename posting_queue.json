@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-14T22:42:47.297556-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ROHR-DEPASS_TALVIN_BENJAMIN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-15T22:05:53.497910-06:00"
     },
     {
       "id": 5,
