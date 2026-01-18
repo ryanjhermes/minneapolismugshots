@@ -1,92 +1,92 @@
 {
-  "created_at": "2026-01-15T22:41:05.460693-06:00",
+  "created_at": "2026-01-17T22:41:29.584012-06:00",
   "total_inmates": 10,
-  "posted_count": 7,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "DIXON, EMMETT CHUCKIE",
+        "Full Name": "SAYERS, TYANNA CHAREY",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DIXON_EMMETT_CHUCKIE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SAYERS_TYANNA_CHAREY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-16T00:40:45.331257-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MUNOZ, RODOLFO CARLOS",
+        "Full Name": "MOHAMED, MOHAMED ABDI",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MUNOZ_RODOLFO_CARLOS.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOHAMED_MOHAMED_ABDI.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-16T06:54:06.404981-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "OMAR, ZOO MOHAMED",
+        "Full Name": "HOWARD, GEYASSAH MENEYEAH",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_OMAR_ZOO_MOHAMED.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HOWARD_GEYASSAH_MENEYEAH.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-16T12:40:06.530768-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "HASSAN, KHALID IBRAHIM",
+        "Full Name": "MATTSON, LOGAN DAVID",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HASSAN_KHALID_IBRAHIM.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MATTSON_LOGAN_DAVID.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-16T21:58:23.359200-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "MORRIS, KESHAWN DESMOND",
+        "Full Name": "HOWES, JOSEPH DIVANTE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MORRIS_KESHAWN_DESMOND.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HOWES_JOSEPH_DIVANTE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-17T06:47:38.607978-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 6,
       "data": {
-        "Full Name": "HAID, ABDULAZIZ ALI D JAMA",
+        "Full Name": "OJANEN-GOLDSMITH, BENJAMIN CHARLES",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HAID_ABDULAZIZ_ALI_D_JAMA.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_OJANEN-GOLDSMITH_BENJAMIN_CHARLES.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-17T12:36:22.779574-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 7,
       "data": {
-        "Full Name": "MARTIN, SHAUN DIANTE",
+        "Full Name": "SHAFE, HASHI YASIN",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MARTIN_SHAUN_DIANTE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SHAFE_HASHI_YASIN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-17T20:07:55.261309-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 8,
       "data": {
-        "Full Name": "NEWELL, MARIO KEREEM",
+        "Full Name": "WARSAME, MOHAMED ABDULLAHI",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NEWELL_MARIO_KEREEM.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WARSAME_MOHAMED_ABDULLAHI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "DAHL, JON MICHAEL",
+        "Full Name": "BERRY, DEONTA DECHAWN",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DAHL_JON_MICHAEL.jpg"
+        "Bail": "$6,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BERRY_DEONTA_DECHAWN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "BEATTIE, ALLISON CAROLINE",
+        "Full Name": "MCCHESNEY, STEPHEN REID",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BEATTIE_ALLISON_CAROLINE.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MCCHESNEY_STEPHEN_REID.jpg"
       },
       "posted": false,
       "posted_at": null
