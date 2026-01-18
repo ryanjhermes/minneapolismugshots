@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-15T22:41:05.460693-06:00",
   "total_inmates": 10,
-  "posted_count": 6,
+  "posted_count": 7,
   "inmates": [
     {
       "id": 1,
@@ -77,8 +77,8 @@
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MARTIN_SHAUN_DIANTE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-17T20:07:55.261309-06:00"
     },
     {
       "id": 8,
