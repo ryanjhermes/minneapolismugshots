@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-17T22:41:29.584012-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$25,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MOHAMED_MOHAMED_ABDI.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-18T20:05:19.186684-06:00"
     },
     {
       "id": 3,
