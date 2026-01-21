@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-01-19T22:43:26.090661-06:00",
+  "created_at": "2026-01-20T22:51:02.681931-06:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "WOODS, KYREESE LATRONE",
+        "Full Name": "NELSON, BRIAN JAVON",
         "Charge 1": "No charge listed",
-        "Bail": "$250,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WOODS_KYREESE_LATRONE.jpg"
+        "Bail": "$60,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_NELSON_BRIAN_JAVON.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-20T09:37:14.611541-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "POWE, SANIYA JADE",
+        "Full Name": "BARRY, DENNIS JOSEPH JR",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_POWE_SANIYA_JADE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BARRY_DENNIS_JOSEPH_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-20T12:43:41.814458-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "LIEN, JESSE ROBERT",
+        "Full Name": "REBOLLEDO GARAY, RANFERI",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LIEN_JESSE_ROBERT.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_REBOLLEDO_GARAY_RANFERI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "LEE, EDDIE JAROME",
+        "Full Name": "DAVIS, MARQUIS DESHON",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEE_EDDIE_JAROME.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DAVIS_MARQUIS_DESHON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "TOWNSELL, DEMETRIUS DAVION",
+        "Full Name": "JAMES, TERRY DEVON JR",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TOWNSELL_DEMETRIUS_DAVION.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JAMES_TERRY_DEVON_JR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "WILKINS, MARANDA MARIE",
+        "Full Name": "JEAN, CLAUBERT DUROSIE",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILKINS_MARANDA_MARIE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JEAN_CLAUBERT_DUROSIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "ABDI, BASHIR DAHIR",
+        "Full Name": "PRICE BEVERLY, TERRANCE JAMOLL",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ABDI_BASHIR_DAHIR.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_PRICE_BEVERLY_TERRANCE_JAMOLL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "DOO, T MUI",
+        "Full Name": "YOUNG, CURTIS JAMES",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DOO_T_MUI.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_YOUNG_CURTIS_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "KEEZER, ROBYN LYN",
+        "Full Name": "CURRY, DOMINIQUE DARELL",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KEEZER_ROBYN_LYN.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_CURRY_DOMINIQUE_DARELL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "CLOPTON, CHARLES MARQECE",
+        "Full Name": "DAVIS, GERALD EUGENE 2ND",
         "Charge 1": "No charge listed",
-        "Bail": "$500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CLOPTON_CHARLES_MARQECE.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DAVIS_GERALD_EUGENE_2ND.jpg"
       },
       "posted": false,
       "posted_at": null
