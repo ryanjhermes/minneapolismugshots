@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-01-21T22:50:38.736673-06:00",
+  "created_at": "2026-01-22T22:41:03.571693-06:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MCANALLY, WILLIAM ROBERT",
+        "Full Name": "ANDERSON, LASHUNDA VALERIE KAY",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MCANALLY_WILLIAM_ROBERT.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ANDERSON_LASHUNDA_VALERIE_KAY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-22T06:58:44.938730-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "WILLIAMS, LEAMOR ARMON",
+        "Full Name": "AYALA GARCIA, LUIS JAIME",
         "Charge 1": "No charge listed",
         "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_LEAMOR_ARMON.jpg"
+        "Mugshot_File": "mugshots/mugshot_AYALA_GARCIA_LUIS_JAIME.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-22T22:08:15.636980-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "ANDERSON, EARL CHRISTOPHER JR",
+        "Full Name": "TOWNSEL, JOSHUA",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_ANDERSON_EARL_CHRISTOPHER_JR.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TOWNSEL_JOSHUA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "AWIL, HASSAN IBRAHIM",
+        "Full Name": "WHITE, TERRENCE DEON",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AWIL_HASSAN_IBRAHIM.jpg"
+        "Bail": "$12,000.00 CASH BAIL W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WHITE_TERRENCE_DEON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "BUTLER, LYDELL",
+        "Full Name": "ALI, HAZNA MAWLID",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BUTLER_LYDELL.jpg"
+        "Mugshot_File": "mugshots/mugshot_ALI_HAZNA_MAWLID.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "CARLTON, JAMARCUS DONNEIEL",
+        "Full Name": "PAGAN, ALAN ANTHONY",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CARLTON_JAMARCUS_DONNEIEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_PAGAN_ALAN_ANTHONY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "LEACH, ADAM COLIN",
+        "Full Name": "WAYMAN, NIYA ELAINE",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEACH_ADAM_COLIN.jpg"
+        "Mugshot_File": "mugshots/mugshot_WAYMAN_NIYA_ELAINE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "LEWIS, AARON LAMONT",
+        "Full Name": "LEWIS, CHARLIE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEWIS_AARON_LAMONT.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_LEWIS_CHARLIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "OBRIEN, FRANCIS TAYLOR",
+        "Full Name": "DUNLAP, DANGELO AARON",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_OBRIEN_FRANCIS_TAYLOR.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DUNLAP_DANGELO_AARON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "WILLIAMS, ALONZO",
+        "Full Name": "NUR, SHIRWA MOHAMED",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_ALONZO.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NUR_SHIRWA_MOHAMED.jpg"
       },
       "posted": false,
       "posted_at": null
