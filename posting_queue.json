@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-23T22:34:08.988752-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$50,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SANDERS_LAWERENCE_DARION.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-24T12:36:36.599294-06:00"
     },
     {
       "id": 3,
