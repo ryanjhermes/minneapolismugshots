@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-25T22:53:53.340347-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$500,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_LAFERRIERE_JOSHUA_CRAIG.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-26T00:44:37.335614-06:00"
     },
     {
       "id": 2,
