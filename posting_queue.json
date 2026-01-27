@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-01-25T22:53:53.340347-06:00",
+  "created_at": "2026-01-26T22:49:47.144157-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "LAFERRIERE, JOSHUA CRAIG",
+        "Full Name": "ALLEN-BROWN, JABRIEL MARTAE",
         "Charge 1": "No charge listed",
-        "Bail": "$500,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LAFERRIERE_JOSHUA_CRAIG.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_ALLEN-BROWN_JABRIEL_MARTAE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-26T00:44:37.335614-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BROOKS, ROBERT EDWARD",
+        "Full Name": "CHARLES, DAVID DAVID CHARLES",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROOKS_ROBERT_EDWARD.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CHARLES_DAVID_DAVID_CHARLES.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-26T09:35:07.198268-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "THOMAS, ANTWAN DARCELL",
+        "Full Name": "YOUNG, LARON RAY",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_THOMAS_ANTWAN_DARCELL.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_YOUNG_LARON_RAY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-26T12:44:03.392511-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "COOPER, SHELBY LOUISE",
+        "Full Name": "THORN, JAMES LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COOPER_SHELBY_LOUISE.jpg"
+        "Bail": "$80,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_THORN_JAMES_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "DUNN, XENIA LYNYCE",
+        "Full Name": "GEORGE EJIKE, AARON ENYINDA",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DUNN_XENIA_LYNYCE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GEORGE_EJIKE_AARON_ENYINDA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "MORRISON, DONJAE DEXTER",
+        "Full Name": "REESE, KENTRELL DEONTE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MORRISON_DONJAE_DEXTER.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_REESE_KENTRELL_DEONTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "MOORE, DWIGHT ANTHONY",
+        "Full Name": "ABDULKADIR, NADIA DAUD",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOORE_DWIGHT_ANTHONY.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ABDULKADIR_NADIA_DAUD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "DAHER, ETHAN THOMAS",
+        "Full Name": "BALLS, CHRISTOPHER TREVOR",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DAHER_ETHAN_THOMAS.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_BALLS_CHRISTOPHER_TREVOR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "JOHNSON, ERICA ANN",
+        "Full Name": "HUNTER, WILLIAM DION",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_ERICA_ANN.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HUNTER_WILLIAM_DION.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "MASCOTE, HAROLD EMMANUEL",
+        "Full Name": "MIRZA, WAJID BAIG",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MASCOTE_HAROLD_EMMANUEL.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MIRZA_WAJID_BAIG.jpg"
       },
       "posted": false,
       "posted_at": null
