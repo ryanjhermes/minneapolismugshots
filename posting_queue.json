@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-27T22:50:48.675882-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$500,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_NOBLE_ANDREW_CALVIN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-28T12:43:34.801453-06:00"
     },
     {
       "id": 2,
