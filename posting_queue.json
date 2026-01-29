@@ -1,26 +1,26 @@
 {
-  "created_at": "2026-01-27T22:50:48.675882-06:00",
+  "created_at": "2026-01-28T23:15:06.412731-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "NOBLE, ANDREW CALVIN",
+        "Full Name": "GARNER, XAVIER KEITH",
         "Charge 1": "No charge listed",
-        "Bail": "$500,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NOBLE_ANDREW_CALVIN.jpg"
+        "Bail": "$200,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GARNER_XAVIER_KEITH.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-01-28T12:43:34.801453-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "FENNING, MARK ALLEN",
+        "Full Name": "JENKINS, ALLEN TEEAKO",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_FENNING_MARK_ALLEN.jpg"
+        "Bail": "$200,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JENKINS_ALLEN_TEEAKO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "data": {
-        "Full Name": "ANDRUS, DAMOND JAMAL",
+        "Full Name": "GUEST, DWAIN MATTHEW",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ANDRUS_DAMOND_JAMAL.jpg"
+        "Bail": "$150,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GUEST_DWAIN_MATTHEW.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "JILES, MARLO DESHAWN JR",
+        "Full Name": "EDWARDS, JOSEPH JAMAR",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JILES_MARLO_DESHAWN_JR.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EDWARDS_JOSEPH_JAMAR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "BANKS, JAFARI TYWAN",
+        "Full Name": "ESCOBAR UNAPUCHA, ANGELICA MARISOL",
         "Charge 1": "No charge listed",
-        "Bail": "$35,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BANKS_JAFARI_TYWAN.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ESCOBAR_UNAPUCHA_ANGELICA_MARISOL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "KIDD, STEPHON PRENTICE SR",
+        "Full Name": "SMITH, DAMON SENTALL",
         "Charge 1": "No charge listed",
-        "Bail": "$18,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KIDD_STEPHON_PRENTICE_SR.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SMITH_DAMON_SENTALL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "CASTRO VAZQUEZ, PEDRO",
+        "Full Name": "KESSEL, ISAIAH JEREMIAH",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CASTRO_VAZQUEZ_PEDRO.jpg"
+        "Bail": "$75,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_KESSEL_ISAIAH_JEREMIAH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "CHARLES, LAMARIO DEONTE",
+        "Full Name": "BAKER, BRYANT",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CHARLES_LAMARIO_DEONTE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_BAKER_BRYANT.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "MINGO, MARISSA SHEA",
+        "Full Name": "JEFFERSON, MARCUS LAQUE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MINGO_MARISSA_SHEA.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JEFFERSON_MARCUS_LAQUE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "ANSARIPOUR, MATTHEW ARMAN",
+        "Full Name": "THOMAS, KENNETH EUGENE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ANSARIPOUR_MATTHEW_ARMAN.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_THOMAS_KENNETH_EUGENE.jpg"
       },
       "posted": false,
       "posted_at": null
