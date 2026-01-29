@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-28T23:15:06.412731-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$200,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_JENKINS_ALLEN_TEEAKO.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-29T07:06:39.282777-06:00"
     },
     {
       "id": 3,
