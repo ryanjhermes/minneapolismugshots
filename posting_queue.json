@@ -1,7 +1,7 @@
 {
   "created_at": "2026-01-29T23:16:15.426194-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$400,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_DAVIS_ARA_RASHAE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-01-30T12:50:44.987474-06:00"
     },
     {
       "id": 3,
