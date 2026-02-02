@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-01-31T23:29:31.542745-06:00",
+  "created_at": "2026-02-01T23:27:16.496916-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MONETTE, PAUL JOHN",
+        "Full Name": "JACKSON-JONES, RAEQUAON JAMAL",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_MONETTE_PAUL_JOHN.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JACKSON-JONES_RAEQUAON_JAMAL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-01T09:31:03.362193-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "PARKER, VALESHA GRACE",
+        "Full Name": "JONES, TERRANCE MARKEE",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PARKER_VALESHA_GRACE.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JONES_TERRANCE_MARKEE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-01T12:41:51.608436-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "FAIRMAN, SHANTAY PATRICIA",
+        "Full Name": "DORADO OROSCO, LEONICIO",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FAIRMAN_SHANTAY_PATRICIA.jpg"
+        "Mugshot_File": "mugshots/mugshot_DORADO_OROSCO_LEONICIO.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-01T23:02:12.204063-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "PENAFIEL-MONTAFOR, CARLOS REMIGIO",
+        "Full Name": "BENNETT, JOHN MATTHEW",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PENAFIEL-MONTAFOR_CARLOS_REMIGIO.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BENNETT_JOHN_MATTHEW.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "AVELA CAMPOS, JUAN VALENTIN",
+        "Full Name": "HOWARD, JOSEPH WYATT",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AVELA_CAMPOS_JUAN_VALENTIN.jpg"
+        "Mugshot_File": "mugshots/mugshot_HOWARD_JOSEPH_WYATT.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "CANTE LOPEZ, VALERIE ESTHER",
+        "Full Name": "PRITCHARD, CAYLAN LOUIS",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CANTE_LOPEZ_VALERIE_ESTHER.jpg"
+        "Mugshot_File": "mugshots/mugshot_PRITCHARD_CAYLAN_LOUIS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "DAVIS, DONAMECHE LACAR",
+        "Full Name": "FLORES-JOLES, ALLISON SHANTAE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DAVIS_DONAMECHE_LACAR.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FLORES-JOLES_ALLISON_SHANTAE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "LUX-CHIROY, EDGAR MANUEL",
+        "Full Name": "DUALE, SHARMARKE MOHAMED",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LUX-CHIROY_EDGAR_MANUEL.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DUALE_SHARMARKE_MOHAMED.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "MCEWEN, ANDRE RON",
+        "Full Name": "HAGLUND, BRENDON LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MCEWEN_ANDRE_RON.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_HAGLUND_BRENDON_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "IVERSEN, JOSHUA CHARLES",
+        "Full Name": "THIOYE, MAMADOU MAMSOUR",
         "Charge 1": "No charge listed",
         "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_IVERSEN_JOSHUA_CHARLES.jpg"
+        "Mugshot_File": "mugshots/mugshot_THIOYE_MAMADOU_MAMSOUR.jpg"
       },
       "posted": false,
       "posted_at": null
