@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-02-02T23:24:45.061195-06:00",
+  "created_at": "2026-02-03T23:17:43.605721-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "GRAY, TORRENCE LOMANTHRO",
+        "Full Name": "COATIE, JAMAEL DESHAUN",
         "Charge 1": "No charge listed",
-        "Bail": "$500,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GRAY_TORRENCE_LOMANTHRO.jpg"
+        "Bail": "$150,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_COATIE_JAMAEL_DESHAUN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-03T09:55:14.231512-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "HEARD, KIVIAN LAMONDREY",
+        "Full Name": "VONGSAPHAY, SANDRA",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HEARD_KIVIAN_LAMONDREY.jpg"
+        "Bail": "$75,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_VONGSAPHAY_SANDRA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-03T13:02:46.232798-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "BROWN, AMARIE MARIE",
+        "Full Name": "EVANS, JAMELL LAWRENCE",
         "Charge 1": "No charge listed",
         "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROWN_AMARIE_MARIE.jpg"
+        "Mugshot_File": "mugshots/mugshot_EVANS_JAMELL_LAWRENCE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-03T20:26:23.569595-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "DOCKERY, JIMMY DURANT",
+        "Full Name": "KENT, MEKIAH TYWAUN",
         "Charge 1": "No charge listed",
         "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DOCKERY_JIMMY_DURANT.jpg"
+        "Mugshot_File": "mugshots/mugshot_KENT_MEKIAH_TYWAUN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "JACKSON, LEONTAY TERREK",
+        "Full Name": "COPELAND, RICHARD QUINN",
         "Charge 1": "No charge listed",
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JACKSON_LEONTAY_TERREK.jpg"
+        "Mugshot_File": "mugshots/mugshot_COPELAND_RICHARD_QUINN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "JORDAN, ROGERS ORLANDO",
+        "Full Name": "LARKINS, DEMETRIUS JR",
         "Charge 1": "No charge listed",
-        "Bail": "$35,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JORDAN_ROGERS_ORLANDO.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LARKINS_DEMETRIUS_JR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "JACKSON, DITA PLESHETTE",
+        "Full Name": "LOGAN, ANTHONY DREALL",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JACKSON_DITA_PLESHETTE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_LOGAN_ANTHONY_DREALL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "CASTRO LOPEZ, SERGIO",
+        "Full Name": "TAUHID, SHAHEED YUSUF",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_CASTRO_LOPEZ_SERGIO.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TAUHID_SHAHEED_YUSUF.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "GALE, RENEE ZHOUSHKOGESHIG",
+        "Full Name": "CASTRO VAZQUEZ, PEDRO",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GALE_RENEE_ZHOUSHKOGESHIG.jpg"
+        "Mugshot_File": "mugshots/mugshot_CASTRO_VAZQUEZ_PEDRO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "LOPEZ BARRIENTOS, DARWIN ESTUARDO",
+        "Full Name": "MOHAMED, ABDIMALIK FARAH",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LOPEZ_BARRIENTOS_DARWIN_ESTUARDO.jpg"
+        "Mugshot_File": "mugshots/mugshot_MOHAMED_ABDIMALIK_FARAH.jpg"
       },
       "posted": false,
       "posted_at": null
