@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-02-03T23:17:43.605721-06:00",
+  "created_at": "2026-02-04T23:24:45.277423-06:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "COATIE, JAMAEL DESHAUN",
+        "Full Name": "HOWARD, ROBERTA ROSE",
         "Charge 1": "No charge listed",
-        "Bail": "$150,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COATIE_JAMAEL_DESHAUN.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HOWARD_ROBERTA_ROSE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-04T12:58:16.616871-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "VONGSAPHAY, SANDRA",
+        "Full Name": "MILLER, TRENTON LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_VONGSAPHAY_SANDRA.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MILLER_TRENTON_LEE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-04T22:52:24.951057-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "EVANS, JAMELL LAWRENCE",
+        "Full Name": "DANIELS, ANTONIO XAVIER",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EVANS_JAMELL_LAWRENCE.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DANIELS_ANTONIO_XAVIER.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "KENT, MEKIAH TYWAUN",
+        "Full Name": "MISTELSKE, MAKAYLEE ANNE",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KENT_MEKIAH_TYWAUN.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MISTELSKE_MAKAYLEE_ANNE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "COPELAND, RICHARD QUINN",
+        "Full Name": "BROWN, ANDY OWEN",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COPELAND_RICHARD_QUINN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROWN_ANDY_OWEN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "LARKINS, DEMETRIUS JR",
+        "Full Name": "SMITH, ELLEN KIMBERLY",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LARKINS_DEMETRIUS_JR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SMITH_ELLEN_KIMBERLY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "LOGAN, ANTHONY DREALL",
+        "Full Name": "BROOKS, JOHN MICHAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_LOGAN_ANTHONY_DREALL.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROOKS_JOHN_MICHAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "TAUHID, SHAHEED YUSUF",
+        "Full Name": "DORR, ADRIAN JAMES",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TAUHID_SHAHEED_YUSUF.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DORR_ADRIAN_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "CASTRO VAZQUEZ, PEDRO",
+        "Full Name": "ENRIQUEZ-GAVILAN, BRANDON",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CASTRO_VAZQUEZ_PEDRO.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ENRIQUEZ-GAVILAN_BRANDON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "MOHAMED, ABDIMALIK FARAH",
+        "Full Name": "KLADEK, KELA SHAREE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOHAMED_ABDIMALIK_FARAH.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KLADEK_KELA_SHAREE.jpg"
       },
       "posted": false,
       "posted_at": null
