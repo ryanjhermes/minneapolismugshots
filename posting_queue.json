@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-06T23:18:02.825304-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$250,000.00 BAIL/BOND W/ CR",
         "Mugshot_File": "mugshots/mugshot_KAMP_NICHOLAS_GARY.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-07T00:50:12.241065-06:00"
     },
     {
       "id": 2,
