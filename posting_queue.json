@@ -1,26 +1,26 @@
 {
-  "created_at": "2026-02-07T23:32:33.108496-06:00",
+  "created_at": "2026-02-08T23:32:14.624246-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BUCKLEY, SHUNTE LAVADURS 2ND",
+        "Full Name": "BOWLING, CIERRA RENEE",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BUCKLEY_SHUNTE_LAVADURS_2ND.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BOWLING_CIERRA_RENEE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-08T20:34:34.426160-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "DIAZ ALVAREZ, BRAIAN NAHUEL",
+        "Full Name": "PAYNE, GRANVILLE BOONIE JR",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DIAZ_ALVAREZ_BRAIAN_NAHUEL.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PAYNE_GRANVILLE_BOONIE_JR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "data": {
-        "Full Name": "SHUMPERT, JENNIE GABRIEL",
+        "Full Name": "KONNEH, MOHAMMED BLAMA",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SHUMPERT_JENNIE_GABRIEL.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KONNEH_MOHAMMED_BLAMA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "MEEKS, TANNER JOSEPH",
+        "Full Name": "GIBA, ROBERT OZ EDWARD",
         "Charge 1": "No charge listed",
-        "Bail": "$6,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MEEKS_TANNER_JOSEPH.jpg"
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GIBA_ROBERT_OZ_EDWARD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "BROTTLUND, KADEN BRICE",
+        "Full Name": "MADDOX, NEWGENE LESTER EUGENE",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROTTLUND_KADEN_BRICE.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MADDOX_NEWGENE_LESTER_EUGENE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "JAMA, ABDULLAHI JIMALE",
+        "Full Name": "ROBINSON, CHAUNCEY RAMON",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JAMA_ABDULLAHI_JIMALE.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROBINSON_CHAUNCEY_RAMON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "RAINCLOUD, MARLENE MARTINA",
+        "Full Name": "CRAIG, ROBERT FREDERICK",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RAINCLOUD_MARLENE_MARTINA.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CRAIG_ROBERT_FREDERICK.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "KUJAWA, JONAH BENJAMIN",
+        "Full Name": "HARRINGTON, VANESSA RENA",
         "Charge 1": "No charge listed",
-        "Bail": "$2,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KUJAWA_JONAH_BENJAMIN.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HARRINGTON_VANESSA_RENA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "KOENIG, MARGUERITE MARY",
+        "Full Name": "KORNEZOS, GERALD ANTHONY",
         "Charge 1": "No charge listed",
-        "Bail": "$600.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KOENIG_MARGUERITE_MARY.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KORNEZOS_GERALD_ANTHONY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "WRIGHT, SOLOMON JR",
+        "Full Name": "SLETTEN, BENJAMIN ANDREW",
         "Charge 1": "No charge listed",
-        "Bail": "$600.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WRIGHT_SOLOMON_JR.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SLETTEN_BENJAMIN_ANDREW.jpg"
       },
       "posted": false,
       "posted_at": null
