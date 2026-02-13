@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-02-11T23:32:11.870251-06:00",
+  "created_at": "2026-02-12T23:31:19.639902-06:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ALI, ADNAAN O",
+        "Full Name": "NAULA, RAUL FERNANDO",
         "Charge 1": "No charge listed",
         "Bail": "$250,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALI_ADNAAN_O.jpg"
+        "Mugshot_File": "mugshots/mugshot_NAULA_RAUL_FERNANDO.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-12T01:07:36.862811-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BATISTE, VAEMON DOMINIQUE",
+        "Full Name": "NOBLE, CHAZ LEVELL",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BATISTE_VAEMON_DOMINIQUE.jpg"
+        "Bail": "$150,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NOBLE_CHAZ_LEVELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-12T13:09:34.399051-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "HANKS-BURNS, SETH JORDAN",
+        "Full Name": "JOPLIN, PIERRE PEARSON",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HANKS-BURNS_SETH_JORDAN.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_JOPLIN_PIERRE_PEARSON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "WEBSTER, LATASHA LATRICE",
+        "Full Name": "MYERS, MARCUS DOMINIC",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WEBSTER_LATASHA_LATRICE.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MYERS_MARCUS_DOMINIC.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "CHARBONNEAU, ANTHONY MICHAEL",
+        "Full Name": "AGEE, ANTONIO LAMAR",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CHARBONNEAU_ANTHONY_MICHAEL.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AGEE_ANTONIO_LAMAR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "MCDONALD, MICHAELA MARIE",
+        "Full Name": "OLSTAD, TRACY LEE",
         "Charge 1": "No charge listed",
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MCDONALD_MICHAELA_MARIE.jpg"
+        "Mugshot_File": "mugshots/mugshot_OLSTAD_TRACY_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "MURPHY, SHYAH DASHEA",
+        "Full Name": "DEMARIS-CARRIGER, ZACHERY JAMES",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_MURPHY_SHYAH_DASHEA.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DEMARIS-CARRIGER_ZACHERY_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "PORTER, CORNELL EUGENE",
+        "Full Name": "GRAHAM, JAVONDA CHARVETTE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PORTER_CORNELL_EUGENE.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_GRAHAM_JAVONDA_CHARVETTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "WHITE, JOEL DEMOND",
+        "Full Name": "DILLON, WILLIE DERMOK",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WHITE_JOEL_DEMOND.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_DILLON_WILLIE_DERMOK.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "DABNEY, MYANDRE LAMAR",
+        "Full Name": "MOORE, MARVIN TIRAN",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_DABNEY_MYANDRE_LAMAR.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOORE_MARVIN_TIRAN.jpg"
       },
       "posted": false,
       "posted_at": null
