@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-12T23:31:19.639902-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$150,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_NOBLE_CHAZ_LEVELL.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-13T09:48:12.041916-06:00"
     },
     {
       "id": 3,
