@@ -1,26 +1,26 @@
 {
-  "created_at": "2026-02-14T23:26:24.646782-06:00",
+  "created_at": "2026-02-15T23:35:20.932512-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "SATTERFIELD, BRUCE LEE",
+        "Full Name": "WORKMAN, WILLIAM JOSEPH",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SATTERFIELD_BRUCE_LEE.jpg"
+        "Bail": "$75,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_WORKMAN_WILLIAM_JOSEPH.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-15T03:38:40.192950-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MOSHER, ALEX GEOFFREY",
+        "Full Name": "DUNCAN, EDDIE DARREN",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOSHER_ALEX_GEOFFREY.jpg"
+        "Bail": "$70,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DUNCAN_EDDIE_DARREN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "data": {
-        "Full Name": "CRAIG, LARRY THOMAS JR",
+        "Full Name": "MARTIN, FELICIA BREEANNA",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CRAIG_LARRY_THOMAS_JR.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MARTIN_FELICIA_BREEANNA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "CRATON, STEVEN MICHAEL",
+        "Full Name": "SWEENEY, AMANDA CELESTE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CRATON_STEVEN_MICHAEL.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SWEENEY_AMANDA_CELESTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "EVARTS, ANTHONY BREWSTER",
+        "Full Name": "BORGAN, JESSICA MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EVARTS_ANTHONY_BREWSTER.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BORGAN_JESSICA_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "JOHNSON, DAYSHON DEVON",
+        "Full Name": "OMAR, LUCKY ABDULLAHI",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_DAYSHON_DEVON.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_OMAR_LUCKY_ABDULLAHI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "SCOTT-DAVIS, KHALIQ JAKEEM",
+        "Full Name": "HESSION, JULIA LEIGH",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SCOTT-DAVIS_KHALIQ_JAKEEM.jpg"
+        "Mugshot_File": "mugshots/mugshot_HESSION_JULIA_LEIGH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "SEVERSON, BRETT WALLACE",
+        "Full Name": "HOOD, SHANA MARIE",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SEVERSON_BRETT_WALLACE.jpg"
+        "Mugshot_File": "mugshots/mugshot_HOOD_SHANA_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "SPENCER-RUDOLPH, DELIA LATOYA",
+        "Full Name": "LEWIS, ZIANNA DEJAE",
         "Charge 1": "No charge listed",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SPENCER-RUDOLPH_DELIA_LATOYA.jpg"
+        "Mugshot_File": "mugshots/mugshot_LEWIS_ZIANNA_DEJAE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "DOSS, PHYLICIA KRYSTAL",
+        "Full Name": "TRUMAN ABRON, MARTINO DESHONE",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DOSS_PHYLICIA_KRYSTAL.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TRUMAN_ABRON_MARTINO_DESHONE.jpg"
       },
       "posted": false,
       "posted_at": null
