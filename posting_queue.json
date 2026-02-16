@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-15T23:35:20.932512-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$70,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_DUNCAN_EDDIE_DARREN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-16T07:13:20.268503-06:00"
     },
     {
       "id": 3,
