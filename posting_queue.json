@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-15T23:35:20.932512-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$15,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SWEENEY_AMANDA_CELESTE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-16T20:29:49.193170-06:00"
     },
     {
       "id": 5,
