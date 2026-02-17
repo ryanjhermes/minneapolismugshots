@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-16T23:28:56.947712-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$250,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SCOTT_ANTHONY_ANTWAN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-17T01:05:31.867340-06:00"
     },
     {
       "id": 2,
