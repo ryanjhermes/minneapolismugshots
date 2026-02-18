@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-17T23:31:57.783760-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$150,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_WILLIAMS_TREMERIS_CORNELL.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-18T13:02:29.585589-06:00"
     },
     {
       "id": 3,
