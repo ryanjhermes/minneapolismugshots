@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-02-17T23:31:57.783760-06:00",
+  "created_at": "2026-02-18T23:29:57.883720-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "STURDIVANT, BRANDON ONEIL",
+        "Full Name": "WILLIAMS, RASHAWN LAREESE",
         "Charge 1": "No charge listed",
-        "Bail": "$499,999.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STURDIVANT_BRANDON_ONEIL.jpg"
+        "Bail": "$2,000,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WILLIAMS_RASHAWN_LAREESE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-18T01:06:55.168891-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "WILLIAMS, TREMERIS CORNELL",
+        "Full Name": "HALL, JACOB PATRICK",
         "Charge 1": "No charge listed",
-        "Bail": "$150,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_TREMERIS_CORNELL.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HALL_JACOB_PATRICK.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-18T13:02:29.585589-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "AHMED, ABDIRAHMAN FARAH",
+        "Full Name": "DALTON, CASSANDRA ALESHEA",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AHMED_ABDIRAHMAN_FARAH.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DALTON_CASSANDRA_ALESHEA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-18T20:32:07.573999-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "AHMED, KHALID ADEN",
+        "Full Name": "PARKER, SHAVONNE LATONYA",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AHMED_KHALID_ADEN.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PARKER_SHAVONNE_LATONYA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "BALANCE, MICHAEL LAVAUGHN",
+        "Full Name": "WHITTINGTON, DOUGLAS MELVIN",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BALANCE_MICHAEL_LAVAUGHN.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WHITTINGTON_DOUGLAS_MELVIN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "COCHRAN, FRANKIE EDWARD",
+        "Full Name": "SAVAGEAU, NICHOLAS DAVID",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COCHRAN_FRANKIE_EDWARD.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SAVAGEAU_NICHOLAS_DAVID.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "PERKINS, ALIZE KHUDARI",
+        "Full Name": "JOHNSON, LILLYMAE MARJADYEE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PERKINS_ALIZE_KHUDARI.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_LILLYMAE_MARJADYEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "CARR, LAWRENCE WILLIAM",
+        "Full Name": "KODAH, RASHID AHMED",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CARR_LAWRENCE_WILLIAM.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KODAH_RASHID_AHMED.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "CLIFTON, MAURICE HOWARD",
+        "Full Name": "MOHAMED, ABDIRAHMAN YUSUF",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CLIFTON_MAURICE_HOWARD.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOHAMED_ABDIRAHMAN_YUSUF.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "YUSUF, ZEKERIA ABDI",
+        "Full Name": "TAYLOR-BEY, TALIB ROMEO JR",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_YUSUF_ZEKERIA_ABDI.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TAYLOR-BEY_TALIB_ROMEO_JR.jpg"
       },
       "posted": false,
       "posted_at": null
