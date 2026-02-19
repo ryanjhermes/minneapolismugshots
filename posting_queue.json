@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-18T23:29:57.883720-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$2,000,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_WILLIAMS_RASHAWN_LAREESE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-19T13:09:48.301265-06:00"
     },
     {
       "id": 2,
