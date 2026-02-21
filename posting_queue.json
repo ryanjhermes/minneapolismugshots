@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-20T23:13:54.779800-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$280,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BILLINGSLEY_DAVION_AVANTE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-21T06:57:02.817413-06:00"
     },
     {
       "id": 2,
