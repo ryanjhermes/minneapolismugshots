@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-21T23:24:56.745322-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/ CR",
         "Mugshot_File": "mugshots/mugshot_CARVER_JANAE_ME_SHELL.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-22T20:33:14.821402-06:00"
     },
     {
       "id": 3,
