@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-02-22T23:25:54.585847-06:00",
+  "created_at": "2026-02-23T23:32:22.138363-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "GRAYSON, TERRENCE JR",
-        "Charge 1": "POSSESS AMMO/ANY FIREARM - SUBJECT TO AN ORDER FOR PROTECTION UNDER 260C.201.3(D) OR 518B.01.6(G)",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GRAYSON_TERRENCE_JR.jpg"
+        "Full Name": "TIPAN SIMBANA, JOSTIN KEVIN",
+        "Charge 1": "No charge listed",
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TIPAN_SIMBANA_JOSTIN_KEVIN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-23T09:52:43.504477-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "FOSSLER, ALEXIS LOUISE",
+        "Full Name": "POLLARD, TRENTON DEVAUGHN",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FOSSLER_ALEXIS_LOUISE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_POLLARD_TRENTON_DEVAUGHN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-23T13:10:25.906809-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "GRAYSON, TERRENCE JR",
+        "Full Name": "JACKSON, LATONYA DENISE",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GRAYSON_TERRENCE_JR.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JACKSON_LATONYA_DENISE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-23T20:29:29.349605-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "BEMIS, ALEXANDER DANIEL",
+        "Full Name": "LOUREY, TRINITY ROSE",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BEMIS_ALEXANDER_DANIEL.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LOUREY_TRINITY_ROSE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "BYNUM, JAMES ANDREW",
+        "Full Name": "WALLACE, DEANTHONY DONTRELL",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BYNUM_JAMES_ANDREW.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WALLACE_DEANTHONY_DONTRELL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "DOUGLAS, RODNEY DAMARIS",
+        "Full Name": "KOIVU, TERREL STEVEN",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 CASH BAIL W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DOUGLAS_RODNEY_DAMARIS.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KOIVU_TERREL_STEVEN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "AHMED, NOOR MOHAMUD",
+        "Full Name": "CHAK, CHANDARAVICHAI LIV",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_AHMED_NOOR_MOHAMUD.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CHAK_CHANDARAVICHAI_LIV.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "CHOGLLO TENEZACA, LUIS ALEJANDRO",
+        "Full Name": "CRAIG, ROBERT FREDERICK III",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_CHOGLLO_TENEZACA_LUIS_ALEJANDRO.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CRAIG_ROBERT_FREDERICK_III.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "DADY, DAKOTA JAMES",
+        "Full Name": "GOLOVANOV, ROMAN SERGEEVICH",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DADY_DAKOTA_JAMES.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GOLOVANOV_ROMAN_SERGEEVICH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "DUNBAR, ANDRAWLANE PRINCESS",
+        "Full Name": "CHOMILO, JULES NDIKUM",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DUNBAR_ANDRAWLANE_PRINCESS.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CHOMILO_JULES_NDIKUM.jpg"
       },
       "posted": false,
       "posted_at": null
