@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-25T23:27:58.288392-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$150,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_FIELDS_KZIAH_DJEAN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-26T01:06:18.451270-06:00"
     },
     {
       "id": 2,
