@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-24T23:30:38.473590-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$150,000.00 BAIL/BOND W/ CR",
         "Mugshot_File": "mugshots/mugshot_JOHNSON_HENRY_HOWARD_JR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-25T20:26:55.155564-06:00"
     },
     {
       "id": 3,
