@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-25T23:27:58.288392-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$30,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_JOHNSON_GAVIN_RIAN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-26T20:25:51.780054-06:00"
     },
     {
       "id": 5,
