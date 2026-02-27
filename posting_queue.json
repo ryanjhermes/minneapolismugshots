@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-26T23:21:49.220670-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$200,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_DUNLAP_DARNELL_KEITH_FRANK.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-27T01:01:04.504657-06:00"
     },
     {
       "id": 2,
