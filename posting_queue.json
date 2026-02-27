@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-26T23:21:49.220670-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$35,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BROWN_TREVION_DEONTAE_MARCELLE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-27T07:07:44.524882-06:00"
     },
     {
       "id": 3,
