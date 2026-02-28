@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-02-26T23:21:49.220670-06:00",
+  "created_at": "2026-02-27T22:57:53.004283-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "DUNLAP, DARNELL KEITH FRANK",
+        "Full Name": "TOWNSEND, ANDREW JONATHAN",
         "Charge 1": "No charge listed",
-        "Bail": "$200,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DUNLAP_DARNELL_KEITH_FRANK.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TOWNSEND_ANDREW_JONATHAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-27T01:01:04.504657-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BROWN, TREVION DEONTAE MARCELLE",
+        "Full Name": "JOHNSON-ALLEN, FREDERICK CHARLES",
         "Charge 1": "No charge listed",
-        "Bail": "$35,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROWN_TREVION_DEONTAE_MARCELLE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON-ALLEN_FREDERICK_CHARLES.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-27T07:07:44.524882-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "VERNER, JON FITZGERALD",
+        "Full Name": "TALLEY, GREGORY MAURICE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_VERNER_JON_FITZGERALD.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TALLEY_GREGORY_MAURICE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-02-27T20:08:25.457644-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "CAPUZ MALLQUI, JUAN CARLOS",
+        "Full Name": "MONTES-LAZARIN, ADRIAN",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CAPUZ_MALLQUI_JUAN_CARLOS.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MONTES-LAZARIN_ADRIAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "FERGUSON, ANTHONY CHRIS JR",
+        "Full Name": "SOTO CARILLO, OVEB",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FERGUSON_ANTHONY_CHRIS_JR.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SOTO_CARILLO_OVEB.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "SWEATS, SIERRA LESHAE",
+        "Full Name": "CLOPTON, CHARLES MARQECE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SWEATS_SIERRA_LESHAE.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CLOPTON_CHARLES_MARQECE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "SWENTIK, KELLY ANN",
+        "Full Name": "OMAR, ZAKARIA MOHAMED",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SWENTIK_KELLY_ANN.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_OMAR_ZAKARIA_MOHAMED.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "CHEW, MICHAEL BENJAMIN",
+        "Full Name": "BAHENA CASTILLO, JASON",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CHEW_MICHAEL_BENJAMIN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BAHENA_CASTILLO_JASON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "EVARTS, ANTHONY BREWSTER",
+        "Full Name": "BURCHETTE, RUSHIA MONIQUE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EVARTS_ANTHONY_BREWSTER.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BURCHETTE_RUSHIA_MONIQUE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "MILLER, JADE MARIE",
+        "Full Name": "JOHNSON, STEVE DONNELL SR",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MILLER_JADE_MARIE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_STEVE_DONNELL_SR.jpg"
       },
       "posted": false,
       "posted_at": null
