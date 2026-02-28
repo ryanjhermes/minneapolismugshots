@@ -1,7 +1,7 @@
 {
   "created_at": "2026-02-27T22:57:53.004283-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_JOHNSON-ALLEN_FREDERICK_CHARLES.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-02-28T15:26:45.285788-06:00"
     },
     {
       "id": 3,
