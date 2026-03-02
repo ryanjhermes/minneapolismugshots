@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-01T23:23:30.104860-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$15,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MUMIN_SAED_GEDI.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-03-02T07:07:59.788326-06:00"
     },
     {
       "id": 2,
