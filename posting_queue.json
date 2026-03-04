@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-03T23:26:04.310759-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_DIGGS_KESHAWN_EMMANUEL.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-03-04T12:57:49.678194-06:00"
     },
     {
       "id": 3,
