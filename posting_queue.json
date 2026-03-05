@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-03-03T23:26:04.310759-06:00",
+  "created_at": "2026-03-04T23:23:09.070322-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "CLAVON, JAMAR MAURICE",
+        "Full Name": "WILSON, DEMARCO DANTE",
         "Charge 1": "No charge listed",
-        "Bail": "$200,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CLAVON_JAMAR_MAURICE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WILSON_DEMARCO_DANTE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-03-04T09:47:11.208834-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "DIGGS, KESHAWN EMMANUEL",
+        "Full Name": "ABDI, JIBRIL OSMAN",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DIGGS_KESHAWN_EMMANUEL.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ABDI_JIBRIL_OSMAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-03-04T12:57:49.678194-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "BARTON, AMBER LYNN",
+        "Full Name": "COOK, ROBERT BRANDON",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BARTON_AMBER_LYNN.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_COOK_ROBERT_BRANDON.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-03-04T22:48:44.029892-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "BOYD, KEVIN DUANE JR",
+        "Full Name": "KALTHOFF, TAE BENJAMIN",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BOYD_KEVIN_DUANE_JR.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KALTHOFF_TAE_BENJAMIN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "SWENSON, MICHAEL CHRISTOPHER",
+        "Full Name": "MENARD, DARCY MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SWENSON_MICHAEL_CHRISTOPHER.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MENARD_DARCY_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "BROWN, NEHEMIAH MIA",
+        "Full Name": "SMITH, KEASHONE ALEXIS",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROWN_NEHEMIAH_MIA.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SMITH_KEASHONE_ALEXIS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "GUZMAN, OLGA",
+        "Full Name": "STEWART, JOHN HENRY 3RD",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GUZMAN_OLGA.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_STEWART_JOHN_HENRY_3RD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "WHIGHAM, ISAIAH ALAN",
+        "Full Name": "THOMPSON, MARTINEZ DEJUAN DESHO",
         "Charge 1": "No charge listed",
         "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WHIGHAM_ISAIAH_ALAN.jpg"
+        "Mugshot_File": "mugshots/mugshot_THOMPSON_MARTINEZ_DEJUAN_DESHO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "HAYES, MICHAEL CARLOS JR",
+        "Full Name": "GEISTFELD, JARET THOMAS",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HAYES_MICHAEL_CARLOS_JR.jpg"
+        "Mugshot_File": "mugshots/mugshot_GEISTFELD_JARET_THOMAS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "MATA GUEVARA, GERSON DAVID",
+        "Full Name": "MARUBE, INNOCENT OSEKO",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MATA_GUEVARA_GERSON_DAVID.jpg"
+        "Mugshot_File": "mugshots/mugshot_MARUBE_INNOCENT_OSEKO.jpg"
       },
       "posted": false,
       "posted_at": null
