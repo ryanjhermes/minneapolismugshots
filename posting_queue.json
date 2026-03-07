@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-03-05T23:18:32.717568-06:00",
+  "created_at": "2026-03-06T23:07:33.029587-06:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "POWELL, CHARLES YOVONTRE",
+        "Full Name": "ROSENBLOOM-MAXWELL, QYDAIR DEON",
         "Charge 1": "No charge listed",
-        "Bail": "$400,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_POWELL_CHARLES_YOVONTRE.jpg"
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROSENBLOOM-MAXWELL_QYDAIR_DEON.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-03-06T00:57:37.441907-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "COLE, DEMITRIOUS DEON JR",
+        "Full Name": "BUCHANAN, KENVELL MALIK OVELL",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COLE_DEMITRIOUS_DEON_JR.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BUCHANAN_KENVELL_MALIK_OVELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-03-06T12:56:01.135068-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "METHENY, MATTHEW JOHN",
+        "Full Name": "ALI, MOHAMED AMIN ABDULLAHI",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_METHENY_MATTHEW_JOHN.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_ALI_MOHAMED_AMIN_ABDULLAHI.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-03-06T20:12:02.935499-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "DANIELS, MELISSA ROBIN",
+        "Full Name": "WALZ, JORDAN ADRIAN",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DANIELS_MELISSA_ROBIN.jpg"
+        "Bail": "$15,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WALZ_JORDAN_ADRIAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "CURTIS, KEITH DESHAWN",
+        "Full Name": "CINTO CINTO, ALEXANDER ROCAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CURTIS_KEITH_DESHAWN.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CINTO_CINTO_ALEXANDER_ROCAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "DOMINO, BRANDON ALEXANDER",
+        "Full Name": "CREZEE, JAMES ROBERT",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DOMINO_BRANDON_ALEXANDER.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CREZEE_JAMES_ROBERT.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "ROBINSON, LESLIE GENE",
+        "Full Name": "DIONNE, ERYKA JETOI",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROBINSON_LESLIE_GENE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DIONNE_ERYKA_JETOI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "WALKER, CASONE DELONAE",
+        "Full Name": "HAWKINS, ISHMAIL SHANE",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WALKER_CASONE_DELONAE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HAWKINS_ISHMAIL_SHANE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "GRAY, ROBERT LEWIS JR",
+        "Full Name": "MCNEIL-DIAMOND, CASHMERE ZHANE YASMINE",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GRAY_ROBERT_LEWIS_JR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MCNEIL-DIAMOND_CASHMERE_ZHANE_YASMINE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "JOHNSON, RACQUEL RENEE",
+        "Full Name": "PEREZ SANCHEZ, JOSE SAMUEL",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_RACQUEL_RENEE.jpg"
+        "Mugshot_File": "mugshots/mugshot_PEREZ_SANCHEZ_JOSE_SAMUEL.jpg"
       },
       "posted": false,
       "posted_at": null
