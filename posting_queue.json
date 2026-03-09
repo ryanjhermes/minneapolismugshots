@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-07T23:15:16.048054-06:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 5,
   "inmates": [
     {
       "id": 1,
@@ -55,8 +55,8 @@
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SANCHEZ_OLANDA_JUAN_JOSE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-03-09T04:57:24.966470-05:00"
     },
     {
       "id": 6,
