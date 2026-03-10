@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-07T23:15:16.048054-06:00",
   "total_inmates": 10,
-  "posted_count": 8,
+  "posted_count": 9,
   "inmates": [
     {
       "id": 1,
@@ -99,8 +99,8 @@
         "Bail": "$5,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_CASTRO-MEZA_JOEL_ALBERTO.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-03-10T11:04:55.140763-05:00"
     },
     {
       "id": 10,
