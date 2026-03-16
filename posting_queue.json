@@ -1,117 +1,51 @@
 {
-  "created_at": "2026-03-07T23:15:16.048054-06:00",
-  "total_inmates": 10,
-  "posted_count": 10,
+  "created_at": "2026-03-16T00:47:15.294396-05:00",
+  "total_inmates": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "WILSON, KRISTOPHER ALLEN OZELL",
+        "Full Name": "BRYCE, JAMAL REZA JR",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILSON_KRISTOPHER_ALLEN_OZELL.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BRYCE_JAMAL_REZA_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-03-08T00:51:31.614155-06:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "JOHNSON, MARVIN ANTIWON",
+        "Full Name": "MARTIN, OLYMPIA MONIQUE",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_MARVIN_ANTIWON.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MARTIN_OLYMPIA_MONIQUE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-03-08T07:57:52.696319-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "STUMM, JESSICA ROSE",
+        "Full Name": "MILLER, CLAIRE ELIZABETH",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STUMM_JESSICA_ROSE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MILLER_CLAIRE_ELIZABETH.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-03-08T13:41:13.180396-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "HASTINGS, MARSHALL LANE",
+        "Full Name": "MILLER, JOHNNY AARON",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HASTINGS_MARSHALL_LANE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MILLER_JOHNNY_AARON.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-03-08T21:31:39.639349-05:00"
-    },
-    {
-      "id": 5,
-      "data": {
-        "Full Name": "SANCHEZ OLANDA, JUAN JOSE",
-        "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SANCHEZ_OLANDA_JUAN_JOSE.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-03-09T04:57:24.966470-05:00"
-    },
-    {
-      "id": 6,
-      "data": {
-        "Full Name": "SCHUSTER, JESSICA MARIE",
-        "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SCHUSTER_JESSICA_MARIE.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-03-09T14:00:14.553915-05:00"
-    },
-    {
-      "id": 7,
-      "data": {
-        "Full Name": "ROLAND, DEDRIC ARMON JR",
-        "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROLAND_DEDRIC_ARMON_JR.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-03-09T21:23:47.266049-05:00"
-    },
-    {
-      "id": 8,
-      "data": {
-        "Full Name": "YOUNG, DESTINY ARREL",
-        "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_YOUNG_DESTINY_ARREL.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-03-10T01:57:39.656904-05:00"
-    },
-    {
-      "id": 9,
-      "data": {
-        "Full Name": "CASTRO-MEZA, JOEL ALBERTO",
-        "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CASTRO-MEZA_JOEL_ALBERTO.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-03-10T11:04:55.140763-05:00"
-    },
-    {
-      "id": 10,
-      "data": {
-        "Full Name": "VROMAN VELEZ, JAMES WILLIAM",
-        "Charge 1": "No charge listed",
-        "Bail": "$2,700.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_VROMAN_VELEZ_JAMES_WILLIAM.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-03-11T08:09:54.308145-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
