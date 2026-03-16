@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-16T00:47:15.294396-05:00",
   "total_inmates": 4,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_MARTIN_OLYMPIA_MONIQUE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-03-16T08:21:36.288666-05:00"
     },
     {
       "id": 3,
