@@ -1,51 +1,18 @@
 {
-  "created_at": "2026-03-16T00:47:15.294396-05:00",
-  "total_inmates": 4,
-  "posted_count": 4,
+  "created_at": "2026-03-17T00:18:06.271599-05:00",
+  "total_inmates": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BRYCE, JAMAL REZA JR",
+        "Full Name": "TAYLOR, PATRICEA ANDREA",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BRYCE_JAMAL_REZA_JR.jpg"
+        "Mugshot_File": "mugshots/mugshot_TAYLOR_PATRICEA_ANDREA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-03-16T02:24:54.841644-05:00"
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "MARTIN, OLYMPIA MONIQUE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MARTIN_OLYMPIA_MONIQUE.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-03-16T08:21:36.288666-05:00"
-    },
-    {
-      "id": 3,
-      "data": {
-        "Full Name": "MILLER, CLAIRE ELIZABETH",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MILLER_CLAIRE_ELIZABETH.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-03-16T14:08:53.565773-05:00"
-    },
-    {
-      "id": 4,
-      "data": {
-        "Full Name": "MILLER, JOHNNY AARON",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MILLER_JOHNNY_AARON.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-03-16T21:29:22.290625-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
