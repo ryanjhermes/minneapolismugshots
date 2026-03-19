@@ -1,18 +1,18 @@
 {
-  "created_at": "2026-03-17T00:18:06.271599-05:00",
+  "created_at": "2026-03-19T00:19:41.016858-05:00",
   "total_inmates": 1,
-  "posted_count": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "TAYLOR, PATRICEA ANDREA",
+        "Full Name": "CHRZANOWSKI, RICHARD ALAN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_TAYLOR_PATRICEA_ANDREA.jpg"
+        "Mugshot_File": "mugshots/mugshot_CHRZANOWSKI_RICHARD_ALAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-03-17T14:07:56.356748-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
