@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-22T00:16:11.801942-05:00",
   "total_inmates": 1,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_EVANS_MARQUESAS_JAMAR_JR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-03-22T04:38:39.830036-05:00"
     }
   ]
 }
