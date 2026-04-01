@@ -1,7 +1,7 @@
 {
   "created_at": "2026-04-01T00:51:55.599911-05:00",
   "total_inmates": 2,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_OMAR_ABDULAHI_AHMED.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-04-01T16:47:01.173216-05:00"
     }
   ]
 }
