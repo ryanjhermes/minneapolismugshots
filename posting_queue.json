@@ -1,7 +1,7 @@
 {
   "created_at": "2026-04-07T00:33:15.528987-05:00",
   "total_inmates": 1,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_DOMAH_MARLINE_VARSAY.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-04-07T02:24:13.141207-05:00"
     }
   ]
 }
