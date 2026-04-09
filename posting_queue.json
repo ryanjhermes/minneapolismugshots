@@ -1,18 +1,40 @@
 {
-  "created_at": "2026-04-08T00:43:45.609878-05:00",
-  "total_inmates": 1,
-  "posted_count": 1,
+  "created_at": "2026-04-09T00:45:08.547574-05:00",
+  "total_inmates": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BIRTON, JADE JEAN",
+        "Full Name": "ALLEN, BERNARD ANDRE JR",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BIRTON_JADE_JEAN.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ALLEN_BERNARD_ANDRE_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-08T02:26:34.862712-05:00"
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 2,
+      "data": {
+        "Full Name": "JILES, DEDRICK DUANE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_JILES_DEDRICK_DUANE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 3,
+      "data": {
+        "Full Name": "KINGBIRD, TARYN LOUISE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_KINGBIRD_TARYN_LOUISE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
