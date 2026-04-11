@@ -1,40 +1,18 @@
 {
-  "created_at": "2026-04-09T00:45:08.547574-05:00",
-  "total_inmates": 3,
-  "posted_count": 3,
+  "created_at": "2026-04-11T00:22:04.889819-05:00",
+  "total_inmates": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ALLEN, BERNARD ANDRE JR",
+        "Full Name": "KIRCHGASLER, MATTHEW ALAN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ALLEN_BERNARD_ANDRE_JR.jpg"
+        "Mugshot_File": "mugshots/mugshot_KIRCHGASLER_MATTHEW_ALAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-09T02:29:24.619725-05:00"
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "JILES, DEDRICK DUANE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JILES_DEDRICK_DUANE.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-04-09T08:49:30.694636-05:00"
-    },
-    {
-      "id": 3,
-      "data": {
-        "Full Name": "KINGBIRD, TARYN LOUISE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KINGBIRD_TARYN_LOUISE.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-04-09T14:13:11.604870-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
