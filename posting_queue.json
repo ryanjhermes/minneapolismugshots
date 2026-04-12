@@ -1,18 +1,40 @@
 {
-  "created_at": "2026-04-11T00:22:04.889819-05:00",
-  "total_inmates": 1,
-  "posted_count": 1,
+  "created_at": "2026-04-12T00:50:50.414117-05:00",
+  "total_inmates": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "KIRCHGASLER, MATTHEW ALAN",
+        "Full Name": "LAMPKIN-GRIFFIN, COLBY ANTONIO",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KIRCHGASLER_MATTHEW_ALAN.jpg"
+        "Mugshot_File": "mugshots/mugshot_LAMPKIN-GRIFFIN_COLBY_ANTONIO.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-11T02:05:58.653999-05:00"
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 2,
+      "data": {
+        "Full Name": "MATHEWS, NOLAN RYAN",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MATHEWS_NOLAN_RYAN.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 3,
+      "data": {
+        "Full Name": "TAYLOR, WILLIS TOMICHAEL",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_TAYLOR_WILLIS_TOMICHAEL.jpg"
+      },
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
