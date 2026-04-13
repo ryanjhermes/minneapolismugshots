@@ -1,40 +1,40 @@
 {
-  "created_at": "2026-04-12T00:50:50.414117-05:00",
+  "created_at": "2026-04-13T01:09:16.329004-05:00",
   "total_inmates": 3,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "LAMPKIN-GRIFFIN, COLBY ANTONIO",
+        "Full Name": "WIESENBERG, DEVON MICHAEL",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LAMPKIN-GRIFFIN_COLBY_ANTONIO.jpg"
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WIESENBERG_DEVON_MICHAEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-12T02:20:27.145978-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MATHEWS, NOLAN RYAN",
+        "Full Name": "KAASA, JACOB BEAR",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MATHEWS_NOLAN_RYAN.jpg"
+        "Mugshot_File": "mugshots/mugshot_KAASA_JACOB_BEAR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-12T10:40:00.445504-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "TAYLOR, WILLIS TOMICHAEL",
+        "Full Name": "UDIA, UWEMEDIMO WILSON",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_TAYLOR_WILLIS_TOMICHAEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_UDIA_UWEMEDIMO_WILSON.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-12T13:56:25.943093-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
