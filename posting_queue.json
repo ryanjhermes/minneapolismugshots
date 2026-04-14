@@ -1,37 +1,59 @@
 {
-  "created_at": "2026-04-13T01:09:16.329004-05:00",
-  "total_inmates": 3,
-  "posted_count": 2,
+  "created_at": "2026-04-14T00:55:48.278093-05:00",
+  "total_inmates": 5,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "WIESENBERG, DEVON MICHAEL",
+        "Full Name": "BELL, ARMONI DEANTRE",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WIESENBERG_DEVON_MICHAEL.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BELL_ARMONI_DEANTRE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-13T05:50:47.332042-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "KAASA, JACOB BEAR",
+        "Full Name": "DURANT, DEMETRIUS JERMAINE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KAASA_JACOB_BEAR.jpg"
+        "Mugshot_File": "mugshots/mugshot_DURANT_DEMETRIUS_JERMAINE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-13T14:19:24.689056-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "UDIA, UWEMEDIMO WILSON",
+        "Full Name": "JOHNSON, CLIFFORD KIRK 2ND",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_UDIA_UWEMEDIMO_WILSON.jpg"
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_CLIFFORD_KIRK_2ND.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 4,
+      "data": {
+        "Full Name": "JOHNSON, COREY LAMONTE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_COREY_LAMONTE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 5,
+      "data": {
+        "Full Name": "MURILLO-HERNANDEZ, RICARDO",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MURILLO-HERNANDEZ_RICARDO.jpg"
       },
       "posted": false,
       "posted_at": null
