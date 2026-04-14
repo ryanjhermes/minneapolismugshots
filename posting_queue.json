@@ -1,7 +1,7 @@
 {
   "created_at": "2026-04-14T00:55:48.278093-05:00",
   "total_inmates": 5,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_DURANT_DEMETRIUS_JERMAINE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-04-14T08:51:33.181982-05:00"
     },
     {
       "id": 3,
