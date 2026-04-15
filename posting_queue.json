@@ -1,7 +1,7 @@
 {
   "created_at": "2026-04-15T00:55:32.364801-05:00",
   "total_inmates": 2,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_POWERS_JOHN_JAMES_III.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-04-15T02:53:55.451031-05:00"
     },
     {
       "id": 2,
