@@ -1,29 +1,18 @@
 {
-  "created_at": "2026-04-15T00:55:32.364801-05:00",
-  "total_inmates": 2,
-  "posted_count": 2,
+  "created_at": "2026-04-16T00:55:40.030239-05:00",
+  "total_inmates": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "POWERS, JOHN JAMES III",
-        "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_POWERS_JOHN_JAMES_III.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-04-15T02:53:55.451031-05:00"
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "COBBS, QUEEN JOYAGA",
+        "Full Name": "OMER, OMER ABUADAM",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_COBBS_QUEEN_JOYAGA.jpg"
+        "Mugshot_File": "mugshots/mugshot_OMER_OMER_ABUADAM.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-15T08:46:07.726366-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
