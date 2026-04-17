@@ -1,18 +1,18 @@
 {
-  "created_at": "2026-04-16T00:55:40.030239-05:00",
+  "created_at": "2026-04-17T00:58:51.111351-05:00",
   "total_inmates": 1,
-  "posted_count": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "OMER, OMER ABUADAM",
+        "Full Name": "JONES HILL, KYHEEM",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_OMER_OMER_ABUADAM.jpg"
+        "Bail": "$500.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JONES_HILL_KYHEEM.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-16T11:25:56.665921-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
