@@ -1,7 +1,7 @@
 {
   "created_at": "2026-04-18T00:29:16.655934-05:00",
   "total_inmates": 2,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_WASHINGTON_ALIEON_ALONTAY.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-04-18T21:59:11.457077-05:00"
     }
   ]
 }
