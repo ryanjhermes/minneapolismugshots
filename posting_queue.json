@@ -1,18 +1,40 @@
 {
-  "created_at": "2026-04-21T00:57:42.336464-05:00",
-  "total_inmates": 1,
-  "posted_count": 1,
+  "created_at": "2026-04-22T00:57:39.594446-05:00",
+  "total_inmates": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ROCQUE, NICHOLAS JOHN",
+        "Full Name": "MOBISA, NAHASHON BOSIRE",
+        "Charge 1": "No charge listed",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOBISA_NAHASHON_BOSIRE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 2,
+      "data": {
+        "Full Name": "ADEN, MOHAMED AMIN ABDIRAHMAN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ROCQUE_NICHOLAS_JOHN.jpg"
+        "Mugshot_File": "mugshots/mugshot_ADEN_MOHAMED_AMIN_ABDIRAHMAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-21T05:20:25.932763-05:00"
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 3,
+      "data": {
+        "Full Name": "ALBRECHT, PETER JAY",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ALBRECHT_PETER_JAY.jpg"
+      },
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
