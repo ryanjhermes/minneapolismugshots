@@ -1,7 +1,7 @@
 {
   "created_at": "2026-04-22T00:57:39.594446-05:00",
   "total_inmates": 3,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_ADEN_MOHAMED_AMIN_ABDIRAHMAN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-04-22T14:20:23.734433-05:00"
     },
     {
       "id": 3,
