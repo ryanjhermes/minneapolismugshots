@@ -1,7 +1,7 @@
 {
   "created_at": "2026-04-23T01:00:47.389119-05:00",
   "total_inmates": 4,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_GARCIA_DESARAE_LYN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-04-23T08:52:47.556045-05:00"
     },
     {
       "id": 3,
