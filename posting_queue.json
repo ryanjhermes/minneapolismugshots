@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-04-26T01:02:44.283325-05:00",
+  "created_at": "2026-04-27T01:22:32.386573-05:00",
   "total_inmates": 4,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ANTONE, CARMELLA MARIE",
+        "Full Name": "GATLIN, DUWAUN KEITH",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ANTONE_CARMELLA_MARIE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GATLIN_DUWAUN_KEITH.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-26T10:47:29.010529-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BAKER, SHELLY SANNY",
+        "Full Name": "OTERO, GEORGE MICHAEL",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BAKER_SHELLY_SANNY.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_OTERO_GEORGE_MICHAEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-26T14:01:08.046048-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "RUNNINGSHIELD, RAYAHNA RENNE",
+        "Full Name": "CALDWELL, SAVANNAH LOUISE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_RUNNINGSHIELD_RAYAHNA_RENNE.jpg"
+        "Mugshot_File": "mugshots/mugshot_CALDWELL_SAVANNAH_LOUISE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "SOLIS, DAVID",
+        "Full Name": "MEFFERT, ALEXANDER RAYMOND",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SOLIS_DAVID.jpg"
+        "Mugshot_File": "mugshots/mugshot_MEFFERT_ALEXANDER_RAYMOND.jpg"
       },
       "posted": false,
       "posted_at": null
