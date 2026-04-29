@@ -1,59 +1,48 @@
 {
-  "created_at": "2026-04-28T01:25:16.697604-05:00",
-  "total_inmates": 5,
-  "posted_count": 4,
+  "created_at": "2026-04-29T01:17:54.044366-05:00",
+  "total_inmates": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "FOOTE, LEIGHTON JOSEPH",
+        "Full Name": "ANDREWS, MIKAL GREGORY",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FOOTE_LEIGHTON_JOSEPH.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ANDREWS_MIKAL_GREGORY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-28T03:30:39.691776-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "RASMUSSEN, MICHAEL LEE",
+        "Full Name": "BLAIR, NATHANIEL BURTON",
         "Charge 1": "No charge listed",
-        "Bail": "$15,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RASMUSSEN_MICHAEL_LEE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BLAIR_NATHANIEL_BURTON.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-28T11:56:42.365786-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "HOLMES, DOMONIQUE RENEA",
+        "Full Name": "MALONE, MARRIO",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOLMES_DOMONIQUE_RENEA.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MALONE_MARRIO.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-04-28T17:02:25.569329-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "MILLER, AHNA REGAN",
+        "Full Name": "MANRAJ, ABDUL ALEEM",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MILLER_AHNA_REGAN.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-04-28T22:30:39.867339-05:00"
-    },
-    {
-      "id": 5,
-      "data": {
-        "Full Name": "MUHAMMAD, ALI ABDUL",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MUHAMMAD_ALI_ABDUL.jpg"
+        "Mugshot_File": "mugshots/mugshot_MANRAJ_ABDUL_ALEEM.jpg"
       },
       "posted": false,
       "posted_at": null
