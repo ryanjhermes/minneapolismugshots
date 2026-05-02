@@ -1,59 +1,37 @@
 {
-  "created_at": "2026-05-01T01:32:48.856399-05:00",
-  "total_inmates": 5,
-  "posted_count": 4,
+  "created_at": "2026-05-02T01:01:17.270715-05:00",
+  "total_inmates": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MOORE, DERRICK VANCURK",
+        "Full Name": "FERRARA, JOHN FRANCIS",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOORE_DERRICK_VANCURK.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_FERRARA_JOHN_FRANCIS.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-01T05:25:30.891086-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "RICE, PAUL ANTHONY",
+        "Full Name": "MCLAUGHLIN, ANDREW MICHAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RICE_PAUL_ANTHONY.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MCLAUGHLIN_ANDREW_MICHAEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-01T11:01:30.898947-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "ABDI, YASIN HASAN",
-        "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ABDI_YASIN_HASAN.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-05-01T14:18:15.240418-05:00"
-    },
-    {
-      "id": 4,
-      "data": {
-        "Full Name": "LAWRENCE, JOSHUA ANTHONY",
-        "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LAWRENCE_JOSHUA_ANTHONY.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-05-01T21:57:52.802734-05:00"
-    },
-    {
-      "id": 5,
-      "data": {
-        "Full Name": "DORSEY, KEVON",
+        "Full Name": "SHIELDS, TYRELL DIONTE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DORSEY_KEVON.jpg"
+        "Mugshot_File": "mugshots/mugshot_SHIELDS_TYRELL_DIONTE.jpg"
       },
       "posted": false,
       "posted_at": null
