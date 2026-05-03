@@ -1,7 +1,7 @@
 {
   "created_at": "2026-05-03T01:21:57.330243-05:00",
   "total_inmates": 3,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_COMMINGS_JAYLON.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-05-03T03:05:47.993366-05:00"
     },
     {
       "id": 2,
