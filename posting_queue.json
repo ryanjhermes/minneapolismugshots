@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-05-02T01:01:17.270715-05:00",
+  "created_at": "2026-05-03T01:21:57.330243-05:00",
   "total_inmates": 3,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "FERRARA, JOHN FRANCIS",
+        "Full Name": "COMMINGS, JAYLON",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FERRARA_JOHN_FRANCIS.jpg"
+        "Mugshot_File": "mugshots/mugshot_COMMINGS_JAYLON.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-02T08:19:53.413525-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MCLAUGHLIN, ANDREW MICHAEL",
+        "Full Name": "LEVINE, GRAHAM HENRY",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MCLAUGHLIN_ANDREW_MICHAEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_LEVINE_GRAHAM_HENRY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-02T22:34:30.354941-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "SHIELDS, TYRELL DIONTE",
+        "Full Name": "STANO, DEREK MARTIN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SHIELDS_TYRELL_DIONTE.jpg"
+        "Mugshot_File": "mugshots/mugshot_STANO_DEREK_MARTIN.jpg"
       },
       "posted": false,
       "posted_at": null
