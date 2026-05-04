@@ -1,40 +1,40 @@
 {
-  "created_at": "2026-05-03T01:21:57.330243-05:00",
+  "created_at": "2026-05-04T01:33:50.045172-05:00",
   "total_inmates": 3,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "COMMINGS, JAYLON",
+        "Full Name": "BROWN, TREVON GEORGE",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_COMMINGS_JAYLON.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROWN_TREVON_GEORGE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-03T03:05:47.993366-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "LEVINE, GRAHAM HENRY",
+        "Full Name": "QUEZADA, JERRY FERNANDO GUANUCHI",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LEVINE_GRAHAM_HENRY.jpg"
+        "Mugshot_File": "mugshots/mugshot_QUEZADA_JERRY_FERNANDO_GUANUCHI.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-03T08:18:40.887921-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "STANO, DEREK MARTIN",
+        "Full Name": "VILLEDA VILLEDA, GERSON JAVIER",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_STANO_DEREK_MARTIN.jpg"
+        "Mugshot_File": "mugshots/mugshot_VILLEDA_VILLEDA_GERSON_JAVIER.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-03T16:47:16.940280-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
