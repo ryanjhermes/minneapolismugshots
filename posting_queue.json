@@ -1,26 +1,26 @@
 {
-  "created_at": "2026-05-05T01:10:09.069276-05:00",
+  "created_at": "2026-05-06T01:25:28.885255-05:00",
   "total_inmates": 3,
-  "posted_count": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "HERNANDEZ, CHRISTIAN",
+        "Full Name": "JAMA, MAHAT ABOULLAHI",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HERNANDEZ_CHRISTIAN.jpg"
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JAMA_MAHAT_ABOULLAHI.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-05T11:27:14.951366-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "WILLIAMS, CHERISSE FLORENCE KAY",
+        "Full Name": "HICKS, ROBERT ARTHUR",
         "Charge 1": "No charge listed",
-        "Bail": "$500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_CHERISSE_FLORENCE_KAY.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_HICKS_ROBERT_ARTHUR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "data": {
-        "Full Name": "DAVIS, JEFFREY ALLEN",
+        "Full Name": "MORSE, TRISTIN JAMES",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DAVIS_JEFFREY_ALLEN.jpg"
+        "Mugshot_File": "mugshots/mugshot_MORSE_TRISTIN_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
