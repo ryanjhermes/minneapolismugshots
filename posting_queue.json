@@ -1,37 +1,59 @@
 {
-  "created_at": "2026-05-06T01:25:28.885255-05:00",
-  "total_inmates": 3,
-  "posted_count": 2,
+  "created_at": "2026-05-07T01:30:15.368452-05:00",
+  "total_inmates": 5,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "JAMA, MAHAT ABOULLAHI",
+        "Full Name": "GILBERTSON, TROUPER MONTGOMERY PAULK",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JAMA_MAHAT_ABOULLAHI.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GILBERTSON_TROUPER_MONTGOMERY_PAULK.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-06T09:22:40.954748-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "HICKS, ROBERT ARTHUR",
+        "Full Name": "GOOD, CHRISTOPHER MICHAEL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HICKS_ROBERT_ARTHUR.jpg"
+        "Mugshot_File": "mugshots/mugshot_GOOD_CHRISTOPHER_MICHAEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-06T17:00:25.441653-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "MORSE, TRISTIN JAMES",
+        "Full Name": "HAYWOOD, NICHOLAS ALLEN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MORSE_TRISTIN_JAMES.jpg"
+        "Mugshot_File": "mugshots/mugshot_HAYWOOD_NICHOLAS_ALLEN.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 4,
+      "data": {
+        "Full Name": "NOLDER, ANGEL BELLE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_NOLDER_ANGEL_BELLE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 5,
+      "data": {
+        "Full Name": "TEIXEIRA, NICHOLE ELIZABETH",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_TEIXEIRA_NICHOLE_ELIZABETH.jpg"
       },
       "posted": false,
       "posted_at": null
