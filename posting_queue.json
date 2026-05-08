@@ -1,7 +1,7 @@
 {
   "created_at": "2026-05-08T00:51:14.598542-05:00",
   "total_inmates": 1,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_POWELL_RHAMAL.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-05-08T02:47:31.572809-05:00"
     }
   ]
 }
