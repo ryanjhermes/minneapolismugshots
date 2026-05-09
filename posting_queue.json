@@ -1,7 +1,7 @@
 {
   "created_at": "2026-05-09T01:10:33.392240-05:00",
   "total_inmates": 5,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_FREDERICKSON_MONICA_MARIE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-05-09T08:24:27.449893-05:00"
     },
     {
       "id": 3,
