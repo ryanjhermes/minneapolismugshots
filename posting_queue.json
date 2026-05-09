@@ -1,18 +1,62 @@
 {
-  "created_at": "2026-05-08T00:51:14.598542-05:00",
-  "total_inmates": 1,
-  "posted_count": 1,
+  "created_at": "2026-05-09T01:10:33.392240-05:00",
+  "total_inmates": 5,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "POWELL, RHAMAL",
+        "Full Name": "LOVE, CRYSTAL CHERRON",
+        "Charge 1": "No charge listed",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LOVE_CRYSTAL_CHERRON.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 2,
+      "data": {
+        "Full Name": "FREDERICKSON, MONICA MARIE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_POWELL_RHAMAL.jpg"
+        "Mugshot_File": "mugshots/mugshot_FREDERICKSON_MONICA_MARIE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-08T02:47:31.572809-05:00"
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 3,
+      "data": {
+        "Full Name": "GIVEN, JEFFREY EUGENE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GIVEN_JEFFREY_EUGENE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 4,
+      "data": {
+        "Full Name": "GRIFFIN, ALIYA DAVIANNA DESIREE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GRIFFIN_ALIYA_DAVIANNA_DESIREE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 5,
+      "data": {
+        "Full Name": "PARKER, DARREN WASEIL",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_PARKER_DARREN_WASEIL.jpg"
+      },
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
