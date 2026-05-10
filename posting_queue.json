@@ -1,7 +1,7 @@
 {
   "created_at": "2026-05-09T01:10:33.392240-05:00",
   "total_inmates": 5,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_GRIFFIN_ALIYA_DAVIANNA_DESIREE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-05-09T22:37:06.289334-05:00"
     },
     {
       "id": 5,
