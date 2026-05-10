@@ -1,59 +1,48 @@
 {
-  "created_at": "2026-05-09T01:10:33.392240-05:00",
-  "total_inmates": 5,
-  "posted_count": 4,
+  "created_at": "2026-05-10T01:29:32.377010-05:00",
+  "total_inmates": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "LOVE, CRYSTAL CHERRON",
+        "Full Name": "DELMORE, KAITLIN JANE",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LOVE_CRYSTAL_CHERRON.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DELMORE_KAITLIN_JANE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-09T03:01:35.697871-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "FREDERICKSON, MONICA MARIE",
+        "Full Name": "SMITH, JENNIFER NANCY",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FREDERICKSON_MONICA_MARIE.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SMITH_JENNIFER_NANCY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-09T08:24:27.449893-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "GIVEN, JEFFREY EUGENE",
+        "Full Name": "HANSON, NICKOLAS GIDEON",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GIVEN_JEFFREY_EUGENE.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_HANSON_NICKOLAS_GIDEON.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-09T14:08:28.703382-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "GRIFFIN, ALIYA DAVIANNA DESIREE",
+        "Full Name": "JEFFERSON, DEVANTE LAMAR",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GRIFFIN_ALIYA_DAVIANNA_DESIREE.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-05-09T22:37:06.289334-05:00"
-    },
-    {
-      "id": 5,
-      "data": {
-        "Full Name": "PARKER, DARREN WASEIL",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_PARKER_DARREN_WASEIL.jpg"
+        "Mugshot_File": "mugshots/mugshot_JEFFERSON_DEVANTE_LAMAR.jpg"
       },
       "posted": false,
       "posted_at": null
