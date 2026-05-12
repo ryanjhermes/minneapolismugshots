@@ -1,18 +1,84 @@
 {
-  "created_at": "2026-05-11T01:58:49.126190-05:00",
-  "total_inmates": 1,
-  "posted_count": 1,
+  "created_at": "2026-05-12T01:33:06.005025-05:00",
+  "total_inmates": 7,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "KITCHINGS, TERMAINE ANTOINE",
+        "Full Name": "CLARK, AMARTAE DANTRELL",
+        "Charge 1": "No charge listed",
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CLARK_AMARTAE_DANTRELL.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 2,
+      "data": {
+        "Full Name": "DAVIS, ZETEE BILL",
+        "Charge 1": "No charge listed",
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DAVIS_ZETEE_BILL.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 3,
+      "data": {
+        "Full Name": "BURSCH, JESSE THOMAS",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KITCHINGS_TERMAINE_ANTOINE.jpg"
+        "Mugshot_File": "mugshots/mugshot_BURSCH_JESSE_THOMAS.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-11T04:47:10.789610-05:00"
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 4,
+      "data": {
+        "Full Name": "HICKMAN, PARIS DUANE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_HICKMAN_PARIS_DUANE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 5,
+      "data": {
+        "Full Name": "PETERSEN, JENNIFER ANN",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_PETERSEN_JENNIFER_ANN.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 6,
+      "data": {
+        "Full Name": "ROCK, TOMMY DEAN",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ROCK_TOMMY_DEAN.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 7,
+      "data": {
+        "Full Name": "TABERY, ANTHONY GERALD",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_TABERY_ANTHONY_GERALD.jpg"
+      },
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
