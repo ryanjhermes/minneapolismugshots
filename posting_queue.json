@@ -1,7 +1,7 @@
 {
   "created_at": "2026-05-13T01:42:27.562143-05:00",
   "total_inmates": 2,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_WARD_PAUL_ANTHONY.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-05-13T15:00:21.588787-05:00"
     }
   ]
 }
