@@ -1,7 +1,7 @@
 {
   "created_at": "2026-05-17T01:41:26.179918-05:00",
   "total_inmates": 8,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_GUALAN_JAEON_JOSE_MIGUEL.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-05-17T11:01:59.043741-05:00"
     },
     {
       "id": 3,
