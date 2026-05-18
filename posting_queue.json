@@ -1,59 +1,59 @@
 {
-  "created_at": "2026-05-17T01:41:26.179918-05:00",
-  "total_inmates": 8,
-  "posted_count": 4,
+  "created_at": "2026-05-18T02:54:47.108516-05:00",
+  "total_inmates": 6,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BUTLER, MICHEAL SAMUEL",
+        "Full Name": "TAYLOR, DESIREE LYNN",
         "Charge 1": "No charge listed",
         "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BUTLER_MICHEAL_SAMUEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_TAYLOR_DESIREE_LYNN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-17T05:25:14.773439-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "GUALAN JAEON, JOSE MIGUEL",
+        "Full Name": "ARTIS, KENT",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GUALAN_JAEON_JOSE_MIGUEL.jpg"
+        "Bail": "$600.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ARTIS_KENT.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-17T11:01:59.043741-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "HARMON, ROBERT BRIAN",
+        "Full Name": "GRAILER, MAXWELL LOUIS",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HARMON_ROBERT_BRIAN.jpg"
+        "Mugshot_File": "mugshots/mugshot_GRAILER_MAXWELL_LOUIS.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-17T14:14:34.366246-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "HOIME, KADEN JOSEPH",
+        "Full Name": "KARAHALIOS, SCOTT MITCHELL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HOIME_KADEN_JOSEPH.jpg"
+        "Mugshot_File": "mugshots/mugshot_KARAHALIOS_SCOTT_MITCHELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-17T22:59:13.877196-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "JOHNSON, WESLEY RAYVON",
+        "Full Name": "TERRELL-WARREN, JEREL KEIVONTE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_WESLEY_RAYVON.jpg"
+        "Mugshot_File": "mugshots/mugshot_TERRELL-WARREN_JEREL_KEIVONTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,32 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "MACK, DRAZONZTEON OMONIE",
+        "Full Name": "WEBER, CHRISTIAN JACOB",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MACK_DRAZONZTEON_OMONIE.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 7,
-      "data": {
-        "Full Name": "MCFARLANE-FRISON, RYAN",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MCFARLANE-FRISON_RYAN.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 8,
-      "data": {
-        "Full Name": "WASHINGTON, EDWARD RICHARD JR",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WASHINGTON_EDWARD_RICHARD_JR.jpg"
+        "Mugshot_File": "mugshots/mugshot_WEBER_CHRISTIAN_JACOB.jpg"
       },
       "posted": false,
       "posted_at": null
