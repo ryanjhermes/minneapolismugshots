@@ -1,59 +1,59 @@
 {
-  "created_at": "2026-05-20T02:35:42.921084-05:00",
+  "created_at": "2026-05-21T02:41:16.562286-05:00",
   "total_inmates": 6,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ABDULQADIR, MUNA",
+        "Full Name": "BARD, CORTEZ LAVELLE",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ABDULQADIR_MUNA.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BARD_CORTEZ_LAVELLE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-20T04:40:02.575924-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "FROMAYAN, WOUNDEI GOWOLEH",
+        "Full Name": "HOLLIS, ANITA LASHAYE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FROMAYAN_WOUNDEI_GOWOLEH.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_HOLLIS_ANITA_LASHAYE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-20T10:29:13.877958-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "AGUILAR SANDIERO, JOSE",
+        "Full Name": "KIMANGA, DANIEL NYACHOTI",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AGUILAR_SANDIERO_JOSE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_KIMANGA_DANIEL_NYACHOTI.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-20T15:22:48.587427-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "HARRIS, CAMERON JAMAIL",
+        "Full Name": "LINDGREN, NATHAN DANIEL",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HARRIS_CAMERON_JAMAIL.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_LINDGREN_NATHAN_DANIEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-20T23:01:48.694181-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "LINDSEY, SHAMONDA LATRICE",
+        "Full Name": "MARTIN, SHAWN MATTHEW",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LINDSEY_SHAMONDA_LATRICE.jpg"
+        "Mugshot_File": "mugshots/mugshot_MARTIN_SHAWN_MATTHEW.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "ZUBIA-FLORES, SAMUEL",
+        "Full Name": "VANG, TANOL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ZUBIA-FLORES_SAMUEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_VANG_TANOL.jpg"
       },
       "posted": false,
       "posted_at": null
