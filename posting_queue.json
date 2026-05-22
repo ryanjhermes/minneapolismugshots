@@ -1,26 +1,26 @@
 {
-  "created_at": "2026-05-21T02:41:16.562286-05:00",
+  "created_at": "2026-05-22T02:35:54.152271-05:00",
   "total_inmates": 6,
-  "posted_count": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BARD, CORTEZ LAVELLE",
+        "Full Name": "LUNDQUIST, DEREK ALLEN",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BARD_CORTEZ_LAVELLE.jpg"
+        "Bail": "$6,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LUNDQUIST_DEREK_ALLEN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-21T10:35:49.635808-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "HOLLIS, ANITA LASHAYE",
+        "Full Name": "BURROWS, TAVERES JUSTIN",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HOLLIS_ANITA_LASHAYE.jpg"
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BURROWS_TAVERES_JUSTIN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "data": {
-        "Full Name": "KIMANGA, DANIEL NYACHOTI",
+        "Full Name": "CHACASAGUAY PULLAY, JONATHAN ARMANDDO",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KIMANGA_DANIEL_NYACHOTI.jpg"
+        "Mugshot_File": "mugshots/mugshot_CHACASAGUAY_PULLAY_JONATHAN_ARMANDDO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "LINDGREN, NATHAN DANIEL",
+        "Full Name": "GARCIA CASTANEDA, ULISES ALEXANDER",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LINDGREN_NATHAN_DANIEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_GARCIA_CASTANEDA_ULISES_ALEXANDER.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "MARTIN, SHAWN MATTHEW",
+        "Full Name": "GWANYALLA, DERICK",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MARTIN_SHAWN_MATTHEW.jpg"
+        "Mugshot_File": "mugshots/mugshot_GWANYALLA_DERICK.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "VANG, TANOL",
+        "Full Name": "MALLOY, HAYES MICHAEL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_VANG_TANOL.jpg"
+        "Mugshot_File": "mugshots/mugshot_MALLOY_HAYES_MICHAEL.jpg"
       },
       "posted": false,
       "posted_at": null
