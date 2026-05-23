@@ -1,70 +1,15 @@
 {
-  "created_at": "2026-05-22T02:35:54.152271-05:00",
-  "total_inmates": 6,
-  "posted_count": 3,
+  "created_at": "2026-05-23T01:29:07.068331-05:00",
+  "total_inmates": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "LUNDQUIST, DEREK ALLEN",
+        "Full Name": "SHERRILL, AIMEE FAITH",
         "Charge 1": "No charge listed",
-        "Bail": "$6,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LUNDQUIST_DEREK_ALLEN.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-05-22T04:33:18.966208-05:00"
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "BURROWS, TAVERES JUSTIN",
-        "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BURROWS_TAVERES_JUSTIN.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-05-22T09:45:45.371239-05:00"
-    },
-    {
-      "id": 3,
-      "data": {
-        "Full Name": "CHACASAGUAY PULLAY, JONATHAN ARMANDDO",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CHACASAGUAY_PULLAY_JONATHAN_ARMANDDO.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-05-22T22:34:16.577277-05:00"
-    },
-    {
-      "id": 4,
-      "data": {
-        "Full Name": "GARCIA CASTANEDA, ULISES ALEXANDER",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GARCIA_CASTANEDA_ULISES_ALEXANDER.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 5,
-      "data": {
-        "Full Name": "GWANYALLA, DERICK",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GWANYALLA_DERICK.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 6,
-      "data": {
-        "Full Name": "MALLOY, HAYES MICHAEL",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MALLOY_HAYES_MICHAEL.jpg"
+        "Bail": "$128.00 CASH BAIL W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SHERRILL_AIMEE_FAITH.jpg"
       },
       "posted": false,
       "posted_at": null
