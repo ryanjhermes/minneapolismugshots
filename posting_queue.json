@@ -1,7 +1,7 @@
 {
   "created_at": "2026-05-25T03:12:40.467112-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$3,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BARNETT_DEREFEAL_DEMONE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-05-25T14:46:09.179301-05:00"
     },
     {
       "id": 3,
