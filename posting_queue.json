@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-05-25T03:12:40.467112-05:00",
+  "created_at": "2026-05-26T02:36:49.637580-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BROWN, JAMALLE LAMONT",
+        "Full Name": "NEIS, THADDEUS EUGENE LOUIS",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROWN_JAMALLE_LAMONT.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NEIS_THADDEUS_EUGENE_LOUIS.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-25T09:59:13.455261-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BARNETT, DEREFEAL DEMONE",
+        "Full Name": "HEFLIN, DEVON",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BARNETT_DEREFEAL_DEMONE.jpg"
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HEFLIN_DEVON.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-25T14:46:09.179301-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "LEWIS, ARMSTEAD LEE",
+        "Full Name": "ALI, HANAT MOHAMED",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_LEWIS_ARMSTEAD_LEE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ALI_HANAT_MOHAMED.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-25T22:55:39.886323-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "MOY, AYANNA SOLE",
+        "Full Name": "AUBID, KATHLEEN DENISE",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_MOY_AYANNA_SOLE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_AUBID_KATHLEEN_DENISE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "AGUILAR CELIS, HERLIN ALEXANDER",
+        "Full Name": "CHRISTIANSEN, CHARLES PAUL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_AGUILAR_CELIS_HERLIN_ALEXANDER.jpg"
+        "Mugshot_File": "mugshots/mugshot_CHRISTIANSEN_CHARLES_PAUL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "BOHLER, KATIE NICOLE",
+        "Full Name": "FLOWERS, ALFRED DELANO",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BOHLER_KATIE_NICOLE.jpg"
+        "Mugshot_File": "mugshots/mugshot_FLOWERS_ALFRED_DELANO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "BURNS-PERKINS, DREVONNE KANYE",
+        "Full Name": "FORT, EARL STEVENSON",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BURNS-PERKINS_DREVONNE_KANYE.jpg"
+        "Mugshot_File": "mugshots/mugshot_FORT_EARL_STEVENSON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "HOY, ZACKARY WAYNE",
+        "Full Name": "GEARRING, QUINTON LINDSEY",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HOY_ZACKARY_WAYNE.jpg"
+        "Mugshot_File": "mugshots/mugshot_GEARRING_QUINTON_LINDSEY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "PEREZ FLORES, KEVIN EDUARDO",
+        "Full Name": "HARRIS, MATTHEW BERNARD",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_PEREZ_FLORES_KEVIN_EDUARDO.jpg"
+        "Mugshot_File": "mugshots/mugshot_HARRIS_MATTHEW_BERNARD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "PRATT, JEREMIAH JOEL",
+        "Full Name": "KRUEGER, DANIEL EVERETT",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_PRATT_JEREMIAH_JOEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_KRUEGER_DANIEL_EVERETT.jpg"
       },
       "posted": false,
       "posted_at": null
