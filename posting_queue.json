@@ -1,7 +1,7 @@
 {
   "created_at": "2026-05-29T02:47:17.963501-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$50,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BROWN_CHRISTOPHER_LAMONT.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-05-29T04:59:17.575194-05:00"
     },
     {
       "id": 2,
