@@ -1,7 +1,7 @@
 {
   "created_at": "2026-05-30T01:40:38.116494-05:00",
   "total_inmates": 4,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$400.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_NUR_AHMED_ISMAIL.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-05-30T05:49:21.046953-05:00"
     },
     {
       "id": 2,
