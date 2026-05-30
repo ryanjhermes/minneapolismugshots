@@ -1,7 +1,7 @@
 {
   "created_at": "2026-05-30T01:40:38.116494-05:00",
   "total_inmates": 4,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$0.00 NO BAIL REQUIRED",
         "Mugshot_File": "mugshots/mugshot_GIEHTBROCK_ADAM_LEO.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-05-30T11:08:35.065559-05:00"
     },
     {
       "id": 3,
