@@ -1,48 +1,114 @@
 {
-  "created_at": "2026-05-30T01:40:38.116494-05:00",
-  "total_inmates": 4,
-  "posted_count": 3,
+  "created_at": "2026-05-31T02:40:14.262725-05:00",
+  "total_inmates": 10,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "NUR, AHMED ISMAIL",
+        "Full Name": "TAYLOR, ELIJAH F",
         "Charge 1": "No charge listed",
-        "Bail": "$400.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NUR_AHMED_ISMAIL.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TAYLOR_ELIJAH_F.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-30T05:49:21.046953-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "GIEHTBROCK, ADAM LEO",
+        "Full Name": "WUTSCHKE, DUSTIN BAILEY",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_GIEHTBROCK_ADAM_LEO.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WUTSCHKE_DUSTIN_BAILEY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-30T11:08:35.065559-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "JADAN ALVARADO, RAUL JUVENTINO",
+        "Full Name": "KING, HENRY ODANGA",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JADAN_ALVARADO_RAUL_JUVENTINO.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KING_HENRY_ODANGA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-30T14:22:00.035710-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "WALKER, OHAGI CHARLES",
+        "Full Name": "BARNARD, ANDREI EVGENY",
+        "Charge 1": "No charge listed",
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BARNARD_ANDREI_EVGENY.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 5,
+      "data": {
+        "Full Name": "FOXX, TAYLOR BERNARD RAMONE",
+        "Charge 1": "No charge listed",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_FOXX_TAYLOR_BERNARD_RAMONE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 6,
+      "data": {
+        "Full Name": "KAUBISCH, BANE JARED LEE JR",
+        "Charge 1": "No charge listed",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_KAUBISCH_BANE_JARED_LEE_JR.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 7,
+      "data": {
+        "Full Name": "CANTE JIMENEZ, EDGAR SEBASTIAN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WALKER_OHAGI_CHARLES.jpg"
+        "Mugshot_File": "mugshots/mugshot_CANTE_JIMENEZ_EDGAR_SEBASTIAN.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 8,
+      "data": {
+        "Full Name": "GOMEZ BANUELOS, JOSE ANTONIO",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GOMEZ_BANUELOS_JOSE_ANTONIO.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 9,
+      "data": {
+        "Full Name": "JOHNSON, HAYDEN TORJUS",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_HAYDEN_TORJUS.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 10,
+      "data": {
+        "Full Name": "KUHN, JEFFREY GORDON",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_KUHN_JEFFREY_GORDON.jpg"
       },
       "posted": false,
       "posted_at": null
