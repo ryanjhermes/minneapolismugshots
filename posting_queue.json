@@ -1,7 +1,7 @@
 {
   "created_at": "2026-05-31T02:40:14.262725-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_WUTSCHKE_DUSTIN_BAILEY.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-05-31T11:13:56.051512-05:00"
     },
     {
       "id": 3,
