@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-05-31T02:40:14.262725-05:00",
-  "total_inmates": 10,
-  "posted_count": 2,
+  "created_at": "2026-06-01T04:09:45.821537-05:00",
+  "total_inmates": 6,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "TAYLOR, ELIJAH F",
+        "Full Name": "DUNLAP, DEYANNA RAE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TAYLOR_ELIJAH_F.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DUNLAP_DEYANNA_RAE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-31T03:51:48.040965-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "WUTSCHKE, DUSTIN BAILEY",
+        "Full Name": "OFTEDAHL, REID JESSE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WUTSCHKE_DUSTIN_BAILEY.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_OFTEDAHL_REID_JESSE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-05-31T11:13:56.051512-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "KING, HENRY ODANGA",
+        "Full Name": "AHMED, SAYNAB FARAH",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KING_HENRY_ODANGA.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_AHMED_SAYNAB_FARAH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "BARNARD, ANDREI EVGENY",
+        "Full Name": "BIES, JOSEPH LOUIS",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BARNARD_ANDREI_EVGENY.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BIES_JOSEPH_LOUIS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "FOXX, TAYLOR BERNARD RAMONE",
+        "Full Name": "LABNO, DALLAS MICHAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_FOXX_TAYLOR_BERNARD_RAMONE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_LABNO_DALLAS_MICHAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,54 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "KAUBISCH, BANE JARED LEE JR",
-        "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_KAUBISCH_BANE_JARED_LEE_JR.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 7,
-      "data": {
-        "Full Name": "CANTE JIMENEZ, EDGAR SEBASTIAN",
+        "Full Name": "ROLAND, DAYVEONTAY ROADIEZ",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CANTE_JIMENEZ_EDGAR_SEBASTIAN.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 8,
-      "data": {
-        "Full Name": "GOMEZ BANUELOS, JOSE ANTONIO",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GOMEZ_BANUELOS_JOSE_ANTONIO.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 9,
-      "data": {
-        "Full Name": "JOHNSON, HAYDEN TORJUS",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_HAYDEN_TORJUS.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 10,
-      "data": {
-        "Full Name": "KUHN, JEFFREY GORDON",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KUHN_JEFFREY_GORDON.jpg"
+        "Mugshot_File": "mugshots/mugshot_ROLAND_DAYVEONTAY_ROADIEZ.jpg"
       },
       "posted": false,
       "posted_at": null
