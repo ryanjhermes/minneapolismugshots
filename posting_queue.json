@@ -1,7 +1,7 @@
 {
   "created_at": "2026-06-04T03:12:48.022485-05:00",
   "total_inmates": 6,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_AMAYA_NOE_DURAN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-06-04T15:10:21.674685-05:00"
     },
     {
       "id": 3,
