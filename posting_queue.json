@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-06-03T03:47:54.914366-05:00",
+  "created_at": "2026-06-03T20:49:56.747632-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "RODRIGUEZ MAZO, ISAIAS",
-        "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RODRIGUEZ_MAZO_ISAIAS.jpg"
+        "Full Name": "CRIDDELL, CHRISEAN MARCELOUS",
+        "Charge 1": "FELON IN POSSESSION OF A FIREARM",
+        "Bail": "$250,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CRIDDELL_CHRISEAN_MARCELOUS.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-03T06:05:18.928207-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "HOULE, CLINTON ELLIOT JR",
-        "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOULE_CLINTON_ELLIOT_JR.jpg"
+        "Full Name": "AWUNI, GAMADA KADIR",
+        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AWUNI_GAMADA_KADIR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-03T11:56:36.015920-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "DAVIS, JARRED MARCELL",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DAVIS_JARRED_MARCELL.jpg"
+        "Full Name": "BEARD, JAMES EDWARD 3RD",
+        "Charge 1": "DOMESTIC ASSAULT-GM-SUBSEQUENT VIOLATION",
+        "Bail": "$30,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_BEARD_JAMES_EDWARD_3RD.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-03T16:00:09.630815-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "DIAZ CHAVEZ, MARVIN",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DIAZ_CHAVEZ_MARVIN.jpg"
+        "Full Name": "CARLBOM, JOHN LOREN-WARD",
+        "Charge 1": "OTHER COUNTY/FELONY",
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CARLBOM_JOHN_LOREN-WARD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "FANIYI, FADEYLAH ROSE COLE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FANIYI_FADEYLAH_ROSE_COLE.jpg"
+        "Full Name": "AYESTAS SANTOS, MARLON ARIEL",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AYESTAS_SANTOS_MARLON_ARIEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "GOLLNICK, CHRISTIAN WESLEY",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GOLLNICK_CHRISTIAN_WESLEY.jpg"
+        "Full Name": "BZDOK, BRIAN JAMES",
+        "Charge 1": "FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BZDOK_BRIAN_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "JORDAN, TEONNA LORAY",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JORDAN_TEONNA_LORAY.jpg"
+        "Full Name": "DAVILAR, MALCOLM OMARI",
+        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DAVILAR_MALCOLM_OMARI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "KING-SMITH, JASON LEE",
-        "Charge 1": "No charge listed",
+        "Full Name": "AGAPOVA, KARINA VALERIEVNA",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KING-SMITH_JASON_LEE.jpg"
+        "Mugshot_File": "mugshots/mugshot_AGAPOVA_KARINA_VALERIEVNA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "LANDA ACOSTA, JOSE MARTIN",
-        "Charge 1": "No charge listed",
+        "Full Name": "BARRY-RISTOW, TESSA JADWIN",
+        "Charge 1": "THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LANDA_ACOSTA_JOSE_MARTIN.jpg"
+        "Mugshot_File": "mugshots/mugshot_BARRY-RISTOW_TESSA_JADWIN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "MANLEY, DARRELL LAMONT",
-        "Charge 1": "No charge listed",
+        "Full Name": "BIGBEAR, EVA DEAN",
+        "Charge 1": "OBSTRUCTING LEGAL PROCESS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MANLEY_DARRELL_LAMONT.jpg"
+        "Mugshot_File": "mugshots/mugshot_BIGBEAR_EVA_DEAN.jpg"
       },
       "posted": false,
       "posted_at": null
