@@ -1,15 +1,15 @@
 {
-  "created_at": "2026-06-03T22:20:41.366176-05:00",
-  "total_inmates": 10,
+  "created_at": "2026-06-04T03:12:48.022485-05:00",
+  "total_inmates": 6,
   "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "CRIDDELL, CHRISEAN MARCELOUS",
+        "Full Name": "TERRY-FORD, KEVEONA TAMYRA",
         "Charge 1": "No charge listed",
-        "Bail": "$250,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CRIDDELL_CHRISEAN_MARCELOUS.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TERRY-FORD_KEVEONA_TAMYRA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -17,10 +17,10 @@
     {
       "id": 2,
       "data": {
-        "Full Name": "MATTHEWS, ANTOINE LASHAWN",
+        "Full Name": "AMAYA, NOE DURAN",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MATTHEWS_ANTOINE_LASHAWN.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_AMAYA_NOE_DURAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "data": {
-        "Full Name": "FEAZELL, RICO FONTEZ",
+        "Full Name": "ANDERSON, DYLAN MICHAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FEAZELL_RICO_FONTEZ.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ANDERSON_DYLAN_MICHAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "HARPER, DEJA DUPRI",
+        "Full Name": "HASHI, AHMED MAULID",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HARPER_DEJA_DUPRI.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_HASHI_AHMED_MAULID.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "AWUNI, GAMADA KADIR",
+        "Full Name": "JOHNSON, JOVAN ALEXANDER",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AWUNI_GAMADA_KADIR.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_JOVAN_ALEXANDER.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,54 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "BEARD, JAMES EDWARD 3RD",
+        "Full Name": "KOVACEVIC, ZLATKO",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_BEARD_JAMES_EDWARD_3RD.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 7,
-      "data": {
-        "Full Name": "FISHER, JYRIE LEE",
-        "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_FISHER_JYRIE_LEE.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 8,
-      "data": {
-        "Full Name": "SPENCER, JERMAINE JR",
-        "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SPENCER_JERMAINE_JR.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 9,
-      "data": {
-        "Full Name": "CARLBOM, JOHN LOREN-WARD",
-        "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CARLBOM_JOHN_LOREN-WARD.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 10,
-      "data": {
-        "Full Name": "DAVIS, MIJIER RNELL",
-        "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DAVIS_MIJIER_RNELL.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_KOVACEVIC_ZLATKO.jpg"
       },
       "posted": false,
       "posted_at": null
