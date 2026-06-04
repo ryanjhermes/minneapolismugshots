@@ -197,11 +197,11 @@ class FieldExtractor:
     def _extract_charge(self, page_text):
         """Extract primary charge using multiple strategies"""
         self.log("Extracting charge information...", "DEBUG")
-        
+
         lines = page_text.split('\n')
         for i, line in enumerate(lines):
             line = line.strip()
-            
+
             # Look for charge patterns
             if line == 'Charge: 1':
                 # Look for description in next few lines
@@ -212,7 +212,7 @@ class FieldExtractor:
                             self.extracted_data['Charge 1'] = charge_desc
                             self.log(f"Found charge: {charge_desc}", "SUCCESS")
                             return
-        
+
         self.log("No valid charge found", "WARNING")
     
     def _is_valid_charge(self, charge):
@@ -585,9 +585,12 @@ def generate_caption(data):
         else:
             bail_display = bail
         
-        # Single consistent caption format (without charge field)
+        # Build charge line only when a real charge is present
+        invalid_charge_values = ['No charge listed', 'Charge information not available', '']
+        charge_line = f"CHARGE: {charge}\n" if charge not in invalid_charge_values else ""
+
         caption = f"""
-NAME: {name}
+{charge_line}NAME: {name}
 BAIL: {bail_display}
 
 Arrest Date: {get_current_date()}
