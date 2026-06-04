@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-06-03T20:49:56.747632-05:00",
+  "created_at": "2026-06-03T22:20:41.366176-05:00",
   "total_inmates": 10,
   "posted_count": 0,
   "inmates": [
@@ -7,7 +7,7 @@
       "id": 1,
       "data": {
         "Full Name": "CRIDDELL, CHRISEAN MARCELOUS",
-        "Charge 1": "FELON IN POSSESSION OF A FIREARM",
+        "Charge 1": "No charge listed",
         "Bail": "$250,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_CRIDDELL_CHRISEAN_MARCELOUS.jpg"
       },
@@ -17,10 +17,10 @@
     {
       "id": 2,
       "data": {
-        "Full Name": "AWUNI, GAMADA KADIR",
-        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AWUNI_GAMADA_KADIR.jpg"
+        "Full Name": "MATTHEWS, ANTOINE LASHAWN",
+        "Charge 1": "No charge listed",
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MATTHEWS_ANTOINE_LASHAWN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "data": {
-        "Full Name": "BEARD, JAMES EDWARD 3RD",
-        "Charge 1": "DOMESTIC ASSAULT-GM-SUBSEQUENT VIOLATION",
-        "Bail": "$30,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_BEARD_JAMES_EDWARD_3RD.jpg"
+        "Full Name": "FEAZELL, RICO FONTEZ",
+        "Charge 1": "No charge listed",
+        "Bail": "$75,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FEAZELL_RICO_FONTEZ.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "CARLBOM, JOHN LOREN-WARD",
-        "Charge 1": "OTHER COUNTY/FELONY",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CARLBOM_JOHN_LOREN-WARD.jpg"
+        "Full Name": "HARPER, DEJA DUPRI",
+        "Charge 1": "No charge listed",
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HARPER_DEJA_DUPRI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "AYESTAS SANTOS, MARLON ARIEL",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AYESTAS_SANTOS_MARLON_ARIEL.jpg"
+        "Full Name": "AWUNI, GAMADA KADIR",
+        "Charge 1": "No charge listed",
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AWUNI_GAMADA_KADIR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "BZDOK, BRIAN JAMES",
-        "Charge 1": "FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BZDOK_BRIAN_JAMES.jpg"
+        "Full Name": "BEARD, JAMES EDWARD 3RD",
+        "Charge 1": "No charge listed",
+        "Bail": "$30,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_BEARD_JAMES_EDWARD_3RD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "DAVILAR, MALCOLM OMARI",
-        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DAVILAR_MALCOLM_OMARI.jpg"
+        "Full Name": "FISHER, JYRIE LEE",
+        "Charge 1": "No charge listed",
+        "Bail": "$30,000.00 BAIL/BOND W/ CR",
+        "Mugshot_File": "mugshots/mugshot_FISHER_JYRIE_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "AGAPOVA, KARINA VALERIEVNA",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_AGAPOVA_KARINA_VALERIEVNA.jpg"
+        "Full Name": "SPENCER, JERMAINE JR",
+        "Charge 1": "No charge listed",
+        "Bail": "$25,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SPENCER_JERMAINE_JR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "BARRY-RISTOW, TESSA JADWIN",
-        "Charge 1": "THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BARRY-RISTOW_TESSA_JADWIN.jpg"
+        "Full Name": "CARLBOM, JOHN LOREN-WARD",
+        "Charge 1": "No charge listed",
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CARLBOM_JOHN_LOREN-WARD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "BIGBEAR, EVA DEAN",
-        "Charge 1": "OBSTRUCTING LEGAL PROCESS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BIGBEAR_EVA_DEAN.jpg"
+        "Full Name": "DAVIS, MIJIER RNELL",
+        "Charge 1": "No charge listed",
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DAVIS_MIJIER_RNELL.jpg"
       },
       "posted": false,
       "posted_at": null
