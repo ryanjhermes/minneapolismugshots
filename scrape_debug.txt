@@ -1,0 +1,1418 @@
+✅ BLIP filter imported successfully
+🧪 Running in TEST MODE - processing 25 inmates, filtering to top 10 highest priority (charge + bail)
+Opening Hennepin County Jail Roster...
+Page Title: Hennepin County Sheriff - Jail Roster
+Current URL: https://jailroster.hennepin.us/
+⏳ Waiting for page content to fully load...
+⚠️  Website appears to be unavailable or down
+
+🗓️  Attempting to fill form with current date...
+
+🗓️  Using current date for form input...
+📅 Current date (Central Time): 06/03/2026
+
+📅 Filling 'From' date field...
+Looking for date field with identifier: minDate
+✅ Found date field by formcontrolname
+📍 Field info - Tag: input, Type: date
+📍 Field attributes - ID: _um2fhj19l, Name: minDate
+📍 Initial field value: ''
+📍 Using HTML5 date format: 06/03/2026 → 2026-06-03
+🔄 Trying Method 1: Careful JavaScript
+📍 Value after careful JavaScript: '2026-06-03'
+✅ Method 1 SUCCESS: 2026-06-03
+
+📅 Filling 'To' date field...
+Looking for date field with identifier: maxDate
+✅ Found date field by formcontrolname
+📍 Field info - Tag: input, Type: date
+📍 Field attributes - ID: _ui68xi8we, Name: maxDate
+📍 Initial field value: ''
+📍 Using HTML5 date format: 06/03/2026 → 2026-06-03
+🔄 Trying Method 1: Careful JavaScript
+📍 Value after careful JavaScript: '2026-06-03'
+✅ Method 1 SUCCESS: 2026-06-03
+
+🔽 Setting results per page to 100...
+🔽 Looking for dropdown to select option: 100
+✅ Found dropdown with 100 option
+📍 Dropdown info - Tag: select, ID: _n4bpboqye
+🔄 Trying Method 1: Selenium Select
+✅ Selected by visible text: 100
+
+✅ Successfully filled form with today's date: 06/03/2026
+✅ Both 'from' and 'to' fields filled
+✅ Successfully set results per page to 100
+
+⏳ Waiting for search results to load...
+
+🚀 Starting batch processing of booking IDs (limit: inmate_limit)...
+
+🔄 Processing multiple bookings using BookingProcessor (limit: 25)...
+
+🚀 Starting batch processing (limit: 25)...
+
+🔍 Looking for booking IDs (limit: 25)...
+📋 Found booking ID: 2026011378
+📋 Found booking ID: 2026011432
+📋 Found booking ID: 2026011412
+📋 Found booking ID: 2026011368
+📋 Found booking ID: 2026011440
+📋 Found booking ID: 2026011406
+📋 Found booking ID: 2026011380
+📋 Found booking ID: 2026011423
+📋 Found booking ID: 2026011399
+📋 Found booking ID: 2026011407
+📋 Found booking ID: 2026011427
+📋 Found booking ID: 2026011402
+📋 Found booking ID: 2026011431
+📋 Found booking ID: 2026011388
+📋 Found booking ID: 2026011373
+📋 Found booking ID: 2026011401
+📋 Found booking ID: 2026011443
+📋 Found booking ID: 2026011434
+📋 Found booking ID: 2026011441
+📋 Found booking ID: 2026011396
+📋 Found booking ID: 2026011371
+📋 Found booking ID: 2026011438
+📋 Found booking ID: 2026011442
+📋 Found booking ID: 2026011370
+📋 Found booking ID: 2026011382
+✅ Found 25 booking IDs
+
+==================================================
+🔄 Processing booking 1/25: 2026011378
+==================================================
+🖱️  Clicking booking ID: 2026011378
+ℹ️ Starting field extraction...
+🔍 Page content length: 11561 characters
+🔍 Extracting full name...
+✅ Found name: AGAPOVA, KARINA VALERIEVNA
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (8 found):
+   [ 29] 'Charged By:'
+   [ 30]   -> 'ANOKA HENNEPIN DRUG TASK FORCE'
+   [ 31]   -> 'Clear Reason:'
+   [ 32]   -> 'Hold Without Bail:'
+   [ 37] 'Charge: 1'
+   [ 38]   -> 'Description:'
+   [ 39]   -> 'DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP'
+   [ 40]   -> 'Severity of Charge:'
+   [ 40] 'Severity of Charge:'
+   [ 41]   -> 'Felony'
+   [ 42]   -> 'Statute:'
+   [ 43]   -> '152.025.2(1)'
+   [ 44] 'Charge Status:'
+   [ 45]   -> 'Case Details'
+   [ 46]   -> 'Case Type:'
+   [ 47]   -> 'HOLD OTHER MN AGENCY'
+   [ 49] 'Charged By:'
+   [ 50]   -> "ANOKA COUNTY SHERIFF'S OFFICE"
+   [ 51]   -> 'Clear Reason:'
+   [ 52]   -> 'Hold Without Bail:'
+   [ 55] 'Charge: 1'
+   [ 56]   -> 'Description:'
+   [ 57]   -> 'OTHER COUNTY/FELONY'
+   [ 58]   -> 'Severity of Charge:'
+   [ 58] 'Severity of Charge:'
+   [ 59]   -> 'Statute:'
+   [ 60]   -> '123B'
+   [ 61]   -> 'Charge Status:'
+   [ 61] 'Charge Status:'
+   [ 62]   -> 'CLOSE'
+   [ 63]   -> 'End of modal content'
+   [ 64]   -> 'boundary'
+✅ Found charge: DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_AGAPOVA_KARINA_VALERIEVNA.jpg
+✅ Saved mugshot: mugshots/mugshot_AGAPOVA_KARINA_VALERIEVNA.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: AGAPOVA, KARINA VALERIEVNA
+ℹ️ Charge 1: DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: mugshots/mugshot_AGAPOVA_KARINA_VALERIEVNA.jpg
+📊 Posting Priority: 1/2 (Charge: ✅, Bail: ❌)
+✅ ACCEPTED: AGAPOVA, KARINA VALERIEVNA (Priority: 1/2)
+
+==================================================
+🔄 Processing booking 2/25: 2026011432
+==================================================
+🖱️  Clicking booking ID: 2026011432
+ℹ️ Starting field extraction...
+🔍 Page content length: 11123 characters
+🔍 Extracting full name...
+✅ Found name: ALSUP, KAVALE JOHN
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (4 found):
+   [ 26] 'Charged By:'
+   [ 27]   -> 'METRO TRANSIT PD'
+   [ 28]   -> 'Clear Reason:'
+   [ 29]   -> 'Hold Without Bail:'
+   [ 32] 'Charge: 1'
+   [ 33]   -> 'Description:'
+   [ 34]   -> 'TRESPASSING'
+   [ 35]   -> 'Severity of Charge:'
+   [ 35] 'Severity of Charge:'
+   [ 36]   -> 'Probable Cause'
+   [ 37]   -> 'Statute:'
+   [ 38]   -> '609.605'
+   [ 39] 'Charge Status:'
+   [ 40]   -> 'CLOSE'
+   [ 41]   -> 'End of modal content'
+   [ 42]   -> 'HENNEPIN COUNTY'
+✅ Found charge: TRESPASSING
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 3 image elements
+⚠️ No mugshot image found
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: ALSUP, KAVALE JOHN
+ℹ️ Charge 1: TRESPASSING
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: No Image
+📊 Posting Priority: 1/2 (Charge: ✅, Bail: ❌)
+⚠️  Validation Issues: Missing mugshot
+⏭️  REJECTED: ALSUP, KAVALE JOHN - Missing: Missing mugshot
+
+==================================================
+🔄 Processing booking 3/25: 2026011412
+==================================================
+🖱️  Clicking booking ID: 2026011412
+ℹ️ Starting field extraction...
+🔍 Page content length: 11241 characters
+🔍 Extracting full name...
+✅ Found name: AWUNI, GAMADA KADIR
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (4 found):
+   [ 28] 'Charged By:'
+   [ 29]   -> 'METRO TRANSIT PD'
+   [ 30]   -> 'Clear Reason:'
+   [ 31]   -> 'Hold Without Bail:'
+   [ 37] 'Charge: 1'
+   [ 38]   -> 'Description:'
+   [ 39]   -> 'THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT'
+   [ 40]   -> 'Severity of Charge:'
+   [ 40] 'Severity of Charge:'
+   [ 41]   -> 'Felony'
+   [ 42]   -> 'Statute:'
+   [ 43]   -> '609.52.2(A)(1)'
+   [ 44] 'Charge Status:'
+   [ 45]   -> 'CLOSE'
+   [ 46]   -> 'End of modal content'
+   [ 47]   -> 'HENNEPIN COUNTY'
+✅ Found charge: THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT
+🔍 Extracting bail information...
+✅ Found bail: $50,000.00 BAIL/BOND W/O CR
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_AWUNI_GAMADA_KADIR.jpg
+✅ Saved mugshot: mugshots/mugshot_AWUNI_GAMADA_KADIR.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: AWUNI, GAMADA KADIR
+ℹ️ Charge 1: THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT
+ℹ️ Bail: $50,000.00 BAIL/BOND W/O CR
+ℹ️ Mugshot_File: mugshots/mugshot_AWUNI_GAMADA_KADIR.jpg
+📊 Posting Priority: 2/2 (Charge: ✅, Bail: ✅)
+✅ ACCEPTED: AWUNI, GAMADA KADIR (Priority: 2/2)
+
+==================================================
+🔄 Processing booking 4/25: 2026011368
+==================================================
+🖱️  Clicking booking ID: 2026011368
+ℹ️ Starting field extraction...
+🔍 Page content length: 11286 characters
+🔍 Extracting full name...
+✅ Found name: AYESTAS SANTOS, MARLON ARIEL
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (5 found):
+   [ 25] 'TAB CHARGE'
+   [ 26]   -> 'MNCIS Case#:'
+   [ 27]   -> '27CR2614033'
+   [ 28]   -> 'Charged By:'
+   [ 28] 'Charged By:'
+   [ 29]   -> 'MINNEAPOLIS PD'
+   [ 30]   -> 'Clear Reason:'
+   [ 31]   -> 'CASE DISMISSED'
+   [ 36] 'Charge: 1'
+   [ 37]   -> 'Description:'
+   [ 38]   -> 'DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER'
+   [ 39]   -> 'Severity of Charge:'
+   [ 39] 'Severity of Charge:'
+   [ 40]   -> 'Misdemeanor'
+   [ 41]   -> 'Statute:'
+   [ 42]   -> '609.2242.1(2)'
+   [ 43] 'Charge Status:'
+   [ 44]   -> 'CLOSE'
+   [ 45]   -> 'End of modal content'
+   [ 46]   -> 'HENNEPIN COUNTY'
+✅ Found charge: DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER
+🔍 Extracting bail information...
+✅ Found bail: $10,000.00 BAIL/BOND W/O CR
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_AYESTAS_SANTOS_MARLON_ARIEL.jpg
+✅ Saved mugshot: mugshots/mugshot_AYESTAS_SANTOS_MARLON_ARIEL.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: AYESTAS SANTOS, MARLON ARIEL
+ℹ️ Charge 1: DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER
+ℹ️ Bail: $10,000.00 BAIL/BOND W/O CR
+ℹ️ Mugshot_File: mugshots/mugshot_AYESTAS_SANTOS_MARLON_ARIEL.jpg
+📊 Posting Priority: 2/2 (Charge: ✅, Bail: ✅)
+✅ ACCEPTED: AYESTAS SANTOS, MARLON ARIEL (Priority: 2/2)
+
+==================================================
+🔄 Processing booking 5/25: 2026011440
+==================================================
+🖱️  Clicking booking ID: 2026011440
+ℹ️ Starting field extraction...
+🔍 Page content length: 11264 characters
+🔍 Extracting full name...
+✅ Found name: BANKS, DALE ALLEN
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (7 found):
+   [ 26] 'Charged By:'
+   [ 27]   -> "HENNEPIN COUNTY SHERIFF'S OFFICE"
+   [ 28]   -> 'Clear Reason:'
+   [ 29]   -> 'Hold Without Bail:'
+   [ 32] 'Charge: 1'
+   [ 33]   -> 'Description:'
+   [ 34]   -> 'WEAPONS-DRIVE BY SHOOTING'
+   [ 35]   -> 'Severity of Charge:'
+   [ 35] 'Severity of Charge:'
+   [ 36]   -> 'Probable Cause'
+   [ 37]   -> 'Statute:'
+   [ 38]   -> '609.66.1E'
+   [ 39] 'Charge Status:'
+   [ 40]   -> 'Charge: 2'
+   [ 41]   -> 'Description:'
+   [ 42]   -> 'WEAPONS'
+   [ 40] 'Charge: 2'
+   [ 41]   -> 'Description:'
+   [ 42]   -> 'WEAPONS'
+   [ 43]   -> 'Severity of Charge:'
+   [ 43] 'Severity of Charge:'
+   [ 44]   -> 'Probable Cause'
+   [ 45]   -> 'Statute:'
+   [ 46]   -> '609.66'
+   [ 47] 'Charge Status:'
+   [ 48]   -> 'CLOSE'
+   [ 49]   -> 'End of modal content'
+   [ 50]   -> 'HENNEPIN COUNTY'
+✅ Found charge: WEAPONS-DRIVE BY SHOOTING
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 3 image elements
+⚠️ No mugshot image found
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: BANKS, DALE ALLEN
+ℹ️ Charge 1: WEAPONS-DRIVE BY SHOOTING
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: No Image
+📊 Posting Priority: 1/2 (Charge: ✅, Bail: ❌)
+⚠️  Validation Issues: Missing mugshot
+⏭️  REJECTED: BANKS, DALE ALLEN - Missing: Missing mugshot
+
+==================================================
+🔄 Processing booking 6/25: 2026011406
+==================================================
+🖱️  Clicking booking ID: 2026011406
+ℹ️ Starting field extraction...
+🔍 Page content length: 12674 characters
+🔍 Extracting full name...
+✅ Found name: BARRY-RISTOW, TESSA JADWIN
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (26 found):
+   [ 28] 'Charged By:'
+   [ 29]   -> 'EDINA PD'
+   [ 30]   -> 'Clear Reason:'
+   [ 31]   -> 'Hold Without Bail:'
+   [ 36] 'Charge: 1'
+   [ 37]   -> 'Description:'
+   [ 38]   -> 'THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT'
+   [ 39]   -> 'Severity of Charge:'
+   [ 39] 'Severity of Charge:'
+   [ 40]   -> 'Felony'
+   [ 41]   -> 'Statute:'
+   [ 42]   -> '609.52.2(A)(17)'
+   [ 43] 'Charge Status:'
+   [ 44]   -> 'Charge: 2'
+   [ 45]   -> 'Description:'
+   [ 46]   -> 'DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP'
+   [ 44] 'Charge: 2'
+   [ 45]   -> 'Description:'
+   [ 46]   -> 'DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP'
+   [ 47]   -> 'Severity of Charge:'
+   [ 47] 'Severity of Charge:'
+   [ 48]   -> 'Felony'
+   [ 49]   -> 'Statute:'
+   [ 50]   -> '152.025.2(1)'
+   [ 51] 'Charge Status:'
+   [ 52]   -> 'Case Details'
+   [ 53]   -> 'Case Type:'
+   [ 54]   -> 'HENNEPIN WARRANT'
+   [ 57] 'Charged By:'
+   [ 58]   -> "HENNEPIN COUNTY SHERIFF'S OFFICE"
+   [ 59]   -> 'Clear Reason:'
+   [ 60]   -> 'Hold Without Bail:'
+   [ 63] 'Charge: 1'
+   [ 64]   -> 'Description:'
+   [ 65]   -> 'FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE'
+   [ 66]   -> 'Severity of Charge:'
+   [ 66] 'Severity of Charge:'
+   [ 67]   -> 'Statute:'
+   [ 68]   -> '609.487.6'
+   [ 69]   -> 'Charge Status:'
+   [ 69] 'Charge Status:'
+   [ 70]   -> 'Charge: 2'
+   [ 71]   -> 'Description:'
+   [ 72]   -> 'MOTOR VEHICLE REGISTRATION - UNREGISTERED - CERTAIN ACTS FORBIDDEN'
+   [ 70] 'Charge: 2'
+   [ 71]   -> 'Description:'
+   [ 72]   -> 'MOTOR VEHICLE REGISTRATION - UNREGISTERED - CERTAIN ACTS FORBIDDEN'
+   [ 73]   -> 'Severity of Charge:'
+   [ 73] 'Severity of Charge:'
+   [ 74]   -> 'Statute:'
+   [ 75]   -> '168.36.2'
+   [ 76]   -> 'Charge Status:'
+   [ 76] 'Charge Status:'
+   [ 77]   -> 'Case Details'
+   [ 78]   -> 'Case Type:'
+   [ 79]   -> 'HENNEPIN WARRANT'
+   [ 82] 'Charged By:'
+   [ 83]   -> 'WAYZATA PD'
+   [ 84]   -> 'Clear Reason:'
+   [ 85]   -> 'Hold Without Bail:'
+   [ 88] 'Charge: 1'
+   [ 89]   -> 'Description:'
+   [ 90]   -> 'RECEIVING STOLEN PROPERTY'
+   [ 91]   -> 'Severity of Charge:'
+   [ 91] 'Severity of Charge:'
+   [ 92]   -> 'Statute:'
+   [ 93]   -> '609.53.1'
+   [ 94]   -> 'Charge Status:'
+   [ 94] 'Charge Status:'
+   [ 95]   -> 'Case Details'
+   [ 96]   -> 'Case Type:'
+   [ 97]   -> 'HENNEPIN WARRANT'
+   [100] 'Charged By:'
+   [101]   -> 'BLOOMINGTON PD'
+   [102]   -> 'Clear Reason:'
+   [103]   -> 'Hold Without Bail:'
+   [106] 'Charge: 1'
+   [107]   -> 'Description:'
+   [108]   -> 'BURGLARY-2ND DEGREE-DWELLING'
+   [109]   -> 'Severity of Charge:'
+   [109] 'Severity of Charge:'
+   [110]   -> 'Statute:'
+   [111]   -> '609.582.2(A)(1)'
+   [112]   -> 'Charge Status:'
+   [112] 'Charge Status:'
+   [113]   -> 'Case Details'
+   [114]   -> 'Case Type:'
+   [115]   -> 'HENNEPIN WARRANT'
+   [118] 'Charged By:'
+   [119]   -> 'ROBBINSDALE PD'
+   [120]   -> 'Clear Reason:'
+   [121]   -> 'Hold Without Bail:'
+   [124] 'Charge: 1'
+   [125]   -> 'Description:'
+   [126]   -> 'RECEIVING STOLEN PROPERTY'
+   [127]   -> 'Severity of Charge:'
+   [127] 'Severity of Charge:'
+   [128]   -> 'Statute:'
+   [129]   -> '609.53.1'
+   [130]   -> 'Charge Status:'
+   [130] 'Charge Status:'
+   [131]   -> 'CLOSE'
+   [132]   -> 'End of modal content'
+   [133]   -> 'HENNEPIN COUNTY'
+✅ Found charge: THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_BARRY-RISTOW_TESSA_JADWIN.jpg
+✅ Saved mugshot: mugshots/mugshot_BARRY-RISTOW_TESSA_JADWIN.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: BARRY-RISTOW, TESSA JADWIN
+ℹ️ Charge 1: THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: mugshots/mugshot_BARRY-RISTOW_TESSA_JADWIN.jpg
+📊 Posting Priority: 1/2 (Charge: ✅, Bail: ❌)
+✅ ACCEPTED: BARRY-RISTOW, TESSA JADWIN (Priority: 1/2)
+
+==================================================
+🔄 Processing booking 7/25: 2026011380
+==================================================
+🖱️  Clicking booking ID: 2026011380
+ℹ️ Starting field extraction...
+🔍 Page content length: 11551 characters
+🔍 Extracting full name...
+✅ Found name: BEARD, JAMES EDWARD 3RD
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (11 found):
+   [ 25] 'TAB CHARGE'
+   [ 26]   -> 'MNCIS Case#:'
+   [ 27]   -> '27CR2614045'
+   [ 28]   -> 'Charged By:'
+   [ 28] 'Charged By:'
+   [ 29]   -> 'MINNEAPOLIS PD'
+   [ 30]   -> 'Clear Reason:'
+   [ 31]   -> 'Hold Without Bail:'
+   [ 37] 'Charge: 1'
+   [ 38]   -> 'Description:'
+   [ 39]   -> 'DOMESTIC ASSAULT-GM-SUBSEQUENT VIOLATION'
+   [ 40]   -> 'Severity of Charge:'
+   [ 40] 'Severity of Charge:'
+   [ 41]   -> 'Gross Misdemeanor'
+   [ 42]   -> 'Statute:'
+   [ 43]   -> '609.2242.2'
+   [ 44] 'Charge Status:'
+   [ 45]   -> 'Charge: 2'
+   [ 46]   -> 'Description:'
+   [ 47]   -> 'DOMESTIC ASSAULT-GM-SUBSEQUENT VIOLATION'
+   [ 45] 'Charge: 2'
+   [ 46]   -> 'Description:'
+   [ 47]   -> 'DOMESTIC ASSAULT-GM-SUBSEQUENT VIOLATION'
+   [ 48]   -> 'Severity of Charge:'
+   [ 48] 'Severity of Charge:'
+   [ 49]   -> 'Gross Misdemeanor'
+   [ 50]   -> 'Statute:'
+   [ 51]   -> '609.2242.2'
+   [ 52] 'Charge Status:'
+   [ 53]   -> 'Charge: 3'
+   [ 54]   -> 'Description:'
+   [ 55]   -> 'DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER'
+   [ 53] 'Charge: 3'
+   [ 54]   -> 'Description:'
+   [ 55]   -> 'DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER'
+   [ 56]   -> 'Severity of Charge:'
+   [ 56] 'Severity of Charge:'
+   [ 57]   -> 'Statute:'
+   [ 58]   -> '609.2242.1(2)'
+   [ 59]   -> 'Charge Status:'
+   [ 59] 'Charge Status:'
+   [ 60]   -> 'CLOSE'
+   [ 61]   -> 'End of modal content'
+   [ 62]   -> 'HENNEPIN COUNTY'
+✅ Found charge: DOMESTIC ASSAULT-GM-SUBSEQUENT VIOLATION
+🔍 Extracting bail information...
+✅ Found bail: $30,000.00 BAIL/BOND W/ CR
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_BEARD_JAMES_EDWARD_3RD.jpg
+✅ Saved mugshot: mugshots/mugshot_BEARD_JAMES_EDWARD_3RD.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: BEARD, JAMES EDWARD 3RD
+ℹ️ Charge 1: DOMESTIC ASSAULT-GM-SUBSEQUENT VIOLATION
+ℹ️ Bail: $30,000.00 BAIL/BOND W/ CR
+ℹ️ Mugshot_File: mugshots/mugshot_BEARD_JAMES_EDWARD_3RD.jpg
+📊 Posting Priority: 2/2 (Charge: ✅, Bail: ✅)
+✅ ACCEPTED: BEARD, JAMES EDWARD 3RD (Priority: 2/2)
+
+==================================================
+🔄 Processing booking 8/25: 2026011423
+==================================================
+🖱️  Clicking booking ID: 2026011423
+ℹ️ Starting field extraction...
+🔍 Page content length: 11116 characters
+🔍 Extracting full name...
+✅ Found name: BIGBEAR, EVA DEAN
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (4 found):
+   [ 24] 'Charged By:'
+   [ 25]   -> 'MINNEAPOLIS PD'
+   [ 26]   -> 'Clear Reason:'
+   [ 27]   -> 'Hold Without Bail:'
+   [ 30] 'Charge: 1'
+   [ 31]   -> 'Description:'
+   [ 32]   -> 'OBSTRUCTING LEGAL PROCESS'
+   [ 33]   -> 'Severity of Charge:'
+   [ 33] 'Severity of Charge:'
+   [ 34]   -> 'Probable Cause'
+   [ 35]   -> 'Statute:'
+   [ 36]   -> '609.50'
+   [ 37] 'Charge Status:'
+   [ 38]   -> 'CLOSE'
+   [ 39]   -> 'End of modal content'
+   [ 40]   -> 'HENNEPIN COUNTY'
+✅ Found charge: OBSTRUCTING LEGAL PROCESS
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_BIGBEAR_EVA_DEAN.jpg
+✅ Saved mugshot: mugshots/mugshot_BIGBEAR_EVA_DEAN.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: BIGBEAR, EVA DEAN
+ℹ️ Charge 1: OBSTRUCTING LEGAL PROCESS
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: mugshots/mugshot_BIGBEAR_EVA_DEAN.jpg
+📊 Posting Priority: 1/2 (Charge: ✅, Bail: ❌)
+✅ ACCEPTED: BIGBEAR, EVA DEAN (Priority: 1/2)
+
+==================================================
+🔄 Processing booking 9/25: 2026011399
+==================================================
+🖱️  Clicking booking ID: 2026011399
+ℹ️ Starting field extraction...
+🔍 Page content length: 11488 characters
+🔍 Extracting full name...
+✅ Found name: BRAZELTON, ARMONI AJEWEL
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (10 found):
+   [ 28] 'Charged By:'
+   [ 29]   -> 'BLOOMINGTON PD'
+   [ 30]   -> 'Clear Reason:'
+   [ 31]   -> 'COMMITTED'
+   [ 35] 'Charge: 1'
+   [ 36]   -> 'Description:'
+   [ 37]   -> 'ASSAULT-1ST DEGREE-GREAT BODILY HARM'
+   [ 38]   -> 'Severity of Charge:'
+   [ 38] 'Severity of Charge:'
+   [ 39]   -> 'Felony'
+   [ 40]   -> 'Statute:'
+   [ 41]   -> '609.221.1'
+   [ 42] 'Charge Status:'
+   [ 43]   -> 'Charge: 2'
+   [ 44]   -> 'Description:'
+   [ 45]   -> 'ASSAULT-2ND DEGREE-DANGEROUS WEAPON-SUBSTANTIAL BODILY HARM'
+   [ 43] 'Charge: 2'
+   [ 44]   -> 'Description:'
+   [ 45]   -> 'ASSAULT-2ND DEGREE-DANGEROUS WEAPON-SUBSTANTIAL BODILY HARM'
+   [ 46]   -> 'Severity of Charge:'
+   [ 46] 'Severity of Charge:'
+   [ 47]   -> 'Felony'
+   [ 48]   -> 'Statute:'
+   [ 49]   -> '609.222.2'
+   [ 50] 'Charge Status:'
+   [ 51]   -> 'Charge: 3'
+   [ 52]   -> 'Description:'
+   [ 53]   -> 'CRIMINAL VEHICULAR OPERATION - SUBSTANTIAL BODILY HARM - GROSS NEGLIGENCE'
+   [ 51] 'Charge: 3'
+   [ 52]   -> 'Description:'
+   [ 53]   -> 'CRIMINAL VEHICULAR OPERATION - SUBSTANTIAL BODILY HARM - GROSS NEGLIGENCE'
+   [ 54]   -> 'Severity of Charge:'
+   [ 54] 'Severity of Charge:'
+   [ 55]   -> 'Statute:'
+   [ 56]   -> '609.2113.2(1)'
+   [ 57]   -> 'Charge Status:'
+   [ 57] 'Charge Status:'
+   [ 58]   -> 'CLOSE'
+   [ 59]   -> 'End of modal content'
+   [ 60]   -> 'HENNEPIN COUNTY'
+✅ Found charge: ASSAULT-1ST DEGREE-GREAT BODILY HARM
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_BRAZELTON_ARMONI_AJEWEL.jpg
+✅ Saved mugshot: mugshots/mugshot_BRAZELTON_ARMONI_AJEWEL.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: BRAZELTON, ARMONI AJEWEL
+ℹ️ Charge 1: ASSAULT-1ST DEGREE-GREAT BODILY HARM
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: mugshots/mugshot_BRAZELTON_ARMONI_AJEWEL.jpg
+📊 Posting Priority: 1/2 (Charge: ✅, Bail: ❌)
+✅ ACCEPTED: BRAZELTON, ARMONI AJEWEL (Priority: 1/2)
+
+==================================================
+🔄 Processing booking 10/25: 2026011407
+==================================================
+🖱️  Clicking booking ID: 2026011407
+ℹ️ Starting field extraction...
+🔍 Page content length: 11598 characters
+🔍 Extracting full name...
+✅ Found name: BROWN, DEAVONNA FERNETTA
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (8 found):
+   [ 26] 'Charged By:'
+   [ 27]   -> 'MINNEAPOLIS PD'
+   [ 28]   -> 'Clear Reason:'
+   [ 29]   -> 'Hold Without Bail:'
+   [ 34] 'Charge: 1'
+   [ 35]   -> 'Description:'
+   [ 36]   -> 'DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP'
+   [ 37]   -> 'Severity of Charge:'
+   [ 37] 'Severity of Charge:'
+   [ 38]   -> 'Felony'
+   [ 39]   -> 'Statute:'
+   [ 40]   -> '152.025.2(1)'
+   [ 41] 'Charge Status:'
+   [ 42]   -> 'Case Details'
+   [ 43]   -> 'Case Type:'
+   [ 44]   -> 'HENNEPIN WARRANT'
+   [ 47] 'Charged By:'
+   [ 48]   -> 'METRO TRANSIT PD'
+   [ 49]   -> 'Clear Reason:'
+   [ 50]   -> 'Hold Without Bail:'
+   [ 53] 'Charge: 1'
+   [ 54]   -> 'Description:'
+   [ 55]   -> 'DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP'
+   [ 56]   -> 'Severity of Charge:'
+   [ 56] 'Severity of Charge:'
+   [ 57]   -> 'Statute:'
+   [ 58]   -> '152.025.2(1)'
+   [ 59]   -> 'Charge Status:'
+   [ 59] 'Charge Status:'
+   [ 60]   -> 'CLOSE'
+   [ 61]   -> 'End of modal content'
+   [ 62]   -> 'HENNEPIN COUNTY'
+✅ Found charge: DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_BROWN_DEAVONNA_FERNETTA.jpg
+✅ Saved mugshot: mugshots/mugshot_BROWN_DEAVONNA_FERNETTA.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: BROWN, DEAVONNA FERNETTA
+ℹ️ Charge 1: DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: mugshots/mugshot_BROWN_DEAVONNA_FERNETTA.jpg
+📊 Posting Priority: 1/2 (Charge: ✅, Bail: ❌)
+✅ ACCEPTED: BROWN, DEAVONNA FERNETTA (Priority: 1/2)
+
+==================================================
+🔄 Processing booking 11/25: 2026011427
+==================================================
+🖱️  Clicking booking ID: 2026011427
+ℹ️ Starting field extraction...
+🔍 Page content length: 12057 characters
+🔍 Extracting full name...
+✅ Found name: BZDOK, BRIAN JAMES
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (17 found):
+   [ 24] 'TAB CHARGE'
+   [ 25]   -> 'MNCIS Case#:'
+   [ 26]   -> 'Charged By:'
+   [ 27]   -> 'UNIVERSITY OF MN PD'
+   [ 26] 'Charged By:'
+   [ 27]   -> 'UNIVERSITY OF MN PD'
+   [ 28]   -> 'Clear Reason:'
+   [ 29]   -> 'Hold Without Bail:'
+   [ 34] 'Charge: 1'
+   [ 35]   -> 'Description:'
+   [ 36]   -> 'FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE'
+   [ 37]   -> 'Severity of Charge:'
+   [ 37] 'Severity of Charge:'
+   [ 38]   -> 'Misdemeanor'
+   [ 39]   -> 'Statute:'
+   [ 40]   -> '609.487.6'
+   [ 41] 'Charge Status:'
+   [ 42]   -> 'Case Details'
+   [ 43]   -> 'Case Type:'
+   [ 44]   -> 'HENNEPIN WARRANT'
+   [ 47] 'Charged By:'
+   [ 48]   -> 'MAPLE GROVE PD'
+   [ 49]   -> 'Clear Reason:'
+   [ 50]   -> 'Hold Without Bail:'
+   [ 53] 'Charge: 1'
+   [ 54]   -> 'Description:'
+   [ 55]   -> 'FLEEING A PEACE OFFICER IN A MOTOR VEHICLE'
+   [ 56]   -> 'Severity of Charge:'
+   [ 56] 'Severity of Charge:'
+   [ 57]   -> 'Statute:'
+   [ 58]   -> '609.487.3'
+   [ 59]   -> 'Charge Status:'
+   [ 59] 'Charge Status:'
+   [ 60]   -> 'Case Details'
+   [ 61]   -> 'Case Type:'
+   [ 62]   -> 'HENNEPIN WARRANT'
+   [ 65] 'Charged By:'
+   [ 66]   -> 'MN STATE PATROL WEST'
+   [ 67]   -> 'Clear Reason:'
+   [ 68]   -> 'Hold Without Bail:'
+   [ 71] 'Charge: 1'
+   [ 72]   -> 'Description:'
+   [ 73]   -> 'FLEEING A PEACE OFFICER IN A MOTOR VEHICLE'
+   [ 74]   -> 'Severity of Charge:'
+   [ 74] 'Severity of Charge:'
+   [ 75]   -> 'Statute:'
+   [ 76]   -> '609.487.3'
+   [ 77]   -> 'Charge Status:'
+   [ 77] 'Charge Status:'
+   [ 78]   -> 'Case Details'
+   [ 79]   -> 'Case Type:'
+   [ 80]   -> 'HOLD OTHER MN AGENCY'
+   [ 82] 'Charged By:'
+   [ 83]   -> "WRIGHT COUNTY SHERIFF'S OFFICE"
+   [ 84]   -> 'Clear Reason:'
+   [ 85]   -> 'Hold Without Bail:'
+   [ 88] 'Charge: 1'
+   [ 89]   -> 'Description:'
+   [ 90]   -> 'OTHER COUNTY/FELONY'
+   [ 91]   -> 'Severity of Charge:'
+   [ 91] 'Severity of Charge:'
+   [ 92]   -> 'Statute:'
+   [ 93]   -> '123B'
+   [ 94]   -> 'Charge Status:'
+   [ 94] 'Charge Status:'
+   [ 95]   -> 'CLOSE'
+   [ 96]   -> 'End of modal content'
+   [ 97]   -> 'HENNEPIN COUNTY'
+✅ Found charge: FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE
+🔍 Extracting bail information...
+✅ Found bail: $300.00 BAIL/BOND W/O CR
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_BZDOK_BRIAN_JAMES.jpg
+✅ Saved mugshot: mugshots/mugshot_BZDOK_BRIAN_JAMES.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: BZDOK, BRIAN JAMES
+ℹ️ Charge 1: FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE
+ℹ️ Bail: $300.00 BAIL/BOND W/O CR
+ℹ️ Mugshot_File: mugshots/mugshot_BZDOK_BRIAN_JAMES.jpg
+📊 Posting Priority: 2/2 (Charge: ✅, Bail: ✅)
+✅ ACCEPTED: BZDOK, BRIAN JAMES (Priority: 2/2)
+
+==================================================
+🔄 Processing booking 12/25: 2026011402
+==================================================
+🖱️  Clicking booking ID: 2026011402
+ℹ️ Starting field extraction...
+🔍 Page content length: 11211 characters
+🔍 Extracting full name...
+✅ Found name: CARLBOM, JOHN LOREN-WARD
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (4 found):
+   [ 27] 'Charged By:'
+   [ 28]   -> "RAMSEY COUNTY SHERIFF'S OFFICE"
+   [ 29]   -> 'Clear Reason:'
+   [ 30]   -> 'RELEASED TO OTHER AUTHORITY'
+   [ 35] 'Charge: 1'
+   [ 36]   -> 'Description:'
+   [ 37]   -> 'OTHER COUNTY/FELONY'
+   [ 38]   -> 'Severity of Charge:'
+   [ 38] 'Severity of Charge:'
+   [ 39]   -> 'Felony'
+   [ 40]   -> 'Statute:'
+   [ 41]   -> '123B'
+   [ 42] 'Charge Status:'
+   [ 43]   -> 'CLOSE'
+   [ 44]   -> 'End of modal content'
+   [ 45]   -> 'HENNEPIN COUNTY'
+✅ Found charge: OTHER COUNTY/FELONY
+🔍 Extracting bail information...
+✅ Found bail: $20,000.00 BAIL/BOND W/O CR
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_CARLBOM_JOHN_LOREN-WARD.jpg
+✅ Saved mugshot: mugshots/mugshot_CARLBOM_JOHN_LOREN-WARD.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: CARLBOM, JOHN LOREN-WARD
+ℹ️ Charge 1: OTHER COUNTY/FELONY
+ℹ️ Bail: $20,000.00 BAIL/BOND W/O CR
+ℹ️ Mugshot_File: mugshots/mugshot_CARLBOM_JOHN_LOREN-WARD.jpg
+📊 Posting Priority: 2/2 (Charge: ✅, Bail: ✅)
+✅ ACCEPTED: CARLBOM, JOHN LOREN-WARD (Priority: 2/2)
+
+==================================================
+🔄 Processing booking 13/25: 2026011431
+==================================================
+🖱️  Clicking booking ID: 2026011431
+ℹ️ Starting field extraction...
+🔍 Page content length: 11032 characters
+🔍 Extracting full name...
+✅ Found name: CARNEY, CHARLES JOSEPH
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (1 found):
+   [ 27] 'Charged By:'
+   [ 28]   -> 'MINNEAPOLIS PD'
+   [ 29]   -> 'Clear Reason:'
+   [ 30]   -> 'Hold Without Bail:'
+⚠️ No valid charge found
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 3 image elements
+⚠️ No mugshot image found
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: CARNEY, CHARLES JOSEPH
+ℹ️ Charge 1: No charge listed
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: No Image
+📊 Posting Priority: 0/2 (Charge: ❌, Bail: ❌)
+⚠️  Validation Issues: Missing mugshot
+⏭️  REJECTED: CARNEY, CHARLES JOSEPH - Missing: Missing mugshot
+
+==================================================
+🔄 Processing booking 14/25: 2026011388
+==================================================
+🖱️  Clicking booking ID: 2026011388
+ℹ️ Starting field extraction...
+🔍 Page content length: 11049 characters
+🔍 Extracting full name...
+✅ Found name: CHRISTIANSON, SHANTEZ LEON LAWRENCE
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (1 found):
+   [ 27] 'Charged By:'
+   [ 28]   -> 'BROOKLYN PARK PD'
+   [ 29]   -> 'Clear Reason:'
+   [ 30]   -> 'Hold Without Bail:'
+⚠️ No valid charge found
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 3 image elements
+⚠️ No mugshot image found
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: CHRISTIANSON, SHANTEZ LEON LAWRENCE
+ℹ️ Charge 1: No charge listed
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: No Image
+📊 Posting Priority: 0/2 (Charge: ❌, Bail: ❌)
+⚠️  Validation Issues: Missing mugshot
+⏭️  REJECTED: CHRISTIANSON, SHANTEZ LEON LAWRENCE - Missing: Missing mugshot
+
+==================================================
+🔄 Processing booking 15/25: 2026011373
+==================================================
+🖱️  Clicking booking ID: 2026011373
+ℹ️ Starting field extraction...
+🔍 Page content length: 11172 characters
+🔍 Extracting full name...
+✅ Found name: COLE FANIYI, FADEYLAH ROSE
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (4 found):
+   [ 27] 'Charged By:'
+   [ 28]   -> 'BROOKLYN PARK PD'
+   [ 29]   -> 'Clear Reason:'
+   [ 30]   -> 'Hold Without Bail:'
+   [ 33] 'Charge: 1'
+   [ 34]   -> 'Description:'
+   [ 35]   -> 'CRIMINAL SEXUAL CONDUCT IN THE FIFTH DEGREE'
+   [ 36]   -> 'Severity of Charge:'
+   [ 36] 'Severity of Charge:'
+   [ 37]   -> 'Probable Cause'
+   [ 38]   -> 'Statute:'
+   [ 39]   -> '609.3451'
+   [ 40] 'Charge Status:'
+   [ 41]   -> 'CLOSE'
+   [ 42]   -> 'End of modal content'
+   [ 43]   -> 'HENNEPIN COUNTY'
+✅ Found charge: CRIMINAL SEXUAL CONDUCT IN THE FIFTH DEGREE
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_COLE_FANIYI_FADEYLAH_ROSE.jpg
+✅ Saved mugshot: mugshots/mugshot_COLE_FANIYI_FADEYLAH_ROSE.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: COLE FANIYI, FADEYLAH ROSE
+ℹ️ Charge 1: CRIMINAL SEXUAL CONDUCT IN THE FIFTH DEGREE
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: mugshots/mugshot_COLE_FANIYI_FADEYLAH_ROSE.jpg
+📊 Posting Priority: 1/2 (Charge: ✅, Bail: ❌)
+✅ ACCEPTED: COLE FANIYI, FADEYLAH ROSE (Priority: 1/2)
+
+==================================================
+🔄 Processing booking 16/25: 2026011401
+==================================================
+🖱️  Clicking booking ID: 2026011401
+ℹ️ Starting field extraction...
+🔍 Page content length: 11292 characters
+🔍 Extracting full name...
+✅ Found name: COOK, ROBERT BRANDON
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (5 found):
+   [ 26] 'Charged By:'
+   [ 27]   -> 'MINNETONKA PD'
+   [ 28]   -> 'Clear Reason:'
+   [ 29]   -> 'Hold Without Bail:'
+   [ 32] 'Charge: 1'
+   [ 33]   -> 'Description:'
+   [ 34]   -> 'THEFT-MOTOR VEHICLE'
+   [ 35]   -> 'Severity of Charge:'
+   [ 35] 'Severity of Charge:'
+   [ 36]   -> 'Probable Cause'
+   [ 37]   -> 'Statute:'
+   [ 38]   -> '609.52.1(10)'
+   [ 39] 'Charge Status:'
+   [ 40]   -> 'Case Details'
+   [ 41]   -> 'Case Type:'
+   [ 42]   -> 'HENNEPIN WARRANT'
+   [ 45] 'Charged By:'
+   [ 46]   -> 'MINNETONKA PD'
+   [ 47]   -> 'Clear Reason:'
+   [ 48]   -> 'Hold Without Bail:'
+✅ Found charge: THEFT-MOTOR VEHICLE
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 3 image elements
+⚠️ No mugshot image found
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: COOK, ROBERT BRANDON
+ℹ️ Charge 1: THEFT-MOTOR VEHICLE
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: No Image
+📊 Posting Priority: 1/2 (Charge: ✅, Bail: ❌)
+⚠️  Validation Issues: Missing mugshot
+⏭️  REJECTED: COOK, ROBERT BRANDON - Missing: Missing mugshot
+
+==================================================
+🔄 Processing booking 17/25: 2026011443
+==================================================
+🖱️  Clicking booking ID: 2026011443
+ℹ️ Starting field extraction...
+🔍 Page content length: 11287 characters
+🔍 Extracting full name...
+✅ Found name: COURNOYER, TARA MARIE
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (5 found):
+   [ 26] 'Charged By:'
+   [ 27]   -> 'METRO TRANSIT PD'
+   [ 28]   -> 'Clear Reason:'
+   [ 29]   -> 'Hold Without Bail:'
+   [ 32] 'Charge: 1'
+   [ 33]   -> 'Description:'
+   [ 34]   -> 'DRUGS - 5TH DEG'
+   [ 35]   -> 'Severity of Charge:'
+   [ 35] 'Severity of Charge:'
+   [ 36]   -> 'Probable Cause'
+   [ 37]   -> 'Statute:'
+   [ 38]   -> '152.025'
+   [ 39] 'Charge Status:'
+   [ 40]   -> 'Case Details'
+   [ 41]   -> 'Case Type:'
+   [ 42]   -> 'HOLD OTHER MN AGENCY'
+   [ 44] 'Charged By:'
+   [ 45]   -> 'METRO TRANSIT PD'
+   [ 46]   -> 'Clear Reason:'
+   [ 47]   -> 'Hold Without Bail:'
+✅ Found charge: DRUGS - 5TH DEG
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 3 image elements
+⚠️ No mugshot image found
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: COURNOYER, TARA MARIE
+ℹ️ Charge 1: DRUGS - 5TH DEG
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: No Image
+📊 Posting Priority: 1/2 (Charge: ✅, Bail: ❌)
+⚠️  Validation Issues: Missing mugshot
+⏭️  REJECTED: COURNOYER, TARA MARIE - Missing: Missing mugshot
+
+==================================================
+🔄 Processing booking 18/25: 2026011434
+==================================================
+🖱️  Clicking booking ID: 2026011434
+ℹ️ Starting field extraction...
+🔍 Page content length: 11304 characters
+🔍 Extracting full name...
+✅ Found name: CRIDDELL, CHRISEAN MARCELOUS
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (7 found):
+   [ 27] 'Charged By:'
+   [ 28]   -> 'ST LOUIS PARK PD'
+   [ 29]   -> 'Clear Reason:'
+   [ 30]   -> 'Hold Without Bail:'
+   [ 34] 'Charge: 1'
+   [ 35]   -> 'Description:'
+   [ 36]   -> 'FELON IN POSSESSION OF A FIREARM'
+   [ 37]   -> 'Severity of Charge:'
+   [ 37] 'Severity of Charge:'
+   [ 38]   -> 'Probable Cause'
+   [ 39]   -> 'Statute:'
+   [ 40]   -> '624.713'
+   [ 41] 'Charge Status:'
+   [ 42]   -> 'Charge: 2'
+   [ 43]   -> 'Description:'
+   [ 44]   -> 'DRUGS - 3RD DEGREE'
+   [ 42] 'Charge: 2'
+   [ 43]   -> 'Description:'
+   [ 44]   -> 'DRUGS - 3RD DEGREE'
+   [ 45]   -> 'Severity of Charge:'
+   [ 45] 'Severity of Charge:'
+   [ 46]   -> 'Probable Cause'
+   [ 47]   -> 'Statute:'
+   [ 48]   -> '152.023'
+   [ 49] 'Charge Status:'
+   [ 50]   -> 'CLOSE'
+   [ 51]   -> 'End of modal content'
+   [ 52]   -> 'HENNEPIN COUNTY'
+✅ Found charge: FELON IN POSSESSION OF A FIREARM
+🔍 Extracting bail information...
+✅ Found bail: $250,000.00 BAIL/BOND W/O CR
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_CRIDDELL_CHRISEAN_MARCELOUS.jpg
+✅ Saved mugshot: mugshots/mugshot_CRIDDELL_CHRISEAN_MARCELOUS.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: CRIDDELL, CHRISEAN MARCELOUS
+ℹ️ Charge 1: FELON IN POSSESSION OF A FIREARM
+ℹ️ Bail: $250,000.00 BAIL/BOND W/O CR
+ℹ️ Mugshot_File: mugshots/mugshot_CRIDDELL_CHRISEAN_MARCELOUS.jpg
+📊 Posting Priority: 2/2 (Charge: ✅, Bail: ✅)
+✅ ACCEPTED: CRIDDELL, CHRISEAN MARCELOUS (Priority: 2/2)
+
+==================================================
+🔄 Processing booking 19/25: 2026011441
+==================================================
+🖱️  Clicking booking ID: 2026011441
+ℹ️ Starting field extraction...
+🔍 Page content length: 11030 characters
+🔍 Extracting full name...
+✅ Found name: DAKANE, ABDI MOHAMED
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (1 found):
+   [ 27] 'Charged By:'
+   [ 28]   -> 'Clear Reason:'
+   [ 29]   -> 'Hold Without Bail:'
+   [ 30]   -> 'Bail Options:'
+⚠️ No valid charge found
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 3 image elements
+⚠️ No mugshot image found
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: DAKANE, ABDI MOHAMED
+ℹ️ Charge 1: No charge listed
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: No Image
+📊 Posting Priority: 0/2 (Charge: ❌, Bail: ❌)
+⚠️  Validation Issues: Missing mugshot
+⏭️  REJECTED: DAKANE, ABDI MOHAMED - Missing: Missing mugshot
+
+==================================================
+🔄 Processing booking 20/25: 2026011396
+==================================================
+🖱️  Clicking booking ID: 2026011396
+ℹ️ Starting field extraction...
+🔍 Page content length: 11322 characters
+🔍 Extracting full name...
+✅ Found name: DAVILAR, MALCOLM OMARI
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (4 found):
+   [ 28] 'Charged By:'
+   [ 29]   -> 'BLOOMINGTON PD'
+   [ 30]   -> 'Clear Reason:'
+   [ 31]   -> 'CERTIFICATE OF RELEASE'
+   [ 39] 'Charge: 1'
+   [ 40]   -> 'Description:'
+   [ 41]   -> 'THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT'
+   [ 42]   -> 'Severity of Charge:'
+   [ 42] 'Severity of Charge:'
+   [ 43]   -> 'Misdemeanor'
+   [ 44]   -> 'Statute:'
+   [ 45]   -> '609.52.2(A)(1)'
+   [ 46] 'Charge Status:'
+   [ 47]   -> 'CLOSE'
+   [ 48]   -> 'End of modal content'
+   [ 49]   -> 'HENNEPIN COUNTY'
+✅ Found charge: THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT
+🔍 Extracting bail information...
+✅ Found bail: $300.00 BAIL/BOND W/O CR
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_DAVILAR_MALCOLM_OMARI.jpg
+✅ Saved mugshot: mugshots/mugshot_DAVILAR_MALCOLM_OMARI.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: DAVILAR, MALCOLM OMARI
+ℹ️ Charge 1: THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT
+ℹ️ Bail: $300.00 BAIL/BOND W/O CR
+ℹ️ Mugshot_File: mugshots/mugshot_DAVILAR_MALCOLM_OMARI.jpg
+📊 Posting Priority: 2/2 (Charge: ✅, Bail: ✅)
+✅ ACCEPTED: DAVILAR, MALCOLM OMARI (Priority: 2/2)
+
+==================================================
+🔄 Processing booking 21/25: 2026011371
+==================================================
+🖱️  Clicking booking ID: 2026011371
+ℹ️ Starting field extraction...
+🔍 Page content length: 11156 characters
+🔍 Extracting full name...
+✅ Found name: DAVIS, JARRED MARCELL
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (4 found):
+   [ 27] 'Charged By:'
+   [ 28]   -> 'METRO TRANSIT PD'
+   [ 29]   -> 'Clear Reason:'
+   [ 30]   -> 'Hold Without Bail:'
+   [ 33] 'Charge: 1'
+   [ 34]   -> 'Description:'
+   [ 35]   -> 'DRUGS - 3RD DEGREE'
+   [ 36]   -> 'Severity of Charge:'
+   [ 36] 'Severity of Charge:'
+   [ 37]   -> 'Probable Cause'
+   [ 38]   -> 'Statute:'
+   [ 39]   -> '152.023'
+   [ 40] 'Charge Status:'
+   [ 41]   -> 'CLOSE'
+   [ 42]   -> 'End of modal content'
+   [ 43]   -> 'HENNEPIN COUNTY'
+✅ Found charge: DRUGS - 3RD DEGREE
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_DAVIS_JARRED_MARCELL.jpg
+✅ Saved mugshot: mugshots/mugshot_DAVIS_JARRED_MARCELL.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: DAVIS, JARRED MARCELL
+ℹ️ Charge 1: DRUGS - 3RD DEGREE
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: mugshots/mugshot_DAVIS_JARRED_MARCELL.jpg
+📊 Posting Priority: 1/2 (Charge: ✅, Bail: ❌)
+✅ ACCEPTED: DAVIS, JARRED MARCELL (Priority: 1/2)
+
+==================================================
+🔄 Processing booking 22/25: 2026011438
+==================================================
+🖱️  Clicking booking ID: 2026011438
+ℹ️ Starting field extraction...
+🔍 Page content length: 11012 characters
+🔍 Extracting full name...
+✅ Found name: DAVIS, MIJIER RNELL
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (1 found):
+   [ 27] 'Charged By:'
+   [ 28]   -> 'Clear Reason:'
+   [ 29]   -> 'Hold Without Bail:'
+   [ 30]   -> 'Bail Options:'
+⚠️ No valid charge found
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 3 image elements
+⚠️ No mugshot image found
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: DAVIS, MIJIER RNELL
+ℹ️ Charge 1: No charge listed
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: No Image
+📊 Posting Priority: 0/2 (Charge: ❌, Bail: ❌)
+⚠️  Validation Issues: Missing mugshot
+⏭️  REJECTED: DAVIS, MIJIER RNELL - Missing: Missing mugshot
+
+==================================================
+🔄 Processing booking 23/25: 2026011442
+==================================================
+🖱️  Clicking booking ID: 2026011442
+ℹ️ Starting field extraction...
+🔍 Page content length: 11111 characters
+🔍 Extracting full name...
+✅ Found name: DECOTEAU, MARIE RENAE
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (4 found):
+   [ 24] 'Charged By:'
+   [ 25]   -> 'MN STATE PATROL WEST'
+   [ 26]   -> 'Clear Reason:'
+   [ 27]   -> 'Hold Without Bail:'
+   [ 30] 'Charge: 1'
+   [ 31]   -> 'Description:'
+   [ 32]   -> 'DWI'
+   [ 33]   -> 'Severity of Charge:'
+   [ 33] 'Severity of Charge:'
+   [ 34]   -> 'Probable Cause'
+   [ 35]   -> 'Statute:'
+   [ 36]   -> '169A.20'
+   [ 37] 'Charge Status:'
+   [ 38]   -> 'CLOSE'
+   [ 39]   -> 'End of modal content'
+   [ 40]   -> 'HENNEPIN COUNTY'
+⚠️ No valid charge found
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 3 image elements
+⚠️ No mugshot image found
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: DECOTEAU, MARIE RENAE
+ℹ️ Charge 1: No charge listed
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: No Image
+📊 Posting Priority: 0/2 (Charge: ❌, Bail: ❌)
+⚠️  Validation Issues: Missing mugshot
+⏭️  REJECTED: DECOTEAU, MARIE RENAE - Missing: Missing mugshot
+
+==================================================
+🔄 Processing booking 24/25: 2026011370
+==================================================
+🖱️  Clicking booking ID: 2026011370
+ℹ️ Starting field extraction...
+🔍 Page content length: 11134 characters
+🔍 Extracting full name...
+✅ Found name: DIAZ CHAVEZ, MARVIN
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (4 found):
+   [ 27] 'Charged By:'
+   [ 28]   -> 'MN STATE PATROL WEST'
+   [ 29]   -> 'Clear Reason:'
+   [ 30]   -> 'Hold Without Bail:'
+   [ 33] 'Charge: 1'
+   [ 34]   -> 'Description:'
+   [ 35]   -> 'DWI'
+   [ 36]   -> 'Severity of Charge:'
+   [ 36] 'Severity of Charge:'
+   [ 37]   -> 'Probable Cause'
+   [ 38]   -> 'Statute:'
+   [ 39]   -> '169A.20'
+   [ 40] 'Charge Status:'
+   [ 41]   -> 'CLOSE'
+   [ 42]   -> 'End of modal content'
+   [ 43]   -> 'HENNEPIN COUNTY'
+⚠️ No valid charge found
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_DIAZ_CHAVEZ_MARVIN.jpg
+✅ Saved mugshot: mugshots/mugshot_DIAZ_CHAVEZ_MARVIN.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: DIAZ CHAVEZ, MARVIN
+ℹ️ Charge 1: No charge listed
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: mugshots/mugshot_DIAZ_CHAVEZ_MARVIN.jpg
+📊 Posting Priority: 0/2 (Charge: ❌, Bail: ❌)
+✅ ACCEPTED: DIAZ CHAVEZ, MARVIN (Priority: 0/2)
+
+==================================================
+🔄 Processing booking 25/25: 2026011382
+==================================================
+🖱️  Clicking booking ID: 2026011382
+ℹ️ Starting field extraction...
+🔍 Page content length: 11770 characters
+🔍 Extracting full name...
+✅ Found name: DIRIR, NAJAAD AHMED IGE
+🔍 Extracting charge information...
+🔍 DEBUG CHARGE LINES (14 found):
+   [ 27] 'Charged By:'
+   [ 28]   -> 'MINNEAPOLIS PD'
+   [ 29]   -> 'Clear Reason:'
+   [ 30]   -> 'Hold Without Bail:'
+   [ 33] 'Charge: 1'
+   [ 34]   -> 'Description:'
+   [ 35]   -> 'DOMESTIC ASSAULT'
+   [ 36]   -> 'Severity of Charge:'
+   [ 36] 'Severity of Charge:'
+   [ 37]   -> 'Probable Cause'
+   [ 38]   -> 'Statute:'
+   [ 39]   -> '609.2242'
+   [ 40] 'Charge Status:'
+   [ 41]   -> 'Charge: 2'
+   [ 42]   -> 'Description:'
+   [ 43]   -> 'CONTROLLED SUBSTANCE/NARCOTICS'
+   [ 41] 'Charge: 2'
+   [ 42]   -> 'Description:'
+   [ 43]   -> 'CONTROLLED SUBSTANCE/NARCOTICS'
+   [ 44]   -> 'Severity of Charge:'
+   [ 44] 'Severity of Charge:'
+   [ 45]   -> 'Probable Cause'
+   [ 46]   -> 'Statute:'
+   [ 47]   -> '152.02'
+   [ 48] 'Charge Status:'
+   [ 49]   -> 'Case Details'
+   [ 50]   -> 'Case Type:'
+   [ 51]   -> 'HENNEPIN WARRANT'
+   [ 54] 'Charged By:'
+   [ 55]   -> 'MINNEAPOLIS PD'
+   [ 56]   -> 'Clear Reason:'
+   [ 57]   -> 'Hold Without Bail:'
+   [ 60] 'Charge: 1'
+   [ 61]   -> 'Description:'
+   [ 62]   -> 'DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER'
+   [ 63]   -> 'Severity of Charge:'
+   [ 63] 'Severity of Charge:'
+   [ 64]   -> 'Statute:'
+   [ 65]   -> '609.2242.1(2)'
+   [ 66]   -> 'Charge Status:'
+   [ 66] 'Charge Status:'
+   [ 67]   -> 'Charge: 2'
+   [ 68]   -> 'Description:'
+   [ 69]   -> 'DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH'
+   [ 67] 'Charge: 2'
+   [ 68]   -> 'Description:'
+   [ 69]   -> 'DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH'
+   [ 70]   -> 'Severity of Charge:'
+   [ 70] 'Severity of Charge:'
+   [ 71]   -> 'Statute:'
+   [ 72]   -> '609.2242.1(1)'
+   [ 73]   -> 'Charge Status:'
+   [ 73] 'Charge Status:'
+   [ 74]   -> 'CLOSE'
+   [ 75]   -> 'End of modal content'
+   [ 76]   -> 'HENNEPIN COUNTY'
+✅ Found charge: DOMESTIC ASSAULT
+🔍 Extracting bail information...
+⚠️ No valid bail information found
+🔍 Looking for mugshot image...
+🔍 Found 5 image elements
+🔍 Found potential mugshot: Booking Photo
+✅ Saved mugshot image: mugshots/mugshot_DIRIR_NAJAAD_AHMED_IGE.jpg
+✅ Saved mugshot: mugshots/mugshot_DIRIR_NAJAAD_AHMED_IGE.jpg
+ℹ️ === EXTRACTION SUMMARY ===
+ℹ️ Full Name: DIRIR, NAJAAD AHMED IGE
+ℹ️ Charge 1: DOMESTIC ASSAULT
+ℹ️ Bail: No bail information
+ℹ️ Mugshot_File: mugshots/mugshot_DIRIR_NAJAAD_AHMED_IGE.jpg
+📊 Posting Priority: 1/2 (Charge: ✅, Bail: ❌)
+✅ ACCEPTED: DIRIR, NAJAAD AHMED IGE (Priority: 1/2)
+
+📊 PROCESSING SUMMARY:
+   Total IDs processed: 25
+   Accepted inmates: 16
+   Rejected inmates: 9
+   Average priority: 1.4/2
+
+💾 Saving data to jail_roster_data.csv...
+✅ Successfully saved 16 records to jail_roster_data.csv
+
+🎉 SUCCESS! Quality inmates (with mugshots + charges) saved to jail_roster_data.csv
+
+📊 SUMMARY - READY FOR POSTING:
+   1. AGAPOVA, KARINA VALERIEVNA - DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP - No bail information - Image: mugshots/mugshot_AGAPOVA_KARINA_VALERIEVNA.jpg
+   2. AWUNI, GAMADA KADIR - THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT - $50,000.00 BAIL/BOND W/O CR - Image: mugshots/mugshot_AWUNI_GAMADA_KADIR.jpg
+   3. AYESTAS SANTOS, MARLON ARIEL - DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER - $10,000.00 BAIL/BOND W/O CR - Image: mugshots/mugshot_AYESTAS_SANTOS_MARLON_ARIEL.jpg
+   4. BARRY-RISTOW, TESSA JADWIN - THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT - No bail information - Image: mugshots/mugshot_BARRY-RISTOW_TESSA_JADWIN.jpg
+   5. BEARD, JAMES EDWARD 3RD - DOMESTIC ASSAULT-GM-SUBSEQUENT VIOLATION - $30,000.00 BAIL/BOND W/ CR - Image: mugshots/mugshot_BEARD_JAMES_EDWARD_3RD.jpg
+   6. BIGBEAR, EVA DEAN - OBSTRUCTING LEGAL PROCESS - No bail information - Image: mugshots/mugshot_BIGBEAR_EVA_DEAN.jpg
+   7. BRAZELTON, ARMONI AJEWEL - ASSAULT-1ST DEGREE-GREAT BODILY HARM - No bail information - Image: mugshots/mugshot_BRAZELTON_ARMONI_AJEWEL.jpg
+   8. BROWN, DEAVONNA FERNETTA - DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP - No bail information - Image: mugshots/mugshot_BROWN_DEAVONNA_FERNETTA.jpg
+   9. BZDOK, BRIAN JAMES - FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE - $300.00 BAIL/BOND W/O CR - Image: mugshots/mugshot_BZDOK_BRIAN_JAMES.jpg
+   10. CARLBOM, JOHN LOREN-WARD - OTHER COUNTY/FELONY - $20,000.00 BAIL/BOND W/O CR - Image: mugshots/mugshot_CARLBOM_JOHN_LOREN-WARD.jpg
+   11. COLE FANIYI, FADEYLAH ROSE - CRIMINAL SEXUAL CONDUCT IN THE FIFTH DEGREE - No bail information - Image: mugshots/mugshot_COLE_FANIYI_FADEYLAH_ROSE.jpg
+   12. CRIDDELL, CHRISEAN MARCELOUS - FELON IN POSSESSION OF A FIREARM - $250,000.00 BAIL/BOND W/O CR - Image: mugshots/mugshot_CRIDDELL_CHRISEAN_MARCELOUS.jpg
+   13. DAVILAR, MALCOLM OMARI - THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT - $300.00 BAIL/BOND W/O CR - Image: mugshots/mugshot_DAVILAR_MALCOLM_OMARI.jpg
+   14. DAVIS, JARRED MARCELL - DRUGS - 3RD DEGREE - No bail information - Image: mugshots/mugshot_DAVIS_JARRED_MARCELL.jpg
+   15. DIAZ CHAVEZ, MARVIN - No charge listed - No bail information - Image: mugshots/mugshot_DIAZ_CHAVEZ_MARVIN.jpg
+   16. DIRIR, NAJAAD AHMED IGE - DOMESTIC ASSAULT - No bail information - Image: mugshots/mugshot_DIRIR_NAJAAD_AHMED_IGE.jpg
+
+📋 Saving quality inmates to posting queue...
+💾 Creating posting queue with 16 inmates...
+✅ Posting queue saved successfully
+📊 Queue stats: 10 inmates prioritized for posting
+🎯 Prioritized from 16 total inmates to top 10 by posting priority (charge + bail)
+
+🚀 COMPLETE SUCCESS! Data scraped, filtered to TOP 10 HIGHEST PRIORITY, and queued for posting!
+📅 Top 10 inmates will be posted throughout the day (up to 8 posts, every 3 hours)
+🎲 Random delays added to avoid Instagram automation detection
+Page content length: 11808 characters
+✅ Found 5 form elements - site appears functional
+
+✅ Processing complete! Closing browser...
+Browser closed.
