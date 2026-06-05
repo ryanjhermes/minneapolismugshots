@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-06-04T03:12:48.022485-05:00",
-  "total_inmates": 6,
-  "posted_count": 3,
+  "created_at": "2026-06-05T03:00:30.234013-05:00",
+  "total_inmates": 9,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "TERRY-FORD, KEVEONA TAMYRA",
+        "Full Name": "EGGERSGLUSS, EMILY SUE",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TERRY-FORD_KEVEONA_TAMYRA.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EGGERSGLUSS_EMILY_SUE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-04T05:00:27.280524-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "AMAYA, NOE DURAN",
+        "Full Name": "DAVIS, CHRISTOPHER EUGENE JAMAR",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_AMAYA_NOE_DURAN.jpg"
+        "Mugshot_File": "mugshots/mugshot_DAVIS_CHRISTOPHER_EUGENE_JAMAR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-04T15:10:21.674685-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "ANDERSON, DYLAN MICHAEL",
+        "Full Name": "FORD-IRBY, ANTWON DEMONT",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ANDERSON_DYLAN_MICHAEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_FORD-IRBY_ANTWON_DEMONT.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-04T23:04:09.113726-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "HASHI, AHMED MAULID",
+        "Full Name": "REYES, OSCAR ALBERTO",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HASHI_AHMED_MAULID.jpg"
+        "Mugshot_File": "mugshots/mugshot_REYES_OSCAR_ALBERTO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "JOHNSON, JOVAN ALEXANDER",
+        "Full Name": "ROBERTS, RAKENYA DEJAIRE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_JOVAN_ALEXANDER.jpg"
+        "Mugshot_File": "mugshots/mugshot_ROBERTS_RAKENYA_DEJAIRE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,43 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "KOVACEVIC, ZLATKO",
+        "Full Name": "SMITH, DOMINIC JOHN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KOVACEVIC_ZLATKO.jpg"
+        "Mugshot_File": "mugshots/mugshot_SMITH_DOMINIC_JOHN.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 7,
+      "data": {
+        "Full Name": "SMITH, JENNIFER NANCY",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_SMITH_JENNIFER_NANCY.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 8,
+      "data": {
+        "Full Name": "WABASHA, SHAWN MATTHEW",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WABASHA_SHAWN_MATTHEW.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 9,
+      "data": {
+        "Full Name": "WRIGHT, FLORENCE CHARLENE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WRIGHT_FLORENCE_CHARLENE.jpg"
       },
       "posted": false,
       "posted_at": null
