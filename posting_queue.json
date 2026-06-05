@@ -1,7 +1,7 @@
 {
   "created_at": "2026-06-05T03:00:30.234013-05:00",
   "total_inmates": 9,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_EGGERSGLUSS_EMILY_SUE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-06-05T04:57:59.288931-05:00"
     },
     {
       "id": 2,
