@@ -33,6 +33,8 @@ class Config:
     DEFAULT_INMATE_LIMIT = 100
     TEST_INMATE_LIMIT = 25
     MODAL_WAIT_TIME = 5
+    MODAL_CHARGE_WAIT_TIMEOUT = 10
+    MODAL_CHARGE_WAIT_TIMEOUT_CI = 25
     CLICK_WAIT_TIME = 3
     
     # Posting limits and scheduling
@@ -122,11 +124,79 @@ class FieldExtractor:
             prefix = {"INFO": "ℹ️", "SUCCESS": "✅", "ERROR": "❌", "WARNING": "⚠️", "DEBUG": "🔍"}
             print(f"{prefix.get(level, 'ℹ️')} {message}")
     
+    def _modal_charge_wait_timeout(self):
+        is_ci = os.getenv('CI') or os.getenv('GITHUB_ACTIONS')
+        return Config.MODAL_CHARGE_WAIT_TIMEOUT_CI if is_ci else Config.MODAL_CHARGE_WAIT_TIMEOUT
+
+    def _find_modal_element(self):
+        from selenium.webdriver.common.by import By
+
+        for selector in Config.MODAL_SELECTORS:
+            try:
+                modal = self.driver.find_element(By.CSS_SELECTOR, selector)
+                if modal.is_displayed():
+                    return modal
+            except Exception:
+                continue
+        return None
+
+    def _get_page_text(self):
+        from selenium.webdriver.common.by import By
+
+        modal = self._find_modal_element()
+        if modal and modal.text.strip():
+            return modal.text
+        return self.driver.find_element(By.TAG_NAME, 'body').text
+
+    def _wait_for_modal_charge_content(self):
+        from selenium.webdriver.common.by import By
+        from selenium.webdriver.support.ui import WebDriverWait
+        from selenium.webdriver.support import expected_conditions as EC
+        from selenium.common.exceptions import TimeoutException
+
+        timeout = self._modal_charge_wait_timeout()
+
+        try:
+            WebDriverWait(self.driver, timeout).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, '[role="dialog"], .modal, [class*="modal"]'))
+            )
+        except TimeoutException:
+            self.log("Modal container not found within timeout", "WARNING")
+            time.sleep(Config.MODAL_WAIT_TIME)
+            return
+
+        def charge_section_loaded(_driver):
+            text = self._get_page_text()
+            return 'Charge: 1' in text and 'Description:' in text
+
+        try:
+            WebDriverWait(self.driver, timeout).until(charge_section_loaded)
+            self.log("Charge section loaded in modal", "SUCCESS")
+            return
+        except TimeoutException:
+            self.log(
+                f"Charge section not ready after {timeout}s - scrolling modal and retrying",
+                "WARNING",
+            )
+
+        modal = self._find_modal_element()
+        if modal:
+            try:
+                self.driver.execute_script(
+                    "arguments[0].scrollTop = arguments[0].scrollHeight;",
+                    modal,
+                )
+                time.sleep(2)
+                WebDriverWait(self.driver, 5).until(charge_section_loaded)
+                self.log("Charge section loaded after scrolling modal", "SUCCESS")
+                return
+            except TimeoutException:
+                pass
+
+        time.sleep(Config.MODAL_WAIT_TIME)
+
     def extract_all_fields(self):
         """Main extraction method that orchestrates all field extraction"""
-        # Import selenium components needed for this method
-        from selenium.webdriver.common.by import By
-        
         self.log("Starting field extraction...", "INFO")
         
         # Reset extracted data for each new inmate
@@ -137,16 +207,24 @@ class FieldExtractor:
             'Mugshot_File': 'No Image'
         }
         
-        # Wait for modal to load
-        time.sleep(Config.MODAL_WAIT_TIME)
+        self._wait_for_modal_charge_content()
         
-        # Get page content
-        page_text = self.driver.find_element(By.TAG_NAME, 'body').text
+        page_text = self._get_page_text()
         self.log(f"Page content length: {len(page_text)} characters", "DEBUG")
         
         # Extract each field
         self._extract_name(page_text)
         self._extract_charge(page_text)
+
+        if not self.extracted_data['Charge 1']:
+            self.log("Charge missing after first pass - waiting and retrying", "WARNING")
+            time.sleep(3)
+            page_text = self._get_page_text()
+            self.log(f"Retry page content length: {len(page_text)} characters", "DEBUG")
+            self._extract_charge(page_text)
+            if not self.extracted_data['Bail']:
+                self._extract_bail(page_text)
+
         self._extract_bail(page_text)
         self._extract_mugshot()
         
@@ -194,24 +272,56 @@ class FieldExtractor:
         
         return True
     
+    def _extract_charge_from_lines(self, lines):
+        for i, line in enumerate(lines):
+            line = line.strip()
+
+            if line == 'Charge: 1':
+                for j in range(i + 1, min(i + 10, len(lines))):
+                    if lines[j].strip() == 'Description:' and j + 1 < len(lines):
+                        charge_desc = lines[j + 1].strip()
+                        if self._is_valid_charge(charge_desc):
+                            return charge_desc
+        return None
+
+    def _extract_charge_from_stacking_rows(self):
+        from selenium.webdriver.common.by import By
+
+        try:
+            rows = self.driver.find_elements(
+                By.CSS_SELECTOR,
+                '[class*="stacking-row"], .hcso-stacking-row',
+            )
+            for row in rows:
+                row_text = row.text.strip()
+                if not row_text.startswith('Description:'):
+                    continue
+                parts = row_text.split('\n', 1)
+                if len(parts) == 2 and self._is_valid_charge(parts[1].strip()):
+                    return parts[1].strip()
+                charge_desc = row_text.split(':', 1)[-1].strip()
+                if self._is_valid_charge(charge_desc):
+                    return charge_desc
+        except Exception as e:
+            self.log(f"Stacking-row charge extraction failed: {e}", "DEBUG")
+        return None
+
     def _extract_charge(self, page_text):
         """Extract primary charge using multiple strategies"""
         self.log("Extracting charge information...", "DEBUG")
 
         lines = page_text.split('\n')
-        for i, line in enumerate(lines):
-            line = line.strip()
+        charge_desc = self._extract_charge_from_lines(lines)
+        if charge_desc:
+            self.extracted_data['Charge 1'] = charge_desc
+            self.log(f"Found charge: {charge_desc}", "SUCCESS")
+            return
 
-            # Look for charge patterns
-            if line == 'Charge: 1':
-                # Look for description in next few lines
-                for j in range(i + 1, min(i + 10, len(lines))):
-                    if lines[j].strip() == 'Description:' and j + 1 < len(lines):
-                        charge_desc = lines[j + 1].strip()
-                        if self._is_valid_charge(charge_desc):
-                            self.extracted_data['Charge 1'] = charge_desc
-                            self.log(f"Found charge: {charge_desc}", "SUCCESS")
-                            return
+        charge_desc = self._extract_charge_from_stacking_rows()
+        if charge_desc:
+            self.extracted_data['Charge 1'] = charge_desc
+            self.log(f"Found charge from stacking-row: {charge_desc}", "SUCCESS")
+            return
 
         self.log("No valid charge found", "WARNING")
     
