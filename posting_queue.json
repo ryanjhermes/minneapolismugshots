@@ -1,48 +1,114 @@
 {
-  "created_at": "2026-06-07T02:47:31.046161-05:00",
-  "total_inmates": 4,
-  "posted_count": 3,
+  "created_at": "2026-06-08T03:46:34.732253-05:00",
+  "total_inmates": 10,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "EDWARDS, JORDAN KENNETH",
+        "Full Name": "SHIDE, MOHAMED ABDI",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_EDWARDS_JORDAN_KENNETH.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SHIDE_MOHAMED_ABDI.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-07T09:00:33.922989-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "HELDT, SAMSON LEE",
+        "Full Name": "PAULUK, JULIA LAURA",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HELDT_SAMSON_LEE.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_PAULUK_JULIA_LAURA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-07T14:29:05.435553-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "LARSON, CHRISTOPHER SHANE",
+        "Full Name": "FAIN, EUGENE JR",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LARSON_CHRISTOPHER_SHANE.jpg"
+        "Mugshot_File": "mugshots/mugshot_FAIN_EUGENE_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-07T23:18:26.266123-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "REYES MALDONADO, BENITO F",
+        "Full Name": "FOSTER, ALTON IVORY JOSEPH",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_REYES_MALDONADO_BENITO_F.jpg"
+        "Mugshot_File": "mugshots/mugshot_FOSTER_ALTON_IVORY_JOSEPH.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 5,
+      "data": {
+        "Full Name": "FREEMAN, DEMARCUS JAMES",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_FREEMAN_DEMARCUS_JAMES.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 6,
+      "data": {
+        "Full Name": "KAMARA, MARIAMA AMELIA",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_KAMARA_MARIAMA_AMELIA.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 7,
+      "data": {
+        "Full Name": "LOPEZ, GREGORY",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_LOPEZ_GREGORY.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 8,
+      "data": {
+        "Full Name": "LOTTMAN, CARLYE JO",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_LOTTMAN_CARLYE_JO.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 9,
+      "data": {
+        "Full Name": "NIEFER, JOE LEWIS",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_NIEFER_JOE_LEWIS.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 10,
+      "data": {
+        "Full Name": "NORRIS, MOSES CHRIS PATRICK",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_NORRIS_MOSES_CHRIS_PATRICK.jpg"
       },
       "posted": false,
       "posted_at": null
