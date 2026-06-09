@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-06-08T03:46:34.732253-05:00",
-  "total_inmates": 10,
-  "posted_count": 2,
+  "created_at": "2026-06-09T02:37:36.279918-05:00",
+  "total_inmates": 8,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "SHIDE, MOHAMED ABDI",
+        "Full Name": "MCCLAIN, JORDAN DEAN",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SHIDE_MOHAMED_ABDI.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MCCLAIN_JORDAN_DEAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-08T06:02:31.363419-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "PAULUK, JULIA LAURA",
+        "Full Name": "SEAMON, LEONARD DA VONANE 4TH",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_PAULUK_JULIA_LAURA.jpg"
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SEAMON_LEONARD_DA_VONANE_4TH.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-08T22:48:17.485281-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "FAIN, EUGENE JR",
+        "Full Name": "ADOGA, ELIZABETH VICTORIA",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FAIN_EUGENE_JR.jpg"
+        "Mugshot_File": "mugshots/mugshot_ADOGA_ELIZABETH_VICTORIA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "FOSTER, ALTON IVORY JOSEPH",
+        "Full Name": "AHMED, FARHYA SULIMAN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FOSTER_ALTON_IVORY_JOSEPH.jpg"
+        "Mugshot_File": "mugshots/mugshot_AHMED_FARHYA_SULIMAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "FREEMAN, DEMARCUS JAMES",
+        "Full Name": "KAHIN, AHMED MOHAMAD",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FREEMAN_DEMARCUS_JAMES.jpg"
+        "Mugshot_File": "mugshots/mugshot_KAHIN_AHMED_MOHAMAD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "KAMARA, MARIAMA AMELIA",
+        "Full Name": "SPRAGGINS, ODELL 3RD",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KAMARA_MARIAMA_AMELIA.jpg"
+        "Mugshot_File": "mugshots/mugshot_SPRAGGINS_ODELL_3RD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "LOPEZ, GREGORY",
+        "Full Name": "VELASQUEZ VELASQUEZ, GENRY HIGINIO",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LOPEZ_GREGORY.jpg"
+        "Mugshot_File": "mugshots/mugshot_VELASQUEZ_VELASQUEZ_GENRY_HIGINIO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,32 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "LOTTMAN, CARLYE JO",
+        "Full Name": "WHITE, GARY",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LOTTMAN_CARLYE_JO.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 9,
-      "data": {
-        "Full Name": "NIEFER, JOE LEWIS",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_NIEFER_JOE_LEWIS.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 10,
-      "data": {
-        "Full Name": "NORRIS, MOSES CHRIS PATRICK",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_NORRIS_MOSES_CHRIS_PATRICK.jpg"
+        "Mugshot_File": "mugshots/mugshot_WHITE_GARY.jpg"
       },
       "posted": false,
       "posted_at": null
