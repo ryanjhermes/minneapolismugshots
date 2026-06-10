@@ -1,7 +1,7 @@
 {
   "created_at": "2026-06-10T03:00:13.125399-05:00",
   "total_inmates": 8,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$0.00 NO BAIL REQUIRED",
         "Mugshot_File": "mugshots/mugshot_REID_CHAD_RICHARD.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-06-10T10:42:52.431718-05:00"
     },
     {
       "id": 3,
