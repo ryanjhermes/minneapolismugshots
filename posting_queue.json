@@ -1,7 +1,7 @@
 {
   "created_at": "2026-06-10T03:00:13.125399-05:00",
   "total_inmates": 8,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_HUSSEEN_OMAR_AHMED.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-06-10T23:14:55.676160-05:00"
     },
     {
       "id": 5,
