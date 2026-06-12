@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-06-11T03:29:00.008565-05:00",
+  "created_at": "2026-06-12T03:16:43.009402-05:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "TURNER, MAURKEYCE",
+        "Full Name": "BRIDGES, JAMARCUS ANTOWAN",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TURNER_MAURKEYCE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BRIDGES_JAMARCUS_ANTOWAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-11T15:26:44.433128-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "CANAFE ENRIQUEZ, MARCO ANDRES",
+        "Full Name": "TAMBA, JOSIAH GIFT",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CANAFE_ENRIQUEZ_MARCO_ANDRES.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TAMBA_JOSIAH_GIFT.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-11T23:16:44.095373-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "ERNST, MICHAEL CHRISTOPHER",
+        "Full Name": "TAYLOR, ROBERT DANIEL",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ERNST_MICHAEL_CHRISTOPHER.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TAYLOR_ROBERT_DANIEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "HOOVER, MINA YIM",
+        "Full Name": "HEDINE, JOHN EUGENE",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOOVER_MINA_YIM.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HEDINE_JOHN_EUGENE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "BIETER, CORETTA ANN",
+        "Full Name": "ALFONSO CAMELO, JERALDIN",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BIETER_CORETTA_ANN.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ALFONSO_CAMELO_JERALDIN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "FENIMORE, JONATHAN RICHARD",
+        "Full Name": "ANTTILA, WILLIAM EUGENE MILES",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FENIMORE_JONATHAN_RICHARD.jpg"
+        "Mugshot_File": "mugshots/mugshot_ANTTILA_WILLIAM_EUGENE_MILES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "HARDING, JORDON BRIANN",
+        "Full Name": "JACOBS, BRENDAN JOHN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HARDING_JORDON_BRIANN.jpg"
+        "Mugshot_File": "mugshots/mugshot_JACOBS_BRENDAN_JOHN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "HARRIS, DAVID SAMUEL",
+        "Full Name": "MACHUCA CORTEZ, CRISTIAN DAVID",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HARRIS_DAVID_SAMUEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_MACHUCA_CORTEZ_CRISTIAN_DAVID.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "MARTINEZ-ALVARADO, JUSTIN",
+        "Full Name": "OLSON, CHAD GERALD",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MARTINEZ-ALVARADO_JUSTIN.jpg"
+        "Mugshot_File": "mugshots/mugshot_OLSON_CHAD_GERALD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "MOHAMUD, ELMI YASSIN",
+        "Full Name": "OLSON, KRYSTAL ANN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MOHAMUD_ELMI_YASSIN.jpg"
+        "Mugshot_File": "mugshots/mugshot_OLSON_KRYSTAL_ANN.jpg"
       },
       "posted": false,
       "posted_at": null
