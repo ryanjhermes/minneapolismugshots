@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-06-12T03:16:43.009402-05:00",
+  "created_at": "2026-06-13T02:42:21.659084-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BRIDGES, JAMARCUS ANTOWAN",
+        "Full Name": "ROSS, NATALIE ELIZABETH",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BRIDGES_JAMARCUS_ANTOWAN.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROSS_NATALIE_ELIZABETH.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-12T05:19:12.026778-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "TAMBA, JOSIAH GIFT",
+        "Full Name": "MANTHEI, CRAIG PHILIP",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TAMBA_JOSIAH_GIFT.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MANTHEI_CRAIG_PHILIP.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-12T15:15:40.262754-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "TAYLOR, ROBERT DANIEL",
+        "Full Name": "TURNEY, MACAN SHALAUN",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TAYLOR_ROBERT_DANIEL.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TURNEY_MACAN_SHALAUN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-12T23:04:37.600999-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "HEDINE, JOHN EUGENE",
+        "Full Name": "ABDULLAHI, MOHAMED DAFLE",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HEDINE_JOHN_EUGENE.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ABDULLAHI_MOHAMED_DAFLE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "ALFONSO CAMELO, JERALDIN",
+        "Full Name": "HALE, GLENDA ANN",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ALFONSO_CAMELO_JERALDIN.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_HALE_GLENDA_ANN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "ANTTILA, WILLIAM EUGENE MILES",
+        "Full Name": "AGUILA, JOSE DANNIEL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ANTTILA_WILLIAM_EUGENE_MILES.jpg"
+        "Mugshot_File": "mugshots/mugshot_AGUILA_JOSE_DANNIEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "JACOBS, BRENDAN JOHN",
+        "Full Name": "CUSMAN, LIBAN ABDULLAHI",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JACOBS_BRENDAN_JOHN.jpg"
+        "Mugshot_File": "mugshots/mugshot_CUSMAN_LIBAN_ABDULLAHI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "MACHUCA CORTEZ, CRISTIAN DAVID",
+        "Full Name": "LOOMIS, SPENCER LEE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MACHUCA_CORTEZ_CRISTIAN_DAVID.jpg"
+        "Mugshot_File": "mugshots/mugshot_LOOMIS_SPENCER_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "OLSON, CHAD GERALD",
+        "Full Name": "PACIOREK, ZACHARY LEROY",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_OLSON_CHAD_GERALD.jpg"
+        "Mugshot_File": "mugshots/mugshot_PACIOREK_ZACHARY_LEROY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "OLSON, KRYSTAL ANN",
+        "Full Name": "PETERSEN, JEREMY MICHAEL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_OLSON_KRYSTAL_ANN.jpg"
+        "Mugshot_File": "mugshots/mugshot_PETERSEN_JEREMY_MICHAEL.jpg"
       },
       "posted": false,
       "posted_at": null
