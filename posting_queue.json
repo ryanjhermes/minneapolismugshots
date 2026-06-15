@@ -1,59 +1,59 @@
 {
-  "created_at": "2026-06-14T03:08:24.285717-05:00",
+  "created_at": "2026-06-15T04:52:34.866182-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BIRCH, HARLAND JOSEPH",
-        "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BIRCH_HARLAND_JOSEPH.jpg"
+        "Full Name": "EBANKS, CLAYTON KYLE",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EBANKS_CLAYTON_KYLE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-14T04:40:00.227847-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BACON, AWDREY RAIN",
+        "Full Name": "LEWIS, AARON LAMONT",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BACON_AWDREY_RAIN.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LEWIS_AARON_LAMONT.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-14T09:10:17.291409-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "MATTSON, DEREK JAMES",
+        "Full Name": "EBANKS, CLAYTON KYLE",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MATTSON_DEREK_JAMES.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EBANKS_CLAYTON_KYLE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-14T14:42:37.319981-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "MOORE, TYHEISHA TALONDA",
+        "Full Name": "TURCK, NICHOLAS GEORGE",
         "Charge 1": "No charge listed",
-        "Bail": "$600.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOORE_TYHEISHA_TALONDA.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TURCK_NICHOLAS_GEORGE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-14T23:45:45.312479-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "CAETANO, WESLEY GUSTAVO",
+        "Full Name": "CASEY, LAROYNE",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CAETANO_WESLEY_GUSTAVO.jpg"
+        "Bail": "$1,300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CASEY_LAROYNE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "FULTZ, JESSE KEITH",
+        "Full Name": "ABRAHAMSON, BRETT ANDREW",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FULTZ_JESSE_KEITH.jpg"
+        "Mugshot_File": "mugshots/mugshot_ABRAHAMSON_BRETT_ANDREW.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "HALL, WILLIAM HENRY",
+        "Full Name": "BAUTISTA MARTINEZ, JOSE LUIS",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HALL_WILLIAM_HENRY.jpg"
+        "Mugshot_File": "mugshots/mugshot_BAUTISTA_MARTINEZ_JOSE_LUIS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "HARRIS, DESHAUN LEE",
+        "Full Name": "CONNORS, JOHN RYAN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HARRIS_DESHAUN_LEE.jpg"
+        "Mugshot_File": "mugshots/mugshot_CONNORS_JOHN_RYAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "HARVEY, ORLANDO EUGENE",
+        "Full Name": "LEIBEL, SHAWN ROBERT",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HARVEY_ORLANDO_EUGENE.jpg"
+        "Mugshot_File": "mugshots/mugshot_LEIBEL_SHAWN_ROBERT.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "LAIRD, JAMAROUS LEMARK",
+        "Full Name": "LEON LEMA, LUIS DAVID",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LAIRD_JAMAROUS_LEMARK.jpg"
+        "Mugshot_File": "mugshots/mugshot_LEON_LEMA_LUIS_DAVID.jpg"
       },
       "posted": false,
       "posted_at": null
