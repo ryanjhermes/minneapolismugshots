@@ -1,7 +1,7 @@
 {
   "created_at": "2026-06-16T04:17:24.013184-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$1,600.00 CASH BAIL W/O CR",
         "Mugshot_File": "mugshots/mugshot_DEAN_JASON_DARWIN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-06-16T15:56:02.865356-05:00"
     },
     {
       "id": 3,
