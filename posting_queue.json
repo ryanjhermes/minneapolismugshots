@@ -1,59 +1,59 @@
 {
-  "created_at": "2026-06-15T04:52:34.866182-05:00",
+  "created_at": "2026-06-16T04:17:24.013184-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "EBANKS, CLAYTON KYLE",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EBANKS_CLAYTON_KYLE.jpg"
+        "Full Name": "VANG, SUMENG",
+        "Charge 1": "No charge listed",
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_VANG_SUMENG.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-15T07:22:20.988676-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "LEWIS, AARON LAMONT",
+        "Full Name": "DEAN, JASON DARWIN",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEWIS_AARON_LAMONT.jpg"
+        "Bail": "$1,600.00 CASH BAIL W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DEAN_JASON_DARWIN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-15T14:05:44.044812-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "EBANKS, CLAYTON KYLE",
+        "Full Name": "SIMS, HALEY VIRGINIA",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EBANKS_CLAYTON_KYLE.jpg"
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SIMS_HALEY_VIRGINIA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-15T18:05:04.225488-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "TURCK, NICHOLAS GEORGE",
+        "Full Name": "HOLMES, MACEO DWAYNE JR",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TURCK_NICHOLAS_GEORGE.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HOLMES_MACEO_DWAYNE_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-15T23:29:53.157501-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "CASEY, LAROYNE",
+        "Full Name": "WEBSTER, JENAE SHONTAE",
         "Charge 1": "No charge listed",
-        "Bail": "$1,300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CASEY_LAROYNE.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WEBSTER_JENAE_SHONTAE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "ABRAHAMSON, BRETT ANDREW",
+        "Full Name": "LALA INAMAGUA, SERGIO EDILBERTO",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ABRAHAMSON_BRETT_ANDREW.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_LALA_INAMAGUA_SERGIO_EDILBERTO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "BAUTISTA MARTINEZ, JOSE LUIS",
+        "Full Name": "BENZAQUEN, TALI RIVKA",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BAUTISTA_MARTINEZ_JOSE_LUIS.jpg"
+        "Mugshot_File": "mugshots/mugshot_BENZAQUEN_TALI_RIVKA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "CONNORS, JOHN RYAN",
+        "Full Name": "CHRISTIANS, GEORGE MARIO",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CONNORS_JOHN_RYAN.jpg"
+        "Mugshot_File": "mugshots/mugshot_CHRISTIANS_GEORGE_MARIO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "LEIBEL, SHAWN ROBERT",
+        "Full Name": "HAUTLA-KOSKIE, LEAH MARIE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LEIBEL_SHAWN_ROBERT.jpg"
+        "Mugshot_File": "mugshots/mugshot_HAUTLA-KOSKIE_LEAH_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "LEON LEMA, LUIS DAVID",
+        "Full Name": "PETERSON, LINDSAY DIXON",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LEON_LEMA_LUIS_DAVID.jpg"
+        "Mugshot_File": "mugshots/mugshot_PETERSON_LINDSAY_DIXON.jpg"
       },
       "posted": false,
       "posted_at": null
