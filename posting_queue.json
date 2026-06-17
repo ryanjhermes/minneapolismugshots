@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-06-16T04:17:24.013184-05:00",
+  "created_at": "2026-06-17T03:55:22.294565-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "VANG, SUMENG",
+        "Full Name": "ZEFERINO BALLINAS, JUAN MANUEL",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_VANG_SUMENG.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ZEFERINO_BALLINAS_JUAN_MANUEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-16T12:00:35.301274-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "DEAN, JASON DARWIN",
+        "Full Name": "FORREST, TEARIA DELORES",
         "Charge 1": "No charge listed",
-        "Bail": "$1,600.00 CASH BAIL W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DEAN_JASON_DARWIN.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FORREST_TEARIA_DELORES.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-16T15:56:02.865356-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "SIMS, HALEY VIRGINIA",
+        "Full Name": "SMITH, ABREEHA ANNALISA",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SIMS_HALEY_VIRGINIA.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_SMITH_ABREEHA_ANNALISA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-16T23:23:41.432580-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "HOLMES, MACEO DWAYNE JR",
+        "Full Name": "SWEEZY, LORINDA SHAWNTE",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOLMES_MACEO_DWAYNE_JR.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_SWEEZY_LORINDA_SHAWNTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "WEBSTER, JENAE SHONTAE",
+        "Full Name": "AKIS, WAYNE DEONTE",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WEBSTER_JENAE_SHONTAE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_AKIS_WAYNE_DEONTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "LALA INAMAGUA, SERGIO EDILBERTO",
+        "Full Name": "BENNETT, REED JOSEPH",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_LALA_INAMAGUA_SERGIO_EDILBERTO.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BENNETT_REED_JOSEPH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "BENZAQUEN, TALI RIVKA",
+        "Full Name": "DAVIS, MERCEDES WINTER",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BENZAQUEN_TALI_RIVKA.jpg"
+        "Mugshot_File": "mugshots/mugshot_DAVIS_MERCEDES_WINTER.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "CHRISTIANS, GEORGE MARIO",
+        "Full Name": "LEWIS, AMBROSE NOSOTTE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CHRISTIANS_GEORGE_MARIO.jpg"
+        "Mugshot_File": "mugshots/mugshot_LEWIS_AMBROSE_NOSOTTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "HAUTLA-KOSKIE, LEAH MARIE",
+        "Full Name": "MAHAMUD, ZAKARIE HASSAN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HAUTLA-KOSKIE_LEAH_MARIE.jpg"
+        "Mugshot_File": "mugshots/mugshot_MAHAMUD_ZAKARIE_HASSAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "PETERSON, LINDSAY DIXON",
+        "Full Name": "MURRAY-FORD, KAMIAH NEVEAH",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_PETERSON_LINDSAY_DIXON.jpg"
+        "Mugshot_File": "mugshots/mugshot_MURRAY-FORD_KAMIAH_NEVEAH.jpg"
       },
       "posted": false,
       "posted_at": null
