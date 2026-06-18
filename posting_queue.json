@@ -1,7 +1,7 @@
 {
   "created_at": "2026-06-18T03:30:45.063479-05:00",
   "total_inmates": 7,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$1,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_COX_JAIDA_LASHAE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-06-18T15:29:26.318990-05:00"
     },
     {
       "id": 3,
