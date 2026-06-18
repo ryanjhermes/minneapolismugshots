@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-06-17T03:55:22.294565-05:00",
-  "total_inmates": 10,
-  "posted_count": 2,
+  "created_at": "2026-06-18T03:30:45.063479-05:00",
+  "total_inmates": 7,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ZEFERINO BALLINAS, JUAN MANUEL",
+        "Full Name": "BARTH, DETRAYVEON SHAWN",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ZEFERINO_BALLINAS_JUAN_MANUEL.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BARTH_DETRAYVEON_SHAWN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-17T10:40:40.800433-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "FORREST, TEARIA DELORES",
+        "Full Name": "COX, JAIDA LASHAE",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FORREST_TEARIA_DELORES.jpg"
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_COX_JAIDA_LASHAE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-17T15:17:46.866285-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "SMITH, ABREEHA ANNALISA",
+        "Full Name": "AMEN, ASSA",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_SMITH_ABREEHA_ANNALISA.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_AMEN_ASSA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "SWEEZY, LORINDA SHAWNTE",
+        "Full Name": "BAILEY, DANIEL EDMOND",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_SWEEZY_LORINDA_SHAWNTE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BAILEY_DANIEL_EDMOND.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "AKIS, WAYNE DEONTE",
+        "Full Name": "DAVIS, ANTIONE ALVIN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_AKIS_WAYNE_DEONTE.jpg"
+        "Mugshot_File": "mugshots/mugshot_DAVIS_ANTIONE_ALVIN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "BENNETT, REED JOSEPH",
+        "Full Name": "MARCHAND, DARCY LEE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BENNETT_REED_JOSEPH.jpg"
+        "Mugshot_File": "mugshots/mugshot_MARCHAND_DARCY_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,43 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "DAVIS, MERCEDES WINTER",
+        "Full Name": "WARNER, CHRISTIAN ROBERT JR",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DAVIS_MERCEDES_WINTER.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 8,
-      "data": {
-        "Full Name": "LEWIS, AMBROSE NOSOTTE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LEWIS_AMBROSE_NOSOTTE.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 9,
-      "data": {
-        "Full Name": "MAHAMUD, ZAKARIE HASSAN",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MAHAMUD_ZAKARIE_HASSAN.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 10,
-      "data": {
-        "Full Name": "MURRAY-FORD, KAMIAH NEVEAH",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MURRAY-FORD_KAMIAH_NEVEAH.jpg"
+        "Mugshot_File": "mugshots/mugshot_WARNER_CHRISTIAN_ROBERT_JR.jpg"
       },
       "posted": false,
       "posted_at": null
