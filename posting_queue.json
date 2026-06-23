@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-06-22T04:38:41.608992-05:00",
-  "total_inmates": 10,
-  "posted_count": 2,
+  "created_at": "2026-06-23T02:38:02.119146-05:00",
+  "total_inmates": 5,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "KYOSTIA, SUSAN GAIL",
+        "Full Name": "VANG, MAYCE MAY",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_KYOSTIA_SUSAN_GAIL.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_VANG_MAYCE_MAY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-22T07:10:36.872710-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "NICHOLAS, DONTE TREVAUL",
+        "Full Name": "HOPSON, WILLIAM LAVELL",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_NICHOLAS_DONTE_TREVAUL.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HOPSON_WILLIAM_LAVELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-22T13:50:01.628837-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "BOBO, EDWARD LEE JR",
+        "Full Name": "SOMMERS, MICHAEL RAYMOND",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BOBO_EDWARD_LEE_JR.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SOMMERS_MICHAEL_RAYMOND.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "FOOTE, KENNY DEMETRIO",
+        "Full Name": "SMITH, GERALD LEWIS 3RD",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FOOTE_KENNY_DEMETRIO.jpg"
+        "Bail": "$500.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SMITH_GERALD_LEWIS_3RD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,65 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "HALL, JOEKARI JAHBREA",
+        "Full Name": "MARKIV, IVAN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HALL_JOEKARI_JAHBREA.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 6,
-      "data": {
-        "Full Name": "HARVEY, DAVONTE EL",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HARVEY_DAVONTE_EL.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 7,
-      "data": {
-        "Full Name": "HINES, JOYCE HAWA",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HINES_JOYCE_HAWA.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 8,
-      "data": {
-        "Full Name": "MUNRO, JOSEPH TREVOR",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MUNRO_JOSEPH_TREVOR.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 9,
-      "data": {
-        "Full Name": "VACANTI, JEFFREY DALE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_VACANTI_JEFFREY_DALE.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 10,
-      "data": {
-        "Full Name": "ZARATE LAZCANO, ROCIO ARIADNA",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ZARATE_LAZCANO_ROCIO_ARIADNA.jpg"
+        "Mugshot_File": "mugshots/mugshot_MARKIV_IVAN.jpg"
       },
       "posted": false,
       "posted_at": null
