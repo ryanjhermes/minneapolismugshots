@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-06-23T02:38:02.119146-05:00",
-  "total_inmates": 5,
-  "posted_count": 3,
+  "created_at": "2026-06-24T02:33:49.889320-05:00",
+  "total_inmates": 9,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "VANG, MAYCE MAY",
+        "Full Name": "PIESKE, LINCOLN PAUL",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_VANG_MAYCE_MAY.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_PIESKE_LINCOLN_PAUL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-23T04:47:27.296544-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "HOPSON, WILLIAM LAVELL",
+        "Full Name": "YOHANNES, BELAY ABIU",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOPSON_WILLIAM_LAVELL.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_YOHANNES_BELAY_ABIU.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-23T09:56:16.611989-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "SOMMERS, MICHAEL RAYMOND",
+        "Full Name": "BONSANTE, JONTE FELTON",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SOMMERS_MICHAEL_RAYMOND.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BONSANTE_JONTE_FELTON.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-23T15:10:41.953562-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "SMITH, GERALD LEWIS 3RD",
+        "Full Name": "CHACHA MOROCHO, WILINTON ISRAEL",
         "Charge 1": "No charge listed",
-        "Bail": "$500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SMITH_GERALD_LEWIS_3RD.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_CHACHA_MOROCHO_WILINTON_ISRAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,54 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "MARKIV, IVAN",
+        "Full Name": "FARRELL, KYLE EDWARD",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MARKIV_IVAN.jpg"
+        "Mugshot_File": "mugshots/mugshot_FARRELL_KYLE_EDWARD.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 6,
+      "data": {
+        "Full Name": "GALLION, CLIFTON DONTE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GALLION_CLIFTON_DONTE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 7,
+      "data": {
+        "Full Name": "JONES, NATHANIEL ANTHONY THEODORE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_JONES_NATHANIEL_ANTHONY_THEODORE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 8,
+      "data": {
+        "Full Name": "ROBERTS, ALEXANDER PAUL",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ROBERTS_ALEXANDER_PAUL.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 9,
+      "data": {
+        "Full Name": "TRENT, JOSHUA ADAM",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_TRENT_JOSHUA_ADAM.jpg"
       },
       "posted": false,
       "posted_at": null
