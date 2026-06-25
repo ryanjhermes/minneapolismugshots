@@ -1,7 +1,7 @@
 {
   "created_at": "2026-06-25T02:33:31.264976-05:00",
   "total_inmates": 6,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "id": 1,
@@ -33,8 +33,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_CONNER_MIA_ANNE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-06-25T17:24:23.807557-05:00"
     },
     {
       "id": 4,
