@@ -1,7 +1,7 @@
 {
   "created_at": "2026-06-26T02:42:15.574965-05:00",
   "total_inmates": 5,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$1,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_HERMAN_ALAN_RICHARD.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-06-26T09:31:35.664597-05:00"
     },
     {
       "id": 2,
