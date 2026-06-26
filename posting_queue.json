@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-06-25T02:33:31.264976-05:00",
-  "total_inmates": 6,
-  "posted_count": 3,
+  "created_at": "2026-06-26T02:42:15.574965-05:00",
+  "total_inmates": 5,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ABBOTT, MICHAEL DAVID",
+        "Full Name": "HERMAN, ALAN RICHARD",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ABBOTT_MICHAEL_DAVID.jpg"
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HERMAN_ALAN_RICHARD.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-25T04:28:16.982155-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "ADELMAN, KENDRA RAE",
+        "Full Name": "ANDREWS, CONNOR SEAN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ADELMAN_KENDRA_RAE.jpg"
+        "Mugshot_File": "mugshots/mugshot_ANDREWS_CONNOR_SEAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-25T09:39:08.493297-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "CONNER, MIA ANNE",
+        "Full Name": "BRAY, MATTHEW JERRY",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CONNER_MIA_ANNE.jpg"
+        "Mugshot_File": "mugshots/mugshot_BRAY_MATTHEW_JERRY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-25T17:24:23.807557-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "KAIR, KEVIN MICHAEL",
+        "Full Name": "SUTTON, CHAD LEE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KAIR_KEVIN_MICHAEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_SUTTON_CHAD_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,21 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "WIGGINS, CHASITY ROCHELLE",
+        "Full Name": "ZINK, JERRY JOSEPH",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WIGGINS_CHASITY_ROCHELLE.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 6,
-      "data": {
-        "Full Name": "WILKINS, ALISHA JOYCE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WILKINS_ALISHA_JOYCE.jpg"
+        "Mugshot_File": "mugshots/mugshot_ZINK_JERRY_JOSEPH.jpg"
       },
       "posted": false,
       "posted_at": null
