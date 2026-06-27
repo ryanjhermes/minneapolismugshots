@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-06-26T02:42:15.574965-05:00",
-  "total_inmates": 5,
-  "posted_count": 2,
+  "created_at": "2026-06-27T01:47:08.455855-05:00",
+  "total_inmates": 8,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "HERMAN, ALAN RICHARD",
+        "Full Name": "KRAUSE, BENJAMIN WILLIAM",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HERMAN_ALAN_RICHARD.jpg"
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KRAUSE_BENJAMIN_WILLIAM.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-26T09:31:35.664597-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "ANDREWS, CONNOR SEAN",
+        "Full Name": "MACHADO, DIEGO DANIEL",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ANDREWS_CONNOR_SEAN.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MACHADO_DIEGO_DANIEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-26T14:53:30.735711-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "BRAY, MATTHEW JERRY",
+        "Full Name": "FAIRBANKS, HOLLY ANN",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BRAY_MATTHEW_JERRY.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FAIRBANKS_HOLLY_ANN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "SUTTON, CHAD LEE",
+        "Full Name": "ARIAS HERNANDEZ, ISAIAS",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SUTTON_CHAD_LEE.jpg"
+        "Mugshot_File": "mugshots/mugshot_ARIAS_HERNANDEZ_ISAIAS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,43 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "ZINK, JERRY JOSEPH",
+        "Full Name": "DAVIS-JORDAN, DILLYEN DONTE TERRAMINE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ZINK_JERRY_JOSEPH.jpg"
+        "Mugshot_File": "mugshots/mugshot_DAVIS-JORDAN_DILLYEN_DONTE_TERRAMINE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 6,
+      "data": {
+        "Full Name": "KELLERMANN, CORY LEO",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_KELLERMANN_CORY_LEO.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 7,
+      "data": {
+        "Full Name": "MOROCHO TAPIA, JOSUE ELISEO",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MOROCHO_TAPIA_JOSUE_ELISEO.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 8,
+      "data": {
+        "Full Name": "SHEPPARD, BRANDON SCOTT",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_SHEPPARD_BRANDON_SCOTT.jpg"
       },
       "posted": false,
       "posted_at": null
