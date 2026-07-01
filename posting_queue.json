@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-06-30T02:43:00.785302-05:00",
-  "total_inmates": 5,
-  "posted_count": 3,
+  "created_at": "2026-07-01T03:05:29.441427-05:00",
+  "total_inmates": 6,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BAUTISTA RODRIGUEZ, JOSE ALEXANDER",
+        "Full Name": "HASHI, AHMED MAULID",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BAUTISTA_RODRIGUEZ_JOSE_ALEXANDER.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HASHI_AHMED_MAULID.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-30T04:43:17.854261-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "DAVIS, ROXANNE GAIL",
+        "Full Name": "ABDI, MUSTAFA ABDIRAHMAN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DAVIS_ROXANNE_GAIL.jpg"
+        "Mugshot_File": "mugshots/mugshot_ABDI_MUSTAFA_ABDIRAHMAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-30T09:26:06.633760-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "HOPKINS, IAN JENNINGS",
+        "Full Name": "BUSH, DELANNIE LAVONTE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HOPKINS_IAN_JENNINGS.jpg"
+        "Mugshot_File": "mugshots/mugshot_BUSH_DELANNIE_LAVONTE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-06-30T17:18:20.176837-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "PARRA, JONATHAN JUAREZ",
+        "Full Name": "EDWARDS, JERMAR JARQUELL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_PARRA_JONATHAN_JUAREZ.jpg"
+        "Mugshot_File": "mugshots/mugshot_EDWARDS_JERMAR_JARQUELL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,21 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "SATTERLUND, ANDRE TYREE",
+        "Full Name": "SYDNOR, ISAIAH DOUGLAS",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SATTERLUND_ANDRE_TYREE.jpg"
+        "Mugshot_File": "mugshots/mugshot_SYDNOR_ISAIAH_DOUGLAS.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 6,
+      "data": {
+        "Full Name": "WAKO, BILAL YOUB",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WAKO_BILAL_YOUB.jpg"
       },
       "posted": false,
       "posted_at": null
