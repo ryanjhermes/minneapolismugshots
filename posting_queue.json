@@ -1,59 +1,59 @@
 {
-  "created_at": "2026-07-01T03:05:29.441427-05:00",
+  "created_at": "2026-07-02T02:01:20.721308-05:00",
   "total_inmates": 6,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "HASHI, AHMED MAULID",
+        "Full Name": "PETERS, LEXY MARGURETTE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HASHI_AHMED_MAULID.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PETERS_LEXY_MARGURETTE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-01T04:54:09.757337-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "ABDI, MUSTAFA ABDIRAHMAN",
+        "Full Name": "ABDALLA, NASIR MOHAMED",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ABDI_MUSTAFA_ABDIRAHMAN.jpg"
+        "Mugshot_File": "mugshots/mugshot_ABDALLA_NASIR_MOHAMED.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-01T09:44:10.118135-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "BUSH, DELANNIE LAVONTE",
+        "Full Name": "FLORES, NICHOLAS ABEL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BUSH_DELANNIE_LAVONTE.jpg"
+        "Mugshot_File": "mugshots/mugshot_FLORES_NICHOLAS_ABEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-01T15:00:54.761392-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "EDWARDS, JERMAR JARQUELL",
+        "Full Name": "LEIPOLD, BRADFORD POWERS",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_EDWARDS_JERMAR_JARQUELL.jpg"
+        "Mugshot_File": "mugshots/mugshot_LEIPOLD_BRADFORD_POWERS.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-01T22:51:38.206497-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "SYDNOR, ISAIAH DOUGLAS",
+        "Full Name": "SMITH, JEFFERY LEE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SYDNOR_ISAIAH_DOUGLAS.jpg"
+        "Mugshot_File": "mugshots/mugshot_SMITH_JEFFERY_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "WAKO, BILAL YOUB",
+        "Full Name": "WREH, EMMET",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WAKO_BILAL_YOUB.jpg"
+        "Mugshot_File": "mugshots/mugshot_WREH_EMMET.jpg"
       },
       "posted": false,
       "posted_at": null
