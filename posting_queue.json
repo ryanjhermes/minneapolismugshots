@@ -1,7 +1,7 @@
 {
   "created_at": "2026-07-02T02:01:20.721308-05:00",
   "total_inmates": 6,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_LEIPOLD_BRADFORD_POWERS.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-07-02T22:32:58.295482-05:00"
     },
     {
       "id": 5,
