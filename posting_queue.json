@@ -1,15 +1,15 @@
 {
-  "created_at": "2026-07-03T01:55:17.238526-05:00",
+  "created_at": "2026-07-04T01:41:18.074424-05:00",
   "total_inmates": 6,
   "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MOMANYI, PETER NYANGAU",
+        "Full Name": "AUSTIN-OWENS, AIRREO ABRESHA BERTHA",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MOMANYI_PETER_NYANGAU.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AUSTIN-OWENS_AIRREO_ABRESHA_BERTHA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -17,10 +17,10 @@
     {
       "id": 2,
       "data": {
-        "Full Name": "OGLESBY, HELENA DEMIYA",
+        "Full Name": "RUSSELL, ODIN ALEXANDER ASP",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_OGLESBY_HELENA_DEMIYA.jpg"
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_RUSSELL_ODIN_ALEXANDER_ASP.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "data": {
-        "Full Name": "RIVERA DELGADO, ROM",
+        "Full Name": "LAIBSON-BROWN, OZZAROE OSIRIS",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_RIVERA_DELGADO_ROM.jpg"
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LAIBSON-BROWN_OZZAROE_OSIRIS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "RODRIGUEZ, ISAAC ADAM",
+        "Full Name": "CHOWDURY, MDSHORIFUL ASHRAF",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_RODRIGUEZ_ISAAC_ADAM.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_CHOWDURY_MDSHORIFUL_ASHRAF.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "SAYERS, DEZMYN KOREE",
+        "Full Name": "BAWEK, RICHARD KEITH",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SAYERS_DEZMYN_KOREE.jpg"
+        "Mugshot_File": "mugshots/mugshot_BAWEK_RICHARD_KEITH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "SCHERBER, JAVONTE BENDICT",
+        "Full Name": "SMITH, DESTINEE ROSE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SCHERBER_JAVONTE_BENDICT.jpg"
+        "Mugshot_File": "mugshots/mugshot_SMITH_DESTINEE_ROSE.jpg"
       },
       "posted": false,
       "posted_at": null
