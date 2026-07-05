@@ -1,7 +1,7 @@
 {
   "created_at": "2026-07-05T02:00:03.994631-05:00",
   "total_inmates": 7,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$0.00 NO BAIL REQUIRED",
         "Mugshot_File": "mugshots/mugshot_LITTLE_HEATHER_KRISTINE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-07-05T08:47:04.724896-05:00"
     },
     {
       "id": 3,
