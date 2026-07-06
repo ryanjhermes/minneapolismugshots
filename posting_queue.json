@@ -1,59 +1,59 @@
 {
-  "created_at": "2026-07-05T02:00:03.994631-05:00",
+  "created_at": "2026-07-06T03:11:23.380179-05:00",
   "total_inmates": 7,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MCDONALD, JAMAINE MAURICE",
+        "Full Name": "FIELDS, VERNELL LAMONT",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MCDONALD_JAMAINE_MAURICE.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FIELDS_VERNELL_LAMONT.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-05T03:57:21.521105-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "LITTLE, HEATHER KRISTINE",
+        "Full Name": "BORSLIEN, LESTER GILMORE",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_LITTLE_HEATHER_KRISTINE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BORSLIEN_LESTER_GILMORE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-05T08:47:04.724896-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "CRUZ-MENDOZA, CARMELO",
+        "Full Name": "CURTIS, DEJUAN NATHANIEL JAMES",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CRUZ-MENDOZA_CARMELO.jpg"
+        "Mugshot_File": "mugshots/mugshot_CURTIS_DEJUAN_NATHANIEL_JAMES.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-05T14:22:30.031385-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "ISSE, MUNA AHMED",
+        "Full Name": "LEON CARDONA, EDWIN DONALDO",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ISSE_MUNA_AHMED.jpg"
+        "Mugshot_File": "mugshots/mugshot_LEON_CARDONA_EDWIN_DONALDO.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-05T22:51:17.971835-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "JUAREZ MORALES, GUSTAVO",
+        "Full Name": "MOORE, MONTREL MARKIS",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JUAREZ_MORALES_GUSTAVO.jpg"
+        "Mugshot_File": "mugshots/mugshot_MOORE_MONTREL_MARKIS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "ROZELLE, LONDON YVONNE",
+        "Full Name": "STEVENSON, THOMAS BERNARD",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ROZELLE_LONDON_YVONNE.jpg"
+        "Mugshot_File": "mugshots/mugshot_STEVENSON_THOMAS_BERNARD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "SCOTT, JAYTON LEE",
+        "Full Name": "VANGELDER, MARCUS POWELL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SCOTT_JAYTON_LEE.jpg"
+        "Mugshot_File": "mugshots/mugshot_VANGELDER_MARCUS_POWELL.jpg"
       },
       "posted": false,
       "posted_at": null
