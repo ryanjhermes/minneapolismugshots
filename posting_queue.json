@@ -1,15 +1,15 @@
 {
-  "created_at": "2026-07-06T03:11:23.380179-05:00",
+  "created_at": "2026-07-07T02:27:24.571376-05:00",
   "total_inmates": 7,
   "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "FIELDS, VERNELL LAMONT",
+        "Full Name": "BROWN, TAIAISHA CHARLENE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FIELDS_VERNELL_LAMONT.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROWN_TAIAISHA_CHARLENE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -17,10 +17,10 @@
     {
       "id": 2,
       "data": {
-        "Full Name": "BORSLIEN, LESTER GILMORE",
+        "Full Name": "JACKSON, DARON DAVON",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BORSLIEN_LESTER_GILMORE.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JACKSON_DARON_DAVON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "data": {
-        "Full Name": "CURTIS, DEJUAN NATHANIEL JAMES",
-        "Charge 1": "No charge listed",
+        "Full Name": "WARD, BRIAN ANTHONY",
+        "Charge 1": "OTHER COUNTY/FELONY",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CURTIS_DEJUAN_NATHANIEL_JAMES.jpg"
+        "Mugshot_File": "mugshots/mugshot_WARD_BRIAN_ANTHONY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "LEON CARDONA, EDWIN DONALDO",
+        "Full Name": "CLANCY, SHANNON HILLS",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LEON_CARDONA_EDWIN_DONALDO.jpg"
+        "Mugshot_File": "mugshots/mugshot_CLANCY_SHANNON_HILLS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "MOORE, MONTREL MARKIS",
+        "Full Name": "HOGEN, WADE ANTHONY",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MOORE_MONTREL_MARKIS.jpg"
+        "Mugshot_File": "mugshots/mugshot_HOGEN_WADE_ANTHONY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "STEVENSON, THOMAS BERNARD",
+        "Full Name": "MAKESROOMFORTHEM, TORRENCE ADAM",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_STEVENSON_THOMAS_BERNARD.jpg"
+        "Mugshot_File": "mugshots/mugshot_MAKESROOMFORTHEM_TORRENCE_ADAM.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "VANGELDER, MARCUS POWELL",
+        "Full Name": "WARD, BRIAN ANTHONY",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_VANGELDER_MARCUS_POWELL.jpg"
+        "Mugshot_File": "mugshots/mugshot_WARD_BRIAN_ANTHONY.jpg"
       },
       "posted": false,
       "posted_at": null
