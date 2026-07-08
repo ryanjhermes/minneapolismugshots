@@ -1,7 +1,7 @@
 {
   "created_at": "2026-07-08T01:22:40.971359-05:00",
   "total_inmates": 6,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$300.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_JOHNSON_MATHEW_CARVEL.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-07-08T03:35:09.898409-05:00"
     },
     {
       "id": 2,
