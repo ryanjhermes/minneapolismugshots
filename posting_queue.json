@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-07-08T01:22:40.971359-05:00",
-  "total_inmates": 6,
-  "posted_count": 2,
+  "created_at": "2026-07-09T02:30:18.168018-05:00",
+  "total_inmates": 10,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "JOHNSON, MATHEW CARVEL",
+        "Full Name": "DELEON, IOVANY",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_MATHEW_CARVEL.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DELEON_IOVANY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-08T03:35:09.898409-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "SMALLS, KELVIN BENJAMIN",
+        "Full Name": "SHIDE, MOHAMED ABDI",
         "Charge 1": "No charge listed",
         "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SMALLS_KELVIN_BENJAMIN.jpg"
+        "Mugshot_File": "mugshots/mugshot_SHIDE_MOHAMED_ABDI.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-08T14:37:09.501368-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "AHMED, SAGAL ABBISHAKUR",
+        "Full Name": "BARTHOLOMEW, NICOLAS RICHARD",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_AHMED_SAGAL_ABBISHAKUR.jpg"
+        "Mugshot_File": "mugshots/mugshot_BARTHOLOMEW_NICOLAS_RICHARD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "BIRTS, HEIRON RAEKWON",
+        "Full Name": "DAY, MICHAEL JOHN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BIRTS_HEIRON_RAEKWON.jpg"
+        "Mugshot_File": "mugshots/mugshot_DAY_MICHAEL_JOHN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "HOWARD, ANTHONY DYWANE JR",
+        "Full Name": "HAKIZIMANA, JEAN PIERRE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HOWARD_ANTHONY_DYWANE_JR.jpg"
+        "Mugshot_File": "mugshots/mugshot_HAKIZIMANA_JEAN_PIERRE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,54 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "ROY, DANIELLE FAYE",
+        "Full Name": "HOWARD, KANTRELL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ROY_DANIELLE_FAYE.jpg"
+        "Mugshot_File": "mugshots/mugshot_HOWARD_KANTRELL.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 7,
+      "data": {
+        "Full Name": "KOSKI, TRACY TOMANEK",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_KOSKI_TRACY_TOMANEK.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 8,
+      "data": {
+        "Full Name": "MCDONALD, NATOSHA NICOLE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MCDONALD_NATOSHA_NICOLE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 9,
+      "data": {
+        "Full Name": "MCDONALD, RASHAD JEMICO",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MCDONALD_RASHAD_JEMICO.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 10,
+      "data": {
+        "Full Name": "PALM, JAMES TIMOTHY",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_PALM_JAMES_TIMOTHY.jpg"
       },
       "posted": false,
       "posted_at": null
