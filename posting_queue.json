@@ -1,48 +1,37 @@
 {
-  "created_at": "2026-07-11T01:07:42.668011-05:00",
-  "total_inmates": 4,
-  "posted_count": 3,
+  "created_at": "2026-07-12T01:25:56.541274-05:00",
+  "total_inmates": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "GILL, HALEY RACHELL ACKNATUK",
+        "Full Name": "CAMARILLO, CHRISTIAN JAMES",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GILL_HALEY_RACHELL_ACKNATUK.jpg"
+        "Mugshot_File": "mugshots/mugshot_CAMARILLO_CHRISTIAN_JAMES.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-11T05:19:13.640160-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "NARANJO PAREDEZ, ROMEL GUSTAVO",
+        "Full Name": "GRAHAM, CALEB ANTONY",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_NARANJO_PAREDEZ_ROMEL_GUSTAVO.jpg"
+        "Mugshot_File": "mugshots/mugshot_GRAHAM_CALEB_ANTONY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-11T08:26:39.845484-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "POINTER, CLARENCE EUGENE JR",
+        "Full Name": "LIBBY, BROCK ALLEN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_POINTER_CLARENCE_EUGENE_JR.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-07-11T14:09:48.629346-05:00"
-    },
-    {
-      "id": 4,
-      "data": {
-        "Full Name": "SAYARATH, SIRIPHONE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SAYARATH_SIRIPHONE.jpg"
+        "Mugshot_File": "mugshots/mugshot_LIBBY_BROCK_ALLEN.jpg"
       },
       "posted": false,
       "posted_at": null
