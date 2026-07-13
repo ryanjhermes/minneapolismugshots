@@ -1,7 +1,7 @@
 {
   "created_at": "2026-07-13T01:45:25.933258-05:00",
   "total_inmates": 5,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$1,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SOLORIO-VASQUEZ_EDGAR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-07-13T09:41:10.975135-05:00"
     },
     {
       "id": 2,
