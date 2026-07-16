@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-07-15T01:06:54.555286-05:00",
-  "total_inmates": 7,
-  "posted_count": 2,
+  "created_at": "2026-07-16T01:11:02.142212-05:00",
+  "total_inmates": 5,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "WILLIAMS, DIAMENIA ELNORA",
+        "Full Name": "FLOWERS, VERNELL LAMONT",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_DIAMENIA_ELNORA.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FLOWERS_VERNELL_LAMONT.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-15T08:49:07.497621-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "ALVARADO-ALVARADO, DAVID ARCENIO",
+        "Full Name": "ARNOLD, JOE ANTHONY",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ALVARADO-ALVARADO_DAVID_ARCENIO.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ARNOLD_JOE_ANTHONY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-15T14:17:02.083524-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "IVIE, CARNELL EUGENE",
+        "Full Name": "MICKELSON, PETER DALE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_IVIE_CARNELL_EUGENE.jpg"
+        "Mugshot_File": "mugshots/mugshot_MICKELSON_PETER_DALE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "MCCONNELL, KIANA MONIQUE",
+        "Full Name": "RAMOS, EDTSON GABRIEL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MCCONNELL_KIANA_MONIQUE.jpg"
+        "Mugshot_File": "mugshots/mugshot_RAMOS_EDTSON_GABRIEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,32 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "TARAR, MOHAMED SHUKRI",
+        "Full Name": "STOUT, SAM ALLEN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_TARAR_MOHAMED_SHUKRI.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 6,
-      "data": {
-        "Full Name": "THOMAS, CARLOS ROMAN",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_THOMAS_CARLOS_ROMAN.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 7,
-      "data": {
-        "Full Name": "VARGAS, CARLOS",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_VARGAS_CARLOS.jpg"
+        "Mugshot_File": "mugshots/mugshot_STOUT_SAM_ALLEN.jpg"
       },
       "posted": false,
       "posted_at": null
