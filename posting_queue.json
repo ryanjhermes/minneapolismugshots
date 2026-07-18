@@ -1,70 +1,15 @@
 {
-  "created_at": "2026-07-17T01:12:40.313065-05:00",
-  "total_inmates": 6,
-  "posted_count": 4,
+  "created_at": "2026-07-18T00:56:38.383411-05:00",
+  "total_inmates": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "CHRISTIANSON, JOSHUA MARK DEAN",
+        "Full Name": "KOMAR, RENAE LYNN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CHRISTIANSON_JOSHUA_MARK_DEAN.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-07-17T03:14:53.627433-05:00"
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "DANIELS, MELISSA ROBIN",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DANIELS_MELISSA_ROBIN.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-07-17T11:18:04.908627-05:00"
-    },
-    {
-      "id": 3,
-      "data": {
-        "Full Name": "FRANKLIN, ASHLEY CHENNEL",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FRANKLIN_ASHLEY_CHENNEL.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-07-17T16:58:12.204627-05:00"
-    },
-    {
-      "id": 4,
-      "data": {
-        "Full Name": "JOHNSON, SELINA MARIE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_SELINA_MARIE.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-07-18T00:30:14.710188-05:00"
-    },
-    {
-      "id": 5,
-      "data": {
-        "Full Name": "LOGAN, MICHAEL J",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LOGAN_MICHAEL_J.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 6,
-      "data": {
-        "Full Name": "SANDERS, DWIGHT DEONDRA SR",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SANDERS_DWIGHT_DEONDRA_SR.jpg"
+        "Mugshot_File": "mugshots/mugshot_KOMAR_RENAE_LYNN.jpg"
       },
       "posted": false,
       "posted_at": null
