@@ -1,7 +1,7 @@
 {
   "created_at": "2026-07-18T00:56:38.383411-05:00",
   "total_inmates": 1,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_KOMAR_RENAE_LYNN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-07-18T08:22:30.849489-05:00"
     }
   ]
 }
