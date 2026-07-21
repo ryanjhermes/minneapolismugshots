@@ -1,51 +1,29 @@
 {
-  "created_at": "2026-07-20T01:39:32.531254-05:00",
-  "total_inmates": 4,
-  "posted_count": 4,
+  "created_at": "2026-07-21T01:23:23.975953-05:00",
+  "total_inmates": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "WIGGINS, LYNN",
+        "Full Name": "ALI, MOHAMED OMAR",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WIGGINS_LYNN.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ALI_MOHAMED_OMAR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-20T04:19:58.531833-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "OLSON, MARK",
+        "Full Name": "SINER, CHARLISSA CASSANDRA",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_OLSON_MARK.jpg"
+        "Mugshot_File": "mugshots/mugshot_SINER_CHARLISSA_CASSANDRA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-20T11:27:16.839970-05:00"
-    },
-    {
-      "id": 3,
-      "data": {
-        "Full Name": "OSBORNE, SANTEZ NASHAY",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_OSBORNE_SANTEZ_NASHAY.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-07-20T14:47:47.212529-05:00"
-    },
-    {
-      "id": 4,
-      "data": {
-        "Full Name": "RODRIGUEZ, JOSE LUIS",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_RODRIGUEZ_JOSE_LUIS.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-07-20T21:53:59.093301-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
