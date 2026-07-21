@@ -1,7 +1,7 @@
 {
   "created_at": "2026-07-20T01:39:32.531254-05:00",
   "total_inmates": 4,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_RODRIGUEZ_JOSE_LUIS.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-07-20T21:53:59.093301-05:00"
     }
   ]
 }
