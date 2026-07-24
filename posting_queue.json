@@ -1,7 +1,7 @@
 {
   "created_at": "2026-07-22T01:22:50.931665-05:00",
   "total_inmates": 6,
-  "posted_count": 4,
+  "posted_count": 5,
   "inmates": [
     {
       "id": 1,
@@ -55,8 +55,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_MCKINNEY_BRITTNEY_DOMINIQUE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-07-24T00:53:00.030992-05:00"
     },
     {
       "id": 6,
