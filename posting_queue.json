@@ -1,29 +1,40 @@
 {
-  "created_at": "2026-07-24T01:18:32.879093-05:00",
-  "total_inmates": 2,
-  "posted_count": 2,
+  "created_at": "2026-07-25T01:10:22.449497-05:00",
+  "total_inmates": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ALI, SHUAYB ADEN",
+        "Full Name": "BROWN, ANTHONY JEJUAN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ALI_SHUAYB_ADEN.jpg"
+        "Mugshot_File": "mugshots/mugshot_BROWN_ANTHONY_JEJUAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-24T03:31:45.321684-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "OMAR, FARHAN ABDIFATAH",
+        "Full Name": "CHAOKHIO, DAVID ALLEN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_OMAR_FARHAN_ABDIFATAH.jpg"
+        "Mugshot_File": "mugshots/mugshot_CHAOKHIO_DAVID_ALLEN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-24T08:50:42.243883-05:00"
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 3,
+      "data": {
+        "Full Name": "NUNN, JA QUAN DOMINIQUE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_NUNN_JA_QUAN_DOMINIQUE.jpg"
+      },
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
