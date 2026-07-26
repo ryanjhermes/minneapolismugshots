@@ -1,40 +1,29 @@
 {
-  "created_at": "2026-07-25T01:10:22.449497-05:00",
-  "total_inmates": 3,
-  "posted_count": 3,
+  "created_at": "2026-07-26T01:28:23.739022-05:00",
+  "total_inmates": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BROWN, ANTHONY JEJUAN",
+        "Full Name": "JACKSON, JYNAYA",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BROWN_ANTHONY_JEJUAN.jpg"
+        "Mugshot_File": "mugshots/mugshot_JACKSON_JYNAYA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-25T03:10:42.492575-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "CHAOKHIO, DAVID ALLEN",
+        "Full Name": "MILLS, TIFFANY VONTEZ",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CHAOKHIO_DAVID_ALLEN.jpg"
+        "Mugshot_File": "mugshots/mugshot_MILLS_TIFFANY_VONTEZ.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-25T11:07:10.867555-05:00"
-    },
-    {
-      "id": 3,
-      "data": {
-        "Full Name": "NUNN, JA QUAN DOMINIQUE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_NUNN_JA_QUAN_DOMINIQUE.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-07-25T14:11:38.306507-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
