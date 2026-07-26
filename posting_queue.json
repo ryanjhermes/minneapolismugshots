@@ -1,7 +1,7 @@
 {
   "created_at": "2026-07-26T01:28:23.739022-05:00",
   "total_inmates": 2,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_JACKSON_JYNAYA.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-07-26T14:16:12.594650-05:00"
     },
     {
       "id": 2,
