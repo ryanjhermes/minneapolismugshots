@@ -1,29 +1,51 @@
 {
-  "created_at": "2026-07-26T01:28:23.739022-05:00",
-  "total_inmates": 2,
-  "posted_count": 2,
+  "created_at": "2026-07-27T01:54:44.028182-05:00",
+  "total_inmates": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "JACKSON, JYNAYA",
+        "Full Name": "MACIEWSKI, JOSEPH LEROY",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JACKSON_JYNAYA.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MACIEWSKI_JOSEPH_LEROY.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-26T14:16:12.594650-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MILLS, TIFFANY VONTEZ",
+        "Full Name": "BOSIRE, PETER MORACHA",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MILLS_TIFFANY_VONTEZ.jpg"
+        "Mugshot_File": "mugshots/mugshot_BOSIRE_PETER_MORACHA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-07-26T22:26:11.956101-05:00"
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 3,
+      "data": {
+        "Full Name": "TIERRABLANCA-PIZANO, LUIS MANUEL",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_TIERRABLANCA-PIZANO_LUIS_MANUEL.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 4,
+      "data": {
+        "Full Name": "WELTER, JEREMIAH JOHN",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WELTER_JEREMIAH_JOHN.jpg"
+      },
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
