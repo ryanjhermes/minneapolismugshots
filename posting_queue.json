@@ -1,7 +1,7 @@
 {
   "created_at": "2026-07-28T01:19:54.044040-05:00",
   "total_inmates": 4,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_VIVERETTE_JAMARR_LAMONT.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-07-28T14:29:09.840150-05:00"
     },
     {
       "id": 2,
