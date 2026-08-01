@@ -1,70 +1,37 @@
 {
-  "created_at": "2026-07-31T01:37:27.868978-05:00",
-  "total_inmates": 6,
-  "posted_count": 4,
+  "created_at": "2026-08-01T01:21:03.161211-05:00",
+  "total_inmates": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "BOETTCHER ELVERUD, JEREME STEVEN",
+        "Full Name": "JENKINS, DARRYL GERARD",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BOETTCHER_ELVERUD_JEREME_STEVEN.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-07-31T03:54:29.875341-05:00"
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "DONALD, TEAOUSHA LAQUEALIA",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DONALD_TEAOUSHA_LAQUEALIA.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-07-31T09:13:41.492607-05:00"
-    },
-    {
-      "id": 3,
-      "data": {
-        "Full Name": "GONZALEZ, ISABEL ROSE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GONZALEZ_ISABEL_ROSE.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-07-31T14:38:55.421281-05:00"
-    },
-    {
-      "id": 4,
-      "data": {
-        "Full Name": "MILLER, AUSTIN ANTHONY",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MILLER_AUSTIN_ANTHONY.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-07-31T22:15:03.774767-05:00"
-    },
-    {
-      "id": 5,
-      "data": {
-        "Full Name": "MOROCHO TAPIA, JOSUE ELISEO",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MOROCHO_TAPIA_JOSUE_ELISEO.jpg"
+        "Mugshot_File": "mugshots/mugshot_JENKINS_DARRYL_GERARD.jpg"
       },
       "posted": false,
       "posted_at": null
     },
     {
-      "id": 6,
+      "id": 2,
       "data": {
-        "Full Name": "NEWSON, ALBERT HERBERT JR",
+        "Full Name": "LACAYO TERCERO, FRANCISCO ORLANDO",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_NEWSON_ALBERT_HERBERT_JR.jpg"
+        "Mugshot_File": "mugshots/mugshot_LACAYO_TERCERO_FRANCISCO_ORLANDO.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 3,
+      "data": {
+        "Full Name": "MAYS, ANNALEE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MAYS_ANNALEE.jpg"
       },
       "posted": false,
       "posted_at": null
