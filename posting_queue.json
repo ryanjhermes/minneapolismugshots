@@ -1,7 +1,7 @@
 {
   "created_at": "2026-08-01T01:21:03.161211-05:00",
   "total_inmates": 3,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_JENKINS_DARRYL_GERARD.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-08-01T05:44:10.080502-05:00"
     },
     {
       "id": 2,
