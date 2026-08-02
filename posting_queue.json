@@ -1,7 +1,7 @@
 {
   "created_at": "2026-08-02T01:25:58.099032-05:00",
   "total_inmates": 2,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_FLORES-VILLAR_HERIBERTO.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-08-02T03:29:09.973194-05:00"
     },
     {
       "id": 2,
