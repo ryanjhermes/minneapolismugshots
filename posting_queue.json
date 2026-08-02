@@ -1,40 +1,29 @@
 {
-  "created_at": "2026-08-01T01:21:03.161211-05:00",
-  "total_inmates": 3,
-  "posted_count": 3,
+  "created_at": "2026-08-02T01:25:58.099032-05:00",
+  "total_inmates": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "JENKINS, DARRYL GERARD",
+        "Full Name": "FLORES-VILLAR, HERIBERTO",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JENKINS_DARRYL_GERARD.jpg"
+        "Mugshot_File": "mugshots/mugshot_FLORES-VILLAR_HERIBERTO.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-01T05:44:10.080502-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "LACAYO TERCERO, FRANCISCO ORLANDO",
+        "Full Name": "KOLOC, ANNA ELIZABETH",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LACAYO_TERCERO_FRANCISCO_ORLANDO.jpg"
+        "Mugshot_File": "mugshots/mugshot_KOLOC_ANNA_ELIZABETH.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-01T11:04:25.882033-05:00"
-    },
-    {
-      "id": 3,
-      "data": {
-        "Full Name": "MAYS, ANNALEE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MAYS_ANNALEE.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-08-01T14:13:32.402822-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
