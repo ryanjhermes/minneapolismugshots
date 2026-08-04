@@ -1,59 +1,48 @@
 {
-  "created_at": "2026-08-03T01:51:26.921930-05:00",
-  "total_inmates": 5,
-  "posted_count": 4,
+  "created_at": "2026-08-04T01:20:23.368201-05:00",
+  "total_inmates": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "JOHNSON, MICHAEL CHARLES",
+        "Full Name": "FARRIS, TRENT PHILLIP",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_MICHAEL_CHARLES.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_FARRIS_TRENT_PHILLIP.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-03T09:45:37.925910-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "MARTINEZ, MARCEL EDWARD JR",
+        "Full Name": "FRANKLIN, MICHAEL JR",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MARTINEZ_MARCEL_EDWARD_JR.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_FRANKLIN_MICHAEL_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-03T17:12:40.526097-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "BEARRIBS, TIMOTHY JOEL",
+        "Full Name": "JOHNSON, CHARLES QUINTON",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BEARRIBS_TIMOTHY_JOEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_CHARLES_QUINTON.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-03T21:46:32.292908-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "BYRD, ANTHONY AARON JR",
+        "Full Name": "TEJEDA, PEDRO RAY",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BYRD_ANTHONY_AARON_JR.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-08-04T00:50:55.782131-05:00"
-    },
-    {
-      "id": 5,
-      "data": {
-        "Full Name": "LARSON, MARK STEPHEN",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LARSON_MARK_STEPHEN.jpg"
+        "Mugshot_File": "mugshots/mugshot_TEJEDA_PEDRO_RAY.jpg"
       },
       "posted": false,
       "posted_at": null
