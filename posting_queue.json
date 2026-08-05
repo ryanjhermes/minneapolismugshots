@@ -1,7 +1,7 @@
 {
   "created_at": "2026-08-05T01:19:01.487673-05:00",
   "total_inmates": 3,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_CORBETT-BERGQUIST_CORWIN_DUWAYNE.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-08-05T11:48:23.449947-05:00"
     },
     {
       "id": 3,
