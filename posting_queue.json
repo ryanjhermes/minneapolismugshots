@@ -1,7 +1,7 @@
 {
   "created_at": "2026-08-09T00:01:04.785146-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ISMAIL_NASIR_AHMED.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-08-09T07:56:38.718944-05:00"
     },
     {
       "id": 3,
