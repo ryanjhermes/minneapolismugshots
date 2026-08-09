@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-08-07T23:58:16.648515-05:00",
+  "created_at": "2026-08-09T00:01:04.785146-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "POWELL, CHARLES YOVONTRE",
-        "Charge 1": "No charge listed",
-        "Bail": "$500,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_POWELL_CHARLES_YOVONTRE.jpg"
+        "Full Name": "SWARTS, LOGAN RICHARD",
+        "Charge 1": "TRAFFIC - DWI - THIRD-DEGREE DRIVING WHILE IMPAIRED; REFUSE TO SUBMIT TO CHEMICAL TEST",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SWARTS_LOGAN_RICHARD.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-08T01:58:13.991805-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "ABDI, DEKA ABDULLAHI",
+        "Full Name": "ISMAIL, NASIR AHMED",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ABDI_DEKA_ABDULLAHI.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ISMAIL_NASIR_AHMED.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-08T10:33:14.773413-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "AZARIAH, WESLEY ERIC",
+        "Full Name": "DELONG, CHARLES ALLEN",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AZARIAH_WESLEY_ERIC.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DELONG_CHARLES_ALLEN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-08T20:55:28.938252-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "COLE, DEVON LAMAR",
+        "Full Name": "PILAMUNGA TOALOMBO, EDGAR VINICIO",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COLE_DEVON_LAMAR.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PILAMUNGA_TOALOMBO_EDGAR_VINICIO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "GRIFFIN, ALIX CENTRELL",
+        "Full Name": "SWARTS, LOGAN RICHARD",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_GRIFFIN_ALIX_CENTRELL.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SWARTS_LOGAN_RICHARD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "MITCHELL, RIKAYLA M",
+        "Full Name": "CORDELL, JON CODY",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_MITCHELL_RIKAYLA_M.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CORDELL_JON_CODY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "MUHAMMAD, OMAR SHARRIEFF",
+        "Full Name": "NALLS, IZSIAH SHYHEIM",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MUHAMMAD_OMAR_SHARRIEFF.jpg"
+        "Bail": "$6,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NALLS_IZSIAH_SHYHEIM.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "FLYINGHORSE, IVAN JAMES",
+        "Full Name": "BUSH, LANNIE LARENZO JR",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FLYINGHORSE_IVAN_JAMES.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BUSH_LANNIE_LARENZO_JR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "MAHDI, AHMED MOHAMED",
+        "Full Name": "POWERS, NICOLE MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MAHDI_AHMED_MOHAMED.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_POWERS_NICOLE_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "WALLIN, STEVEN JOSEPH",
+        "Full Name": "STROH, JONATHON RYAN",
         "Charge 1": "No charge listed",
-        "Bail": "$25,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WALLIN_STEVEN_JOSEPH.jpg"
+        "Bail": "$2,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_STROH_JONATHON_RYAN.jpg"
       },
       "posted": false,
       "posted_at": null
