@@ -1,114 +1,15 @@
 {
-  "created_at": "2026-08-11T00:11:16.802847-05:00",
-  "total_inmates": 10,
-  "posted_count": 4,
+  "created_at": "2026-08-12T00:23:04.585209-05:00",
+  "total_inmates": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "HAALAND, GABRIEL ISAIAH",
+        "Full Name": "DEMPSEY, MARKEES LATRELL",
         "Charge 1": "No charge listed",
-        "Bail": "$250,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HAALAND_GABRIEL_ISAIAH.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-08-11T02:12:28.078454-05:00"
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "SANCHEZ MUJICA, RICHAR",
-        "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SANCHEZ_MUJICA_RICHAR.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-08-11T08:11:41.546086-05:00"
-    },
-    {
-      "id": 3,
-      "data": {
-        "Full Name": "CODEY, CASEY PATRICK",
-        "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CODEY_CASEY_PATRICK.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-08-11T16:52:58.901492-05:00"
-    },
-    {
-      "id": 4,
-      "data": {
-        "Full Name": "LEE, XAVIER RAMON",
-        "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEE_XAVIER_RAMON.jpg"
-      },
-      "posted": true,
-      "posted_at": "2026-08-11T21:08:46.973735-05:00"
-    },
-    {
-      "id": 5,
-      "data": {
-        "Full Name": "POLLARD, ALONZO DARNELL",
-        "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_POLLARD_ALONZO_DARNELL.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 6,
-      "data": {
-        "Full Name": "HAGE, JAMES ALLEN",
-        "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HAGE_JAMES_ALLEN.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 7,
-      "data": {
-        "Full Name": "MARKS, SCOTT ALLAN",
-        "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MARKS_SCOTT_ALLAN.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 8,
-      "data": {
-        "Full Name": "ROSE, COREY EUGENE",
-        "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROSE_COREY_EUGENE.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 9,
-      "data": {
-        "Full Name": "SHAW, DERRICK",
-        "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SHAW_DERRICK.jpg"
-      },
-      "posted": false,
-      "posted_at": null
-    },
-    {
-      "id": 10,
-      "data": {
-        "Full Name": "MCINTYRE, MARY MARGARET",
-        "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MCINTYRE_MARY_MARGARET.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_DEMPSEY_MARKEES_LATRELL.jpg"
       },
       "posted": false,
       "posted_at": null
