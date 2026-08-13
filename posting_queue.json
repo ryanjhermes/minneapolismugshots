@@ -1,18 +1,18 @@
 {
-  "created_at": "2026-08-12T00:23:04.585209-05:00",
+  "created_at": "2026-08-13T00:26:15.113633-05:00",
   "total_inmates": 1,
-  "posted_count": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "DEMPSEY, MARKEES LATRELL",
+        "Full Name": "NORDEAN, LUKE MICHAEL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DEMPSEY_MARKEES_LATRELL.jpg"
+        "Mugshot_File": "mugshots/mugshot_NORDEAN_LUKE_MICHAEL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-12T05:09:51.499890-05:00"
+      "posted": false,
+      "posted_at": null
     }
   ]
 }
