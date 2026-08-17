@@ -1,7 +1,7 @@
 {
   "created_at": "2026-08-16T23:40:25.326178-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$5,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BARTHOLOMEW_KRISTOPHER_EDWARD.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-08-17T02:00:50.224196-05:00"
     },
     {
       "id": 2,
