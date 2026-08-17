@@ -1,7 +1,7 @@
 {
   "created_at": "2026-08-15T23:38:11.312676-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$50,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_YOUNG_DIEONTAE_ZION.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-08-16T20:24:29.599559-05:00"
     },
     {
       "id": 5,
