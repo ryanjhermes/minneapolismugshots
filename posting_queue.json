@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-08-18T23:39:14.612879-05:00",
+  "created_at": "2026-08-19T23:44:35.979413-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "LYNCH, JARED LAWRENCE",
+        "Full Name": "COLLINS, JEROME JR",
         "Charge 1": "No charge listed",
         "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LYNCH_JARED_LAWRENCE.jpg"
+        "Mugshot_File": "mugshots/mugshot_COLLINS_JEROME_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-19T04:37:47.721996-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "SIMS, CHA MERRIAL CASHMONAI",
+        "Full Name": "ROBINSON, TORRELL LENEZE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SIMS_CHA_MERRIAL_CASHMONAI.jpg"
+        "Bail": "$75,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROBINSON_TORRELL_LENEZE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-19T07:53:28.258600-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "SMITH, RANDY KELVON",
+        "Full Name": "BORGAN, JESSICA MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SMITH_RANDY_KELVON.jpg"
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BORGAN_JESSICA_MARIE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-19T20:22:40.567580-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "KENNEDY, SHAQUETTA NICOLE",
+        "Full Name": "DRIGANS, STEPHEN MATTHEW",
         "Charge 1": "No charge listed",
-        "Bail": "$70,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KENNEDY_SHAQUETTA_NICOLE.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DRIGANS_STEPHEN_MATTHEW.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "HANSON, MICHAEL ALAN",
+        "Full Name": "MOHAMED, ZAKARIYE JAMA",
         "Charge 1": "No charge listed",
         "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HANSON_MICHAEL_ALAN.jpg"
+        "Mugshot_File": "mugshots/mugshot_MOHAMED_ZAKARIYE_JAMA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "MACKIE, DAVONTE DELANO",
+        "Full Name": "VANG, SUMENG",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MACKIE_DAVONTE_DELANO.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_VANG_SUMENG.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "GUEST, BRANDON MICHAEL",
+        "Full Name": "HILL, NATHAN ASHTON",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GUEST_BRANDON_MICHAEL.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HILL_NATHAN_ASHTON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "SEXTON, ANTHONY BLAKE",
+        "Full Name": "PAULSON, MARISSA MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$40,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_SEXTON_ANTHONY_BLAKE.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PAULSON_MARISSA_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "LAIRD, JAMAROUS LEMARK",
+        "Full Name": "MACHEN, KENDRA LEANNE",
         "Charge 1": "No charge listed",
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LAIRD_JAMAROUS_LEMARK.jpg"
+        "Mugshot_File": "mugshots/mugshot_MACHEN_KENDRA_LEANNE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "BROWN, SHANIQUA CHANTEL",
+        "Full Name": "WARNERT, MATHEW BRIAN IGNATIUS",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROWN_SHANIQUA_CHANTEL.jpg"
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WARNERT_MATHEW_BRIAN_IGNATIUS.jpg"
       },
       "posted": false,
       "posted_at": null
