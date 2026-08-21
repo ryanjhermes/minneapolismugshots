@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-08-19T23:44:35.979413-05:00",
+  "created_at": "2026-08-20T23:44:19.241581-05:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "COLLINS, JEROME JR",
+        "Full Name": "MOHAMED, MOHAMED ABDI",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COLLINS_JEROME_JR.jpg"
+        "Bail": "$200,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOHAMED_MOHAMED_ABDI.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-20T07:54:22.391686-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "ROBINSON, TORRELL LENEZE",
+        "Full Name": "SKOGQUIST, SCOTT KEITH",
         "Charge 1": "No charge listed",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROBINSON_TORRELL_LENEZE.jpg"
+        "Bail": "$150,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SKOGQUIST_SCOTT_KEITH.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-20T13:42:59.659835-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "BORGAN, JESSICA MARIE",
+        "Full Name": "HARVEY, LUCEEKA LAVETTE",
         "Charge 1": "No charge listed",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BORGAN_JESSICA_MARIE.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HARVEY_LUCEEKA_LAVETTE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "DRIGANS, STEPHEN MATTHEW",
+        "Full Name": "SCHMIDT, LEO JOSEPH",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DRIGANS_STEPHEN_MATTHEW.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SCHMIDT_LEO_JOSEPH.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "MOHAMED, ZAKARIYE JAMA",
+        "Full Name": "COOK, ROBERT BRANDON",
         "Charge 1": "No charge listed",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOHAMED_ZAKARIYE_JAMA.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_COOK_ROBERT_BRANDON.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "VANG, SUMENG",
+        "Full Name": "JOHNSON, RICKEY OCTAVIAN",
         "Charge 1": "No charge listed",
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_VANG_SUMENG.jpg"
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_RICKEY_OCTAVIAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "HILL, NATHAN ASHTON",
+        "Full Name": "MCKAY, MARCUS ANTHONY",
         "Charge 1": "No charge listed",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HILL_NATHAN_ASHTON.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MCKAY_MARCUS_ANTHONY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "PAULSON, MARISSA MARIE",
+        "Full Name": "QUINN, NATASHA THERESE",
         "Charge 1": "No charge listed",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PAULSON_MARISSA_MARIE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_QUINN_NATASHA_THERESE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "MACHEN, KENDRA LEANNE",
+        "Full Name": "TYSON, MONTREL LOVONTAE",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MACHEN_KENDRA_LEANNE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TYSON_MONTREL_LOVONTAE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "WARNERT, MATHEW BRIAN IGNATIUS",
+        "Full Name": "ESCOTO RODRIGUEZ, JAIME ALEXIS",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WARNERT_MATHEW_BRIAN_IGNATIUS.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ESCOTO_RODRIGUEZ_JAIME_ALEXIS.jpg"
       },
       "posted": false,
       "posted_at": null
