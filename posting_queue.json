@@ -1,7 +1,7 @@
 {
   "created_at": "2026-08-22T23:39:10.163363-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MCCABE_MOLLY_KATHRYN.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-08-23T20:26:49.194197-05:00"
     },
     {
       "id": 5,
