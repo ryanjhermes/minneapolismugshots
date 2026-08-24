@@ -1,59 +1,59 @@
 {
-  "created_at": "2026-08-22T23:39:10.163363-05:00",
+  "created_at": "2026-08-23T23:41:38.428510-05:00",
   "total_inmates": 10,
-  "posted_count": 4,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "WILLIAMS, NICOLE",
+        "Full Name": "FOSTER, KYLE JONATHAN",
         "Charge 1": "No charge listed",
-        "Bail": "$150,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_NICOLE.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FOSTER_KYLE_JONATHAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-23T01:45:40.857556-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "DESJARLAIT, TREVIONTAE MONTREZ",
+        "Full Name": "EASLEY, BRADEN JAMES",
         "Charge 1": "No charge listed",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DESJARLAIT_TREVIONTAE_MONTREZ.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EASLEY_BRADEN_JAMES.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-23T07:44:48.727225-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "PARSONS, JOSEPH MICHAEL",
+        "Full Name": "HAMMICK-WADE, KAHEEM GEVONTEZ",
         "Charge 1": "No charge listed",
         "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PARSONS_JOSEPH_MICHAEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_HAMMICK-WADE_KAHEEM_GEVONTEZ.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-23T16:25:06.682179-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "MCCABE, MOLLY KATHRYN",
+        "Full Name": "JASPER, PIERRE JORELL",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MCCABE_MOLLY_KATHRYN.jpg"
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JASPER_PIERRE_JORELL.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-23T20:26:49.194197-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 5,
       "data": {
-        "Full Name": "FAIR, GLEN EDWARD",
+        "Full Name": "LOHMANN, JOSEF NEAL",
         "Charge 1": "No charge listed",
-        "Bail": "$6,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FAIR_GLEN_EDWARD.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LOHMANN_JOSEF_NEAL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "CURRY, DOMINIQUE VARDON",
+        "Full Name": "CRAWFORD, CURTIS MALIK",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CURRY_DOMINIQUE_VARDON.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CRAWFORD_CURTIS_MALIK.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "RICHARDSON, BILLIE RAY",
+        "Full Name": "HUDSON, JONATHAN LEONARD",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RICHARDSON_BILLIE_RAY.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HUDSON_JONATHAN_LEONARD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "WADDELL, JATERRIAH SHAWNTELLE",
+        "Full Name": "ROGERS, DAQUAN STEPHEN",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WADDELL_JATERRIAH_SHAWNTELLE.jpg"
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROGERS_DAQUAN_STEPHEN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "BLACK, JORDAN",
+        "Full Name": "ABDI, USAMA FARHAN",
         "Charge 1": "No charge listed",
-        "Bail": "$500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BLACK_JORDAN.jpg"
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ABDI_USAMA_FARHAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "COE, REGINALD FENION",
+        "Full Name": "HERNANDEZ, LUIS MEJIA",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COE_REGINALD_FENION.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HERNANDEZ_LUIS_MEJIA.jpg"
       },
       "posted": false,
       "posted_at": null
