@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-08-29T05:36:46.530301-05:00",
+  "created_at": "2026-08-30T04:35:07.373217-05:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "ATKINS, SKYLAR RASHAAD",
+        "Full Name": "LEWIS, CARLTON RAYMOND 2ND",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ATKINS_SKYLAR_RASHAAD.jpg"
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LEWIS_CARLTON_RAYMOND_2ND.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-29T11:25:20.111678-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "HODGES, JAKYAH FAYE",
+        "Full Name": "CLARK, STEVEN JAY JR",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HODGES_JAKYAH_FAYE.jpg"
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CLARK_STEVEN_JAY_JR.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-08-29T23:23:33.157854-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "OTT, DAKOTAH ROBERT",
+        "Full Name": "AL-HAKEEM, OMAR EDWARD",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_OTT_DAKOTAH_ROBERT.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AL-HAKEEM_OMAR_EDWARD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "GARDNER, KENNIEL JAMES",
+        "Full Name": "CLARK, BESSIE MAE",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GARDNER_KENNIEL_JAMES.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_CLARK_BESSIE_MAE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "SCHROEDER, BRIANNA JO",
+        "Full Name": "PUNZAL, JAMES TAPAGANAO",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SCHROEDER_BRIANNA_JO.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_PUNZAL_JAMES_TAPAGANAO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "IMAN, FARDOWSA I",
+        "Full Name": "YOUNG, JAMES SCOTT",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_IMAN_FARDOWSA_I.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_YOUNG_JAMES_SCOTT.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "BARRETT, JOHANNAH DOROTHY",
+        "Full Name": "ALEMAN URBINA, AARON ARISTIDES",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_BARRETT_JOHANNAH_DOROTHY.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ALEMAN_URBINA_AARON_ARISTIDES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "GBEKLE, DAVID ELOM KOSSI",
+        "Full Name": "BECERRA-BARRETO, OSCAR",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_GBEKLE_DAVID_ELOM_KOSSI.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BECERRA-BARRETO_OSCAR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "JENKINS, JASON DANGELO",
+        "Full Name": "CARY, JACKIE MARQUIS",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_JENKINS_JASON_DANGELO.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_CARY_JACKIE_MARQUIS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "TORRES RECUENCO, AMY DANIELA",
+        "Full Name": "CASTILLO-PACHECO, EZMARAI MARLETE",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_TORRES_RECUENCO_AMY_DANIELA.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_CASTILLO-PACHECO_EZMARAI_MARLETE.jpg"
       },
       "posted": false,
       "posted_at": null
