@@ -1,7 +1,7 @@
 {
   "created_at": "2026-09-01T04:00:48.985476-05:00",
   "total_inmates": 9,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$20,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SMITH_KENNETH_RAY_JR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-09-01T13:16:26.525012-05:00"
     },
     {
       "id": 2,
