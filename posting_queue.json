@@ -1,7 +1,7 @@
 {
   "created_at": "2026-09-02T03:16:09.995536-05:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "id": 1,
@@ -33,8 +33,8 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_HEGER_KYLE_DAKOTA.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-09-02T15:45:43.922655-05:00"
     },
     {
       "id": 4,
