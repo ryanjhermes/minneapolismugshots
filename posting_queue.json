@@ -1,7 +1,7 @@
 {
   "created_at": "2026-09-03T03:24:42.984923-05:00",
   "total_inmates": 7,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$3,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_GARAY_VASQUEZ_OSCAR_BLADIMIR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-09-03T05:54:44.410939-05:00"
     },
     {
       "id": 2,
