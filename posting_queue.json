@@ -1,7 +1,7 @@
 {
   "created_at": "2026-09-05T02:57:37.968805-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_LAGREW_JORDAN_THOMAS.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-09-05T09:50:23.345147-05:00"
     },
     {
       "id": 2,
