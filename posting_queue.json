@@ -1,7 +1,7 @@
 {
   "created_at": "2026-09-05T02:57:37.968805-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
@@ -22,8 +22,8 @@
         "Bail": "$4,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_CRUZ_AVILA_EDUIN_EDGARDO.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-09-05T15:06:05.850254-05:00"
     },
     {
       "id": 3,
