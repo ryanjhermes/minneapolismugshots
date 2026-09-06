@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-09-05T02:57:37.968805-05:00",
+  "created_at": "2026-09-06T03:12:58.614931-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "LAGREW, JORDAN THOMAS",
+        "Full Name": "MUHAMMAD, JOSHUA DISHON",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LAGREW_JORDAN_THOMAS.jpg"
+        "Bail": "$400.00 CASH BAIL W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MUHAMMAD_JOSHUA_DISHON.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-05T09:50:23.345147-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "CRUZ AVILA, EDUIN EDGARDO",
+        "Full Name": "GABI, FEANAN GAMMEDA",
         "Charge 1": "No charge listed",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CRUZ_AVILA_EDUIN_EDGARDO.jpg"
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GABI_FEANAN_GAMMEDA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-05T15:06:05.850254-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "THIOYE, MAMADOU MAMSOUR",
+        "Full Name": "ADAMS, OCTANCIA SADA",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_THIOYE_MAMADOU_MAMSOUR.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_ADAMS_OCTANCIA_SADA.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-05T22:35:13.309150-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "HASSAN, SUHEIB ABDIRAHMAN",
+        "Full Name": "FRANCO CRUZ, JOSE ARMANDO",
         "Charge 1": "No charge listed",
-        "Bail": "$2,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HASSAN_SUHEIB_ABDIRAHMAN.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_FRANCO_CRUZ_JOSE_ARMANDO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "REINHART, MARK ANTHONY",
+        "Full Name": "ABDI, KHALID HUSSEIN",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_REINHART_MARK_ANTHONY.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ABDI_KHALID_HUSSEIN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "ST MARTIN, GAVIN PATRICK",
+        "Full Name": "ABDISALAM, SAMATAR OMAR",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_ST_MARTIN_GAVIN_PATRICK.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ABDISALAM_SAMATAR_OMAR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "ANDERSON, TREYNELL TYUS LERON",
+        "Full Name": "CANONGO AGUILAR, MELISSA",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ANDERSON_TREYNELL_TYUS_LERON.jpg"
+        "Mugshot_File": "mugshots/mugshot_CANONGO_AGUILAR_MELISSA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "AWEKE, ABIYE GRIMA",
+        "Full Name": "DOULED, ABDIFATAH MOHAMED",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_AWEKE_ABIYE_GRIMA.jpg"
+        "Mugshot_File": "mugshots/mugshot_DOULED_ABDIFATAH_MOHAMED.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "BRIGHAM, BRETAINA FAUSITINA",
+        "Full Name": "GONZALEZ, LUIS ALBERTO",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BRIGHAM_BRETAINA_FAUSITINA.jpg"
+        "Mugshot_File": "mugshots/mugshot_GONZALEZ_LUIS_ALBERTO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "CAJAS RAMIREZ, DANILO ALEXANDER",
+        "Full Name": "MEDLOCK-BOLDEN, MERCEDES MASHAWN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CAJAS_RAMIREZ_DANILO_ALEXANDER.jpg"
+        "Mugshot_File": "mugshots/mugshot_MEDLOCK-BOLDEN_MERCEDES_MASHAWN.jpg"
       },
       "posted": false,
       "posted_at": null
