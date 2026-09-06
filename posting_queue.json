@@ -1,7 +1,7 @@
 {
   "created_at": "2026-09-06T03:12:58.614931-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$400.00 CASH BAIL W/O CR",
         "Mugshot_File": "mugshots/mugshot_MUHAMMAD_JOSHUA_DISHON.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-09-06T10:09:53.975795-05:00"
     },
     {
       "id": 2,
