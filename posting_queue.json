@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-09-07T03:43:19.703986-05:00",
-  "total_inmates": 7,
-  "posted_count": 3,
+  "created_at": "2026-09-08T03:25:38.408377-05:00",
+  "total_inmates": 10,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MERCADO, MICHAEL JAMES",
+        "Full Name": "JONES, DAVON MAURICE",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MERCADO_MICHAEL_JAMES.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JONES_DAVON_MAURICE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-07T12:32:20.318414-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "HALL, JOHN ROBERT",
+        "Full Name": "REYES, EMILIO LUIS",
         "Charge 1": "No charge listed",
-        "Bail": "$500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HALL_JOHN_ROBERT.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_REYES_EMILIO_LUIS.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-07T16:17:40.298659-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "WALLACE, TYNOJAIH NASHIA",
+        "Full Name": "KARL, NICHOLAS SCOTT",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WALLACE_TYNOJAIH_NASHIA.jpg"
+        "Bail": "$500.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KARL_NICHOLAS_SCOTT.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-07T22:40:59.398906-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "DURANT, DEMETRIUS JERMAINE",
+        "Full Name": "ELMI, FEYSAL ABDULKADIR",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DURANT_DEMETRIUS_JERMAINE.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_ELMI_FEYSAL_ABDULKADIR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "MCKINNIE, DANYA MANDRELL",
+        "Full Name": "LERVIK, CHRISTIAN TRYGVE",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MCKINNIE_DANYA_MANDRELL.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_LERVIK_CHRISTIAN_TRYGVE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "OWENS, DESIREE KARA",
+        "Full Name": "SOLAND, CHRISTINE MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_OWENS_DESIREE_KARA.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_SOLAND_CHRISTINE_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,43 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "SALIH, AWOLKER MOHAMED",
+        "Full Name": "BRISCO-ADAMS, JOSEPH BRONZELL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SALIH_AWOLKER_MOHAMED.jpg"
+        "Mugshot_File": "mugshots/mugshot_BRISCO-ADAMS_JOSEPH_BRONZELL.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 8,
+      "data": {
+        "Full Name": "MIX, DYANTE LAVEL",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MIX_DYANTE_LAVEL.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 9,
+      "data": {
+        "Full Name": "STOWERS, CHAD BERNARD",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_STOWERS_CHAD_BERNARD.jpg"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 10,
+      "data": {
+        "Full Name": "YOUNG, CHRISTOPHER DENNIS",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_YOUNG_CHRISTOPHER_DENNIS.jpg"
       },
       "posted": false,
       "posted_at": null
