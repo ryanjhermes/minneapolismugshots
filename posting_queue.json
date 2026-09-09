@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-09-08T03:25:38.408377-05:00",
+  "created_at": "2026-09-09T03:30:21.674421-05:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "JONES, DAVON MAURICE",
+        "Full Name": "AHMED, NOOR MOHAMUD",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JONES_DAVON_MAURICE.jpg"
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AHMED_NOOR_MOHAMUD.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-08T11:16:47.747862-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "REYES, EMILIO LUIS",
+        "Full Name": "BOSWELL, NATHAN SCOTT",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_REYES_EMILIO_LUIS.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BOSWELL_NATHAN_SCOTT.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-08T15:54:19.368393-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "KARL, NICHOLAS SCOTT",
+        "Full Name": "GRIFFIN, JACOB LEE",
         "Charge 1": "No charge listed",
-        "Bail": "$500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KARL_NICHOLAS_SCOTT.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GRIFFIN_JACOB_LEE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "ELMI, FEYSAL ABDULKADIR",
+        "Full Name": "HURUN, AHMED ARTAN",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_ELMI_FEYSAL_ABDULKADIR.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_HURUN_AHMED_ARTAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "LERVIK, CHRISTIAN TRYGVE",
+        "Full Name": "JOHNSON, TERRENCE LYNN",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_LERVIK_CHRISTIAN_TRYGVE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_TERRENCE_LYNN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "SOLAND, CHRISTINE MARIE",
+        "Full Name": "MCCOY, PATRICIA MARIE",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_SOLAND_CHRISTINE_MARIE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MCCOY_PATRICIA_MARIE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "BRISCO-ADAMS, JOSEPH BRONZELL",
+        "Full Name": "NDEGE, REINHARD OMBATI",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BRISCO-ADAMS_JOSEPH_BRONZELL.jpg"
+        "Mugshot_File": "mugshots/mugshot_NDEGE_REINHARD_OMBATI.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "MIX, DYANTE LAVEL",
+        "Full Name": "OGLESBY, HELENA DEMIYA",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MIX_DYANTE_LAVEL.jpg"
+        "Mugshot_File": "mugshots/mugshot_OGLESBY_HELENA_DEMIYA.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "STOWERS, CHAD BERNARD",
+        "Full Name": "SKINAWAY, STEPHANIE DENISE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_STOWERS_CHAD_BERNARD.jpg"
+        "Mugshot_File": "mugshots/mugshot_SKINAWAY_STEPHANIE_DENISE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "YOUNG, CHRISTOPHER DENNIS",
+        "Full Name": "VACA PEREZ, RICHARD SEGUNDO",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_YOUNG_CHRISTOPHER_DENNIS.jpg"
+        "Mugshot_File": "mugshots/mugshot_VACA_PEREZ_RICHARD_SEGUNDO.jpg"
       },
       "posted": false,
       "posted_at": null
