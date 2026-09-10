@@ -1,7 +1,7 @@
 {
   "created_at": "2026-09-10T03:49:02.795566-05:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "id": 1,
@@ -11,8 +11,8 @@
         "Bail": "$20,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_LIGHTFEATHER_DARRIN_JAMES.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-09-10T05:54:27.209526-05:00"
     },
     {
       "id": 2,
