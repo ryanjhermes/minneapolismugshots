@@ -1,7 +1,7 @@
 {
   "created_at": "2026-09-16T03:56:09.386112-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -44,8 +44,8 @@
         "Bail": "$0.00 NO BAIL REQUIRED",
         "Mugshot_File": "mugshots/mugshot_STEWART_NATHAN_LAMAR.jpg"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-09-16T23:02:26.440679-05:00"
     },
     {
       "id": 5,
