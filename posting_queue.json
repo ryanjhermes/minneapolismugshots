@@ -1,37 +1,37 @@
 {
-  "created_at": "2026-09-19T03:23:28.646529-05:00",
+  "created_at": "2026-09-20T03:55:41.805462-05:00",
   "total_inmates": 10,
-  "posted_count": 2,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "MESSAM, JERAMINE ALEXANDER",
+        "Full Name": "ALLEN, ALFONZO JERMONT",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MESSAM_JERAMINE_ALEXANDER.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ALLEN_ALFONZO_JERMONT.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-19T10:36:31.855926-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "FLOWERS, KAMIESHA RASHUN",
+        "Full Name": "CASIQUE ARIZA, LUIS AUGUSTO",
         "Charge 1": "No charge listed",
         "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_FLOWERS_KAMIESHA_RASHUN.jpg"
+        "Mugshot_File": "mugshots/mugshot_CASIQUE_ARIZA_LUIS_AUGUSTO.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-19T15:15:42.322191-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "DYSART, ADRIAN JAMES",
+        "Full Name": "BROWN, BRANDI ANN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DYSART_ADRIAN_JAMES.jpg"
+        "Mugshot_File": "mugshots/mugshot_BROWN_BRANDI_ANN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "KADEMANI, JAI",
+        "Full Name": "GLASER, TODD MICHAEL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KADEMANI_JAI.jpg"
+        "Mugshot_File": "mugshots/mugshot_GLASER_TODD_MICHAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "LACASSE, BETHANY MARIE",
+        "Full Name": "GONZALEZ CONDE, FRANCISCO",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LACASSE_BETHANY_MARIE.jpg"
+        "Mugshot_File": "mugshots/mugshot_GONZALEZ_CONDE_FRANCISCO.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "MERCADO, MICHAEL JAMES",
+        "Full Name": "HENDERSON, KENDRED LOUIS",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MERCADO_MICHAEL_JAMES.jpg"
+        "Mugshot_File": "mugshots/mugshot_HENDERSON_KENDRED_LOUIS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "REINHART, MARK ANTHONY",
+        "Full Name": "HUERTA HERRERA, KATERIN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_REINHART_MARK_ANTHONY.jpg"
+        "Mugshot_File": "mugshots/mugshot_HUERTA_HERRERA_KATERIN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "SKINAWAY, ASHLEY CHEYENNE",
+        "Full Name": "LEE, NATHANIEL JAMES",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SKINAWAY_ASHLEY_CHEYENNE.jpg"
+        "Mugshot_File": "mugshots/mugshot_LEE_NATHANIEL_JAMES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "TALFORD, LOUIS",
+        "Full Name": "MOORE, PIERRE JEROME",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_TALFORD_LOUIS.jpg"
+        "Mugshot_File": "mugshots/mugshot_MOORE_PIERRE_JEROME.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "TONG, SONNY THANH",
+        "Full Name": "MORRIS, ANTOINE JULIUS",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_TONG_SONNY_THANH.jpg"
+        "Mugshot_File": "mugshots/mugshot_MORRIS_ANTOINE_JULIUS.jpg"
       },
       "posted": false,
       "posted_at": null
