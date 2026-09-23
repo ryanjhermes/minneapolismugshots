@@ -1,48 +1,48 @@
 {
-  "created_at": "2026-09-22T03:54:54.390303-05:00",
+  "created_at": "2026-09-23T03:58:15.780429-05:00",
   "total_inmates": 10,
-  "posted_count": 3,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "KUHN, MICHAEL JOHN",
+        "Full Name": "FREEMAN, CHYRONE ROSEAN",
         "Charge 1": "No charge listed",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KUHN_MICHAEL_JOHN.jpg"
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FREEMAN_CHYRONE_ROSEAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-22T06:12:17.385461-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "BORK, ISABELLA ROSE",
+        "Full Name": "LUNA URRUTIA, SAIGE HEAVEN",
         "Charge 1": "No charge listed",
-        "Bail": "$1,000.00 CASH BAIL W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BORK_ISABELLA_ROSE.jpg"
+        "Bail": "$125.00 CASH BAIL W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LUNA_URRUTIA_SAIGE_HEAVEN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-22T11:34:14.231600-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 3,
       "data": {
-        "Full Name": "ACERO MAYANCELA, NICOLAS",
+        "Full Name": "BYRD, JAIRUS DEQUAN",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_ACERO_MAYANCELA_NICOLAS.jpg"
+        "Bail": "$50.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BYRD_JAIRUS_DEQUAN.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-22T22:55:04.403317-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 4,
       "data": {
-        "Full Name": "BARTON, CHRISTIAN THOMAS",
+        "Full Name": "GARCIA AYALA, ELIAZAR YOVANY",
         "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BARTON_CHRISTIAN_THOMAS.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_GARCIA_AYALA_ELIAZAR_YOVANY.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "CASEY, LATASHA JOLLIFF",
+        "Full Name": "BARR, MAURICE JR",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CASEY_LATASHA_JOLLIFF.jpg"
+        "Mugshot_File": "mugshots/mugshot_BARR_MAURICE_JR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "DAVIS, NATHANIEL LLOYD",
+        "Full Name": "BUGG VASQUEZ, WINDY RAE",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DAVIS_NATHANIEL_LLOYD.jpg"
+        "Mugshot_File": "mugshots/mugshot_BUGG_VASQUEZ_WINDY_RAE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "DIAWARA, IBRAHIM KHALIL",
+        "Full Name": "CURTIS, JERRIED MICHAEL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DIAWARA_IBRAHIM_KHALIL.jpg"
+        "Mugshot_File": "mugshots/mugshot_CURTIS_JERRIED_MICHAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "NYANG, GULLIT MAGN",
+        "Full Name": "JACKSON-ELLIS, DOUGLAS CHARLES",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_NYANG_GULLIT_MAGN.jpg"
+        "Mugshot_File": "mugshots/mugshot_JACKSON-ELLIS_DOUGLAS_CHARLES.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "THINELK, DESIREE RENEE",
+        "Full Name": "MARR, ADRIAN MICHAEL",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_THINELK_DESIREE_RENEE.jpg"
+        "Mugshot_File": "mugshots/mugshot_MARR_ADRIAN_MICHAEL.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "WASHINGTON, DARRYL SPENCER",
+        "Full Name": "SMALLEY, MICHAEL LEROY JR",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WASHINGTON_DARRYL_SPENCER.jpg"
+        "Mugshot_File": "mugshots/mugshot_SMALLEY_MICHAEL_LEROY_JR.jpg"
       },
       "posted": false,
       "posted_at": null
