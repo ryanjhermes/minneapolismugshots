@@ -1,26 +1,26 @@
 {
-  "created_at": "2026-09-28T05:18:22.493789-05:00",
+  "created_at": "2026-09-29T05:17:34.089927-05:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 0,
   "inmates": [
     {
       "id": 1,
       "data": {
-        "Full Name": "WILLIAMS, ERICA LAQUIA",
+        "Full Name": "ROBINSON, JARRETT JAVONE EUGENE",
         "Charge 1": "No charge listed",
-        "Bail": "$10,000.00 BAIL/BOND W/ CR",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_ERICA_LAQUIA.jpg"
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROBINSON_JARRETT_JAVONE_EUGENE.jpg"
       },
-      "posted": true,
-      "posted_at": "2026-09-28T23:53:14.787999-05:00"
+      "posted": false,
+      "posted_at": null
     },
     {
       "id": 2,
       "data": {
-        "Full Name": "CASTILLO, JEREMIAH EZEKIEL",
+        "Full Name": "TURNER, RONNELL DARIUS",
         "Charge 1": "No charge listed",
-        "Bail": "$9,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CASTILLO_JEREMIAH_EZEKIEL.jpg"
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TURNER_RONNELL_DARIUS.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "data": {
-        "Full Name": "HURSANE, HAMDI ABDI",
+        "Full Name": "DANIELS, CHRISTOPHER SEAN",
         "Charge 1": "No charge listed",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HURSANE_HAMDI_ABDI.jpg"
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_DANIELS_CHRISTOPHER_SEAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "data": {
-        "Full Name": "SALAMBAY PUMA, JOSUE DANIEL",
+        "Full Name": "ARTIS, KENT",
         "Charge 1": "No charge listed",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SALAMBAY_PUMA_JOSUE_DANIEL.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ARTIS_KENT.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "data": {
-        "Full Name": "COLLINS, ROBERT C",
+        "Full Name": "CALDWELL, EARL 3RD",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COLLINS_ROBERT_C.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_CALDWELL_EARL_3RD.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "data": {
-        "Full Name": "HOLT, KEVIN DALVOUR",
+        "Full Name": "COMER, MARK CHRISTOPHER SR",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HOLT_KEVIN_DALVOUR.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_COMER_MARK_CHRISTOPHER_SR.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "data": {
-        "Full Name": "MORRISON, DANIELLE DANASHIA",
+        "Full Name": "ERDMANN, NICOLE DANIELLE",
         "Charge 1": "No charge listed",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MORRISON_DANIELLE_DANASHIA.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ERDMANN_NICOLE_DANIELLE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "data": {
-        "Full Name": "BARANYUK, DENIS",
+        "Full Name": "GARCIA-RODRIGUEZ, GIOVANNI ANTWAN",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_BARANYUK_DENIS.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GARCIA-RODRIGUEZ_GIOVANNI_ANTWAN.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "data": {
-        "Full Name": "CALLE JARA, GEOVANNY FERNANDO",
+        "Full Name": "JAMA, ABDULLAHI JIMALE",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_CALLE_JARA_GEOVANNY_FERNANDO.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_JAMA_ABDULLAHI_JIMALE.jpg"
       },
       "posted": false,
       "posted_at": null
@@ -105,10 +105,10 @@
     {
       "id": 10,
       "data": {
-        "Full Name": "ROBERTS, JAY KYLE",
+        "Full Name": "JOHNSON, ISAIAH DARIUS",
         "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_ROBERTS_JAY_KYLE.jpg"
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_ISAIAH_DARIUS.jpg"
       },
       "posted": false,
       "posted_at": null
