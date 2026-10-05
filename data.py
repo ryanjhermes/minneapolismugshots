@@ -776,7 +776,7 @@ def post_to_instagram(image_url, caption, credentials, test_mode=False, video_ur
             return True
         
         # Step 1: Create media object
-        print(f"📸 Creating Instagram media for: {image_url}")
+        print(f"📸 Creating Instagram {'Reel' if video_url else 'image post'} for: {video_url or image_url}")
         
         media_url = f"https://graph.facebook.com/v23.0/{business_id}/media"
         media_params = {'caption': caption, 'access_token': access_token}

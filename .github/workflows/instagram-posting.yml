@@ -23,6 +23,9 @@ jobs:
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        # Latest main, not the commit that triggered the run (a queued run would
+        # otherwise work from a stale queue and fail to push)
+        ref: main
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -70,27 +73,20 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        
-        # Check if posting_queue.json was modified
-        if git diff --quiet posting_queue.json; then
-          echo "📭 No queue changes to commit"
-        else
-          git add posting_queue.json
-          git commit -m "Update posting queue - $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
-          echo "✅ Queue updates committed"
+        git add posting_queue.json
+        git add -A mugshots/
+        if git diff --staged --quiet; then
+          echo "📭 No changes to commit"
+          exit 0
         fi
-        
-        # Check if any mugshot files were deleted
-        if git status --porcelain | grep -q "D.*mugshots/"; then
-          echo "🗑️  Committing deleted mugshot files..."
-          git add -A mugshots/
-          git commit -m "Clean up posted mugshot files - $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
-          echo "✅ Mugshot cleanup committed"
-        else
-          echo "📭 No mugshot files to clean up"
-        fi
+        git commit -m "Update posting queue - $(date '+%Y-%m-%d %H:%M:%S')"
+        # The post already went out, so the record must land: retry on a moved main
+        for attempt in 1 2 3; do
+          git push && exit 0
+          git pull --rebase origin main
+        done
+        echo "❌ Could not push queue update; the post is NOT recorded as posted"
+        exit 1
 
     - name: Skip (nothing to do this hour)
       if: steps.preflight.outputs.mode == ''
