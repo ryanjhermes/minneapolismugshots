@@ -47,6 +47,9 @@ class Config:
     MIN_NAME_LENGTH = 3
     MAX_NAME_LENGTH = 50
     MIN_CHARGE_LENGTH = 5
+    MAX_CHARGE_LENGTH = 150
+    MAX_CHARGES = 3
+    CHARGE_SEPARATOR = '; '
     
     # File paths
     CSV_FILENAME = "jail_roster_data.csv"
@@ -272,59 +275,74 @@ class FieldExtractor:
         
         return True
     
-    def _extract_charge_from_lines(self, lines):
+    def _extract_charges_from_text(self, page_text):
+        """Find every 'Description:' value, whether it sits on the same line or the next one."""
+        lines = [l.strip() for l in page_text.split('\n')]
+        charges = []
         for i, line in enumerate(lines):
-            line = line.strip()
+            if not line.startswith('Description:'):
+                continue
+            value = line[len('Description:'):].strip()
+            if not value and i + 1 < len(lines):
+                value = lines[i + 1]
+            charges.append(value)
+        return charges
 
-            if line == 'Charge: 1':
-                for j in range(i + 1, min(i + 10, len(lines))):
-                    if lines[j].strip() == 'Description:' and j + 1 < len(lines):
-                        charge_desc = lines[j + 1].strip()
-                        if self._is_valid_charge(charge_desc):
-                            return charge_desc
-        return None
-
-    def _extract_charge_from_stacking_rows(self):
-        from selenium.webdriver.common.by import By
-
+    def _extract_charges_from_dom(self, modal):
+        """Read 'Description:' values straight from the DOM via textContent, so a narrow
+        or collapsed layout that hides text from Selenium's .text can't hide the charge."""
         try:
-            rows = self.driver.find_elements(
-                By.CSS_SELECTOR,
-                '[class*="stacking-row"], .hcso-stacking-row',
-            )
-            for row in rows:
-                row_text = row.text.strip()
-                if not row_text.startswith('Description:'):
-                    continue
-                parts = row_text.split('\n', 1)
-                if len(parts) == 2 and self._is_valid_charge(parts[1].strip()):
-                    return parts[1].strip()
-                charge_desc = row_text.split(':', 1)[-1].strip()
-                if self._is_valid_charge(charge_desc):
-                    return charge_desc
+            return self.driver.execute_script("""
+                const out = [];
+                for (const el of arguments[0].querySelectorAll('*')) {
+                    if (el.children.length || el.textContent.trim() !== 'Description:') continue;
+                    let val = el.nextElementSibling ? el.nextElementSibling.textContent : '';
+                    if (!val.trim() && el.parentElement) {
+                        val = el.parentElement.textContent.replace('Description:', '');
+                    }
+                    out.push(val.trim());
+                }
+                return out;
+            """, modal) or []
         except Exception as e:
-            self.log(f"Stacking-row charge extraction failed: {e}", "DEBUG")
-        return None
+            self.log(f"DOM charge extraction failed: {e}", "DEBUG")
+            return []
+
+    def _clean_charges(self, charges):
+        """Validate, de-duplicate, keep order, cap at MAX_CHARGES."""
+        seen, result = set(), []
+        for c in charges:
+            c = ' '.join((c or '').split())
+            if self._is_valid_charge(c) and c.upper() not in seen:
+                seen.add(c.upper())
+                result.append(c)
+        return result[:Config.MAX_CHARGES]
 
     def _extract_charge(self, page_text):
-        """Extract primary charge using multiple strategies"""
+        """Extract charges: visible text first, then the DOM of the current modal only"""
         self.log("Extracting charge information...", "DEBUG")
 
-        lines = page_text.split('\n')
-        charge_desc = self._extract_charge_from_lines(lines)
-        if charge_desc:
-            self.extracted_data['Charge 1'] = charge_desc
-            self.log(f"Found charge: {charge_desc}", "SUCCESS")
-            return
+        charges = self._clean_charges(self._extract_charges_from_text(page_text))
+        source = "text"
 
-        charge_desc = self._extract_charge_from_stacking_rows()
-        if charge_desc:
-            self.extracted_data['Charge 1'] = charge_desc
-            self.log(f"Found charge from stacking-row: {charge_desc}", "SUCCESS")
+        if not charges:
+            modal = self._find_modal_element()
+            # Only trust the DOM if this modal belongs to the inmate we just named,
+            # so a stale modal can never attach someone else's charge.
+            name = self.extracted_data['Full Name']
+            if modal and name and name in (modal.get_attribute('textContent') or ''):
+                charges = self._clean_charges(self._extract_charges_from_dom(modal))
+                source = "DOM"
+
+        if charges:
+            self.extracted_data['Charge 1'] = Config.CHARGE_SEPARATOR.join(charges)
+            self.log(f"Found charge ({source}): {self.extracted_data['Charge 1']}", "SUCCESS")
             return
 
         self.log("No valid charge found", "WARNING")
-    
+        # Leave evidence in the CI log so a future layout change is quick to diagnose
+        self.log(f"Modal text sample: {page_text[:1500]!r}", "DEBUG")
+
     def _is_valid_charge(self, charge):
         """Validate if a string looks like a real charge"""
         if not charge or len(charge) < Config.MIN_CHARGE_LENGTH:
@@ -336,6 +354,10 @@ class FieldExtractor:
         
         # Must not be just a label
         if charge in Config.INVALID_CHARGES:
+            return False
+
+        # Guard against grabbing a whole block of page text
+        if len(charge) > Config.MAX_CHARGE_LENGTH:
             return False
         
         return True
@@ -697,7 +719,10 @@ def generate_caption(data):
         
         # Build charge line only when a real charge is present
         invalid_charge_values = ['No charge listed', 'Charge information not available', '']
-        charge_line = f"CHARGE: {charge}\n" if charge not in invalid_charge_values else ""
+        charge_line = ""
+        if charge not in invalid_charge_values:
+            label = "CHARGES" if Config.CHARGE_SEPARATOR in charge else "CHARGE"
+            charge_line = f"{label}: {charge}\n"
 
         caption = f"""
 {charge_line}NAME: {name}
@@ -1193,6 +1218,27 @@ def cleanup_all_mugshots():
     except Exception as e:
         print(f"❌ Error cleaning all mugshots: {e}")
         return False
+
+def purge_unqueued_mugshots():
+    """Delete every mugshot not needed by an unposted queue entry.
+    Skips entirely if the queue can't be read, so a broken scrape never wipes upcoming posts."""
+    try:
+        with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
+            queue_data = json.load(f)
+        keep = {os.path.basename(i['data'].get('Mugshot_File', ''))
+                for i in queue_data['inmates'] if not i.get('posted')}
+    except Exception as e:
+        print(f"⚠️  Queue unreadable, skipping mugshot purge: {e}")
+        return False
+
+    deleted = 0
+    if os.path.isdir(Config.MUGSHOTS_DIR):
+        for fn in os.listdir(Config.MUGSHOTS_DIR):
+            if fn.lower().endswith(('.jpg', '.jpeg', '.png')) and fn not in keep:
+                os.remove(os.path.join(Config.MUGSHOTS_DIR, fn))
+                deleted += 1
+    print(f"🧹 Purged {deleted} mugshots not in the posting queue (kept {len(keep)})")
+    return True
 
 def post_next_inmates(batch_size=1, repo_name="minneapolismugshots", username="ryanjhermes", test_mode=False):
     """Post next inmate from queue (single posting) with AI filtering"""
@@ -2376,6 +2422,9 @@ def open_hennepin_jail_roster(inmate_limit=Config.DEFAULT_INMATE_LIMIT):
     if is_ci:
         print("🤖 Running in CI environment - using headless mode")
         options.add_argument('--headless=new')  # Use new headless mode
+        # Headless defaults to 800x600, which renders the booking modal in a narrow
+        # layout where charges were never found. Match a desktop window instead.
+        options.add_argument('--window-size=1920,1080')
     
     # Essential options for stability
     options.add_argument('--no-sandbox')
@@ -2733,6 +2782,9 @@ if __name__ == "__main__":
         elif command == "cleanup-unposted":
             # Clean up unposted inmates' mugshots and prune queue
             cleanup_unposted_mugshots()
+        elif command == "purge-unqueued":
+            # Delete every mugshot not needed for an upcoming post
+            purge_unqueued_mugshots()
         elif command == "cleanup-posted":
             # Clean up existing posted inmates' mugshots (legacy)
             cleanup_existing_posted_mugshots()
@@ -2750,6 +2802,7 @@ if __name__ == "__main__":
             print("  python data.py cleanup-mugshots # Clean up ALL mugshot files (repo + docs)")
             print("  python data.py cleanup-unposted # Clean up unposted inmates' mugshots and prune queue")
             print("  python data.py cleanup-posted   # Clean up only posted inmates' mugshots (legacy)")
+            print("  python data.py purge-unqueued   # Delete all mugshots not needed for an upcoming post")
     else:
         # Production mode - scrape 100 inmates and filter to top 10 with highest priority
         print("🚀 Running in PRODUCTION MODE - processing 100 inmates, filtering to top 10 highest priority (charge + bail)")

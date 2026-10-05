@@ -51,6 +51,7 @@ jobs:
         echo "🚀 Starting jail roster scraping and queue creation..."
         python data.py
         echo "✅ Scraping completed, posting queue created"
+        python data.py purge-unqueued
     
     - name: Create GitHub Pages structure
       run: |
