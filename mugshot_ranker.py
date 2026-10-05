@@ -19,6 +19,8 @@ DISTINCTIVE_PROMPTS = [
     "a mugshot of a person with many facial piercings",
     "a mugshot of a person with an unusual beard or facial hair",
     "a mugshot of a person wearing an unusual outfit or costume",
+    "a mugshot of a strikingly attractive, model-like person",
+    "a mugshot of a very good-looking person",
 ]
 PLAIN_PROMPTS = [
     "a plain, ordinary mugshot of a person with a neutral expression",
