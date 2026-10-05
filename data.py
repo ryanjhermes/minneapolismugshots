@@ -38,6 +38,9 @@ class Config:
     MAX_CHARGE_LENGTH = 150
     MAX_CHARGES = 3
     CHARGE_SEPARATOR = '; '
+
+    # Ranking bonus added to the 0..1 distinctiveness score, by most severe charge
+    SEVERITY_BONUS = {'Felony': 0.5, 'Gross Misdemeanor': 0.25, 'Misdemeanor': 0.0, '': 0.0}
     
     # File paths
     CSV_FILENAME = "jail_roster_data.csv"
@@ -95,6 +98,21 @@ class Config:
         '[class*="modal"]',
         '[class*="dialog"]'
     ]
+
+def classify_severity(text):
+    """Map severity text or charge text to Felony / Gross Misdemeanor / Misdemeanor / ''."""
+    t = (text or '').upper()
+    if 'FELONY' in t:
+        return 'Felony'
+    if 'GROSS' in t or re.search(r'\bGM\b', t):
+        return 'Gross Misdemeanor'
+    if 'MISD' in t:
+        return 'Misdemeanor'
+    return ''
+
+def most_severe(values):
+    order = ['', 'Misdemeanor', 'Gross Misdemeanor', 'Felony']
+    return max((classify_severity(v) for v in values), key=order.index, default='')
 
 class FieldExtractor:
     """Dedicated class for extracting inmate data fields with better debugging"""
@@ -324,6 +342,13 @@ class FieldExtractor:
 
         if charges:
             self.extracted_data['Charge 1'] = Config.CHARGE_SEPARATOR.join(charges)
+            # Severity field values next to each charge, plus keywords in the charge text itself
+            lines = [l.strip() for l in page_text.split('\n')]
+            severities = [
+                (l[len('Severity of Charge:'):].strip() or (lines[i + 1] if i + 1 < len(lines) else ''))
+                for i, l in enumerate(lines) if l.startswith('Severity of Charge:')
+            ]
+            self.extracted_data['Severity'] = most_severe(severities + charges)
             self.log(f"Found charge ({source}): {self.extracted_data['Charge 1']}", "SUCCESS")
             return
 
@@ -935,8 +960,8 @@ def save_to_posting_queue(data_list):
     """Save inmates to posting queue for staggered posting"""
 
     def filter_priority_inmates(d, n=10):
-        """Rank by: has a charge, then visual distinctiveness (CLIP), then bail amount.
-        If the model can't run, every score is 0 and this falls back to charge + bail."""
+        """Rank by: has a charge, then distinctiveness (CLIP, rescaled 0..1 per batch)
+        plus a severity bonus, then bail. If CLIP can't run, distinctiveness is 0."""
         def get_bail_amount(bail_str):
             match = re.search(r'\$[\d,]+\.?\d*', bail_str or '')
             return float(match.group()[1:].replace(',', '')) if match else 0
@@ -944,18 +969,27 @@ def save_to_posting_queue(data_list):
         def has_charge(inmate):
             return inmate.get('Charge 1', 'No charge listed') != 'No charge listed'
 
-        scores = {}
+        def severity(inmate):
+            return most_severe([inmate.get('Severity', ''), inmate.get('Charge 1', '')]) if has_charge(inmate) else ''
+
+        raw = {}
         try:
             from mugshot_ranker import score_mugshots
-            scores = score_mugshots([i['Mugshot_File'] for i in d if os.path.exists(i.get('Mugshot_File', ''))])
+            raw = score_mugshots([i['Mugshot_File'] for i in d if os.path.exists(i.get('Mugshot_File', ''))])
         except Exception as e:
-            print(f"⚠️  Distinctiveness ranking unavailable, using charge + bail only: {e}")
+            print(f"⚠️  Distinctiveness ranking unavailable, using severity + bail only: {e}")
 
-        ranked = sorted(d, key=lambda i: (not has_charge(i),
-                                          -scores.get(i.get('Mugshot_File'), 0),
-                                          -get_bail_amount(i.get('Bail', ''))))
+        # Rescale to 0..1 within today's batch so the spread is comparable to the severity bonus
+        lo, hi = min(raw.values(), default=0), max(raw.values(), default=0)
+        distinct = {p: (v - lo) / (hi - lo) if hi > lo else 0 for p, v in raw.items()}
+
+        def total(inmate):
+            return distinct.get(inmate.get('Mugshot_File'), 0) + Config.SEVERITY_BONUS[severity(inmate)]
+
+        ranked = sorted(d, key=lambda i: (not has_charge(i), -total(i), -get_bail_amount(i.get('Bail', ''))))
         for i, inmate in enumerate(ranked[:n], 1):
-            print(f"🏆 #{i}: {inmate.get('Full Name')} | distinctiveness {scores.get(inmate.get('Mugshot_File'), 0):.2f}")
+            print(f"🏆 #{i}: {inmate.get('Full Name')} | total {total(inmate):.2f} = "
+                  f"distinct {distinct.get(inmate.get('Mugshot_File'), 0):.2f} + {severity(inmate) or 'no severity'}")
         return ranked[:n]
 
     print(f"💾 Creating posting queue with {len(data_list)} inmates...")
@@ -986,7 +1020,7 @@ def save_to_posting_queue(data_list):
     
     print(f"✅ Posting queue saved successfully")
     print(f"📊 Queue stats: {len(filtered_inmates)} inmates prioritized for posting")
-    print(f"🎯 Prioritized from {len(data_list)} total inmates to top 10 by charge, distinctiveness, then bail")
+    print(f"🎯 Prioritized from {len(data_list)} total inmates to top 10 by charge, distinctiveness + severity, then bail")
 
     return True
 
@@ -2125,10 +2159,10 @@ def save_to_csv(data_list, filename=Config.CSV_FILENAME):
             return False
         
         # Define CSV headers including mugshot filename
-        headers = ['Full Name', 'Charge 1', 'Bail', 'Mugshot_File']
+        headers = ['Full Name', 'Charge 1', 'Severity', 'Bail', 'Mugshot_File']
         
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=headers)
+            writer = csv.DictWriter(csvfile, fieldnames=headers, extrasaction='ignore')
             
             # Write header
             writer.writeheader()
