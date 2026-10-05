@@ -783,6 +783,21 @@ def post_to_instagram(image_url, caption, credentials, test_mode=False):
             return False
         
         print(f"✅ Media created with ID: {media_id}")
+
+        # Instagram processes the image asynchronously; publishing before it
+        # finishes fails with "Media ID is not available". Wait for FINISHED.
+        for attempt in range(12):
+            status = requests.get(
+                f"https://graph.facebook.com/v23.0/{media_id}",
+                params={'fields': 'status_code', 'access_token': access_token},
+            ).json().get('status_code')
+            if status == 'FINISHED':
+                break
+            if status in ('ERROR', 'EXPIRED'):
+                print(f"❌ Media processing failed: {status}")
+                return False
+            print(f"⏳ Media status: {status}, waiting...")
+            time.sleep(5)
         
         # Step 2: Publish the media
         print(f"📤 Publishing media to Instagram...")

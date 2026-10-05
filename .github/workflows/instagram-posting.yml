@@ -115,7 +115,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests python-dotenv pytz
         # Install ML dependencies for BLIP filtering
-        pip install transformers torch pillow
+        # transformers 5 removed the visual-question-answering pipeline BLIP uses
+        pip install "transformers<5" torch pillow
         echo "✅ All dependencies installed including BLIP requirements"
 
     - name: Test BLIP availability
