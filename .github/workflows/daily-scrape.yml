@@ -11,6 +11,10 @@ on:
 jobs:
   scrape-and-deploy:
     runs-on: ubuntu-latest
+    # Shared with instagram-posting so the two never edit the queue at the same time
+    concurrency:
+      group: queue-state
+      cancel-in-progress: false
     
     permissions:
       contents: write # Allow pushing to repository
