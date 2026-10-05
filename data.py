@@ -935,29 +935,29 @@ def save_to_posting_queue(data_list):
     """Save inmates to posting queue for staggered posting"""
 
     def filter_priority_inmates(d, n=10):
-        """Filter inmates by posting priority (charge + bail = higher priority)"""
-        def get_priority(inmate):
-            priority = 0
-            # Charge: +1 priority point
-            if inmate.get('Charge 1') and inmate['Charge 1'] != 'No charge listed':
-                priority += 1
-            # Bail: +1 priority point
-            if inmate.get('Bail') and inmate['Bail'] != 'No bail information':
-                priority += 1
-            return priority
-        
-        # Sort by priority (highest first), then by bail amount for tie-breaking
+        """Rank by: has a charge, then visual distinctiveness (CLIP), then bail amount.
+        If the model can't run, every score is 0 and this falls back to charge + bail."""
         def get_bail_amount(bail_str):
-            if not bail_str or bail_str == 'No bail information':
-                return 0
-            # Extract dollar amount from bail string
-            match = re.search(r'\$[\d,]+\.?\d*', bail_str)
-            if match:
-                return float(match.group()[1:].replace(',', ''))
-            return 0
-        
-        return sorted(d, key=lambda i: (-get_priority(i), -get_bail_amount(i.get('Bail', ''))))[:n]
-    
+            match = re.search(r'\$[\d,]+\.?\d*', bail_str or '')
+            return float(match.group()[1:].replace(',', '')) if match else 0
+
+        def has_charge(inmate):
+            return inmate.get('Charge 1', 'No charge listed') != 'No charge listed'
+
+        scores = {}
+        try:
+            from mugshot_ranker import score_mugshots
+            scores = score_mugshots([i['Mugshot_File'] for i in d if os.path.exists(i.get('Mugshot_File', ''))])
+        except Exception as e:
+            print(f"⚠️  Distinctiveness ranking unavailable, using charge + bail only: {e}")
+
+        ranked = sorted(d, key=lambda i: (not has_charge(i),
+                                          -scores.get(i.get('Mugshot_File'), 0),
+                                          -get_bail_amount(i.get('Bail', ''))))
+        for i, inmate in enumerate(ranked[:n], 1):
+            print(f"🏆 #{i}: {inmate.get('Full Name')} | distinctiveness {scores.get(inmate.get('Mugshot_File'), 0):.2f}")
+        return ranked[:n]
+
     print(f"💾 Creating posting queue with {len(data_list)} inmates...")
     
     # Filter to top 10 highest priority inmates BEFORE creating queue
@@ -986,7 +986,7 @@ def save_to_posting_queue(data_list):
     
     print(f"✅ Posting queue saved successfully")
     print(f"📊 Queue stats: {len(filtered_inmates)} inmates prioritized for posting")
-    print(f"🎯 Prioritized from {len(data_list)} total inmates to top 10 by posting priority (charge + bail)")
+    print(f"🎯 Prioritized from {len(data_list)} total inmates to top 10 by charge, distinctiveness, then bail")
 
     return True
 

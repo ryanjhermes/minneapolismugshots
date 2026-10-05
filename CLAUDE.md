@@ -44,6 +44,7 @@ Scrape → jail_roster_data.csv + mugshots/
 | File | Role |
 |------|------|
 | `data.py` | Everything: scraper, queue, posting, CLI entrypoint (~2,600 lines) |
+| `mugshot_ranker.py` | CLIP zero-shot distinctiveness score per mugshot |
 | `chargeextraction.py` | Charge text parsing utilities |
 | `posting_queue.json` | Runtime state — which inmates are queued/posted |
 | `jail_roster_data.csv` | Cumulative scraped data |
@@ -55,7 +56,9 @@ Scrape → jail_roster_data.csv + mugshots/
 
 ### Posting priority
 
-Inmates are ranked: "Hold Without Bail" first, then by bail dollar amount descending. Only inmates with both a mugshot and charge are eligible. The top 10 go into the queue.
+Inmates with a charge rank first, then by visual distinctiveness, then by bail dollar amount. The top 10 go into the queue.
+
+Distinctiveness comes from `mugshot_ranker.py`: CLIP (`openai/clip-vit-base-patch32`, free, CPU) scores each mugshot against the prompts in `DISTINCTIVE_PROMPTS` vs `PLAIN_PROMPTS`. Edit those lists to change what "stands out" means. If torch/transformers or the model download fails, every score is 0 and ranking falls back to charge + bail. Local setup: `pip install torch transformers pillow`.
 
 ### Environment variables (`.env`)
 
