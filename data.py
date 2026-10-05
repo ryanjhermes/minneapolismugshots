@@ -2638,7 +2638,8 @@ def check_posting_queue():
 
 def posting_mode():
     """Decide what this posting run should do: 'post', 'recap' or '' (nothing), plus a reason.
-    Scheduled runs act only in their Central-time slot; manual runs post whatever is pending."""
+    Scheduled runs fill the latest Central-time slot that has no post yet (even if GitHub runs late);
+    manual runs post whatever is pending."""
     try:
         with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
             q = json.load(f)
@@ -2656,13 +2657,17 @@ def posting_mode():
         if pending:
             return 'post', 'manual'
         return ('recap', 'manual') if recap_ready else ('', 'manual_nothing_pending')
-    if now.hour == Config.RECAP_HOUR:
-        return ('recap', 'recap_hour') if recap_ready else ('', 'recap_unavailable_or_posted')
-    if now.hour not in Config.POSTING_HOURS:
-        return '', f'outside_slots_{now.hour}'
-    if any(t.date() == now.date() and t.hour == now.hour for t in posted_times):
-        return '', f'already_posted_hour_{now.hour}'
-    return ('post', f'slot_{now.hour}') if pending else ('', 'queue_empty')
+    if now.hour >= Config.RECAP_HOUR and recap_ready:
+        return 'recap', 'recap_hour'
+    # Post if nothing has gone out since the most recent slot started, so a run GitHub
+    # starts late still posts; missed earlier slots don't pile up into a burst
+    started = [h for h in Config.POSTING_HOURS if h <= now.hour]
+    if not started:
+        return '', f'before_first_slot_{now.hour}'
+    slot_start = now.replace(hour=started[-1], minute=0, second=0, microsecond=0)
+    if any(t >= slot_start for t in posted_times):
+        return '', f'slot_{started[-1]}_already_posted'
+    return ('post', f'slot_{started[-1]}') if pending else ('', 'queue_empty')
 
 def build_reels():
     """Render a Reel for each unposted queued inmate plus a Top 5 recap. Any failure leaves
