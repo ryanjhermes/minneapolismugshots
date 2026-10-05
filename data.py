@@ -1219,6 +1219,27 @@ def cleanup_all_mugshots():
         print(f"❌ Error cleaning all mugshots: {e}")
         return False
 
+def purge_unqueued_mugshots():
+    """Delete every mugshot not needed by an unposted queue entry.
+    Skips entirely if the queue can't be read, so a broken scrape never wipes upcoming posts."""
+    try:
+        with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
+            queue_data = json.load(f)
+        keep = {os.path.basename(i['data'].get('Mugshot_File', ''))
+                for i in queue_data['inmates'] if not i.get('posted')}
+    except Exception as e:
+        print(f"⚠️  Queue unreadable, skipping mugshot purge: {e}")
+        return False
+
+    deleted = 0
+    if os.path.isdir(Config.MUGSHOTS_DIR):
+        for fn in os.listdir(Config.MUGSHOTS_DIR):
+            if fn.lower().endswith(('.jpg', '.jpeg', '.png')) and fn not in keep:
+                os.remove(os.path.join(Config.MUGSHOTS_DIR, fn))
+                deleted += 1
+    print(f"🧹 Purged {deleted} mugshots not in the posting queue (kept {len(keep)})")
+    return True
+
 def post_next_inmates(batch_size=1, repo_name="minneapolismugshots", username="ryanjhermes", test_mode=False):
     """Post next inmate from queue (single posting) with AI filtering"""
     try:
@@ -2761,6 +2782,9 @@ if __name__ == "__main__":
         elif command == "cleanup-unposted":
             # Clean up unposted inmates' mugshots and prune queue
             cleanup_unposted_mugshots()
+        elif command == "purge-unqueued":
+            # Delete every mugshot not needed for an upcoming post
+            purge_unqueued_mugshots()
         elif command == "cleanup-posted":
             # Clean up existing posted inmates' mugshots (legacy)
             cleanup_existing_posted_mugshots()
@@ -2778,6 +2802,7 @@ if __name__ == "__main__":
             print("  python data.py cleanup-mugshots # Clean up ALL mugshot files (repo + docs)")
             print("  python data.py cleanup-unposted # Clean up unposted inmates' mugshots and prune queue")
             print("  python data.py cleanup-posted   # Clean up only posted inmates' mugshots (legacy)")
+            print("  python data.py purge-unqueued   # Delete all mugshots not needed for an upcoming post")
     else:
         # Production mode - scrape 100 inmates and filter to top 10 with highest priority
         print("🚀 Running in PRODUCTION MODE - processing 100 inmates, filtering to top 10 highest priority (charge + bail)")
