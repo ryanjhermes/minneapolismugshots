@@ -11,9 +11,10 @@ on:
 jobs:
   post-inmates:
     runs-on: ubuntu-latest
+    # Shared with daily-scrape so the two never edit the queue at the same time
     concurrency:
-      group: instagram-posting
-      cancel-in-progress: true
+      group: queue-state
+      cancel-in-progress: false
     
     permissions:
       contents: write # Allow pushing updates to repository

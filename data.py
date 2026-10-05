@@ -994,6 +994,16 @@ def save_to_posting_queue(data_list):
 
     print(f"💾 Creating posting queue with {len(data_list)} inmates...")
     
+    # Never re-queue anyone the current queue already posted (same-day re-scrapes)
+    try:
+        with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
+            already_posted = {i['data'].get('Full Name') for i in json.load(f)['inmates'] if i.get('posted')}
+    except Exception:
+        already_posted = set()
+    if already_posted:
+        print(f"⏭️  Skipping {len(already_posted)} already posted: {', '.join(sorted(already_posted))}")
+        data_list = [d for d in data_list if d.get('Full Name') not in already_posted]
+
     # Filter to top 10 highest priority inmates BEFORE creating queue
     filtered_inmates = filter_priority_inmates(data_list, n=10)
     
