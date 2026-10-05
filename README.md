@@ -46,7 +46,6 @@ The system operates with flexible 24-hour posting:
 - **Posting Hours**: 24/7 (all day, every day)
 - **Posting Interval**: Every 3 hours minimum between posts
 - **Single Posting**: One inmate per post (no batches)
-- **AI Filtering**: All mugshots analyzed before posting
 
 ### Posting Schedule:
 - **Every 3 Hours**: Automated posting attempts throughout the day
@@ -63,23 +62,7 @@ Our system prioritizes the most significant cases:
 🏆 **Top 10 Highest Bail** - Focus on serious charges and high-profile cases  
 🚫 **"Hold Without Bail"** - Prioritized as most serious cases  
 💰 **Bail Amounts** - Sorted from highest to lowest dollar amounts  
-📊 **Quality Control** - Only cases with both mugshots AND charges  
-🤖 **AI Image Filtering** - BLIP VQA model analyzes mugshot quality before posting
-
-## AI-Powered Quality Control
-
-The system now uses BLIP VQA (Visual Question Answering) model to analyze mugshots before posting:
-
-- **Image Quality Assessment** - Evaluates clarity, lighting, and framing
-- **Professional Appearance** - Ensures images are suitable for public viewing
-- **Technical Issue Detection** - Identifies blur, distortion, or other problems
-- **Content Appropriateness** - Validates images are appropriate for social media
-
-### AI Filtering Criteria:
-1. **Image Quality** - Clear, well-lit, properly framed
-2. **Professional Appearance** - Presentable and appropriate for public viewing
-3. **Technical Issues** - No blur, distortion, or technical problems
-4. **Content Appropriateness** - Suitable for public social media posting
+📊 **Quality Control** - Only cases with both mugshots AND charges
 
 ## Anti-Detection Technology
 
@@ -122,7 +105,6 @@ All information displayed is:
 ### Prerequisites
 - Python 3.8+
 - Chrome browser (for web scraping)
-- Transformers and PyTorch (for AI filtering)
 
 ### Installation
 1. Clone the repository
@@ -136,17 +118,14 @@ All information displayed is:
 
 ### Usage
 ```bash
-# Full scraping with AI filtering
+# Full scraping
 python data.py
 
 # Test scraping (25 inmates)
 python data.py test
 
-# Post next inmate with AI filtering
+# Post next inmate
 python data.py post-next
-
-# Test AI filtering
-python data.py test-ai-filter
 
 # Check posting queue
 python data.py check-queue

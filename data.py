@@ -13,18 +13,6 @@ import pytz
 # Load environment variables from .env file (if it exists)
 load_dotenv()
 
-# Import BLIP filter
-try:
-    from openai_filter import BLIPImageFilter
-    BLIP_AVAILABLE = True
-    print("✅ BLIP filter imported successfully")
-except ImportError as e:
-    print(f"⚠️  BLIP filter not available - install transformers and torch packages")
-    print(f"🔍 Import error details: {e}")
-    BLIP_AVAILABLE = False
-except Exception as e:
-    print(f"⚠️  BLIP filter error during import: {e}")
-    BLIP_AVAILABLE = False
 
 class Config:
     """Centralized configuration for the scraping application"""
@@ -783,6 +771,21 @@ def post_to_instagram(image_url, caption, credentials, test_mode=False):
             return False
         
         print(f"✅ Media created with ID: {media_id}")
+
+        # Instagram processes the image asynchronously; publishing before it
+        # finishes fails with "Media ID is not available". Wait for FINISHED.
+        for attempt in range(12):
+            status = requests.get(
+                f"https://graph.facebook.com/v23.0/{media_id}",
+                params={'fields': 'status_code', 'access_token': access_token},
+            ).json().get('status_code')
+            if status == 'FINISHED':
+                break
+            if status in ('ERROR', 'EXPIRED'):
+                print(f"❌ Media processing failed: {status}")
+                return False
+            print(f"⏳ Media status: {status}, waiting...")
+            time.sleep(5)
         
         # Step 2: Publish the media
         print(f"📤 Publishing media to Instagram...")
@@ -988,7 +991,7 @@ def save_to_posting_queue(data_list):
     return True
 
 def get_next_inmates_to_post(batch_size=1):
-    """Get next inmate to post from queue (single posting) with AI filtering"""
+    """Get next inmate to post from queue (single posting)"""
     try:
         # Load queue
         try:
@@ -1008,7 +1011,7 @@ def get_next_inmates_to_post(batch_size=1):
         # Get next single inmate
         next_inmate = unposted_inmates[:batch_size]
         
-        print(f"📋 Found {len(next_inmate)} inmate ready for AI filtering")
+        print(f"📋 Found {len(next_inmate)} inmate ready to post")
         print(f"📊 Remaining in queue: {len(unposted_inmates)} total")
         
         # DEBUG: Check if mugshot files exist before processing
@@ -1027,46 +1030,7 @@ def get_next_inmates_to_post(batch_size=1):
             else:
                 print(f"🔍 DEBUG: Mugshots directory does not exist!")
         
-        # Apply AI filtering if available
-        if BLIP_AVAILABLE:
-            print(f"\n🤖 Applying BLIP mugshot filtering...")
-            print(f"🔍 Debug: BLIP_AVAILABLE={BLIP_AVAILABLE}")
-            try:
-                ai_filter = BLIPImageFilter()
-                approved_inmates, rejected_inmates = ai_filter.filter_inmates_by_ai(next_inmate)
-                
-                if approved_inmates:
-                    print(f"✅ BLIP approved {len(approved_inmates)} inmate(s) for posting")
-                    return approved_inmates
-                else:
-                    print(f"❌ BLIP rejected all {len(next_inmate)} inmate(s)")
-                    print(f"🔄 FALLBACK MODE: Checking if rejection was due to missing files...")
-                    
-                    # Check if rejection was due to missing mugshot files
-                    missing_files = True
-                    for inmate in next_inmate:
-                        mugshot_path = inmate['data'].get('Mugshot_File', '')
-                        if mugshot_path and os.path.exists(mugshot_path):
-                            missing_files = False
-                            break
-                    
-                    if missing_files:
-                        print(f"⚠️  All rejections due to missing files - skipping AI filtering as fallback")
-                        print(f"📱 Proceeding with posting without AI analysis (emergency mode)")
-                        return next_inmate
-                    else:
-                        print(f"💡 Consider running 'python data.py post-next' again to try next inmate")
-                        return []
-                    
-            except Exception as e:
-                print(f"⚠️  BLIP filtering failed: {e}")
-                print(f"🔄 FALLBACK MODE: Proceeding with original inmate without AI filtering")
-                print(f"💡 BLIP filtering will be skipped until model issues are resolved")
-                return next_inmate
-        else:
-            print(f"⚠️  BLIP filtering not available - proceeding without AI analysis")
-            print(f"🔍 Debug: BLIP_AVAILABLE={BLIP_AVAILABLE}")
-            return next_inmate
+        return next_inmate
         
     except Exception as e:
         print(f"❌ Error reading posting queue: {e}")
@@ -1241,7 +1205,7 @@ def purge_unqueued_mugshots():
     return True
 
 def post_next_inmates(batch_size=1, repo_name="minneapolismugshots", username="ryanjhermes", test_mode=False):
-    """Post next inmate from queue (single posting) with AI filtering"""
+    """Post next inmate from queue (single posting)"""
     try:
         print(f"\n📱 Starting single Instagram posting...")
         
@@ -2721,14 +2685,6 @@ if __name__ == "__main__":
             # Full scraping in test mode (limit to 25 inmates, filter to top 10 highest priority)
             print("🧪 Running in TEST MODE - processing 25 inmates, filtering to top 10 highest priority (charge + bail)")
             open_hennepin_jail_roster(inmate_limit=Config.TEST_INMATE_LIMIT)
-        elif command == "test-ai-filter":
-            # Test BLIP mugshot filtering
-            if BLIP_AVAILABLE:
-                from openai_filter import test_ai_filter
-                test_ai_filter()
-            else:
-                print("❌ BLIP filter not available")
-                print("💡 Install transformers and torch packages: pip install transformers torch pillow")
         elif command == "check-posting-status":
             # Check posting status and limits
             daily_posts = get_daily_post_count()
@@ -2794,9 +2750,8 @@ if __name__ == "__main__":
             print("  python data.py                # Full scraping (100 inmates) with top 10 highest priority filtering")
             print("  python data.py test           # Test scraping (25 inmates → top 10 highest priority)")
             print("  python data.py test-instagram # Test posting with existing data")
-            print("  python data.py post-next      # Post next inmate from queue (with AI filtering)")
+            print("  python data.py post-next      # Post next inmate from queue")
             print("  python data.py post-next-test # Test posting (simulation only)")
-            print("  python data.py test-ai-filter # Test AI mugshot filtering")
             print("  python data.py check-posting-status # Check posting limits and timing")
             print("  python data.py check-queue    # Check posting queue status")
             print("  python data.py cleanup-mugshots # Clean up ALL mugshot files (repo + docs)")

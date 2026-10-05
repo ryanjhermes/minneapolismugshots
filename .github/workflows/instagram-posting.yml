@@ -114,24 +114,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install requests python-dotenv pytz
-        # Install ML dependencies for BLIP filtering
-        pip install transformers torch pillow
-        echo "✅ All dependencies installed including BLIP requirements"
-
-    - name: Test BLIP availability
-      if: steps.preflight.outputs.ready == 'true'
-      run: |
-        echo "🤖 Testing BLIP AI filter availability..."
-        python -c "
-        try:
-            from transformers import pipeline, AutoProcessor, AutoModelForVisualQuestionAnswering
-            from PIL import Image
-            print('✅ BLIP dependencies available')
-        except ImportError as e:
-            print(f'❌ BLIP import error: {e}')
-        except Exception as e:
-            print(f'⚠️  BLIP setup error: {e}')
-        "
+        echo "✅ Dependencies installed"
 
     - name: Create .env file with secrets
       if: steps.preflight.outputs.ready == 'true'
