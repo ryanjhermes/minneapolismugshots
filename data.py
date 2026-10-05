@@ -30,6 +30,7 @@ class Config:
     POSTING_HOURS = [7, 9, 11, 12, 13, 17, 19, 20]
     RECAP_HOUR = 21
     PAGES_URL = "https://ryanjhermes.github.io/minneapolismugshots"
+    DISCLAIMER = "Charges are allegations, not convictions. All persons are presumed innocent until proven guilty in a court of law."
     REELS_DIR = "reels"
     
     # Quality thresholds
@@ -744,6 +745,8 @@ BAIL: {bail_display}
 
 Arrest Date: {data.get('Booking_Date') or get_current_date()}
 Hennepin County, MN
+
+{Config.DISCLAIMER}
 
 #minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
         
@@ -2726,6 +2729,8 @@ def post_recap(test_mode=False):
 {lines}
 
 Hennepin County, MN
+
+{Config.DISCLAIMER}
 
 #minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
     print(caption)
