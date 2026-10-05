@@ -22,9 +22,18 @@ DISTINCTIVE_PROMPTS = [
     "a mugshot of a strikingly attractive, model-like person",
     "a mugshot of a very good-looking person",
 ]
+# Keep this list about as long as DISTINCTIVE_PROMPTS so ordinary photos don't score high by default
 PLAIN_PROMPTS = [
     "a plain, ordinary mugshot of a person with a neutral expression",
     "a normal mugshot of a person with ordinary hair and no tattoos",
+    "a boring, unremarkable police booking photo",
+    "a mugshot of an average-looking person",
+    "a mugshot of a person with short, plain hair",
+    "a mugshot of a person with a tired, blank expression",
+    "a mugshot of a person wearing a plain t-shirt",
+    "a typical booking photo of a person against a gray wall",
+    "a mugshot of a person with no visible tattoos or piercings",
+    "a forgettable, everyday mugshot",
 ]
 
 
