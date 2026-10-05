@@ -999,12 +999,17 @@ def save_to_posting_queue(data_list):
 
     print(f"💾 Creating posting queue with {len(data_list)} inmates...")
     
-    # Never re-queue anyone the current queue already posted (same-day re-scrapes)
+    # Carry forward anyone posted in the last 24h, so a rebuild never re-queues them
+    # and the record survives any number of same-day rebuilds
     try:
         with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
-            already_posted = {i['data'].get('Full Name') for i in json.load(f)['inmates'] if i.get('posted')}
+            old = json.load(f)['inmates']
     except Exception:
-        already_posted = set()
+        old = []
+    cutoff = datetime.now(pytz.utc) - timedelta(hours=24)
+    kept = [i for i in old if i.get('posted') and i.get('posted_at')
+            and datetime.fromisoformat(i['posted_at']) >= cutoff]
+    already_posted = {i['data'].get('Full Name') for i in old if i.get('posted')}
     if already_posted:
         print(f"⏭️  Skipping {len(already_posted)} already posted: {', '.join(sorted(already_posted))}")
         data_list = [d for d in data_list if d.get('Full Name') not in already_posted]
@@ -1014,23 +1019,16 @@ def save_to_posting_queue(data_list):
     booking_date = get_current_date()
     for d in filtered_inmates:
         d['Booking_Date'] = booking_date
-    
-    # Add timestamp and posting status to each inmate
+
+    entries = kept + [{'data': d, 'posted': False, 'posted_at': None} for d in filtered_inmates]
+    for n, entry in enumerate(entries, 1):
+        entry['id'] = n
     queue_data = {
         'created_at': get_current_datetime_iso(),
-        'total_inmates': len(filtered_inmates),
-        'posted_count': 0,
-        'inmates': []
+        'total_inmates': len(entries),
+        'posted_count': len(kept),
+        'inmates': entries
     }
-    
-    for i, data in enumerate(filtered_inmates):
-        inmate = {
-            'id': i + 1,
-            'data': data,
-            'posted': False,
-            'posted_at': None
-        }
-        queue_data['inmates'].append(inmate)
     
     # Save to JSON file
     with open(Config.QUEUE_FILENAME, 'w', encoding='utf-8') as f:
