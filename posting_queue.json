@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-05T13:47:41.426141-05:00",
   "total_inmates": 12,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "id": 1,
@@ -39,8 +39,8 @@
         "Booking_Date": "10/05/2026",
         "Reel_File": "reels/mugshot_DOWNS_SHAYON_SHAWNTEZ.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-05T13:59:23.248535-05:00",
       "id": 3
     },
     {
