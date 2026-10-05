@@ -55,7 +55,7 @@ Scrape → jail_roster_data.csv + mugshots/
 ### GitHub Actions workflows
 
 - **`daily-scrape.yml`** — Runs at 11 PM Central (04:00 UTC) and on every push to `main`. Scrapes the jail roster, writes CSV + mugshots, creates `posting_queue.json` with top 10 priority inmates (skipping anyone already posted), renders Reels, deploys to GitHub Pages. Reels live only in the Pages artifact (`reels/` is gitignored).
-- **`instagram-posting.yml`** — Runs hourly. `python data.py preflight` decides: post one inmate if the Central hour is in `Config.POSTING_HOURS` and that hour has no post yet, post the recap at `Config.RECAP_HOUR`, otherwise nothing. Manual runs post the next inmate immediately. Posts wait for Instagram to finish processing media before publishing.
+- **`instagram-posting.yml`** — Runs hourly. `python data.py preflight` decides: post one inmate if nothing has posted since the most recent `Config.POSTING_HOURS` slot started (so late GitHub runs still post), post the recap at or after `Config.RECAP_HOUR`, otherwise nothing. Manual runs post the next inmate immediately. Posts wait for Instagram to finish processing media before publishing.
 - Both workflows share the `queue-state` concurrency group so they never edit the queue at the same time.
 
 ### Posting priority
