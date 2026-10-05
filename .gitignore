@@ -44,3 +44,6 @@ docs/
 
 # Logs
 *.log 
+
+# Rendered reels (served from GitHub Pages, not committed)
+reels/

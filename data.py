@@ -26,10 +26,11 @@ class Config:
     CLICK_WAIT_TIME = 3
     
     # Posting limits and scheduling
-    DAILY_POST_LIMIT = 8  # Increased from 5 to 8 for better coverage
-    POSTING_INTERVAL_HOURS = 3  # Increased from 2 to 3 hours for better spread
-    POSTING_START_HOUR = 0   # 12:00 AM - Allow posting all day
-    POSTING_END_HOUR = 24    # 11:59 PM - 24-hour posting window
+    # Central Time hours to post one inmate each (peak Instagram hours), then the Top 5 recap reel
+    POSTING_HOURS = [7, 9, 11, 12, 13, 17, 19, 20]
+    RECAP_HOUR = 21
+    PAGES_URL = "https://ryanjhermes.github.io/minneapolismugshots"
+    REELS_DIR = "reels"
     
     # Quality thresholds
     MIN_NAME_LENGTH = 3
@@ -741,7 +742,7 @@ def generate_caption(data):
 {charge_line}NAME: {name}
 BAIL: {bail_display}
 
-Arrest Date: {get_current_date()}
+Arrest Date: {data.get('Booking_Date') or get_current_date()}
 Hennepin County, MN
 
 #minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
@@ -752,8 +753,8 @@ Hennepin County, MN
         print(f"❌ Error generating caption: {e}")
         return f"🚨 Minneapolis Arrest Alert - {data.get('Full Name', 'Unknown')}"
 
-def post_to_instagram(image_url, caption, credentials, test_mode=False):
-    """Post image to Instagram using Meta API"""
+def post_to_instagram(image_url, caption, credentials, test_mode=False, video_url=None):
+    """Post an image, or a Reel when video_url is given, using the Meta API"""
     try:
         access_token = credentials['access_token']
         business_id = credentials['business_id']
@@ -765,7 +766,7 @@ def post_to_instagram(image_url, caption, credentials, test_mode=False):
         # Test mode - just simulate posting
         if test_mode:
             print(f"🧪 TEST MODE - Would post to Instagram:")
-            print(f"   📸 Image: {image_url}")
+            print(f"   📸 {'Reel: ' + video_url if video_url else 'Image: ' + image_url}")
             print(f"   📝 Caption: {caption[:100]}...")
             print(f"   🎯 Business ID: {business_id}")
             print(f"✅ TEST MODE - Post simulation successful")
@@ -775,11 +776,11 @@ def post_to_instagram(image_url, caption, credentials, test_mode=False):
         print(f"📸 Creating Instagram media for: {image_url}")
         
         media_url = f"https://graph.facebook.com/v23.0/{business_id}/media"
-        media_params = {
-            'image_url': image_url,
-            'caption': caption,
-            'access_token': access_token
-        }
+        media_params = {'caption': caption, 'access_token': access_token}
+        if video_url:
+            media_params.update({'media_type': 'REELS', 'video_url': video_url, 'share_to_feed': 'true'})
+        else:
+            media_params['image_url'] = image_url
         
         media_response = requests.post(media_url, data=media_params)
         
@@ -799,7 +800,8 @@ def post_to_instagram(image_url, caption, credentials, test_mode=False):
 
         # Instagram processes the image asynchronously; publishing before it
         # finishes fails with "Media ID is not available". Wait for FINISHED.
-        for attempt in range(12):
+        # Videos take longer: up to 5 minutes, images up to 1.
+        for attempt in range(60 if video_url else 12):
             status = requests.get(
                 f"https://graph.facebook.com/v23.0/{media_id}",
                 params={'fields': 'status_code', 'access_token': access_token},
@@ -1006,6 +1008,9 @@ def save_to_posting_queue(data_list):
 
     # Filter to top 10 highest priority inmates BEFORE creating queue
     filtered_inmates = filter_priority_inmates(data_list, n=10)
+    booking_date = get_current_date()
+    for d in filtered_inmates:
+        d['Booking_Date'] = booking_date
     
     # Add timestamp and posting status to each inmate
     queue_data = {
@@ -1253,11 +1258,6 @@ def post_next_inmates(batch_size=1, repo_name="minneapolismugshots", username="r
     try:
         print(f"\n📱 Starting single Instagram posting...")
         
-        # Check if posting is allowed
-        if not test_mode and not is_posting_allowed():
-            print("❌ Posting not allowed at this time")
-            return False
-        
         # Get next inmate to post
         inmates_to_post = get_next_inmates_to_post(batch_size)
         
@@ -1298,8 +1298,15 @@ def post_next_inmates(batch_size=1, repo_name="minneapolismugshots", username="r
                 caption = generate_caption(inmate_data)
                 print(f"📝 Caption preview: {caption[:100]}...")
                 
-                # Post to Instagram
-                success = post_to_instagram(image_url, caption, credentials, test_mode)
+                # Post as a Reel when one was rendered, falling back to the still image
+                success = False
+                if inmate_data.get('Reel_File'):
+                    reel_url = f"{Config.PAGES_URL}/{inmate_data['Reel_File']}"
+                    success = post_to_instagram(image_url, caption, credentials, test_mode, video_url=reel_url)
+                    if not success:
+                        print("⚠️  Reel failed, falling back to image post")
+                if not success:
+                    success = post_to_instagram(image_url, caption, credentials, test_mode)
                 
                 if success:
                     successful_posts.append(inmate_id)
@@ -2628,88 +2635,108 @@ def check_posting_queue():
     except Exception as e:
         print(f"❌ Error checking queue: {e}")
 
-def get_daily_post_count():
-    """Get the number of posts made today"""
+def posting_mode():
+    """Decide what this posting run should do: 'post', 'recap' or '' (nothing), plus a reason.
+    Scheduled runs act only in their Central-time slot; manual runs post whatever is pending."""
     try:
-        # Load queue to count today's posts
         with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
-            queue_data = json.load(f)
-        
-        # Count posts made today
-        today = get_current_date()
-        today_posts = 0
-        
-        for inmate in queue_data['inmates']:
-            if inmate.get('posted') and inmate.get('posted_at'):
-                # Parse the posted_at timestamp
-                posted_time = datetime.fromisoformat(inmate['posted_at'].replace('Z', '+00:00'))
-                # Convert to Central Time
-                central_tz = pytz.timezone('US/Central')
-                posted_central = posted_time.astimezone(central_tz)
-                posted_date = posted_central.strftime("%m/%d/%Y")
-                
-                if posted_date == today:
-                    today_posts += 1
-        
-        return today_posts
-        
+            q = json.load(f)
     except Exception as e:
-        print(f"⚠️  Error getting daily post count: {e}")
-        return 0
+        return '', f'no_queue ({e})'
 
-def is_posting_allowed():
-    """Check if posting is allowed based on daily limit and time intervals"""
-    try:
-        # Check daily limit
-        daily_posts = get_daily_post_count()
-        if daily_posts >= Config.DAILY_POST_LIMIT:
-            print(f"❌ Daily post limit reached ({daily_posts}/{Config.DAILY_POST_LIMIT})")
-            return False
-        
-        # Check if we're within posting hours
-        central_tz = pytz.timezone('US/Central')
-        current_time = datetime.now(central_tz)
-        current_hour = current_time.hour
-        
-        if current_hour < Config.POSTING_START_HOUR or current_hour >= Config.POSTING_END_HOUR:
-            print(f"❌ Outside posting hours ({Config.POSTING_START_HOUR}:00-{Config.POSTING_END_HOUR}:00)")
-            return False
-        
-        # Check if enough time has passed since last post
+    central = pytz.timezone('US/Central')
+    now = datetime.now(central)
+    posted_times = [datetime.fromisoformat(i['posted_at']).astimezone(central)
+                    for i in q['inmates'] if i.get('posted') and i.get('posted_at')]
+    pending = sum(1 for i in q['inmates'] if not i.get('posted'))
+    recap_ready = bool(q.get('recap_file')) and not q.get('recap_posted_at')
+
+    if os.getenv('GITHUB_EVENT_NAME') == 'workflow_dispatch':
+        if pending:
+            return 'post', 'manual'
+        return ('recap', 'manual') if recap_ready else ('', 'manual_nothing_pending')
+    if now.hour == Config.RECAP_HOUR:
+        return ('recap', 'recap_hour') if recap_ready else ('', 'recap_unavailable_or_posted')
+    if now.hour not in Config.POSTING_HOURS:
+        return '', f'outside_slots_{now.hour}'
+    if any(t.date() == now.date() and t.hour == now.hour for t in posted_times):
+        return '', f'already_posted_hour_{now.hour}'
+    return ('post', f'slot_{now.hour}') if pending else ('', 'queue_empty')
+
+def build_reels():
+    """Render a Reel for each unposted queued inmate plus a Top 5 recap. Any failure leaves
+    that entry without a reel, so posting falls back to the still image."""
+    import reels
+    with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
+        q = json.load(f)
+    os.makedirs(Config.REELS_DIR, exist_ok=True)
+
+    for inmate in q['inmates']:
+        d = inmate['data']
+        d.pop('Reel_File', None)
+        if inmate.get('posted') or not os.path.exists(d.get('Mugshot_File', '')):
+            continue
+        out = os.path.join(Config.REELS_DIR, os.path.basename(d['Mugshot_File']).rsplit('.', 1)[0] + '.mp4')
         try:
-            with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
-                queue_data = json.load(f)
-            
-            # Find the most recent post
-            last_post_time = None
-            for inmate in queue_data['inmates']:
-                if inmate.get('posted') and inmate.get('posted_at'):
-                    posted_time = datetime.fromisoformat(inmate['posted_at'].replace('Z', '+00:00'))
-                    if last_post_time is None or posted_time > last_post_time:
-                        last_post_time = posted_time
-            
-            if last_post_time:
-                # Convert to Central Time
-                last_post_central = last_post_time.astimezone(central_tz)
-                time_since_last = current_time - last_post_central
-                hours_since_last = time_since_last.total_seconds() / 3600
-                
-                if hours_since_last < Config.POSTING_INTERVAL_HOURS:
-                    remaining_hours = Config.POSTING_INTERVAL_HOURS - hours_since_last
-                    print(f"⏳ Too soon since last post ({hours_since_last:.1f}h ago, need {Config.POSTING_INTERVAL_HOURS}h)")
-                    print(f"   Next post allowed in {remaining_hours:.1f} hours")
-                    return False
-            
-            print(f"✅ Posting allowed - {daily_posts}/{Config.DAILY_POST_LIMIT} posts today")
-            return True
-            
+            reels.make_clip(out, 7, d['Mugshot_File'], d.get('Full Name', ''),
+                            reels.charge_lines(d.get('Charge 1', ''), Config.CHARGE_SEPARATOR),
+                            'MINNEAPOLIS MUGSHOTS')
+            d['Reel_File'] = out
+            print(f"🎬 Reel: {out}")
         except Exception as e:
-            print(f"⚠️  Error checking posting intervals: {e}")
-            return True  # Allow posting if we can't check intervals
-        
-    except Exception as e:
-        print(f"❌ Error checking posting permissions: {e}")
+            print(f"⚠️  Reel failed for {d.get('Full Name')}: {e}")
+
+    # Top 5 recap: the queue is already ranked, so take the first five with photos, counting down to #1
+    q['recap_file'], q['recap_posted_at'] = None, None
+    top = [i['data'] for i in q['inmates'] if os.path.exists(i['data'].get('Mugshot_File', ''))][:5]
+    if len(top) == 5:
+        try:
+            date = datetime.strptime(top[0].get('Booking_Date') or get_current_date(), "%m/%d/%Y")
+            clips = [reels.make_clip(os.path.join(Config.REELS_DIR, '_intro.mp4'), 2,
+                                     header=f"TOP 5 MUGSHOTS\n{date.strftime('%b %-d, %Y').upper()}")]
+            for rank in range(5, 0, -1):
+                d = top[rank - 1]
+                clips.append(reels.make_clip(
+                    os.path.join(Config.REELS_DIR, f'_rank{rank}.mp4'), 3, d['Mugshot_File'], d.get('Full Name', ''),
+                    reels.charge_lines(d.get('Charge 1', ''), Config.CHARGE_SEPARATOR, max_lines=3), f"#{rank}"))
+            q['recap_file'] = reels.concat(clips, os.path.join(Config.REELS_DIR, 'recap.mp4'))
+            for c in clips:
+                os.remove(c)
+            q['recap'] = [{'Full Name': d.get('Full Name'), 'Charge 1': d.get('Charge 1')} for d in top]
+            q['recap_date'] = date.strftime('%m/%d/%Y')
+            print(f"🎬 Recap: {q['recap_file']}")
+        except Exception as e:
+            print(f"⚠️  Recap reel failed: {e}")
+
+    with open(Config.QUEUE_FILENAME, 'w', encoding='utf-8') as f:
+        json.dump(q, f, indent=2, ensure_ascii=False)
+
+def post_recap(test_mode=False):
+    """Post the Top 5 recap Reel once."""
+    with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
+        q = json.load(f)
+    if not q.get('recap_file') or q.get('recap_posted_at'):
+        print("📭 No recap to post")
         return False
+    top = q['recap']
+    lines = "\n".join(f"#{n}: {d['Full Name']} - {(d['Charge 1'] or '').split(Config.CHARGE_SEPARATOR)[0]}"
+                      for n, d in enumerate(top, 1))
+    caption = f"""TOP 5 MUGSHOTS - {q.get('recap_date', '')}
+
+{lines}
+
+Hennepin County, MN
+
+#minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
+    print(caption)
+    url = f"{Config.PAGES_URL}/{q['recap_file']}"
+    if not post_to_instagram(url, caption, get_api_credentials(), test_mode, video_url=url):
+        return False
+    q['recap_posted_at'] = get_current_datetime_iso()
+    with open(Config.QUEUE_FILENAME, 'w', encoding='utf-8') as f:
+        json.dump(q, f, indent=2, ensure_ascii=False)
+    print("✅ Recap posted")
+    return True
 
 if __name__ == "__main__":
     import sys
@@ -2729,50 +2756,18 @@ if __name__ == "__main__":
             # Full scraping in test mode (limit to 25 inmates, filter to top 10 highest priority)
             print("🧪 Running in TEST MODE - processing 25 inmates, filtering to top 10 highest priority (charge + bail)")
             open_hennepin_jail_roster(inmate_limit=Config.TEST_INMATE_LIMIT)
-        elif command == "check-posting-status":
-            # Check posting status and limits
-            daily_posts = get_daily_post_count()
-            posting_allowed = is_posting_allowed()
-            
-            print(f"📊 POSTING STATUS:")
-            print(f"   Daily posts: {daily_posts}/{Config.DAILY_POST_LIMIT}")
-            print(f"   Posting allowed: {'✅ Yes' if posting_allowed else '❌ No'}")
-            print(f"   Posting hours: {Config.POSTING_START_HOUR}:00-{Config.POSTING_END_HOUR}:00")
-            print(f"   Posting interval: Every {Config.POSTING_INTERVAL_HOURS} hours")
-            
-            if not posting_allowed:
-                print(f"\n💡 Next posting window:")
-                # Calculate next posting time
-                central_tz = pytz.timezone('US/Central')
-                current_time = datetime.now(central_tz)
-                
-                if daily_posts >= Config.DAILY_POST_LIMIT:
-                    print(f"   Tomorrow (daily limit reached)")
-                elif current_time.hour < Config.POSTING_START_HOUR:
-                    print(f"   Today at {Config.POSTING_START_HOUR}:00")
-                elif current_time.hour >= Config.POSTING_END_HOUR:
-                    print(f"   Tomorrow at {Config.POSTING_START_HOUR}:00")
-                else:
-                    # Check interval
-                    try:
-                        with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
-                            queue_data = json.load(f)
-                        
-                        last_post_time = None
-                        for inmate in queue_data['inmates']:
-                            if inmate.get('posted') and inmate.get('posted_at'):
-                                posted_time = datetime.fromisoformat(inmate['posted_at'].replace('Z', '+00:00'))
-                                if last_post_time is None or posted_time > last_post_time:
-                                    last_post_time = posted_time
-                        
-                        if last_post_time:
-                            last_post_central = last_post_time.astimezone(central_tz)
-                            next_post_time = last_post_central + timedelta(hours=Config.POSTING_INTERVAL_HOURS)
-                            print(f"   {next_post_time.strftime('%m/%d/%Y at %I:%M %p')}")
-                        else:
-                            print(f"   Now (no previous posts)")
-                    except:
-                        print(f"   Now (unable to calculate)")
+        elif command in ("preflight", "check-posting-status"):
+            mode, reason = posting_mode()
+            print(f"mode={mode or 'none'} reason={reason}")
+            if os.getenv('GITHUB_OUTPUT'):
+                with open(os.environ['GITHUB_OUTPUT'], 'a') as gh:
+                    gh.write(f"mode={mode}\nreason={reason}\n")
+        elif command == "make-reels":
+            build_reels()
+        elif command == "post-recap":
+            post_recap()
+        elif command == "post-recap-test":
+            post_recap(test_mode=True)
         elif command == "check-queue":
             # Check posting queue status
             check_posting_queue()
@@ -2796,7 +2791,9 @@ if __name__ == "__main__":
             print("  python data.py test-instagram # Test posting with existing data")
             print("  python data.py post-next      # Post next inmate from queue")
             print("  python data.py post-next-test # Test posting (simulation only)")
-            print("  python data.py check-posting-status # Check posting limits and timing")
+            print("  python data.py preflight      # What a posting run would do now (post / recap / nothing)")
+            print("  python data.py make-reels     # Render Reels for the queue + Top 5 recap (needs ffmpeg)")
+            print("  python data.py post-recap     # Post the Top 5 recap Reel")
             print("  python data.py check-queue    # Check posting queue status")
             print("  python data.py cleanup-mugshots # Clean up ALL mugshot files (repo + docs)")
             print("  python data.py cleanup-unposted # Clean up unposted inmates' mugshots and prune queue")
