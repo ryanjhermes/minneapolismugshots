@@ -26,6 +26,9 @@ jobs:
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        # Latest main, not the commit that triggered the run (a queued run would
+        # otherwise work from a stale queue and fail to push)
+        ref: main
     
     - name: Set up Python
       uses: actions/setup-python@v5
