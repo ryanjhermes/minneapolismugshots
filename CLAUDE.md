@@ -56,7 +56,7 @@ Scrape → jail_roster_data.csv + mugshots/
 
 ### Posting priority
 
-Inmates with a charge rank first, then by distinctiveness (rescaled 0..1 within each day's batch) plus a severity bonus (`Config.SEVERITY_BONUS`: Felony +0.5, Gross Misdemeanor +0.25), then by bail dollar amount. The top 10 go into the queue. Severity comes from the modal's `Severity of Charge:` field, falling back to keywords in the charge text (`classify_severity`).
+Inmates with a charge rank first, then by distinctiveness (rescaled 0..1 within each day's batch) plus a severity bonus (`Config.SEVERITY_BONUS`: Felony +0.2, Gross Misdemeanor +0.1), then by bail dollar amount. The top 10 go into the queue. Severity comes from the modal's `Severity of Charge:` field, falling back to keywords in the charge text (`classify_severity`).
 
 Distinctiveness comes from `mugshot_ranker.py`: CLIP (`openai/clip-vit-base-patch32`, free, CPU) scores each mugshot against the prompts in `DISTINCTIVE_PROMPTS` vs `PLAIN_PROMPTS`. Edit those lists to change what "stands out" means. If torch/transformers or the model download fails, every score is 0 and ranking falls back to charge + bail. Local setup: `pip install torch transformers pillow`.
 

@@ -40,7 +40,7 @@ class Config:
     CHARGE_SEPARATOR = '; '
 
     # Ranking bonus added to the 0..1 distinctiveness score, by most severe charge
-    SEVERITY_BONUS = {'Felony': 0.5, 'Gross Misdemeanor': 0.25, 'Misdemeanor': 0.0, '': 0.0}
+    SEVERITY_BONUS = {'Felony': 0.2, 'Gross Misdemeanor': 0.1, 'Misdemeanor': 0.0, '': 0.0}
     
     # File paths
     CSV_FILENAME = "jail_roster_data.csv"
