@@ -1,5 +1,4 @@
 """Build 9:16 Instagram Reels from mugshots with ffmpeg (free, runs on the Actions runner)."""
-import os
 import subprocess
 import tempfile
 import textwrap
@@ -22,15 +21,11 @@ def _drawtext(textfile, size, y, color="white"):
             f":fontsize={size}:line_spacing=14:x=(w-text_w)/2:y={y}")
 
 
-def make_clip(out_path, seconds, image=None, title="", body="", header=""):
-    """One clip: optional slowly zooming mugshot, header on top, title + wrapped body below."""
+def make_clip(out_path, seconds, image=None, title="", body=""):
+    """One clip: optional slowly zooming mugshot, title + wrapped body below."""
     frames = seconds * FPS
     with tempfile.TemporaryDirectory() as tmp:
         texts = []
-        if header:
-            # Header sits on top of the photo, or centered on a photo-less title card
-            y, size = (120, 64) if image else ("(h-text_h)/2", 90)
-            texts.append(_drawtext(_text(f"{tmp}/h.txt", header), size, y, "yellow"))
         if title:
             texts.append(_drawtext(_text(f"{tmp}/t.txt", title), 52, PHOTO_Y + PHOTO_H + 40))
         if body:
@@ -67,14 +62,3 @@ def charge_lines(charges, separator, width=32, max_lines=5):
         lines[-1] = lines[-1][:width - 3] + "..."
     return "\n".join(lines)
 
-
-def concat(clips, out_path):
-    """Join clips encoded with identical settings, without re-encoding."""
-    with tempfile.NamedTemporaryFile('w', suffix='.txt', delete=False) as f:
-        f.writelines(f"file '{os.path.abspath(c)}'\n" for c in clips)
-    try:
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0",
-                        "-i", f.name, "-c", "copy", "-movflags", "+faststart", out_path], check=True)
-    finally:
-        os.remove(f.name)
-    return out_path

@@ -19,9 +19,8 @@ python data.py test              # Test scrape (25 inmates, filters to top 10 hi
 # Posting
 python data.py post-next         # Post next inmate from queue (Reel, falls back to image)
 python data.py post-next-test    # Simulate posting without hitting the API
-python data.py post-recap        # Post the Top 5 recap Reel (post-recap-test to simulate)
-python data.py make-reels        # Render Reels for the queue + Top 5 recap into reels/ (needs ffmpeg)
-python data.py preflight         # What a posting run would do now: post / recap / nothing
+python data.py make-reels        # Render Reels for the queue into reels/ (needs ffmpeg)
+python data.py preflight         # What a posting run would do now: post / nothing
 
 # Queue management
 python data.py check-queue       # Inspect posting_queue.json state
@@ -36,7 +35,7 @@ python data.py purge-unqueued    # Delete every mugshot not needed for an upcomi
 ```
 Scrape → jail_roster_data.csv + mugshots/
        → filter top 10 by priority → posting_queue.json → reels/ (ffmpeg)
-       → peak-hour slots: one Reel each, then a Top 5 recap Reel (via GitHub Pages URLs)
+       → peak-hour slots: one Reel each (via GitHub Pages URLs)
 ```
 
 **Why GitHub Pages?** Instagram's API requires a public HTTPS URL for images. Mugshots are committed to the repo and served from `ryanjhermes.github.io/minneapolismugshots/mugshots/`. The scrape workflow pushes files; the posting workflow reads them via that URL.
@@ -47,7 +46,7 @@ Scrape → jail_roster_data.csv + mugshots/
 |------|------|
 | `data.py` | Everything: scraper, queue, posting, CLI entrypoint (~2,600 lines) |
 | `mugshot_ranker.py` | CLIP zero-shot distinctiveness score per mugshot |
-| `reels.py` | ffmpeg helpers that render 9:16 Reels (single mugshot clips, concat for the recap) |
+| `reels.py` | ffmpeg helpers that render 9:16 Reels (one clip per mugshot) |
 | `chargeextraction.py` | Charge text parsing utilities |
 | `posting_queue.json` | Runtime state — which inmates are queued/posted |
 | `jail_roster_data.csv` | Cumulative scraped data |
@@ -55,7 +54,7 @@ Scrape → jail_roster_data.csv + mugshots/
 ### GitHub Actions workflows
 
 - **`daily-scrape.yml`** — Runs at 11 PM Central (04:00 UTC) or manually (no push trigger). Scrapes the jail roster, writes CSV + mugshots, creates `posting_queue.json` with top 10 priority inmates (skipping anyone already posted), renders Reels, deploys to GitHub Pages. Reels live only in the Pages artifact (`reels/` is gitignored).
-- **`instagram-posting.yml`** — Runs hourly. `python data.py preflight` decides: post one inmate if nothing has posted since the most recent `Config.POSTING_HOURS` slot started (so late GitHub runs still post), post the recap at or after `Config.RECAP_HOUR`, otherwise nothing. Manual runs post the next inmate immediately. Posts wait for Instagram to finish processing media before publishing.
+- **`instagram-posting.yml`** — Runs hourly. `python data.py preflight` decides: post one inmate if nothing has posted since the most recent `Config.POSTING_HOURS` slot started (so late GitHub runs still post), otherwise nothing. Manual runs post the next inmate immediately. Posts wait for Instagram to finish processing media before publishing.
 - Both workflows share the `queue-state` concurrency group so they never edit the queue at the same time.
 
 ### Posting priority

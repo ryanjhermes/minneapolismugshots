@@ -26,11 +26,11 @@ class Config:
     CLICK_WAIT_TIME = 3
     
     # Posting limits and scheduling
-    # Central Time hours to post one inmate each (peak Instagram hours), then the Top 5 recap reel
+    # Central Time hours to post one inmate each (peak Instagram hours)
     POSTING_HOURS = [7, 9, 11, 12, 13, 17, 19, 20]
-    RECAP_HOUR = 21
     PAGES_URL = "https://ryanjhermes.github.io/minneapolismugshots"
     DISCLAIMER = "Charges are allegations, not convictions. All persons are presumed innocent until proven guilty in a court of law."
+    SOURCE = "Source: Hennepin County Jail Roster (public booking data, Minn. Stat. § 13.82)"
     REELS_DIR = "reels"
     
     # Quality thresholds
@@ -736,19 +736,21 @@ def generate_caption(data):
         invalid_charge_values = ['No charge listed', 'Charge information not available', '']
         charge_line = ""
         if charge not in invalid_charge_values:
-            label = "CHARGES" if Config.CHARGE_SEPARATOR in charge else "CHARGE"
+            label = "BOOKING CHARGES" if Config.CHARGE_SEPARATOR in charge else "BOOKING CHARGE"
             charge_line = f"{label}: {charge}\n"
 
         caption = f"""
 {charge_line}NAME: {name}
 BAIL: {bail_display}
 
-Arrest Date: {data.get('Booking_Date') or get_current_date()}
+Booking Date: {data.get('Booking_Date') or 'N/A'}
 Hennepin County, MN
 
 {Config.DISCLAIMER}
 
-#minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
+#minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis
+
+{Config.SOURCE}"""
         
         return caption
         
@@ -2637,7 +2639,7 @@ def check_posting_queue():
         print(f"❌ Error checking queue: {e}")
 
 def posting_mode():
-    """Decide what this posting run should do: 'post', 'recap' or '' (nothing), plus a reason.
+    """Decide what this posting run should do: 'post' or '' (nothing), plus a reason.
     Scheduled runs fill the latest Central-time slot that has no post yet (even if GitHub runs late);
     manual runs post whatever is pending."""
     try:
@@ -2651,14 +2653,9 @@ def posting_mode():
     posted_times = [datetime.fromisoformat(i['posted_at']).astimezone(central)
                     for i in q['inmates'] if i.get('posted') and i.get('posted_at')]
     pending = sum(1 for i in q['inmates'] if not i.get('posted'))
-    recap_ready = bool(q.get('recap_file')) and not q.get('recap_posted_at')
 
     if os.getenv('GITHUB_EVENT_NAME') == 'workflow_dispatch':
-        if pending:
-            return 'post', 'manual'
-        return ('recap', 'manual') if recap_ready else ('', 'manual_nothing_pending')
-    if now.hour >= Config.RECAP_HOUR and recap_ready:
-        return 'recap', 'recap_hour'
+        return ('post', 'manual') if pending else ('', 'manual_nothing_pending')
     # Post if nothing has gone out since the most recent slot started, so a run GitHub
     # starts late still posts; missed earlier slots don't pile up into a burst
     started = [h for h in Config.POSTING_HOURS if h <= now.hour]
@@ -2670,7 +2667,7 @@ def posting_mode():
     return ('post', f'slot_{started[-1]}') if pending else ('', 'queue_empty')
 
 def build_reels():
-    """Render a Reel for each unposted queued inmate plus a Top 5 recap. Any failure leaves
+    """Render a Reel for each unposted queued inmate. Any failure leaves
     that entry without a reel, so posting falls back to the still image."""
     import reels
     with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
@@ -2692,59 +2689,8 @@ def build_reels():
         except Exception as e:
             print(f"⚠️  Reel failed for {d.get('Full Name')}: {e}")
 
-    # Top 5 recap: the queue is already ranked, so take the first five with photos, counting down to #1
-    q['recap_file'], q['recap_posted_at'] = None, None
-    top = [i['data'] for i in q['inmates'] if os.path.exists(i['data'].get('Mugshot_File', ''))][:5]
-    if len(top) == 5:
-        try:
-            date = datetime.strptime(top[0].get('Booking_Date') or get_current_date(), "%m/%d/%Y")
-            clips = [reels.make_clip(os.path.join(Config.REELS_DIR, '_intro.mp4'), 2,
-                                     header=f"TOP 5 MUGSHOTS\n{date.strftime('%b %-d, %Y').upper()}")]
-            for rank in range(5, 0, -1):
-                d = top[rank - 1]
-                clips.append(reels.make_clip(
-                    os.path.join(Config.REELS_DIR, f'_rank{rank}.mp4'), 3, d['Mugshot_File'], d.get('Full Name', ''),
-                    reels.charge_lines(d.get('Charge 1', ''), Config.CHARGE_SEPARATOR, max_lines=3), f"#{rank}"))
-            q['recap_file'] = reels.concat(clips, os.path.join(Config.REELS_DIR, 'recap.mp4'))
-            for c in clips:
-                os.remove(c)
-            q['recap'] = [{'Full Name': d.get('Full Name'), 'Charge 1': d.get('Charge 1')} for d in top]
-            q['recap_date'] = date.strftime('%m/%d/%Y')
-            print(f"🎬 Recap: {q['recap_file']}")
-        except Exception as e:
-            print(f"⚠️  Recap reel failed: {e}")
-
     with open(Config.QUEUE_FILENAME, 'w', encoding='utf-8') as f:
         json.dump(q, f, indent=2, ensure_ascii=False)
-
-def post_recap(test_mode=False):
-    """Post the Top 5 recap Reel once."""
-    with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
-        q = json.load(f)
-    if not q.get('recap_file') or q.get('recap_posted_at'):
-        print("📭 No recap to post")
-        return False
-    top = q['recap']
-    lines = "\n".join(f"#{n}: {d['Full Name']} - {(d['Charge 1'] or '').split(Config.CHARGE_SEPARATOR)[0]}"
-                      for n, d in enumerate(top, 1))
-    caption = f"""TOP 5 MUGSHOTS - {q.get('recap_date', '')}
-
-{lines}
-
-Hennepin County, MN
-
-{Config.DISCLAIMER}
-
-#minneapolismugshots #HennepinCounty #Arrest #PublicRecord #Minnesota #Minneapolis"""
-    print(caption)
-    url = f"{Config.PAGES_URL}/{q['recap_file']}"
-    if not post_to_instagram(url, caption, get_api_credentials(), test_mode, video_url=url):
-        return False
-    q['recap_posted_at'] = get_current_datetime_iso()
-    with open(Config.QUEUE_FILENAME, 'w', encoding='utf-8') as f:
-        json.dump(q, f, indent=2, ensure_ascii=False)
-    print("✅ Recap posted")
-    return True
 
 if __name__ == "__main__":
     import sys
@@ -2772,10 +2718,6 @@ if __name__ == "__main__":
                     gh.write(f"mode={mode}\nreason={reason}\n")
         elif command == "make-reels":
             build_reels()
-        elif command == "post-recap":
-            post_recap()
-        elif command == "post-recap-test":
-            post_recap(test_mode=True)
         elif command == "check-queue":
             # Check posting queue status
             check_posting_queue()
@@ -2799,9 +2741,8 @@ if __name__ == "__main__":
             print("  python data.py test-instagram # Test posting with existing data")
             print("  python data.py post-next      # Post next inmate from queue")
             print("  python data.py post-next-test # Test posting (simulation only)")
-            print("  python data.py preflight      # What a posting run would do now (post / recap / nothing)")
-            print("  python data.py make-reels     # Render Reels for the queue + Top 5 recap (needs ffmpeg)")
-            print("  python data.py post-recap     # Post the Top 5 recap Reel")
+            print("  python data.py preflight      # What a posting run would do now (post / nothing)")
+            print("  python data.py make-reels     # Render Reels for the queue (needs ffmpeg)")
             print("  python data.py check-queue    # Check posting queue status")
             print("  python data.py cleanup-mugshots # Clean up ALL mugshot files (repo + docs)")
             print("  python data.py cleanup-unposted # Clean up unposted inmates' mugshots and prune queue")

@@ -3,9 +3,9 @@ name: Instagram Posting
 on:
   schedule:
     # Hourly through the Central-time day (covers both CDT and CST). `data.py preflight`
-    # acts only in Config.POSTING_HOURS slots and at Config.RECAP_HOUR; other runs exit in seconds.
+    # acts only in Config.POSTING_HOURS slots; other runs exit in seconds.
     - cron: '7 0-3,12-23 * * *'
-  workflow_dispatch: # Manual run posts the next inmate now (or the recap if the queue is done)
+  workflow_dispatch: # Manual run posts the next inmate now
 
 jobs:
   post-inmates:
@@ -35,7 +35,7 @@ jobs:
     - name: Install dependencies
       run: pip install requests python-dotenv pytz
 
-    - name: Preflight (post, recap, or nothing)
+    - name: Preflight (post or nothing)
       id: preflight
       run: python data.py preflight
 
@@ -45,10 +45,6 @@ jobs:
         echo "ACCESS_TOKEN=${{ secrets.META_ACCESS_TOKEN }}" >> .env
         echo "APP_ID=${{ secrets.META_APP_ID }}" >> .env
         echo "BUSINESS_ID=${{ secrets.META_BUSINESS_ID }}" >> .env
-
-    - name: Post Top 5 recap reel
-      if: steps.preflight.outputs.mode == 'recap'
-      run: python data.py post-recap
 
     - name: Post next inmates to Instagram
       if: steps.preflight.outputs.mode == 'post'
