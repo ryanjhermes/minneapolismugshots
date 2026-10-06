@@ -13,7 +13,7 @@ on:
 
 jobs:
   check-dms:
-    # Scheduled runs stay off until the repo variable DM_ENABLED is 'true' (after Meta approval)
+    # Scheduled runs stay off until the repo variable DM_ENABLED is 'true' (after Meta setup)
     if: github.event_name == 'workflow_dispatch' || vars.DM_ENABLED == 'true'
     runs-on: ubuntu-latest
     concurrency:
@@ -21,6 +21,8 @@ jobs:
       cancel-in-progress: false
     permissions:
       contents: write
+    outputs:
+      deleted: ${{ steps.dms.outputs.deleted }}
 
     steps:
     - uses: actions/checkout@v4
@@ -34,6 +36,7 @@ jobs:
     - run: pip install requests python-dotenv
 
     - name: Handle DMs
+      id: dms
       env:
         ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
         BUSINESS_ID: ${{ secrets.META_BUSINESS_ID }}
@@ -44,11 +47,70 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add dm_state.json
+        git add dm_state.json removed.json 2>/dev/null || git add dm_state.json
         if git diff --staged --quiet; then exit 0; fi
         git commit -m "Update DM state - $(date '+%Y-%m-%d %H:%M:%S')"
+        # Deleted posts must land on the removal list: retry on a moved main
         for attempt in 1 2 3; do
           git push && exit 0
           git pull --rebase origin main
         done
         exit 1
+
+  # Takes removed people off the CSV, queue, mugshots, and live Pages site right away
+  # instead of waiting for the nightly scrape. Posting already skips them either way.
+  apply-removals:
+    needs: check-dms
+    if: needs.check-dms.outputs.deleted > 0
+    runs-on: ubuntu-latest
+    # Shared with scrape and posting: this edits the queue
+    concurrency:
+      group: queue-state
+      cancel-in-progress: false
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: main
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y ffmpeg fonts-dejavu-core
+        pip install requests python-dotenv pytz
+
+    - name: Purge removed people
+      run: python removals.py
+
+    - name: Commit purge
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A jail_roster_data.csv posting_queue.json mugshots/
+        if git diff --staged --quiet; then exit 0; fi
+        git commit -m "Apply removal requests - $(date '+%Y-%m-%d %H:%M:%S')"
+        for attempt in 1 2 3; do
+          git push && exit 0
+          git pull --rebase origin main
+        done
+        exit 1
+
+    # Pages is replaced wholesale, so re-render Reels for the remaining queue
+    - name: Rebuild Pages
+      run: |
+        python data.py make-reels || echo "⚠️ Reel rendering failed, posts will use still images"
+        ./build_pages.sh
+
+    - uses: actions/configure-pages@v4
+    - uses: actions/upload-pages-artifact@v3
+      with:
+        path: docs
+    - uses: actions/deploy-pages@v4

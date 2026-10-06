@@ -6,7 +6,10 @@ Each run reads conversations updated since the last run:
 - Still no match after that: stop replying, leave the thread for a human.
 - Anything else: untouched (no reply, never marked seen).
 
-Usage: python dms.py [--dry-run]
+A deleted post's person goes on the removal list (removals.py), so they are never
+scraped, queued, posted, or published to Pages again.
+
+Usage: python dms.py [--dry-run | --check-token]
 """
 import json
 import os
@@ -16,6 +19,8 @@ from datetime import datetime, timedelta, timezone
 
 import requests
 from dotenv import load_dotenv
+
+import removals
 
 load_dotenv()
 
@@ -29,6 +34,8 @@ ASK_REPLY = "Sorry, we couldn't find that post. What's the full name on it? A li
 TOKEN = os.getenv("ACCESS_TOKEN", "")
 IG_ID = os.getenv("BUSINESS_ID", "")
 DRY_RUN = "--dry-run" in sys.argv
+NEEDED_SCOPES = {"instagram_basic", "instagram_manage_messages", "instagram_manage_contents",
+                 "pages_show_list", "pages_manage_metadata", "pages_read_engagement", "business_management"}
 
 
 def api(method, path, token=TOKEN, **kwargs):
@@ -95,6 +102,35 @@ def find_posts(text, posts):
     return next(iter(hits.values())) if len(hits) == 1 else []
 
 
+def check_token():
+    """Print which of NEEDED_SCOPES the token is missing, and whether it expires."""
+    info = api("GET", "debug_token", params={"input_token": TOKEN})["data"]
+    missing = NEEDED_SCOPES - set(info.get("scopes", []))
+    expires = info.get("expires_at") or 0
+    print(f"Token type: {info.get('type')}, expires: "
+          f"{datetime.fromtimestamp(expires, timezone.utc).date() if expires else 'never'}")
+    print(f"❌ Missing scopes: {', '.join(sorted(missing))}" if missing else "✅ All needed scopes granted")
+    sys.exit(1 if missing else 0)
+
+
+def delete_post(post, page_token):
+    """Delete with the main token, falling back to the Page token. Returns False if both fail."""
+    print(f"   🗑️  Deleting {post['name']} {post['permalink']}")
+    if DRY_RUN:
+        return True
+    for token in (TOKEN, page_token):
+        try:
+            api("DELETE", post["id"], token)
+            break
+        except RuntimeError as e:
+            print(f"   ⚠️  {e}")
+    else:
+        return False
+    if post["name"]:
+        removals.add(post["name"])
+    return True
+
+
 def reply(page_id, page_token, user_id, text):
     print(f"   💬 Reply: {text}")
     if not DRY_RUN:
@@ -105,6 +141,8 @@ def reply(page_id, page_token, user_id, text):
 def main():
     if not TOKEN or not IG_ID:
         sys.exit("❌ Missing ACCESS_TOKEN or BUSINESS_ID")
+    if "--check-token" in sys.argv:
+        check_token()
 
     try:
         state = json.load(open(STATE_FILE))
@@ -118,6 +156,7 @@ def main():
     page_id, page_token = page_auth()
     posts = None
     handoffs = []
+    deleted = 0
 
     for conv in paged(f"{page_id}/conversations", page_token, platform="instagram", limit=25,
                       fields="id,updated_time,messages.limit(20){id,created_time,from,message}"):
@@ -142,12 +181,15 @@ def main():
             posts = load_posts()
         matches = find_posts(text, posts)
         if matches:
-            for p in matches:
-                print(f"   🗑️  Deleting {p['name']} {p['permalink']}")
-                if not DRY_RUN:
-                    api("DELETE", p["id"])
-            reply(page_id, page_token, user["id"], DONE_REPLY)
-            threads.pop(cid, None)
+            ok = [delete_post(p, page_token) for p in matches]
+            deleted += sum(ok)
+            if all(ok):
+                reply(page_id, page_token, user["id"], DONE_REPLY)
+                threads.pop(cid, None)
+            else:
+                print("   👀 Delete failed, left for a human")
+                handoffs.append(user.get("username", user["id"]))
+                threads[cid] = "handoff"
         elif stage == "asked":
             print("   👀 Still no match, left for a human")
             handoffs.append(user.get("username", user["id"]))
@@ -156,13 +198,16 @@ def main():
             reply(page_id, page_token, user["id"], ASK_REPLY)
             threads[cid] = "asked"
 
-    print(f"✅ Done. Left for a human: {', '.join(handoffs) or 'none'}")
+    print(f"✅ Done. Deleted {deleted} post(s). Left for a human: {', '.join(handoffs) or 'none'}")
     if DRY_RUN:
         print("🧪 Dry run: nothing sent, deleted, or saved")
         return
     state["last_check"] = run_started.isoformat()
     with open(STATE_FILE, "w") as f:
         json.dump(state, f, indent=2)
+    if os.getenv("GITHUB_OUTPUT"):
+        with open(os.environ["GITHUB_OUTPUT"], "a") as gh:
+            gh.write(f"deleted={deleted}\n")
 
 
 if __name__ == "__main__":

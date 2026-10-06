@@ -29,7 +29,10 @@ python data.py purge-unqueued    # Delete every mugshot not needed for an upcomi
 
 # DMs
 python dms.py --dry-run          # Log what the DM handler would do, change nothing
-python dms.py                    # Delete requested posts, reply, save dm_state.json
+python dms.py                    # Delete requested posts, reply, save dm_state.json + removed.json
+python dms.py --check-token      # List scopes the Meta token is missing
+python removals.py               # Strip removed people from CSV, queue, mugshots/
+./build_pages.sh                 # Build the Pages site into docs/
 ```
 
 ## Architecture
@@ -59,7 +62,7 @@ Scrape → jail_roster_data.csv + mugshots/
 
 - **`daily-scrape.yml`** — Runs at 11 PM Central (04:00 UTC) or manually (no push trigger). Scrapes the jail roster, writes CSV + mugshots, creates `posting_queue.json` with top 10 priority inmates (skipping anyone already posted), renders Reels, deploys to GitHub Pages. Reels live only in the Pages artifact (`reels/` is gitignored).
 - **`instagram-posting.yml`** — Runs hourly. `python data.py preflight` decides: post one inmate if nothing has posted since the most recent `Config.POSTING_HOURS` slot started (so late GitHub runs still post), otherwise nothing. Manual runs post the next inmate immediately. Posts wait for Instagram to finish processing media before publishing.
-- **`dm-check.yml`** — Hourly, runs `dms.py`. Removal requests that name a posted person (first + last name, or a post link) get the post deleted and a "done" reply. Unmatched requests get one follow-up question, then are left for a human. Other DMs are untouched and stay unread. Scheduled runs are off until repo variable `DM_ENABLED=true`; manual runs default to dry-run. Needs `instagram_manage_messages`, `instagram_manage_contents`, `pages_manage_metadata` on the token. Per-thread state lives in `dm_state.json`.
+- **`dm-check.yml`**, hourly, runs `dms.py`. A removal request that names a posted person (first + last name, or a post link) gets the post deleted and a "done" reply. Requests on someone else's behalf count. Unmatched requests get one follow-up question and then go to a human; failed deletes go straight to a human. Other DMs are untouched and stay unread. Deleted people are added to `removed.json` (name hashes, see `removals.py`); a second job (`queue-state` group) then purges them from the CSV, queue and mugshots, re-renders Reels, and redeploys Pages. The scrape and posting steps also skip anyone on the list, so nobody is re-posted. Scheduled runs are off until the repo variable `DM_ENABLED=true` is set; manual runs default to dry-run. Token scopes are in `dms.NEEDED_SCOPES`. Per-thread state is in `dm_state.json`.
 - Both posting workflows share the `queue-state` concurrency group so they never edit the queue at the same time.
 
 ### Posting priority

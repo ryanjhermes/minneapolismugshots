@@ -60,62 +60,13 @@ jobs:
         echo "🚀 Starting jail roster scraping and queue creation..."
         python data.py
         echo "✅ Scraping completed, posting queue created"
+        python removals.py
         python data.py purge-unqueued
         python data.py make-reels || echo "⚠️ Reel rendering failed, posts will use still images"
     
-    - name: Create GitHub Pages structure
-      run: |
-        mkdir -p docs
-        # Ensure mugshots directory exists before copying
-        if [ -d "mugshots" ]; then
-          echo "📁 Copying mugshots directory to docs..."
-          cp -r mugshots docs/
-          echo "✅ Mugshots copied: $(ls -1 mugshots/*.jpg 2>/dev/null | wc -l) files"
-        else
-          echo "⚠️  Mugshots directory not found, creating empty one..."
-          mkdir -p docs/mugshots
-        fi
-        cp jail_roster_data.csv docs/
-        # Reels are served from Pages only, never committed
-        [ -d reels ] && cp -r reels docs/
-        echo '<!DOCTYPE html>
-        <html>
-        <head>
-            <title>Minneapolis Mugshots Data</title>
-            <meta charset="utf-8">
-        </head>
-        <body>
-            <h1>Minneapolis Jail Roster Data</h1>
-            <p>Last updated: '"$(date)"'</p>
-            <ul>
-                <li><a href="jail_roster_data.csv">Download CSV Data</a></li>
-                <li><a href="mugshots/">View Mugshots Folder</a></li>
-            </ul>
-        </body>
-        </html>' > docs/index.html
-    
-    - name: Generate mugshots index
-      run: |
-        cd docs/mugshots
-        echo '<!DOCTYPE html>
-        <html>
-        <head>
-            <title>Mugshots Directory</title>
-            <meta charset="utf-8">
-        </head>
-        <body>
-            <h1>Mugshots Directory</h1>
-            <p>Last updated: '"$(date)"'</p>
-            <ul>' > index.html
-        for img in *.jpg; do
-          if [ -f "$img" ]; then
-            echo "                <li><a href=\"$img\">$img</a></li>" >> index.html
-          fi
-        done
-        echo '            </ul>
-        </body>
-        </html>' >> index.html
-    
+    - name: Build GitHub Pages site
+      run: ./build_pages.sh
+
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"

@@ -10,6 +10,8 @@ from dotenv import load_dotenv
 import re
 import pytz
 
+import removals
+
 # Load environment variables from .env file (if it exists)
 load_dotenv()
 
@@ -1054,7 +1056,9 @@ def get_next_inmates_to_post(batch_size=1):
             return []
         
         # Find unposted inmates
-        unposted_inmates = [inmate for inmate in queue_data['inmates'] if not inmate['posted']]
+        removed = removals.load()
+        unposted_inmates = [inmate for inmate in queue_data['inmates'] if not inmate['posted']
+                            and not removals.is_removed(inmate['data'].get('Full Name'), removed)]
         
         if not unposted_inmates:
             print("✅ All inmates have been posted!")
@@ -2302,7 +2306,14 @@ def fill_form_with_current_date(driver, inmate_limit=Config.TEST_INMATE_LIMIT):
     # Process more booking IDs to get better selection for filtering
     # inmate_limit is passed to the function as a parameter
     print(f"\n🚀 Starting batch processing of booking IDs (limit: inmate_limit)...")
-    extracted_data_list = process_multiple_bookings(driver, limit=inmate_limit)
+    extracted_data_list = process_multiple_bookings(driver, limit=inmate_limit) or []
+
+    # Never re-publish anyone who asked to be taken down
+    removed = removals.load()
+    for d in [d for d in extracted_data_list if removals.is_removed(d.get('Full Name'), removed)]:
+        print("⏭️  Skipping a record on the removal list")
+        _delete_file_if_exists(d.get('Mugshot_File', ''), label="mugshot")
+        extracted_data_list.remove(d)
     
     # Save to CSV if we got data
     if extracted_data_list:
