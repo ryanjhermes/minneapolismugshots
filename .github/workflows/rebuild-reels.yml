@@ -1,0 +1,57 @@
+name: Rebuild Reels
+
+# Re-render Reels for the current queue and redeploy Pages, without scraping
+# (a scrape rebuilds the queue)
+on:
+  workflow_dispatch:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: queue-state
+      cancel-in-progress: false
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: main
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y ffmpeg fonts-dejavu-core
+        pip install requests python-dotenv pytz
+
+    - name: Render Reels
+      run: python data.py make-reels
+
+    - name: Commit queue
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add posting_queue.json
+        if git diff --staged --quiet; then exit 0; fi
+        git commit -m "Rebuild Reels - $(date '+%Y-%m-%d %H:%M:%S')"
+        for attempt in 1 2 3; do
+          git push && exit 0
+          git pull --rebase origin main
+        done
+        exit 1
+
+    - name: Build Pages
+      run: ./build_pages.sh
+
+    - uses: actions/configure-pages@v4
+    - uses: actions/upload-pages-artifact@v3
+      with:
+        path: docs
+    - uses: actions/deploy-pages@v4
