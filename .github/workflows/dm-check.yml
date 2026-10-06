@@ -1,0 +1,54 @@
+name: DM Check
+
+on:
+  schedule:
+    # Hourly, well inside Instagram's 24h reply window
+    - cron: '37 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Log what would happen without replying, deleting, or saving state'
+        type: boolean
+        default: true
+
+jobs:
+  check-dms:
+    # Scheduled runs stay off until the repo variable DM_ENABLED is 'true' (after Meta approval)
+    if: github.event_name == 'workflow_dispatch' || vars.DM_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: dm-state
+      cancel-in-progress: false
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: main
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - run: pip install requests python-dotenv
+
+    - name: Handle DMs
+      env:
+        ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+        BUSINESS_ID: ${{ secrets.META_BUSINESS_ID }}
+      run: python dms.py ${{ inputs.dry_run && '--dry-run' || '' }}
+
+    - name: Commit DM state
+      if: ${{ !inputs.dry_run }}
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add dm_state.json
+        if git diff --staged --quiet; then exit 0; fi
+        git commit -m "Update DM state - $(date '+%Y-%m-%d %H:%M:%S')"
+        for attempt in 1 2 3; do
+          git push && exit 0
+          git pull --rebase origin main
+        done
+        exit 1
