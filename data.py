@@ -2712,8 +2712,9 @@ if __name__ == "__main__":
         if command == "test-instagram":
             test_instagram_posting()
         elif command == "post-next":
-            # Post next inmate from queue
-            post_next_inmates()
+            # Post next inmate from queue; a failed post turns the run red
+            if not post_next_inmates():
+                sys.exit(1)
         elif command == "post-next-test":
             # Post next inmate in test mode (no actual posting)
             post_next_inmates(test_mode=True)
