@@ -1,43 +1,45 @@
 {
-  "created_at": "2026-10-07T05:41:19.617961-05:00",
-  "total_inmates": 12,
-  "posted_count": 2,
+  "created_at": "2026-10-08T06:01:01.307054-05:00",
+  "total_inmates": 10,
+  "posted_count": 0,
   "inmates": [
     {
       "data": {
-        "Full Name": "GILLESPIE, SAMUEL CLIVE",
-        "Charge 1": "GIVE PEACE OFFICER FALSE NAME/BIRTHDATE/ID CARD; OTHER COUNTY/GM & MISD",
+        "Full Name": "FERNANDEZ, JUVEL",
+        "Charge 1": "ASSAULT-5TH DEG-INFLICT OR ATTEMPT BODILY HARM",
         "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GILLESPIE_SAMUEL_CLIVE.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/06/2026"
+        "Mugshot_File": "mugshots/mugshot_FERNANDEZ_JUVEL.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/08/2026",
+        "Reel_File": "reels/mugshot_FERNANDEZ_JUVEL.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-10-06T11:42:57.053777-05:00",
+      "posted": false,
+      "posted_at": null,
       "id": 1
     },
     {
       "data": {
-        "Full Name": "LACKORE, KOLBY BRIAN",
-        "Charge 1": "DRUGS - 5TH DEG",
+        "Full Name": "THOMPSON, FRED MILES JR",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS; FLEEING A POLICE OFFICER IN MV; THEFT-MOTOR VEHICLE",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LACKORE_KOLBY_BRIAN.jpg",
+        "Mugshot_File": "mugshots/mugshot_THOMPSON_FRED_MILES_JR.jpg",
         "Severity": "",
-        "Booking_Date": "10/06/2026"
+        "Booking_Date": "10/08/2026",
+        "Reel_File": "reels/mugshot_THOMPSON_FRED_MILES_JR.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-10-06T11:48:00.685876-05:00",
+      "posted": false,
+      "posted_at": null,
       "id": 2
     },
     {
       "data": {
-        "Full Name": "LEWIS, DANTE EMMANUEL",
-        "Charge 1": "AGGRAVATED ROBBERY-1ST DEGREE",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEWIS_DANTE_EMMANUEL.jpg",
+        "Full Name": "ADEN, ABDIKANI FARAH",
+        "Charge 1": "THREATS OF VIOLENCE - RECKLESS DISREGARD RISK; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; CONTROLLED SUBSTANCE/NARCOTICS",
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ADEN_ABDIKANI_FARAH.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/07/2026",
-        "Reel_File": "reels/mugshot_LEWIS_DANTE_EMMANUEL.mp4"
+        "Booking_Date": "10/08/2026",
+        "Reel_File": "reels/mugshot_ADEN_ABDIKANI_FARAH.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -45,13 +47,13 @@
     },
     {
       "data": {
-        "Full Name": "WILSON, JAMES DENNIS",
-        "Charge 1": "KIDNAPPING",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WILSON_JAMES_DENNIS.jpg",
-        "Severity": "",
-        "Booking_Date": "10/07/2026",
-        "Reel_File": "reels/mugshot_WILSON_JAMES_DENNIS.mp4"
+        "Full Name": "KANSWEN, BETTY LOVETTEE",
+        "Charge 1": "WRONGFULLY OBTAINING ASSISTANCE - THEFT - BY FALSE STATEMENT, CONCEALMENT, IMPERSONATION",
+        "Bail": "$35,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KANSWEN_BETTY_LOVETTEE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/08/2026",
+        "Reel_File": "reels/mugshot_KANSWEN_BETTY_LOVETTEE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -59,13 +61,13 @@
     },
     {
       "data": {
-        "Full Name": "WILFORD, JASMINE PEARL",
-        "Charge 1": "TAMPER WITH MOTOR VEHICLE/ENTER W/O OWNER PERMISSION; THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
+        "Full Name": "BROWN, DEYONTA",
+        "Charge 1": "TRESPASS-PREMISES OF ANOTHER-REFUSE TO DEPART",
         "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WILFORD_JASMINE_PEARL.jpg",
+        "Mugshot_File": "mugshots/mugshot_BROWN_DEYONTA.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/07/2026",
-        "Reel_File": "reels/mugshot_WILFORD_JASMINE_PEARL.mp4"
+        "Booking_Date": "10/08/2026",
+        "Reel_File": "reels/mugshot_BROWN_DEYONTA.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -73,13 +75,13 @@
     },
     {
       "data": {
-        "Full Name": "VARGAS, JOSE MANUEL 3RD",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_VARGAS_JOSE_MANUEL_3RD.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/07/2026",
-        "Reel_File": "reels/mugshot_VARGAS_JOSE_MANUEL_3RD.mp4"
+        "Full Name": "AHMED, ABDIKADIR ALI",
+        "Charge 1": "TRESPASS-RETURN TO PROPERTY WITHIN ONE YEAR; TRANSIT CRIME - CONSUME AN ALCOHOLIC BEVERAGE; TRANSIT-OBSTRUCT/INTERFERE W/OPER OF VEHICLE",
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AHMED_ABDIKADIR_ALI.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/08/2026",
+        "Reel_File": "reels/mugshot_AHMED_ABDIKADIR_ALI.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -87,13 +89,13 @@
     },
     {
       "data": {
-        "Full Name": "KING, DASHAWN MICHEAL",
-        "Charge 1": "WEAPONS-CARRY WEAPONS WITHOUT PERMIT",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KING_DASHAWN_MICHEAL.jpg",
-        "Severity": "",
-        "Booking_Date": "10/07/2026",
-        "Reel_File": "reels/mugshot_KING_DASHAWN_MICHEAL.mp4"
+        "Full Name": "ARCOS SALAZAR, CLEVER WILSON",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; TRAFFIC - DWI - REFUSE TO SUBMIT TO CHEMICAL TEST; BLOOD OR URINE AS REQUIRED BY SEARCH WARRANT",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ARCOS_SALAZAR_CLEVER_WILSON.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/08/2026",
+        "Reel_File": "reels/mugshot_ARCOS_SALAZAR_CLEVER_WILSON.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -101,13 +103,13 @@
     },
     {
       "data": {
-        "Full Name": "OMAR, ASAD MOHAMUD",
-        "Charge 1": "OTHER COUNTY/FELONY; GIVE PEACE OFFICER FALSE NAME/BIRTHDATE/ID CARD; DEPARTMENT OF CORRECTIONS",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_OMAR_ASAD_MOHAMUD.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/07/2026",
-        "Reel_File": "reels/mugshot_OMAR_ASAD_MOHAMUD.mp4"
+        "Full Name": "GUTIERREZ, ARMANDO MIGUEL",
+        "Charge 1": "THREATS OF VIOLENCE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GUTIERREZ_ARMANDO_MIGUEL.jpg",
+        "Severity": "",
+        "Booking_Date": "10/08/2026",
+        "Reel_File": "reels/mugshot_GUTIERREZ_ARMANDO_MIGUEL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -115,13 +117,13 @@
     },
     {
       "data": {
-        "Full Name": "ROBINSON, CHAUNCEY RAMON",
-        "Charge 1": "ASSAULT IN THE FIFTH DEGREE; GROSS MISDEMEANOR-WITHIN THREE YEARS OF PREVIOUS CONVICTION.; DISORDERLY CONDUCT - OFFENSIVE/ABUSIVE/BOISTEROUS/NOISY/OBSCENE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ROBINSON_CHAUNCEY_RAMON.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/07/2026",
-        "Reel_File": "reels/mugshot_ROBINSON_CHAUNCEY_RAMON.mp4"
+        "Full Name": "ERICKSON, NICHOLAS GOSS",
+        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ERICKSON_NICHOLAS_GOSS.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/08/2026",
+        "Reel_File": "reels/mugshot_ERICKSON_NICHOLAS_GOSS.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -129,45 +131,17 @@
     },
     {
       "data": {
-        "Full Name": "ALI, AYUB MOHAMED",
-        "Charge 1": "RIOT-2ND DEGREE-ARMED W/DANGEROUS WEAPON",
+        "Full Name": "GLEMMING, COLTON JEROME",
+        "Charge 1": "DOMESTIC ABUSE NO CONTACT ORDERS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ALI_AYUB_MOHAMED.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/07/2026",
-        "Reel_File": "reels/mugshot_ALI_AYUB_MOHAMED.mp4"
+        "Mugshot_File": "mugshots/mugshot_GLEMMING_COLTON_JEROME.jpg",
+        "Severity": "",
+        "Booking_Date": "10/08/2026",
+        "Reel_File": "reels/mugshot_GLEMMING_COLTON_JEROME.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 10
-    },
-    {
-      "data": {
-        "Full Name": "JONES, ANTONIO LEE",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JONES_ANTONIO_LEE.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/07/2026",
-        "Reel_File": "reels/mugshot_JONES_ANTONIO_LEE.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 11
-    },
-    {
-      "data": {
-        "Full Name": "DRAHEIM, LARISSA MARIE",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DRAHEIM_LARISSA_MARIE.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/07/2026",
-        "Reel_File": "reels/mugshot_DRAHEIM_LARISSA_MARIE.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 12
     }
   ]
 }
