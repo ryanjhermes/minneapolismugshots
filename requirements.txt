@@ -1,3 +1,6 @@
+# Scraper dependencies (Selenium + Chrome), pinned. Installed by daily-scrape.yml.
+# Other workflows install only what their job needs, and the ML packages (torch, transformers,
+# pillow) are installed per workflow, with transformers<5 for bmtn and news. See CLAUDE.md > Workflows.
 attrs==25.3.0
 certifi==2025.7.14
 charset-normalizer==3.4.2

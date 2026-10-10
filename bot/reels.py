@@ -1,7 +1,15 @@
-"""Build 9:16 Instagram Reels from mugshots with ffmpeg (free, runs on the Actions runner)."""
+"""Render 9:16 Instagram Reels from queued mugshots with ffmpeg (free, runs on the Actions runner).
+
+Reels are written to reels/ and served only from GitHub Pages (never committed). Pages is replaced
+wholesale on every deploy, so any workflow that redeploys Pages re-renders Reels for the whole queue.
+FONT is the Ubuntu runner's path (apt fonts-dejavu-core); elsewhere ffmpeg substitutes a default font.
+"""
+import os
 import subprocess
 import tempfile
 import textwrap
+
+from . import config, posting_queue
 
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 W, H, FPS = 1080, 1920, 30
@@ -64,3 +72,25 @@ def charge_lines(charges, separator, width=32, max_lines=5):
         lines[-1] = lines[-1][:width - 3] + "..."
     return "\n".join(lines)
 
+
+def build_queue_reels():
+    """Render a Reel for each unposted queued entry and record it as Reel_File. Any failure leaves
+    that entry without a Reel, so posting falls back to the still image."""
+    q = posting_queue.load()
+    os.makedirs(config.REELS_DIR, exist_ok=True)
+
+    for entry in q['inmates']:
+        d = entry['data']
+        d.pop('Reel_File', None)
+        if entry.get('posted') or not os.path.exists(d.get('Mugshot_File', '')):
+            continue
+        out = os.path.join(config.REELS_DIR, os.path.basename(d['Mugshot_File']).rsplit('.', 1)[0] + '.mp4')
+        try:
+            make_clip(out, config.REEL_SECONDS, d['Mugshot_File'], d.get('Full Name', ''),
+                      charge_lines(d.get('Charge 1', ''), config.CHARGE_SEPARATOR), config.REEL_HEADER)
+            d['Reel_File'] = out
+            print(f"🎬 Reel: {out}")
+        except Exception as e:
+            print(f"⚠️  Reel failed for {d.get('Full Name')}: {e}")
+
+    posting_queue.save(q)

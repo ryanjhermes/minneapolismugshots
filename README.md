@@ -1,136 +1,52 @@
-# Minneapolis Mugshots 🚨
+# Minneapolis Mugshots
 
-**Automated tracking and transparency of Minneapolis jail arrests with public data access.**
+Automated, public-record coverage of bookings at the Hennepin County Jail, posted to
+[@minneapolismugshots](https://instagram.com/minneapolismugshots) on Instagram.
 
-## About This Project
+## What it does
 
-This system automatically monitors the Hennepin County Jail Roster daily and provides public access to arrest records and booking photos for transparency and community awareness.
+Every night the system reads the [Hennepin County Jail Roster](https://jailroster.hennepin.us/) for that day's
+bookings. It saves each booking's name, charges, charge severity, bail and booking photo, and picks up to 10 to
+post the next day. It also picks up booking photos published in Bring Me The News crime coverage and posts one
+local crime news story each evening.
 
-## What We Track
+## Public data
 
-- **Daily Arrests** - All new bookings in Hennepin County  
-- **Booking Photos** - Official mugshots when available
-- **Charges** - Criminal charges filed  
-- **Bail Information** - Bond amounts and conditions
-- **Arrest Details** - Dates, locations, and case info
+- **Site:** [ryanjhermes.github.io/minneapolismugshots](https://ryanjhermes.github.io/minneapolismugshots/)
+- **CSV of the latest scrape:** [jail_roster_data.csv](https://ryanjhermes.github.io/minneapolismugshots/jail_roster_data.csv)
+- **Booking photos for upcoming posts:** [mugshots/](https://ryanjhermes.github.io/minneapolismugshots/mugshots/)
 
-## Public Data Access
+## Schedule (Central time)
 
-All collected data is made freely available to the public:
+| When | What |
+|---|---|
+| 11 PM daily | Scrape the day's bookings and queue up to 10 for posting |
+| 7, 9, 11 AM, 12, 1, 5, 7, 8 PM | One post per slot, as a short Reel with the booking photo and charges |
+| Hourly | Check Bring Me The News for new stories with a booking photo |
+| 6 PM daily | One local crime news story, if a new one stands out |
 
-📊 **Live Data:** [https://ryanjhermes.github.io/minneapolismugshots/](https://ryanjhermes.github.io/minneapolismugshots/)  
-📄 **CSV Download:** [jail_roster_data.csv](https://ryanjhermes.github.io/minneapolismugshots/jail_roster_data.csv)  
-📸 **Mugshot Gallery:** [View All Photos](https://ryanjhermes.github.io/minneapolismugshots/mugshots/)  
+## How posts are chosen
 
-## Social Media Updates
+Bookings with a listed charge come first. Among those, felonies and gross misdemeanors rank higher, as do booking
+photos an image model rates as visually distinctive. Bail amount breaks ties.
 
-Follow [@MinneapolisMugshots](https://instagram.com/minneapolismugshots) on Instagram for:
-- **High-priority arrest alerts** featuring the 10 highest bail cases daily
-- **High-quality mugshots** and case details  
-- **Community awareness** of significant criminal activity
-- **Transparency** in law enforcement bookings
+## Removal requests
 
-## Data Collection Schedule
+Send the account a DM asking for a post to be taken down, with the name on the post or a link to it. Once a
+post is removed, that person is left out of all future posts and published data.
 
-| Time | Activity |
-|------|----------|
-| **6:00 PM Daily** | Scan Hennepin County Jail for new arrests |
-| **24/7 Posting** | Post up to 8 inmates daily, every 3 hours |
-| **Continuous** | Update public database with new records |
+## Legal
 
-## Posting Schedule & Limits
+Booking information is public data under the Minnesota Government Data Practices Act (Minn. Stat. § 13.82).
+**A booking is not a conviction.** Charges are allegations, and everyone is presumed innocent until proven
+guilty in a court of law.
 
-The system operates with flexible 24-hour posting:
+## Development
 
-- **Daily Limit**: Maximum 8 posts per day
-- **Posting Hours**: 24/7 (all day, every day)
-- **Posting Interval**: Every 3 hours minimum between posts
-- **Single Posting**: One inmate per post (no batches)
+Python on GitHub Actions: Selenium for the scrape, CLIP for image ranking, ffmpeg for Reels, and the Meta Graph
+API for posting. Setup, commands and architecture are in [CLAUDE.md](CLAUDE.md).
 
-### Posting Schedule:
-- **Every 3 Hours**: Automated posting attempts throughout the day
-- **8 Posts Max**: Distributed across 24 hours for better reach
-- **Intelligent Spacing**: 3-hour intervals prevent spam and maximize engagement
-- **Reset Daily**: Counter resets each day at midnight Central Time
-
-*Note: Posts are spread throughout the day for maximum visibility and engagement*
-
-## Intelligent Filtering System
-
-Our system prioritizes the most significant cases:
-
-🏆 **Top 10 Highest Bail** - Focus on serious charges and high-profile cases  
-🚫 **"Hold Without Bail"** - Prioritized as most serious cases  
-💰 **Bail Amounts** - Sorted from highest to lowest dollar amounts  
-📊 **Quality Control** - Only cases with both mugshots AND charges
-
-## Anti-Detection Technology
-
-To ensure reliable service:
-- **Randomized posting times** (±1 minute variation)
-- **Human-like delays** between posts (8-15 seconds)
-- **Varied caption formats** with different emojis
-- **Reduced posting frequency** for sustainability
-- **Single posting mode** - Posts one inmate at a time instead of batches
-
-## Why This Matters
-
-**Public Safety Awareness:** Community members can stay informed about local arrests and criminal activity in their neighborhoods.
-
-**Government Transparency:** All arrest records are public information. We make this data more accessible and searchable.
-
-**Accountability:** Public oversight of law enforcement booking procedures and jail population trends.
-
-**Research & Journalism:** Provides data for reporters, researchers, and advocates studying criminal justice trends.
-
-## Data Sources
-
-- **Primary:** Hennepin County Sheriff's Office Jail Roster
-- **Updated:** Daily at 6:00 PM Central Time  
-- **Coverage:** Minneapolis and surrounding Hennepin County areas
-- **Records:** Only includes individuals officially booked and processed
-
-## Privacy & Legal
-
-All information displayed is:
-- ✅ **Public record** per Minnesota Statute
-- ✅ **Officially released** by Hennepin County  
-- ✅ **Automatically updated** when records change
-- ✅ **Factual booking information** only
-
-*Note: Booking does not imply guilt. All individuals are presumed innocent until proven guilty in court.*
-
-## Setup Instructions
-
-### Prerequisites
-- Python 3.8+
-- Chrome browser (for web scraping)
-
-### Installation
-1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Create `.env` file with your API keys:
-   ```
-   ACCESS_TOKEN=your_meta_access_token_here
-   APP_ID=your_meta_app_id_here
-   BUSINESS_ID=your_meta_business_id_here
-   ```
-
-### Usage
 ```bash
-# Full scraping
-python data.py
-
-# Test scraping (25 inmates)
-python data.py test
-
-# Post next inmate
-python data.py post-next
-
-# Check posting queue
-python data.py check-queue
+pip install -r requirements.txt
+python -m bot --help
 ```
-
----
-
-**Data updated daily • Follow for real-time alerts • Public records transparency**

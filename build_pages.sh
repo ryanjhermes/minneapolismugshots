@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Build the GitHub Pages site in docs/ from mugshots/, the CSV, and rendered reels/.
-# Used by daily-scrape (nightly) and dm-check (after a removal).
+# Used by every workflow that deploys Pages: daily-scrape, bmtn-check, dm-check (after a removal), rebuild-reels.
+# Pages is replaced wholesale, so reels/ must already hold Reels for the whole queue (python -m bot make-reels).
 set -e
 rm -rf docs
 mkdir -p docs/mugshots

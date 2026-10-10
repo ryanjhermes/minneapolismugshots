@@ -32,7 +32,7 @@ jobs:
         pip install requests python-dotenv pytz
 
     - name: Render Reels
-      run: python data.py make-reels
+      run: python -m bot make-reels
 
     - name: Commit queue
       run: |

@@ -1,101 +1,143 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Developer guide for this repo, for Claude Code and for Ryan. The public-facing overview is `README.md`.
 
 ## Overview
 
-Automated pipeline that scrapes the Hennepin County Jail Roster daily, filters inmates by priority, and posts mugshots to Instagram. Runs entirely via GitHub Actions.
+A hands-off pipeline that runs entirely on GitHub Actions. Every night it scrapes the Hennepin County Jail Roster,
+ranks the day's bookings and queues the top 10. It then posts one mugshot Reel per peak-hour slot to
+[@minneapolismugshots](https://instagram.com/minneapolismugshots). It also queues mugshots from Bring Me The News
+crime stories, posts one news story a day, and handles removal requests sent by DM.
+
+**Status (Oct 2026):** scraping, ranking, Reels and posting have been live for months. Three newer features are
+**not yet proven in production**: the news post (`news.py`), Bring Me The News mugshots (`bmtn.py`), and DM handling
+(`dms.py`, scheduled runs are off until the `DM_ENABLED` repo variable is set). All three have dry-run modes, so use them.
+
+## Layout
+
+```
+bot/                  All Python code, run as `python -m bot <command>` from the repo root
+  __main__.py         CLI: one subcommand per job (see Commands)
+  config.py           Every tunable: schedule, thresholds, file paths, URLs. Change behavior here
+  common.py           Central-time clock, JSON load/save, file delete, GitHub step outputs
+  scraper.py          Selenium scrape: search form, booking modals (FieldExtractor), CSV
+  ranking.py          Queue order: charge, then CLIP distinctiveness + severity bonus, then bail
+  clip_model.py       CLIP prompts and scores (distinctiveness; is-this-a-mugshot for bmtn)
+  posting_queue.py    posting_queue.json: build, insert, next, mark posted, mugshot cleanup
+  posting.py          preflight (should this hour post?), captions, post_next
+  instagram.py        Meta Graph API: create container, wait for processing, publish
+  reels.py            ffmpeg 9:16 Reels for the unposted queue
+  bmtn.py             Bring Me The News RSS: queue stories whose lead image is a mugshot
+  news.py             Daily news post: score the same feed with a zero-shot model, post the top story
+  dms.py              Instagram DMs: delete posts on request, reply, hand off everything else
+  removals.py         removed.json (hashed names) and purging those people everywhere
+.github/workflows/    The schedule (see Workflows)
+build_pages.sh        Builds the GitHub Pages site into docs/ (mugshots, CSV, Reels)
+mugshots/             Images for queued posts (committed, so Pages can serve them)
+posting_queue.json    Queue state; see the docstring in bot/posting_queue.py for its shape
+jail_roster_data.csv  Last night's scrape
+news_state.json       Plus bmtn_state.json, dm_state.json, removed.json once those jobs have run
+```
 
 ## Commands
 
 ```bash
-# Setup
-pip install -r requirements.txt
+pip install -r requirements.txt               # Scraper deps
+pip install torch transformers pillow         # CLIP / news / bmtn models (CI pins transformers<5)
 
-# Scraping
-python data.py                   # Full scrape (100 inmates), builds posting queue of top 10
-python data.py test              # Test scrape (25 inmates, filters to top 10 highest priority)
-
-# Posting
-python data.py post-next         # Post next inmate from queue (Reel, falls back to image)
-python data.py post-next-test    # Simulate posting without hitting the API
-python data.py make-reels        # Render Reels for the queue into reels/ (needs ffmpeg)
-python data.py preflight         # What a posting run would do now: post / nothing
-
-# Queue management
-python data.py check-queue       # Inspect posting_queue.json state
-python data.py cleanup-posted    # Delete mugshot files for already-posted inmates
-python data.py purge-unqueued    # Delete every mugshot not needed for an upcoming post
-
-# News
-python news.py --dry-run         # Score new Bring Me The News crime stories, show what would post
-python news.py --force           # Post the top story now (skips the 6 PM / once-a-day checks)
-
-# Bring Me The News mugshots
-python bmtn.py --dry-run         # Show which new crime stories would be queued
-python bmtn.py                   # Queue them at the front of posting_queue.json
-
-# DMs
-python dms.py --dry-run          # Log what the DM handler would do, change nothing
-python dms.py                    # Delete requested posts, reply, save dm_state.json + removed.json
-python dms.py --check-token      # List scopes the Meta token is missing
-python removals.py               # Strip removed people from CSV, queue, mugshots/
-./build_pages.sh                 # Build the Pages site into docs/
+python -m bot --help                          # All commands
+python -m bot scrape [--test]                 # Scrape 100 bookings (25 with --test), write CSV + mugshots, rebuild queue
+python -m bot preflight                       # Would this hour post? Prints mode= / reason=
+python -m bot post-next [--dry-run]           # Post the next queued entry (Reel, falling back to image)
+python -m bot make-reels                      # Render Reels for the unposted queue into reels/ (needs ffmpeg)
+python -m bot check-queue                     # Queue status
+python -m bot cleanup-posted                  # Delete mugshots of posted entries
+python -m bot purge-unqueued                  # Delete every mugshot no upcoming post needs
+python -m bot purge-removed                   # Strip people on the removal list from CSV, queue, mugshots/
+python -m bot bmtn [--check | --dry-run]      # Queue Bring Me The News mugshots
+python -m bot news [--dry-run | --force]      # Daily news post (--force skips the 6 PM / once-a-day checks)
+python -m bot dms [--dry-run | --check-token] # Handle removal requests in DMs
+./build_pages.sh                              # Build the Pages site into docs/
 ```
 
-## Architecture
+**Local runs edit the real state files.** `scrape`, `post-next`, `bmtn`, `purge-*` and `make-reels` rewrite
+`posting_queue.json`, the CSV and `mugshots/`, and the next workflow run pulls from `main` and overwrites them anyway.
+To try a change, run it in a scratch copy of the repo, or use the `--dry-run` / `--check` flags, which write nothing.
+With a real `.env`, only `post-next` without `--dry-run`, `news --force` and `dms` without `--dry-run` reach Instagram.
 
-### Data flow
-
-```
-Scrape → jail_roster_data.csv + mugshots/
-       → filter top 10 by priority → posting_queue.json → reels/ (ffmpeg)
-       → peak-hour slots: one Reel each (via GitHub Pages URLs)
-```
-
-**Why GitHub Pages?** Instagram's API requires a public HTTPS URL for images. Mugshots are committed to the repo and served from `ryanjhermes.github.io/minneapolismugshots/mugshots/`. The scrape workflow pushes files; the posting workflow reads them via that URL.
-
-### Key files
-
-| File | Role |
-|------|------|
-| `data.py` | Everything: scraper, queue, posting, CLI entrypoint (~2,600 lines) |
-| `mugshot_ranker.py` | CLIP zero-shot distinctiveness score per mugshot |
-| `reels.py` | ffmpeg helpers that render 9:16 Reels (one clip per mugshot) |
-| `chargeextraction.py` | Charge text parsing utilities |
-| `posting_queue.json` | Runtime state — which inmates are queued/posted |
-| `jail_roster_data.csv` | Cumulative scraped data |
-
-### GitHub Actions workflows
-
-- **`daily-scrape.yml`** — Runs at 11 PM Central (04:00 UTC) or manually (no push trigger). Scrapes the jail roster, writes CSV + mugshots, creates `posting_queue.json` with top 10 priority inmates (skipping anyone already posted), renders Reels, deploys to GitHub Pages. Reels live only in the Pages artifact (`reels/` is gitignored).
-- **`instagram-posting.yml`** — Runs hourly. `python data.py preflight` decides: post one inmate if nothing has posted since the most recent `Config.POSTING_HOURS` slot started (so late GitHub runs still post), otherwise nothing. Manual runs post the next inmate immediately. Posts wait for Instagram to finish processing media before publishing.
-- **`dm-check.yml`**, hourly, runs `dms.py`. A removal request that names a posted person (first + last name, or a post link) gets the post deleted and a "done" reply. Requests on someone else's behalf count. Unmatched requests get one follow-up question and then go to a human; failed deletes go straight to a human. Other DMs are untouched and stay unread. Deleted people are added to `removed.json` (name hashes, see `removals.py`); a second job (`queue-state` group) then purges them from the CSV, queue and mugshots, re-renders Reels, and redeploys Pages. The scrape and posting steps also skip anyone on the list, so nobody is re-posted. Scheduled runs are off until the repo variable `DM_ENABLED=true` is set; manual runs default to dry-run. Token scopes are in `dms.NEEDED_SCOPES`. Per-thread state is in `dm_state.json`.
-- **`news-posting.yml`** — Daily at 6 PM Central. `news.py` takes stories from the last day in the same Bring Me The News `MN Crime` feed as `bmtn.py` (CBS Minnesota blocks GitHub runners with HTTP 406), skipping ones already queued as mugshot posts and ones without a JPEG lead image. It scores them with a free zero-shot model (`MoritzLaurer/deberta-v3-base-zeroshot-v2.0`, each label in `INTERESTING_LABELS` scored independently, a story's score is its strongest label) and posts the top one as an image (the feed's image URL directly, no Pages) if it scores at least `Config.NEWS_MIN_SCORE`. Every evaluated story is marked seen in `news_state.json`, so runners-up are not reconsidered; `bmtn.py` skips stories already posted here. Manual runs default to dry-run; unchecking it posts immediately.
-- **`bmtn-check.yml`** — Hourly. `bmtn.py` reads the Bring Me The News RSS feed (the tag page is behind bot protection), keeps `MN Crime` items whose lead image is named after a person in the story and passes the CLIP mugshot check (`mugshot_ranker.mugshot_probability`, so victim photos are skipped), pulls the charge with a free QA model (`deepset/roberta-base-squad2`), and inserts them ahead of unposted jail inmates. They post in the normal slots with the same Reel/caption format, plus the story's summary and link instead of bail. The nightly rebuild keeps unposted news entries. Seen stories are in `bmtn_state.json`. When anything is queued it redeploys Pages so the mugshot and Reel URLs exist.
-- **`rebuild-reels.yml`**, manual only. Re-renders Reels for the current queue and redeploys Pages without scraping (a scrape rebuilds the queue).
-- Both posting workflows share the `queue-state` concurrency group so they never edit the queue at the same time.
-
-### Posting priority
-
-Inmates with a charge rank first, then by distinctiveness (rescaled 0..1 within each day's batch) plus a severity bonus (`Config.SEVERITY_BONUS`: Felony +0.2, Gross Misdemeanor +0.1), then by bail dollar amount. The top 10 go into the queue. Severity comes from the modal's `Severity of Charge:` field, falling back to keywords in the charge text (`classify_severity`).
-
-Distinctiveness comes from `mugshot_ranker.py`: CLIP (`openai/clip-vit-base-patch32`, free, CPU) scores each mugshot against the prompts in `DISTINCTIVE_PROMPTS` vs `PLAIN_PROMPTS`. Edit those lists to change what "stands out" means. If torch/transformers or the model download fails, every score is 0 and ranking falls back to charge + bail. Local setup: `pip install torch transformers pillow`.
-
-### Environment variables (`.env`)
+## How a day runs (Central time)
 
 ```
-ACCESS_TOKEN=   # Meta Graph API long-lived access token
+11 PM   daily-scrape   scrape → CSV + mugshots/ → rank → posting_queue.json (top 10) → Reels → Pages
+hourly  bmtn-check     new Bring Me The News mugshot stories → front of the queue → Reels → Pages
+7,9,11,12,1,5,7,8      instagram-posting posts one queued entry per slot (Reel via its Pages URL)
+6 PM    news-posting   best new crime story → one image post (feed image URL, no Pages)
+hourly  dm-check       removal requests → delete post, add to removed.json → purge + redeploy Pages
+```
+
+**Why GitHub Pages?** The Graph API only accepts media by public URL. Mugshots are committed and served from
+`ryanjhermes.github.io/minneapolismugshots/mugshots/`; Reels are rendered on the runner and exist only in the Pages
+artifact (`reels/` is gitignored).
+
+## Workflows
+
+| Workflow | When | Runs | Commits | Installs |
+|---|---|---|---|---|
+| `daily-scrape.yml` | 04:00 UTC (11 PM CDT), manual | `scrape`, `purge-removed`, `purge-unqueued`, `make-reels`, Pages | everything (`git add .`) | Chrome, ffmpeg, `requirements.txt`, torch, transformers |
+| `instagram-posting.yml` | :07 hourly, 12–03 UTC | `preflight`, then `post-next` + `cleanup-posted` | queue, mugshots/ | requests, dotenv, pytz |
+| `bmtn-check.yml` | :45 hourly, manual (dry run default) | `bmtn --check`, then `bmtn` + `make-reels` + Pages if new | queue, mugshots/, bmtn_state | pillow; torch, transformers<5 and ffmpeg only if new |
+| `news-posting.yml` | 23:15 and 00:15 UTC, manual (dry run default) | `news` | news_state | pillow, torch, transformers<5 |
+| `dm-check.yml` | :37 hourly if `DM_ENABLED`, manual (dry run default) | `dms`; on deletes `purge-removed`, `make-reels`, Pages | dm_state, removed; then CSV, queue, mugshots/ | requests, dotenv, pytz (+ ffmpeg for the purge job) |
+| `rebuild-reels.yml` | manual | `make-reels`, Pages | queue | ffmpeg, requests, dotenv, pytz |
+
+- Everything that edits the queue shares the `queue-state` concurrency group, so they never run at the same time.
+- Every workflow checks out `ref: main` (not the triggering commit) and retries `git push` after a `pull --rebase`.
+  The bots commit to `main` many times a day, so **`git pull --rebase` before you push**.
+- Each workflow installs only its own dependencies. That's why `bot/__main__.py` imports each command's module
+  lazily and why `config.py` must stay free of heavy imports. If you add an import to a shared module
+  (`config`, `common`, `removals`, `posting_queue`), check it against the narrowest install above (requests,
+  python-dotenv, pytz).
+
+## Rules the code depends on
+
+- **Captions**: every mugshot caption has a `NAME: LAST, FIRST MIDDLE` line. `dms.load_posts` finds posts by that
+  line, so don't change its format.
+- **Posting slots** (`posting.preflight`): a scheduled run posts if nothing has posted since the latest
+  `config.POSTING_HOURS` slot started. Late GitHub runs still post, and missed slots don't stack into a burst.
+- **Queue rebuilds** (`posting_queue.build`) keep entries posted in the last 24h (so slot timing and "already posted"
+  survive) and unposted Bring Me The News entries (which stay ahead of the night's inmates).
+- **Removals** (`removed.json`) hold SHA-256 hashes of names, so the public repo doesn't list who asked. The scrape,
+  posting and bmtn all skip anyone on the list; `purge-removed` scrubs them from committed files. A removed person's
+  posted queue entry keeps its `posted_at` with empty `data`.
+- **Pages is replaced wholesale** on every deploy, so any workflow that deploys Pages renders Reels for the whole
+  queue first. Otherwise queued Reel URLs would 404.
+- **Ranking**: has a charge, then distinctiveness (CLIP, rescaled 0..1 within the batch) + `config.SEVERITY_BONUS`,
+  then bail amount. Edit `DISTINCTIVE_PROMPTS` / `PLAIN_PROMPTS` in `clip_model.py` to change what "stands out"
+  means. If torch or the model fails, distinctiveness is 0 and ranking still works.
+
+## Known gotchas (don't rediscover these)
+
+- **Headless Chrome window size**: the default 800x600 renders the booking modal in a narrow layout where charges
+  never appear. `scraper.open_browser` sets 1920x1080 in CI.
+- **Charges load late** in the modal: `FieldExtractor._wait_for_charges` waits for `Charge: 1` + `Description:`,
+  scrolls, retries, then falls back to reading the DOM, but only if the modal shows the same name (a stale modal
+  once attached the wrong person's charge). A failed charge read logs a 1,500-character modal sample for debugging.
+- **CBS Minnesota returns HTTP 406** to GitHub runners, so news uses the Bring Me The News feed. Its tag pages are
+  behind bot protection; the RSS feed (`config.BMTN_FEED_URL`) is not.
+- **transformers 5 removed** the `question-answering` and `zero-shot-classification` pipelines that bmtn and news use.
+  Their workflows pin `transformers<5`; the scrape workflow only needs CLIP and allows <6.
+- **Instagram processes media asynchronously.** Publishing before `status_code == FINISHED` fails with
+  "Media ID is not available", so `instagram.post` polls first (up to 5 min for Reels).
+- **Reel text placement** keeps clear of Instagram's UI (top bar, right-side buttons, bottom caption); see the
+  constants in `reels.py`.
+
+## Environment variables (`.env`, never committed)
+
+```
+ACCESS_TOKEN=   # Meta Graph API long-lived token (scopes: dms.NEEDED_SCOPES)
 APP_ID=         # Meta App ID
 BUSINESS_ID=    # Instagram Business Account ID
 ```
 
-In CI these come from GitHub Secrets (`META_ACCESS_TOKEN`, `META_APP_ID`, `META_BUSINESS_ID`).
-
-### `Config` class
-
-All magic numbers live in `data.py:Config` — posting limits, intervals, file paths, CSS selectors, URL. Change behavior there rather than hunting through functions.
-
-### Scraping
-
-Uses Selenium + Chrome. `FieldExtractor` class opens each booking modal and parses name, charge, bail, and mugshot from page text using `Config.NAME_PATTERNS` and related lists. Mugshots are saved as `mugshots/mugshot_LASTNAME_FIRSTNAME_MIDDLENAME.jpg`.
+In CI these come from the secrets `META_ACCESS_TOKEN`, `META_APP_ID` and `META_BUSINESS_ID`.
+`python -m bot dms --check-token` lists the scopes the token is missing and when it expires.

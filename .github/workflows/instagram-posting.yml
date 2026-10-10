@@ -2,15 +2,15 @@ name: Instagram Posting
 
 on:
   schedule:
-    # Hourly through the Central-time day (covers both CDT and CST). `data.py preflight`
-    # acts only in Config.POSTING_HOURS slots; other runs exit in seconds.
+    # Hourly through the Central-time day (covers both CDT and CST). `python -m bot preflight`
+    # acts only in config.POSTING_HOURS slots; other runs exit in seconds.
     - cron: '7 0-3,12-23 * * *'
   workflow_dispatch: # Manual run posts the next inmate now
 
 jobs:
   post-inmates:
     runs-on: ubuntu-latest
-    # Shared with daily-scrape so the two never edit the queue at the same time
+    # Shared with every workflow that edits the queue, so they never run at the same time
     concurrency:
       group: queue-state
       cancel-in-progress: false
@@ -37,7 +37,7 @@ jobs:
 
     - name: Preflight (post or nothing)
       id: preflight
-      run: python data.py preflight
+      run: python -m bot preflight
 
     - name: Create .env file with secrets
       if: steps.preflight.outputs.mode != ''
@@ -46,23 +46,18 @@ jobs:
         echo "APP_ID=${{ secrets.META_APP_ID }}" >> .env
         echo "BUSINESS_ID=${{ secrets.META_BUSINESS_ID }}" >> .env
 
-    - name: Post next inmates to Instagram
+    - name: Post next inmate to Instagram
       if: steps.preflight.outputs.mode == 'post'
       run: |
         # Short randomization only when actually posting
         RANDOM_DELAY=$((RANDOM % 61))
         echo "🎲 Adding small random delay of $RANDOM_DELAY seconds"
         sleep $RANDOM_DELAY
-        echo "📱 Posting next batch of inmates to Instagram..."
-        python data.py post-next
-        echo "✅ Posting batch completed"
+        python -m bot post-next
 
     - name: Clean up posted mugshot files
       if: steps.preflight.outputs.mode == 'post'
-      run: |
-        echo "🗑️  Cleaning up ONLY posted inmates' mugshot files..."
-        python data.py cleanup-posted
-        echo "✅ Posted mugshot cleanup completed"
+      run: python -m bot cleanup-posted
 
     - name: Commit queue updates
       if: steps.preflight.outputs.mode != ''

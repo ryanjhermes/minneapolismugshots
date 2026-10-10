@@ -10,7 +10,7 @@ on:
 jobs:
   scrape-and-deploy:
     runs-on: ubuntu-latest
-    # Shared with instagram-posting so the two never edit the queue at the same time
+    # Shared with every workflow that edits the queue, so they never run at the same time
     concurrency:
       group: queue-state
       cancel-in-progress: false
@@ -57,12 +57,10 @@ jobs:
     
     - name: Run jail roster scraper and create posting queue
       run: |
-        echo "🚀 Starting jail roster scraping and queue creation..."
-        python data.py
-        echo "✅ Scraping completed, posting queue created"
-        python removals.py
-        python data.py purge-unqueued
-        python data.py make-reels || echo "⚠️ Reel rendering failed, posts will use still images"
+        python -m bot scrape
+        python -m bot purge-removed
+        python -m bot purge-unqueued
+        python -m bot make-reels || echo "⚠️ Reel rendering failed, posts will use still images"
     
     - name: Build GitHub Pages site
       run: ./build_pages.sh
@@ -71,13 +69,6 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        
-        # Debug: Check what files we have
-        echo "🔍 DEBUG: Files to commit:"
-        echo "📄 CSV file: $(ls -la jail_roster_data.csv 2>/dev/null || echo 'Not found')"
-        echo "📁 Mugshots directory: $(ls -la mugshots/ 2>/dev/null | head -5 || echo 'Not found')"
-        echo "📄 Queue file: $(ls -la posting_queue.json 2>/dev/null || echo 'Not found')"
-        
         git add .
         if git diff --staged --quiet; then
           echo "No changes to commit"

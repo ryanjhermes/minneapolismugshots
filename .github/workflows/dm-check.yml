@@ -33,14 +33,14 @@ jobs:
       with:
         python-version: '3.11'
 
-    - run: pip install requests python-dotenv
+    - run: pip install requests python-dotenv pytz
 
     - name: Handle DMs
       id: dms
       env:
         ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
         BUSINESS_ID: ${{ secrets.META_BUSINESS_ID }}
-      run: python dms.py ${{ inputs.dry_run && '--dry-run' || '' }}
+      run: python -m bot dms ${{ inputs.dry_run && '--dry-run' || '' }}
 
     - name: Commit DM state
       if: ${{ !inputs.dry_run }}
@@ -89,9 +89,9 @@ jobs:
 
     - name: Purge removed people
       run: |
-        python removals.py
+        python -m bot purge-removed
         # Before the commit, so the queue's Reel_File entries are saved
-        python data.py make-reels || echo "⚠️ Reel rendering failed, posts will use still images"
+        python -m bot make-reels || echo "⚠️ Reel rendering failed, posts will use still images"
 
     - name: Commit purge
       run: |

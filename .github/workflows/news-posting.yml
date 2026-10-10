@@ -2,8 +2,8 @@ name: Daily News Post
 
 on:
   schedule:
-    # 6 PM Central is 23:00 UTC in CDT and 00:00 UTC in CST; news.py acts only
-    # during Config.NEWS_POSTING_HOUR and once per day, so the other run exits early
+    # 6 PM Central is 23:00 UTC in CDT and 00:00 UTC in CST; bot/news.py acts only
+    # during config.NEWS_POSTING_HOUR and once per day, so the other run exits early
     - cron: '15 23 * * *'
     - cron: '15 0 * * *'
   workflow_dispatch:
@@ -51,9 +51,9 @@ jobs:
     - name: Pick and post today's story
       run: |
         if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-          if [ "${{ inputs.dry_run }}" = "true" ]; then python news.py --dry-run; else python news.py --force; fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then python -m bot news --dry-run; else python -m bot news --force; fi
         else
-          python news.py
+          python -m bot news
         fi
 
     - name: Commit news state
