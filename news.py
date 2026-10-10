@@ -38,7 +38,9 @@ INTERESTING_LABELS = [
 
 def fetch_stories():
     """Story cards on the crime page: [{url, title, description, image, date}]"""
-    page = requests.get(Config.NEWS_URL, headers={'User-Agent': 'Mozilla/5.0'}, timeout=30).text
+    r = requests.get(Config.NEWS_URL, headers={'User-Agent': 'Mozilla/5.0'}, timeout=30)
+    page = r.text
+    print(f"🌐 {Config.NEWS_URL}: HTTP {r.status_code}, {len(page)} bytes")
     stories = []
     for card in re.findall(r'<article[^>]*class="item[^"]*"[^>]*>(.*?)</article>', page, re.S):
         url = re.search(r'href="(https://www\.cbsnews\.com/minnesota/[^"]+)"', card)
@@ -121,7 +123,9 @@ def run(dry_run=False, force=False):
             return
 
     seen = set(state['seen'])
-    stories = [s for s in fetch_stories() if s['url'] not in seen and is_recent(s['date'], now)]
+    fetched = fetch_stories()
+    print(f"🗂️  {len(fetched)} story cards on the page")
+    stories = [s for s in fetched if s['url'] not in seen and is_recent(s['date'], now)]
     print(f"📰 {len(stories)} new stories")
     if not stories:
         return
