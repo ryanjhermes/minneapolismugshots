@@ -1,0 +1,73 @@
+name: Daily News Post
+
+on:
+  schedule:
+    # 6 PM Central is 23:00 UTC in CDT and 00:00 UTC in CST; news.py acts only
+    # during Config.NEWS_POSTING_HOUR and once per day, so the other run exits early
+    - cron: '15 23 * * *'
+    - cron: '15 0 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Log scores and the would-be post, change nothing'
+        type: boolean
+        default: true
+
+jobs:
+  post-news:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: news-state
+      cancel-in-progress: false
+
+    permissions:
+      contents: write # Commit news_state.json
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        ref: main
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        pip install requests python-dotenv pytz
+        # CPU-only torch + zero-shot model for scoring (nothing posts if this fails)
+        pip install torch --index-url https://download.pytorch.org/whl/cpu
+        pip install "transformers>=4.40,<6" sentencepiece protobuf
+
+    - name: Create .env file with secrets
+      run: |
+        echo "ACCESS_TOKEN=${{ secrets.META_ACCESS_TOKEN }}" >> .env
+        echo "APP_ID=${{ secrets.META_APP_ID }}" >> .env
+        echo "BUSINESS_ID=${{ secrets.META_BUSINESS_ID }}" >> .env
+
+    - name: Pick and post today's story
+      run: |
+        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          if [ "${{ inputs.dry_run }}" = "true" ]; then python news.py --dry-run; else python news.py --force; fi
+        else
+          python news.py
+        fi
+
+    - name: Commit news state
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add news_state.json 2>/dev/null || true
+        if git diff --staged --quiet; then
+          echo "📭 No changes to commit"
+          exit 0
+        fi
+        git commit -m "Update news state - $(date '+%Y-%m-%d %H:%M:%S')"
+        for attempt in 1 2 3; do
+          git push && exit 0
+          git pull --rebase origin main
+        done
+        echo "❌ Could not push news state; today's post may repeat"
+        exit 1

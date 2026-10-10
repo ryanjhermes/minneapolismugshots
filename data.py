@@ -34,6 +34,16 @@ class Config:
     DISCLAIMER = "Charges are allegations, not convictions. All persons are presumed innocent until proven guilty in a court of law."
     SOURCE = "Source: Hennepin County Jail Roster (public booking data, Minn. Stat. § 13.82)"
     REELS_DIR = "reels"
+
+    # Daily news post (news.py): one story a day at this Central hour, only if it scores high enough
+    NEWS_URL = "https://www.cbsnews.com/minnesota/crime/"
+    NEWS_POSTING_HOUR = 18
+    NEWS_MIN_SCORE = 0.5
+
+    # Second mugshot source (bmtn.py): Bring Me The News crime stories with a booking photo
+    BMTN_FEED_URL = "https://bringmethenews.com/.rss/full/"
+    BMTN_CATEGORY = "MN Crime"
+    BMTN_MIN_MUGSHOT_PROB = 0.8  # CLIP check that the lead image is a booking photo
     
     # Quality thresholds
     MIN_NAME_LENGTH = 3
@@ -739,7 +749,22 @@ def generate_caption(data):
         charge_line = ""
         if charge not in invalid_charge_values:
             label = "BOOKING CHARGES" if Config.CHARGE_SEPARATOR in charge else "BOOKING CHARGE"
+            if data.get('Source_URL'):
+                label = label.replace("BOOKING ", "")
             charge_line = f"{label}: {charge}\n"
+
+        # Bring Me The News story (bmtn.py): their summary and link instead of bail and booking details
+        if data.get('Source_URL'):
+            return f"""
+{charge_line}NAME: {name}
+
+{data.get('Description', '')}
+
+{Config.DISCLAIMER}
+
+#minneapolismugshots #Minnesota #Arrest #MNcrime #Minneapolis
+
+Source: Bring Me The News, {data['Source_URL']}"""
 
         caption = f"""
 {charge_line}NAME: {name}
@@ -1013,9 +1038,11 @@ def save_to_posting_queue(data_list):
     cutoff = datetime.now(pytz.utc) - timedelta(hours=24)
     kept = [i for i in old if i.get('posted') and i.get('posted_at')
             and datetime.fromisoformat(i['posted_at']) >= cutoff]
-    already_posted = {i['data'].get('Full Name') for i in old if i.get('posted')}
+    # Bring Me The News stories (bmtn.py) not yet posted stay queued, ahead of tonight's inmates
+    news_pending = [i for i in old if not i.get('posted') and i['data'].get('Source_URL')]
+    already_posted = {i['data'].get('Full Name') for i in old if i.get('posted') or i in news_pending}
     if already_posted:
-        print(f"⏭️  Skipping {len(already_posted)} already posted: {', '.join(sorted(already_posted))}")
+        print(f"⏭️  Skipping {len(already_posted)} already posted or queued from news: {', '.join(sorted(already_posted))}")
         data_list = [d for d in data_list if d.get('Full Name') not in already_posted]
 
     # Filter to top 10 highest priority inmates BEFORE creating queue
@@ -1024,7 +1051,7 @@ def save_to_posting_queue(data_list):
     for d in filtered_inmates:
         d['Booking_Date'] = booking_date
 
-    entries = kept + [{'data': d, 'posted': False, 'posted_at': None} for d in filtered_inmates]
+    entries = kept + news_pending + [{'data': d, 'posted': False, 'posted_at': None} for d in filtered_inmates]
     for n, entry in enumerate(entries, 1):
         entry['id'] = n
     queue_data = {
@@ -2693,8 +2720,7 @@ def build_reels():
         out = os.path.join(Config.REELS_DIR, os.path.basename(d['Mugshot_File']).rsplit('.', 1)[0] + '.mp4')
         try:
             reels.make_clip(out, 7, d['Mugshot_File'], d.get('Full Name', ''),
-                            reels.charge_lines(d.get('Charge 1', ''), Config.CHARGE_SEPARATOR),
-                            'MINNEAPOLIS MUGSHOTS')
+                            reels.charge_lines(d.get('Charge 1', ''), Config.CHARGE_SEPARATOR))
             d['Reel_File'] = out
             print(f"🎬 Reel: {out}")
         except Exception as e:

@@ -1,0 +1,83 @@
+name: Bring Me The News Mugshots
+
+on:
+  schedule:
+    # Hourly; new mugshot stories go to the front of the queue for the next posting slot
+    - cron: '45 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Log what would be queued, change nothing'
+        type: boolean
+        default: true
+
+jobs:
+  queue-stories:
+    runs-on: ubuntu-latest
+    # Shared with scrape, posting and removals: this edits the queue
+    concurrency:
+      group: queue-state
+      cancel-in-progress: false
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: main
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - run: pip install requests python-dotenv pytz pillow
+
+    # Cheap feed check so most hours skip the model install
+    - name: Check feed
+      id: check
+      run: python bmtn.py --check
+
+    - name: Install models and ffmpeg
+      if: steps.check.outputs.new > 0
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y ffmpeg fonts-dejavu-core
+        pip install torch --index-url https://download.pytorch.org/whl/cpu
+        pip install "transformers>=4.40,<6"
+
+    - name: Queue mugshot stories
+      id: bmtn
+      if: steps.check.outputs.new > 0
+      run: python bmtn.py ${{ inputs.dry_run && '--dry-run' || '' }}
+
+    - name: Commit queue
+      if: steps.check.outputs.new > 0 && !inputs.dry_run
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A bmtn_state.json posting_queue.json mugshots/
+        if git diff --staged --quiet; then exit 0; fi
+        git commit -m "Queue Bring Me The News mugshots - $(date '+%Y-%m-%d %H:%M:%S')"
+        for attempt in 1 2 3; do
+          git push && exit 0
+          git pull --rebase origin main
+        done
+        exit 1
+
+    # Posting reads mugshots and Reels from Pages, so publish the new ones now.
+    # Pages is replaced wholesale, so re-render Reels for the whole remaining queue.
+    - name: Rebuild Pages
+      if: steps.bmtn.outputs.queued > 0
+      run: |
+        python data.py make-reels || echo "⚠️ Reel rendering failed, posts will use still images"
+        ./build_pages.sh
+    - uses: actions/configure-pages@v4
+      if: steps.bmtn.outputs.queued > 0
+    - uses: actions/upload-pages-artifact@v3
+      if: steps.bmtn.outputs.queued > 0
+      with:
+        path: docs
+    - uses: actions/deploy-pages@v4
+      if: steps.bmtn.outputs.queued > 0

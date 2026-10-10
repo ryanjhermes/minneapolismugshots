@@ -55,3 +55,31 @@ def score_mugshots(paths):
             print(f"⚠️  Could not score {path}: {e}")
             scores[path] = 0.0
     return scores
+
+
+# Used by bmtn.py to tell a booking photo from a victim/family photo, scene shot, or stock image
+MUGSHOT_PROMPTS = [
+    "a police booking mugshot",
+    "a jail booking photo of a person against a plain wall",
+    "a sheriff's office mugshot of a person in an orange jumpsuit",
+]
+NOT_MUGSHOT_PROMPTS = [
+    "a candid snapshot of a person",
+    "a smiling family photo or selfie",
+    "a photo of a crime scene, police tape, or police cars",
+    "a photo of a building, street, or vehicle",
+    "a screenshot of a document or video",
+    "a school or yearbook portrait",
+]
+
+
+def mugshot_probability(path):
+    """0..1, how much the image looks like a booking photo rather than anything else"""
+    model = CLIPModel.from_pretrained(MODEL_NAME).eval()
+    processor = CLIPProcessor.from_pretrained(MODEL_NAME)
+    prompts = MUGSHOT_PROMPTS + NOT_MUGSHOT_PROMPTS
+    image = Image.open(path).convert("RGB")
+    inputs = processor(text=prompts, images=image, return_tensors="pt", padding=True)
+    with torch.no_grad():
+        probs = model(**inputs).logits_per_image.softmax(dim=1)[0]
+    return float(probs[:len(MUGSHOT_PROMPTS)].sum())

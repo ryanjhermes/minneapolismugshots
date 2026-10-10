@@ -27,6 +27,14 @@ python data.py check-queue       # Inspect posting_queue.json state
 python data.py cleanup-posted    # Delete mugshot files for already-posted inmates
 python data.py purge-unqueued    # Delete every mugshot not needed for an upcoming post
 
+# News
+python news.py --dry-run         # Score new CBS Minnesota crime stories, show what would post
+python news.py --force           # Post the top story now (skips the 6 PM / once-a-day checks)
+
+# Bring Me The News mugshots
+python bmtn.py --dry-run         # Show which new crime stories would be queued
+python bmtn.py                   # Queue them at the front of posting_queue.json
+
 # DMs
 python dms.py --dry-run          # Log what the DM handler would do, change nothing
 python dms.py                    # Delete requested posts, reply, save dm_state.json + removed.json
@@ -63,6 +71,8 @@ Scrape → jail_roster_data.csv + mugshots/
 - **`daily-scrape.yml`** — Runs at 11 PM Central (04:00 UTC) or manually (no push trigger). Scrapes the jail roster, writes CSV + mugshots, creates `posting_queue.json` with top 10 priority inmates (skipping anyone already posted), renders Reels, deploys to GitHub Pages. Reels live only in the Pages artifact (`reels/` is gitignored).
 - **`instagram-posting.yml`** — Runs hourly. `python data.py preflight` decides: post one inmate if nothing has posted since the most recent `Config.POSTING_HOURS` slot started (so late GitHub runs still post), otherwise nothing. Manual runs post the next inmate immediately. Posts wait for Instagram to finish processing media before publishing.
 - **`dm-check.yml`**, hourly, runs `dms.py`. A removal request that names a posted person (first + last name, or a post link) gets the post deleted and a "done" reply. Requests on someone else's behalf count. Unmatched requests get one follow-up question and then go to a human; failed deletes go straight to a human. Other DMs are untouched and stay unread. Deleted people are added to `removed.json` (name hashes, see `removals.py`); a second job (`queue-state` group) then purges them from the CSV, queue and mugshots, re-renders Reels, and redeploys Pages. The scrape and posting steps also skip anyone on the list, so nobody is re-posted. Scheduled runs are off until the repo variable `DM_ENABLED=true` is set; manual runs default to dry-run. Token scopes are in `dms.NEEDED_SCOPES`. Per-thread state is in `dm_state.json`.
+- **`news-posting.yml`** — Daily at 6 PM Central. `news.py` scrapes the cards on `Config.NEWS_URL`, scores stories from the last day it hasn't seen with a free zero-shot model (`MoritzLaurer/deberta-v3-base-zeroshot-v2.0`, each label in `INTERESTING_LABELS` scored independently, a story's score is its strongest label), and posts the top one as an image (the CBS thumbnail URL directly, no Pages) if it scores at least `Config.NEWS_MIN_SCORE`. Every evaluated story is marked seen in `news_state.json`, so runners-up are not reconsidered. Manual runs default to dry-run; unchecking it posts immediately.
+- **`bmtn-check.yml`** — Hourly. `bmtn.py` reads the Bring Me The News RSS feed (the tag page is behind bot protection), keeps `MN Crime` items whose lead image is named after a person in the story and passes the CLIP mugshot check (`mugshot_ranker.mugshot_probability`, so victim photos are skipped), pulls the charge with a free QA model (`deepset/roberta-base-squad2`), and inserts them ahead of unposted jail inmates. They post in the normal slots with the same Reel/caption format, plus the story's summary and link instead of bail. The nightly rebuild keeps unposted news entries. Seen stories are in `bmtn_state.json`. When anything is queued it redeploys Pages so the mugshot and Reel URLs exist.
 - Both posting workflows share the `queue-state` concurrency group so they never edit the queue at the same time.
 
 ### Posting priority
