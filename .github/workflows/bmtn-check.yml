@@ -45,7 +45,8 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y ffmpeg fonts-dejavu-core
         pip install torch --index-url https://download.pytorch.org/whl/cpu
-        pip install "transformers>=4.40,<6"
+        # transformers 5 removed the question-answering pipeline bmtn.py uses
+        pip install "transformers>=4.40,<5"
 
     - name: Queue mugshot stories
       id: bmtn

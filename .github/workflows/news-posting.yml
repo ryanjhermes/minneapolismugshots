@@ -37,9 +37,10 @@ jobs:
     - name: Install dependencies
       run: |
         pip install requests python-dotenv pytz
-        # CPU-only torch + zero-shot model for scoring (nothing posts if this fails)
+        # CPU-only torch + zero-shot model for scoring (nothing posts if this fails).
+        # transformers 5 removed the task pipelines these scripts use
         pip install torch --index-url https://download.pytorch.org/whl/cpu
-        pip install "transformers>=4.40,<6" sentencepiece protobuf
+        pip install "transformers>=4.40,<5" sentencepiece protobuf
 
     - name: Create .env file with secrets
       run: |
