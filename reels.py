@@ -21,11 +21,13 @@ def _drawtext(textfile, size, y, color="white"):
             f":fontsize={size}:line_spacing=14:x=(w-text_w)/2:y={y}")
 
 
-def make_clip(out_path, seconds, image=None, title="", body=""):
-    """One clip: optional slowly zooming mugshot, title + wrapped body below."""
+def make_clip(out_path, seconds, image=None, title="", body="", header=""):
+    """One clip: optional slowly zooming mugshot, header on top, title + wrapped body below."""
     frames = seconds * FPS
     with tempfile.TemporaryDirectory() as tmp:
         texts = []
+        if header:
+            texts.append(_drawtext(_text(f"{tmp}/h.txt", header), 64, 120, "yellow"))
         if title:
             texts.append(_drawtext(_text(f"{tmp}/t.txt", title), 52, PHOTO_Y + PHOTO_H + 40))
         if body:

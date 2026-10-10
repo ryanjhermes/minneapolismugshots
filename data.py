@@ -2720,7 +2720,8 @@ def build_reels():
         out = os.path.join(Config.REELS_DIR, os.path.basename(d['Mugshot_File']).rsplit('.', 1)[0] + '.mp4')
         try:
             reels.make_clip(out, 7, d['Mugshot_File'], d.get('Full Name', ''),
-                            reels.charge_lines(d.get('Charge 1', ''), Config.CHARGE_SEPARATOR))
+                            reels.charge_lines(d.get('Charge 1', ''), Config.CHARGE_SEPARATOR),
+                            'MINNEAPOLIS MUGSHOTS')
             d['Reel_File'] = out
             print(f"🎬 Reel: {out}")
         except Exception as e:
@@ -2738,8 +2739,9 @@ if __name__ == "__main__":
         if command == "test-instagram":
             test_instagram_posting()
         elif command == "post-next":
-            # Post next inmate from queue
-            post_next_inmates()
+            # Post next inmate from queue; a failed post turns the run red
+            if not post_next_inmates():
+                sys.exit(1)
         elif command == "post-next-test":
             # Post next inmate in test mode (no actual posting)
             post_next_inmates(test_mode=True)

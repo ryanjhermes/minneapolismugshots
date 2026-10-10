@@ -88,7 +88,10 @@ jobs:
         pip install requests python-dotenv pytz
 
     - name: Purge removed people
-      run: python removals.py
+      run: |
+        python removals.py
+        # Before the commit, so the queue's Reel_File entries are saved
+        python data.py make-reels || echo "⚠️ Reel rendering failed, posts will use still images"
 
     - name: Commit purge
       run: |
@@ -103,11 +106,9 @@ jobs:
         done
         exit 1
 
-    # Pages is replaced wholesale, so re-render Reels for the remaining queue
+    # Pages is replaced wholesale; reels/ was rendered in the purge step
     - name: Rebuild Pages
-      run: |
-        python data.py make-reels || echo "⚠️ Reel rendering failed, posts will use still images"
-        ./build_pages.sh
+      run: ./build_pages.sh
 
     - uses: actions/configure-pages@v4
     - uses: actions/upload-pages-artifact@v3
