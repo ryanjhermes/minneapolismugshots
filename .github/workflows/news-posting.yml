@@ -36,7 +36,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install requests python-dotenv pytz
+        pip install requests python-dotenv pytz pillow
         # CPU-only torch + zero-shot model for scoring (nothing posts if this fails).
         # transformers 5 removed the task pipelines these scripts use
         pip install torch --index-url https://download.pytorch.org/whl/cpu

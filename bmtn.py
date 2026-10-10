@@ -14,6 +14,7 @@ import json
 import os
 import re
 import sys
+from email.utils import parsedate_to_datetime
 
 import requests
 from PIL import Image
@@ -46,7 +47,7 @@ def _cdata(item, tag):
 
 
 def fetch_items():
-    """Crime items from the RSS feed: [{url, title, description, text, image}]"""
+    """Crime items from the RSS feed: [{url, title, description, text, image, published}]"""
     feed = requests.get(Config.BMTN_FEED_URL, headers=HEADERS, timeout=30).text
     items = []
     for item in re.findall(r'<item>(.*?)</item>', feed, re.S):
@@ -60,6 +61,7 @@ def fetch_items():
             'description': _cdata(item, 'description'),
             'text': re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', content))),
             'image': html.unescape(image.group(1)) if image else '',
+            'published': parsedate_to_datetime(_cdata(item, 'pubDate')),
         })
     return items
 
@@ -129,6 +131,12 @@ def queue_entries(entries):
 def run(dry_run=False, check=False):
     state = load_state()
     seen = set(state['seen'])
+    # Stories news.py already posted as the daily news post aren't posted again as mugshots
+    try:
+        with open('news_state.json', 'r', encoding='utf-8') as f:
+            seen |= {p['url'] for p in json.load(f)['posted']}
+    except FileNotFoundError:
+        pass
     items = [i for i in fetch_items() if i['url'] not in seen]
     if check:
         print(f"new={len(items)}")

@@ -1,5 +1,6 @@
-"""Daily news post: pick the most outlandish new story on CBS Minnesota's crime page and
-post its thumbnail, headline, description and link to Instagram.
+"""Daily news post: pick the most outlandish new story in Bring Me The News's MN Crime feed
+(the same feed bmtn.py reads) and post its lead image, headline, description and link.
+CBS Minnesota was the first source, but it returns HTTP 406 to GitHub Actions runners.
 
 Free and local: stories are scored with a zero-shot NLI model
 (MoritzLaurer/deberta-v3-base-zeroshot-v2.0, ~700 MB, MIT) on the GitHub Actions CPU.
@@ -8,15 +9,13 @@ python news.py --dry-run   # Show scores and what would post, change nothing
 python news.py             # Post the top story if it clears Config.NEWS_MIN_SCORE (6 PM Central only)
 python news.py --force     # Post now, ignoring the time-of-day and once-per-day checks
 """
-import html
 import json
-import re
 import sys
 from datetime import datetime, timedelta
 
 import pytz
-import requests
 
+from bmtn import fetch_items
 from data import Config, get_api_credentials, post_to_instagram
 
 MODEL_NAME = "MoritzLaurer/deberta-v3-base-zeroshot-v2.0"
@@ -36,40 +35,19 @@ INTERESTING_LABELS = [
 ]
 
 
-def fetch_stories():
-    """Story cards on the crime page: [{url, title, description, image, date}]"""
-    r = requests.get(Config.NEWS_URL, headers={'User-Agent': 'Mozilla/5.0'}, timeout=30)
-    page = r.text
-    print(f"🌐 {Config.NEWS_URL}: HTTP {r.status_code}, {len(page)} bytes")
-    stories = []
-    for card in re.findall(r'<article[^>]*class="item[^"]*"[^>]*>(.*?)</article>', page, re.S):
-        url = re.search(r'href="(https://www\.cbsnews\.com/minnesota/[^"]+)"', card)
-        title = re.search(r'class="item__hed[^"]*">(.*?)</h', card, re.S)
-        desc = re.search(r'class="item__dek[^"]*">(.*?)</p>', card, re.S)
-        # Last JPEG is the srcset's 2x (1280x720); Instagram needs a public JPEG URL
-        images = re.findall(r'(https://assets\d?\.cbsnewsstatic\.com/\S+?\.jpg)', card)
-        date = re.search(r'class="item__date">(.*?)<', card)
-        if not (url and title and images):
-            continue
-        stories.append({
-            'url': url.group(1),
-            'title': html.unescape(title.group(1).strip()),
-            'description': html.unescape(desc.group(1).strip()) if desc else '',
-            'image': images[-1],
-            'date': date.group(1).strip() if date else '',
-        })
-    return stories
-
-
-def is_recent(date_text, now):
-    """Cards show '22h ago' / '5m ago' for the last day, otherwise 'Oct 9'"""
-    if 'ago' in date_text:
-        return True
+def fetch_stories(now):
+    """Feed stories from the last day that can be news posts: [{url, title, description, image}]"""
     try:
-        d = datetime.strptime(f"{date_text} {now.year}", "%b %d %Y").date()
-    except ValueError:
-        return False
-    return now.date() - d <= timedelta(days=1)
+        with open(Config.QUEUE_FILENAME, 'r', encoding='utf-8') as f:
+            mugshot_posts = {i['data'].get('Source_URL') for i in json.load(f)['inmates']}
+    except FileNotFoundError:
+        mugshot_posts = set()
+    items = fetch_items()
+    print(f"🗂️  {len(items)} {Config.BMTN_CATEGORY} stories in the feed")
+    return [i for i in items
+            if now - i['published'] <= timedelta(days=1)
+            and i['url'] not in mugshot_posts  # already going out as a mugshot post (bmtn.py)
+            and i['image'].split('?')[0].lower().endswith(('.jpg', '.jpeg'))]  # Instagram takes JPEG only
 
 
 def score_stories(stories):
@@ -97,7 +75,7 @@ def news_caption(story):
 
 Read the full story: {story['url']}
 
-Source: CBS News Minnesota
+Source: Bring Me The News
 
 #Minneapolis #Minnesota #MNnews #CrimeNews #TwinCities"""
 
@@ -123,9 +101,7 @@ def run(dry_run=False, force=False):
             return
 
     seen = set(state['seen'])
-    fetched = fetch_stories()
-    print(f"🗂️  {len(fetched)} story cards on the page")
-    stories = [s for s in fetched if s['url'] not in seen and is_recent(s['date'], now)]
+    stories = [s for s in fetch_stories(now) if s['url'] not in seen]
     print(f"📰 {len(stories)} new stories")
     if not stories:
         return

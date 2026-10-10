@@ -36,7 +36,6 @@ class Config:
     REELS_DIR = "reels"
 
     # Daily news post (news.py): one story a day at this Central hour, only if it scores high enough
-    NEWS_URL = "https://www.cbsnews.com/minnesota/crime/"
     NEWS_POSTING_HOUR = 18
     NEWS_MIN_SCORE = 0.5
 
