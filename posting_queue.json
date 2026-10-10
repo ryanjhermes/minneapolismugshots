@@ -1,17 +1,17 @@
 {
-  "created_at": "2026-10-09T06:01:15.422997-05:00",
+  "created_at": "2026-10-10T05:14:04.042032-05:00",
   "total_inmates": 10,
   "posted_count": 0,
   "inmates": [
     {
       "data": {
-        "Full Name": "TAYLOR, ROBERT DANIEL",
-        "Charge 1": "DRUGS - 5TH DEG; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TAYLOR_ROBERT_DANIEL.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/09/2026",
-        "Reel_File": "reels/mugshot_TAYLOR_ROBERT_DANIEL.mp4"
+        "Full Name": "SEAMON, CYNTHIA ANN",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_SEAMON_CYNTHIA_ANN.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/10/2026",
+        "Reel_File": "reels/mugshot_SEAMON_CYNTHIA_ANN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -19,13 +19,13 @@
     },
     {
       "data": {
-        "Full Name": "HASSAN, ABDIRAHMAN MAHAMED",
-        "Charge 1": "BURGLARY; BURGLARY - 3RD DEGREE - ENTERS W/OUT CONSENT WITH INTENT TO STEAL/COMMIT FELONY OR GROSS MISDEMEANOR; FINANCIAL TRANSACTION CARD FRAUD-USE-NO CONSENT",
-        "Bail": "$35,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HASSAN_ABDIRAHMAN_MAHAMED.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/09/2026",
-        "Reel_File": "reels/mugshot_HASSAN_ABDIRAHMAN_MAHAMED.mp4"
+        "Full Name": "HUGHES, LAKEISHA MICHELL",
+        "Charge 1": "ASSAULT-2ND DEGREE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_HUGHES_LAKEISHA_MICHELL.jpg",
+        "Severity": "",
+        "Booking_Date": "10/10/2026",
+        "Reel_File": "reels/mugshot_HUGHES_LAKEISHA_MICHELL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -33,13 +33,13 @@
     },
     {
       "data": {
-        "Full Name": "BRANDON, DAVID CREIGHTON",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BRANDON_DAVID_CREIGHTON.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/09/2026",
-        "Reel_File": "reels/mugshot_BRANDON_DAVID_CREIGHTON.mp4"
+        "Full Name": "WADI, ABDELRAHMAN SAMER",
+        "Charge 1": "OTHER COUNTY/GM & MISD",
+        "Bail": "$100.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WADI_ABDELRAHMAN_SAMER.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/10/2026",
+        "Reel_File": "reels/mugshot_WADI_ABDELRAHMAN_SAMER.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -47,13 +47,13 @@
     },
     {
       "data": {
-        "Full Name": "BARRETT, REBECCA LYNN",
-        "Charge 1": "DRUGS - 5TH DEG",
+        "Full Name": "SMITH, JEANNETTE GEORGIA",
+        "Charge 1": "DRUGS - 1ST DEGREE; OTHER COUNTY/GM & MISD",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BARRETT_REBECCA_LYNN.jpg",
-        "Severity": "",
-        "Booking_Date": "10/09/2026",
-        "Reel_File": "reels/mugshot_BARRETT_REBECCA_LYNN.mp4"
+        "Mugshot_File": "mugshots/mugshot_SMITH_JEANNETTE_GEORGIA.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/10/2026",
+        "Reel_File": "reels/mugshot_SMITH_JEANNETTE_GEORGIA.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -61,13 +61,13 @@
     },
     {
       "data": {
-        "Full Name": "HERNANDEZ, JERAMIAH ANTHONY",
-        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; DISORDERLY CONDUCT - OFFENSIVE/ABUSIVE/BOISTEROUS/NOISY/OBSCENE",
+        "Full Name": "CONDE, NATHAN OTTUM",
+        "Charge 1": "TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; 2 OR MORE AGGRAVATING FACTORS; TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HERNANDEZ_JERAMIAH_ANTHONY.jpg",
+        "Mugshot_File": "mugshots/mugshot_CONDE_NATHAN_OTTUM.jpg",
         "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/09/2026",
-        "Reel_File": "reels/mugshot_HERNANDEZ_JERAMIAH_ANTHONY.mp4"
+        "Booking_Date": "10/10/2026",
+        "Reel_File": "reels/mugshot_CONDE_NATHAN_OTTUM.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -75,13 +75,13 @@
     },
     {
       "data": {
-        "Full Name": "BROWN, JEREMIAH MARKUS",
-        "Charge 1": "THREATS OF VIOLENCE - RECKLESS DISREGARD RISK",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROWN_JEREMIAH_MARKUS.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/09/2026",
-        "Reel_File": "reels/mugshot_BROWN_JEREMIAH_MARKUS.mp4"
+        "Full Name": "GLASS, LEONARD CARLTON II",
+        "Charge 1": "WEAPONS-CARRY WEAPONS WITHOUT PERMIT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GLASS_LEONARD_CARLTON_II.jpg",
+        "Severity": "",
+        "Booking_Date": "10/10/2026",
+        "Reel_File": "reels/mugshot_GLASS_LEONARD_CARLTON_II.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -89,13 +89,13 @@
     },
     {
       "data": {
-        "Full Name": "GINES, DENNIS LYNN III",
-        "Charge 1": "DOMESTIC ABUSE NO CONTACT ORDER - VIOLATE NO CONTACT ORDER - MISDEMEANOR",
+        "Full Name": "JACKSON, L C",
+        "Charge 1": "DRIVING AFTER CANCELLATION IPS; DRUGS - 5TH DEG",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GINES_DENNIS_LYNN_III.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/09/2026",
-        "Reel_File": "reels/mugshot_GINES_DENNIS_LYNN_III.mp4"
+        "Mugshot_File": "mugshots/mugshot_JACKSON_L_C.jpg",
+        "Severity": "",
+        "Booking_Date": "10/10/2026",
+        "Reel_File": "reels/mugshot_JACKSON_L_C.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -103,13 +103,13 @@
     },
     {
       "data": {
-        "Full Name": "DORSEY, KE MARION UNIQUE",
+        "Full Name": "SMITH, DOMINIQUE LAMAR",
         "Charge 1": "DOMESTIC ASSAULT",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DORSEY_KE_MARION_UNIQUE.jpg",
+        "Mugshot_File": "mugshots/mugshot_SMITH_DOMINIQUE_LAMAR.jpg",
         "Severity": "",
-        "Booking_Date": "10/09/2026",
-        "Reel_File": "reels/mugshot_DORSEY_KE_MARION_UNIQUE.mp4"
+        "Booking_Date": "10/10/2026",
+        "Reel_File": "reels/mugshot_SMITH_DOMINIQUE_LAMAR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -117,13 +117,13 @@
     },
     {
       "data": {
-        "Full Name": "VALENCIA-HODGES, BRIANA KRISTINA",
-        "Charge 1": "DOMESTIC ASSAULT",
+        "Full Name": "CRAIG, GAVIN WALTER",
+        "Charge 1": "OTHER STATE",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_VALENCIA-HODGES_BRIANA_KRISTINA.jpg",
-        "Severity": "",
-        "Booking_Date": "10/09/2026",
-        "Reel_File": "reels/mugshot_VALENCIA-HODGES_BRIANA_KRISTINA.mp4"
+        "Mugshot_File": "mugshots/mugshot_CRAIG_GAVIN_WALTER.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/10/2026",
+        "Reel_File": "reels/mugshot_CRAIG_GAVIN_WALTER.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -131,13 +131,13 @@
     },
     {
       "data": {
-        "Full Name": "BENEDICT, HOWARD JEREMIAH",
-        "Charge 1": "VIOLATION OF A PROTECTION ORDER",
+        "Full Name": "HARTMAN, BRYNDAN ANTHONY",
+        "Charge 1": "DRUGS - 5TH DEG",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BENEDICT_HOWARD_JEREMIAH.jpg",
+        "Mugshot_File": "mugshots/mugshot_HARTMAN_BRYNDAN_ANTHONY.jpg",
         "Severity": "",
-        "Booking_Date": "10/09/2026",
-        "Reel_File": "reels/mugshot_BENEDICT_HOWARD_JEREMIAH.mp4"
+        "Booking_Date": "10/10/2026",
+        "Reel_File": "reels/mugshot_HARTMAN_BRYNDAN_ANTHONY.mp4"
       },
       "posted": false,
       "posted_at": null,
