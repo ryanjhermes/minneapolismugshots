@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-10T05:14:04.042032-05:00",
-  "total_inmates": 10,
+  "total_inmates": 14,
   "posted_count": 3,
   "inmates": [
     {
@@ -44,6 +44,66 @@
       "posted": true,
       "posted_at": "2026-10-10T19:54:09.909153-05:00",
       "id": 3
+    },
+    {
+      "id": 11,
+      "data": {
+        "Full Name": "ADAM, ADAM ABDIHAKEEM",
+        "Charge 1": "SECOND-DEGREE ASSAULT",
+        "Bail": "",
+        "Mugshot_File": "mugshots/mugshot_ADAM_ADAM_ABDIHAKEEM.jpg",
+        "Severity": "",
+        "Booking_Date": "10/10/2026",
+        "Description": "Adam Abdihakeem Adam has been charged with second-degree assault in the shooting last Friday.",
+        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-18-year-old-exited-car-shot-2-teens-outside-eden-prairie-homecoming-football-game"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 12,
+      "data": {
+        "Full Name": "LOPEZ XIQUE, JOSE LUIS",
+        "Charge 1": "FIRST-DEGREE PREMEDITATED MURDER",
+        "Bail": "",
+        "Mugshot_File": "mugshots/mugshot_LOPEZ_XIQUE_JOSE_LUIS.jpg",
+        "Severity": "",
+        "Booking_Date": "10/10/2026",
+        "Description": "Kayli Grace Arseth, 22, was shot in the head at close range last year.",
+        "Source_URL": "https://bringmethenews.com/minnesota-news/man-faces-life-in-prison-for-murder-of-richfield-woman-who-rejected-his-advances"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 13,
+      "data": {
+        "Full Name": "SEARLE, JOHN",
+        "Charge 1": "STALKING",
+        "Bail": "",
+        "Mugshot_File": "mugshots/mugshot_SEARLE_JOHN.jpg",
+        "Severity": "",
+        "Booking_Date": "10/10/2026",
+        "Description": "The 55-year-old was spotted recording women in states of undress in an area populated by student housing.",
+        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-peeping-tom-with-a-history-of-offenses-caught-taking-video-of-women-near-u-of-m-campus"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 14,
+      "data": {
+        "Full Name": "HAGEN, NICHOLAS",
+        "Charge 1": "INTENTIONAL DISCHARGE OF A DANGEROUS WEAPON AND OBSTRUCTING A PEACE OFFICER",
+        "Bail": "",
+        "Mugshot_File": "mugshots/mugshot_HAGEN_NICHOLAS.jpg",
+        "Severity": "",
+        "Booking_Date": "10/10/2026",
+        "Description": "The 39-year-old from Prior Lake is facing a dangerous weapon and an obstruction charge.",
+        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-man-fired-25-30-shots-from-ar-style-rifle-near-twin-cities-elementary-school"
+      },
+      "posted": false,
+      "posted_at": null
     },
     {
       "data": {
