@@ -10,8 +10,7 @@
         "Bail": "$0.00 NO BAIL REQUIRED",
         "Mugshot_File": "mugshots/mugshot_SEAMON_CYNTHIA_ANN.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/10/2026",
-        "Reel_File": "reels/mugshot_SEAMON_CYNTHIA_ANN.mp4"
+        "Booking_Date": "10/10/2026"
       },
       "posted": true,
       "posted_at": "2026-10-10T17:34:02.588064-05:00",
@@ -24,8 +23,7 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_HUGHES_LAKEISHA_MICHELL.jpg",
         "Severity": "",
-        "Booking_Date": "10/10/2026",
-        "Reel_File": "reels/mugshot_HUGHES_LAKEISHA_MICHELL.mp4"
+        "Booking_Date": "10/10/2026"
       },
       "posted": true,
       "posted_at": "2026-10-10T17:35:54.606521-05:00",
@@ -38,8 +36,7 @@
         "Bail": "$100.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_WADI_ABDELRAHMAN_SAMER.jpg",
         "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/10/2026",
-        "Reel_File": "reels/mugshot_WADI_ABDELRAHMAN_SAMER.mp4"
+        "Booking_Date": "10/10/2026"
       },
       "posted": true,
       "posted_at": "2026-10-10T19:54:09.909153-05:00",
@@ -55,7 +52,8 @@
         "Severity": "",
         "Booking_Date": "10/10/2026",
         "Description": "Adam Abdihakeem Adam has been charged with second-degree assault in the shooting last Friday.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-18-year-old-exited-car-shot-2-teens-outside-eden-prairie-homecoming-football-game"
+        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-18-year-old-exited-car-shot-2-teens-outside-eden-prairie-homecoming-football-game",
+        "Reel_File": "reels/mugshot_ADAM_ADAM_ABDIHAKEEM.mp4"
       },
       "posted": false,
       "posted_at": null
@@ -70,7 +68,8 @@
         "Severity": "",
         "Booking_Date": "10/10/2026",
         "Description": "Kayli Grace Arseth, 22, was shot in the head at close range last year.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/man-faces-life-in-prison-for-murder-of-richfield-woman-who-rejected-his-advances"
+        "Source_URL": "https://bringmethenews.com/minnesota-news/man-faces-life-in-prison-for-murder-of-richfield-woman-who-rejected-his-advances",
+        "Reel_File": "reels/mugshot_LOPEZ_XIQUE_JOSE_LUIS.mp4"
       },
       "posted": false,
       "posted_at": null
@@ -85,7 +84,8 @@
         "Severity": "",
         "Booking_Date": "10/10/2026",
         "Description": "The 55-year-old was spotted recording women in states of undress in an area populated by student housing.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-peeping-tom-with-a-history-of-offenses-caught-taking-video-of-women-near-u-of-m-campus"
+        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-peeping-tom-with-a-history-of-offenses-caught-taking-video-of-women-near-u-of-m-campus",
+        "Reel_File": "reels/mugshot_SEARLE_JOHN.mp4"
       },
       "posted": false,
       "posted_at": null
@@ -100,7 +100,8 @@
         "Severity": "",
         "Booking_Date": "10/10/2026",
         "Description": "The 39-year-old from Prior Lake is facing a dangerous weapon and an obstruction charge.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-man-fired-25-30-shots-from-ar-style-rifle-near-twin-cities-elementary-school"
+        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-man-fired-25-30-shots-from-ar-style-rifle-near-twin-cities-elementary-school",
+        "Reel_File": "reels/mugshot_HAGEN_NICHOLAS.mp4"
       },
       "posted": false,
       "posted_at": null
