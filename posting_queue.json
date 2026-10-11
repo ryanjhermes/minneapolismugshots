@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-11T05:24:27.242365-05:00",
   "total_inmates": 17,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "data": {
@@ -55,8 +55,8 @@
         "Source_URL": "https://bringmethenews.com/minnesota-news/charges-18-year-old-exited-car-shot-2-teens-outside-eden-prairie-homecoming-football-game",
         "Reel_File": "reels/mugshot_ADAM_ADAM_ABDIHAKEEM.mp4"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-10-11T12:40:28.625405-05:00"
     },
     {
       "id": 5,
