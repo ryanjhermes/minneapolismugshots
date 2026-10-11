@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-11T05:24:27.242365-05:00",
   "total_inmates": 17,
-  "posted_count": 4,
+  "posted_count": 5,
   "inmates": [
     {
       "data": {
@@ -71,8 +71,8 @@
         "Source_URL": "https://bringmethenews.com/minnesota-news/man-faces-life-in-prison-for-murder-of-richfield-woman-who-rejected-his-advances",
         "Reel_File": "reels/mugshot_LOPEZ_XIQUE_JOSE_LUIS.mp4"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-10-11T16:51:32.344301-05:00"
     },
     {
       "id": 6,
