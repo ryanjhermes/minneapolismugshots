@@ -29,25 +29,32 @@ def _drawtext(textfile, size, y, color="white"):
             f":fontsize={size}:line_spacing=14:x=(w-text_w)/2:y={y}")
 
 
-def make_clip(out_path, seconds, image=None, title="", body="", header=""):
-    """One clip: optional slowly zooming mugshot, header on top, title + wrapped body below."""
-    frames = seconds * FPS
+LINE_H, CHARGE_GAP = 54, 34  # Charge text line height, and the space (with a divider) between charges
+
+
+def make_clip(out_path, seconds, image=None, title="", body=(), header=""):
+    """One clip: optional still mugshot, header on top, title, then each body block (a charge) on its own
+    lines with a short yellow divider between blocks. body may also be a single string."""
+    if isinstance(body, str):
+        body = [body] if body else []
     with tempfile.TemporaryDirectory() as tmp:
         texts = []
         if header:
             texts.append(_drawtext(_text(f"{tmp}/h.txt", header), 64, 120, "yellow"))
         if title:
             texts.append(_drawtext(_text(f"{tmp}/t.txt", title), 52, PHOTO_Y + PHOTO_H + 40))
-        if body:
-            texts.append(_drawtext(_text(f"{tmp}/b.txt", body), 40, PHOTO_Y + PHOTO_H + 125, "#ff5555"))
+        y = PHOTO_Y + PHOTO_H + 125
+        for n, block in enumerate(body):
+            if n:
+                texts.append(f"drawbox=x=(iw-120)/2:y={y - CHARGE_GAP // 2 - 2}:w=120:h=4:color=yellow:t=fill")
+            texts.append(_drawtext(_text(f"{tmp}/b{n}.txt", block), 40, y, "#ff5555"))
+            y += block.count("\n") * LINE_H + LINE_H + CHARGE_GAP
 
         cmd = ["ffmpeg", "-y", "-loglevel", "error"]
         if image:
-            cmd += ["-i", image]
+            cmd += ["-loop", "1", "-t", str(seconds), "-i", image]
             video = (f"[0:v]scale={PHOTO_W}:{PHOTO_H}:force_original_aspect_ratio=decrease,"
                      f"pad={PHOTO_W}:{PHOTO_H}:(ow-iw)/2:(oh-ih)/2,"
-                     f"zoompan=z='min(zoom+0.0006,1.08)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
-                     f":d={frames}:s={PHOTO_W}x{PHOTO_H}:fps={FPS},"
                      f"pad={W}:{H}:(ow-iw)/2:{PHOTO_Y}:black")
         else:
             cmd += ["-f", "lavfi", "-i", f"color=c=black:s={W}x{H}:r={FPS}:d={seconds}"]
@@ -63,14 +70,23 @@ def make_clip(out_path, seconds, image=None, title="", body="", header=""):
 
 
 def charge_lines(charges, separator, width=32, max_lines=5):
-    """Wrap each charge on its own lines, capped at max_lines."""
-    lines = []
+    """One wrapped block per charge (for make_clip's dividers), max_lines in total across blocks."""
+    blocks, used = [], 0
     for c in (charges or "").split(separator):
-        lines += textwrap.wrap(c.strip(), width)
-    if len(lines) > max_lines:
-        lines = lines[:max_lines]
-        lines[-1] = lines[-1][:width - 3] + "..."
-    return "\n".join(lines)
+        lines = textwrap.wrap(c.strip(), width)
+        if not lines:
+            continue
+        if used + len(lines) > max_lines:
+            lines = lines[:max_lines - used]
+            if not lines:
+                blocks[-1] = blocks[-1][:-3].rstrip() + "..."
+                break
+            lines[-1] = lines[-1][:width - 3] + "..."
+        blocks.append("\n".join(lines))
+        used += len(lines)
+        if used >= max_lines:
+            break
+    return blocks
 
 
 def build_queue_reels():
