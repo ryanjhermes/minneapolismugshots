@@ -1,6 +1,6 @@
 {
-  "created_at": "2026-10-10T05:14:04.042032-05:00",
-  "total_inmates": 14,
+  "created_at": "2026-10-11T05:24:27.242365-05:00",
+  "total_inmates": 17,
   "posted_count": 3,
   "inmates": [
     {
@@ -43,7 +43,7 @@
       "id": 3
     },
     {
-      "id": 11,
+      "id": 4,
       "data": {
         "Full Name": "ADAM, ADAM ABDIHAKEEM",
         "Charge 1": "SECOND-DEGREE ASSAULT",
@@ -59,7 +59,7 @@
       "posted_at": null
     },
     {
-      "id": 12,
+      "id": 5,
       "data": {
         "Full Name": "LOPEZ XIQUE, JOSE LUIS",
         "Charge 1": "FIRST-DEGREE PREMEDITATED MURDER",
@@ -75,7 +75,7 @@
       "posted_at": null
     },
     {
-      "id": 13,
+      "id": 6,
       "data": {
         "Full Name": "SEARLE, JOHN",
         "Charge 1": "STALKING",
@@ -91,7 +91,7 @@
       "posted_at": null
     },
     {
-      "id": 14,
+      "id": 7,
       "data": {
         "Full Name": "HAGEN, NICHOLAS",
         "Charge 1": "INTENTIONAL DISCHARGE OF A DANGEROUS WEAPON AND OBSTRUCTING A PEACE OFFICER",
@@ -108,69 +108,13 @@
     },
     {
       "data": {
-        "Full Name": "SMITH, JEANNETTE GEORGIA",
-        "Charge 1": "DRUGS - 1ST DEGREE; OTHER COUNTY/GM & MISD",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SMITH_JEANNETTE_GEORGIA.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/10/2026",
-        "Reel_File": "reels/mugshot_SMITH_JEANNETTE_GEORGIA.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 4
-    },
-    {
-      "data": {
-        "Full Name": "CONDE, NATHAN OTTUM",
-        "Charge 1": "TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; 2 OR MORE AGGRAVATING FACTORS; TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CONDE_NATHAN_OTTUM.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/10/2026",
-        "Reel_File": "reels/mugshot_CONDE_NATHAN_OTTUM.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 5
-    },
-    {
-      "data": {
-        "Full Name": "GLASS, LEONARD CARLTON II",
-        "Charge 1": "WEAPONS-CARRY WEAPONS WITHOUT PERMIT",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GLASS_LEONARD_CARLTON_II.jpg",
-        "Severity": "",
-        "Booking_Date": "10/10/2026",
-        "Reel_File": "reels/mugshot_GLASS_LEONARD_CARLTON_II.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 6
-    },
-    {
-      "data": {
-        "Full Name": "JACKSON, L C",
-        "Charge 1": "DRIVING AFTER CANCELLATION IPS; DRUGS - 5TH DEG",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JACKSON_L_C.jpg",
-        "Severity": "",
-        "Booking_Date": "10/10/2026",
-        "Reel_File": "reels/mugshot_JACKSON_L_C.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 7
-    },
-    {
-      "data": {
-        "Full Name": "SMITH, DOMINIQUE LAMAR",
-        "Charge 1": "DOMESTIC ASSAULT",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SMITH_DOMINIQUE_LAMAR.jpg",
-        "Severity": "",
-        "Booking_Date": "10/10/2026",
-        "Reel_File": "reels/mugshot_SMITH_DOMINIQUE_LAMAR.mp4"
+        "Full Name": "TOHASA GUALLI, JEFFERSON JAVIER",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_TOHASA_GUALLI_JEFFERSON_JAVIER.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/11/2026",
+        "Reel_File": "reels/mugshot_TOHASA_GUALLI_JEFFERSON_JAVIER.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -178,13 +122,13 @@
     },
     {
       "data": {
-        "Full Name": "CRAIG, GAVIN WALTER",
-        "Charge 1": "OTHER STATE",
+        "Full Name": "BEALS, LEVI LUCIUS",
+        "Charge 1": "DRUGS - 5TH DEG",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CRAIG_GAVIN_WALTER.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/10/2026",
-        "Reel_File": "reels/mugshot_CRAIG_GAVIN_WALTER.mp4"
+        "Mugshot_File": "mugshots/mugshot_BEALS_LEVI_LUCIUS.jpg",
+        "Severity": "",
+        "Booking_Date": "10/11/2026",
+        "Reel_File": "reels/mugshot_BEALS_LEVI_LUCIUS.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -192,17 +136,114 @@
     },
     {
       "data": {
-        "Full Name": "HARTMAN, BRYNDAN ANTHONY",
-        "Charge 1": "DRUGS - 5TH DEG",
+        "Full Name": "MORALES SOTELO, ALEXIS ORLANDO",
+        "Charge 1": "CRIMINAL VEHICULAR OPERATION; BODILY HARM",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HARTMAN_BRYNDAN_ANTHONY.jpg",
+        "Mugshot_File": "mugshots/mugshot_MORALES_SOTELO_ALEXIS_ORLANDO.jpg",
         "Severity": "",
-        "Booking_Date": "10/10/2026",
-        "Reel_File": "reels/mugshot_HARTMAN_BRYNDAN_ANTHONY.mp4"
+        "Booking_Date": "10/11/2026",
+        "Reel_File": "reels/mugshot_MORALES_SOTELO_ALEXIS_ORLANDO.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 10
+    },
+    {
+      "data": {
+        "Full Name": "WESTMORELAND, JAMON",
+        "Charge 1": "OTHER COUNTY/FELONY; DRUGS - 5TH DEG",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WESTMORELAND_JAMON.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/11/2026",
+        "Reel_File": "reels/mugshot_WESTMORELAND_JAMON.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 11
+    },
+    {
+      "data": {
+        "Full Name": "CHIC CIFUENTES, DIEGO ALEXANDER",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CHIC_CIFUENTES_DIEGO_ALEXANDER.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/11/2026",
+        "Reel_File": "reels/mugshot_CHIC_CIFUENTES_DIEGO_ALEXANDER.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 12
+    },
+    {
+      "data": {
+        "Full Name": "MOSSBERG, STEPHEN TREY",
+        "Charge 1": "RESTRICTED DL VIOLATION",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MOSSBERG_STEPHEN_TREY.jpg",
+        "Severity": "",
+        "Booking_Date": "10/11/2026",
+        "Reel_File": "reels/mugshot_MOSSBERG_STEPHEN_TREY.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 13
+    },
+    {
+      "data": {
+        "Full Name": "URIBE, RIGOBERTO",
+        "Charge 1": "TRAFFIC - DWI - THIRD-DEGREE DRIVING WHILE IMPAIRED; 1 AGGRAVATING FACTOR; TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_URIBE_RIGOBERTO.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/11/2026",
+        "Reel_File": "reels/mugshot_URIBE_RIGOBERTO.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 14
+    },
+    {
+      "data": {
+        "Full Name": "NELSON, CHRISTOPHER DONALD",
+        "Charge 1": "OTHER COUNTY/FELONY",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_NELSON_CHRISTOPHER_DONALD.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/11/2026",
+        "Reel_File": "reels/mugshot_NELSON_CHRISTOPHER_DONALD.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 15
+    },
+    {
+      "data": {
+        "Full Name": "NYHUS, ALEX RAY",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NYHUS_ALEX_RAY.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/11/2026",
+        "Reel_File": "reels/mugshot_NYHUS_ALEX_RAY.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 16
+    },
+    {
+      "data": {
+        "Full Name": "VOSS, KEVINLEE MATTHEW",
+        "Charge 1": "No charge listed",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_VOSS_KEVINLEE_MATTHEW.jpg",
+        "Booking_Date": "10/11/2026",
+        "Reel_File": "reels/mugshot_VOSS_KEVINLEE_MATTHEW.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 17
     }
   ]
 }
