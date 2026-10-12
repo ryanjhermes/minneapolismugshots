@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-12T06:25:54.132901-05:00",
   "total_inmates": 14,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "id": 1,
@@ -61,8 +61,8 @@
         "Source_URL": "https://bringmethenews.com/minnesota-news/charges-man-fired-25-30-shots-from-ar-style-rifle-near-twin-cities-elementary-school",
         "Reel_File": "reels/mugshot_HAGEN_NICHOLAS.mp4"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-10-12T16:15:07.603425-05:00"
     },
     {
       "data": {
