@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-12T06:25:54.132901-05:00",
-  "total_inmates": 14,
+  "total_inmates": 15,
   "posted_count": 4,
   "inmates": [
     {
@@ -63,6 +63,21 @@
       },
       "posted": true,
       "posted_at": "2026-10-12T16:15:07.603425-05:00"
+    },
+    {
+      "id": 15,
+      "data": {
+        "Full Name": "CHRISTOPHERSON, COLTON",
+        "Charge 1": "FIRST-DEGREE INTENTIONAL HOMICIDE",
+        "Bail": "",
+        "Mugshot_File": "mugshots/mugshot_CHRISTOPHERSON_COLTON.jpg",
+        "Severity": "",
+        "Booking_Date": "10/12/2026",
+        "Description": "Allan Christopherson worked as a math teacher and coach for Wayzata Public Schools for almost 30 years.",
+        "Source_URL": "https://bringmethenews.com/minnesota-news/son-charged-with-killing-longtime-wayzata-teacher-championship-winning-golf-coach"
+      },
+      "posted": false,
+      "posted_at": null
     },
     {
       "data": {
