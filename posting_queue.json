@@ -1,49 +1,10 @@
 {
-  "created_at": "2026-10-11T05:24:27.242365-05:00",
-  "total_inmates": 17,
-  "posted_count": 6,
+  "created_at": "2026-10-12T06:25:54.132901-05:00",
+  "total_inmates": 14,
+  "posted_count": 3,
   "inmates": [
     {
-      "data": {
-        "Full Name": "SEAMON, CYNTHIA ANN",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_SEAMON_CYNTHIA_ANN.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/10/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-10T17:34:02.588064-05:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "HUGHES, LAKEISHA MICHELL",
-        "Charge 1": "ASSAULT-2ND DEGREE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HUGHES_LAKEISHA_MICHELL.jpg",
-        "Severity": "",
-        "Booking_Date": "10/10/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-10T17:35:54.606521-05:00",
-      "id": 2
-    },
-    {
-      "data": {
-        "Full Name": "WADI, ABDELRAHMAN SAMER",
-        "Charge 1": "OTHER COUNTY/GM & MISD",
-        "Bail": "$100.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WADI_ABDELRAHMAN_SAMER.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/10/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-10T19:54:09.909153-05:00",
-      "id": 3
-    },
-    {
-      "id": 4,
+      "id": 1,
       "data": {
         "Full Name": "ADAM, ADAM ABDIHAKEEM",
         "Charge 1": "SECOND-DEGREE ASSAULT",
@@ -52,14 +13,13 @@
         "Severity": "",
         "Booking_Date": "10/10/2026",
         "Description": "Adam Abdihakeem Adam has been charged with second-degree assault in the shooting last Friday.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-18-year-old-exited-car-shot-2-teens-outside-eden-prairie-homecoming-football-game",
-        "Reel_File": "reels/mugshot_ADAM_ADAM_ABDIHAKEEM.mp4"
+        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-18-year-old-exited-car-shot-2-teens-outside-eden-prairie-homecoming-football-game"
       },
       "posted": true,
       "posted_at": "2026-10-11T12:40:28.625405-05:00"
     },
     {
-      "id": 5,
+      "id": 2,
       "data": {
         "Full Name": "LOPEZ XIQUE, JOSE LUIS",
         "Charge 1": "FIRST-DEGREE PREMEDITATED MURDER",
@@ -68,14 +28,13 @@
         "Severity": "",
         "Booking_Date": "10/10/2026",
         "Description": "Kayli Grace Arseth, 22, was shot in the head at close range last year.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/man-faces-life-in-prison-for-murder-of-richfield-woman-who-rejected-his-advances",
-        "Reel_File": "reels/mugshot_LOPEZ_XIQUE_JOSE_LUIS.mp4"
+        "Source_URL": "https://bringmethenews.com/minnesota-news/man-faces-life-in-prison-for-murder-of-richfield-woman-who-rejected-his-advances"
       },
       "posted": true,
       "posted_at": "2026-10-11T16:51:32.344301-05:00"
     },
     {
-      "id": 6,
+      "id": 3,
       "data": {
         "Full Name": "SEARLE, JOHN",
         "Charge 1": "STALKING",
@@ -84,14 +43,13 @@
         "Severity": "",
         "Booking_Date": "10/10/2026",
         "Description": "The 55-year-old was spotted recording women in states of undress in an area populated by student housing.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-peeping-tom-with-a-history-of-offenses-caught-taking-video-of-women-near-u-of-m-campus",
-        "Reel_File": "reels/mugshot_SEARLE_JOHN.mp4"
+        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-peeping-tom-with-a-history-of-offenses-caught-taking-video-of-women-near-u-of-m-campus"
       },
       "posted": true,
       "posted_at": "2026-10-11T20:14:51.441942-05:00"
     },
     {
-      "id": 7,
+      "id": 4,
       "data": {
         "Full Name": "HAGEN, NICHOLAS",
         "Charge 1": "INTENTIONAL DISCHARGE OF A DANGEROUS WEAPON AND OBSTRUCTING A PEACE OFFICER",
@@ -108,13 +66,55 @@
     },
     {
       "data": {
-        "Full Name": "TOHASA GUALLI, JEFFERSON JAVIER",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_TOHASA_GUALLI_JEFFERSON_JAVIER.jpg",
+        "Full Name": "TRAY, MALIK OUSMANE",
+        "Charge 1": "RECEIVING STOLEN PROPERTY",
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TRAY_MALIK_OUSMANE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/12/2026",
+        "Reel_File": "reels/mugshot_TRAY_MALIK_OUSMANE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "WARD, VINCENT",
+        "Charge 1": "OTHER STATE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WARD_VINCENT.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/12/2026",
+        "Reel_File": "reels/mugshot_WARD_VINCENT.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 6
+    },
+    {
+      "data": {
+        "Full Name": "ANILEMA YUQUILEMA, DANNES EDISON",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ANILEMA_YUQUILEMA_DANNES_EDISON.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/11/2026",
-        "Reel_File": "reels/mugshot_TOHASA_GUALLI_JEFFERSON_JAVIER.mp4"
+        "Booking_Date": "10/12/2026",
+        "Reel_File": "reels/mugshot_ANILEMA_YUQUILEMA_DANNES_EDISON.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 7
+    },
+    {
+      "data": {
+        "Full Name": "ERICKSON, AVERY JADE",
+        "Charge 1": "DOMESTIC ASSAULT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ERICKSON_AVERY_JADE.jpg",
+        "Severity": "",
+        "Booking_Date": "10/12/2026",
+        "Reel_File": "reels/mugshot_ERICKSON_AVERY_JADE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -122,13 +122,13 @@
     },
     {
       "data": {
-        "Full Name": "BEALS, LEVI LUCIUS",
+        "Full Name": "ARCAND, THOMAS STEPHEN",
         "Charge 1": "DRUGS - 5TH DEG",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BEALS_LEVI_LUCIUS.jpg",
+        "Mugshot_File": "mugshots/mugshot_ARCAND_THOMAS_STEPHEN.jpg",
         "Severity": "",
-        "Booking_Date": "10/11/2026",
-        "Reel_File": "reels/mugshot_BEALS_LEVI_LUCIUS.mp4"
+        "Booking_Date": "10/12/2026",
+        "Reel_File": "reels/mugshot_ARCAND_THOMAS_STEPHEN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -136,13 +136,13 @@
     },
     {
       "data": {
-        "Full Name": "MORALES SOTELO, ALEXIS ORLANDO",
-        "Charge 1": "CRIMINAL VEHICULAR OPERATION; BODILY HARM",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MORALES_SOTELO_ALEXIS_ORLANDO.jpg",
-        "Severity": "",
-        "Booking_Date": "10/11/2026",
-        "Reel_File": "reels/mugshot_MORALES_SOTELO_ALEXIS_ORLANDO.mp4"
+        "Full Name": "HERRERA, YOLANDA JOSEFINA",
+        "Charge 1": "OTHER COUNTY/GM & MISD; DRUGS - 5TH DEG",
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HERRERA_YOLANDA_JOSEFINA.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/12/2026",
+        "Reel_File": "reels/mugshot_HERRERA_YOLANDA_JOSEFINA.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -150,13 +150,13 @@
     },
     {
       "data": {
-        "Full Name": "WESTMORELAND, JAMON",
-        "Charge 1": "OTHER COUNTY/FELONY; DRUGS - 5TH DEG",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WESTMORELAND_JAMON.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/11/2026",
-        "Reel_File": "reels/mugshot_WESTMORELAND_JAMON.mp4"
+        "Full Name": "WEST, ANTHONY KAIN",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_WEST_ANTHONY_KAIN.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/12/2026",
+        "Reel_File": "reels/mugshot_WEST_ANTHONY_KAIN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -164,13 +164,13 @@
     },
     {
       "data": {
-        "Full Name": "CHIC CIFUENTES, DIEGO ALEXANDER",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CHIC_CIFUENTES_DIEGO_ALEXANDER.jpg",
+        "Full Name": "RYAN, ROBERT MICHAEL",
+        "Charge 1": "GIVING PEACE OFFICER FALSE NAME-OF ANOTHER PERSON; OTHER COUNTY/GM & MISD; POSSESSION OF DRUG PARAPHERNALIA IN A PUBLIC PLACE",
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_RYAN_ROBERT_MICHAEL.jpg",
         "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/11/2026",
-        "Reel_File": "reels/mugshot_CHIC_CIFUENTES_DIEGO_ALEXANDER.mp4"
+        "Booking_Date": "10/12/2026",
+        "Reel_File": "reels/mugshot_RYAN_ROBERT_MICHAEL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -178,13 +178,13 @@
     },
     {
       "data": {
-        "Full Name": "MOSSBERG, STEPHEN TREY",
-        "Charge 1": "RESTRICTED DL VIOLATION",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MOSSBERG_STEPHEN_TREY.jpg",
-        "Severity": "",
-        "Booking_Date": "10/11/2026",
-        "Reel_File": "reels/mugshot_MOSSBERG_STEPHEN_TREY.mp4"
+        "Full Name": "SEELYE, SHADOW ALAN JOHN",
+        "Charge 1": "POSSESSION OF DRUG PARAPHERNALIA IN A PUBLIC PLACE",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_SEELYE_SHADOW_ALAN_JOHN.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/12/2026",
+        "Reel_File": "reels/mugshot_SEELYE_SHADOW_ALAN_JOHN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -192,58 +192,17 @@
     },
     {
       "data": {
-        "Full Name": "URIBE, RIGOBERTO",
-        "Charge 1": "TRAFFIC - DWI - THIRD-DEGREE DRIVING WHILE IMPAIRED; 1 AGGRAVATING FACTOR; TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_URIBE_RIGOBERTO.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/11/2026",
-        "Reel_File": "reels/mugshot_URIBE_RIGOBERTO.mp4"
+        "Full Name": "MILLS, TANNER JAMES",
+        "Charge 1": "OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_MILLS_TANNER_JAMES.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/12/2026",
+        "Reel_File": "reels/mugshot_MILLS_TANNER_JAMES.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 14
-    },
-    {
-      "data": {
-        "Full Name": "NELSON, CHRISTOPHER DONALD",
-        "Charge 1": "OTHER COUNTY/FELONY",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_NELSON_CHRISTOPHER_DONALD.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/11/2026",
-        "Reel_File": "reels/mugshot_NELSON_CHRISTOPHER_DONALD.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 15
-    },
-    {
-      "data": {
-        "Full Name": "NYHUS, ALEX RAY",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_NYHUS_ALEX_RAY.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/11/2026",
-        "Reel_File": "reels/mugshot_NYHUS_ALEX_RAY.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 16
-    },
-    {
-      "data": {
-        "Full Name": "VOSS, KEVINLEE MATTHEW",
-        "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_VOSS_KEVINLEE_MATTHEW.jpg",
-        "Booking_Date": "10/11/2026",
-        "Reel_File": "reels/mugshot_VOSS_KEVINLEE_MATTHEW.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 17
     }
   ]
 }
