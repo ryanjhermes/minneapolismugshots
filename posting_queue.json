@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-11T05:24:27.242365-05:00",
   "total_inmates": 17,
-  "posted_count": 5,
+  "posted_count": 6,
   "inmates": [
     {
       "data": {
@@ -87,8 +87,8 @@
         "Source_URL": "https://bringmethenews.com/minnesota-news/charges-peeping-tom-with-a-history-of-offenses-caught-taking-video-of-women-near-u-of-m-campus",
         "Reel_File": "reels/mugshot_SEARLE_JOHN.mp4"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-10-11T20:14:51.441942-05:00"
     },
     {
       "id": 7,
