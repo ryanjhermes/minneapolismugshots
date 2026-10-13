@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-13T06:15:32.977384-05:00",
-  "total_inmates": 12,
+  "total_inmates": 13,
   "posted_count": 3,
   "inmates": [
     {
@@ -47,6 +47,22 @@
       "posted": true,
       "posted_at": "2026-10-13T14:13:09.986133-05:00",
       "id": 3
+    },
+    {
+      "id": 13,
+      "data": {
+        "Full Name": "ORTIZ, EMILIO",
+        "Charge 1": "MURDER",
+        "Bail": "",
+        "Mugshot_File": "mugshots/mugshot_ORTIZ_EMILIO.jpg",
+        "Severity": "",
+        "Booking_Date": "10/13/2026",
+        "Description": "The 18-year-old from Brooklyn Center is charged with murder in the Oct. 4 killing.",
+        "Story": "An 18-year-old man from Brooklyn Center has been charged with the murder of a man found dead in a Shakopee park earlier this month.\n\nEmilio Ortiz is charged in the Oct. 4 death of a 53-year-old man, whose identity has not been released. The man was found on the north side of the eastern trail in James Wilkie Regional Park by a group of walkers at around 6:45 p.m.\n\nA Shakopee police officer responded to the scene and found the man was not breathing and his body was cold. He had been found about 30 feet off the trail, and he appeared to have been dragged by the legs from the path into the weeds.\n\nInvestigators found some small spots of blood leading to where police had parked on the trail, and when squad cars were moved back, a “large pooled area of blood” was discovered. A short time later, three spent casings from a 9mm gun were found.\n\nTwo other witnesses reported seeing that same pool of blood the morning of Oct. 4. The man’s cellphone was eventually found about 130 feet north of where his body was located.\n\nNo weapon was found, but an autopsy determined he had suffered four gunshot wounds, two impacting the back and two in the front, one of which was in the face.\n\nThe victim had reported a break-in at his apartment a day earlier, with neighbors confirming as much to police, saying the victim owned a landscaping business, and had a younger man working for him who sometimes stayed at his apartment, but otherwise lives in Brooklyn Center or Brooklyn Park.\n\nPolice spoke with the victim’s sister, who told police her brother was always working and sending his earnings back to Mexico, and said she suspected his employee, “Emilio,” had something to do with his death.\n\nHis sister said she believed her brother and Emilio were “very close” and may have been romantically involved, with the victim taking Emilio out “for fancy dinners” and allowing him to drive his vehicles.\n\nPolice determined that one of the victim’s five vehicles – a Ford Raptor – was unaccounted for – and surveillance footage showed the vehicle in Brooklyn Center on Oct. 3. It was ultimately found in the parking lot of an apartment building on Oct. 5, about 1.1 miles from where Ortiz lives, with no key in it.\n\nOrtiz initially told police that the last time he drove the Raptor was on Oct. 1, and denied driving it days later. He said the victim picked him up around noon on Oct. 3 and they drove to the victim’s apartment so Ortiz could get paid.\n\nOrtiz claimed that the victim had showed him damage to his apartment from the break-in, and claims he was dropped off in Brooklyn Center at 3 p.m. He denied any romantic relationship with the victim, denied dining out with him, and denied owning a gun.\n\nThe criminal complaint says Ortiz’s story then changed as police went through the timeline in more detail, adding a drive to Menards in Burnsville into the story as they allegedly went to get a new lock for the victim’s door.\n\nOrtiz then said he was driven home at about 3:40 p.m. and he was at his parents’ apartment for the rest of the day and night.\n\nBut Ortiz’s cellphone location data and surveillance from Menards “strongly conflicted with the information [Ortiz] had told them,” the complaint says.\n\nA warrant was obtained for Ortiz’s phone records, with location data showing him at Menards later than Ortiz initially claimed – at around 5:30 p.m. – and then in the vicinity of where the victim’s body was found at Wilkie Park shortly after that.\n\nBoth Ortiz and the victim were seen on surveillance footage at Menards entering and leaving together, with the Ford Raptor then taking a route close to Wilkie Park in the minutes that followed their exit.\n\nWhen questioned about the inconsistencies in the story, Ortiz allegedly said he couldn’t explain them, and then refused to answer more questions. A search of his apartment turned up the Ford Raptor key, and a review of Ortiz’s phone showed internet searches for a Glock for several days in the lead-up to the victim’s killing.\n\nText messages on his phone also included one saying, “Get me a Glock, buddy.” While a message from an acquaintance in the days after the killing urged him to delete any images of a gun from his phone.",
+        "Source_URL": "https://bringmethenews.com/minnesota-news/teen-charged-with-killing-his-boss-in-shakopee-park"
+      },
+      "posted": false,
+      "posted_at": null
     },
     {
       "data": {
