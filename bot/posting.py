@@ -4,6 +4,7 @@ Posts go out as a Reel when one was rendered (reels.py), falling back to the sti
 Captions start with "NAME: LAST, FIRST" on its own line; dms.py finds posts by that line.
 """
 import os
+import re
 from datetime import datetime
 
 from . import config, instagram, posting_queue
@@ -12,6 +13,24 @@ from .common import CENTRAL, load_json, now_central
 # Bail values that mean "no real bail info" (any case of "Next Court Appearance" also counts)
 NO_BAIL_MARKERS = ['No bail information', 'No Bail Information', 'None', 'Unknown']
 NO_CHARGE_VALUES = ['No charge listed', 'Charge information not available', '']
+MAX_CAPTION = 2200  # Instagram's caption limit
+STORY_PARAGRAPHS = 3  # Lead of a Bring Me The News story in its caption, not the whole article (copyright)
+
+
+def fit_story(story, limit):
+    """The first STORY_PARAGRAPHS paragraphs that fit in limit characters, else as many whole sentences of the first one."""
+    out = ""
+    for para in story.split("\n\n")[:STORY_PARAGRAPHS]:
+        trial = f"{out}\n\n{para}" if out else para
+        if len(trial) > limit:
+            break
+        out = trial
+    if not out:
+        for sentence in re.split(r"(?<=[.!?\u201d])\s+", story):
+            if len(out) + len(sentence) + 1 > limit:
+                break
+            out = f"{out} {sentence}".strip()
+    return out
 
 
 def caption(data):
@@ -31,18 +50,17 @@ def caption(data):
                 label = label.replace("BOOKING ", "")
             charge_line = f"{label}: {charge}\n"
 
-        # Bring Me The News story (bmtn.py): their summary and link instead of bail and booking details
+        # Bring Me The News story (bmtn.py): its first paragraphs first, then the usual lines and link
         if data.get('Source_URL'):
-            return f"""
-{charge_line}NAME: {name}
-
-{data.get('Description', '')}
+            rest = f"""{charge_line}NAME: {name}
 
 {config.DISCLAIMER}
 
 #minneapolismugshots #Minnesota #Arrest #MNcrime #Minneapolis
 
 Source: Bring Me The News, {data['Source_URL']}"""
+            story = fit_story(data.get('Story') or data.get('Description', ''), MAX_CAPTION - len(rest) - 2)
+            return f"{story}\n\n{rest}" if story else rest
 
         return f"""
 {charge_line}NAME: {name}

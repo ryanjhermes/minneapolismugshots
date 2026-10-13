@@ -8,7 +8,7 @@
 
 `data` holds Full Name, Charge 1 (charges joined by config.CHARGE_SEPARATOR), Bail, Severity,
 Mugshot_File, Booking_Date, and Reel_File once a Reel is rendered. Bring Me The News entries
-(bmtn.py) also have Description and Source_URL. A person removed on request keeps their posted
+(bmtn.py) also have Description, Story and Source_URL. A person removed on request keeps their posted
 entry with empty data, so slot timing still sees the post.
 """
 import os

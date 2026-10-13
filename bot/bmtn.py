@@ -37,8 +37,17 @@ def _cdata(item, tag):
     return html.unescape(m.group(1).strip()) if m else ''
 
 
+def story_paragraphs(content):
+    """The article's paragraphs from content:encoded, stopping at the "Related Articles" list and
+    skipping newsletter plugs."""
+    content = re.split(r'<h2>\s*Related Articles', content)[0]
+    paras = (re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', p))).strip()
+             for p in re.findall(r'<p[^>]*>(.*?)</p>', content, re.S))
+    return [p for p in paras if p and not re.match(r'Sign up for .*newsletter', p, re.I)]
+
+
 def fetch_items():
-    """Crime items from the RSS feed: [{url, title, description, text, image, published}]"""
+    """Crime items from the RSS feed: [{url, title, description, text, story, image, published}]"""
     feed = requests.get(config.BMTN_FEED_URL, headers=HEADERS, timeout=30).text
     items = []
     for item in re.findall(r'<item>(.*?)</item>', feed, re.S):
@@ -51,7 +60,9 @@ def fetch_items():
             'title': _cdata(item, 'title'),
             'description': _cdata(item, 'description'),
             'text': re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', content))),
-            'image': html.unescape(image.group(1)) if image else '',
+            'story': story_paragraphs(content),
+            # Drop the ?profile=rss resize: it's a 16:9 crop that cuts the mugshot off at the chin
+            'image': html.unescape(image.group(1)).split('?')[0] if image else '',
             'published': parsedate_to_datetime(_cdata(item, 'pubDate')),
         })
     return items
@@ -101,6 +112,7 @@ def save_mugshot(url, name):
     if w * 5 > h * 4:
         cw = h * 4 // 5
         image = image.crop(((w - cw) // 2, 0, (w - cw) // 2 + cw, h))
+    image.thumbnail((800, 1000))  # The Reel's photo size; the full-size original is up to 1920px
     image.save(path, 'JPEG', quality=92)
     os.remove(tmp)
     return path
@@ -139,7 +151,7 @@ def run(dry_run=False, check=False):
             continue
         data = {'Full Name': name, 'Charge 1': find_charges(item, name, qa), 'Bail': '', 'Mugshot_File': path,
                 'Severity': '', 'Booking_Date': today(),
-                'Description': item['description'], 'Source_URL': item['url']}
+                'Description': item['description'], 'Story': '\n\n'.join(item['story']), 'Source_URL': item['url']}
         print(f"📰 {name} | {data['Charge 1']} | mugshot {p:.2f}\n   {item['title']}")
         entries.append(data)
         queued.add(name)
