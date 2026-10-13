@@ -1,55 +1,10 @@
 {
-  "created_at": "2026-10-12T06:25:54.132901-05:00",
-  "total_inmates": 15,
-  "posted_count": 5,
+  "created_at": "2026-10-13T06:15:32.977384-05:00",
+  "total_inmates": 12,
+  "posted_count": 2,
   "inmates": [
     {
       "id": 1,
-      "data": {
-        "Full Name": "ADAM, ADAM ABDIHAKEEM",
-        "Charge 1": "SECOND-DEGREE ASSAULT",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_ADAM_ADAM_ABDIHAKEEM.jpg",
-        "Severity": "",
-        "Booking_Date": "10/10/2026",
-        "Description": "Adam Abdihakeem Adam has been charged with second-degree assault in the shooting last Friday.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-18-year-old-exited-car-shot-2-teens-outside-eden-prairie-homecoming-football-game"
-      },
-      "posted": true,
-      "posted_at": "2026-10-11T12:40:28.625405-05:00"
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "LOPEZ XIQUE, JOSE LUIS",
-        "Charge 1": "FIRST-DEGREE PREMEDITATED MURDER",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_LOPEZ_XIQUE_JOSE_LUIS.jpg",
-        "Severity": "",
-        "Booking_Date": "10/10/2026",
-        "Description": "Kayli Grace Arseth, 22, was shot in the head at close range last year.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/man-faces-life-in-prison-for-murder-of-richfield-woman-who-rejected-his-advances"
-      },
-      "posted": true,
-      "posted_at": "2026-10-11T16:51:32.344301-05:00"
-    },
-    {
-      "id": 3,
-      "data": {
-        "Full Name": "SEARLE, JOHN",
-        "Charge 1": "STALKING",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_SEARLE_JOHN.jpg",
-        "Severity": "",
-        "Booking_Date": "10/10/2026",
-        "Description": "The 55-year-old was spotted recording women in states of undress in an area populated by student housing.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-peeping-tom-with-a-history-of-offenses-caught-taking-video-of-women-near-u-of-m-campus"
-      },
-      "posted": true,
-      "posted_at": "2026-10-11T20:14:51.441942-05:00"
-    },
-    {
-      "id": 4,
       "data": {
         "Full Name": "HAGEN, NICHOLAS",
         "Charge 1": "INTENTIONAL DISCHARGE OF A DANGEROUS WEAPON AND OBSTRUCTING A PEACE OFFICER",
@@ -58,14 +13,13 @@
         "Severity": "",
         "Booking_Date": "10/10/2026",
         "Description": "The 39-year-old from Prior Lake is facing a dangerous weapon and an obstruction charge.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-man-fired-25-30-shots-from-ar-style-rifle-near-twin-cities-elementary-school",
-        "Reel_File": "reels/mugshot_HAGEN_NICHOLAS.mp4"
+        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-man-fired-25-30-shots-from-ar-style-rifle-near-twin-cities-elementary-school"
       },
       "posted": true,
       "posted_at": "2026-10-12T16:15:07.603425-05:00"
     },
     {
-      "id": 15,
+      "id": 2,
       "data": {
         "Full Name": "CHRISTOPHERSON, COLTON",
         "Charge 1": "FIRST-DEGREE INTENTIONAL HOMICIDE",
@@ -82,13 +36,41 @@
     },
     {
       "data": {
-        "Full Name": "TRAY, MALIK OUSMANE",
-        "Charge 1": "RECEIVING STOLEN PROPERTY",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TRAY_MALIK_OUSMANE.jpg",
+        "Full Name": "CAESA-PATIN, JHON ALLEJANDRO",
+        "Charge 1": "DOMESTIC ASSAULT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_CAESA-PATIN_JHON_ALLEJANDRO.jpg",
+        "Severity": "",
+        "Booking_Date": "10/13/2026",
+        "Reel_File": "reels/mugshot_CAESA-PATIN_JHON_ALLEJANDRO.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "POTTS, MELISSA DIANE",
+        "Charge 1": "FALSE INFORMATION TO POLICE - NAME OF ANOTHER; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; GIVING PEACE OFFICER FALSE NAME-OF ANOTHER PERSON",
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_POTTS_MELISSA_DIANE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/12/2026",
-        "Reel_File": "reels/mugshot_TRAY_MALIK_OUSMANE.mp4"
+        "Booking_Date": "10/13/2026",
+        "Reel_File": "reels/mugshot_POTTS_MELISSA_DIANE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "BROWN, ROCHELLE ANN",
+        "Charge 1": "OTHER COUNTY/GM & MISD",
+        "Bail": "$1,200.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROWN_ROCHELLE_ANN.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/13/2026",
+        "Reel_File": "reels/mugshot_BROWN_ROCHELLE_ANN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -96,13 +78,13 @@
     },
     {
       "data": {
-        "Full Name": "WARD, VINCENT",
-        "Charge 1": "OTHER STATE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WARD_VINCENT.jpg",
+        "Full Name": "MOHAMED, SULEIBAN OSMAN",
+        "Charge 1": "DRUGS - 2ND DEGREE - SALE 3 GRAMS OR MORE, 12 DOSAGES UNITS OR MORE; HEROIN/FENTANYL W/IN 90-DAYS; DRUGS - 3RD DEGREE - POSSESS - 3 GRAMS OR MORE HEROIN, 5 GRAMS OR 25 DOSAGE UNITS FENTANYL; POSSESSION OF BURGLARY OR THEFT TOOLS",
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOHAMED_SULEIBAN_OSMAN.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/12/2026",
-        "Reel_File": "reels/mugshot_WARD_VINCENT.mp4"
+        "Booking_Date": "10/13/2026",
+        "Reel_File": "reels/mugshot_MOHAMED_SULEIBAN_OSMAN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -110,13 +92,13 @@
     },
     {
       "data": {
-        "Full Name": "ANILEMA YUQUILEMA, DANNES EDISON",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ANILEMA_YUQUILEMA_DANNES_EDISON.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/12/2026",
-        "Reel_File": "reels/mugshot_ANILEMA_YUQUILEMA_DANNES_EDISON.mp4"
+        "Full Name": "ROLAN, FRANK EUGENE",
+        "Charge 1": "OTHER COUNTY/FELONY; FALSE INFORMATION TO POLICE - NAME OF ANOTHER",
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROLAN_FRANK_EUGENE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/13/2026",
+        "Reel_File": "reels/mugshot_ROLAN_FRANK_EUGENE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -124,13 +106,13 @@
     },
     {
       "data": {
-        "Full Name": "ERICKSON, AVERY JADE",
-        "Charge 1": "DOMESTIC ASSAULT",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ERICKSON_AVERY_JADE.jpg",
-        "Severity": "",
-        "Booking_Date": "10/12/2026",
-        "Reel_File": "reels/mugshot_ERICKSON_AVERY_JADE.mp4"
+        "Full Name": "FAIR, BRIANNA LYNNETTE",
+        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FAIR_BRIANNA_LYNNETTE.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/13/2026",
+        "Reel_File": "reels/mugshot_FAIR_BRIANNA_LYNNETTE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -138,13 +120,13 @@
     },
     {
       "data": {
-        "Full Name": "ARCAND, THOMAS STEPHEN",
-        "Charge 1": "DRUGS - 5TH DEG",
+        "Full Name": "APPLEWHITE, FRANK",
+        "Charge 1": "ASSAULT-2ND DEGREE",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ARCAND_THOMAS_STEPHEN.jpg",
+        "Mugshot_File": "mugshots/mugshot_APPLEWHITE_FRANK.jpg",
         "Severity": "",
-        "Booking_Date": "10/12/2026",
-        "Reel_File": "reels/mugshot_ARCAND_THOMAS_STEPHEN.mp4"
+        "Booking_Date": "10/13/2026",
+        "Reel_File": "reels/mugshot_APPLEWHITE_FRANK.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -152,13 +134,13 @@
     },
     {
       "data": {
-        "Full Name": "HERRERA, YOLANDA JOSEFINA",
-        "Charge 1": "OTHER COUNTY/GM & MISD; DRUGS - 5TH DEG",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HERRERA_YOLANDA_JOSEFINA.jpg",
+        "Full Name": "HASSAN, NURADIN BEDEL",
+        "Charge 1": "POSSESSION OF BURGLARY OR THEFT TOOLS; OTHER COUNTY/GM & MISD",
+        "Bail": "$2,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HASSAN_NURADIN_BEDEL.jpg",
         "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/12/2026",
-        "Reel_File": "reels/mugshot_HERRERA_YOLANDA_JOSEFINA.mp4"
+        "Booking_Date": "10/13/2026",
+        "Reel_File": "reels/mugshot_HASSAN_NURADIN_BEDEL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -166,13 +148,13 @@
     },
     {
       "data": {
-        "Full Name": "WEST, ANTHONY KAIN",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_WEST_ANTHONY_KAIN.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/12/2026",
-        "Reel_File": "reels/mugshot_WEST_ANTHONY_KAIN.mp4"
+        "Full Name": "RICE, JERAMIAH DANIEL",
+        "Charge 1": "OBSTRUCT LEGAL PROCESS-LAWFUL EXECUTION LEGAL PROCESS; OTHER COUNTY/GM & MISD; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_RICE_JERAMIAH_DANIEL.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/13/2026",
+        "Reel_File": "reels/mugshot_RICE_JERAMIAH_DANIEL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -180,45 +162,17 @@
     },
     {
       "data": {
-        "Full Name": "RYAN, ROBERT MICHAEL",
-        "Charge 1": "GIVING PEACE OFFICER FALSE NAME-OF ANOTHER PERSON; OTHER COUNTY/GM & MISD; POSSESSION OF DRUG PARAPHERNALIA IN A PUBLIC PLACE",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RYAN_ROBERT_MICHAEL.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/12/2026",
-        "Reel_File": "reels/mugshot_RYAN_ROBERT_MICHAEL.mp4"
+        "Full Name": "LEMA LEMA, JUAN ARTURO",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LEMA_LEMA_JUAN_ARTURO.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/13/2026",
+        "Reel_File": "reels/mugshot_LEMA_LEMA_JUAN_ARTURO.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 12
-    },
-    {
-      "data": {
-        "Full Name": "SEELYE, SHADOW ALAN JOHN",
-        "Charge 1": "POSSESSION OF DRUG PARAPHERNALIA IN A PUBLIC PLACE",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_SEELYE_SHADOW_ALAN_JOHN.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/12/2026",
-        "Reel_File": "reels/mugshot_SEELYE_SHADOW_ALAN_JOHN.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 13
-    },
-    {
-      "data": {
-        "Full Name": "MILLS, TANNER JAMES",
-        "Charge 1": "OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_MILLS_TANNER_JAMES.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/12/2026",
-        "Reel_File": "reels/mugshot_MILLS_TANNER_JAMES.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 14
     }
   ]
 }
