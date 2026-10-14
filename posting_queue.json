@@ -1,39 +1,8 @@
 {
-  "created_at": "2026-10-13T06:15:32.977384-05:00",
-  "total_inmates": 13,
-  "posted_count": 5,
+  "created_at": "2026-10-14T04:07:25.008164-05:00",
+  "total_inmates": 10,
+  "posted_count": 3,
   "inmates": [
-    {
-      "id": 1,
-      "data": {
-        "Full Name": "HAGEN, NICHOLAS",
-        "Charge 1": "INTENTIONAL DISCHARGE OF A DANGEROUS WEAPON AND OBSTRUCTING A PEACE OFFICER",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_HAGEN_NICHOLAS.jpg",
-        "Severity": "",
-        "Booking_Date": "10/10/2026",
-        "Description": "The 39-year-old from Prior Lake is facing a dangerous weapon and an obstruction charge.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-man-fired-25-30-shots-from-ar-style-rifle-near-twin-cities-elementary-school"
-      },
-      "posted": true,
-      "posted_at": "2026-10-12T16:15:07.603425-05:00"
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "CHRISTOPHERSON, COLTON",
-        "Charge 1": "FIRST-DEGREE INTENTIONAL HOMICIDE",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_CHRISTOPHERSON_COLTON.jpg",
-        "Severity": "",
-        "Booking_Date": "10/12/2026",
-        "Description": "Allan Christopherson worked as a math teacher and coach for Wayzata Public Schools for almost 30 years.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/son-charged-with-killing-longtime-wayzata-teacher-championship-winning-golf-coach",
-        "Story": "As the Wayzata High School community continues to mourn a longtime math teacher and championship-winning golf coach, the man’s son has been charged with first-degree intentional homicide in his death.\n\nAllan Gregory Christopherson, 56, was found dead in northwestern Wisconsin on Sept. 26, when the Washburn County Sheriff’s Office was dispatched to his property near Spooner for a welfare check, with the 911 caller saying the man was having issues with his son, who was acting weird and believed to be using drugs.\n\nA deputy initially encountered his son, Colton Douglas Christopherson, 25, as he exited the family’s cabin from an attached garage and observed that he seemed nervous, according to a criminal complaint filed Thursday.\n\nWhen asked about his father’s whereabouts, Colton Christopherson allegedly told the deputy that he had been dead for over an hour and admitted to killing him with a knife. He was immediately arrested and placed in a squad car.\n\nThen the Washburn County deputy entered the cabin and found two orange-handled knives, blood on the walls and floor, and Allan Christopherson lying face down in the laundry room.\n\nThe deputy observed multiple traumatic injuries to the man and determined that he didn’t have a pulse. On his way out of the cabin, the deputy noticed there had been an effort to clean up blood in another room, and discovered a garbage bag containing bloody clothes and shoes in the garage.\n\nColton Christopherson was transported to the Washburn County Sheriff’s Office, where he agreed to speak further with an investigator.\n\nDuring the interview, Colton Christopherson allegedly said he stabbed his father twice in the neck, then did not attempt to call anyone or render aid, but placed his body in an SUV and drove to nearby hunting land. He told the investigator that he was unable to bury his father’s body at the property because a neighbor was there, so he brought it back to the cabin and planned to return at night.\n\nAccording to the complaint, Colton Christopherson eventually revealed that he traveled from St. Michael, Minn. to the cabin in Casey, Wis. to confront his father because he believed his father had hired someone to kill him, and claimed that his father admitted to doing so.\n\nColton Christopherson is being held at the Washburn County Jail on $5 million bond.\n\nOn Sept. 28, Wayzata High School Principal Scott Gengler sent a letter to students and parents, informing them of Allan Christopherson’s death, but withholding details.\n\nChristopherson had been with Wayzata Public Schools since the 1998-99 school year, spending most of his career at the high school, and holding various leadership roles over the years.\n\n“I want to acknowledge that today has been an incredibly difficult day for many in our school community, and I’m incredibly proud of the way our students and staff came together to support one another,” Gengler wrote. “Allan was widely regarded as a kind, caring, and highly effective classroom teacher. He built strong relationships within our school community and was a favorite of many current and former students.\n\n“His impact extended well beyond the classroom, and the care he showed for his students and colleagues was evident in the many relationships he built throughout his career.”\n\nWayzata Schools, via SupportNow\n\nChristopherson’s wife, Tina, has also worked for Wayzata Public Schools for almost three decades. The two met in 1994 while teaching in Milaca and married on the first day of 1999 in Brainerd, according to an online obituary .\n\n“Together, Tina and Allan have given nearly 30 years of their lives to our schools and to the students, families, and staff who make up our community,” Gengler wrote. “Their impact reaches far beyond the classrooms, offices, fields, and activities where they served.”\n\nTina Christopherson has established a memorial scholarship in her husband’s memory .\n\nView this post on Instagram Christopherson coached the Wayzata High School boys golf team from 2009 to 2019, winning state championships in 2010, 2011, 2015, and 2017. He also served as a developmental coach in the girls program this year.\n\n“Allan Christopherson led Wayzata to four state titles and impacted hundreds of young golfers in his storied career,” a post on the team’s Instagram account reads . “He will be missed by all who knew him.”\n\nChristopherson is described in the post as “one of the greatest coaches in the history of the program.”\n\nHis obituary says Christopherson “dedicated his life and career to inspiring students both in the classroom and on the court,” having previously coached both the girls and boys basketball teams at Wayzata High School from 1998 to 2008.\n\nA funeral service will be held on Oct. 25 at Word of Peace Lutheran Church in Rogers.\n\nIf you know anyone who is affected by domestic violence, you can find more information on services available here, via the Minnesota DPS. You can also call the Day One Crisis Hotline at 1-866-223-1111."
-      },
-      "posted": true,
-      "posted_at": "2026-10-12T22:00:37.270464-05:00"
-    },
     {
       "data": {
         "Full Name": "CAESA-PATIN, JHON ALLEJANDRO",
@@ -41,15 +10,14 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_CAESA-PATIN_JHON_ALLEJANDRO.jpg",
         "Severity": "",
-        "Booking_Date": "10/13/2026",
-        "Reel_File": "reels/mugshot_CAESA-PATIN_JHON_ALLEJANDRO.mp4"
+        "Booking_Date": "10/13/2026"
       },
       "posted": true,
       "posted_at": "2026-10-13T14:13:09.986133-05:00",
-      "id": 3
+      "id": 1
     },
     {
-      "id": 13,
+      "id": 2,
       "data": {
         "Full Name": "ORTIZ, EMILIO",
         "Charge 1": "MURDER",
@@ -71,22 +39,35 @@
         "Bail": "$5,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_POTTS_MELISSA_DIANE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/13/2026",
-        "Reel_File": "reels/mugshot_POTTS_MELISSA_DIANE.mp4"
+        "Booking_Date": "10/13/2026"
       },
       "posted": true,
       "posted_at": "2026-10-13T23:45:08.836399-05:00",
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "CONEY, JOSIAH EUGENE ALLEN",
+        "Charge 1": "DOMESTIC ASSAULT-FELONY",
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CONEY_JOSIAH_EUGENE_ALLEN.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/14/2026",
+        "Reel_File": "reels/mugshot_CONEY_JOSIAH_EUGENE_ALLEN.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 4
     },
     {
       "data": {
-        "Full Name": "BROWN, ROCHELLE ANN",
-        "Charge 1": "OTHER COUNTY/GM & MISD",
-        "Bail": "$1,200.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BROWN_ROCHELLE_ANN.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/13/2026",
-        "Reel_File": "reels/mugshot_BROWN_ROCHELLE_ANN.mp4"
+        "Full Name": "HAMER, VICKI MARIE",
+        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HAMER_VICKI_MARIE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/14/2026",
+        "Reel_File": "reels/mugshot_HAMER_VICKI_MARIE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -94,13 +75,13 @@
     },
     {
       "data": {
-        "Full Name": "MOHAMED, SULEIBAN OSMAN",
-        "Charge 1": "DRUGS - 2ND DEGREE - SALE 3 GRAMS OR MORE, 12 DOSAGES UNITS OR MORE; HEROIN/FENTANYL W/IN 90-DAYS; DRUGS - 3RD DEGREE - POSSESS - 3 GRAMS OR MORE HEROIN, 5 GRAMS OR 25 DOSAGE UNITS FENTANYL; POSSESSION OF BURGLARY OR THEFT TOOLS",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOHAMED_SULEIBAN_OSMAN.jpg",
+        "Full Name": "ELLIOTT, PAUL MARK",
+        "Charge 1": "OTHER COUNTY/FELONY",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ELLIOTT_PAUL_MARK.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/13/2026",
-        "Reel_File": "reels/mugshot_MOHAMED_SULEIBAN_OSMAN.mp4"
+        "Booking_Date": "10/14/2026",
+        "Reel_File": "reels/mugshot_ELLIOTT_PAUL_MARK.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -108,13 +89,13 @@
     },
     {
       "data": {
-        "Full Name": "ROLAN, FRANK EUGENE",
-        "Charge 1": "OTHER COUNTY/FELONY; FALSE INFORMATION TO POLICE - NAME OF ANOTHER",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROLAN_FRANK_EUGENE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/13/2026",
-        "Reel_File": "reels/mugshot_ROLAN_FRANK_EUGENE.mp4"
+        "Full Name": "MCKEE, MARQUISE DEQUATAE",
+        "Charge 1": "FLEEING A POLICE OFFICER IN MV; DRUGS - 3RD DEGREE; CRIMINAL VEHICULAR OPERATION; BODILY HARM",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MCKEE_MARQUISE_DEQUATAE.jpg",
+        "Severity": "",
+        "Booking_Date": "10/14/2026",
+        "Reel_File": "reels/mugshot_MCKEE_MARQUISE_DEQUATAE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -122,13 +103,13 @@
     },
     {
       "data": {
-        "Full Name": "FAIR, BRIANNA LYNNETTE",
-        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FAIR_BRIANNA_LYNNETTE.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/13/2026",
-        "Reel_File": "reels/mugshot_FAIR_BRIANNA_LYNNETTE.mp4"
+        "Full Name": "FERGUSON, ISAIAH LEMUEL ELISHA",
+        "Charge 1": "ASSAULT-3RD DEGREE-SUBSTANTIAL BODILY HARM; DOMESTIC ASSAULT - BY STRANGULATION; DEPARTMENT OF CORRECTIONS",
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FERGUSON_ISAIAH_LEMUEL_ELISHA.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/14/2026",
+        "Reel_File": "reels/mugshot_FERGUSON_ISAIAH_LEMUEL_ELISHA.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -136,13 +117,13 @@
     },
     {
       "data": {
-        "Full Name": "APPLEWHITE, FRANK",
-        "Charge 1": "ASSAULT-2ND DEGREE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_APPLEWHITE_FRANK.jpg",
-        "Severity": "",
-        "Booking_Date": "10/13/2026",
-        "Reel_File": "reels/mugshot_APPLEWHITE_FRANK.mp4"
+        "Full Name": "JOHNSON, ANTONIO LOMANTA JIMMECK JR",
+        "Charge 1": "TRESPASS-PREMISES OF ANOTHER-REFUSE TO DEPART; TRESPASS-RETURN TO PROPERTY WITHIN ONE YEAR; TRANSIT CRIME - SMOKE AS DEFINED IN SECTION 144.413, SUBDIVISION 4",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_ANTONIO_LOMANTA_JIMMECK_JR.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/14/2026",
+        "Reel_File": "reels/mugshot_JOHNSON_ANTONIO_LOMANTA_JIMMECK_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -150,45 +131,16 @@
     },
     {
       "data": {
-        "Full Name": "HASSAN, NURADIN BEDEL",
-        "Charge 1": "POSSESSION OF BURGLARY OR THEFT TOOLS; OTHER COUNTY/GM & MISD",
-        "Bail": "$2,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HASSAN_NURADIN_BEDEL.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/13/2026",
-        "Reel_File": "reels/mugshot_HASSAN_NURADIN_BEDEL.mp4"
+        "Full Name": "ESTRELLA-ORTIZ, MARCELO CLADERTO",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ESTRELLA-ORTIZ_MARCELO_CLADERTO.jpg",
+        "Booking_Date": "10/14/2026",
+        "Reel_File": "reels/mugshot_ESTRELLA-ORTIZ_MARCELO_CLADERTO.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 10
-    },
-    {
-      "data": {
-        "Full Name": "RICE, JERAMIAH DANIEL",
-        "Charge 1": "OBSTRUCT LEGAL PROCESS-LAWFUL EXECUTION LEGAL PROCESS; OTHER COUNTY/GM & MISD; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RICE_JERAMIAH_DANIEL.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/13/2026",
-        "Reel_File": "reels/mugshot_RICE_JERAMIAH_DANIEL.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 11
-    },
-    {
-      "data": {
-        "Full Name": "LEMA LEMA, JUAN ARTURO",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEMA_LEMA_JUAN_ARTURO.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/13/2026",
-        "Reel_File": "reels/mugshot_LEMA_LEMA_JUAN_ARTURO.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 12
     }
   ]
 }
