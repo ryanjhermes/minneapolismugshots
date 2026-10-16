@@ -14,13 +14,12 @@ from .common import CENTRAL, load_json, now_central
 NO_BAIL_MARKERS = ['No bail information', 'No Bail Information', 'None', 'Unknown']
 NO_CHARGE_VALUES = ['No charge listed', 'Charge information not available', '']
 MAX_CAPTION = 2200  # Instagram's caption limit
-STORY_PARAGRAPHS = 4  # Lead of a Bring Me The News story in its caption, not the whole article (copyright)
 
 
 def fit_story(story, limit):
-    """The first STORY_PARAGRAPHS paragraphs that fit in limit characters, else as many whole sentences of the first one."""
+    """As many leading paragraphs as fit in limit characters, else as many whole sentences of the first one."""
     out = ""
-    for para in story.split("\n\n")[:STORY_PARAGRAPHS]:
+    for para in story.split("\n\n"):
         trial = f"{out}\n\n{para}" if out else para
         if len(trial) > limit:
             break

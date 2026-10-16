@@ -127,8 +127,8 @@ artifact (`reels/` is gitignored).
 - **transformers 5 removed** the `question-answering` and `zero-shot-classification` pipelines that bmtn and news use.
   Their workflows pin `transformers<5`; the scrape workflow only needs CLIP and allows <6.
 - **Bring Me The News feed images** (`?profile=rss`) are a 16:9 crop that cuts mugshots off at the chin, so
-  `bmtn.fetch_items` drops the query string to get the full image (Oct 12). Its captions open with the story's first 4
-  paragraphs (`Story`, from `content:encoded`; `posting.STORY_PARAGRAPHS`), not the whole article, for copyright.
+  `bmtn.fetch_items` drops the query string to get the full image (Oct 12). Its captions open with as many whole story
+  paragraphs as fit Instagram's 2,200-character limit (`Story`, from `content:encoded`; `posting.fit_story`).
 - **Instagram processes media asynchronously.** Publishing before `status_code == FINISHED` fails with
   "Media ID is not available", so `instagram.post` polls first (up to 5 min for Reels).
 - **Reel text placement** keeps clear of Instagram's UI (top bar, right-side buttons, bottom caption); see the
