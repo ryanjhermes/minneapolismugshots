@@ -1,60 +1,8 @@
 {
-  "created_at": "2026-10-15T03:41:02.365497-05:00",
-  "total_inmates": 15,
-  "posted_count": 8,
+  "created_at": "2026-10-16T03:34:33.337235-05:00",
+  "total_inmates": 14,
+  "posted_count": 4,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "CONEY, JOSIAH EUGENE ALLEN",
-        "Charge 1": "DOMESTIC ASSAULT-FELONY",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CONEY_JOSIAH_EUGENE_ALLEN.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/14/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-14T12:03:49.123016-05:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "HAMER, VICKI MARIE",
-        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HAMER_VICKI_MARIE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/14/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-14T15:39:17.699996-05:00",
-      "id": 2
-    },
-    {
-      "data": {
-        "Full Name": "ELLIOTT, PAUL MARK",
-        "Charge 1": "OTHER COUNTY/FELONY",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ELLIOTT_PAUL_MARK.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/14/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-14T18:54:46.345023-05:00",
-      "id": 3
-    },
-    {
-      "data": {
-        "Full Name": "MCKEE, MARQUISE DEQUATAE",
-        "Charge 1": "FLEEING A POLICE OFFICER IN MV; DRUGS - 3RD DEGREE; CRIMINAL VEHICULAR OPERATION; BODILY HARM",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MCKEE_MARQUISE_DEQUATAE.jpg",
-        "Severity": "",
-        "Booking_Date": "10/14/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-14T23:27:41.206910-05:00",
-      "id": 4
-    },
     {
       "data": {
         "Full Name": "CODY, DEMETRAE ADARYLL",
@@ -62,15 +10,14 @@
         "Bail": "$6,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_CODY_DEMETRAE_ADARYLL.jpg",
         "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/15/2026",
-        "Reel_File": "reels/mugshot_CODY_DEMETRAE_ADARYLL.mp4"
+        "Booking_Date": "10/15/2026"
       },
       "posted": true,
       "posted_at": "2026-10-15T11:53:05.457458-05:00",
-      "id": 5
+      "id": 1
     },
     {
-      "id": 15,
+      "id": 2,
       "data": {
         "Full Name": "DAVIS, LOGAN",
         "Charge 1": "RAPING THE VICTIM",
@@ -92,12 +39,11 @@
         "Bail": "$750,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_JACKSON_TRAQUAN_DIAVEONMARTEZ.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/15/2026",
-        "Reel_File": "reels/mugshot_JACKSON_TRAQUAN_DIAVEONMARTEZ.mp4"
+        "Booking_Date": "10/15/2026"
       },
       "posted": true,
       "posted_at": "2026-10-15T18:40:18.547538-05:00",
-      "id": 6
+      "id": 3
     },
     {
       "data": {
@@ -106,22 +52,63 @@
         "Bail": "$500.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_KINSEY_FANNIE.jpg",
         "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/15/2026",
-        "Reel_File": "reels/mugshot_KINSEY_FANNIE.mp4"
+        "Booking_Date": "10/15/2026"
       },
       "posted": true,
       "posted_at": "2026-10-15T23:23:13.887053-05:00",
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "TOKAREV, ROMAN UREVICH",
+        "Charge 1": "POSSESSION OF BURGLARY OR THEFT TOOLS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_TOKAREV_ROMAN_UREVICH.jpg",
+        "Severity": "",
+        "Booking_Date": "10/16/2026",
+        "Reel_File": "reels/mugshot_TOKAREV_ROMAN_UREVICH.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "LUCKING, NICHOLAS HUNTER",
+        "Charge 1": "ASSAULT-2ND DEGREE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_LUCKING_NICHOLAS_HUNTER.jpg",
+        "Severity": "",
+        "Booking_Date": "10/16/2026",
+        "Reel_File": "reels/mugshot_LUCKING_NICHOLAS_HUNTER.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 6
+    },
+    {
+      "data": {
+        "Full Name": "CERRETO POSADA, MIGUEL ANGEL",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CERRETO_POSADA_MIGUEL_ANGEL.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/16/2026",
+        "Reel_File": "reels/mugshot_CERRETO_POSADA_MIGUEL_ANGEL.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 7
     },
     {
       "data": {
-        "Full Name": "PLUNKETT, TRAVANTI DARNELL",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PLUNKETT_TRAVANTI_DARNELL.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/15/2026",
-        "Reel_File": "reels/mugshot_PLUNKETT_TRAVANTI_DARNELL.mp4"
+        "Full Name": "MEEKS, MARCUS TERELL",
+        "Charge 1": "DOMESTIC ASSAULT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MEEKS_MARCUS_TERELL.jpg",
+        "Severity": "",
+        "Booking_Date": "10/16/2026",
+        "Reel_File": "reels/mugshot_MEEKS_MARCUS_TERELL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -129,13 +116,13 @@
     },
     {
       "data": {
-        "Full Name": "NUTALL, LEMAN MAINE JR",
-        "Charge 1": "DRIVING AFTER CANCELLATION IPS",
+        "Full Name": "BURCH, LADAVIONNE ARLANDOE",
+        "Charge 1": "WEAPONS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_NUTALL_LEMAN_MAINE_JR.jpg",
+        "Mugshot_File": "mugshots/mugshot_BURCH_LADAVIONNE_ARLANDOE.jpg",
         "Severity": "",
-        "Booking_Date": "10/15/2026",
-        "Reel_File": "reels/mugshot_NUTALL_LEMAN_MAINE_JR.mp4"
+        "Booking_Date": "10/16/2026",
+        "Reel_File": "reels/mugshot_BURCH_LADAVIONNE_ARLANDOE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -143,13 +130,13 @@
     },
     {
       "data": {
-        "Full Name": "WOODWARD, ALVIN EARL",
-        "Charge 1": "OTHER COUNTY/FELONY",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WOODWARD_ALVIN_EARL.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/15/2026",
-        "Reel_File": "reels/mugshot_WOODWARD_ALVIN_EARL.mp4"
+        "Full Name": "WEBBER, PAUL VINCENT",
+        "Charge 1": "TRAFFIC - DWI - THIRD-DEGREE DRIVING WHILE IMPAIRED; 1 AGGRAVATING FACTOR; TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WEBBER_PAUL_VINCENT.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/16/2026",
+        "Reel_File": "reels/mugshot_WEBBER_PAUL_VINCENT.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -157,13 +144,13 @@
     },
     {
       "data": {
-        "Full Name": "VALENTIN, LAWRENCE MICHAEL",
-        "Charge 1": "CRIMINAL SEXUAL CONDUCT",
+        "Full Name": "MARTIN, ROBERT DARREL",
+        "Charge 1": "ASSAULT-2ND DEGREE-DANGEROUS WEAPON-SUBSTANTIAL BODILY HARM; BURGLARY - 3RD DEGREE - ENTERS W/OUT CONSENT WITH INTENT TO STEAL/COMMIT FELONY OR GROSS MISDEMEANOR",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_VALENTIN_LAWRENCE_MICHAEL.jpg",
-        "Severity": "",
-        "Booking_Date": "10/15/2026",
-        "Reel_File": "reels/mugshot_VALENTIN_LAWRENCE_MICHAEL.mp4"
+        "Mugshot_File": "mugshots/mugshot_MARTIN_ROBERT_DARREL.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/16/2026",
+        "Reel_File": "reels/mugshot_MARTIN_ROBERT_DARREL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -171,13 +158,13 @@
     },
     {
       "data": {
-        "Full Name": "NIESEN, JAMES ANTHONY",
-        "Charge 1": "BURGLARY",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_NIESEN_JAMES_ANTHONY.jpg",
-        "Severity": "",
-        "Booking_Date": "10/15/2026",
-        "Reel_File": "reels/mugshot_NIESEN_JAMES_ANTHONY.mp4"
+        "Full Name": "SHELTON, JACQULINE FAY",
+        "Charge 1": "TRESPASSING - REFUSE TO DEPART OR RETURN WITHIN 1 YEAR OF DEMAND",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SHELTON_JACQULINE_FAY.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/16/2026",
+        "Reel_File": "reels/mugshot_SHELTON_JACQULINE_FAY.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -185,13 +172,13 @@
     },
     {
       "data": {
-        "Full Name": "HOLMES, JESSICA JADE",
-        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_HOLMES_JESSICA_JADE.jpg",
+        "Full Name": "BROWN, RICHARD LEE",
+        "Charge 1": "DOMESTIC ABUSE NO CONTACT ORDER - VIOLATE NO CONTACT ORDER - MISDEMEANOR",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BROWN_RICHARD_LEE.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/15/2026",
-        "Reel_File": "reels/mugshot_HOLMES_JESSICA_JADE.mp4"
+        "Booking_Date": "10/16/2026",
+        "Reel_File": "reels/mugshot_BROWN_RICHARD_LEE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -199,12 +186,13 @@
     },
     {
       "data": {
-        "Full Name": "HASSAN, HUDA ALI",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HASSAN_HUDA_ALI.jpg",
-        "Booking_Date": "10/15/2026",
-        "Reel_File": "reels/mugshot_HASSAN_HUDA_ALI.mp4"
+        "Full Name": "FREEBERG, DUNCAN WILLIAM",
+        "Charge 1": "CHECK FORGERY-OFFER/POSSESS W/INTENT TO DEFRAUD; OTHER COUNTY/GM & MISD",
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FREEBERG_DUNCAN_WILLIAM.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/16/2026",
+        "Reel_File": "reels/mugshot_FREEBERG_DUNCAN_WILLIAM.mp4"
       },
       "posted": false,
       "posted_at": null,
