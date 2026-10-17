@@ -1,63 +1,8 @@
 {
-  "created_at": "2026-10-16T03:34:33.337235-05:00",
-  "total_inmates": 14,
-  "posted_count": 8,
+  "created_at": "2026-10-17T03:06:43.903441-05:00",
+  "total_inmates": 10,
+  "posted_count": 4,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "CODY, DEMETRAE ADARYLL",
-        "Charge 1": "VIOLATION OF A PROTECTION ORDER; OTHER COUNTY/GM & MISD",
-        "Bail": "$6,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CODY_DEMETRAE_ADARYLL.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/15/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-15T11:53:05.457458-05:00",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "DAVIS, LOGAN",
-        "Charge 1": "RAPING THE VICTIM",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_DAVIS_LOGAN.jpg",
-        "Severity": "",
-        "Booking_Date": "10/15/2026",
-        "Description": "The 24-year-old is facing sexual assault and kidnapping charges following the alleged attack on Oct. 11.",
-        "Story": "A man has been charged with kidnapping and raping a woman at his Lakeville home, in a reported incident during which he allegedly said he wanted to kill the victim in a similar manner to serial killer Jeffrey Dahmer.\n\nLogan Davis, 24, is charged with two counts of first-degree criminal sexual conduct and one count of kidnapping after the victim reported being held at his family’s home in the early hours of Sunday, Oct. 11, and sexually assaulted.\n\nAccording to the criminal complaint, Davis picked the victim up from a friend’s house at around 2 a.m. and drove her to his home, where they were “hanging out in [Davis’] closet drinking.”\n\nWhile in the closet, Davis made a comment about being sexually aroused and asked the victim what she was going to do about it, the complaint says. The victim said she tried to leave the closet several times, but Davis allegedly moved her hand away from the door handle or blocked her path.\n\nThe victim says she eventually managed to exit the closet, grabbed her purse and began making her way upstairs, but when she reached the top, Davis “pulled her hair hard, covered her mouth, and told her not to scream.”\n\nHe then allegedly pushed her back downstairs to his room, and locked the bedroom door before hitting her multiple times in the face. He is then accused of pushing her back into the closet, throwing her phone out of the window, hitting her with a belt multiple times and threatening to kill her and her family.\n\nIt’s at this point that Davis allegedly mentioned Dahmer, who killed and dismembered 17 Midwestern men and boys over a 13-year period. He allegedly said he always wanted to commit murders like that and allegedly told the victim “the different ways he wanted to kill her.”\n\n“He said he wanted to cut up her body and put it in his drawers, he wanted to suffocate her, and he wanted to shoot her,” the complaint says.\n\nAs he told her he wanted to suffocate her, Davis allegedly tried to choke the victim. He also had a gun with him and struck her in the face with it, and hit her on the head with an alcohol bottle.\n\nIt’s at this point that Davis is accused of raping the victim.\n\nThe victim says she escaped when Davis fell asleep, at which point she grabbed the gun, ran upstairs and told Davis’ mother what had happened. Davis’ mother found the victim’s phone and gave her a ride to a friend’s house.\n\nPolice investigating her report found visible injuries on the victim, including abrasions and bumps on her head and face, a red mark on her neck, and bruising on her legs. A replica .45 caliber gun was recovered during a search at Davis’ home.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-lakeville-man-shared-desire-to-emulate-jeffrey-dahmer-as-he-kidnapped-raped-woman"
-      },
-      "posted": true,
-      "posted_at": "2026-10-15T15:18:03.384847-05:00"
-    },
-    {
-      "data": {
-        "Full Name": "JACKSON, TRAQUAN DIAVEONMARTEZ",
-        "Charge 1": "MURDER - 2ND DEGREE - WITH INTENT-NOT PREMEDITATED; ASSAULT-2ND DEGREE-DANGEROUS WEAPON-SUBSTANTIAL BODILY HARM",
-        "Bail": "$750,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JACKSON_TRAQUAN_DIAVEONMARTEZ.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/15/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-15T18:40:18.547538-05:00",
-      "id": 3
-    },
-    {
-      "data": {
-        "Full Name": "KINSEY, FANNIE",
-        "Charge 1": "OTHER COUNTY/GM & MISD",
-        "Bail": "$500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KINSEY_FANNIE.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/15/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-15T23:23:13.887053-05:00",
-      "id": 4
-    },
     {
       "data": {
         "Full Name": "TOKAREV, ROMAN UREVICH",
@@ -65,12 +10,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_TOKAREV_ROMAN_UREVICH.jpg",
         "Severity": "",
-        "Booking_Date": "10/16/2026",
-        "Reel_File": "reels/mugshot_TOKAREV_ROMAN_UREVICH.mp4"
+        "Booking_Date": "10/16/2026"
       },
       "posted": true,
       "posted_at": "2026-10-16T11:33:20.287573-05:00",
-      "id": 5
+      "id": 1
     },
     {
       "data": {
@@ -79,12 +23,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_LUCKING_NICHOLAS_HUNTER.jpg",
         "Severity": "",
-        "Booking_Date": "10/16/2026",
-        "Reel_File": "reels/mugshot_LUCKING_NICHOLAS_HUNTER.mp4"
+        "Booking_Date": "10/16/2026"
       },
       "posted": true,
       "posted_at": "2026-10-16T14:54:59.534359-05:00",
-      "id": 6
+      "id": 2
     },
     {
       "data": {
@@ -93,12 +36,11 @@
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_CERRETO_POSADA_MIGUEL_ANGEL.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/16/2026",
-        "Reel_File": "reels/mugshot_CERRETO_POSADA_MIGUEL_ANGEL.mp4"
+        "Booking_Date": "10/16/2026"
       },
       "posted": true,
       "posted_at": "2026-10-16T17:47:45.241938-05:00",
-      "id": 7
+      "id": 3
     },
     {
       "data": {
@@ -107,22 +49,77 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_MEEKS_MARCUS_TERELL.jpg",
         "Severity": "",
-        "Booking_Date": "10/16/2026",
-        "Reel_File": "reels/mugshot_MEEKS_MARCUS_TERELL.mp4"
+        "Booking_Date": "10/16/2026"
       },
       "posted": true,
       "posted_at": "2026-10-16T20:16:08.189741-05:00",
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "ROZEMA, MIKAYLA JELEE",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_ROZEMA_MIKAYLA_JELEE.jpg",
+        "Severity": "",
+        "Booking_Date": "10/17/2026",
+        "Reel_File": "reels/mugshot_ROZEMA_MIKAYLA_JELEE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "KINCHEN, DEMARCUS LANCE",
+        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; TRESPASS ON CRITICAL PUBLIC SERVICE FACILITIES, PIPELINE, UTILITY - RETURNS W/IN 6 MONTHS; TRESPASS-RETURN TO PROPERTY WITHIN ONE YEAR",
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_KINCHEN_DEMARCUS_LANCE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/17/2026",
+        "Reel_File": "reels/mugshot_KINCHEN_DEMARCUS_LANCE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 6
+    },
+    {
+      "data": {
+        "Full Name": "MASAPANTA APUGLLON, XAVIER EDISON",
+        "Charge 1": "DOMESTIC ASSAULT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MASAPANTA_APUGLLON_XAVIER_EDISON.jpg",
+        "Severity": "",
+        "Booking_Date": "10/17/2026",
+        "Reel_File": "reels/mugshot_MASAPANTA_APUGLLON_XAVIER_EDISON.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 7
+    },
+    {
+      "data": {
+        "Full Name": "SAGEDAHL, CALEB JAY",
+        "Charge 1": "OBSTRUCTING LEGAL PROCESS; WEAPONS-CARRY WEAPONS WITHOUT PERMIT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_SAGEDAHL_CALEB_JAY.jpg",
+        "Severity": "",
+        "Booking_Date": "10/17/2026",
+        "Reel_File": "reels/mugshot_SAGEDAHL_CALEB_JAY.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 8
     },
     {
       "data": {
-        "Full Name": "BURCH, LADAVIONNE ARLANDOE",
-        "Charge 1": "WEAPONS",
+        "Full Name": "DOSS, DERRICK ANTHONY",
+        "Charge 1": "RESTRICTED DL VIOLATION; Commission of crime with bulletproof vest",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BURCH_LADAVIONNE_ARLANDOE.jpg",
+        "Mugshot_File": "mugshots/mugshot_DOSS_DERRICK_ANTHONY.jpg",
         "Severity": "",
-        "Booking_Date": "10/16/2026",
-        "Reel_File": "reels/mugshot_BURCH_LADAVIONNE_ARLANDOE.mp4"
+        "Booking_Date": "10/17/2026",
+        "Reel_File": "reels/mugshot_DOSS_DERRICK_ANTHONY.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -130,73 +127,17 @@
     },
     {
       "data": {
-        "Full Name": "WEBBER, PAUL VINCENT",
-        "Charge 1": "TRAFFIC - DWI - THIRD-DEGREE DRIVING WHILE IMPAIRED; 1 AGGRAVATING FACTOR; TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WEBBER_PAUL_VINCENT.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/16/2026",
-        "Reel_File": "reels/mugshot_WEBBER_PAUL_VINCENT.mp4"
+        "Full Name": "RIVERA, JERMMI RAYAN",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_RIVERA_JERMMI_RAYAN.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/17/2026",
+        "Reel_File": "reels/mugshot_RIVERA_JERMMI_RAYAN.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 10
-    },
-    {
-      "data": {
-        "Full Name": "MARTIN, ROBERT DARREL",
-        "Charge 1": "ASSAULT-2ND DEGREE-DANGEROUS WEAPON-SUBSTANTIAL BODILY HARM; BURGLARY - 3RD DEGREE - ENTERS W/OUT CONSENT WITH INTENT TO STEAL/COMMIT FELONY OR GROSS MISDEMEANOR",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MARTIN_ROBERT_DARREL.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/16/2026",
-        "Reel_File": "reels/mugshot_MARTIN_ROBERT_DARREL.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 11
-    },
-    {
-      "data": {
-        "Full Name": "SHELTON, JACQULINE FAY",
-        "Charge 1": "TRESPASSING - REFUSE TO DEPART OR RETURN WITHIN 1 YEAR OF DEMAND",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SHELTON_JACQULINE_FAY.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/16/2026",
-        "Reel_File": "reels/mugshot_SHELTON_JACQULINE_FAY.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 12
-    },
-    {
-      "data": {
-        "Full Name": "BROWN, RICHARD LEE",
-        "Charge 1": "DOMESTIC ABUSE NO CONTACT ORDER - VIOLATE NO CONTACT ORDER - MISDEMEANOR",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BROWN_RICHARD_LEE.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/16/2026",
-        "Reel_File": "reels/mugshot_BROWN_RICHARD_LEE.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 13
-    },
-    {
-      "data": {
-        "Full Name": "FREEBERG, DUNCAN WILLIAM",
-        "Charge 1": "CHECK FORGERY-OFFER/POSSESS W/INTENT TO DEFRAUD; OTHER COUNTY/GM & MISD",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FREEBERG_DUNCAN_WILLIAM.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/16/2026",
-        "Reel_File": "reels/mugshot_FREEBERG_DUNCAN_WILLIAM.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 14
     }
   ]
 }
