@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-17T03:06:43.903441-05:00",
   "total_inmates": 11,
-  "posted_count": 4,
+  "posted_count": 5,
   "inmates": [
     {
       "data": {
@@ -68,8 +68,8 @@
         "Story": "An Independence man is facing criminal charges after allegedly firing off several rounds from a shotgun after arguing with a friend on Thursday evening.\n\nThe charges against Nicholas Lucking, 23, say police were called to Eagle Ridge Court in the rural, western Hennepin County city just before 8 p.m., where a 22-year-old man reported shots fired, sparking a shelter-in-place for nearby residents.\n\nThe victim and Lucking had been riding ATVs earlier in the evening and “had gotten into an argument,” according to the criminal complaint, with Lucking allegedly threatening to damage the victim’s truck that was parked outside Lucking’s home.\n\nThe victim says he returned to Lucking’s home to find the windows of his truck had been smashed. While the victim was near his vehicle, Lucking allegedly “fired several shotgun rounds.”\n\nWith the victim hiding in his truck as he feared Lucking would shoot him, police arrived at the scene and formed a perimeter. Drone operators saw Lucking “walking towards an outbuilding on the property carrying a long gun,” before moving back inside his home.\n\nA SWAT team arrived and called for Lucking to give himself up, which he did without further incident. He is in custody on charges of threats of violence.",
         "Source_URL": "https://bringmethenews.com/minnesota-news/charges-independence-man-fired-shotgun-after-arguing-with-friend-on-atv-ride"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-10-17T10:27:37.539664-05:00"
     },
     {
       "data": {
