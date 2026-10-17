@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-16T03:34:33.337235-05:00",
   "total_inmates": 14,
-  "posted_count": 7,
+  "posted_count": 8,
   "inmates": [
     {
       "data": {
@@ -110,8 +110,8 @@
         "Booking_Date": "10/16/2026",
         "Reel_File": "reels/mugshot_MEEKS_MARCUS_TERELL.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-16T20:16:08.189741-05:00",
       "id": 8
     },
     {
