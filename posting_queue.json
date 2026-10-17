@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-17T03:06:43.903441-05:00",
   "total_inmates": 11,
-  "posted_count": 5,
+  "posted_count": 6,
   "inmates": [
     {
       "data": {
@@ -81,8 +81,8 @@
         "Booking_Date": "10/17/2026",
         "Reel_File": "reels/mugshot_ROZEMA_MIKAYLA_JELEE.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-17T13:26:14.527568-05:00",
       "id": 5
     },
     {
