@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-17T03:06:43.903441-05:00",
   "total_inmates": 11,
-  "posted_count": 7,
+  "posted_count": 8,
   "inmates": [
     {
       "data": {
@@ -109,8 +109,8 @@
         "Booking_Date": "10/17/2026",
         "Reel_File": "reels/mugshot_MASAPANTA_APUGLLON_XAVIER_EDISON.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-17T23:22:21.225970-05:00",
       "id": 7
     },
     {
