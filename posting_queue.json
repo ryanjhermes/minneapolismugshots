@@ -1,63 +1,8 @@
 {
-  "created_at": "2026-10-18T03:24:31.306877-05:00",
-  "total_inmates": 10,
-  "posted_count": 7,
+  "created_at": "2026-10-19T04:23:05.521307-05:00",
+  "total_inmates": 13,
+  "posted_count": 3,
   "inmates": [
-    {
-      "id": 1,
-      "data": {
-        "Full Name": "LUCKING, NICHOLAS",
-        "Charge 1": "THREATS OF VIOLENCE",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_LUCKING_NICHOLAS.jpg",
-        "Severity": "",
-        "Booking_Date": "10/17/2026",
-        "Description": "The 23-year-old is charged with threats of violence.",
-        "Story": "An Independence man is facing criminal charges after allegedly firing off several rounds from a shotgun after arguing with a friend on Thursday evening.\n\nThe charges against Nicholas Lucking, 23, say police were called to Eagle Ridge Court in the rural, western Hennepin County city just before 8 p.m., where a 22-year-old man reported shots fired, sparking a shelter-in-place for nearby residents.\n\nThe victim and Lucking had been riding ATVs earlier in the evening and “had gotten into an argument,” according to the criminal complaint, with Lucking allegedly threatening to damage the victim’s truck that was parked outside Lucking’s home.\n\nThe victim says he returned to Lucking’s home to find the windows of his truck had been smashed. While the victim was near his vehicle, Lucking allegedly “fired several shotgun rounds.”\n\nWith the victim hiding in his truck as he feared Lucking would shoot him, police arrived at the scene and formed a perimeter. Drone operators saw Lucking “walking towards an outbuilding on the property carrying a long gun,” before moving back inside his home.\n\nA SWAT team arrived and called for Lucking to give himself up, which he did without further incident. He is in custody on charges of threats of violence.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-independence-man-fired-shotgun-after-arguing-with-friend-on-atv-ride"
-      },
-      "posted": true,
-      "posted_at": "2026-10-17T10:27:37.539664-05:00"
-    },
-    {
-      "data": {
-        "Full Name": "ROZEMA, MIKAYLA JELEE",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_ROZEMA_MIKAYLA_JELEE.jpg",
-        "Severity": "",
-        "Booking_Date": "10/17/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-17T13:26:14.527568-05:00",
-      "id": 2
-    },
-    {
-      "data": {
-        "Full Name": "KINCHEN, DEMARCUS LANCE",
-        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; TRESPASS ON CRITICAL PUBLIC SERVICE FACILITIES, PIPELINE, UTILITY - RETURNS W/IN 6 MONTHS; TRESPASS-RETURN TO PROPERTY WITHIN ONE YEAR",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_KINCHEN_DEMARCUS_LANCE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/17/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-17T18:59:40.968581-05:00",
-      "id": 3
-    },
-    {
-      "data": {
-        "Full Name": "MASAPANTA APUGLLON, XAVIER EDISON",
-        "Charge 1": "DOMESTIC ASSAULT",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MASAPANTA_APUGLLON_XAVIER_EDISON.jpg",
-        "Severity": "",
-        "Booking_Date": "10/17/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-17T23:22:21.225970-05:00",
-      "id": 4
-    },
     {
       "data": {
         "Full Name": "CLARK, JAVONE DOMINOQUE",
@@ -65,12 +10,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_CLARK_JAVONE_DOMINOQUE.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/18/2026",
-        "Reel_File": "reels/mugshot_CLARK_JAVONE_DOMINOQUE.mp4"
+        "Booking_Date": "10/18/2026"
       },
       "posted": true,
       "posted_at": "2026-10-18T10:48:21.718735-05:00",
-      "id": 5
+      "id": 1
     },
     {
       "data": {
@@ -79,12 +23,11 @@
         "Bail": "$4,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_LORIA_NOAH_SEBIT_DANIEL.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/18/2026",
-        "Reel_File": "reels/mugshot_LORIA_NOAH_SEBIT_DANIEL.mp4"
+        "Booking_Date": "10/18/2026"
       },
       "posted": true,
       "posted_at": "2026-10-18T13:36:44.993305-05:00",
-      "id": 6
+      "id": 2
     },
     {
       "data": {
@@ -93,22 +36,77 @@
         "Bail": "$300.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_TAMBA_JOSIAH_GIFT.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/18/2026",
-        "Reel_File": "reels/mugshot_TAMBA_JOSIAH_GIFT.mp4"
+        "Booking_Date": "10/18/2026"
       },
       "posted": true,
       "posted_at": "2026-10-18T19:10:26.072745-05:00",
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "JONES, CHRISTINE FAITH",
+        "Charge 1": "DRUGS - 5TH DEG",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_JONES_CHRISTINE_FAITH.jpg",
+        "Severity": "",
+        "Booking_Date": "10/19/2026",
+        "Reel_File": "reels/mugshot_JONES_CHRISTINE_FAITH.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "GREEN, KATHRYN ROSE",
+        "Charge 1": "DRUGS - 5TH DEG",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GREEN_KATHRYN_ROSE.jpg",
+        "Severity": "",
+        "Booking_Date": "10/19/2026",
+        "Reel_File": "reels/mugshot_GREEN_KATHRYN_ROSE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "TATE, CHARLES RASHAD SR",
+        "Charge 1": "FLEEING A PEACE OFFICER IN A MOTOR VEHICLE; THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT",
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TATE_CHARLES_RASHAD_SR.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/19/2026",
+        "Reel_File": "reels/mugshot_TATE_CHARLES_RASHAD_SR.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 6
+    },
+    {
+      "data": {
+        "Full Name": "ABDI, FATHI SHUKRI",
+        "Charge 1": "OTHER COUNTY/FELONY",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ABDI_FATHI_SHUKRI.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/19/2026",
+        "Reel_File": "reels/mugshot_ABDI_FATHI_SHUKRI.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 7
     },
     {
       "data": {
-        "Full Name": "WALLACE, XYHRAN DELANE",
-        "Charge 1": "SIMPLE ROBBERY",
+        "Full Name": "HERRERA, ALBERTO",
+        "Charge 1": "DOMESTIC ASSAULT",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WALLACE_XYHRAN_DELANE.jpg",
+        "Mugshot_File": "mugshots/mugshot_HERRERA_ALBERTO.jpg",
         "Severity": "",
-        "Booking_Date": "10/18/2026",
-        "Reel_File": "reels/mugshot_WALLACE_XYHRAN_DELANE.mp4"
+        "Booking_Date": "10/19/2026",
+        "Reel_File": "reels/mugshot_HERRERA_ALBERTO.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -116,13 +114,13 @@
     },
     {
       "data": {
-        "Full Name": "HARRIS, MICHAEL JEROME",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH; DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER; DISORDERLY CONDUCT - BRAWLING OR FIGHTING",
+        "Full Name": "JONES, BRIAN KEITH",
+        "Charge 1": "FELON IN POSSESSION OF A FIREARM; AGGRAVATED ROBBERY",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HARRIS_MICHAEL_JEROME.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/18/2026",
-        "Reel_File": "reels/mugshot_HARRIS_MICHAEL_JEROME.mp4"
+        "Mugshot_File": "mugshots/mugshot_JONES_BRIAN_KEITH.jpg",
+        "Severity": "",
+        "Booking_Date": "10/19/2026",
+        "Reel_File": "reels/mugshot_JONES_BRIAN_KEITH.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -130,16 +128,59 @@
     },
     {
       "data": {
-        "Full Name": "YANG, MONG",
-        "Charge 1": "No charge listed",
+        "Full Name": "GUDGER, JEFFERY RAMON",
+        "Charge 1": "OTHER STATE",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_YANG_MONG.jpg",
-        "Booking_Date": "10/18/2026",
-        "Reel_File": "reels/mugshot_YANG_MONG.mp4"
+        "Mugshot_File": "mugshots/mugshot_GUDGER_JEFFERY_RAMON.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/19/2026",
+        "Reel_File": "reels/mugshot_GUDGER_JEFFERY_RAMON.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 10
+    },
+    {
+      "data": {
+        "Full Name": "MOHAMED, MOHAMED ABDIGHANI",
+        "Charge 1": "POSSESSION OF BURGLARY OR THEFT TOOLS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MOHAMED_MOHAMED_ABDIGHANI.jpg",
+        "Severity": "",
+        "Booking_Date": "10/19/2026",
+        "Reel_File": "reels/mugshot_MOHAMED_MOHAMED_ABDIGHANI.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 11
+    },
+    {
+      "data": {
+        "Full Name": "BANGURA, JOSEPH TAMBA",
+        "Charge 1": "TRAFFIC - DWI - THIRD-DEGREE DRIVING WHILE IMPAIRED; REFUSE TO SUBMIT TO CHEMICAL TEST; TRAFFIC - DWI - THIRD-DEGREE DRIVING WHILE IMPAIRED; 1 AGGRAVATING FACTOR",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BANGURA_JOSEPH_TAMBA.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/19/2026",
+        "Reel_File": "reels/mugshot_BANGURA_JOSEPH_TAMBA.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 12
+    },
+    {
+      "data": {
+        "Full Name": "ELLIS, CHARLES QUENARD",
+        "Charge 1": "DOMESTIC ASSAULT BY STRANGULATION; EMERGENCY TELEPHONE CALLS AND COMMUNICATION; DEPARTMENT OF CORRECTIONS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ELLIS_CHARLES_QUENARD.jpg",
+        "Severity": "",
+        "Booking_Date": "10/19/2026",
+        "Reel_File": "reels/mugshot_ELLIS_CHARLES_QUENARD.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 13
     }
   ]
 }
