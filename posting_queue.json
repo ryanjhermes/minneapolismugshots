@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-18T03:24:31.306877-05:00",
   "total_inmates": 10,
-  "posted_count": 6,
+  "posted_count": 7,
   "inmates": [
     {
       "id": 1,
@@ -96,8 +96,8 @@
         "Booking_Date": "10/18/2026",
         "Reel_File": "reels/mugshot_TAMBA_JOSIAH_GIFT.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-18T19:10:26.072745-05:00",
       "id": 7
     },
     {
