@@ -1,47 +1,8 @@
 {
-  "created_at": "2026-10-19T04:23:05.521307-05:00",
+  "created_at": "2026-10-20T03:59:46.980994-05:00",
   "total_inmates": 13,
-  "posted_count": 6,
+  "posted_count": 3,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "CLARK, JAVONE DOMINOQUE",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CLARK_JAVONE_DOMINOQUE.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/18/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-18T10:48:21.718735-05:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "LORIA, NOAH SEBIT DANIEL",
-        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LORIA_NOAH_SEBIT_DANIEL.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/18/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-18T13:36:44.993305-05:00",
-      "id": 2
-    },
-    {
-      "data": {
-        "Full Name": "TAMBA, JOSIAH GIFT",
-        "Charge 1": "OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER; TRAFFIC REGULATION - DRIVER MUST CARRY PROOF OF INSURANCE WHEN OPERATING VEHICLE; TRAFFIC - DRIVERS LICENSE - DRIVING AFTER REVOCATION",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TAMBA_JOSIAH_GIFT.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/18/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-18T19:10:26.072745-05:00",
-      "id": 3
-    },
     {
       "data": {
         "Full Name": "JONES, CHRISTINE FAITH",
@@ -49,12 +10,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_JONES_CHRISTINE_FAITH.jpg",
         "Severity": "",
-        "Booking_Date": "10/19/2026",
-        "Reel_File": "reels/mugshot_JONES_CHRISTINE_FAITH.mp4"
+        "Booking_Date": "10/19/2026"
       },
       "posted": true,
       "posted_at": "2026-10-19T13:42:12.645537-05:00",
-      "id": 4
+      "id": 1
     },
     {
       "data": {
@@ -63,12 +23,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_GREEN_KATHRYN_ROSE.jpg",
         "Severity": "",
-        "Booking_Date": "10/19/2026",
-        "Reel_File": "reels/mugshot_GREEN_KATHRYN_ROSE.mp4"
+        "Booking_Date": "10/19/2026"
       },
       "posted": true,
       "posted_at": "2026-10-19T17:54:45.740942-05:00",
-      "id": 5
+      "id": 2
     },
     {
       "data": {
@@ -77,22 +36,63 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_TATE_CHARLES_RASHAD_SR.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/19/2026",
-        "Reel_File": "reels/mugshot_TATE_CHARLES_RASHAD_SR.mp4"
+        "Booking_Date": "10/19/2026"
       },
       "posted": true,
       "posted_at": "2026-10-19T20:44:03.503339-05:00",
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "LOUREY, TRINITY ROSE",
+        "Charge 1": "BURGLARY - 3RD DEGREE - ENTERS W/OUT CONSENT WITH INTENT TO STEAL/COMMIT FELONY OR GROSS MISDEMEANOR; OTHER COUNTY/GM & MISD",
+        "Bail": "$500.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LOUREY_TRINITY_ROSE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/20/2026",
+        "Reel_File": "reels/mugshot_LOUREY_TRINITY_ROSE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "SHIELDS, TYRELL DIONTE",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 - NO; THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
+        "Bail": "$6,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SHIELDS_TYRELL_DIONTE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/20/2026",
+        "Reel_File": "reels/mugshot_SHIELDS_TYRELL_DIONTE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "CHA, VINCENT VAMENG",
+        "Charge 1": "OTHER COUNTY/FELONY; THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT; POSSESSION OF BURGLARY OR THEFT TOOLS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_CHA_VINCENT_VAMENG.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/20/2026",
+        "Reel_File": "reels/mugshot_CHA_VINCENT_VAMENG.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 6
     },
     {
       "data": {
-        "Full Name": "ABDI, FATHI SHUKRI",
-        "Charge 1": "OTHER COUNTY/FELONY",
+        "Full Name": "CURRY, DOMINIQUE VARDON",
+        "Charge 1": "TRESPASSING - REFUSE TO DEPART OR RETURN WITHIN 1 YEAR OF DEMAND",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ABDI_FATHI_SHUKRI.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/19/2026",
-        "Reel_File": "reels/mugshot_ABDI_FATHI_SHUKRI.mp4"
+        "Mugshot_File": "mugshots/mugshot_CURRY_DOMINIQUE_VARDON.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/20/2026",
+        "Reel_File": "reels/mugshot_CURRY_DOMINIQUE_VARDON.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -100,13 +100,13 @@
     },
     {
       "data": {
-        "Full Name": "HERRERA, ALBERTO",
-        "Charge 1": "DOMESTIC ASSAULT",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HERRERA_ALBERTO.jpg",
-        "Severity": "",
-        "Booking_Date": "10/19/2026",
-        "Reel_File": "reels/mugshot_HERRERA_ALBERTO.mp4"
+        "Full Name": "BAIN, JENNIFER LORINE",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BAIN_JENNIFER_LORINE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/20/2026",
+        "Reel_File": "reels/mugshot_BAIN_JENNIFER_LORINE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -114,13 +114,13 @@
     },
     {
       "data": {
-        "Full Name": "JONES, BRIAN KEITH",
-        "Charge 1": "FELON IN POSSESSION OF A FIREARM; AGGRAVATED ROBBERY",
+        "Full Name": "JEILANI, EMRAN ABDIGAFAR",
+        "Charge 1": "TRAFFIC - DWI - REFUSE TO SUBMIT TO CHEMICAL TEST; BREATH OR TEST REFUSAL OR FAILURE",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JONES_BRIAN_KEITH.jpg",
-        "Severity": "",
-        "Booking_Date": "10/19/2026",
-        "Reel_File": "reels/mugshot_JONES_BRIAN_KEITH.mp4"
+        "Mugshot_File": "mugshots/mugshot_JEILANI_EMRAN_ABDIGAFAR.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/20/2026",
+        "Reel_File": "reels/mugshot_JEILANI_EMRAN_ABDIGAFAR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -128,13 +128,13 @@
     },
     {
       "data": {
-        "Full Name": "GUDGER, JEFFERY RAMON",
-        "Charge 1": "OTHER STATE",
+        "Full Name": "SABAT, KRZYSZTOF PIOTR",
+        "Charge 1": "DOMESTIC ASSAULT",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GUDGER_JEFFERY_RAMON.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/19/2026",
-        "Reel_File": "reels/mugshot_GUDGER_JEFFERY_RAMON.mp4"
+        "Mugshot_File": "mugshots/mugshot_SABAT_KRZYSZTOF_PIOTR.jpg",
+        "Severity": "",
+        "Booking_Date": "10/20/2026",
+        "Reel_File": "reels/mugshot_SABAT_KRZYSZTOF_PIOTR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -142,13 +142,13 @@
     },
     {
       "data": {
-        "Full Name": "MOHAMED, MOHAMED ABDIGHANI",
-        "Charge 1": "POSSESSION OF BURGLARY OR THEFT TOOLS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MOHAMED_MOHAMED_ABDIGHANI.jpg",
-        "Severity": "",
-        "Booking_Date": "10/19/2026",
-        "Reel_File": "reels/mugshot_MOHAMED_MOHAMED_ABDIGHANI.mp4"
+        "Full Name": "WEBB, LIONEL",
+        "Charge 1": "OTHER COUNTY/FELONY; INTERFERE WITH PRIVACY-HOTEL/TAN BOOTH/OTHER PLACE-SURREPTITIOUSLY INSTALL/USE DEVICE TO STARE/PEEP",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_WEBB_LIONEL.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/20/2026",
+        "Reel_File": "reels/mugshot_WEBB_LIONEL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -156,13 +156,13 @@
     },
     {
       "data": {
-        "Full Name": "BANGURA, JOSEPH TAMBA",
-        "Charge 1": "TRAFFIC - DWI - THIRD-DEGREE DRIVING WHILE IMPAIRED; REFUSE TO SUBMIT TO CHEMICAL TEST; TRAFFIC - DWI - THIRD-DEGREE DRIVING WHILE IMPAIRED; 1 AGGRAVATING FACTOR",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BANGURA_JOSEPH_TAMBA.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/19/2026",
-        "Reel_File": "reels/mugshot_BANGURA_JOSEPH_TAMBA.mp4"
+        "Full Name": "MELIUS, STEPHEN JOSEPH",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MELIUS_STEPHEN_JOSEPH.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/20/2026",
+        "Reel_File": "reels/mugshot_MELIUS_STEPHEN_JOSEPH.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -170,13 +170,13 @@
     },
     {
       "data": {
-        "Full Name": "ELLIS, CHARLES QUENARD",
-        "Charge 1": "DOMESTIC ASSAULT BY STRANGULATION; EMERGENCY TELEPHONE CALLS AND COMMUNICATION; DEPARTMENT OF CORRECTIONS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ELLIS_CHARLES_QUENARD.jpg",
+        "Full Name": "DILLARD, CORDELRO ANTWON",
+        "Charge 1": "DRIVING AFTER CANCELLATION IPS",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_DILLARD_CORDELRO_ANTWON.jpg",
         "Severity": "",
-        "Booking_Date": "10/19/2026",
-        "Reel_File": "reels/mugshot_ELLIS_CHARLES_QUENARD.mp4"
+        "Booking_Date": "10/20/2026",
+        "Reel_File": "reels/mugshot_DILLARD_CORDELRO_ANTWON.mp4"
       },
       "posted": false,
       "posted_at": null,
