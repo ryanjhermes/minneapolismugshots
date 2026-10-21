@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-20T03:59:46.980994-05:00",
   "total_inmates": 14,
-  "posted_count": 6,
+  "posted_count": 7,
   "inmates": [
     {
       "data": {
@@ -96,8 +96,8 @@
         "Booking_Date": "10/20/2026",
         "Reel_File": "reels/mugshot_CHA_VINCENT_VAMENG.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-20T23:34:06.547014-05:00",
       "id": 6
     },
     {
