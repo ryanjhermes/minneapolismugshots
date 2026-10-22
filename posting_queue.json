@@ -1,63 +1,8 @@
 {
-  "created_at": "2026-10-21T03:58:23.407317-05:00",
-  "total_inmates": 15,
-  "posted_count": 8,
+  "created_at": "2026-10-22T04:00:55.929822-05:00",
+  "total_inmates": 14,
+  "posted_count": 4,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "LOUREY, TRINITY ROSE",
-        "Charge 1": "BURGLARY - 3RD DEGREE - ENTERS W/OUT CONSENT WITH INTENT TO STEAL/COMMIT FELONY OR GROSS MISDEMEANOR; OTHER COUNTY/GM & MISD",
-        "Bail": "$500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LOUREY_TRINITY_ROSE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/20/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-20T11:52:22.381474-05:00",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "LYREK, MATTHEW",
-        "Charge 1": "FIRST-DEGREE ASSAULT",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_LYREK_MATTHEW.jpg",
-        "Severity": "",
-        "Booking_Date": "10/20/2026",
-        "Description": "Matthew Lyrek pointed a handgun at deputies outside the Dollar General in his hometown of Montrose in 2024.",
-        "Story": "A man has been sentenced to 15 years in prison for a standoff with police outside a Dollar General store in his hometown, which ended with him being shot by deputies.\n\nMatthew Lyrek was found guilty in July of 11 charges – including four counts of first-degree assault – following the Apr. 15, 2024 standoff in the parking lot outside the convenience store in Montrose, Wright County.\n\nWright County deputies were attempting to arrest Lyrek on outstanding warrants including two violations of orders of protection, and an outstanding warrant for threats of violence, fleeing police, and obstruction relating to an incident less than two weeks earlier in which he threatened to shoot police officers.\n\nPolice learned Lyrek was shopping at the Dollar General at 631 Nelson Blvd., but as he exited the store and got into his truck, Lyrek pulled a loaded handgun from his waistband and pointed it at the approaching deputies.\n\nThe deputies initially used Tasers in an attempt to arrest Lyrek, but he continued pointing the gun at deputies, eventually culminating with two deputies shooting him.\n\nEven after being shot, Lyrek continued to aim his gun at law enforcement, with bean bag and foam rounds being used, causing him to drop the gun, though deputies arresting him found another gun still in his waistband.\n\nLyrek was hospitalized with gunshot wounds to his abdomen and back.\n\nA subsequent search of his home turned up at least five firearms and an “arsenal of ammunition” comprising more than 29,000 rounds.\n\n“Thank you to the courageous deputies with the Wright County Sheriff’s Office who responded to apprehend Lyrek, knowing he was armed and dangerous,” said Wright County Attorney Brian Lutes.\n\n“The deputies risked their lives to keep the citizens of Wright County safe.”",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/man-with-arsenal-of-ammunition-at-home-sentenced-to-15-years-after-being-shot-during-dollar-general-standoff"
-      },
-      "posted": true,
-      "posted_at": "2026-10-20T15:30:22.341053-05:00"
-    },
-    {
-      "data": {
-        "Full Name": "SHIELDS, TYRELL DIONTE",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 - NO; THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
-        "Bail": "$6,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SHIELDS_TYRELL_DIONTE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/20/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-20T18:49:12.944607-05:00",
-      "id": 3
-    },
-    {
-      "data": {
-        "Full Name": "CHA, VINCENT VAMENG",
-        "Charge 1": "OTHER COUNTY/FELONY; THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT; POSSESSION OF BURGLARY OR THEFT TOOLS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CHA_VINCENT_VAMENG.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/20/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-20T23:34:06.547014-05:00",
-      "id": 4
-    },
     {
       "data": {
         "Full Name": "JACKSON, ISAAC SAMUEL",
@@ -65,15 +10,14 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_JACKSON_ISAAC_SAMUEL.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/21/2026",
-        "Reel_File": "reels/mugshot_JACKSON_ISAAC_SAMUEL.mp4"
+        "Booking_Date": "10/21/2026"
       },
       "posted": true,
       "posted_at": "2026-10-21T12:06:00.716374-05:00",
-      "id": 5
+      "id": 1
     },
     {
-      "id": 15,
+      "id": 2,
       "data": {
         "Full Name": "NASH, JAMAL",
         "Charge 1": "USING A HAMMER TO KILL HIS FATHER",
@@ -95,12 +39,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_FLYNN_MATTHEW_PHILLIP.jpg",
         "Severity": "",
-        "Booking_Date": "10/21/2026",
-        "Reel_File": "reels/mugshot_FLYNN_MATTHEW_PHILLIP.mp4"
+        "Booking_Date": "10/21/2026"
       },
       "posted": true,
       "posted_at": "2026-10-21T19:00:06.904998-05:00",
-      "id": 6
+      "id": 3
     },
     {
       "data": {
@@ -109,22 +52,63 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_KING_TERRANCE_JAMES.jpg",
         "Severity": "",
-        "Booking_Date": "10/21/2026",
-        "Reel_File": "reels/mugshot_KING_TERRANCE_JAMES.mp4"
+        "Booking_Date": "10/21/2026"
       },
       "posted": true,
       "posted_at": "2026-10-21T23:33:30.965879-05:00",
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "EVANS, MARQUESAS JAMAR JR",
+        "Charge 1": "WEAPONS; RECEIVING/CONCEALING STOLEN PROPERTY",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_EVANS_MARQUESAS_JAMAR_JR.jpg",
+        "Severity": "",
+        "Booking_Date": "10/22/2026",
+        "Reel_File": "reels/mugshot_EVANS_MARQUESAS_JAMAR_JR.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "SNEED, DAVID JR",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SNEED_DAVID_JR.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/22/2026",
+        "Reel_File": "reels/mugshot_SNEED_DAVID_JR.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 6
+    },
+    {
+      "data": {
+        "Full Name": "FARAH, GULED ABDI",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_FARAH_GULED_ABDI.jpg",
+        "Severity": "",
+        "Booking_Date": "10/22/2026",
+        "Reel_File": "reels/mugshot_FARAH_GULED_ABDI.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 7
     },
     {
       "data": {
-        "Full Name": "ECKHART, JULIE ANN GERALDINE",
-        "Charge 1": "DRUGS - 5TH DEG",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ECKHART_JULIE_ANN_GERALDINE.jpg",
-        "Severity": "",
-        "Booking_Date": "10/21/2026",
-        "Reel_File": "reels/mugshot_ECKHART_JULIE_ANN_GERALDINE.mp4"
+        "Full Name": "MOODY, KHALIL HASSAN",
+        "Charge 1": "DOMESTIC ASSAULT - BY STRANGULATION; OTHER COUNTY/FELONY",
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MOODY_KHALIL_HASSAN.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/22/2026",
+        "Reel_File": "reels/mugshot_MOODY_KHALIL_HASSAN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -132,13 +116,13 @@
     },
     {
       "data": {
-        "Full Name": "MURRAY, BRENTON JOHNATHEN",
-        "Charge 1": "OTHER COUNTY/GM & MISD; THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; GIVING PEACE OFFICER FALSE NAME-OF ANOTHER PERSON",
-        "Bail": "$200.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MURRAY_BRENTON_JOHNATHEN.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/21/2026",
-        "Reel_File": "reels/mugshot_MURRAY_BRENTON_JOHNATHEN.mp4"
+        "Full Name": "SOHRABIAN, NADIA MAHESTY",
+        "Charge 1": "DOMESTIC ASSAULT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_SOHRABIAN_NADIA_MAHESTY.jpg",
+        "Severity": "",
+        "Booking_Date": "10/22/2026",
+        "Reel_File": "reels/mugshot_SOHRABIAN_NADIA_MAHESTY.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -146,13 +130,13 @@
     },
     {
       "data": {
-        "Full Name": "BLANCHARD, SHAWN WILLIAM JAQUAN",
-        "Charge 1": "OTHER COUNTY/GM & MISD",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BLANCHARD_SHAWN_WILLIAM_JAQUAN.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/21/2026",
-        "Reel_File": "reels/mugshot_BLANCHARD_SHAWN_WILLIAM_JAQUAN.mp4"
+        "Full Name": "HERSI, HAMZA OSMAN",
+        "Charge 1": "THREATS OF VIOLENCE - RECKLESS DISREGARD RISK; NEGLIGENT STORAGE FIREARMS-LOADED-CHILD CAN ACCESS",
+        "Bail": "$75,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HERSI_HAMZA_OSMAN.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/22/2026",
+        "Reel_File": "reels/mugshot_HERSI_HAMZA_OSMAN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -160,13 +144,13 @@
     },
     {
       "data": {
-        "Full Name": "DHERE, AYUB OMAR",
-        "Charge 1": "DOMESTIC ASSAULT BY STRANGULATION",
+        "Full Name": "ALAMA, AMBER DIANE",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DHERE_AYUB_OMAR.jpg",
+        "Mugshot_File": "mugshots/mugshot_ALAMA_AMBER_DIANE.jpg",
         "Severity": "",
-        "Booking_Date": "10/21/2026",
-        "Reel_File": "reels/mugshot_DHERE_AYUB_OMAR.mp4"
+        "Booking_Date": "10/22/2026",
+        "Reel_File": "reels/mugshot_ALAMA_AMBER_DIANE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -174,13 +158,13 @@
     },
     {
       "data": {
-        "Full Name": "STRICKLING, LAVELL TAVELLES",
-        "Charge 1": "TRAFFIC - DRIVERS LICENSE - DRIVING AFTER REVOCATION",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STRICKLING_LAVELL_TAVELLES.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/21/2026",
-        "Reel_File": "reels/mugshot_STRICKLING_LAVELL_TAVELLES.mp4"
+        "Full Name": "MARCHAUD, MIQUELA LORENE",
+        "Charge 1": "THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT",
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MARCHAUD_MIQUELA_LORENE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/22/2026",
+        "Reel_File": "reels/mugshot_MARCHAUD_MIQUELA_LORENE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -188,13 +172,13 @@
     },
     {
       "data": {
-        "Full Name": "CHUTE, SARA MARIE",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CHUTE_SARA_MARIE.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/21/2026",
-        "Reel_File": "reels/mugshot_CHUTE_SARA_MARIE.mp4"
+        "Full Name": "BAUTISTA VALENTIN, WILMER NOE",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BAUTISTA_VALENTIN_WILMER_NOE.jpg",
+        "Severity": "",
+        "Booking_Date": "10/22/2026",
+        "Reel_File": "reels/mugshot_BAUTISTA_VALENTIN_WILMER_NOE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -202,12 +186,13 @@
     },
     {
       "data": {
-        "Full Name": "SMITH, JESSICA SHYMERA",
-        "Charge 1": "No charge listed",
+        "Full Name": "IRON WING, KAEDYNCE BRE ANN",
+        "Charge 1": "ASSAULT-2ND DEGREE",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SMITH_JESSICA_SHYMERA.jpg",
-        "Booking_Date": "10/21/2026",
-        "Reel_File": "reels/mugshot_SMITH_JESSICA_SHYMERA.mp4"
+        "Mugshot_File": "mugshots/mugshot_IRON_WING_KAEDYNCE_BRE_ANN.jpg",
+        "Severity": "",
+        "Booking_Date": "10/22/2026",
+        "Reel_File": "reels/mugshot_IRON_WING_KAEDYNCE_BRE_ANN.mp4"
       },
       "posted": false,
       "posted_at": null,
