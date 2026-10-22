@@ -42,24 +42,16 @@ def caption(data):
         no_bail = not bail or any(m in bail for m in NO_BAIL_MARKERS) or 'NEXT COURT APPEARANCE' in bail.upper()
         bail_display = 'N/A' if no_bail else bail
 
+        # Bring Me The News story (bmtn.py): the raw story, plus the NAME line dms.py needs and the link
+        if data.get('Source_URL'):
+            rest = f"NAME: {name}\n\n{config.DISCLAIMER}\n\nSource: Bring Me The News, {data['Source_URL']}"
+            story = fit_story(data.get('Story') or data.get('Description', ''), MAX_CAPTION - len(rest) - 2)
+            return f"{story}\n\n{rest}" if story else rest
+
         charge_line = ""
         if charge not in NO_CHARGE_VALUES:
             label = "BOOKING CHARGES" if config.CHARGE_SEPARATOR in charge else "BOOKING CHARGE"
-            if data.get('Source_URL'):
-                label = label.replace("BOOKING ", "")
             charge_line = f"{label}: {charge}\n"
-
-        # Bring Me The News story (bmtn.py): its first paragraphs first, then the usual lines and link
-        if data.get('Source_URL'):
-            rest = f"""{charge_line}NAME: {name}
-
-{config.DISCLAIMER}
-
-#minneapolismugshots #Minnesota #Arrest #MNcrime #Minneapolis
-
-Source: Bring Me The News, {data['Source_URL']}"""
-            story = fit_story(data.get('Story') or data.get('Description', ''), MAX_CAPTION - len(rest) - 2)
-            return f"{story}\n\n{rest}" if story else rest
 
         return f"""
 {charge_line}NAME: {name}
