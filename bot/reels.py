@@ -102,8 +102,9 @@ def build_queue_reels():
             continue
         out = os.path.join(config.REELS_DIR, os.path.basename(d['Mugshot_File']).rsplit('.', 1)[0] + '.mp4')
         try:
+            charges = '' if d.get('Source_URL') else d.get('Charge 1', '')  # Story charges are model guesses
             make_clip(out, config.REEL_SECONDS, d['Mugshot_File'], d.get('Full Name', ''),
-                      charge_lines(d.get('Charge 1', ''), config.CHARGE_SEPARATOR), config.REEL_HEADER)
+                      charge_lines(charges, config.CHARGE_SEPARATOR), config.REEL_HEADER)
             d['Reel_File'] = out
             print(f"🎬 Reel: {out}")
         except Exception as e:
