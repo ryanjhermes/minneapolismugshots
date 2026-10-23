@@ -1,63 +1,8 @@
 {
-  "created_at": "2026-10-22T04:00:55.929822-05:00",
-  "total_inmates": 14,
-  "posted_count": 8,
+  "created_at": "2026-10-23T03:57:37.077719-05:00",
+  "total_inmates": 13,
+  "posted_count": 4,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "JACKSON, ISAAC SAMUEL",
-        "Charge 1": "DEPARTMENT OF CORRECTIONS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JACKSON_ISAAC_SAMUEL.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/21/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-21T12:06:00.716374-05:00",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "NASH, JAMAL",
-        "Charge 1": "USING A HAMMER TO KILL HIS FATHER",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_NASH_JAMAL.jpg",
-        "Severity": "",
-        "Booking_Date": "10/21/2026",
-        "Description": "The 29-year-old's mother say he has schizophrenia and recently changed his medication.",
-        "Story": "A man has been charged with using a hammer to kill his father at their home in North St. Paul, with the victim’s wife saying their son had recently changed his medications for schizophrenia.\n\nCharges in Ramsey County allege that Jamal Nash, 29, struck his 69-year-old father in the head with a hammer at around 1:30 p.m. Sunday on the 2700 block of Chippewa Avenue. He died from his injuries at Regions Hospital on Monday.\n\nPolice were called to the home by Nash’s mother, who was holding a bloody towel and led responders to her husband. He was unresponsive and “bled profusely from his head,” according to the criminal complaint.\n\nNash’s mother said her son, who had fled out of the back door, had been diagnosed with schizophrenia five years ago, and had recently changed medications that caused changes in his behavior.\n\nShe said he had been stressed, stayed awake for days, had stopped eating, and would “pace the floor.” She said her son had never been aggressive or violent in the past, and loved his father.\n\nShe further told police that Nash had been in the hospital the previous week after they found him having a seizure. He called them asking to be picked up the next day, but a doctor she spoke to had wanted him to stay in the hospital for longer to determine if the medicine was changing his behavior.\n\nNash’s mother says he lied to her about doctors approving his release from the hospital. He moved in with his parents on Saturday, the day before the attack.\n\nOn Sunday, Nash’s father set up a TV in Nash’s bedroom and then went to the living room to unpack more items. Nash’s mother said she saw her son come out of his room and swing the hammer at his father without warning or any prior argument.\n\nThe father tried to grab the ball peen hammer, but he swung it at him again. The father was struck twice on the side of the head.\n\nIn the wake of the attack, Nash allegedly said “Oh my God” and started crying and screaming, before fleeing the house. Police caught up with him a short time later after Nash told his brother where he was during a phone call.\n\nAfter agreeing to speak to police, Nash was asked what happened, and said: “Someone was attacking my whole family.” He didn’t respond when asked who attacked his family, but later said: “Somebody hit my father, and my mother was crying.”\n\nHe then said the incident was an accident, and when asked to tell his side of the story, he allegedly said: “I hit my father. He was holding me for hostage.”",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-man-killed-his-father-in-hammer-attack-a-day-after-being-released-from-hospital"
-      },
-      "posted": true,
-      "posted_at": "2026-10-21T15:35:48.132757-05:00"
-    },
-    {
-      "data": {
-        "Full Name": "FLYNN, MATTHEW PHILLIP",
-        "Charge 1": "BURGLARY",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FLYNN_MATTHEW_PHILLIP.jpg",
-        "Severity": "",
-        "Booking_Date": "10/21/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-21T19:00:06.904998-05:00",
-      "id": 3
-    },
-    {
-      "data": {
-        "Full Name": "KING, TERRANCE JAMES",
-        "Charge 1": "DRUGS - 1ST DEGREE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KING_TERRANCE_JAMES.jpg",
-        "Severity": "",
-        "Booking_Date": "10/21/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-21T23:33:30.965879-05:00",
-      "id": 4
-    },
     {
       "data": {
         "Full Name": "EVANS, MARQUESAS JAMAR JR",
@@ -65,12 +10,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_EVANS_MARQUESAS_JAMAR_JR.jpg",
         "Severity": "",
-        "Booking_Date": "10/22/2026",
-        "Reel_File": "reels/mugshot_EVANS_MARQUESAS_JAMAR_JR.mp4"
+        "Booking_Date": "10/22/2026"
       },
       "posted": true,
       "posted_at": "2026-10-22T12:06:00.820420-05:00",
-      "id": 5
+      "id": 1
     },
     {
       "data": {
@@ -79,12 +23,11 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_SNEED_DAVID_JR.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/22/2026",
-        "Reel_File": "reels/mugshot_SNEED_DAVID_JR.mp4"
+        "Booking_Date": "10/22/2026"
       },
       "posted": true,
       "posted_at": "2026-10-22T15:33:09.333220-05:00",
-      "id": 6
+      "id": 2
     },
     {
       "data": {
@@ -93,12 +36,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_FARAH_GULED_ABDI.jpg",
         "Severity": "",
-        "Booking_Date": "10/22/2026",
-        "Reel_File": "reels/mugshot_FARAH_GULED_ABDI.mp4"
+        "Booking_Date": "10/22/2026"
       },
       "posted": true,
       "posted_at": "2026-10-22T18:58:53.315364-05:00",
-      "id": 7
+      "id": 3
     },
     {
       "data": {
@@ -107,22 +49,77 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MOODY_KHALIL_HASSAN.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/22/2026",
-        "Reel_File": "reels/mugshot_MOODY_KHALIL_HASSAN.mp4"
+        "Booking_Date": "10/22/2026"
       },
       "posted": true,
       "posted_at": "2026-10-22T23:37:38.519689-05:00",
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "BOYD, KALVIN JR",
+        "Charge 1": "DOMESTIC ASSAULT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BOYD_KALVIN_JR.jpg",
+        "Severity": "",
+        "Booking_Date": "10/23/2026",
+        "Reel_File": "reels/mugshot_BOYD_KALVIN_JR.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "ANSARI, BRENNA LEA",
+        "Charge 1": "OTHER COUNTY/GM & MISD; THEFT-OBTAIN SERVICES-NO PAYMENT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ANSARI_BRENNA_LEA.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/23/2026",
+        "Reel_File": "reels/mugshot_ANSARI_BRENNA_LEA.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 6
+    },
+    {
+      "data": {
+        "Full Name": "WALKER, JAQUAN",
+        "Charge 1": "OBSTRUCTING LEGAL PROCESS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WALKER_JAQUAN.jpg",
+        "Severity": "",
+        "Booking_Date": "10/23/2026",
+        "Reel_File": "reels/mugshot_WALKER_JAQUAN.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 7
+    },
+    {
+      "data": {
+        "Full Name": "MARSHALL, RAMON",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS; WEAPONS; RECEIVING STOLEN PROPERTY",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MARSHALL_RAMON.jpg",
+        "Severity": "",
+        "Booking_Date": "10/23/2026",
+        "Reel_File": "reels/mugshot_MARSHALL_RAMON.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 8
     },
     {
       "data": {
-        "Full Name": "SOHRABIAN, NADIA MAHESTY",
-        "Charge 1": "DOMESTIC ASSAULT",
+        "Full Name": "KIRK, RICO ROMANIE",
+        "Charge 1": "DRIVING AFTER CANCELLATION IPS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SOHRABIAN_NADIA_MAHESTY.jpg",
+        "Mugshot_File": "mugshots/mugshot_KIRK_RICO_ROMANIE.jpg",
         "Severity": "",
-        "Booking_Date": "10/22/2026",
-        "Reel_File": "reels/mugshot_SOHRABIAN_NADIA_MAHESTY.mp4"
+        "Booking_Date": "10/23/2026",
+        "Reel_File": "reels/mugshot_KIRK_RICO_ROMANIE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -130,13 +127,13 @@
     },
     {
       "data": {
-        "Full Name": "HERSI, HAMZA OSMAN",
-        "Charge 1": "THREATS OF VIOLENCE - RECKLESS DISREGARD RISK; NEGLIGENT STORAGE FIREARMS-LOADED-CHILD CAN ACCESS",
-        "Bail": "$75,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HERSI_HAMZA_OSMAN.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/22/2026",
-        "Reel_File": "reels/mugshot_HERSI_HAMZA_OSMAN.mp4"
+        "Full Name": "FARRIS, MARK JASON",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER; ASSAULT-5TH DEG-INFLICT OR ATTEMPT BODILY HARM",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_FARRIS_MARK_JASON.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/23/2026",
+        "Reel_File": "reels/mugshot_FARRIS_MARK_JASON.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -144,13 +141,13 @@
     },
     {
       "data": {
-        "Full Name": "ALAMA, AMBER DIANE",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ALAMA_AMBER_DIANE.jpg",
-        "Severity": "",
-        "Booking_Date": "10/22/2026",
-        "Reel_File": "reels/mugshot_ALAMA_AMBER_DIANE.mp4"
+        "Full Name": "ZYGADLO, MIKE ANTHONY",
+        "Charge 1": "TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; REFUSE TO SUBMIT TO CHEMICAL TEST",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ZYGADLO_MIKE_ANTHONY.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/23/2026",
+        "Reel_File": "reels/mugshot_ZYGADLO_MIKE_ANTHONY.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -158,13 +155,13 @@
     },
     {
       "data": {
-        "Full Name": "MARCHAUD, MIQUELA LORENE",
-        "Charge 1": "THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MARCHAUD_MIQUELA_LORENE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/22/2026",
-        "Reel_File": "reels/mugshot_MARCHAUD_MIQUELA_LORENE.mp4"
+        "Full Name": "SILLO SHIGUI, SEGUNDO ANGEL",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SILLO_SHIGUI_SEGUNDO_ANGEL.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/23/2026",
+        "Reel_File": "reels/mugshot_SILLO_SHIGUI_SEGUNDO_ANGEL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -172,31 +169,16 @@
     },
     {
       "data": {
-        "Full Name": "BAUTISTA VALENTIN, WILMER NOE",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
+        "Full Name": "COLEMAN, RODNEY ALLEN JR",
+        "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BAUTISTA_VALENTIN_WILMER_NOE.jpg",
-        "Severity": "",
-        "Booking_Date": "10/22/2026",
-        "Reel_File": "reels/mugshot_BAUTISTA_VALENTIN_WILMER_NOE.mp4"
+        "Mugshot_File": "mugshots/mugshot_COLEMAN_RODNEY_ALLEN_JR.jpg",
+        "Booking_Date": "10/23/2026",
+        "Reel_File": "reels/mugshot_COLEMAN_RODNEY_ALLEN_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 13
-    },
-    {
-      "data": {
-        "Full Name": "IRON WING, KAEDYNCE BRE ANN",
-        "Charge 1": "ASSAULT-2ND DEGREE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_IRON_WING_KAEDYNCE_BRE_ANN.jpg",
-        "Severity": "",
-        "Booking_Date": "10/22/2026",
-        "Reel_File": "reels/mugshot_IRON_WING_KAEDYNCE_BRE_ANN.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 14
     }
   ]
 }
