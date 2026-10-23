@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-22T04:00:55.929822-05:00",
   "total_inmates": 14,
-  "posted_count": 7,
+  "posted_count": 8,
   "inmates": [
     {
       "data": {
@@ -110,8 +110,8 @@
         "Booking_Date": "10/22/2026",
         "Reel_File": "reels/mugshot_MOODY_KHALIL_HASSAN.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-22T23:37:38.519689-05:00",
       "id": 8
     },
     {
