@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-23T03:57:37.077719-05:00",
   "total_inmates": 14,
-  "posted_count": 7,
+  "posted_count": 8,
   "inmates": [
     {
       "data": {
@@ -109,8 +109,8 @@
         "Booking_Date": "10/23/2026",
         "Reel_File": "reels/mugshot_WALKER_JAQUAN.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-23T23:28:16.779882-05:00",
       "id": 7
     },
     {
