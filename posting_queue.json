@@ -1,60 +1,8 @@
 {
-  "created_at": "2026-10-23T03:57:37.077719-05:00",
-  "total_inmates": 14,
-  "posted_count": 8,
+  "created_at": "2026-10-24T03:28:22.794558-05:00",
+  "total_inmates": 10,
+  "posted_count": 4,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "EVANS, MARQUESAS JAMAR JR",
-        "Charge 1": "WEAPONS; RECEIVING/CONCEALING STOLEN PROPERTY",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_EVANS_MARQUESAS_JAMAR_JR.jpg",
-        "Severity": "",
-        "Booking_Date": "10/22/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-22T12:06:00.820420-05:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "SNEED, DAVID JR",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SNEED_DAVID_JR.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/22/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-22T15:33:09.333220-05:00",
-      "id": 2
-    },
-    {
-      "data": {
-        "Full Name": "FARAH, GULED ABDI",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FARAH_GULED_ABDI.jpg",
-        "Severity": "",
-        "Booking_Date": "10/22/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-22T18:58:53.315364-05:00",
-      "id": 3
-    },
-    {
-      "data": {
-        "Full Name": "MOODY, KHALIL HASSAN",
-        "Charge 1": "DOMESTIC ASSAULT - BY STRANGULATION; OTHER COUNTY/FELONY",
-        "Bail": "$40,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOODY_KHALIL_HASSAN.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/22/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-22T23:37:38.519689-05:00",
-      "id": 4
-    },
     {
       "data": {
         "Full Name": "BOYD, KALVIN JR",
@@ -62,15 +10,14 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_BOYD_KALVIN_JR.jpg",
         "Severity": "",
-        "Booking_Date": "10/23/2026",
-        "Reel_File": "reels/mugshot_BOYD_KALVIN_JR.mp4"
+        "Booking_Date": "10/23/2026"
       },
       "posted": true,
       "posted_at": "2026-10-23T11:59:59.261884-05:00",
-      "id": 5
+      "id": 1
     },
     {
-      "id": 14,
+      "id": 2,
       "data": {
         "Full Name": "BALL, JACK JOSEPH",
         "Charge 1": "PREMEDITATED MURDER",
@@ -92,12 +39,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_ANSARI_BRENNA_LEA.jpg",
         "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/23/2026",
-        "Reel_File": "reels/mugshot_ANSARI_BRENNA_LEA.mp4"
+        "Booking_Date": "10/23/2026"
       },
       "posted": true,
       "posted_at": "2026-10-23T18:50:48.496323-05:00",
-      "id": 6
+      "id": 3
     },
     {
       "data": {
@@ -106,22 +52,63 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_WALKER_JAQUAN.jpg",
         "Severity": "",
-        "Booking_Date": "10/23/2026",
-        "Reel_File": "reels/mugshot_WALKER_JAQUAN.mp4"
+        "Booking_Date": "10/23/2026"
       },
       "posted": true,
       "posted_at": "2026-10-23T23:28:16.779882-05:00",
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "GUSTAFSON, PAYTON DAVID",
+        "Charge 1": "FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE; ASSAULT-5TH DEG-INFLICT OR ATTEMPT BODILY HARM",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_GUSTAFSON_PAYTON_DAVID.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/24/2026",
+        "Reel_File": "reels/mugshot_GUSTAFSON_PAYTON_DAVID.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "GALICIA VASQUEZ, ABDIAS",
+        "Charge 1": "FLEEING A POLICE OFFICER IN MV",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GALICIA_VASQUEZ_ABDIAS.jpg",
+        "Severity": "",
+        "Booking_Date": "10/24/2026",
+        "Reel_File": "reels/mugshot_GALICIA_VASQUEZ_ABDIAS.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 6
+    },
+    {
+      "data": {
+        "Full Name": "OLSON, ZOEY ANNE",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_OLSON_ZOEY_ANNE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/24/2026",
+        "Reel_File": "reels/mugshot_OLSON_ZOEY_ANNE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 7
     },
     {
       "data": {
-        "Full Name": "MARSHALL, RAMON",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS; WEAPONS; RECEIVING STOLEN PROPERTY",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MARSHALL_RAMON.jpg",
-        "Severity": "",
-        "Booking_Date": "10/23/2026",
-        "Reel_File": "reels/mugshot_MARSHALL_RAMON.mp4"
+        "Full Name": "SEYMOUR, MARY AMANDA",
+        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_SEYMOUR_MARY_AMANDA.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/24/2026",
+        "Reel_File": "reels/mugshot_SEYMOUR_MARY_AMANDA.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -129,13 +116,12 @@
     },
     {
       "data": {
-        "Full Name": "KIRK, RICO ROMANIE",
-        "Charge 1": "DRIVING AFTER CANCELLATION IPS",
+        "Full Name": "MORETA TOAZA, VICTOR ELIAS",
+        "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KIRK_RICO_ROMANIE.jpg",
-        "Severity": "",
-        "Booking_Date": "10/23/2026",
-        "Reel_File": "reels/mugshot_KIRK_RICO_ROMANIE.mp4"
+        "Mugshot_File": "mugshots/mugshot_MORETA_TOAZA_VICTOR_ELIAS.jpg",
+        "Booking_Date": "10/24/2026",
+        "Reel_File": "reels/mugshot_MORETA_TOAZA_VICTOR_ELIAS.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -143,58 +129,16 @@
     },
     {
       "data": {
-        "Full Name": "FARRIS, MARK JASON",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER; ASSAULT-5TH DEG-INFLICT OR ATTEMPT BODILY HARM",
+        "Full Name": "HUBBARD, TYSHAWN DAMONTAE",
+        "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FARRIS_MARK_JASON.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/23/2026",
-        "Reel_File": "reels/mugshot_FARRIS_MARK_JASON.mp4"
+        "Mugshot_File": "mugshots/mugshot_HUBBARD_TYSHAWN_DAMONTAE.jpg",
+        "Booking_Date": "10/24/2026",
+        "Reel_File": "reels/mugshot_HUBBARD_TYSHAWN_DAMONTAE.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 10
-    },
-    {
-      "data": {
-        "Full Name": "ZYGADLO, MIKE ANTHONY",
-        "Charge 1": "TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; REFUSE TO SUBMIT TO CHEMICAL TEST",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ZYGADLO_MIKE_ANTHONY.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/23/2026",
-        "Reel_File": "reels/mugshot_ZYGADLO_MIKE_ANTHONY.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 11
-    },
-    {
-      "data": {
-        "Full Name": "SILLO SHIGUI, SEGUNDO ANGEL",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SILLO_SHIGUI_SEGUNDO_ANGEL.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/23/2026",
-        "Reel_File": "reels/mugshot_SILLO_SHIGUI_SEGUNDO_ANGEL.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 12
-    },
-    {
-      "data": {
-        "Full Name": "COLEMAN, RODNEY ALLEN JR",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_COLEMAN_RODNEY_ALLEN_JR.jpg",
-        "Booking_Date": "10/23/2026",
-        "Reel_File": "reels/mugshot_COLEMAN_RODNEY_ALLEN_JR.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 13
     }
   ]
 }
