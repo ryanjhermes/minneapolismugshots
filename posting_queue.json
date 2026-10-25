@@ -1,63 +1,8 @@
 {
-  "created_at": "2026-10-24T03:28:22.794558-05:00",
-  "total_inmates": 10,
-  "posted_count": 7,
+  "created_at": "2026-10-25T03:48:04.758786-05:00",
+  "total_inmates": 13,
+  "posted_count": 3,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "BOYD, KALVIN JR",
-        "Charge 1": "DOMESTIC ASSAULT",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BOYD_KALVIN_JR.jpg",
-        "Severity": "",
-        "Booking_Date": "10/23/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-23T11:59:59.261884-05:00",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "BALL, JACK JOSEPH",
-        "Charge 1": "PREMEDITATED MURDER",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_BALL_JACK_JOSEPH.jpg",
-        "Severity": "",
-        "Booking_Date": "10/23/2026",
-        "Description": "The 25-year-old will spend the rest of his life in prison following his conviction in the killing of Bethany Ann Israel.",
-        "Story": "A Lakeville man will spend the rest of his life in prison for the horrific killing of his pregnant sister in 2024.\n\nJack Joseph Ball, 25, was sentenced on Thursday to two life sentences without the possibility of parole in the death of Bethany Ann Israel and her unborn child.\n\nProsecutors requested, and Judge Bryce Ehrman agreed, that the life sentences should be served consecutively after Ball was convicted of two counts of premeditated murder.\n\nIsrael, 30, was 17-18 weeks pregnant when she was killed and dismembered at Ball’s home on May 23, 2024.\n\nInvestigators discovered several journals and other handwritten paperwork belonging to Ball, in which he allegedly described anger over his sister’s pregnancy and said she was “no longer innocent.”\n\nIsrael was described as a “cherished wife, daughter, sister and an expectant mother but also a beloved figure in the volleyball community.”\n\n“The defendant’s actions were profoundly disturbing and incomprehensible in their cruelty. His conduct has devastated countless lives and inflicted trauma on our communities,” said Dakota County Attorney Kathy Keena.\n\n“I extend my sincere gratitude to all those who contributed to the investigation and prosecution of his horrific case. I also offer my deepest condolences to Bethany’s family, friends and all those who cherished her.”\n\nIf you know anyone who is affected by domestic violence, you can find more information on services available here, via the Minnesota DPS. You can also call the Day One Crisis Hotline at 1-866-223-1111.\n\nFacebook",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/life-without-parole-for-lakeville-man-who-killed-dismembered-his-pregnant-sister"
-      },
-      "posted": true,
-      "posted_at": "2026-10-23T15:21:46.126863-05:00"
-    },
-    {
-      "data": {
-        "Full Name": "ANSARI, BRENNA LEA",
-        "Charge 1": "OTHER COUNTY/GM & MISD; THEFT-OBTAIN SERVICES-NO PAYMENT",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ANSARI_BRENNA_LEA.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/23/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-23T18:50:48.496323-05:00",
-      "id": 3
-    },
-    {
-      "data": {
-        "Full Name": "WALKER, JAQUAN",
-        "Charge 1": "OBSTRUCTING LEGAL PROCESS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WALKER_JAQUAN.jpg",
-        "Severity": "",
-        "Booking_Date": "10/23/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-23T23:28:16.779882-05:00",
-      "id": 4
-    },
     {
       "data": {
         "Full Name": "GUSTAFSON, PAYTON DAVID",
@@ -65,12 +10,11 @@
         "Bail": "$300.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_GUSTAFSON_PAYTON_DAVID.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/24/2026",
-        "Reel_File": "reels/mugshot_GUSTAFSON_PAYTON_DAVID.mp4"
+        "Booking_Date": "10/24/2026"
       },
       "posted": true,
       "posted_at": "2026-10-24T10:52:10.273143-05:00",
-      "id": 5
+      "id": 1
     },
     {
       "data": {
@@ -79,12 +23,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_GALICIA_VASQUEZ_ABDIAS.jpg",
         "Severity": "",
-        "Booking_Date": "10/24/2026",
-        "Reel_File": "reels/mugshot_GALICIA_VASQUEZ_ABDIAS.mp4"
+        "Booking_Date": "10/24/2026"
       },
       "posted": true,
       "posted_at": "2026-10-24T13:46:01.581716-05:00",
-      "id": 6
+      "id": 2
     },
     {
       "data": {
@@ -93,22 +36,77 @@
         "Bail": "$0.00 NO BAIL REQUIRED",
         "Mugshot_File": "mugshots/mugshot_OLSON_ZOEY_ANNE.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/24/2026",
-        "Reel_File": "reels/mugshot_OLSON_ZOEY_ANNE.mp4"
+        "Booking_Date": "10/24/2026"
       },
       "posted": true,
       "posted_at": "2026-10-24T19:17:02.578517-05:00",
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "MYERS, COREY MARTICE",
+        "Charge 1": "OTHER COUNTY/FELONY; TRANSIT CRIME - SMOKE AS DEFINED IN SECTION 144.413, SUBDIVISION 4",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MYERS_COREY_MARTICE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/25/2026",
+        "Reel_File": "reels/mugshot_MYERS_COREY_MARTICE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "SMITH, LORI ANN",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_SMITH_LORI_ANN.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/25/2026",
+        "Reel_File": "reels/mugshot_SMITH_LORI_ANN.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "HERDEGEN, CHRISTOPHER JON",
+        "Charge 1": "TRAFFIC - DWI - THIRD-DEGREE DRIVING WHILE IMPAIRED; 1 AGGRAVATING FACTOR; TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; REFUSE TO SUBMIT TO CHEMICAL TEST; FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HERDEGEN_CHRISTOPHER_JON.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/25/2026",
+        "Reel_File": "reels/mugshot_HERDEGEN_CHRISTOPHER_JON.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 6
+    },
+    {
+      "data": {
+        "Full Name": "FARAH, AHMED DAHIR",
+        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; TRESPASS-ENTER ANY AREA OF A PUBLIC FACILITY WHERE POSTED SIGNS PROHIBIT OR RESTRICT ACCESS; OTHER COUNTY/FELONY",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FARAH_AHMED_DAHIR.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/25/2026",
+        "Reel_File": "reels/mugshot_FARAH_AHMED_DAHIR.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 7
     },
     {
       "data": {
-        "Full Name": "SEYMOUR, MARY AMANDA",
-        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_SEYMOUR_MARY_AMANDA.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/24/2026",
-        "Reel_File": "reels/mugshot_SEYMOUR_MARY_AMANDA.mp4"
+        "Full Name": "TAHLIL, MAHAMED MAHAD",
+        "Charge 1": "FALSE INFORMATION TO POLICE - NAME OF ANOTHER",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_TAHLIL_MAHAMED_MAHAD.jpg",
+        "Severity": "",
+        "Booking_Date": "10/25/2026",
+        "Reel_File": "reels/mugshot_TAHLIL_MAHAMED_MAHAD.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -116,12 +114,13 @@
     },
     {
       "data": {
-        "Full Name": "MORETA TOAZA, VICTOR ELIAS",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MORETA_TOAZA_VICTOR_ELIAS.jpg",
-        "Booking_Date": "10/24/2026",
-        "Reel_File": "reels/mugshot_MORETA_TOAZA_VICTOR_ELIAS.mp4"
+        "Full Name": "WALKER, TERRANCE LEON",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WALKER_TERRANCE_LEON.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/25/2026",
+        "Reel_File": "reels/mugshot_WALKER_TERRANCE_LEON.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -129,16 +128,57 @@
     },
     {
       "data": {
-        "Full Name": "HUBBARD, TYSHAWN DAMONTAE",
-        "Charge 1": "No charge listed",
+        "Full Name": "STURE, EDWARD ALEXANDER",
+        "Charge 1": "ASSAULT-2ND DEGREE",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HUBBARD_TYSHAWN_DAMONTAE.jpg",
-        "Booking_Date": "10/24/2026",
-        "Reel_File": "reels/mugshot_HUBBARD_TYSHAWN_DAMONTAE.mp4"
+        "Mugshot_File": "mugshots/mugshot_STURE_EDWARD_ALEXANDER.jpg",
+        "Severity": "",
+        "Booking_Date": "10/25/2026",
+        "Reel_File": "reels/mugshot_STURE_EDWARD_ALEXANDER.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 10
+    },
+    {
+      "data": {
+        "Full Name": "HASSAN, MOHAMED JAMA",
+        "Charge 1": "FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE; TAMPER WITH MOTOR VEHICLE/ENTER W/O OWNER PERMISSION; OTHER COUNTY/GM & MISD",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HASSAN_MOHAMED_JAMA.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/25/2026",
+        "Reel_File": "reels/mugshot_HASSAN_MOHAMED_JAMA.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 11
+    },
+    {
+      "data": {
+        "Full Name": "DZIMIELA, ZACHARY MICHAEL",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_DZIMIELA_ZACHARY_MICHAEL.jpg",
+        "Booking_Date": "10/25/2026",
+        "Reel_File": "reels/mugshot_DZIMIELA_ZACHARY_MICHAEL.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 12
+    },
+    {
+      "data": {
+        "Full Name": "APPLE, SAGE UGNE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_APPLE_SAGE_UGNE.jpg",
+        "Booking_Date": "10/25/2026",
+        "Reel_File": "reels/mugshot_APPLE_SAGE_UGNE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 13
     }
   ]
 }
