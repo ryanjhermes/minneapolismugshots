@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-26T04:26:28.130219-05:00",
   "total_inmates": 12,
-  "posted_count": 4,
+  "posted_count": 5,
   "inmates": [
     {
       "data": {
@@ -66,8 +66,8 @@
         "Booking_Date": "10/26/2026",
         "Reel_File": "reels/mugshot_JOHNSON_REGINALD_ISAIAH.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-26T18:07:07.447084-05:00",
       "id": 5
     },
     {
