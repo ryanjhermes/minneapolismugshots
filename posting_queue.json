@@ -1,47 +1,8 @@
 {
-  "created_at": "2026-10-25T03:48:04.758786-05:00",
-  "total_inmates": 13,
-  "posted_count": 6,
+  "created_at": "2026-10-26T04:26:28.130219-05:00",
+  "total_inmates": 12,
+  "posted_count": 3,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "GUSTAFSON, PAYTON DAVID",
-        "Charge 1": "FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE; ASSAULT-5TH DEG-INFLICT OR ATTEMPT BODILY HARM",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GUSTAFSON_PAYTON_DAVID.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/24/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-24T10:52:10.273143-05:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "GALICIA VASQUEZ, ABDIAS",
-        "Charge 1": "FLEEING A POLICE OFFICER IN MV",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GALICIA_VASQUEZ_ABDIAS.jpg",
-        "Severity": "",
-        "Booking_Date": "10/24/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-24T13:46:01.581716-05:00",
-      "id": 2
-    },
-    {
-      "data": {
-        "Full Name": "OLSON, ZOEY ANNE",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_OLSON_ZOEY_ANNE.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/24/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-24T19:17:02.578517-05:00",
-      "id": 3
-    },
     {
       "data": {
         "Full Name": "MYERS, COREY MARTICE",
@@ -49,12 +10,11 @@
         "Bail": "$300.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MYERS_COREY_MARTICE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/25/2026",
-        "Reel_File": "reels/mugshot_MYERS_COREY_MARTICE.mp4"
+        "Booking_Date": "10/25/2026"
       },
       "posted": true,
       "posted_at": "2026-10-25T11:04:13.462023-05:00",
-      "id": 4
+      "id": 1
     },
     {
       "data": {
@@ -63,12 +23,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_SMITH_LORI_ANN.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/25/2026",
-        "Reel_File": "reels/mugshot_SMITH_LORI_ANN.mp4"
+        "Booking_Date": "10/25/2026"
       },
       "posted": true,
       "posted_at": "2026-10-25T13:58:53.123083-05:00",
-      "id": 5
+      "id": 2
     },
     {
       "data": {
@@ -77,22 +36,63 @@
         "Bail": "$12,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_HERDEGEN_CHRISTOPHER_JON.jpg",
         "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/25/2026",
-        "Reel_File": "reels/mugshot_HERDEGEN_CHRISTOPHER_JON.mp4"
+        "Booking_Date": "10/25/2026"
       },
       "posted": true,
       "posted_at": "2026-10-25T19:11:04.802090-05:00",
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "ROBERTS, KENNETH FRANCIS",
+        "Charge 1": "FLEEING A PEACE OFFICER IN A MOTOR VEHICLE; GIVING PEACE OFFICER FALSE NAME-OF ANOTHER PERSON; OTHER COUNTY/FELONY",
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROBERTS_KENNETH_FRANCIS.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/26/2026",
+        "Reel_File": "reels/mugshot_ROBERTS_KENNETH_FRANCIS.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "JOHNSON, REGINALD ISAIAH",
+        "Charge 1": "DOMESTIC ASSAULT BY STRANGULATION; FELON IN POSSESSION OF A FIREARM; ASSAULT IN THE FIFTH DEGREE; GROSS MISDEMEANOR-WITHIN THREE YEARS OF PREVIOUS CONVICTION.",
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_REGINALD_ISAIAH.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/26/2026",
+        "Reel_File": "reels/mugshot_JOHNSON_REGINALD_ISAIAH.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "MUKOKOLO, JULIE NTAMBWE",
+        "Charge 1": "OTHER COUNTY/FELONY",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MUKOKOLO_JULIE_NTAMBWE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/26/2026",
+        "Reel_File": "reels/mugshot_MUKOKOLO_JULIE_NTAMBWE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 6
     },
     {
       "data": {
-        "Full Name": "FARAH, AHMED DAHIR",
-        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; TRESPASS-ENTER ANY AREA OF A PUBLIC FACILITY WHERE POSTED SIGNS PROHIBIT OR RESTRICT ACCESS; OTHER COUNTY/FELONY",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FARAH_AHMED_DAHIR.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/25/2026",
-        "Reel_File": "reels/mugshot_FARAH_AHMED_DAHIR.mp4"
+        "Full Name": "BRADSHAW, MELVIN LAMONT JR",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BRADSHAW_MELVIN_LAMONT_JR.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/26/2026",
+        "Reel_File": "reels/mugshot_BRADSHAW_MELVIN_LAMONT_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -100,13 +100,13 @@
     },
     {
       "data": {
-        "Full Name": "TAHLIL, MAHAMED MAHAD",
-        "Charge 1": "FALSE INFORMATION TO POLICE - NAME OF ANOTHER",
+        "Full Name": "MEIHACH, NICHOLAS STEVEN SEBASTIAN",
+        "Charge 1": "FLEEING A POLICE OFFICER IN MV",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_TAHLIL_MAHAMED_MAHAD.jpg",
+        "Mugshot_File": "mugshots/mugshot_MEIHACH_NICHOLAS_STEVEN_SEBASTIAN.jpg",
         "Severity": "",
-        "Booking_Date": "10/25/2026",
-        "Reel_File": "reels/mugshot_TAHLIL_MAHAMED_MAHAD.mp4"
+        "Booking_Date": "10/26/2026",
+        "Reel_File": "reels/mugshot_MEIHACH_NICHOLAS_STEVEN_SEBASTIAN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -114,13 +114,13 @@
     },
     {
       "data": {
-        "Full Name": "WALKER, TERRANCE LEON",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WALKER_TERRANCE_LEON.jpg",
+        "Full Name": "GARCIA-GUTIERREZ, JUAN BENITO",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_GARCIA-GUTIERREZ_JUAN_BENITO.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/25/2026",
-        "Reel_File": "reels/mugshot_WALKER_TERRANCE_LEON.mp4"
+        "Booking_Date": "10/26/2026",
+        "Reel_File": "reels/mugshot_GARCIA-GUTIERREZ_JUAN_BENITO.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -128,13 +128,13 @@
     },
     {
       "data": {
-        "Full Name": "STURE, EDWARD ALEXANDER",
-        "Charge 1": "ASSAULT-2ND DEGREE",
+        "Full Name": "BOROWIEC, TAYLOR JACOB",
+        "Charge 1": "DOMESTIC ASSAULT",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_STURE_EDWARD_ALEXANDER.jpg",
+        "Mugshot_File": "mugshots/mugshot_BOROWIEC_TAYLOR_JACOB.jpg",
         "Severity": "",
-        "Booking_Date": "10/25/2026",
-        "Reel_File": "reels/mugshot_STURE_EDWARD_ALEXANDER.mp4"
+        "Booking_Date": "10/26/2026",
+        "Reel_File": "reels/mugshot_BOROWIEC_TAYLOR_JACOB.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -142,13 +142,13 @@
     },
     {
       "data": {
-        "Full Name": "HASSAN, MOHAMED JAMA",
-        "Charge 1": "FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE; TAMPER WITH MOTOR VEHICLE/ENTER W/O OWNER PERMISSION; OTHER COUNTY/GM & MISD",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HASSAN_MOHAMED_JAMA.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/25/2026",
-        "Reel_File": "reels/mugshot_HASSAN_MOHAMED_JAMA.mp4"
+        "Full Name": "ANDERSON, JAKOB CECIL",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ANDERSON_JAKOB_CECIL.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/26/2026",
+        "Reel_File": "reels/mugshot_ANDERSON_JAKOB_CECIL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -156,29 +156,16 @@
     },
     {
       "data": {
-        "Full Name": "DZIMIELA, ZACHARY MICHAEL",
+        "Full Name": "VILLANUEVA, BRIAN UZAN",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DZIMIELA_ZACHARY_MICHAEL.jpg",
-        "Booking_Date": "10/25/2026",
-        "Reel_File": "reels/mugshot_DZIMIELA_ZACHARY_MICHAEL.mp4"
+        "Mugshot_File": "mugshots/mugshot_VILLANUEVA_BRIAN_UZAN.jpg",
+        "Booking_Date": "10/26/2026",
+        "Reel_File": "reels/mugshot_VILLANUEVA_BRIAN_UZAN.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 12
-    },
-    {
-      "data": {
-        "Full Name": "APPLE, SAGE UGNE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_APPLE_SAGE_UGNE.jpg",
-        "Booking_Date": "10/25/2026",
-        "Reel_File": "reels/mugshot_APPLE_SAGE_UGNE.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 13
     }
   ]
 }
