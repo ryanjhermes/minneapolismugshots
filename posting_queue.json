@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-28T05:08:43.131193-05:00",
-  "total_inmates": 13,
+  "total_inmates": 14,
   "posted_count": 4,
   "inmates": [
     {
@@ -55,6 +55,22 @@
       "posted": true,
       "posted_at": "2026-10-28T13:19:54.482605-05:00",
       "id": 4
+    },
+    {
+      "id": 14,
+      "data": {
+        "Full Name": "YANG, MINU",
+        "Charge 1": "BRINGING CONTRABAND INTO A STATE PRISON",
+        "Bail": "",
+        "Mugshot_File": "mugshots/mugshot_YANG_MINU.jpg",
+        "Severity": "",
+        "Booking_Date": "10/28/2026",
+        "Description": "The 28-year-old worked as a corrections officer at MCF-Lino Lakes.",
+        "Story": "A Minnesota Department of Corrections officer has been charged with trying to smuggle drugs into a state prison.\n\nMinu Yang, 28, of St. Paul, is charged with bringing contraband into a state prison, with charges filed in Ramsey County saying the prison in question is MCF-Lino Lakes.\n\nPer the complaint, Yang allegedly conspired with an inmate and the inmate’s mother to smuggle drugs into the prison, with Yang allegedly agreeing to receive the drugs through mail delivered to his home.\n\n“Officers learned that the drugs would be soaked into nine sheets of beading paper and Defendant would be bringing them to the facility on October 26, 2026,” the complaint says, with the information coming via recorded phone calls between the inmate and his mother.\n\nWhen Yang arrived at the prison on Oct. 26, he was arrested after going through security, with officers finding nine sheets of beading paper on him.\n\nDuring interview, Yang allegedly admitted that an inmate recruited him to pick up the drugs and bring them into the prison, saying he had been offered $2,000 for the job.\n\nHe continued to say he would coordinate with the inmate’s mother, who acted as a go-between with Yang and the inmate.\n\nThe drugs in question are still being tested.",
+        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-minnesota-corrections-officer-tried-to-smuggle-drugs-into-state-prison-for-inmate"
+      },
+      "posted": false,
+      "posted_at": null
     },
     {
       "data": {
