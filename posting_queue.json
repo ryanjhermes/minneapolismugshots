@@ -1,86 +1,8 @@
 {
-  "created_at": "2026-10-26T04:26:28.130219-05:00",
-  "total_inmates": 12,
-  "posted_count": 9,
+  "created_at": "2026-10-28T05:08:43.131193-05:00",
+  "total_inmates": 13,
+  "posted_count": 3,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "MYERS, COREY MARTICE",
-        "Charge 1": "OTHER COUNTY/FELONY; TRANSIT CRIME - SMOKE AS DEFINED IN SECTION 144.413, SUBDIVISION 4",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MYERS_COREY_MARTICE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/25/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-25T11:04:13.462023-05:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "SMITH, LORI ANN",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SMITH_LORI_ANN.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/25/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-25T13:58:53.123083-05:00",
-      "id": 2
-    },
-    {
-      "data": {
-        "Full Name": "HERDEGEN, CHRISTOPHER JON",
-        "Charge 1": "TRAFFIC - DWI - THIRD-DEGREE DRIVING WHILE IMPAIRED; 1 AGGRAVATING FACTOR; TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; REFUSE TO SUBMIT TO CHEMICAL TEST; FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HERDEGEN_CHRISTOPHER_JON.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/25/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-25T19:11:04.802090-05:00",
-      "id": 3
-    },
-    {
-      "data": {
-        "Full Name": "ROBERTS, KENNETH FRANCIS",
-        "Charge 1": "FLEEING A PEACE OFFICER IN A MOTOR VEHICLE; GIVING PEACE OFFICER FALSE NAME-OF ANOTHER PERSON; OTHER COUNTY/FELONY",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ROBERTS_KENNETH_FRANCIS.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/26/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-26T13:40:16.312736-05:00",
-      "id": 4
-    },
-    {
-      "data": {
-        "Full Name": "JOHNSON, REGINALD ISAIAH",
-        "Charge 1": "DOMESTIC ASSAULT BY STRANGULATION; FELON IN POSSESSION OF A FIREARM; ASSAULT IN THE FIFTH DEGREE; GROSS MISDEMEANOR-WITHIN THREE YEARS OF PREVIOUS CONVICTION.",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_REGINALD_ISAIAH.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/26/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-26T18:07:07.447084-05:00",
-      "id": 5
-    },
-    {
-      "data": {
-        "Full Name": "MUKOKOLO, JULIE NTAMBWE",
-        "Charge 1": "OTHER COUNTY/FELONY",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MUKOKOLO_JULIE_NTAMBWE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/26/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-26T21:01:41.946501-05:00",
-      "id": 6
-    },
     {
       "data": {
         "Full Name": "BRADSHAW, MELVIN LAMONT JR",
@@ -88,12 +10,11 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BRADSHAW_MELVIN_LAMONT_JR.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/26/2026",
-        "Reel_File": "reels/mugshot_BRADSHAW_MELVIN_LAMONT_JR.mp4"
+        "Booking_Date": "10/26/2026"
       },
       "posted": true,
       "posted_at": "2026-10-27T12:56:03.563996-05:00",
-      "id": 7
+      "id": 1
     },
     {
       "data": {
@@ -102,12 +23,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_MEIHACH_NICHOLAS_STEVEN_SEBASTIAN.jpg",
         "Severity": "",
-        "Booking_Date": "10/26/2026",
-        "Reel_File": "reels/mugshot_MEIHACH_NICHOLAS_STEVEN_SEBASTIAN.mp4"
+        "Booking_Date": "10/26/2026"
       },
       "posted": true,
       "posted_at": "2026-10-27T17:08:37.576604-05:00",
-      "id": 8
+      "id": 2
     },
     {
       "data": {
@@ -116,22 +36,105 @@
         "Bail": "$0.00 NO BAIL REQUIRED",
         "Mugshot_File": "mugshots/mugshot_GARCIA-GUTIERREZ_JUAN_BENITO.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/26/2026",
-        "Reel_File": "reels/mugshot_GARCIA-GUTIERREZ_JUAN_BENITO.mp4"
+        "Booking_Date": "10/26/2026"
       },
       "posted": true,
       "posted_at": "2026-10-27T20:19:18.334908-05:00",
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "ALOJADO, ANTHONY ROMAINE",
+        "Charge 1": "OTHER COUNTY/FELONY; OTHER COUNTY/GM & MISD",
+        "Bail": "$2,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ALOJADO_ANTHONY_ROMAINE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/28/2026",
+        "Reel_File": "reels/mugshot_ALOJADO_ANTHONY_ROMAINE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "KOPAS, TRACY LORETTA",
+        "Charge 1": "ASSAULT-2ND DEGREE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_KOPAS_TRACY_LORETTA.jpg",
+        "Severity": "",
+        "Booking_Date": "10/28/2026",
+        "Reel_File": "reels/mugshot_KOPAS_TRACY_LORETTA.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "JAMESON, MARQUIS DEONTA",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; OTHER COUNTY/GM & MISD",
+        "Bail": "$0.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JAMESON_MARQUIS_DEONTA.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/28/2026",
+        "Reel_File": "reels/mugshot_JAMESON_MARQUIS_DEONTA.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 6
+    },
+    {
+      "data": {
+        "Full Name": "PARRAL AGUILAR, BAYRON ADRIAN",
+        "Charge 1": "CRIMINAL SEXUAL CONDUCT - 1ST DEGREE - PENETRATION OR CONTACT UNDER 14 - ACTOR > 36M OLDER",
+        "Bail": "$100,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PARRAL_AGUILAR_BAYRON_ADRIAN.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/28/2026",
+        "Reel_File": "reels/mugshot_PARRAL_AGUILAR_BAYRON_ADRIAN.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 7
+    },
+    {
+      "data": {
+        "Full Name": "HELD, BRADAN JOSEPH",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF CONTROLLED SUBSTANCE; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ANY AMOUNT SCHEDULE I/II DRUGS/METABOLITE; NOT CANNABIS/HEMP",
+        "Bail": "$2,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HELD_BRADAN_JOSEPH.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/28/2026",
+        "Reel_File": "reels/mugshot_HELD_BRADAN_JOSEPH.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 8
+    },
+    {
+      "data": {
+        "Full Name": "BESSONOV, OKSANA MARIE",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BESSONOV_OKSANA_MARIE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/28/2026",
+        "Reel_File": "reels/mugshot_BESSONOV_OKSANA_MARIE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 9
     },
     {
       "data": {
-        "Full Name": "BOROWIEC, TAYLOR JACOB",
-        "Charge 1": "DOMESTIC ASSAULT",
+        "Full Name": "SMITH, WILLIAM CHAD",
+        "Charge 1": "OTHER STATE",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BOROWIEC_TAYLOR_JACOB.jpg",
-        "Severity": "",
-        "Booking_Date": "10/26/2026",
-        "Reel_File": "reels/mugshot_BOROWIEC_TAYLOR_JACOB.mp4"
+        "Mugshot_File": "mugshots/mugshot_SMITH_WILLIAM_CHAD.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/28/2026",
+        "Reel_File": "reels/mugshot_SMITH_WILLIAM_CHAD.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -139,13 +142,13 @@
     },
     {
       "data": {
-        "Full Name": "ANDERSON, JAKOB CECIL",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ANDERSON_JAKOB_CECIL.jpg",
+        "Full Name": "HARRINGTON, BRANDON JAY",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_HARRINGTON_BRANDON_JAY.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/26/2026",
-        "Reel_File": "reels/mugshot_ANDERSON_JAKOB_CECIL.mp4"
+        "Booking_Date": "10/28/2026",
+        "Reel_File": "reels/mugshot_HARRINGTON_BRANDON_JAY.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -153,16 +156,31 @@
     },
     {
       "data": {
-        "Full Name": "VILLANUEVA, BRIAN UZAN",
-        "Charge 1": "No charge listed",
+        "Full Name": "MCGHAW, EDWARD EARL JR",
+        "Charge 1": "OTHER STATE",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_VILLANUEVA_BRIAN_UZAN.jpg",
-        "Booking_Date": "10/26/2026",
-        "Reel_File": "reels/mugshot_VILLANUEVA_BRIAN_UZAN.mp4"
+        "Mugshot_File": "mugshots/mugshot_MCGHAW_EDWARD_EARL_JR.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/28/2026",
+        "Reel_File": "reels/mugshot_MCGHAW_EDWARD_EARL_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 12
+    },
+    {
+      "data": {
+        "Full Name": "CAMPBELL, KEEWAN DEANTE",
+        "Charge 1": "DRUGS - 5TH DEG",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_CAMPBELL_KEEWAN_DEANTE.jpg",
+        "Severity": "",
+        "Booking_Date": "10/28/2026",
+        "Reel_File": "reels/mugshot_CAMPBELL_KEEWAN_DEANTE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 13
     }
   ]
 }
