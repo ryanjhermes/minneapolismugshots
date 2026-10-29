@@ -1,47 +1,8 @@
 {
-  "created_at": "2026-10-28T05:08:43.131193-05:00",
-  "total_inmates": 14,
-  "posted_count": 5,
+  "created_at": "2026-10-29T05:32:11.641881-05:00",
+  "total_inmates": 12,
+  "posted_count": 2,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "BRADSHAW, MELVIN LAMONT JR",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BRADSHAW_MELVIN_LAMONT_JR.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/26/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-27T12:56:03.563996-05:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "MEIHACH, NICHOLAS STEVEN SEBASTIAN",
-        "Charge 1": "FLEEING A POLICE OFFICER IN MV",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MEIHACH_NICHOLAS_STEVEN_SEBASTIAN.jpg",
-        "Severity": "",
-        "Booking_Date": "10/26/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-27T17:08:37.576604-05:00",
-      "id": 2
-    },
-    {
-      "data": {
-        "Full Name": "GARCIA-GUTIERREZ, JUAN BENITO",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_GARCIA-GUTIERREZ_JUAN_BENITO.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/26/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-27T20:19:18.334908-05:00",
-      "id": 3
-    },
     {
       "data": {
         "Full Name": "ALOJADO, ANTHONY ROMAINE",
@@ -49,15 +10,14 @@
         "Bail": "$2,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ALOJADO_ANTHONY_ROMAINE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/28/2026",
-        "Reel_File": "reels/mugshot_ALOJADO_ANTHONY_ROMAINE.mp4"
+        "Booking_Date": "10/28/2026"
       },
       "posted": true,
       "posted_at": "2026-10-28T13:19:54.482605-05:00",
-      "id": 4
+      "id": 1
     },
     {
-      "id": 14,
+      "id": 2,
       "data": {
         "Full Name": "YANG, MINU",
         "Charge 1": "BRINGING CONTRABAND INTO A STATE PRISON",
@@ -74,13 +34,41 @@
     },
     {
       "data": {
-        "Full Name": "KOPAS, TRACY LORETTA",
-        "Charge 1": "ASSAULT-2ND DEGREE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KOPAS_TRACY_LORETTA.jpg",
-        "Severity": "",
-        "Booking_Date": "10/28/2026",
-        "Reel_File": "reels/mugshot_KOPAS_TRACY_LORETTA.mp4"
+        "Full Name": "HUMPHREY, MYQUENTIN MICHAEL DONALD",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH; DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER; DISORDERLY CONDUCT",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HUMPHREY_MYQUENTIN_MICHAEL_DONALD.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/29/2026",
+        "Reel_File": "reels/mugshot_HUMPHREY_MYQUENTIN_MICHAEL_DONALD.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "WHITFIELD-MOORE, SHALAIYA MARIE",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_WHITFIELD-MOORE_SHALAIYA_MARIE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/29/2026",
+        "Reel_File": "reels/mugshot_WHITFIELD-MOORE_SHALAIYA_MARIE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "IBARRA SAAVEDRA, JUAN CARLOS",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_IBARRA_SAAVEDRA_JUAN_CARLOS.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/29/2026",
+        "Reel_File": "reels/mugshot_IBARRA_SAAVEDRA_JUAN_CARLOS.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -88,13 +76,13 @@
     },
     {
       "data": {
-        "Full Name": "JAMESON, MARQUIS DEONTA",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; OTHER COUNTY/GM & MISD",
-        "Bail": "$0.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JAMESON_MARQUIS_DEONTA.jpg",
+        "Full Name": "SANDLIN, DUSTIN BENNETT",
+        "Charge 1": "PREDATORY OFFENDERS - REGISTRATION REQUIRED; OTHER COUNTY/FELONY",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_SANDLIN_DUSTIN_BENNETT.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/28/2026",
-        "Reel_File": "reels/mugshot_JAMESON_MARQUIS_DEONTA.mp4"
+        "Booking_Date": "10/29/2026",
+        "Reel_File": "reels/mugshot_SANDLIN_DUSTIN_BENNETT.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -102,13 +90,13 @@
     },
     {
       "data": {
-        "Full Name": "PARRAL AGUILAR, BAYRON ADRIAN",
-        "Charge 1": "CRIMINAL SEXUAL CONDUCT - 1ST DEGREE - PENETRATION OR CONTACT UNDER 14 - ACTOR > 36M OLDER",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PARRAL_AGUILAR_BAYRON_ADRIAN.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/28/2026",
-        "Reel_File": "reels/mugshot_PARRAL_AGUILAR_BAYRON_ADRIAN.mp4"
+        "Full Name": "GAFFNEY, OLIVIA KATHRYN",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER; OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GAFFNEY_OLIVIA_KATHRYN.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/29/2026",
+        "Reel_File": "reels/mugshot_GAFFNEY_OLIVIA_KATHRYN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -116,13 +104,13 @@
     },
     {
       "data": {
-        "Full Name": "HELD, BRADAN JOSEPH",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF CONTROLLED SUBSTANCE; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ANY AMOUNT SCHEDULE I/II DRUGS/METABOLITE; NOT CANNABIS/HEMP",
-        "Bail": "$2,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HELD_BRADAN_JOSEPH.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/28/2026",
-        "Reel_File": "reels/mugshot_HELD_BRADAN_JOSEPH.mp4"
+        "Full Name": "SCHAEFER, JACOB MATTHEW",
+        "Charge 1": "TRAFFIC - DWI - REFUSE TO SUBMIT TO CHEMICAL TEST; BREATH OR TEST REFUSAL OR FAILURE; TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; REFUSE TO SUBMIT TO CHEMICAL TEST",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_SCHAEFER_JACOB_MATTHEW.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/29/2026",
+        "Reel_File": "reels/mugshot_SCHAEFER_JACOB_MATTHEW.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -130,13 +118,13 @@
     },
     {
       "data": {
-        "Full Name": "BESSONOV, OKSANA MARIE",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
+        "Full Name": "DARMO, KOLU DAISY",
+        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BESSONOV_OKSANA_MARIE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/28/2026",
-        "Reel_File": "reels/mugshot_BESSONOV_OKSANA_MARIE.mp4"
+        "Mugshot_File": "mugshots/mugshot_DARMO_KOLU_DAISY.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/29/2026",
+        "Reel_File": "reels/mugshot_DARMO_KOLU_DAISY.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -144,13 +132,13 @@
     },
     {
       "data": {
-        "Full Name": "SMITH, WILLIAM CHAD",
-        "Charge 1": "OTHER STATE",
+        "Full Name": "GOODMAN, LATEEBA MANDRELL",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SMITH_WILLIAM_CHAD.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/28/2026",
-        "Reel_File": "reels/mugshot_SMITH_WILLIAM_CHAD.mp4"
+        "Mugshot_File": "mugshots/mugshot_GOODMAN_LATEEBA_MANDRELL.jpg",
+        "Severity": "",
+        "Booking_Date": "10/29/2026",
+        "Reel_File": "reels/mugshot_GOODMAN_LATEEBA_MANDRELL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -158,13 +146,13 @@
     },
     {
       "data": {
-        "Full Name": "HARRINGTON, BRANDON JAY",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HARRINGTON_BRANDON_JAY.jpg",
+        "Full Name": "DUFFY, DAVONTE STEFON",
+        "Charge 1": "TRESPASS-OCCUPY/ENTER DWELLING/LOCKED/POSTED BUILD",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DUFFY_DAVONTE_STEFON.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/28/2026",
-        "Reel_File": "reels/mugshot_HARRINGTON_BRANDON_JAY.mp4"
+        "Booking_Date": "10/29/2026",
+        "Reel_File": "reels/mugshot_DUFFY_DAVONTE_STEFON.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -172,31 +160,17 @@
     },
     {
       "data": {
-        "Full Name": "MCGHAW, EDWARD EARL JR",
-        "Charge 1": "OTHER STATE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MCGHAW_EDWARD_EARL_JR.jpg",
+        "Full Name": "WATSON, MICHAEL LOUIS",
+        "Charge 1": "OTHER COUNTY/FELONY; TRANSIT CRIME - ENGAGE IN DISORDERLY CONDUCT",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_WATSON_MICHAEL_LOUIS.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/28/2026",
-        "Reel_File": "reels/mugshot_MCGHAW_EDWARD_EARL_JR.mp4"
+        "Booking_Date": "10/29/2026",
+        "Reel_File": "reels/mugshot_WATSON_MICHAEL_LOUIS.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 12
-    },
-    {
-      "data": {
-        "Full Name": "CAMPBELL, KEEWAN DEANTE",
-        "Charge 1": "DRUGS - 5TH DEG",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CAMPBELL_KEEWAN_DEANTE.jpg",
-        "Severity": "",
-        "Booking_Date": "10/28/2026",
-        "Reel_File": "reels/mugshot_CAMPBELL_KEEWAN_DEANTE.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 13
     }
   ]
 }
