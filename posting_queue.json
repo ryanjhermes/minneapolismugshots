@@ -1,37 +1,8 @@
 {
-  "created_at": "2026-10-29T05:32:11.641881-05:00",
+  "created_at": "2026-10-30T05:34:15.716905-05:00",
   "total_inmates": 12,
-  "posted_count": 4,
+  "posted_count": 2,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "ALOJADO, ANTHONY ROMAINE",
-        "Charge 1": "OTHER COUNTY/FELONY; OTHER COUNTY/GM & MISD",
-        "Bail": "$2,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ALOJADO_ANTHONY_ROMAINE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/28/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-28T13:19:54.482605-05:00",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "YANG, MINU",
-        "Charge 1": "BRINGING CONTRABAND INTO A STATE PRISON",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_YANG_MINU.jpg",
-        "Severity": "",
-        "Booking_Date": "10/28/2026",
-        "Description": "The 28-year-old worked as a corrections officer at MCF-Lino Lakes.",
-        "Story": "A Minnesota Department of Corrections officer has been charged with trying to smuggle drugs into a state prison.\n\nMinu Yang, 28, of St. Paul, is charged with bringing contraband into a state prison, with charges filed in Ramsey County saying the prison in question is MCF-Lino Lakes.\n\nPer the complaint, Yang allegedly conspired with an inmate and the inmate’s mother to smuggle drugs into the prison, with Yang allegedly agreeing to receive the drugs through mail delivered to his home.\n\n“Officers learned that the drugs would be soaked into nine sheets of beading paper and Defendant would be bringing them to the facility on October 26, 2026,” the complaint says, with the information coming via recorded phone calls between the inmate and his mother.\n\nWhen Yang arrived at the prison on Oct. 26, he was arrested after going through security, with officers finding nine sheets of beading paper on him.\n\nDuring interview, Yang allegedly admitted that an inmate recruited him to pick up the drugs and bring them into the prison, saying he had been offered $2,000 for the job.\n\nHe continued to say he would coordinate with the inmate’s mother, who acted as a go-between with Yang and the inmate.\n\nThe drugs in question are still being tested.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-minnesota-corrections-officer-tried-to-smuggle-drugs-into-state-prison-for-inmate"
-      },
-      "posted": true,
-      "posted_at": "2026-10-28T18:09:02.445009-05:00"
-    },
     {
       "data": {
         "Full Name": "HUMPHREY, MYQUENTIN MICHAEL DONALD",
@@ -39,12 +10,11 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_HUMPHREY_MYQUENTIN_MICHAEL_DONALD.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/29/2026",
-        "Reel_File": "reels/mugshot_HUMPHREY_MYQUENTIN_MICHAEL_DONALD.mp4"
+        "Booking_Date": "10/29/2026"
       },
       "posted": true,
       "posted_at": "2026-10-29T13:25:43.122405-05:00",
-      "id": 3
+      "id": 1
     },
     {
       "data": {
@@ -53,22 +23,49 @@
         "Bail": "$0.00 NO BAIL REQUIRED",
         "Mugshot_File": "mugshots/mugshot_WHITFIELD-MOORE_SHALAIYA_MARIE.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/29/2026",
-        "Reel_File": "reels/mugshot_WHITFIELD-MOORE_SHALAIYA_MARIE.mp4"
+        "Booking_Date": "10/29/2026"
       },
       "posted": true,
       "posted_at": "2026-10-29T18:15:29.169596-05:00",
+      "id": 2
+    },
+    {
+      "data": {
+        "Full Name": "MARKLE, DESIREE DEE",
+        "Charge 1": "OTHER STATE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MARKLE_DESIREE_DEE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/30/2026",
+        "Reel_File": "reels/mugshot_MARKLE_DESIREE_DEE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "HAMPTON, BRYAN RAYSHOWN",
+        "Charge 1": "OTHER COUNTY/FELONY",
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HAMPTON_BRYAN_RAYSHOWN.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/30/2026",
+        "Reel_File": "reels/mugshot_HAMPTON_BRYAN_RAYSHOWN.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 4
     },
     {
       "data": {
-        "Full Name": "IBARRA SAAVEDRA, JUAN CARLOS",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_IBARRA_SAAVEDRA_JUAN_CARLOS.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/29/2026",
-        "Reel_File": "reels/mugshot_IBARRA_SAAVEDRA_JUAN_CARLOS.mp4"
+        "Full Name": "GOINS, CHRISTOPHER MICHEAL JR",
+        "Charge 1": "FELON IN POSSESSION OF A FIREARM",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GOINS_CHRISTOPHER_MICHEAL_JR.jpg",
+        "Severity": "",
+        "Booking_Date": "10/30/2026",
+        "Reel_File": "reels/mugshot_GOINS_CHRISTOPHER_MICHEAL_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -76,13 +73,13 @@
     },
     {
       "data": {
-        "Full Name": "SANDLIN, DUSTIN BENNETT",
-        "Charge 1": "PREDATORY OFFENDERS - REGISTRATION REQUIRED; OTHER COUNTY/FELONY",
+        "Full Name": "STURDIVANT, JORDAN EDWARD",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SANDLIN_DUSTIN_BENNETT.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/29/2026",
-        "Reel_File": "reels/mugshot_SANDLIN_DUSTIN_BENNETT.mp4"
+        "Mugshot_File": "mugshots/mugshot_STURDIVANT_JORDAN_EDWARD.jpg",
+        "Severity": "",
+        "Booking_Date": "10/30/2026",
+        "Reel_File": "reels/mugshot_STURDIVANT_JORDAN_EDWARD.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -90,13 +87,13 @@
     },
     {
       "data": {
-        "Full Name": "GAFFNEY, OLIVIA KATHRYN",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER; OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
+        "Full Name": "ROCCO, JOSIAH ZHAMIQUE",
+        "Charge 1": "DRUGS - 5TH DEG",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GAFFNEY_OLIVIA_KATHRYN.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/29/2026",
-        "Reel_File": "reels/mugshot_GAFFNEY_OLIVIA_KATHRYN.mp4"
+        "Mugshot_File": "mugshots/mugshot_ROCCO_JOSIAH_ZHAMIQUE.jpg",
+        "Severity": "",
+        "Booking_Date": "10/30/2026",
+        "Reel_File": "reels/mugshot_ROCCO_JOSIAH_ZHAMIQUE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -104,13 +101,13 @@
     },
     {
       "data": {
-        "Full Name": "SCHAEFER, JACOB MATTHEW",
-        "Charge 1": "TRAFFIC - DWI - REFUSE TO SUBMIT TO CHEMICAL TEST; BREATH OR TEST REFUSAL OR FAILURE; TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; REFUSE TO SUBMIT TO CHEMICAL TEST",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SCHAEFER_JACOB_MATTHEW.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "10/29/2026",
-        "Reel_File": "reels/mugshot_SCHAEFER_JACOB_MATTHEW.mp4"
+        "Full Name": "CURRY, DOMINIQUE VARDON",
+        "Charge 1": "TRESPASSING - REFUSE TO DEPART OR RETURN WITHIN 1 YEAR OF DEMAND",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CURRY_DOMINIQUE_VARDON.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/30/2026",
+        "Reel_File": "reels/mugshot_CURRY_DOMINIQUE_VARDON.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -118,13 +115,13 @@
     },
     {
       "data": {
-        "Full Name": "DARMO, KOLU DAISY",
-        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DARMO_KOLU_DAISY.jpg",
+        "Full Name": "BISHOP, TAMMY MICHELLE",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BISHOP_TAMMY_MICHELLE.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/29/2026",
-        "Reel_File": "reels/mugshot_DARMO_KOLU_DAISY.mp4"
+        "Booking_Date": "10/30/2026",
+        "Reel_File": "reels/mugshot_BISHOP_TAMMY_MICHELLE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -132,13 +129,13 @@
     },
     {
       "data": {
-        "Full Name": "GOODMAN, LATEEBA MANDRELL",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
+        "Full Name": "CAMPBELL, DAVID EDWARD",
+        "Charge 1": "PREDATORY OFFENDERS - REGISTRATION REQUIRED",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GOODMAN_LATEEBA_MANDRELL.jpg",
+        "Mugshot_File": "mugshots/mugshot_CAMPBELL_DAVID_EDWARD.jpg",
         "Severity": "",
-        "Booking_Date": "10/29/2026",
-        "Reel_File": "reels/mugshot_GOODMAN_LATEEBA_MANDRELL.mp4"
+        "Booking_Date": "10/30/2026",
+        "Reel_File": "reels/mugshot_CAMPBELL_DAVID_EDWARD.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -146,13 +143,13 @@
     },
     {
       "data": {
-        "Full Name": "DUFFY, DAVONTE STEFON",
-        "Charge 1": "TRESPASS-OCCUPY/ENTER DWELLING/LOCKED/POSTED BUILD",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DUFFY_DAVONTE_STEFON.jpg",
+        "Full Name": "LALA LALA, WILSON WILFRIDO",
+        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_LALA_LALA_WILSON_WILFRIDO.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/29/2026",
-        "Reel_File": "reels/mugshot_DUFFY_DAVONTE_STEFON.mp4"
+        "Booking_Date": "10/30/2026",
+        "Reel_File": "reels/mugshot_LALA_LALA_WILSON_WILFRIDO.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -160,13 +157,13 @@
     },
     {
       "data": {
-        "Full Name": "WATSON, MICHAEL LOUIS",
-        "Charge 1": "OTHER COUNTY/FELONY; TRANSIT CRIME - ENGAGE IN DISORDERLY CONDUCT",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_WATSON_MICHAEL_LOUIS.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/29/2026",
-        "Reel_File": "reels/mugshot_WATSON_MICHAEL_LOUIS.mp4"
+        "Full Name": "RIVERA FIGUEROA, MICHAEL FABRICIO",
+        "Charge 1": "BURGLARY",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_RIVERA_FIGUEROA_MICHAEL_FABRICIO.jpg",
+        "Severity": "",
+        "Booking_Date": "10/30/2026",
+        "Reel_File": "reels/mugshot_RIVERA_FIGUEROA_MICHAEL_FABRICIO.mp4"
       },
       "posted": false,
       "posted_at": null,
