@@ -1,7 +1,7 @@
 {
   "created_at": "2026-10-31T05:08:09.476171-05:00",
   "total_inmates": 13,
-  "posted_count": 4,
+  "posted_count": 5,
   "inmates": [
     {
       "data": {
@@ -66,8 +66,8 @@
         "Booking_Date": "10/31/2026",
         "Reel_File": "reels/mugshot_TAYLOR_KEVIN_ANTONIO.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-31T16:26:55.215777-05:00",
       "id": 5
     },
     {
