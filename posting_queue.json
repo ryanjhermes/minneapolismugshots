@@ -1,34 +1,8 @@
 {
-  "created_at": "2026-10-30T05:34:15.716905-05:00",
-  "total_inmates": 12,
-  "posted_count": 5,
+  "created_at": "2026-10-31T05:08:09.476171-05:00",
+  "total_inmates": 13,
+  "posted_count": 3,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "HUMPHREY, MYQUENTIN MICHAEL DONALD",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH; DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER; DISORDERLY CONDUCT",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HUMPHREY_MYQUENTIN_MICHAEL_DONALD.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/29/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-29T13:25:43.122405-05:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "WHITFIELD-MOORE, SHALAIYA MARIE",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_WHITFIELD-MOORE_SHALAIYA_MARIE.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/29/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-29T18:15:29.169596-05:00",
-      "id": 2
-    },
     {
       "data": {
         "Full Name": "MARKLE, DESIREE DEE",
@@ -36,12 +10,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_MARKLE_DESIREE_DEE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/30/2026",
-        "Reel_File": "reels/mugshot_MARKLE_DESIREE_DEE.mp4"
+        "Booking_Date": "10/30/2026"
       },
       "posted": true,
       "posted_at": "2026-10-30T12:59:43.038382-05:00",
-      "id": 3
+      "id": 1
     },
     {
       "data": {
@@ -50,12 +23,11 @@
         "Bail": "$20,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_HAMPTON_BRYAN_RAYSHOWN.jpg",
         "Severity": "Felony",
-        "Booking_Date": "10/30/2026",
-        "Reel_File": "reels/mugshot_HAMPTON_BRYAN_RAYSHOWN.mp4"
+        "Booking_Date": "10/30/2026"
       },
       "posted": true,
       "posted_at": "2026-10-30T17:14:46.943664-05:00",
-      "id": 4
+      "id": 2
     },
     {
       "data": {
@@ -64,22 +36,49 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_GOINS_CHRISTOPHER_MICHEAL_JR.jpg",
         "Severity": "",
-        "Booking_Date": "10/30/2026",
-        "Reel_File": "reels/mugshot_GOINS_CHRISTOPHER_MICHEAL_JR.mp4"
+        "Booking_Date": "10/30/2026"
       },
       "posted": true,
       "posted_at": "2026-10-30T21:18:03.388021-05:00",
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "BESEMAN, SPENCER ALEXANDER",
+        "Charge 1": "DRIVING AFTER CANCELLATION IPS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BESEMAN_SPENCER_ALEXANDER.jpg",
+        "Severity": "",
+        "Booking_Date": "10/31/2026",
+        "Reel_File": "reels/mugshot_BESEMAN_SPENCER_ALEXANDER.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "TAYLOR, KEVIN ANTONIO",
+        "Charge 1": "DOMESTIC ABUSE NO CONTACT ORDERS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_TAYLOR_KEVIN_ANTONIO.jpg",
+        "Severity": "",
+        "Booking_Date": "10/31/2026",
+        "Reel_File": "reels/mugshot_TAYLOR_KEVIN_ANTONIO.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 5
     },
     {
       "data": {
-        "Full Name": "STURDIVANT, JORDAN EDWARD",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
+        "Full Name": "FREEMAN, JEREMIAH JAMES",
+        "Charge 1": "ASSAULT-5TH DEG-2/MORE PREV CONVICT IN 3 YEARS; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_STURDIVANT_JORDAN_EDWARD.jpg",
-        "Severity": "",
-        "Booking_Date": "10/30/2026",
-        "Reel_File": "reels/mugshot_STURDIVANT_JORDAN_EDWARD.mp4"
+        "Mugshot_File": "mugshots/mugshot_FREEMAN_JEREMIAH_JAMES.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/31/2026",
+        "Reel_File": "reels/mugshot_FREEMAN_JEREMIAH_JAMES.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -87,13 +86,13 @@
     },
     {
       "data": {
-        "Full Name": "ROCCO, JOSIAH ZHAMIQUE",
-        "Charge 1": "DRUGS - 5TH DEG",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ROCCO_JOSIAH_ZHAMIQUE.jpg",
-        "Severity": "",
-        "Booking_Date": "10/30/2026",
-        "Reel_File": "reels/mugshot_ROCCO_JOSIAH_ZHAMIQUE.mp4"
+        "Full Name": "EIYNCK, JUSTIN SCANLAN",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 - NO; DRUGS - 5TH DEG",
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EIYNCK_JUSTIN_SCANLAN.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "10/31/2026",
+        "Reel_File": "reels/mugshot_EIYNCK_JUSTIN_SCANLAN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -101,13 +100,13 @@
     },
     {
       "data": {
-        "Full Name": "CURRY, DOMINIQUE VARDON",
-        "Charge 1": "TRESPASSING - REFUSE TO DEPART OR RETURN WITHIN 1 YEAR OF DEMAND",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CURRY_DOMINIQUE_VARDON.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/30/2026",
-        "Reel_File": "reels/mugshot_CURRY_DOMINIQUE_VARDON.mp4"
+        "Full Name": "FEAZELL, RICO FONTEZ",
+        "Charge 1": "VIOLATION OF A PROTECTION ORDER; VIOLATE NO CONTACT ORDER - WITHIN 10 YEARS OF THE FIRST OF TWO OR MORE CONVICTIONS; DOMESTIC ABUSE; VIOLATES OFP W/IN 10 YEARS OF 2 OR MORE PREVIOUS CONVICTION/ADJ. OF DELINQ.",
+        "Bail": "$150,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_FEAZELL_RICO_FONTEZ.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "10/31/2026",
+        "Reel_File": "reels/mugshot_FEAZELL_RICO_FONTEZ.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -115,13 +114,13 @@
     },
     {
       "data": {
-        "Full Name": "BISHOP, TAMMY MICHELLE",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BISHOP_TAMMY_MICHELLE.jpg",
+        "Full Name": "VEGA CELIS, CHRISTIAN ALEXANDER",
+        "Charge 1": "OBSTRUCT LEGAL PROCESS-LAWFUL EXECUTION LEGAL PROCESS",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_VEGA_CELIS_CHRISTIAN_ALEXANDER.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "10/30/2026",
-        "Reel_File": "reels/mugshot_BISHOP_TAMMY_MICHELLE.mp4"
+        "Booking_Date": "10/31/2026",
+        "Reel_File": "reels/mugshot_VEGA_CELIS_CHRISTIAN_ALEXANDER.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -129,13 +128,13 @@
     },
     {
       "data": {
-        "Full Name": "CAMPBELL, DAVID EDWARD",
-        "Charge 1": "PREDATORY OFFENDERS - REGISTRATION REQUIRED",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CAMPBELL_DAVID_EDWARD.jpg",
-        "Severity": "",
-        "Booking_Date": "10/30/2026",
-        "Reel_File": "reels/mugshot_CAMPBELL_DAVID_EDWARD.mp4"
+        "Full Name": "HOLLENBECK, KODY AUSTIN JACOB",
+        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_HOLLENBECK_KODY_AUSTIN_JACOB.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "10/31/2026",
+        "Reel_File": "reels/mugshot_HOLLENBECK_KODY_AUSTIN_JACOB.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -143,13 +142,13 @@
     },
     {
       "data": {
-        "Full Name": "LALA LALA, WILSON WILFRIDO",
-        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_LALA_LALA_WILSON_WILFRIDO.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "10/30/2026",
-        "Reel_File": "reels/mugshot_LALA_LALA_WILSON_WILFRIDO.mp4"
+        "Full Name": "MAGNELY, JAY WESLEY",
+        "Charge 1": "RESTRICTED DL VIOLATION",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MAGNELY_JAY_WESLEY.jpg",
+        "Severity": "",
+        "Booking_Date": "10/31/2026",
+        "Reel_File": "reels/mugshot_MAGNELY_JAY_WESLEY.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -157,17 +156,29 @@
     },
     {
       "data": {
-        "Full Name": "RIVERA FIGUEROA, MICHAEL FABRICIO",
-        "Charge 1": "BURGLARY",
+        "Full Name": "BOWKER, IRENECHERYL ELIZABETH",
+        "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_RIVERA_FIGUEROA_MICHAEL_FABRICIO.jpg",
-        "Severity": "",
-        "Booking_Date": "10/30/2026",
-        "Reel_File": "reels/mugshot_RIVERA_FIGUEROA_MICHAEL_FABRICIO.mp4"
+        "Mugshot_File": "mugshots/mugshot_BOWKER_IRENECHERYL_ELIZABETH.jpg",
+        "Booking_Date": "10/31/2026",
+        "Reel_File": "reels/mugshot_BOWKER_IRENECHERYL_ELIZABETH.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 12
+    },
+    {
+      "data": {
+        "Full Name": "BANKS, ANTAYSHA LYNN",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_BANKS_ANTAYSHA_LYNN.jpg",
+        "Booking_Date": "10/31/2026",
+        "Reel_File": "reels/mugshot_BANKS_ANTAYSHA_LYNN.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 13
     }
   ]
 }
