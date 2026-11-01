@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-01T04:53:17.837522-06:00",
   "total_inmates": 13,
-  "posted_count": 4,
+  "posted_count": 5,
   "inmates": [
     {
       "data": {
@@ -66,8 +66,8 @@
         "Booking_Date": "11/01/2026",
         "Reel_File": "reels/mugshot_THOMAS_MICHELLE_LYNNE.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-01T15:58:39.911086-06:00",
       "id": 5
     },
     {
