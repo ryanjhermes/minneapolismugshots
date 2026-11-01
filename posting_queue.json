@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-01T04:53:17.837522-06:00",
   "total_inmates": 13,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "data": {
@@ -52,8 +52,8 @@
         "Booking_Date": "11/01/2026",
         "Reel_File": "reels/mugshot_ENGLISH_SCRIMSHAW_MIRIAM_RUTH.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-01T11:56:07.208173-06:00",
       "id": 4
     },
     {
