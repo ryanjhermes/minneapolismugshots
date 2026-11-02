@@ -1,47 +1,8 @@
 {
-  "created_at": "2026-11-01T04:53:17.837522-06:00",
+  "created_at": "2026-11-02T05:46:30.973408-06:00",
   "total_inmates": 13,
-  "posted_count": 6,
+  "posted_count": 3,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "BESEMAN, SPENCER ALEXANDER",
-        "Charge 1": "DRIVING AFTER CANCELLATION IPS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BESEMAN_SPENCER_ALEXANDER.jpg",
-        "Severity": "",
-        "Booking_Date": "10/31/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-31T12:14:07.143897-05:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "TAYLOR, KEVIN ANTONIO",
-        "Charge 1": "DOMESTIC ABUSE NO CONTACT ORDERS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_TAYLOR_KEVIN_ANTONIO.jpg",
-        "Severity": "",
-        "Booking_Date": "10/31/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-31T16:26:55.215777-05:00",
-      "id": 2
-    },
-    {
-      "data": {
-        "Full Name": "FREEMAN, JEREMIAH JAMES",
-        "Charge 1": "ASSAULT-5TH DEG-2/MORE PREV CONVICT IN 3 YEARS; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FREEMAN_JEREMIAH_JAMES.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "10/31/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-10-31T20:01:44.443918-05:00",
-      "id": 3
-    },
     {
       "data": {
         "Full Name": "ENGLISH SCRIMSHAW, MIRIAM RUTH",
@@ -49,12 +10,11 @@
         "Bail": "$0.00 NO BAIL REQUIRED",
         "Mugshot_File": "mugshots/mugshot_ENGLISH_SCRIMSHAW_MIRIAM_RUTH.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/01/2026",
-        "Reel_File": "reels/mugshot_ENGLISH_SCRIMSHAW_MIRIAM_RUTH.mp4"
+        "Booking_Date": "11/01/2026"
       },
       "posted": true,
       "posted_at": "2026-11-01T11:56:07.208173-06:00",
-      "id": 4
+      "id": 1
     },
     {
       "data": {
@@ -63,12 +23,11 @@
         "Bail": "$0.00 NO BAIL REQUIRED",
         "Mugshot_File": "mugshots/mugshot_THOMAS_MICHELLE_LYNNE.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/01/2026",
-        "Reel_File": "reels/mugshot_THOMAS_MICHELLE_LYNNE.mp4"
+        "Booking_Date": "11/01/2026"
       },
       "posted": true,
       "posted_at": "2026-11-01T15:58:39.911086-06:00",
-      "id": 5
+      "id": 2
     },
     {
       "data": {
@@ -77,22 +36,63 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_HARRIS_SARAH_AMINA.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/01/2026",
-        "Reel_File": "reels/mugshot_HARRIS_SARAH_AMINA.mp4"
+        "Booking_Date": "11/01/2026"
       },
       "posted": true,
       "posted_at": "2026-11-01T19:29:15.021321-06:00",
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "ADAN, MOHAMED WARSAME",
+        "Charge 1": "RECEIVING/CONCEALING STOLEN PROPERTY; DRUGS - 5TH DEG",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ADAN_MOHAMED_WARSAME.jpg",
+        "Severity": "",
+        "Booking_Date": "11/02/2026",
+        "Reel_File": "reels/mugshot_ADAN_MOHAMED_WARSAME.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "HOULE, ARIANNA MARIE",
+        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_HOULE_ARIANNA_MARIE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/02/2026",
+        "Reel_File": "reels/mugshot_HOULE_ARIANNA_MARIE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "WILLIAMS, MARQUITA LYNN",
+        "Charge 1": "DRUGS - 1ST DEGREE - POSSESS 50 GRAMS OR MORE - COCAINE OR METHAMPHETAMINE",
+        "Bail": "$200,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WILLIAMS_MARQUITA_LYNN.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/02/2026",
+        "Reel_File": "reels/mugshot_WILLIAMS_MARQUITA_LYNN.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 6
     },
     {
       "data": {
-        "Full Name": "EVANS, ADAM LADALE",
-        "Charge 1": "DOMESTIC ASSAULT BY STRANGULATION",
+        "Full Name": "HUDSON, CHRISTOPHER MICHAEL",
+        "Charge 1": "DEPARTMENT OF CORRECTIONS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_EVANS_ADAM_LADALE.jpg",
-        "Severity": "",
-        "Booking_Date": "11/01/2026",
-        "Reel_File": "reels/mugshot_EVANS_ADAM_LADALE.mp4"
+        "Mugshot_File": "mugshots/mugshot_HUDSON_CHRISTOPHER_MICHAEL.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/02/2026",
+        "Reel_File": "reels/mugshot_HUDSON_CHRISTOPHER_MICHAEL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -100,13 +100,13 @@
     },
     {
       "data": {
-        "Full Name": "PAYNE, CALEB DREW",
-        "Charge 1": "DRUGS - 5TH DEG",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_PAYNE_CALEB_DREW.jpg",
-        "Severity": "",
-        "Booking_Date": "11/01/2026",
-        "Reel_File": "reels/mugshot_PAYNE_CALEB_DREW.mp4"
+        "Full Name": "STRONG, NORMAN RICHARD",
+        "Charge 1": "CRIMINAL SEXUAL CONDUCT - 5TH DEGREE - MASTURBATION/LEWD EXHIBITION - UNDER 16 PRESENT; INDECENT EXPOSURE/LEWDNESSOR PROCURE ANOTHER TO EXPOSE IN PRESENCE OF MINOR UNDER 16; INDECENT EXPOSURE/LEWDNESS OR PROCURE ANOTHER TO EXPOSE AND PREVIOUS CONVICTION",
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_STRONG_NORMAN_RICHARD.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/02/2026",
+        "Reel_File": "reels/mugshot_STRONG_NORMAN_RICHARD.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -114,13 +114,13 @@
     },
     {
       "data": {
-        "Full Name": "FARIAS ESPINEL, YANDRI JOSELITO",
-        "Charge 1": "THREATS OF VIOLENCE - RECKLESS DISREGARD RISK",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_FARIAS_ESPINEL_YANDRI_JOSELITO.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/01/2026",
-        "Reel_File": "reels/mugshot_FARIAS_ESPINEL_YANDRI_JOSELITO.mp4"
+        "Full Name": "MULLINS, CASHMIR MONIQUE",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_MULLINS_CASHMIR_MONIQUE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/02/2026",
+        "Reel_File": "reels/mugshot_MULLINS_CASHMIR_MONIQUE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -128,13 +128,13 @@
     },
     {
       "data": {
-        "Full Name": "LEVERTY, DEMERIUS GAVIN",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Full Name": "MENGEL, BRANDON CHAVON",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEVERTY_DEMERIUS_GAVIN.jpg",
+        "Mugshot_File": "mugshots/mugshot_MENGEL_BRANDON_CHAVON.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/01/2026",
-        "Reel_File": "reels/mugshot_LEVERTY_DEMERIUS_GAVIN.mp4"
+        "Booking_Date": "11/02/2026",
+        "Reel_File": "reels/mugshot_MENGEL_BRANDON_CHAVON.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -142,13 +142,13 @@
     },
     {
       "data": {
-        "Full Name": "TOLRUD, AMBER DAWN",
-        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_TOLRUD_AMBER_DAWN.jpg",
+        "Full Name": "BORN, KELLSIE RAE",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_BORN_KELLSIE_RAE.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/01/2026",
-        "Reel_File": "reels/mugshot_TOLRUD_AMBER_DAWN.mp4"
+        "Booking_Date": "11/02/2026",
+        "Reel_File": "reels/mugshot_BORN_KELLSIE_RAE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -156,12 +156,12 @@
     },
     {
       "data": {
-        "Full Name": "CLOUD-GRANGER, MARCELL ROBERT",
+        "Full Name": "DAGANE, IDLE RASHID",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CLOUD-GRANGER_MARCELL_ROBERT.jpg",
-        "Booking_Date": "11/01/2026",
-        "Reel_File": "reels/mugshot_CLOUD-GRANGER_MARCELL_ROBERT.mp4"
+        "Mugshot_File": "mugshots/mugshot_DAGANE_IDLE_RASHID.jpg",
+        "Booking_Date": "11/02/2026",
+        "Reel_File": "reels/mugshot_DAGANE_IDLE_RASHID.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -169,12 +169,12 @@
     },
     {
       "data": {
-        "Full Name": "HAMPTON, ROBERT MALAKAI",
+        "Full Name": "IHRKE, JAMES MATTHEW",
         "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HAMPTON_ROBERT_MALAKAI.jpg",
-        "Booking_Date": "11/01/2026",
-        "Reel_File": "reels/mugshot_HAMPTON_ROBERT_MALAKAI.mp4"
+        "Mugshot_File": "mugshots/mugshot_IHRKE_JAMES_MATTHEW.jpg",
+        "Booking_Date": "11/02/2026",
+        "Reel_File": "reels/mugshot_IHRKE_JAMES_MATTHEW.mp4"
       },
       "posted": false,
       "posted_at": null,
