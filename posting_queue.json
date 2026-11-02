@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-02T05:46:30.973408-06:00",
   "total_inmates": 13,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "data": {
@@ -52,8 +52,8 @@
         "Booking_Date": "11/02/2026",
         "Reel_File": "reels/mugshot_ADAN_MOHAMED_WARSAME.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-02T15:41:29.017588-06:00",
       "id": 4
     },
     {
