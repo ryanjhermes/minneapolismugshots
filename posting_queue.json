@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-02T05:46:30.973408-06:00",
   "total_inmates": 13,
-  "posted_count": 4,
+  "posted_count": 5,
   "inmates": [
     {
       "data": {
@@ -66,8 +66,8 @@
         "Booking_Date": "11/02/2026",
         "Reel_File": "reels/mugshot_HOULE_ARIANNA_MARIE.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-02T21:27:40.517383-06:00",
       "id": 5
     },
     {
