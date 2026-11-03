@@ -1,6 +1,6 @@
 {
   "created_at": "2026-11-03T05:31:36.149847-06:00",
-  "total_inmates": 12,
+  "total_inmates": 13,
   "posted_count": 3,
   "inmates": [
     {
@@ -42,6 +42,22 @@
       "posted": true,
       "posted_at": "2026-11-03T13:28:03.440450-06:00",
       "id": 3
+    },
+    {
+      "id": 13,
+      "data": {
+        "Full Name": "EDWARDS, JAQUAN",
+        "Charge 1": "NON-PREMEDITATED SECOND-DEGREE MURDER",
+        "Bail": "",
+        "Mugshot_File": "mugshots/mugshot_EDWARDS_JAQUAN.jpg",
+        "Severity": "",
+        "Booking_Date": "11/03/2026",
+        "Description": "The 30-year-old suspect was seen spitting on the platform shortly before the shooting.",
+        "Story": "A man has been charged with murder in the fatal shooting of a fellow passenger on a Green Line light rail train in Minneapolis on Oct. 3.\n\nJaquan Edwards, 30, of unknown address, is charged with non-premeditated second-degree murder in the killing of Joseph Denny Nezperce, 36, of South St. Paul .\n\nNezperce was shot on board a Green line train traveling from Stadium Village in Minneapolis towards St. Paul at around 9 p.m. on Saturday, Oct. 3, and died at the scene despite lifesaving efforts by responders at Westgate station.\n\nThe criminal complaint against Edwards reveals that Nezperce had been shot in the neck, with surveillance cameras on the train showing Edwards enter the carriage at U.S. Bank Stadium station at 8:48 p.m. and sitting at the rearmost seat, with Nezperce entering at the East Bank Stadium nine minutes later.\n\nBetween the Stadium Village and Prospect Park stations, the complaint says “some dialogue was exchanged” between Edwards and Nezperce, culminating with Edwards firing three shots from his handgun at Nezperce before exiting at Prospect Park.\n\nSurveillance footage had captured Edwards in several locations in downtown Minneapolis prior to getting on the train, and he was also seen “spitting voluminously onto the concrete platform prior to entering the train at 8:48 p.m.”\n\nThe saliva was collected by Minneapolis Police Department for DNA evidence. Investigators also learned Edwards had swiped a “Go To” Metro Transit card prior to riding a bus shortly after he left the train.\n\nMetro Transit were able to provide data of the “Go To” card belonging to the suspect, with investigators finding Edwards using a bus in the Maplewood area, where he had visited a HyVee store and entered an Advance Auto Parts store.\n\nPolice spoke with security at HyVee, with one worker recognizing the man from surveillance as someone who works at Advance Auto Parts, with employee records identifying him as Edwards.\n\nWhite Bear Lake PD stopped Edwards driving in the city in a vehicle registered to his mother, with officers finding him smoking a wood-tipped cigar. A witness later confirmed that Edwards lives with his mother in Maplewood.\n\nOn Oct. 20, police conducted a garbage pull at Edwards’ mother’s home, recovering six cigar wood mouthpieces. They were tested for DNA, which matched the saliva collected outside U.S. Bank Stadium Station shortly prior to the shooting.",
+        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-dna-from-spit-led-police-to-suspect-in-green-line-train-killing"
+      },
+      "posted": false,
+      "posted_at": null
     },
     {
       "data": {
