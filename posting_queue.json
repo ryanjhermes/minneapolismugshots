@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-03T05:31:36.149847-06:00",
   "total_inmates": 12,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "data": {
@@ -39,8 +39,8 @@
         "Booking_Date": "11/03/2026",
         "Reel_File": "reels/mugshot_ROBINSON_KIMBERLY_RENEE.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-03T13:28:03.440450-06:00",
       "id": 3
     },
     {
