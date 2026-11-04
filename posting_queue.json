@@ -1,34 +1,8 @@
 {
-  "created_at": "2026-11-03T05:31:36.149847-06:00",
-  "total_inmates": 13,
-  "posted_count": 4,
+  "created_at": "2026-11-04T05:42:24.908877-06:00",
+  "total_inmates": 12,
+  "posted_count": 2,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "ADAN, MOHAMED WARSAME",
-        "Charge 1": "RECEIVING/CONCEALING STOLEN PROPERTY; DRUGS - 5TH DEG",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ADAN_MOHAMED_WARSAME.jpg",
-        "Severity": "",
-        "Booking_Date": "11/02/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-02T15:41:29.017588-06:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "HOULE, ARIANNA MARIE",
-        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_HOULE_ARIANNA_MARIE.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/02/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-02T21:27:40.517383-06:00",
-      "id": 2
-    },
     {
       "data": {
         "Full Name": "ROBINSON, KIMBERLY RENEE",
@@ -36,15 +10,14 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_ROBINSON_KIMBERLY_RENEE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/03/2026",
-        "Reel_File": "reels/mugshot_ROBINSON_KIMBERLY_RENEE.mp4"
+        "Booking_Date": "11/03/2026"
       },
       "posted": true,
       "posted_at": "2026-11-03T13:28:03.440450-06:00",
-      "id": 3
+      "id": 1
     },
     {
-      "id": 13,
+      "id": 2,
       "data": {
         "Full Name": "EDWARDS, JAQUAN",
         "Charge 1": "NON-PREMEDITATED SECOND-DEGREE MURDER",
@@ -61,13 +34,27 @@
     },
     {
       "data": {
-        "Full Name": "BUCHANAN, DEONDRA LAVONTA",
-        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
-        "Bail": "$100.00 CASH BAIL W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BUCHANAN_DEONDRA_LAVONTA.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/03/2026",
-        "Reel_File": "reels/mugshot_BUCHANAN_DEONDRA_LAVONTA.mp4"
+        "Full Name": "MITCHEM, MICHAEL GEORGE JR",
+        "Charge 1": "OTHER COUNTY/FELONY",
+        "Bail": "$1,000.00 CASH BAIL W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MITCHEM_MICHAEL_GEORGE_JR.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/04/2026",
+        "Reel_File": "reels/mugshot_MITCHEM_MICHAEL_GEORGE_JR.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "BABCOCK, KARA NICOLE",
+        "Charge 1": "OTHER COUNTY/FELONY; AGGRAVATED ROBBERY-2ND DEGREE; SIMPLE ROBBERY",
+        "Bail": "$50,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BABCOCK_KARA_NICOLE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/04/2026",
+        "Reel_File": "reels/mugshot_BABCOCK_KARA_NICOLE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -75,13 +62,13 @@
     },
     {
       "data": {
-        "Full Name": "WORKMAN, DAVIAN LAQUAN RAINEER ROBER",
-        "Charge 1": "WEAPONS-CARRY WEAPONS WITHOUT PERMIT; CONTROLLED SUBSTANCE/NARCOTICS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WORKMAN_DAVIAN_LAQUAN_RAINEER_ROBER.jpg",
-        "Severity": "",
-        "Booking_Date": "11/03/2026",
-        "Reel_File": "reels/mugshot_WORKMAN_DAVIAN_LAQUAN_RAINEER_ROBER.mp4"
+        "Full Name": "DUNN, DEMARLO RAPHAEL",
+        "Charge 1": "THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT; OBSTRUCT LEGAL PROCESS-LAWFUL EXECUTION LEGAL PROCESS; DISORDERLY CONDUCT - OFFENSIVE/ABUSIVE/BOISTEROUS/NOISY/OBSCENE",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DUNN_DEMARLO_RAPHAEL.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/04/2026",
+        "Reel_File": "reels/mugshot_DUNN_DEMARLO_RAPHAEL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -89,13 +76,13 @@
     },
     {
       "data": {
-        "Full Name": "RILEY, KEYMONDRE ANTHONY",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
+        "Full Name": "ACOSTA, MARISOL",
+        "Charge 1": "OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_RILEY_KEYMONDRE_ANTHONY.jpg",
+        "Mugshot_File": "mugshots/mugshot_ACOSTA_MARISOL.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/03/2026",
-        "Reel_File": "reels/mugshot_RILEY_KEYMONDRE_ANTHONY.mp4"
+        "Booking_Date": "11/04/2026",
+        "Reel_File": "reels/mugshot_ACOSTA_MARISOL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -103,13 +90,13 @@
     },
     {
       "data": {
-        "Full Name": "PAYNE, NADARANGUA NATAMBUA DARRION",
-        "Charge 1": "THREATS OF VIOLENCE - RECKLESS DISREGARD RISK",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PAYNE_NADARANGUA_NATAMBUA_DARRION.jpg",
+        "Full Name": "RULE, ANTONIO CORTEZ JR",
+        "Charge 1": "FLEEING A PEACE OFFICER IN A MOTOR VEHICLE",
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_RULE_ANTONIO_CORTEZ_JR.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/03/2026",
-        "Reel_File": "reels/mugshot_PAYNE_NADARANGUA_NATAMBUA_DARRION.mp4"
+        "Booking_Date": "11/04/2026",
+        "Reel_File": "reels/mugshot_RULE_ANTONIO_CORTEZ_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -117,13 +104,13 @@
     },
     {
       "data": {
-        "Full Name": "MATLOCK, DANON ORVELL",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS; TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; TRAFFIC - CARELESS DRIVING - OPERATE ANY VEHICLE CARELESSLY ON STREET OR HIGHWAY",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MATLOCK_DANON_ORVELL.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/03/2026",
-        "Reel_File": "reels/mugshot_MATLOCK_DANON_ORVELL.mp4"
+        "Full Name": "MELENDEZ-SANCHEZ, VICTOR HUGO",
+        "Charge 1": "PREDATORY OFFENDER - KNOWINGLY COMMITS ACT OR FAILS TO FULFILL REGISTRATION REQUIREMENT; POSSESSION OF BURGLARY OR THEFT TOOLS; DEPARTMENT OF CORRECTIONS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MELENDEZ-SANCHEZ_VICTOR_HUGO.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/04/2026",
+        "Reel_File": "reels/mugshot_MELENDEZ-SANCHEZ_VICTOR_HUGO.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -131,13 +118,13 @@
     },
     {
       "data": {
-        "Full Name": "JACKSON, SELENA KAY",
-        "Charge 1": "ASSAULT 4TH DEGREE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JACKSON_SELENA_KAY.jpg",
-        "Severity": "",
-        "Booking_Date": "11/03/2026",
-        "Reel_File": "reels/mugshot_JACKSON_SELENA_KAY.mp4"
+        "Full Name": "WELLS, RAHSAAN MIGEL JR",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WELLS_RAHSAAN_MIGEL_JR.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/04/2026",
+        "Reel_File": "reels/mugshot_WELLS_RAHSAAN_MIGEL_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -145,13 +132,13 @@
     },
     {
       "data": {
-        "Full Name": "MUHAMMAD, HIYAH KAREEMA",
-        "Charge 1": "DRUGS - 5TH DEG",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MUHAMMAD_HIYAH_KAREEMA.jpg",
-        "Severity": "",
-        "Booking_Date": "11/03/2026",
-        "Reel_File": "reels/mugshot_MUHAMMAD_HIYAH_KAREEMA.mp4"
+        "Full Name": "WARE, DAJOUR MONTELLE",
+        "Charge 1": "OTHER COUNTY/GM & MISD",
+        "Bail": "$1,800.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WARE_DAJOUR_MONTELLE.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/04/2026",
+        "Reel_File": "reels/mugshot_WARE_DAJOUR_MONTELLE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -159,13 +146,13 @@
     },
     {
       "data": {
-        "Full Name": "JONES, JENNIFER TOI ANTOINETTE",
-        "Charge 1": "FLEEING A POLICE OFFICER IN MV",
+        "Full Name": "CORDELL, DIARA LADELL",
+        "Charge 1": "DOMESTIC ASSAULT",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JONES_JENNIFER_TOI_ANTOINETTE.jpg",
+        "Mugshot_File": "mugshots/mugshot_CORDELL_DIARA_LADELL.jpg",
         "Severity": "",
-        "Booking_Date": "11/03/2026",
-        "Reel_File": "reels/mugshot_JONES_JENNIFER_TOI_ANTOINETTE.mp4"
+        "Booking_Date": "11/04/2026",
+        "Reel_File": "reels/mugshot_CORDELL_DIARA_LADELL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -173,13 +160,13 @@
     },
     {
       "data": {
-        "Full Name": "ULLOA, LAUDIEL ANARIBA",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Full Name": "JACKSON, JERMESHA LASHEA",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ULLOA_LAUDIEL_ANARIBA.jpg",
+        "Mugshot_File": "mugshots/mugshot_JACKSON_JERMESHA_LASHEA.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/03/2026",
-        "Reel_File": "reels/mugshot_ULLOA_LAUDIEL_ANARIBA.mp4"
+        "Booking_Date": "11/04/2026",
+        "Reel_File": "reels/mugshot_JACKSON_JERMESHA_LASHEA.mp4"
       },
       "posted": false,
       "posted_at": null,
