@@ -1,37 +1,8 @@
 {
-  "created_at": "2026-11-04T05:42:24.908877-06:00",
+  "created_at": "2026-11-05T05:43:01.889129-06:00",
   "total_inmates": 12,
-  "posted_count": 4,
+  "posted_count": 2,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "ROBINSON, KIMBERLY RENEE",
-        "Charge 1": "THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT; OTHER COUNTY/FELONY",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ROBINSON_KIMBERLY_RENEE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/03/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-03T13:28:03.440450-06:00",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "EDWARDS, JAQUAN",
-        "Charge 1": "NON-PREMEDITATED SECOND-DEGREE MURDER",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_EDWARDS_JAQUAN.jpg",
-        "Severity": "",
-        "Booking_Date": "11/03/2026",
-        "Description": "The 30-year-old suspect was seen spitting on the platform shortly before the shooting.",
-        "Story": "A man has been charged with murder in the fatal shooting of a fellow passenger on a Green Line light rail train in Minneapolis on Oct. 3.\n\nJaquan Edwards, 30, of unknown address, is charged with non-premeditated second-degree murder in the killing of Joseph Denny Nezperce, 36, of South St. Paul .\n\nNezperce was shot on board a Green line train traveling from Stadium Village in Minneapolis towards St. Paul at around 9 p.m. on Saturday, Oct. 3, and died at the scene despite lifesaving efforts by responders at Westgate station.\n\nThe criminal complaint against Edwards reveals that Nezperce had been shot in the neck, with surveillance cameras on the train showing Edwards enter the carriage at U.S. Bank Stadium station at 8:48 p.m. and sitting at the rearmost seat, with Nezperce entering at the East Bank Stadium nine minutes later.\n\nBetween the Stadium Village and Prospect Park stations, the complaint says “some dialogue was exchanged” between Edwards and Nezperce, culminating with Edwards firing three shots from his handgun at Nezperce before exiting at Prospect Park.\n\nSurveillance footage had captured Edwards in several locations in downtown Minneapolis prior to getting on the train, and he was also seen “spitting voluminously onto the concrete platform prior to entering the train at 8:48 p.m.”\n\nThe saliva was collected by Minneapolis Police Department for DNA evidence. Investigators also learned Edwards had swiped a “Go To” Metro Transit card prior to riding a bus shortly after he left the train.\n\nMetro Transit were able to provide data of the “Go To” card belonging to the suspect, with investigators finding Edwards using a bus in the Maplewood area, where he had visited a HyVee store and entered an Advance Auto Parts store.\n\nPolice spoke with security at HyVee, with one worker recognizing the man from surveillance as someone who works at Advance Auto Parts, with employee records identifying him as Edwards.\n\nWhite Bear Lake PD stopped Edwards driving in the city in a vehicle registered to his mother, with officers finding him smoking a wood-tipped cigar. A witness later confirmed that Edwards lives with his mother in Maplewood.\n\nOn Oct. 20, police conducted a garbage pull at Edwards’ mother’s home, recovering six cigar wood mouthpieces. They were tested for DNA, which matched the saliva collected outside U.S. Bank Stadium Station shortly prior to the shooting.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/charges-dna-from-spit-led-police-to-suspect-in-green-line-train-killing"
-      },
-      "posted": true,
-      "posted_at": "2026-11-03T18:35:24.323585-06:00"
-    },
     {
       "data": {
         "Full Name": "MITCHEM, MICHAEL GEORGE JR",
@@ -39,12 +10,11 @@
         "Bail": "$1,000.00 CASH BAIL W/O CR",
         "Mugshot_File": "mugshots/mugshot_MITCHEM_MICHAEL_GEORGE_JR.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/04/2026",
-        "Reel_File": "reels/mugshot_MITCHEM_MICHAEL_GEORGE_JR.mp4"
+        "Booking_Date": "11/04/2026"
       },
       "posted": true,
       "posted_at": "2026-11-04T13:42:18.375364-06:00",
-      "id": 3
+      "id": 1
     },
     {
       "data": {
@@ -53,22 +23,49 @@
         "Bail": "$50,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_BABCOCK_KARA_NICOLE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/04/2026",
-        "Reel_File": "reels/mugshot_BABCOCK_KARA_NICOLE.mp4"
+        "Booking_Date": "11/04/2026"
       },
       "posted": true,
       "posted_at": "2026-11-04T18:52:53.649167-06:00",
+      "id": 2
+    },
+    {
+      "data": {
+        "Full Name": "POLLARD, ALONZO DARNELL",
+        "Charge 1": "DOMESTIC ABUSE NO CONTACT ORDERS; DOMESTIC ASSAULT - BY STRANGULATION",
+        "Bail": "$60,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_POLLARD_ALONZO_DARNELL.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/05/2026",
+        "Reel_File": "reels/mugshot_POLLARD_ALONZO_DARNELL.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "FISHER, CHERITA NICOLE",
+        "Charge 1": "OTHER COUNTY/FELONY",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_FISHER_CHERITA_NICOLE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/05/2026",
+        "Reel_File": "reels/mugshot_FISHER_CHERITA_NICOLE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 4
     },
     {
       "data": {
-        "Full Name": "DUNN, DEMARLO RAPHAEL",
-        "Charge 1": "THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT; OBSTRUCT LEGAL PROCESS-LAWFUL EXECUTION LEGAL PROCESS; DISORDERLY CONDUCT - OFFENSIVE/ABUSIVE/BOISTEROUS/NOISY/OBSCENE",
+        "Full Name": "IBRAHIM, LAMMII AFANDI",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DUNN_DEMARLO_RAPHAEL.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/04/2026",
-        "Reel_File": "reels/mugshot_DUNN_DEMARLO_RAPHAEL.mp4"
+        "Mugshot_File": "mugshots/mugshot_IBRAHIM_LAMMII_AFANDI.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/05/2026",
+        "Reel_File": "reels/mugshot_IBRAHIM_LAMMII_AFANDI.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -76,13 +73,13 @@
     },
     {
       "data": {
-        "Full Name": "ACOSTA, MARISOL",
-        "Charge 1": "OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
+        "Full Name": "POWERS, VERQISHA ELIZABETH",
+        "Charge 1": "DOMESTIC ASSAULT",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ACOSTA_MARISOL.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/04/2026",
-        "Reel_File": "reels/mugshot_ACOSTA_MARISOL.mp4"
+        "Mugshot_File": "mugshots/mugshot_POWERS_VERQISHA_ELIZABETH.jpg",
+        "Severity": "",
+        "Booking_Date": "11/05/2026",
+        "Reel_File": "reels/mugshot_POWERS_VERQISHA_ELIZABETH.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -90,13 +87,13 @@
     },
     {
       "data": {
-        "Full Name": "RULE, ANTONIO CORTEZ JR",
-        "Charge 1": "FLEEING A PEACE OFFICER IN A MOTOR VEHICLE",
-        "Bail": "$20,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_RULE_ANTONIO_CORTEZ_JR.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/04/2026",
-        "Reel_File": "reels/mugshot_RULE_ANTONIO_CORTEZ_JR.mp4"
+        "Full Name": "WIECHMAN, KATHERINE ANN",
+        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WIECHMAN_KATHERINE_ANN.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/05/2026",
+        "Reel_File": "reels/mugshot_WIECHMAN_KATHERINE_ANN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -104,13 +101,13 @@
     },
     {
       "data": {
-        "Full Name": "MELENDEZ-SANCHEZ, VICTOR HUGO",
-        "Charge 1": "PREDATORY OFFENDER - KNOWINGLY COMMITS ACT OR FAILS TO FULFILL REGISTRATION REQUIREMENT; POSSESSION OF BURGLARY OR THEFT TOOLS; DEPARTMENT OF CORRECTIONS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MELENDEZ-SANCHEZ_VICTOR_HUGO.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/04/2026",
-        "Reel_File": "reels/mugshot_MELENDEZ-SANCHEZ_VICTOR_HUGO.mp4"
+        "Full Name": "DAHLBERG, DAVID BRANDT",
+        "Charge 1": "TRESPASS-RETURN TO PROPERTY WITHIN ONE YEAR",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DAHLBERG_DAVID_BRANDT.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/05/2026",
+        "Reel_File": "reels/mugshot_DAHLBERG_DAVID_BRANDT.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -118,13 +115,13 @@
     },
     {
       "data": {
-        "Full Name": "WELLS, RAHSAAN MIGEL JR",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WELLS_RAHSAAN_MIGEL_JR.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/04/2026",
-        "Reel_File": "reels/mugshot_WELLS_RAHSAAN_MIGEL_JR.mp4"
+        "Full Name": "HUDAK, DEAN MICHAEL",
+        "Charge 1": "8 HOUR RELEASE VIOLATION",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_HUDAK_DEAN_MICHAEL.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/05/2026",
+        "Reel_File": "reels/mugshot_HUDAK_DEAN_MICHAEL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -132,13 +129,13 @@
     },
     {
       "data": {
-        "Full Name": "WARE, DAJOUR MONTELLE",
-        "Charge 1": "OTHER COUNTY/GM & MISD",
-        "Bail": "$1,800.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WARE_DAJOUR_MONTELLE.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/04/2026",
-        "Reel_File": "reels/mugshot_WARE_DAJOUR_MONTELLE.mp4"
+        "Full Name": "AUCAPINA ARROYO, JENNIFER THALIA",
+        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_AUCAPINA_ARROYO_JENNIFER_THALIA.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/05/2026",
+        "Reel_File": "reels/mugshot_AUCAPINA_ARROYO_JENNIFER_THALIA.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -146,13 +143,12 @@
     },
     {
       "data": {
-        "Full Name": "CORDELL, DIARA LADELL",
-        "Charge 1": "DOMESTIC ASSAULT",
+        "Full Name": "DEWEY, LEBRAUN EZEKIEL NATION",
+        "Charge 1": "No charge listed",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CORDELL_DIARA_LADELL.jpg",
-        "Severity": "",
-        "Booking_Date": "11/04/2026",
-        "Reel_File": "reels/mugshot_CORDELL_DIARA_LADELL.mp4"
+        "Mugshot_File": "mugshots/mugshot_DEWEY_LEBRAUN_EZEKIEL_NATION.jpg",
+        "Booking_Date": "11/05/2026",
+        "Reel_File": "reels/mugshot_DEWEY_LEBRAUN_EZEKIEL_NATION.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -160,13 +156,12 @@
     },
     {
       "data": {
-        "Full Name": "JACKSON, JERMESHA LASHEA",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JACKSON_JERMESHA_LASHEA.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/04/2026",
-        "Reel_File": "reels/mugshot_JACKSON_JERMESHA_LASHEA.mp4"
+        "Full Name": "AFYARE, MOHAMED SADE",
+        "Charge 1": "No charge listed",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_AFYARE_MOHAMED_SADE.jpg",
+        "Booking_Date": "11/05/2026",
+        "Reel_File": "reels/mugshot_AFYARE_MOHAMED_SADE.mp4"
       },
       "posted": false,
       "posted_at": null,
