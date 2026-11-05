@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-05T05:43:01.889129-06:00",
   "total_inmates": 12,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "data": {
@@ -39,8 +39,8 @@
         "Booking_Date": "11/05/2026",
         "Reel_File": "reels/mugshot_POLLARD_ALONZO_DARNELL.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-05T13:53:46.332680-06:00",
       "id": 3
     },
     {
