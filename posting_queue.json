@@ -1,6 +1,6 @@
 {
   "created_at": "2026-11-05T05:43:01.889129-06:00",
-  "total_inmates": 12,
+  "total_inmates": 14,
   "posted_count": 3,
   "inmates": [
     {
@@ -42,6 +42,38 @@
       "posted": true,
       "posted_at": "2026-11-05T13:53:46.332680-06:00",
       "id": 3
+    },
+    {
+      "id": 13,
+      "data": {
+        "Full Name": "AVALOS, TYLER",
+        "Charge 1": "STALKING",
+        "Bail": "",
+        "Mugshot_File": "mugshots/mugshot_AVALOS_TYLER.jpg",
+        "Severity": "",
+        "Booking_Date": "11/05/2026",
+        "Description": "Prosecutors argued the post showing a wanted poster featuring Bondi constituted an interstate threat.",
+        "Story": "A man has been found guilty of making a threat on social media towards Pam Bondi, the former Attorney General under President Donald Trump.\n\nThe U.S. Attorney’s Office for Minnesota confirmed that Tyler Avalos, 30, of St. Paul, was found guilty by a federal jury on Wednesday of interstate transmission of a threat to injure the person of another.\n\nIt comes after a post was shared to TikTok last October, showing a picture of Bondi with a sniper-style scope crosshairs over her forehead with a caption saying she was “wanted dead or alive” but “preferably dead.”\n\nThe accompanying post also suggested a price of $45,000, and also said: “When they don’t serve us then what?” An individual from Michigan reporting the post to authorities, saying it constitute putting out a hit on Bondi.\n\nThe post was traced to Avalos, whose profile “contained various symbols associated with anarchists,” with police finding several other posts from other platforms that celebrated the killing of Charlie Kirk and made references to Luigi Mangione, who is awaiting trial in the killing of UnitedHealthcare CEO Brian Thompson.\n\nAvalos’ criminal history include a felony conviction for stalking in 2022 in Dakota County, and a domestic battery conviction in Florida from 2016.\n\n“The jury’s guilty verdict today is the result of the continuing campaign by my office and federal law enforcement to target those that threaten violence in the political arena,” said United States Attorney Daniel Rosen. “As American society continues to be more politically polarized, those that threaten, commit, or induce others to commit acts of political violence are becoming more numerous, more brazen, and more dangerous.”\n\n“Politically motivated threats and violence are a plague on our society. Rest assured, however, that federal law enforcement agencies are on high alert, at all times, for such threats and violence, and the United States Attorney’s Office remains committed to prosecuting all perpetrators.”",
+        "Source_URL": "https://bringmethenews.com/minnesota-news/minnesota-man-convicted-of-social-media-threat-towards-former-ag-pam-bondi"
+      },
+      "posted": false,
+      "posted_at": null
+    },
+    {
+      "id": 14,
+      "data": {
+        "Full Name": "TIBBETTS, MELISSA",
+        "Charge 1": "MURDER",
+        "Bail": "",
+        "Mugshot_File": "mugshots/mugshot_TIBBETTS_MELISSA.jpg",
+        "Severity": "",
+        "Booking_Date": "11/05/2026",
+        "Description": "Melissa Tibbetts was found dead in a Loews Hotel room in downtown Atlanta.",
+        "Story": "A woman originally from Minnesota was found dead in an Atlanta hotel room last month, with a man arrested in connection with her killing in recent days.\n\nMelissa Tibbetts, 45, of Lawrenceville, Georgia but whose family is from Walker, Minnesota, was found dead at the Loews Hotel in downtown Atlanta on Oct. 14.\n\nJust over a week later, investigators identified Emmanuel Poindexter as a suspect in her death, accusing him of strangling her. He has since been arrested and charged with her murder after being released from a hospital for a self-inflicted knife wound.\n\nTibbetts’ family have launched a GoFundMe campaign to help them as they bring her home to Minnesota for her funeral.\n\nHer obituary says she is survived by her son, who lives in Virginia, as well as her parents and several siblings, most of whom are in Minnesota.\n\n“Melissa’s unexpected passing … has left her family heartbroken and facing the difficult task of saying goodbye far too soon,” her sister, Jennifer Nagel, writes. “With her life established in Georgia and her family spread across several states, we are working together to honor her memory and bring her home to Minnesota, where she will be laid to rest surrounded by the love of her family.\n\n“During this heartbreaking time, our hope is to relieve some of the financial stress placed on her son, Hunter, and our family, allowing us to focus on remembering Missy and giving her the meaningful, beautiful, and dignified farewell she so deserves.\n\n“While our hearts are broken, we will forever cherish the memories, laughter, and love Melissa brought into our lives. We find comfort in knowing that her adventurous spirit, her love for the ocean, and the special bond she shared with her son will always be part of her beautiful story.”\n\nAt the time of her death, Tibbetts worked as an executive assistant at ACM Chemistries in Georgia. Her obituary says she had a “passion for collecting elephants and had a particular fondness for shoes,” as well as citing her love of the ocean and her devotion to her son.",
+        "Source_URL": "https://bringmethenews.com/minnesota-news/man-charged-with-murder-after-minnesota-native-found-dead-in-atlanta-hotel-room"
+      },
+      "posted": false,
+      "posted_at": null
     },
     {
       "data": {
