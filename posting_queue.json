@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-05T05:43:01.889129-06:00",
   "total_inmates": 14,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "data": {
@@ -56,8 +56,8 @@
         "Story": "A man has been found guilty of making a threat on social media towards Pam Bondi, the former Attorney General under President Donald Trump.\n\nThe U.S. Attorney’s Office for Minnesota confirmed that Tyler Avalos, 30, of St. Paul, was found guilty by a federal jury on Wednesday of interstate transmission of a threat to injure the person of another.\n\nIt comes after a post was shared to TikTok last October, showing a picture of Bondi with a sniper-style scope crosshairs over her forehead with a caption saying she was “wanted dead or alive” but “preferably dead.”\n\nThe accompanying post also suggested a price of $45,000, and also said: “When they don’t serve us then what?” An individual from Michigan reporting the post to authorities, saying it constitute putting out a hit on Bondi.\n\nThe post was traced to Avalos, whose profile “contained various symbols associated with anarchists,” with police finding several other posts from other platforms that celebrated the killing of Charlie Kirk and made references to Luigi Mangione, who is awaiting trial in the killing of UnitedHealthcare CEO Brian Thompson.\n\nAvalos’ criminal history include a felony conviction for stalking in 2022 in Dakota County, and a domestic battery conviction in Florida from 2016.\n\n“The jury’s guilty verdict today is the result of the continuing campaign by my office and federal law enforcement to target those that threaten violence in the political arena,” said United States Attorney Daniel Rosen. “As American society continues to be more politically polarized, those that threaten, commit, or induce others to commit acts of political violence are becoming more numerous, more brazen, and more dangerous.”\n\n“Politically motivated threats and violence are a plague on our society. Rest assured, however, that federal law enforcement agencies are on high alert, at all times, for such threats and violence, and the United States Attorney’s Office remains committed to prosecuting all perpetrators.”",
         "Source_URL": "https://bringmethenews.com/minnesota-news/minnesota-man-convicted-of-social-media-threat-towards-former-ag-pam-bondi"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-11-05T18:58:10.234440-06:00"
     },
     {
       "id": 14,
