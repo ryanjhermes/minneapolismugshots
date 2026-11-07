@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-05T05:43:01.889129-06:00",
   "total_inmates": 14,
-  "posted_count": 7,
+  "posted_count": 8,
   "inmates": [
     {
       "data": {
@@ -113,8 +113,8 @@
         "Booking_Date": "11/05/2026",
         "Reel_File": "reels/mugshot_POWERS_VERQISHA_ELIZABETH.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-07T11:44:00.723003-06:00",
       "id": 6
     },
     {
