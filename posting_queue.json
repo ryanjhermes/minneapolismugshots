@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-05T05:43:01.889129-06:00",
   "total_inmates": 14,
-  "posted_count": 11,
+  "posted_count": 12,
   "inmates": [
     {
       "data": {
@@ -169,8 +169,8 @@
         "Booking_Date": "11/05/2026",
         "Reel_File": "reels/mugshot_AUCAPINA_ARROYO_JENNIFER_THALIA.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-08T15:58:12.445275-06:00",
       "id": 10
     },
     {
