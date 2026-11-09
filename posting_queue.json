@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-05T05:43:01.889129-06:00",
   "total_inmates": 14,
-  "posted_count": 13,
+  "posted_count": 14,
   "inmates": [
     {
       "data": {
@@ -195,8 +195,8 @@
         "Booking_Date": "11/05/2026",
         "Reel_File": "reels/mugshot_AFYARE_MOHAMED_SADE.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-09T16:16:14.725270-06:00",
       "id": 12
     }
   ]
