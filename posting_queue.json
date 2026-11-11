@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-11T05:34:49.986287-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "data": {
@@ -13,8 +13,8 @@
         "Booking_Date": "11/11/2026",
         "Reel_File": "reels/mugshot_WHITE_KING_KAILEEM_CARLTON.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-11T13:32:08.285183-06:00",
       "id": 1
     },
     {
