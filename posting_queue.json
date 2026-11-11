@@ -1,203 +1,147 @@
 {
-  "created_at": "2026-11-05T05:43:01.889129-06:00",
-  "total_inmates": 14,
-  "posted_count": 14,
+  "created_at": "2026-11-11T05:34:49.986287-06:00",
+  "total_inmates": 10,
+  "posted_count": 0,
   "inmates": [
     {
       "data": {
-        "Full Name": "MITCHEM, MICHAEL GEORGE JR",
-        "Charge 1": "OTHER COUNTY/FELONY",
-        "Bail": "$1,000.00 CASH BAIL W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MITCHEM_MICHAEL_GEORGE_JR.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/04/2026"
+        "Full Name": "WHITE, KING KAILEEM CARLTON",
+        "Charge 1": "DISORDERLY CONDUCT - BRAWLING OR FIGHTING; CONTROLLED SUBSTANCE/NARCOTICS",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WHITE_KING_KAILEEM_CARLTON.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/11/2026",
+        "Reel_File": "reels/mugshot_WHITE_KING_KAILEEM_CARLTON.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-11-04T13:42:18.375364-06:00",
+      "posted": false,
+      "posted_at": null,
       "id": 1
     },
     {
       "data": {
-        "Full Name": "BABCOCK, KARA NICOLE",
-        "Charge 1": "OTHER COUNTY/FELONY; AGGRAVATED ROBBERY-2ND DEGREE; SIMPLE ROBBERY",
-        "Bail": "$50,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_BABCOCK_KARA_NICOLE.jpg",
+        "Full Name": "TOWNSEND, MARCUS",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER; POSSESSION OF DRUG PARAPHERNALIA IN A PUBLIC PLACE",
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TOWNSEND_MARCUS.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/04/2026"
+        "Booking_Date": "11/11/2026",
+        "Reel_File": "reels/mugshot_TOWNSEND_MARCUS.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-11-04T18:52:53.649167-06:00",
+      "posted": false,
+      "posted_at": null,
       "id": 2
     },
     {
       "data": {
-        "Full Name": "POLLARD, ALONZO DARNELL",
-        "Charge 1": "DOMESTIC ABUSE NO CONTACT ORDERS; DOMESTIC ASSAULT - BY STRANGULATION",
-        "Bail": "$60,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_POLLARD_ALONZO_DARNELL.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/05/2026",
-        "Reel_File": "reels/mugshot_POLLARD_ALONZO_DARNELL.mp4"
+        "Full Name": "REED, ELISSA ROSE",
+        "Charge 1": "FALSE INFORMATION TO POLICE - NAME OF ANOTHER",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_REED_ELISSA_ROSE.jpg",
+        "Severity": "",
+        "Booking_Date": "11/11/2026",
+        "Reel_File": "reels/mugshot_REED_ELISSA_ROSE.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-11-05T13:53:46.332680-06:00",
+      "posted": false,
+      "posted_at": null,
       "id": 3
     },
     {
-      "id": 13,
       "data": {
-        "Full Name": "AVALOS, TYLER",
-        "Charge 1": "STALKING",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_AVALOS_TYLER.jpg",
-        "Severity": "",
-        "Booking_Date": "11/05/2026",
-        "Description": "Prosecutors argued the post showing a wanted poster featuring Bondi constituted an interstate threat.",
-        "Story": "A man has been found guilty of making a threat on social media towards Pam Bondi, the former Attorney General under President Donald Trump.\n\nThe U.S. Attorney’s Office for Minnesota confirmed that Tyler Avalos, 30, of St. Paul, was found guilty by a federal jury on Wednesday of interstate transmission of a threat to injure the person of another.\n\nIt comes after a post was shared to TikTok last October, showing a picture of Bondi with a sniper-style scope crosshairs over her forehead with a caption saying she was “wanted dead or alive” but “preferably dead.”\n\nThe accompanying post also suggested a price of $45,000, and also said: “When they don’t serve us then what?” An individual from Michigan reporting the post to authorities, saying it constitute putting out a hit on Bondi.\n\nThe post was traced to Avalos, whose profile “contained various symbols associated with anarchists,” with police finding several other posts from other platforms that celebrated the killing of Charlie Kirk and made references to Luigi Mangione, who is awaiting trial in the killing of UnitedHealthcare CEO Brian Thompson.\n\nAvalos’ criminal history include a felony conviction for stalking in 2022 in Dakota County, and a domestic battery conviction in Florida from 2016.\n\n“The jury’s guilty verdict today is the result of the continuing campaign by my office and federal law enforcement to target those that threaten violence in the political arena,” said United States Attorney Daniel Rosen. “As American society continues to be more politically polarized, those that threaten, commit, or induce others to commit acts of political violence are becoming more numerous, more brazen, and more dangerous.”\n\n“Politically motivated threats and violence are a plague on our society. Rest assured, however, that federal law enforcement agencies are on high alert, at all times, for such threats and violence, and the United States Attorney’s Office remains committed to prosecuting all perpetrators.”",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/minnesota-man-convicted-of-social-media-threat-towards-former-ag-pam-bondi"
-      },
-      "posted": true,
-      "posted_at": "2026-11-05T18:58:10.234440-06:00"
-    },
-    {
-      "id": 14,
-      "data": {
-        "Full Name": "TIBBETTS, MELISSA",
-        "Charge 1": "MURDER",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_TIBBETTS_MELISSA.jpg",
-        "Severity": "",
-        "Booking_Date": "11/05/2026",
-        "Description": "Melissa Tibbetts was found dead in a Loews Hotel room in downtown Atlanta.",
-        "Story": "A woman originally from Minnesota was found dead in an Atlanta hotel room last month, with a man arrested in connection with her killing in recent days.\n\nMelissa Tibbetts, 45, of Lawrenceville, Georgia but whose family is from Walker, Minnesota, was found dead at the Loews Hotel in downtown Atlanta on Oct. 14.\n\nJust over a week later, investigators identified Emmanuel Poindexter as a suspect in her death, accusing him of strangling her. He has since been arrested and charged with her murder after being released from a hospital for a self-inflicted knife wound.\n\nTibbetts’ family have launched a GoFundMe campaign to help them as they bring her home to Minnesota for her funeral.\n\nHer obituary says she is survived by her son, who lives in Virginia, as well as her parents and several siblings, most of whom are in Minnesota.\n\n“Melissa’s unexpected passing … has left her family heartbroken and facing the difficult task of saying goodbye far too soon,” her sister, Jennifer Nagel, writes. “With her life established in Georgia and her family spread across several states, we are working together to honor her memory and bring her home to Minnesota, where she will be laid to rest surrounded by the love of her family.\n\n“During this heartbreaking time, our hope is to relieve some of the financial stress placed on her son, Hunter, and our family, allowing us to focus on remembering Missy and giving her the meaningful, beautiful, and dignified farewell she so deserves.\n\n“While our hearts are broken, we will forever cherish the memories, laughter, and love Melissa brought into our lives. We find comfort in knowing that her adventurous spirit, her love for the ocean, and the special bond she shared with her son will always be part of her beautiful story.”\n\nAt the time of her death, Tibbetts worked as an executive assistant at ACM Chemistries in Georgia. Her obituary says she had a “passion for collecting elephants and had a particular fondness for shoes,” as well as citing her love of the ocean and her devotion to her son.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/man-charged-with-murder-after-minnesota-native-found-dead-in-atlanta-hotel-room"
-      },
-      "posted": true,
-      "posted_at": "2026-11-06T13:17:32.244068-06:00"
-    },
-    {
-      "data": {
-        "Full Name": "FISHER, CHERITA NICOLE",
-        "Charge 1": "OTHER COUNTY/FELONY",
+        "Full Name": "RAEKER, TAIJA MARIE",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FISHER_CHERITA_NICOLE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/05/2026",
-        "Reel_File": "reels/mugshot_FISHER_CHERITA_NICOLE.mp4"
+        "Mugshot_File": "mugshots/mugshot_RAEKER_TAIJA_MARIE.jpg",
+        "Severity": "",
+        "Booking_Date": "11/11/2026",
+        "Reel_File": "reels/mugshot_RAEKER_TAIJA_MARIE.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-11-06T18:05:25.495060-06:00",
+      "posted": false,
+      "posted_at": null,
       "id": 4
     },
     {
       "data": {
-        "Full Name": "IBRAHIM, LAMMII AFANDI",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_IBRAHIM_LAMMII_AFANDI.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/05/2026",
-        "Reel_File": "reels/mugshot_IBRAHIM_LAMMII_AFANDI.mp4"
+        "Full Name": "THOMPSON, PATRICK JAMES",
+        "Charge 1": "DRUGS - 5TH DEG; DRIVING AFTER CANCELLATION IPS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_THOMPSON_PATRICK_JAMES.jpg",
+        "Severity": "",
+        "Booking_Date": "11/11/2026",
+        "Reel_File": "reels/mugshot_THOMPSON_PATRICK_JAMES.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-11-06T23:51:50.423832-06:00",
+      "posted": false,
+      "posted_at": null,
       "id": 5
     },
     {
       "data": {
-        "Full Name": "POWERS, VERQISHA ELIZABETH",
-        "Charge 1": "DOMESTIC ASSAULT",
+        "Full Name": "DOBIES, JONATHAN ALEXANDER",
+        "Charge 1": "DOMESTIC ASSAULT BY STRANGULATION",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_POWERS_VERQISHA_ELIZABETH.jpg",
+        "Mugshot_File": "mugshots/mugshot_DOBIES_JONATHAN_ALEXANDER.jpg",
         "Severity": "",
-        "Booking_Date": "11/05/2026",
-        "Reel_File": "reels/mugshot_POWERS_VERQISHA_ELIZABETH.mp4"
+        "Booking_Date": "11/11/2026",
+        "Reel_File": "reels/mugshot_DOBIES_JONATHAN_ALEXANDER.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-11-07T11:44:00.723003-06:00",
+      "posted": false,
+      "posted_at": null,
       "id": 6
     },
     {
       "data": {
-        "Full Name": "WIECHMAN, KATHERINE ANN",
-        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WIECHMAN_KATHERINE_ANN.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/05/2026",
-        "Reel_File": "reels/mugshot_WIECHMAN_KATHERINE_ANN.mp4"
+        "Full Name": "MCKINNIS, ALONZO LAMONT",
+        "Charge 1": "DOMESTIC ASSAULT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MCKINNIS_ALONZO_LAMONT.jpg",
+        "Severity": "",
+        "Booking_Date": "11/11/2026",
+        "Reel_File": "reels/mugshot_MCKINNIS_ALONZO_LAMONT.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-11-07T15:45:23.650999-06:00",
+      "posted": false,
+      "posted_at": null,
       "id": 7
     },
     {
       "data": {
-        "Full Name": "DAHLBERG, DAVID BRANDT",
-        "Charge 1": "TRESPASS-RETURN TO PROPERTY WITHIN ONE YEAR",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_DAHLBERG_DAVID_BRANDT.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/05/2026",
-        "Reel_File": "reels/mugshot_DAHLBERG_DAVID_BRANDT.mp4"
+        "Full Name": "WILLIAMS, DAVID SHONELL JR",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WILLIAMS_DAVID_SHONELL_JR.jpg",
+        "Severity": "",
+        "Booking_Date": "11/11/2026",
+        "Reel_File": "reels/mugshot_WILLIAMS_DAVID_SHONELL_JR.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-11-07T19:20:43.006617-06:00",
+      "posted": false,
+      "posted_at": null,
       "id": 8
     },
     {
       "data": {
-        "Full Name": "HUDAK, DEAN MICHAEL",
-        "Charge 1": "8 HOUR RELEASE VIOLATION",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HUDAK_DEAN_MICHAEL.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/05/2026",
-        "Reel_File": "reels/mugshot_HUDAK_DEAN_MICHAEL.mp4"
+        "Full Name": "LEIGHTON, THOMAS MICHAEL",
+        "Charge 1": "DRIVING AFTER CANCELLATION IPS; OTHER COUNTY/GM & MISD",
+        "Bail": "$2,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LEIGHTON_THOMAS_MICHAEL.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/11/2026",
+        "Reel_File": "reels/mugshot_LEIGHTON_THOMAS_MICHAEL.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-11-08T11:54:05.866258-06:00",
+      "posted": false,
+      "posted_at": null,
       "id": 9
     },
     {
       "data": {
-        "Full Name": "AUCAPINA ARROYO, JENNIFER THALIA",
-        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
-        "Bail": "$4,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_AUCAPINA_ARROYO_JENNIFER_THALIA.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/05/2026",
-        "Reel_File": "reels/mugshot_AUCAPINA_ARROYO_JENNIFER_THALIA.mp4"
+        "Full Name": "GONZALEZ, ALEJANDRO",
+        "Charge 1": "CRIMINAL SEXUAL CONDUCT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GONZALEZ_ALEJANDRO.jpg",
+        "Severity": "",
+        "Booking_Date": "11/11/2026",
+        "Reel_File": "reels/mugshot_GONZALEZ_ALEJANDRO.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-11-08T15:58:12.445275-06:00",
+      "posted": false,
+      "posted_at": null,
       "id": 10
-    },
-    {
-      "data": {
-        "Full Name": "DEWEY, LEBRAUN EZEKIEL NATION",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DEWEY_LEBRAUN_EZEKIEL_NATION.jpg",
-        "Booking_Date": "11/05/2026",
-        "Reel_File": "reels/mugshot_DEWEY_LEBRAUN_EZEKIEL_NATION.mp4"
-      },
-      "posted": true,
-      "posted_at": "2026-11-08T19:41:48.636709-06:00",
-      "id": 11
-    },
-    {
-      "data": {
-        "Full Name": "AFYARE, MOHAMED SADE",
-        "Charge 1": "No charge listed",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_AFYARE_MOHAMED_SADE.jpg",
-        "Booking_Date": "11/05/2026",
-        "Reel_File": "reels/mugshot_AFYARE_MOHAMED_SADE.mp4"
-      },
-      "posted": true,
-      "posted_at": "2026-11-09T16:16:14.725270-06:00",
-      "id": 12
     }
   ]
 }
