@@ -1,6 +1,6 @@
 {
-  "created_at": "2026-11-11T05:34:49.986287-06:00",
-  "total_inmates": 11,
+  "created_at": "2026-11-12T05:59:35.148144-06:00",
+  "total_inmates": 12,
   "posted_count": 2,
   "inmates": [
     {
@@ -10,15 +10,14 @@
         "Bail": "$300.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_WHITE_KING_KAILEEM_CARLTON.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/11/2026",
-        "Reel_File": "reels/mugshot_WHITE_KING_KAILEEM_CARLTON.mp4"
+        "Booking_Date": "11/11/2026"
       },
       "posted": true,
       "posted_at": "2026-11-11T13:32:08.285183-06:00",
       "id": 1
     },
     {
-      "id": 11,
+      "id": 2,
       "data": {
         "Full Name": "EDISON, BRYAN WESLEY",
         "Charge 1": "CRUELTY FOR CRUELTY’S SAKE",
@@ -35,27 +34,13 @@
     },
     {
       "data": {
-        "Full Name": "TOWNSEND, MARCUS",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER; POSSESSION OF DRUG PARAPHERNALIA IN A PUBLIC PLACE",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_TOWNSEND_MARCUS.jpg",
+        "Full Name": "CARPENTIER, STEVEN LEE",
+        "Charge 1": "BURGLARY - 3RD DEGREE - ENTERS W/OUT CONSENT WITH INTENT TO STEAL/COMMIT FELONY OR GROSS MISDEMEANOR; MAIL THEFT-INTENTIONALLY TAKES MAIL LEFT FOR COLLECTION WITHOUT CLAIM OF RIGHT",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CARPENTIER_STEVEN_LEE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/11/2026",
-        "Reel_File": "reels/mugshot_TOWNSEND_MARCUS.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 2
-    },
-    {
-      "data": {
-        "Full Name": "REED, ELISSA ROSE",
-        "Charge 1": "FALSE INFORMATION TO POLICE - NAME OF ANOTHER",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_REED_ELISSA_ROSE.jpg",
-        "Severity": "",
-        "Booking_Date": "11/11/2026",
-        "Reel_File": "reels/mugshot_REED_ELISSA_ROSE.mp4"
+        "Booking_Date": "11/12/2026",
+        "Reel_File": "reels/mugshot_CARPENTIER_STEVEN_LEE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -63,13 +48,13 @@
     },
     {
       "data": {
-        "Full Name": "RAEKER, TAIJA MARIE",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
+        "Full Name": "DUBRAY, VINCENT WILLIAM",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_RAEKER_TAIJA_MARIE.jpg",
-        "Severity": "",
-        "Booking_Date": "11/11/2026",
-        "Reel_File": "reels/mugshot_RAEKER_TAIJA_MARIE.mp4"
+        "Mugshot_File": "mugshots/mugshot_DUBRAY_VINCENT_WILLIAM.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/12/2026",
+        "Reel_File": "reels/mugshot_DUBRAY_VINCENT_WILLIAM.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -77,13 +62,13 @@
     },
     {
       "data": {
-        "Full Name": "THOMPSON, PATRICK JAMES",
-        "Charge 1": "DRUGS - 5TH DEG; DRIVING AFTER CANCELLATION IPS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_THOMPSON_PATRICK_JAMES.jpg",
-        "Severity": "",
-        "Booking_Date": "11/11/2026",
-        "Reel_File": "reels/mugshot_THOMPSON_PATRICK_JAMES.mp4"
+        "Full Name": "STOKES, JACOB LEO",
+        "Charge 1": "DRUGS - 3RD DEGREE - POSSESS 10 GRAMS OR MORE A NARCOTIC DRUG OTHER THAN HEROIN OR FENTANYL; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_STOKES_JACOB_LEO.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/12/2026",
+        "Reel_File": "reels/mugshot_STOKES_JACOB_LEO.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -91,13 +76,13 @@
     },
     {
       "data": {
-        "Full Name": "DOBIES, JONATHAN ALEXANDER",
-        "Charge 1": "DOMESTIC ASSAULT BY STRANGULATION",
+        "Full Name": "OLDEN, THAI KIMORA",
+        "Charge 1": "AGGRAVATED ROBBERY",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DOBIES_JONATHAN_ALEXANDER.jpg",
+        "Mugshot_File": "mugshots/mugshot_OLDEN_THAI_KIMORA.jpg",
         "Severity": "",
-        "Booking_Date": "11/11/2026",
-        "Reel_File": "reels/mugshot_DOBIES_JONATHAN_ALEXANDER.mp4"
+        "Booking_Date": "11/12/2026",
+        "Reel_File": "reels/mugshot_OLDEN_THAI_KIMORA.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -105,13 +90,13 @@
     },
     {
       "data": {
-        "Full Name": "MCKINNIS, ALONZO LAMONT",
-        "Charge 1": "DOMESTIC ASSAULT",
+        "Full Name": "MOHAMED, FARHAN AWIL",
+        "Charge 1": "THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT; FALSE INFORMATION TO POLICE - NAME OF ANOTHER; RECEIVING/CONCEALING STOLEN PROPERTY",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MCKINNIS_ALONZO_LAMONT.jpg",
-        "Severity": "",
-        "Booking_Date": "11/11/2026",
-        "Reel_File": "reels/mugshot_MCKINNIS_ALONZO_LAMONT.mp4"
+        "Mugshot_File": "mugshots/mugshot_MOHAMED_FARHAN_AWIL.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/12/2026",
+        "Reel_File": "reels/mugshot_MOHAMED_FARHAN_AWIL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -119,13 +104,13 @@
     },
     {
       "data": {
-        "Full Name": "WILLIAMS, DAVID SHONELL JR",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_DAVID_SHONELL_JR.jpg",
-        "Severity": "",
-        "Booking_Date": "11/11/2026",
-        "Reel_File": "reels/mugshot_WILLIAMS_DAVID_SHONELL_JR.mp4"
+        "Full Name": "EVANS, ERNEST MICHAEL JR",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF CONTROLLED SUBSTANCE; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - UNDER INFLUENCE; CANNABIS/HEMP PRODUCT, ARTIFICIAL CBD/THC; TRAFFIC - DRIVERS LICENSE - DRIVING AFTER REVOCATION",
+        "Bail": "$2,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_EVANS_ERNEST_MICHAEL_JR.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/12/2026",
+        "Reel_File": "reels/mugshot_EVANS_ERNEST_MICHAEL_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -133,13 +118,13 @@
     },
     {
       "data": {
-        "Full Name": "LEIGHTON, THOMAS MICHAEL",
-        "Charge 1": "DRIVING AFTER CANCELLATION IPS; OTHER COUNTY/GM & MISD",
-        "Bail": "$2,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LEIGHTON_THOMAS_MICHAEL.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/11/2026",
-        "Reel_File": "reels/mugshot_LEIGHTON_THOMAS_MICHAEL.mp4"
+        "Full Name": "WHEATLEY, PRENTICE",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WHEATLEY_PRENTICE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/12/2026",
+        "Reel_File": "reels/mugshot_WHEATLEY_PRENTICE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -147,17 +132,45 @@
     },
     {
       "data": {
-        "Full Name": "GONZALEZ, ALEJANDRO",
-        "Charge 1": "CRIMINAL SEXUAL CONDUCT",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GONZALEZ_ALEJANDRO.jpg",
-        "Severity": "",
-        "Booking_Date": "11/11/2026",
-        "Reel_File": "reels/mugshot_GONZALEZ_ALEJANDRO.mp4"
+        "Full Name": "CALLAHAN, JOSHUA JOHN",
+        "Charge 1": "INDECENT EXPOSURE-ENGAGE IN LEWD/INDECENT BEHAVIOR",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CALLAHAN_JOSHUA_JOHN.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/12/2026",
+        "Reel_File": "reels/mugshot_CALLAHAN_JOSHUA_JOHN.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 10
+    },
+    {
+      "data": {
+        "Full Name": "WITCZEK, JORDAN JOHN ELLIS",
+        "Charge 1": "RECEIVING/CONCEALING STOLEN PROPERTY",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WITCZEK_JORDAN_JOHN_ELLIS.jpg",
+        "Severity": "",
+        "Booking_Date": "11/12/2026",
+        "Reel_File": "reels/mugshot_WITCZEK_JORDAN_JOHN_ELLIS.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 11
+    },
+    {
+      "data": {
+        "Full Name": "HARRIS- MELTON, CAMERON BAILEY",
+        "Charge 1": "OTHER COUNTY/GM & MISD",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_HARRIS-_MELTON_CAMERON_BAILEY.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/12/2026",
+        "Reel_File": "reels/mugshot_HARRIS-_MELTON_CAMERON_BAILEY.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 12
     }
   ]
 }
