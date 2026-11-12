@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-12T05:59:35.148144-06:00",
   "total_inmates": 12,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "data": {
@@ -42,8 +42,8 @@
         "Booking_Date": "11/12/2026",
         "Reel_File": "reels/mugshot_CARPENTIER_STEVEN_LEE.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-12T13:51:01.362061-06:00",
       "id": 3
     },
     {
