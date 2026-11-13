@@ -1,37 +1,8 @@
 {
-  "created_at": "2026-11-12T05:59:35.148144-06:00",
-  "total_inmates": 13,
-  "posted_count": 4,
+  "created_at": "2026-11-13T05:45:02.246054-06:00",
+  "total_inmates": 12,
+  "posted_count": 2,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "WHITE, KING KAILEEM CARLTON",
-        "Charge 1": "DISORDERLY CONDUCT - BRAWLING OR FIGHTING; CONTROLLED SUBSTANCE/NARCOTICS",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WHITE_KING_KAILEEM_CARLTON.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/11/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-11T13:32:08.285183-06:00",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "EDISON, BRYAN WESLEY",
-        "Charge 1": "CRUELTY FOR CRUELTY’S SAKE",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_EDISON_BRYAN_WESLEY.jpg",
-        "Severity": "",
-        "Booking_Date": "11/11/2026",
-        "Description": "The Carver man was found guilty of 16 counts of federal animal crushing charges.",
-        "Story": "A Carver man is facing a potentially long prison sentence after being found guilty of running a pay-per-view YouTube channel that featured small animals being tortured.\n\nBryan Wesley Edison, 33, of Carver, was found guilty by a federal jury on 16 counts of animal crushing, which criminalizes the purposeful crushing, burning, drowning, suffocating, impaling, or otherwise subjecting to serious bodily injury to living mammals, birds, reptiles, or amphibians.\n\nAccording to the U.S. Attorney’s Office of Minnesota, Edison filmed himself deliberately causing serious injury to animals and then posting them to the internet between July 2022 and October 2023.\n\nHe ran a series of YouTube channels where he offered a few videos that were free to view, with paid access for other channels ranging from $0.99 to $99.99, and made in excess of $1,500.\n\n“In the videos, the smaller live animals would suffer prolonged torture and death through drowning, crushing, and being dismembered alive by the larger reptiles,” the attorney’s office said.\n\nHe would place small, live animals in a space for a “large, exotic reptile” to attack and sometimes eat, and titles for the videos included “Snapping Turtle Gives Rat a Slow Death,” “Dog mauls guinea pig on membership page, while others used words such as “shred,” “screaming,” and “kills mouse brutally” in the descriptions.\n\nEdison could also be heard in the videos providing commentary, including phrases like “this bunny is fighting, maybe it’s too big for Shredder” and “Shredder, do your worst.”\n\nYouTube ultimately removed each of Edison’s channels for violating its policy on violence.\n\n“The defendant tried to make a profit and took pleasure in torturing defenseless animals. His actions were inhumane and illegal, and with this guilty verdict, my office is delivering justice,” said United States Attorney Daniel N. Rosen.\n\n“The crimes committed by Bryan Edison were the documentation of cruelty for cruelty’s sake, made more shocking to society by the fact that he sought to profit from that cruelty,” said FBI Minneapolis Field Office Special Agent in Charge Christopher D. Dotson.\n\n“The result of predatory, violent videos like those produced by this defendant is not only needless pain and suffering of the animals being tortured, but serious psychological harm to those who consume the content.”\n\nEdison faces a prison sentence of up to 7 years for each count, plus a $250,000 fine.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/man-facing-long-sentence-for-torturing-animals-posting-videos-to-youtube-for-profit"
-      },
-      "posted": true,
-      "posted_at": "2026-11-11T19:53:28.432722-06:00"
-    },
     {
       "data": {
         "Full Name": "CARPENTIER, STEVEN LEE",
@@ -39,15 +10,14 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_CARPENTIER_STEVEN_LEE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/12/2026",
-        "Reel_File": "reels/mugshot_CARPENTIER_STEVEN_LEE.mp4"
+        "Booking_Date": "11/12/2026"
       },
       "posted": true,
       "posted_at": "2026-11-12T13:51:01.362061-06:00",
-      "id": 3
+      "id": 1
     },
     {
-      "id": 13,
+      "id": 2,
       "data": {
         "Full Name": "WOLGAMOTT, DAN",
         "Charge 1": "4TH-DEGREE DWI",
@@ -64,13 +34,27 @@
     },
     {
       "data": {
-        "Full Name": "DUBRAY, VINCENT WILLIAM",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
+        "Full Name": "PAYNE, MEGAN FAYE",
+        "Charge 1": "DRUGS - 2ND DEGREE - POSSESS 25 GRAMS OR MORE COCAINE OR METHAMPHETAMINE",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DUBRAY_VINCENT_WILLIAM.jpg",
+        "Mugshot_File": "mugshots/mugshot_PAYNE_MEGAN_FAYE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/12/2026",
-        "Reel_File": "reels/mugshot_DUBRAY_VINCENT_WILLIAM.mp4"
+        "Booking_Date": "11/13/2026",
+        "Reel_File": "reels/mugshot_PAYNE_MEGAN_FAYE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "ROBERTS, MIGIZI OKADON MUCK WA",
+        "Charge 1": "FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE; TAMPER WITH MOTOR VEHICLE-RIDE IN/ON-W/O OWNER PERMISSION; POSSESSION OF DRUG PARAPHERNALIA IN A PUBLIC PLACE",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROBERTS_MIGIZI_OKADON_MUCK_WA.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/13/2026",
+        "Reel_File": "reels/mugshot_ROBERTS_MIGIZI_OKADON_MUCK_WA.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -78,13 +62,13 @@
     },
     {
       "data": {
-        "Full Name": "STOKES, JACOB LEO",
-        "Charge 1": "DRUGS - 3RD DEGREE - POSSESS 10 GRAMS OR MORE A NARCOTIC DRUG OTHER THAN HEROIN OR FENTANYL; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STOKES_JACOB_LEO.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/12/2026",
-        "Reel_File": "reels/mugshot_STOKES_JACOB_LEO.mp4"
+        "Full Name": "WILLIAMS, LYNETTE ANITA",
+        "Charge 1": "NO INSURANCE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WILLIAMS_LYNETTE_ANITA.jpg",
+        "Severity": "",
+        "Booking_Date": "11/13/2026",
+        "Reel_File": "reels/mugshot_WILLIAMS_LYNETTE_ANITA.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -92,13 +76,13 @@
     },
     {
       "data": {
-        "Full Name": "OLDEN, THAI KIMORA",
-        "Charge 1": "AGGRAVATED ROBBERY",
+        "Full Name": "FAIRBANKS, COMANCHE LITTLETHUNDER",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_OLDEN_THAI_KIMORA.jpg",
-        "Severity": "",
-        "Booking_Date": "11/12/2026",
-        "Reel_File": "reels/mugshot_OLDEN_THAI_KIMORA.mp4"
+        "Mugshot_File": "mugshots/mugshot_FAIRBANKS_COMANCHE_LITTLETHUNDER.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/13/2026",
+        "Reel_File": "reels/mugshot_FAIRBANKS_COMANCHE_LITTLETHUNDER.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -106,13 +90,13 @@
     },
     {
       "data": {
-        "Full Name": "MOHAMED, FARHAN AWIL",
-        "Charge 1": "THEFT-TAKE/DRIVE MOTOR VEHICLE-NO OWNER CONSENT; FALSE INFORMATION TO POLICE - NAME OF ANOTHER; RECEIVING/CONCEALING STOLEN PROPERTY",
+        "Full Name": "SANCHEZ, CHRISTIAN ENRIQUE DANIEL",
+        "Charge 1": "DRIVING AFTER CANCELLATION IPS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MOHAMED_FARHAN_AWIL.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/12/2026",
-        "Reel_File": "reels/mugshot_MOHAMED_FARHAN_AWIL.mp4"
+        "Mugshot_File": "mugshots/mugshot_SANCHEZ_CHRISTIAN_ENRIQUE_DANIEL.jpg",
+        "Severity": "",
+        "Booking_Date": "11/13/2026",
+        "Reel_File": "reels/mugshot_SANCHEZ_CHRISTIAN_ENRIQUE_DANIEL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -120,13 +104,13 @@
     },
     {
       "data": {
-        "Full Name": "EVANS, ERNEST MICHAEL JR",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF CONTROLLED SUBSTANCE; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - UNDER INFLUENCE; CANNABIS/HEMP PRODUCT, ARTIFICIAL CBD/THC; TRAFFIC - DRIVERS LICENSE - DRIVING AFTER REVOCATION",
-        "Bail": "$2,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_EVANS_ERNEST_MICHAEL_JR.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/12/2026",
-        "Reel_File": "reels/mugshot_EVANS_ERNEST_MICHAEL_JR.mp4"
+        "Full Name": "ODHOWA, ABDIMUDALIB MOHAMUD",
+        "Charge 1": "DRUGS - 5TH DEG; OTHER COUNTY/FELONY",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ODHOWA_ABDIMUDALIB_MOHAMUD.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/13/2026",
+        "Reel_File": "reels/mugshot_ODHOWA_ABDIMUDALIB_MOHAMUD.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -134,13 +118,13 @@
     },
     {
       "data": {
-        "Full Name": "WHEATLEY, PRENTICE",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WHEATLEY_PRENTICE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/12/2026",
-        "Reel_File": "reels/mugshot_WHEATLEY_PRENTICE.mp4"
+        "Full Name": "AL-HAKEEM, ALI MUSTAFA",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_AL-HAKEEM_ALI_MUSTAFA.jpg",
+        "Severity": "",
+        "Booking_Date": "11/13/2026",
+        "Reel_File": "reels/mugshot_AL-HAKEEM_ALI_MUSTAFA.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -148,13 +132,13 @@
     },
     {
       "data": {
-        "Full Name": "CALLAHAN, JOSHUA JOHN",
-        "Charge 1": "INDECENT EXPOSURE-ENGAGE IN LEWD/INDECENT BEHAVIOR",
+        "Full Name": "ABDI, ADAM MOHAMED",
+        "Charge 1": "OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
         "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CALLAHAN_JOSHUA_JOHN.jpg",
+        "Mugshot_File": "mugshots/mugshot_ABDI_ADAM_MOHAMED.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/12/2026",
-        "Reel_File": "reels/mugshot_CALLAHAN_JOSHUA_JOHN.mp4"
+        "Booking_Date": "11/13/2026",
+        "Reel_File": "reels/mugshot_ABDI_ADAM_MOHAMED.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -162,13 +146,13 @@
     },
     {
       "data": {
-        "Full Name": "WITCZEK, JORDAN JOHN ELLIS",
-        "Charge 1": "RECEIVING/CONCEALING STOLEN PROPERTY",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WITCZEK_JORDAN_JOHN_ELLIS.jpg",
-        "Severity": "",
-        "Booking_Date": "11/12/2026",
-        "Reel_File": "reels/mugshot_WITCZEK_JORDAN_JOHN_ELLIS.mp4"
+        "Full Name": "HIRMAN, DAIJA ANN ALEXIS",
+        "Charge 1": "OTHER COUNTY/GM & MISD",
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HIRMAN_DAIJA_ANN_ALEXIS.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/13/2026",
+        "Reel_File": "reels/mugshot_HIRMAN_DAIJA_ANN_ALEXIS.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -176,13 +160,13 @@
     },
     {
       "data": {
-        "Full Name": "HARRIS- MELTON, CAMERON BAILEY",
-        "Charge 1": "OTHER COUNTY/GM & MISD",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HARRIS-_MELTON_CAMERON_BAILEY.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/12/2026",
-        "Reel_File": "reels/mugshot_HARRIS-_MELTON_CAMERON_BAILEY.mp4"
+        "Full Name": "WITTNER, BECKY LOUISE",
+        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WITTNER_BECKY_LOUISE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/13/2026",
+        "Reel_File": "reels/mugshot_WITTNER_BECKY_LOUISE.mp4"
       },
       "posted": false,
       "posted_at": null,
