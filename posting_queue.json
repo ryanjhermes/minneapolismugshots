@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-12T05:59:35.148144-06:00",
   "total_inmates": 13,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "data": {
@@ -59,8 +59,8 @@
         "Story": "A Minnesota state representative was arrested on Wednesday evening for suspected drunk-driving following a crash in St. Cloud that left one person injured.\n\nDFL Rep. Dan Wolgamott, 36, who represents District 14B – covering an area of Benton, Sherburne and Stearns County, was arrested in St. Cloud at around 9 p.m.\n\nSt. Cloud PD said that Wolgamott was traveling east on 13th Street North when he struck a parked vehicle that contained a 37-year-old St. Cloud man, who was hospitalized with non-life-threatening injuries.\n\nHe was booked into Stearns County Jail on three counts, for probable cause criminal vehicular operation – causing bodily harm, 3rd-degree DWI with one aggravating factor, and another count of DWI.\n\nWolgamott, who has served in the Minnesota House since 2019, previously pleaded guilty to 4th-degree DWI after being pulled over while weaving on Highway 23 near Mora in July 2023.\n\nHe was sentenced to 45 days in jail, which was suspended for two years.\n\nBring Me The News has reached out to the House DFL for comment.",
         "Source_URL": "https://bringmethenews.com/minnesota-news/minnesota-lawmaker-dan-wolgamott-arrested-on-suspicion-of-dwi-causing-bodily-harm"
       },
-      "posted": false,
-      "posted_at": null
+      "posted": true,
+      "posted_at": "2026-11-12T19:00:59.847972-06:00"
     },
     {
       "data": {
