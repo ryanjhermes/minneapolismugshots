@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-13T05:45:02.246054-06:00",
   "total_inmates": 12,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "data": {
@@ -42,8 +42,8 @@
         "Booking_Date": "11/13/2026",
         "Reel_File": "reels/mugshot_PAYNE_MEGAN_FAYE.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-13T13:35:35.938830-06:00",
       "id": 3
     },
     {
