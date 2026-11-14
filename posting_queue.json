@@ -1,37 +1,8 @@
 {
-  "created_at": "2026-11-13T05:45:02.246054-06:00",
+  "created_at": "2026-11-14T05:04:02.802658-06:00",
   "total_inmates": 12,
-  "posted_count": 4,
+  "posted_count": 2,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "CARPENTIER, STEVEN LEE",
-        "Charge 1": "BURGLARY - 3RD DEGREE - ENTERS W/OUT CONSENT WITH INTENT TO STEAL/COMMIT FELONY OR GROSS MISDEMEANOR; MAIL THEFT-INTENTIONALLY TAKES MAIL LEFT FOR COLLECTION WITHOUT CLAIM OF RIGHT",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CARPENTIER_STEVEN_LEE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/12/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-12T13:51:01.362061-06:00",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "WOLGAMOTT, DAN",
-        "Charge 1": "4TH-DEGREE DWI",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_WOLGAMOTT_DAN.jpg",
-        "Severity": "",
-        "Booking_Date": "11/12/2026",
-        "Description": "The DFL representative was arrested in St. Cloud.",
-        "Story": "A Minnesota state representative was arrested on Wednesday evening for suspected drunk-driving following a crash in St. Cloud that left one person injured.\n\nDFL Rep. Dan Wolgamott, 36, who represents District 14B – covering an area of Benton, Sherburne and Stearns County, was arrested in St. Cloud at around 9 p.m.\n\nSt. Cloud PD said that Wolgamott was traveling east on 13th Street North when he struck a parked vehicle that contained a 37-year-old St. Cloud man, who was hospitalized with non-life-threatening injuries.\n\nHe was booked into Stearns County Jail on three counts, for probable cause criminal vehicular operation – causing bodily harm, 3rd-degree DWI with one aggravating factor, and another count of DWI.\n\nWolgamott, who has served in the Minnesota House since 2019, previously pleaded guilty to 4th-degree DWI after being pulled over while weaving on Highway 23 near Mora in July 2023.\n\nHe was sentenced to 45 days in jail, which was suspended for two years.\n\nBring Me The News has reached out to the House DFL for comment.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/minnesota-lawmaker-dan-wolgamott-arrested-on-suspicion-of-dwi-causing-bodily-harm"
-      },
-      "posted": true,
-      "posted_at": "2026-11-12T19:00:59.847972-06:00"
-    },
     {
       "data": {
         "Full Name": "PAYNE, MEGAN FAYE",
@@ -39,12 +10,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_PAYNE_MEGAN_FAYE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/13/2026",
-        "Reel_File": "reels/mugshot_PAYNE_MEGAN_FAYE.mp4"
+        "Booking_Date": "11/13/2026"
       },
       "posted": true,
       "posted_at": "2026-11-13T13:35:35.938830-06:00",
-      "id": 3
+      "id": 1
     },
     {
       "data": {
@@ -53,22 +23,49 @@
         "Bail": "$300.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ROBERTS_MIGIZI_OKADON_MUCK_WA.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/13/2026",
-        "Reel_File": "reels/mugshot_ROBERTS_MIGIZI_OKADON_MUCK_WA.mp4"
+        "Booking_Date": "11/13/2026"
       },
       "posted": true,
       "posted_at": "2026-11-13T18:52:21.055219-06:00",
+      "id": 2
+    },
+    {
+      "data": {
+        "Full Name": "THOMPSON, MASON LEE",
+        "Charge 1": "POSSESS AMMO/ANY FIREARM - CONVICTION OR ADJUDICATED DELINQUENT FOR CRIME OF VIOLENCE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_THOMPSON_MASON_LEE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/14/2026",
+        "Reel_File": "reels/mugshot_THOMPSON_MASON_LEE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "OVIEDO-KELLY, ANTONIA MABLEENA",
+        "Charge 1": "ASSAULT - 4TH DEGREE - PEACE OFFICER - THROWS/TRANSFERS BODILY FLUIDS OR FECES AT OR ONTO OFFICER; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_OVIEDO-KELLY_ANTONIA_MABLEENA.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/14/2026",
+        "Reel_File": "reels/mugshot_OVIEDO-KELLY_ANTONIA_MABLEENA.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 4
     },
     {
       "data": {
-        "Full Name": "WILLIAMS, LYNETTE ANITA",
-        "Charge 1": "NO INSURANCE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WILLIAMS_LYNETTE_ANITA.jpg",
-        "Severity": "",
-        "Booking_Date": "11/13/2026",
-        "Reel_File": "reels/mugshot_WILLIAMS_LYNETTE_ANITA.mp4"
+        "Full Name": "DIAZ PEREZ, ROGELIO",
+        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_DIAZ_PEREZ_ROGELIO.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/14/2026",
+        "Reel_File": "reels/mugshot_DIAZ_PEREZ_ROGELIO.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -76,13 +73,13 @@
     },
     {
       "data": {
-        "Full Name": "FAIRBANKS, COMANCHE LITTLETHUNDER",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FAIRBANKS_COMANCHE_LITTLETHUNDER.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/13/2026",
-        "Reel_File": "reels/mugshot_FAIRBANKS_COMANCHE_LITTLETHUNDER.mp4"
+        "Full Name": "IBRAHIM, BASHIR MUMIN",
+        "Charge 1": "GIVING PEACE OFFICER FALSE NAME-OF ANOTHER PERSON; THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; OTHER COUNTY/FELONY",
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_IBRAHIM_BASHIR_MUMIN.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/14/2026",
+        "Reel_File": "reels/mugshot_IBRAHIM_BASHIR_MUMIN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -90,13 +87,13 @@
     },
     {
       "data": {
-        "Full Name": "SANCHEZ, CHRISTIAN ENRIQUE DANIEL",
-        "Charge 1": "DRIVING AFTER CANCELLATION IPS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SANCHEZ_CHRISTIAN_ENRIQUE_DANIEL.jpg",
-        "Severity": "",
-        "Booking_Date": "11/13/2026",
-        "Reel_File": "reels/mugshot_SANCHEZ_CHRISTIAN_ENRIQUE_DANIEL.mp4"
+        "Full Name": "CHARLIER, GRAYSON STEVEN",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; ESCAPE FROM CUSTODY-ELECTRONIC MONITORING (GROSS MISDEMEANOR) - SPECIFIED OFFENSES (FELONY)",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CHARLIER_GRAYSON_STEVEN.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/14/2026",
+        "Reel_File": "reels/mugshot_CHARLIER_GRAYSON_STEVEN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -104,13 +101,13 @@
     },
     {
       "data": {
-        "Full Name": "ODHOWA, ABDIMUDALIB MOHAMUD",
-        "Charge 1": "DRUGS - 5TH DEG; OTHER COUNTY/FELONY",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ODHOWA_ABDIMUDALIB_MOHAMUD.jpg",
+        "Full Name": "HAYES, ALON DAVONTE",
+        "Charge 1": "CARRY/POSSESS PISTOL W/OUT PERMIT - PUBLIC PLACE - GROSS MISDEMEANOR; SECOND OR SUBSEQUENT - FELONY",
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HAYES_ALON_DAVONTE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/13/2026",
-        "Reel_File": "reels/mugshot_ODHOWA_ABDIMUDALIB_MOHAMUD.mp4"
+        "Booking_Date": "11/14/2026",
+        "Reel_File": "reels/mugshot_HAYES_ALON_DAVONTE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -118,13 +115,13 @@
     },
     {
       "data": {
-        "Full Name": "AL-HAKEEM, ALI MUSTAFA",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_AL-HAKEEM_ALI_MUSTAFA.jpg",
-        "Severity": "",
-        "Booking_Date": "11/13/2026",
-        "Reel_File": "reels/mugshot_AL-HAKEEM_ALI_MUSTAFA.mp4"
+        "Full Name": "CARTER, NIKAYLA SEMAJ",
+        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
+        "Bail": "$4,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CARTER_NIKAYLA_SEMAJ.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/14/2026",
+        "Reel_File": "reels/mugshot_CARTER_NIKAYLA_SEMAJ.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -132,13 +129,13 @@
     },
     {
       "data": {
-        "Full Name": "ABDI, ADAM MOHAMED",
-        "Charge 1": "OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ABDI_ADAM_MOHAMED.jpg",
+        "Full Name": "BARNES, UDELL ANDREW JR",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_BARNES_UDELL_ANDREW_JR.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/13/2026",
-        "Reel_File": "reels/mugshot_ABDI_ADAM_MOHAMED.mp4"
+        "Booking_Date": "11/14/2026",
+        "Reel_File": "reels/mugshot_BARNES_UDELL_ANDREW_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -146,13 +143,13 @@
     },
     {
       "data": {
-        "Full Name": "HIRMAN, DAIJA ANN ALEXIS",
-        "Charge 1": "OTHER COUNTY/GM & MISD",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HIRMAN_DAIJA_ANN_ALEXIS.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/13/2026",
-        "Reel_File": "reels/mugshot_HIRMAN_DAIJA_ANN_ALEXIS.mp4"
+        "Full Name": "SERNA, OSCAR",
+        "Charge 1": "DOMESTIC ASSAULT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_SERNA_OSCAR.jpg",
+        "Severity": "",
+        "Booking_Date": "11/14/2026",
+        "Reel_File": "reels/mugshot_SERNA_OSCAR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -160,13 +157,13 @@
     },
     {
       "data": {
-        "Full Name": "WITTNER, BECKY LOUISE",
-        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WITTNER_BECKY_LOUISE.jpg",
+        "Full Name": "BROCHMAN, LIVIA ALEXIS",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BROCHMAN_LIVIA_ALEXIS.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/13/2026",
-        "Reel_File": "reels/mugshot_WITTNER_BECKY_LOUISE.mp4"
+        "Booking_Date": "11/14/2026",
+        "Reel_File": "reels/mugshot_BROCHMAN_LIVIA_ALEXIS.mp4"
       },
       "posted": false,
       "posted_at": null,
