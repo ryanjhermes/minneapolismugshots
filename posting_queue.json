@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-13T05:45:02.246054-06:00",
   "total_inmates": 12,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "data": {
@@ -56,8 +56,8 @@
         "Booking_Date": "11/13/2026",
         "Reel_File": "reels/mugshot_ROBERTS_MIGIZI_OKADON_MUCK_WA.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-13T18:52:21.055219-06:00",
       "id": 4
     },
     {
