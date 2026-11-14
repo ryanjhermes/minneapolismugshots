@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-14T05:04:02.802658-06:00",
   "total_inmates": 12,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "data": {
@@ -39,8 +39,8 @@
         "Booking_Date": "11/14/2026",
         "Reel_File": "reels/mugshot_THOMPSON_MASON_LEE.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-14T11:57:13.481825-06:00",
       "id": 3
     },
     {
