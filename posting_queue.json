@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-15T05:38:53.603854-06:00",
   "total_inmates": 13,
-  "posted_count": 4,
+  "posted_count": 5,
   "inmates": [
     {
       "data": {
@@ -66,8 +66,8 @@
         "Booking_Date": "11/15/2026",
         "Reel_File": "reels/mugshot_GILLESPIE_SAMUEL_CLIVE.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-15T17:23:02.417338-06:00",
       "id": 5
     },
     {
