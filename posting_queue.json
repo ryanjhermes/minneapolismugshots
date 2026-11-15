@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-15T05:38:53.603854-06:00",
   "total_inmates": 13,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "data": {
@@ -52,8 +52,8 @@
         "Booking_Date": "11/15/2026",
         "Reel_File": "reels/mugshot_TUCKER_MARQUIS_WILLYOHN.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-15T12:46:21.445584-06:00",
       "id": 4
     },
     {
