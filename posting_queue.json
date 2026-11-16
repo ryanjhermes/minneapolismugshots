@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-16T06:10:36.738721-06:00",
   "total_inmates": 12,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "data": {
@@ -39,8 +39,8 @@
         "Booking_Date": "11/16/2026",
         "Reel_File": "reels/mugshot_HARE_DAVID_MICHAEL.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-16T15:56:35.678081-06:00",
       "id": 3
     },
     {
