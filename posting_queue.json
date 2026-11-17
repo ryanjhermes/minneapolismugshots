@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-16T06:10:36.738721-06:00",
   "total_inmates": 12,
-  "posted_count": 3,
+  "posted_count": 4,
   "inmates": [
     {
       "data": {
@@ -53,8 +53,8 @@
         "Booking_Date": "11/16/2026",
         "Reel_File": "reels/mugshot_MASON-KIMMONS_TESCIL_ROMALIS.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-16T22:26:29.479851-06:00",
       "id": 4
     },
     {
