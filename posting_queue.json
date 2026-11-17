@@ -1,34 +1,8 @@
 {
-  "created_at": "2026-11-16T06:10:36.738721-06:00",
+  "created_at": "2026-11-17T06:36:21.779141-06:00",
   "total_inmates": 12,
-  "posted_count": 4,
+  "posted_count": 2,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "TUCKER, MARQUIS WILLYOHN",
-        "Charge 1": "WEAPONS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_TUCKER_MARQUIS_WILLYOHN.jpg",
-        "Severity": "",
-        "Booking_Date": "11/15/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-15T12:46:21.445584-06:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "GILLESPIE, SAMUEL CLIVE",
-        "Charge 1": "ASSAULT-2ND DEGREE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GILLESPIE_SAMUEL_CLIVE.jpg",
-        "Severity": "",
-        "Booking_Date": "11/15/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-15T17:23:02.417338-06:00",
-      "id": 2
-    },
     {
       "data": {
         "Full Name": "HARE, DAVID MICHAEL",
@@ -36,12 +10,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_HARE_DAVID_MICHAEL.jpg",
         "Severity": "",
-        "Booking_Date": "11/16/2026",
-        "Reel_File": "reels/mugshot_HARE_DAVID_MICHAEL.mp4"
+        "Booking_Date": "11/16/2026"
       },
       "posted": true,
       "posted_at": "2026-11-16T15:56:35.678081-06:00",
-      "id": 3
+      "id": 1
     },
     {
       "data": {
@@ -50,22 +23,49 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_MASON-KIMMONS_TESCIL_ROMALIS.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/16/2026",
-        "Reel_File": "reels/mugshot_MASON-KIMMONS_TESCIL_ROMALIS.mp4"
+        "Booking_Date": "11/16/2026"
       },
       "posted": true,
       "posted_at": "2026-11-16T22:26:29.479851-06:00",
+      "id": 2
+    },
+    {
+      "data": {
+        "Full Name": "MACHADO, DIEGO DANIEL",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MACHADO_DIEGO_DANIEL.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/17/2026",
+        "Reel_File": "reels/mugshot_MACHADO_DIEGO_DANIEL.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "RILEY, HEATHER MARIE",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_RILEY_HEATHER_MARIE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/17/2026",
+        "Reel_File": "reels/mugshot_RILEY_HEATHER_MARIE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 4
     },
     {
       "data": {
-        "Full Name": "GUTBERLET, DAVID ANTHONY",
-        "Charge 1": "OTHER COUNTY/GM & MISD; DRIVING AFTER CANCELLATION IPS",
-        "Bail": "$600.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GUTBERLET_DAVID_ANTHONY.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/16/2026",
-        "Reel_File": "reels/mugshot_GUTBERLET_DAVID_ANTHONY.mp4"
+        "Full Name": "HARRIS, WARREN DARRELL",
+        "Charge 1": "TRAFFIC - DWI - COMBINATION ANY 2 ALCOHOL/CONTROLLED SUBSTANCE/INTOXICATING SUBSTANCE/CANNABIS/HEMP; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ANY AMOUNT SCHEDULE I/II DRUGS/METABOLITE; NOT CANNABIS/HEMP; TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF CONTROLLED SUBSTANCE",
+        "Bail": "$1,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HARRIS_WARREN_DARRELL.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/17/2026",
+        "Reel_File": "reels/mugshot_HARRIS_WARREN_DARRELL.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -73,13 +73,13 @@
     },
     {
       "data": {
-        "Full Name": "DIRCZ, JAKE THEOPHIL",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_DIRCZ_JAKE_THEOPHIL.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/16/2026",
-        "Reel_File": "reels/mugshot_DIRCZ_JAKE_THEOPHIL.mp4"
+        "Full Name": "SILVA, WILLIAM NICHOLAS",
+        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SILVA_WILLIAM_NICHOLAS.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/17/2026",
+        "Reel_File": "reels/mugshot_SILVA_WILLIAM_NICHOLAS.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -87,13 +87,13 @@
     },
     {
       "data": {
-        "Full Name": "WELLS, XZAVIER EDWARD WINSTON",
+        "Full Name": "JOSE, TREYSHAWN THOMAS",
         "Charge 1": "DOMESTIC ASSAULT BY STRANGULATION",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WELLS_XZAVIER_EDWARD_WINSTON.jpg",
+        "Mugshot_File": "mugshots/mugshot_JOSE_TREYSHAWN_THOMAS.jpg",
         "Severity": "",
-        "Booking_Date": "11/16/2026",
-        "Reel_File": "reels/mugshot_WELLS_XZAVIER_EDWARD_WINSTON.mp4"
+        "Booking_Date": "11/17/2026",
+        "Reel_File": "reels/mugshot_JOSE_TREYSHAWN_THOMAS.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -101,13 +101,13 @@
     },
     {
       "data": {
-        "Full Name": "BARR, MAURICE JR",
-        "Charge 1": "DRIVING AFTER CANCELLATION IPS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BARR_MAURICE_JR.jpg",
-        "Severity": "",
-        "Booking_Date": "11/16/2026",
-        "Reel_File": "reels/mugshot_BARR_MAURICE_JR.mp4"
+        "Full Name": "LYNCH, CORDARRIUS LAVELLE",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LYNCH_CORDARRIUS_LAVELLE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/17/2026",
+        "Reel_File": "reels/mugshot_LYNCH_CORDARRIUS_LAVELLE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -115,13 +115,13 @@
     },
     {
       "data": {
-        "Full Name": "COLENDO, JESSE SAAH",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH; DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER; DISORDERLY CONDUCT - BRAWLING OR FIGHTING",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COLENDO_JESSE_SAAH.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/16/2026",
-        "Reel_File": "reels/mugshot_COLENDO_JESSE_SAAH.mp4"
+        "Full Name": "WAGNER, JARMARRA MICHELLE",
+        "Charge 1": "OTHER STATE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WAGNER_JARMARRA_MICHELLE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/17/2026",
+        "Reel_File": "reels/mugshot_WAGNER_JARMARRA_MICHELLE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -129,12 +129,13 @@
     },
     {
       "data": {
-        "Full Name": "MATTSON, EVYN NEVAEH",
-        "Charge 1": "No charge listed",
+        "Full Name": "REISCHEL, JOSHUA FRANK",
+        "Charge 1": "TEAR GAS/TEAR GAS COMPOUNDS, ELECT INCAPACITATION DEVICES",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MATTSON_EVYN_NEVAEH.jpg",
-        "Booking_Date": "11/16/2026",
-        "Reel_File": "reels/mugshot_MATTSON_EVYN_NEVAEH.mp4"
+        "Mugshot_File": "mugshots/mugshot_REISCHEL_JOSHUA_FRANK.jpg",
+        "Severity": "",
+        "Booking_Date": "11/17/2026",
+        "Reel_File": "reels/mugshot_REISCHEL_JOSHUA_FRANK.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -142,12 +143,13 @@
     },
     {
       "data": {
-        "Full Name": "CINTO GALINDO, GILMAR NEHEMIAS",
-        "Charge 1": "No charge listed",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_CINTO_GALINDO_GILMAR_NEHEMIAS.jpg",
-        "Booking_Date": "11/16/2026",
-        "Reel_File": "reels/mugshot_CINTO_GALINDO_GILMAR_NEHEMIAS.mp4"
+        "Full Name": "HENDERSON, ISAIAH PATRICK",
+        "Charge 1": "TRAFFIC REGULATION - DRIVER WHO IS NOT OWNER MUST LATER PRODUCE PROOF OF INSURANCE IF REQUIRED",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HENDERSON_ISAIAH_PATRICK.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/17/2026",
+        "Reel_File": "reels/mugshot_HENDERSON_ISAIAH_PATRICK.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -155,12 +157,13 @@
     },
     {
       "data": {
-        "Full Name": "AHUMADA, HURIEL",
-        "Charge 1": "No charge listed",
+        "Full Name": "HARRIS, MARCIUS LAMONT",
+        "Charge 1": "DEPARTMENT OF CORRECTIONS; PREDATORY OFFENDERS - REGISTRATION REQUIRED",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_AHUMADA_HURIEL.jpg",
-        "Booking_Date": "11/16/2026",
-        "Reel_File": "reels/mugshot_AHUMADA_HURIEL.mp4"
+        "Mugshot_File": "mugshots/mugshot_HARRIS_MARCIUS_LAMONT.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/17/2026",
+        "Reel_File": "reels/mugshot_HARRIS_MARCIUS_LAMONT.mp4"
       },
       "posted": false,
       "posted_at": null,
