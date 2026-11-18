@@ -1,34 +1,8 @@
 {
-  "created_at": "2026-11-17T06:36:21.779141-06:00",
+  "created_at": "2026-11-18T06:31:48.463505-06:00",
   "total_inmates": 12,
-  "posted_count": 4,
+  "posted_count": 2,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "HARE, DAVID MICHAEL",
-        "Charge 1": "PREDATORY OFFENDERS - REGISTRATION REQUIRED",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HARE_DAVID_MICHAEL.jpg",
-        "Severity": "",
-        "Booking_Date": "11/16/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-16T15:56:35.678081-06:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "MASON-KIMMONS, TESCIL ROMALIS",
-        "Charge 1": "MURDER - 2ND DEGREE - WITH INTENT-NOT PREMEDITATED; POSSESS AMMO/ANY FIREARM - CONVICTION OR ADJUDICATED DELINQUENT FOR CRIME OF VIOLENCE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MASON-KIMMONS_TESCIL_ROMALIS.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/16/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-16T22:26:29.479851-06:00",
-      "id": 2
-    },
     {
       "data": {
         "Full Name": "MACHADO, DIEGO DANIEL",
@@ -36,12 +10,11 @@
         "Bail": "$3,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_MACHADO_DIEGO_DANIEL.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/17/2026",
-        "Reel_File": "reels/mugshot_MACHADO_DIEGO_DANIEL.mp4"
+        "Booking_Date": "11/17/2026"
       },
       "posted": true,
       "posted_at": "2026-11-17T14:48:35.099079-06:00",
-      "id": 3
+      "id": 1
     },
     {
       "data": {
@@ -50,22 +23,49 @@
         "Bail": "$0.00 NO BAIL REQUIRED",
         "Mugshot_File": "mugshots/mugshot_RILEY_HEATHER_MARIE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/17/2026",
-        "Reel_File": "reels/mugshot_RILEY_HEATHER_MARIE.mp4"
+        "Booking_Date": "11/17/2026"
       },
       "posted": true,
       "posted_at": "2026-11-17T20:52:11.679232-06:00",
+      "id": 2
+    },
+    {
+      "data": {
+        "Full Name": "ZEIGLER, KEVIN LENEL",
+        "Charge 1": "DOMESTIC ASSAULT BY STRANGULATION; ASSAULT 4TH DEGREE; OTHER COUNTY/GM & MISD",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ZEIGLER_KEVIN_LENEL.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/18/2026",
+        "Reel_File": "reels/mugshot_ZEIGLER_KEVIN_LENEL.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "TARVER, DANNY DAWAYNE JR",
+        "Charge 1": "OTHER COUNTY/FELONY",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_TARVER_DANNY_DAWAYNE_JR.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/18/2026",
+        "Reel_File": "reels/mugshot_TARVER_DANNY_DAWAYNE_JR.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 4
     },
     {
       "data": {
-        "Full Name": "HARRIS, WARREN DARRELL",
-        "Charge 1": "TRAFFIC - DWI - COMBINATION ANY 2 ALCOHOL/CONTROLLED SUBSTANCE/INTOXICATING SUBSTANCE/CANNABIS/HEMP; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ANY AMOUNT SCHEDULE I/II DRUGS/METABOLITE; NOT CANNABIS/HEMP; TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF CONTROLLED SUBSTANCE",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HARRIS_WARREN_DARRELL.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/17/2026",
-        "Reel_File": "reels/mugshot_HARRIS_WARREN_DARRELL.mp4"
+        "Full Name": "ADAMO, GAMACHU MARCOS",
+        "Charge 1": "DRUGS - 5TH DEG; FALSE INFORMATION TO POLICE - NAME OF ANOTHER; OTHER COUNTY/GM & MISD",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ADAMO_GAMACHU_MARCOS.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/18/2026",
+        "Reel_File": "reels/mugshot_ADAMO_GAMACHU_MARCOS.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -73,13 +73,13 @@
     },
     {
       "data": {
-        "Full Name": "SILVA, WILLIAM NICHOLAS",
-        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
-        "Bail": "$5,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SILVA_WILLIAM_NICHOLAS.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/17/2026",
-        "Reel_File": "reels/mugshot_SILVA_WILLIAM_NICHOLAS.mp4"
+        "Full Name": "HUSSEIN, ASAD ABDIKADIR",
+        "Charge 1": "DAMAGE TO PROPERTY-4TH DEG-INTENTIONAL DAMAGE-OTHER CIRCUMSTANCES",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_HUSSEIN_ASAD_ABDIKADIR.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/18/2026",
+        "Reel_File": "reels/mugshot_HUSSEIN_ASAD_ABDIKADIR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -87,13 +87,13 @@
     },
     {
       "data": {
-        "Full Name": "JOSE, TREYSHAWN THOMAS",
-        "Charge 1": "DOMESTIC ASSAULT BY STRANGULATION",
+        "Full Name": "KAYAD, ABDULRAHMAN ALIGELE",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_JOSE_TREYSHAWN_THOMAS.jpg",
+        "Mugshot_File": "mugshots/mugshot_KAYAD_ABDULRAHMAN_ALIGELE.jpg",
         "Severity": "",
-        "Booking_Date": "11/17/2026",
-        "Reel_File": "reels/mugshot_JOSE_TREYSHAWN_THOMAS.mp4"
+        "Booking_Date": "11/18/2026",
+        "Reel_File": "reels/mugshot_KAYAD_ABDULRAHMAN_ALIGELE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -101,13 +101,13 @@
     },
     {
       "data": {
-        "Full Name": "LYNCH, CORDARRIUS LAVELLE",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LYNCH_CORDARRIUS_LAVELLE.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/17/2026",
-        "Reel_File": "reels/mugshot_LYNCH_CORDARRIUS_LAVELLE.mp4"
+        "Full Name": "HOPKINS, MAURICE",
+        "Charge 1": "SIMPLE ROBBERY; THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; OTHER COUNTY/GM & MISD",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_HOPKINS_MAURICE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/18/2026",
+        "Reel_File": "reels/mugshot_HOPKINS_MAURICE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -115,13 +115,13 @@
     },
     {
       "data": {
-        "Full Name": "WAGNER, JARMARRA MICHELLE",
-        "Charge 1": "OTHER STATE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WAGNER_JARMARRA_MICHELLE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/17/2026",
-        "Reel_File": "reels/mugshot_WAGNER_JARMARRA_MICHELLE.mp4"
+        "Full Name": "DRENNEN, DANIEL LEE JR",
+        "Charge 1": "DRIVING AFTER CANCELLATION IPS; TRAFFIC-DL-DRIVING AFTER CANCELLATION-INIMICAL TO PUBLIC SAFETY",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_DRENNEN_DANIEL_LEE_JR.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/18/2026",
+        "Reel_File": "reels/mugshot_DRENNEN_DANIEL_LEE_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -129,13 +129,13 @@
     },
     {
       "data": {
-        "Full Name": "REISCHEL, JOSHUA FRANK",
-        "Charge 1": "TEAR GAS/TEAR GAS COMPOUNDS, ELECT INCAPACITATION DEVICES",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_REISCHEL_JOSHUA_FRANK.jpg",
-        "Severity": "",
-        "Booking_Date": "11/17/2026",
-        "Reel_File": "reels/mugshot_REISCHEL_JOSHUA_FRANK.mp4"
+        "Full Name": "CURRY, JOSHUA DUANE",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS; TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; 2 OR MORE AGGRAVATING FACTORS",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_CURRY_JOSHUA_DUANE.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/18/2026",
+        "Reel_File": "reels/mugshot_CURRY_JOSHUA_DUANE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -143,13 +143,13 @@
     },
     {
       "data": {
-        "Full Name": "HENDERSON, ISAIAH PATRICK",
-        "Charge 1": "TRAFFIC REGULATION - DRIVER WHO IS NOT OWNER MUST LATER PRODUCE PROOF OF INSURANCE IF REQUIRED",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HENDERSON_ISAIAH_PATRICK.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/17/2026",
-        "Reel_File": "reels/mugshot_HENDERSON_ISAIAH_PATRICK.mp4"
+        "Full Name": "SCHERADO, GENO MARTEZ",
+        "Charge 1": "ASSAULT 4TH DEGREE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_SCHERADO_GENO_MARTEZ.jpg",
+        "Severity": "",
+        "Booking_Date": "11/18/2026",
+        "Reel_File": "reels/mugshot_SCHERADO_GENO_MARTEZ.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -157,13 +157,13 @@
     },
     {
       "data": {
-        "Full Name": "HARRIS, MARCIUS LAMONT",
-        "Charge 1": "DEPARTMENT OF CORRECTIONS; PREDATORY OFFENDERS - REGISTRATION REQUIRED",
+        "Full Name": "SCROGGINS, ANDRE LAMONS JR",
+        "Charge 1": "ASSAULT 4TH DEGREE",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HARRIS_MARCIUS_LAMONT.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/17/2026",
-        "Reel_File": "reels/mugshot_HARRIS_MARCIUS_LAMONT.mp4"
+        "Mugshot_File": "mugshots/mugshot_SCROGGINS_ANDRE_LAMONS_JR.jpg",
+        "Severity": "",
+        "Booking_Date": "11/18/2026",
+        "Reel_File": "reels/mugshot_SCROGGINS_ANDRE_LAMONS_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
