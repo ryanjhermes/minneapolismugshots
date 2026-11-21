@@ -1,86 +1,8 @@
 {
-  "created_at": "2026-11-18T06:31:48.463505-06:00",
+  "created_at": "2026-11-21T05:55:12.555865-06:00",
   "total_inmates": 12,
-  "posted_count": 8,
+  "posted_count": 2,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "MACHADO, DIEGO DANIEL",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MACHADO_DIEGO_DANIEL.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/17/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-17T14:48:35.099079-06:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "RILEY, HEATHER MARIE",
-        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_RILEY_HEATHER_MARIE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/17/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-17T20:52:11.679232-06:00",
-      "id": 2
-    },
-    {
-      "data": {
-        "Full Name": "ZEIGLER, KEVIN LENEL",
-        "Charge 1": "DOMESTIC ASSAULT BY STRANGULATION; ASSAULT 4TH DEGREE; OTHER COUNTY/GM & MISD",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_ZEIGLER_KEVIN_LENEL.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/18/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-18T14:25:39.318644-06:00",
-      "id": 3
-    },
-    {
-      "data": {
-        "Full Name": "TARVER, DANNY DAWAYNE JR",
-        "Charge 1": "OTHER COUNTY/FELONY",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_TARVER_DANNY_DAWAYNE_JR.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/18/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-18T20:30:45.924157-06:00",
-      "id": 4
-    },
-    {
-      "data": {
-        "Full Name": "ADAMO, GAMACHU MARCOS",
-        "Charge 1": "DRUGS - 5TH DEG; FALSE INFORMATION TO POLICE - NAME OF ANOTHER; OTHER COUNTY/GM & MISD",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ADAMO_GAMACHU_MARCOS.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/18/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-19T14:28:22.715421-06:00",
-      "id": 5
-    },
-    {
-      "data": {
-        "Full Name": "HUSSEIN, ASAD ABDIKADIR",
-        "Charge 1": "DAMAGE TO PROPERTY-4TH DEG-INTENTIONAL DAMAGE-OTHER CIRCUMSTANCES",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HUSSEIN_ASAD_ABDIKADIR.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/18/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-19T20:16:14.322889-06:00",
-      "id": 6
-    },
     {
       "data": {
         "Full Name": "KAYAD, ABDULRAHMAN ALIGELE",
@@ -88,12 +10,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_KAYAD_ABDULRAHMAN_ALIGELE.jpg",
         "Severity": "",
-        "Booking_Date": "11/18/2026",
-        "Reel_File": "reels/mugshot_KAYAD_ABDULRAHMAN_ALIGELE.mp4"
+        "Booking_Date": "11/18/2026"
       },
       "posted": true,
       "posted_at": "2026-11-20T14:01:16.313173-06:00",
-      "id": 7
+      "id": 1
     },
     {
       "data": {
@@ -102,22 +23,105 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_HOPKINS_MAURICE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/18/2026",
-        "Reel_File": "reels/mugshot_HOPKINS_MAURICE.mp4"
+        "Booking_Date": "11/18/2026"
       },
       "posted": true,
       "posted_at": "2026-11-20T19:26:27.178415-06:00",
+      "id": 2
+    },
+    {
+      "data": {
+        "Full Name": "WHITE, JARREAL CORTEZ",
+        "Charge 1": "TRAFFIC - DWI - REFUSE TO SUBMIT TO CHEMICAL TEST; BREATH OR TEST REFUSAL OR FAILURE; TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; REFUSE TO SUBMIT TO CHEMICAL TEST",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_WHITE_JARREAL_CORTEZ.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/21/2026",
+        "Reel_File": "reels/mugshot_WHITE_JARREAL_CORTEZ.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "PAULSON, MARISSA MARIE",
+        "Charge 1": "FLEEING A PEACE OFFICER IN A MOTOR VEHICLE; OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
+        "Bail": "$30,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PAULSON_MARISSA_MARIE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/21/2026",
+        "Reel_File": "reels/mugshot_PAULSON_MARISSA_MARIE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "JOHNSON, LILLYMAE MARJADYEE",
+        "Charge 1": "OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_JOHNSON_LILLYMAE_MARJADYEE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/21/2026",
+        "Reel_File": "reels/mugshot_JOHNSON_LILLYMAE_MARJADYEE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 5
+    },
+    {
+      "data": {
+        "Full Name": "ABDIRAHMAN, ABDINAIM MOHAMED",
+        "Charge 1": "BURGLARY - 3RD DEGREE - ENTERS W/OUT CONSENT WITH INTENT TO STEAL/COMMIT FELONY OR GROSS MISDEMEANOR; POSSESSION OF BURGLARY OR THEFT TOOLS; TRANSIT CRIME - SMOKE AS DEFINED IN SECTION 144.413, SUBDIVISION 4",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ABDIRAHMAN_ABDINAIM_MOHAMED.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/21/2026",
+        "Reel_File": "reels/mugshot_ABDIRAHMAN_ABDINAIM_MOHAMED.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 6
+    },
+    {
+      "data": {
+        "Full Name": "FRY, JAMIE GLEN",
+        "Charge 1": "RIFLES AND SHOTGUNS IN PUBLIC PLACES",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_FRY_JAMIE_GLEN.jpg",
+        "Severity": "",
+        "Booking_Date": "11/21/2026",
+        "Reel_File": "reels/mugshot_FRY_JAMIE_GLEN.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 7
+    },
+    {
+      "data": {
+        "Full Name": "HANKS, ALEXANDRA JEWEL",
+        "Charge 1": "ASSAULT 4TH DEGREE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_HANKS_ALEXANDRA_JEWEL.jpg",
+        "Severity": "",
+        "Booking_Date": "11/21/2026",
+        "Reel_File": "reels/mugshot_HANKS_ALEXANDRA_JEWEL.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 8
     },
     {
       "data": {
-        "Full Name": "DRENNEN, DANIEL LEE JR",
-        "Charge 1": "DRIVING AFTER CANCELLATION IPS; TRAFFIC-DL-DRIVING AFTER CANCELLATION-INIMICAL TO PUBLIC SAFETY",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_DRENNEN_DANIEL_LEE_JR.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/18/2026",
-        "Reel_File": "reels/mugshot_DRENNEN_DANIEL_LEE_JR.mp4"
+        "Full Name": "GUAJARDO, BENNY JESSE JAMES",
+        "Charge 1": "FLEEING A POLICE OFFICER IN MV",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GUAJARDO_BENNY_JESSE_JAMES.jpg",
+        "Severity": "",
+        "Booking_Date": "11/21/2026",
+        "Reel_File": "reels/mugshot_GUAJARDO_BENNY_JESSE_JAMES.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -125,13 +129,13 @@
     },
     {
       "data": {
-        "Full Name": "CURRY, JOSHUA DUANE",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS; TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; 2 OR MORE AGGRAVATING FACTORS",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_CURRY_JOSHUA_DUANE.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/18/2026",
-        "Reel_File": "reels/mugshot_CURRY_JOSHUA_DUANE.mp4"
+        "Full Name": "GRANT, JORGE ALBERTO",
+        "Charge 1": "DOMESTIC ASSAULT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GRANT_JORGE_ALBERTO.jpg",
+        "Severity": "",
+        "Booking_Date": "11/21/2026",
+        "Reel_File": "reels/mugshot_GRANT_JORGE_ALBERTO.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -139,13 +143,13 @@
     },
     {
       "data": {
-        "Full Name": "SCHERADO, GENO MARTEZ",
-        "Charge 1": "ASSAULT 4TH DEGREE",
+        "Full Name": "MEDINA, OZVALDO ALFREDO",
+        "Charge 1": "OTHER COUNTY/FELONY",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SCHERADO_GENO_MARTEZ.jpg",
-        "Severity": "",
-        "Booking_Date": "11/18/2026",
-        "Reel_File": "reels/mugshot_SCHERADO_GENO_MARTEZ.mp4"
+        "Mugshot_File": "mugshots/mugshot_MEDINA_OZVALDO_ALFREDO.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/21/2026",
+        "Reel_File": "reels/mugshot_MEDINA_OZVALDO_ALFREDO.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -153,13 +157,13 @@
     },
     {
       "data": {
-        "Full Name": "SCROGGINS, ANDRE LAMONS JR",
-        "Charge 1": "ASSAULT 4TH DEGREE",
+        "Full Name": "LOPEZ MINA, ANTHONY",
+        "Charge 1": "DOMESTIC ASSAULT; OBSTRUCTING LEGAL PROCESS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_SCROGGINS_ANDRE_LAMONS_JR.jpg",
+        "Mugshot_File": "mugshots/mugshot_LOPEZ_MINA_ANTHONY.jpg",
         "Severity": "",
-        "Booking_Date": "11/18/2026",
-        "Reel_File": "reels/mugshot_SCROGGINS_ANDRE_LAMONS_JR.mp4"
+        "Booking_Date": "11/21/2026",
+        "Reel_File": "reels/mugshot_LOPEZ_MINA_ANTHONY.mp4"
       },
       "posted": false,
       "posted_at": null,
