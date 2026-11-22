@@ -1,43 +1,45 @@
 {
-  "created_at": "2026-11-21T05:55:12.555865-06:00",
-  "total_inmates": 12,
-  "posted_count": 2,
+  "created_at": "2026-11-22T06:07:14.990020-06:00",
+  "total_inmates": 10,
+  "posted_count": 0,
   "inmates": [
     {
       "data": {
-        "Full Name": "KAYAD, ABDULRAHMAN ALIGELE",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_KAYAD_ABDULRAHMAN_ALIGELE.jpg",
-        "Severity": "",
-        "Booking_Date": "11/18/2026"
+        "Full Name": "TEPOXTECO-PEREZ, RENE",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF CONTROLLED SUBSTANCE",
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TEPOXTECO-PEREZ_RENE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/22/2026",
+        "Reel_File": "reels/mugshot_TEPOXTECO-PEREZ_RENE.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-11-20T14:01:16.313173-06:00",
+      "posted": false,
+      "posted_at": null,
       "id": 1
     },
     {
       "data": {
-        "Full Name": "HOPKINS, MAURICE",
-        "Charge 1": "SIMPLE ROBBERY; THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; OTHER COUNTY/GM & MISD",
+        "Full Name": "MACARTHUR, ALLEN THEODORE",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; DOMESTIC ABUSE - VIOLATE ORDER FOR PROTECTION-MISDEMEANOR",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HOPKINS_MAURICE.jpg",
+        "Mugshot_File": "mugshots/mugshot_MACARTHUR_ALLEN_THEODORE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/18/2026"
+        "Booking_Date": "11/22/2026",
+        "Reel_File": "reels/mugshot_MACARTHUR_ALLEN_THEODORE.mp4"
       },
-      "posted": true,
-      "posted_at": "2026-11-20T19:26:27.178415-06:00",
+      "posted": false,
+      "posted_at": null,
       "id": 2
     },
     {
       "data": {
-        "Full Name": "WHITE, JARREAL CORTEZ",
-        "Charge 1": "TRAFFIC - DWI - REFUSE TO SUBMIT TO CHEMICAL TEST; BREATH OR TEST REFUSAL OR FAILURE; TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; REFUSE TO SUBMIT TO CHEMICAL TEST",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_WHITE_JARREAL_CORTEZ.jpg",
+        "Full Name": "NOOR, MAHAMED ABDI",
+        "Charge 1": "CARRY BB GUN/RIFLE/SHOTGUN/ASLT WPN-PUBLIC PLACE; FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE; ILLEGAL FIRE IN PARK OR PARKWAY",
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_NOOR_MAHAMED_ABDI.jpg",
         "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/21/2026",
-        "Reel_File": "reels/mugshot_WHITE_JARREAL_CORTEZ.mp4"
+        "Booking_Date": "11/22/2026",
+        "Reel_File": "reels/mugshot_NOOR_MAHAMED_ABDI.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -45,13 +47,13 @@
     },
     {
       "data": {
-        "Full Name": "PAULSON, MARISSA MARIE",
-        "Charge 1": "FLEEING A PEACE OFFICER IN A MOTOR VEHICLE; OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
-        "Bail": "$30,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_PAULSON_MARISSA_MARIE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/21/2026",
-        "Reel_File": "reels/mugshot_PAULSON_MARISSA_MARIE.mp4"
+        "Full Name": "STROTHER, JEROME LESLIE JR",
+        "Charge 1": "MOTOR VEHICLE REGISTRATION - INTENT TO ESCAPE TAX; TRAFFIC - DRIVERS LICENSE - DRIVING AFTER REVOCATION; TRAFFIC REGULATION - DRIVER MUST CARRY PROOF OF INSURANCE WHEN OPERATING VEHICLE",
+        "Bail": "$3,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_STROTHER_JEROME_LESLIE_JR.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/22/2026",
+        "Reel_File": "reels/mugshot_STROTHER_JEROME_LESLIE_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -59,13 +61,13 @@
     },
     {
       "data": {
-        "Full Name": "JOHNSON, LILLYMAE MARJADYEE",
-        "Charge 1": "OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_JOHNSON_LILLYMAE_MARJADYEE.jpg",
+        "Full Name": "GRAY, GABRIELLE SIMONE",
+        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_GRAY_GABRIELLE_SIMONE.jpg",
         "Severity": "Misdemeanor",
-        "Booking_Date": "11/21/2026",
-        "Reel_File": "reels/mugshot_JOHNSON_LILLYMAE_MARJADYEE.mp4"
+        "Booking_Date": "11/22/2026",
+        "Reel_File": "reels/mugshot_GRAY_GABRIELLE_SIMONE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -73,13 +75,13 @@
     },
     {
       "data": {
-        "Full Name": "ABDIRAHMAN, ABDINAIM MOHAMED",
-        "Charge 1": "BURGLARY - 3RD DEGREE - ENTERS W/OUT CONSENT WITH INTENT TO STEAL/COMMIT FELONY OR GROSS MISDEMEANOR; POSSESSION OF BURGLARY OR THEFT TOOLS; TRANSIT CRIME - SMOKE AS DEFINED IN SECTION 144.413, SUBDIVISION 4",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ABDIRAHMAN_ABDINAIM_MOHAMED.jpg",
+        "Full Name": "OLEJAR, RYAN PHILIP",
+        "Charge 1": "DRUGS - 1ST DEGREE - SALE - 17 GRAMS OR MORE-COCAINE OR METH W/IN 90-DAY PERIOD; DRUGS - 1ST DEGREE - POSSESS 50 GRAMS OR MORE - COCAINE OR METHAMPHETAMINE; DRUGS - 2ND DEGREE - POSSESS 25 GRAMS OR MORE COCAINE OR METHAMPHETAMINE",
+        "Bail": "$750,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_OLEJAR_RYAN_PHILIP.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/21/2026",
-        "Reel_File": "reels/mugshot_ABDIRAHMAN_ABDINAIM_MOHAMED.mp4"
+        "Booking_Date": "11/22/2026",
+        "Reel_File": "reels/mugshot_OLEJAR_RYAN_PHILIP.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -87,13 +89,13 @@
     },
     {
       "data": {
-        "Full Name": "FRY, JAMIE GLEN",
-        "Charge 1": "RIFLES AND SHOTGUNS IN PUBLIC PLACES",
+        "Full Name": "CAPISTRANO, SHAN ANDREI",
+        "Charge 1": "DISORDERLY CONDUCT",
         "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_FRY_JAMIE_GLEN.jpg",
-        "Severity": "",
-        "Booking_Date": "11/21/2026",
-        "Reel_File": "reels/mugshot_FRY_JAMIE_GLEN.mp4"
+        "Mugshot_File": "mugshots/mugshot_CAPISTRANO_SHAN_ANDREI.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/22/2026",
+        "Reel_File": "reels/mugshot_CAPISTRANO_SHAN_ANDREI.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -101,13 +103,13 @@
     },
     {
       "data": {
-        "Full Name": "HANKS, ALEXANDRA JEWEL",
-        "Charge 1": "ASSAULT 4TH DEGREE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_HANKS_ALEXANDRA_JEWEL.jpg",
-        "Severity": "",
-        "Booking_Date": "11/21/2026",
-        "Reel_File": "reels/mugshot_HANKS_ALEXANDRA_JEWEL.mp4"
+        "Full Name": "BOTEO-PINEDA, WILFREDO ALSEDO",
+        "Charge 1": "OTHER COUNTY/GM & MISD; TRESPASS-PREMISES OF ANOTHER-REFUSE TO DEPART",
+        "Bail": "$300.00 CASH BAIL W/O CR",
+        "Mugshot_File": "mugshots/mugshot_BOTEO-PINEDA_WILFREDO_ALSEDO.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/22/2026",
+        "Reel_File": "reels/mugshot_BOTEO-PINEDA_WILFREDO_ALSEDO.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -115,13 +117,13 @@
     },
     {
       "data": {
-        "Full Name": "GUAJARDO, BENNY JESSE JAMES",
-        "Charge 1": "FLEEING A POLICE OFFICER IN MV",
+        "Full Name": "ALONSO BARRERA, GUADALUPE",
+        "Charge 1": "NO INSURANCE",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GUAJARDO_BENNY_JESSE_JAMES.jpg",
+        "Mugshot_File": "mugshots/mugshot_ALONSO_BARRERA_GUADALUPE.jpg",
         "Severity": "",
-        "Booking_Date": "11/21/2026",
-        "Reel_File": "reels/mugshot_GUAJARDO_BENNY_JESSE_JAMES.mp4"
+        "Booking_Date": "11/22/2026",
+        "Reel_File": "reels/mugshot_ALONSO_BARRERA_GUADALUPE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -129,45 +131,17 @@
     },
     {
       "data": {
-        "Full Name": "GRANT, JORGE ALBERTO",
-        "Charge 1": "DOMESTIC ASSAULT",
+        "Full Name": "CRUZ, EMMANUEL ELIJAH LUCIANO",
+        "Charge 1": "MAIL THEFT",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_GRANT_JORGE_ALBERTO.jpg",
+        "Mugshot_File": "mugshots/mugshot_CRUZ_EMMANUEL_ELIJAH_LUCIANO.jpg",
         "Severity": "",
-        "Booking_Date": "11/21/2026",
-        "Reel_File": "reels/mugshot_GRANT_JORGE_ALBERTO.mp4"
+        "Booking_Date": "11/22/2026",
+        "Reel_File": "reels/mugshot_CRUZ_EMMANUEL_ELIJAH_LUCIANO.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 10
-    },
-    {
-      "data": {
-        "Full Name": "MEDINA, OZVALDO ALFREDO",
-        "Charge 1": "OTHER COUNTY/FELONY",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MEDINA_OZVALDO_ALFREDO.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/21/2026",
-        "Reel_File": "reels/mugshot_MEDINA_OZVALDO_ALFREDO.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 11
-    },
-    {
-      "data": {
-        "Full Name": "LOPEZ MINA, ANTHONY",
-        "Charge 1": "DOMESTIC ASSAULT; OBSTRUCTING LEGAL PROCESS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_LOPEZ_MINA_ANTHONY.jpg",
-        "Severity": "",
-        "Booking_Date": "11/21/2026",
-        "Reel_File": "reels/mugshot_LOPEZ_MINA_ANTHONY.mp4"
-      },
-      "posted": false,
-      "posted_at": null,
-      "id": 12
     }
   ]
 }
