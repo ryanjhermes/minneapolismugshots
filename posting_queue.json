@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-23T07:48:33.521794-06:00",
   "total_inmates": 10,
-  "posted_count": 0,
+  "posted_count": 1,
   "inmates": [
     {
       "data": {
@@ -13,8 +13,8 @@
         "Booking_Date": "11/23/2026",
         "Reel_File": "reels/mugshot_HERNANDEZ-SANCHEZ_ISMAEL.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-23T17:48:31.394813-06:00",
       "id": 1
     },
     {
