@@ -80,5 +80,16 @@ jobs:
       if: steps.bmtn.outputs.queued > 0
       with:
         path: docs
-    - uses: actions/deploy-pages@v4
+    - name: Wait for artifact to register
       if: steps.bmtn.outputs.queued > 0
+      run: sleep 15
+    - name: Deploy to GitHub Pages
+      id: deploy
+      if: steps.bmtn.outputs.queued > 0
+      continue-on-error: true
+      uses: actions/deploy-pages@v4
+    - name: Retry Pages deploy
+      if: steps.bmtn.outputs.queued > 0 && steps.deploy.outcome == 'failure'
+      run: sleep 30
+    - uses: actions/deploy-pages@v4
+      if: steps.bmtn.outputs.queued > 0 && steps.deploy.outcome == 'failure'

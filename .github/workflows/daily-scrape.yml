@@ -94,6 +94,14 @@ jobs:
       with:
         path: docs
     
+    - name: Wait for artifact to register
+      run: sleep 15
     - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4 
+      id: deploy
+      continue-on-error: true
+      uses: actions/deploy-pages@v4
+    - name: Retry Pages deploy
+      if: steps.deploy.outcome == 'failure'
+      run: sleep 30
+    - uses: actions/deploy-pages@v4
+      if: steps.deploy.outcome == 'failure' 
