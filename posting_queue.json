@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-23T07:48:33.521794-06:00",
   "total_inmates": 10,
-  "posted_count": 1,
+  "posted_count": 2,
   "inmates": [
     {
       "data": {
@@ -26,8 +26,8 @@
         "Booking_Date": "11/23/2026",
         "Reel_File": "reels/mugshot_EDWARD_KATLIBET.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-24T16:20:04.291154-06:00",
       "id": 2
     },
     {
