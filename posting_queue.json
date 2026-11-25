@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-25T07:43:47.378857-06:00",
   "total_inmates": 12,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "data": {
@@ -39,8 +39,8 @@
         "Booking_Date": "11/25/2026",
         "Reel_File": "reels/mugshot_EDWARDS_SHAI_TROUBLE_KERZEL.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-25T15:36:36.086394-06:00",
       "id": 3
     },
     {
