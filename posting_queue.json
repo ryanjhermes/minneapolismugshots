@@ -1,21 +1,8 @@
 {
-  "created_at": "2026-11-23T07:48:33.521794-06:00",
-  "total_inmates": 10,
-  "posted_count": 3,
+  "created_at": "2026-11-25T07:43:47.378857-06:00",
+  "total_inmates": 12,
+  "posted_count": 2,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "HERNANDEZ-SANCHEZ, ISMAEL",
-        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-INTENTIONALLY INFLICTS/ATTEMPTS TO INFLICT BODILY HARM ON ANOTHER",
-        "Bail": "$10,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_HERNANDEZ-SANCHEZ_ISMAEL.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/23/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-23T17:48:31.394813-06:00",
-      "id": 1
-    },
     {
       "data": {
         "Full Name": "EDWARD, KATLIBET",
@@ -23,12 +10,11 @@
         "Bail": "$40,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_EDWARD_KATLIBET.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/23/2026",
-        "Reel_File": "reels/mugshot_EDWARD_KATLIBET.mp4"
+        "Booking_Date": "11/23/2026"
       },
       "posted": true,
       "posted_at": "2026-11-24T16:20:04.291154-06:00",
-      "id": 2
+      "id": 1
     },
     {
       "data": {
@@ -37,22 +23,35 @@
         "Bail": "$10,000.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_ADEN_MOHAMED_KHALIF.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/23/2026",
-        "Reel_File": "reels/mugshot_ADEN_MOHAMED_KHALIF.mp4"
+        "Booking_Date": "11/23/2026"
       },
       "posted": true,
       "posted_at": "2026-11-24T23:24:44.246955-06:00",
+      "id": 2
+    },
+    {
+      "data": {
+        "Full Name": "EDWARDS, SHAI TROUBLE KERZEL",
+        "Charge 1": "BURGLARY; OTHER COUNTY/FELONY; DRUGS - 5TH DEGREE - SALE - SCHEDULE IV CONTROLLED SUBSTANCE MIXTURE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_EDWARDS_SHAI_TROUBLE_KERZEL.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/25/2026",
+        "Reel_File": "reels/mugshot_EDWARDS_SHAI_TROUBLE_KERZEL.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 3
     },
     {
       "data": {
-        "Full Name": "MAURSTAD, JASON FREDRICK JR",
-        "Charge 1": "DAMAGE TO PROPERTY - 1ST DEGREE - VALUE REDUCED OVER $1000; TAMPER WITH MOTOR VEHICLE/ENTER W/O OWNER PERMISSION; OTHER COUNTY/GM & MISD",
-        "Bail": "$3,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MAURSTAD_JASON_FREDRICK_JR.jpg",
+        "Full Name": "ABDI, DEKA ABDULLAHI",
+        "Charge 1": "DRUGS - 2ND DEGREE - POSSESS 6 GRAMS OR MORE; 50 DOSAGE UNITS OR MORE; FENTANYL OR HEROIN; DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; PROHIB F/POSS PISTOL-POSSESS/USE TEAR GAS/STUN GUN",
+        "Bail": "$40,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ABDI_DEKA_ABDULLAHI.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/23/2026",
-        "Reel_File": "reels/mugshot_MAURSTAD_JASON_FREDRICK_JR.mp4"
+        "Booking_Date": "11/25/2026",
+        "Reel_File": "reels/mugshot_ABDI_DEKA_ABDULLAHI.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -60,13 +59,13 @@
     },
     {
       "data": {
-        "Full Name": "CASTILLA-ALVAREZ, DARWIN DAVID",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CASTILLA-ALVAREZ_DARWIN_DAVID.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/23/2026",
-        "Reel_File": "reels/mugshot_CASTILLA-ALVAREZ_DARWIN_DAVID.mp4"
+        "Full Name": "ALI, MOHAMUD MOHAMED",
+        "Charge 1": "DANGEROUS WEAPONS-RECKLESS DISCHARGE OF FIREARM WITHIN A MUNICIPALITY",
+        "Bail": "$20,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ALI_MOHAMUD_MOHAMED.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/25/2026",
+        "Reel_File": "reels/mugshot_ALI_MOHAMUD_MOHAMED.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -74,13 +73,13 @@
     },
     {
       "data": {
-        "Full Name": "BAUSAL, JOSHUA KEYOUND",
-        "Charge 1": "DRUGS - 1ST DEGREE - SALE - 50 GRAMS OR MORE OTHER NARCOTIC- WITHIN 90-DAY PERIOD",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BAUSAL_JOSHUA_KEYOUND.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/23/2026",
-        "Reel_File": "reels/mugshot_BAUSAL_JOSHUA_KEYOUND.mp4"
+        "Full Name": "TILLMAN, TARYN ROSE",
+        "Charge 1": "OTHER COUNTY/GM & MISD; TRESPASS-PREMISES OF ANOTHER-REFUSE TO DEPART",
+        "Bail": "$900.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_TILLMAN_TARYN_ROSE.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/25/2026",
+        "Reel_File": "reels/mugshot_TILLMAN_TARYN_ROSE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -88,13 +87,13 @@
     },
     {
       "data": {
-        "Full Name": "MOHAMED, MUAAD ABDUL",
-        "Charge 1": "TRAFFIC - SPEEDING - EXCEED LIMIT 55 MPH WHERE APPROPRIATE; TRAFFIC - CARELESS DRIVING - OPERATE ANY VEHICLE CARELESSLY ON STREET OR HIGHWAY; VEHICLE - WINDOW RESTRICTIONS - TINT TOO DARK",
+        "Full Name": "BENJAMIN, NICHOLAS ROSS",
+        "Charge 1": "OTHER COUNTY/FELONY; FLEEING A PEACE OFFICER BY A MEANS OTHER THAN A MOTOR VEHICLE; TAMPER WITH MOTOR VEHICLE-RIDE IN/ON-W/O OWNER PERMISSION",
         "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MOHAMED_MUAAD_ABDUL.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/23/2026",
-        "Reel_File": "reels/mugshot_MOHAMED_MUAAD_ABDUL.mp4"
+        "Mugshot_File": "mugshots/mugshot_BENJAMIN_NICHOLAS_ROSS.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/25/2026",
+        "Reel_File": "reels/mugshot_BENJAMIN_NICHOLAS_ROSS.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -102,13 +101,13 @@
     },
     {
       "data": {
-        "Full Name": "AYALA OJEDA, ALEX WLADIMIR",
-        "Charge 1": "DOMESTIC ASSAULT",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_AYALA_OJEDA_ALEX_WLADIMIR.jpg",
-        "Severity": "",
-        "Booking_Date": "11/23/2026",
-        "Reel_File": "reels/mugshot_AYALA_OJEDA_ALEX_WLADIMIR.mp4"
+        "Full Name": "PERDOMO TOAPANTA, WILSON DAVID",
+        "Charge 1": "GIVE PEACE OFFICER FALSE NAME/BIRTHDATE/ID CARD; TRAFFIC - DRIVERS LICENSE - DRIVING AFTER REVOCATION",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_PERDOMO_TOAPANTA_WILSON_DAVID.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/25/2026",
+        "Reel_File": "reels/mugshot_PERDOMO_TOAPANTA_WILSON_DAVID.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -116,13 +115,13 @@
     },
     {
       "data": {
-        "Full Name": "GREEN, MONIQUE MAE",
-        "Charge 1": "OBSTRUCT LEGAL PROCESS-INTERFERE W/PEACE OFFICER; GIVE PEACE OFFICER FALSE NAME/BIRTHDATE/ID CARD; POSSESSION OF DRUG PARAPHERNALIA IN A PUBLIC PLACE",
-        "Bail": "$1,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_GREEN_MONIQUE_MAE.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/23/2026",
-        "Reel_File": "reels/mugshot_GREEN_MONIQUE_MAE.mp4"
+        "Full Name": "KETEN, JYESHA JANAE",
+        "Charge 1": "AGGRAVATED ROBBERY; BURGLARY; ASSAULT-2ND DEGREE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_KETEN_JYESHA_JANAE.jpg",
+        "Severity": "",
+        "Booking_Date": "11/25/2026",
+        "Reel_File": "reels/mugshot_KETEN_JYESHA_JANAE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -130,17 +129,45 @@
     },
     {
       "data": {
-        "Full Name": "DAHN, ALICE LAWPEA",
-        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_DAHN_ALICE_LAWPEA.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/23/2026",
-        "Reel_File": "reels/mugshot_DAHN_ALICE_LAWPEA.mp4"
+        "Full Name": "OVERSTREET, DARKIELA SHONTRAE",
+        "Charge 1": "DRUGS - 5TH DEGREE - POSSESS SCHEDULE 1,2,3,4 OR PARAPHERNALIA RESIDUAL - NOT CANNABIS/HEMP; OTHER COUNTY/GM & MISD; OTHER COUNTY/FELONY",
+        "Bail": "$5,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_OVERSTREET_DARKIELA_SHONTRAE.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/25/2026",
+        "Reel_File": "reels/mugshot_OVERSTREET_DARKIELA_SHONTRAE.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 10
+    },
+    {
+      "data": {
+        "Full Name": "WARSAME, ABDINAJIB MOHAMED",
+        "Charge 1": "ARSON; TRESPASSING",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WARSAME_ABDINAJIB_MOHAMED.jpg",
+        "Severity": "",
+        "Booking_Date": "11/25/2026",
+        "Reel_File": "reels/mugshot_WARSAME_ABDINAJIB_MOHAMED.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 11
+    },
+    {
+      "data": {
+        "Full Name": "SCHMIDT, MARGARET ANN",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; TRAFFIC - DWI - THIRD-DEGREE DRIVING WHILE IMPAIRED; 1 AGGRAVATING FACTOR",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SCHMIDT_MARGARET_ANN.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/25/2026",
+        "Reel_File": "reels/mugshot_SCHMIDT_MARGARET_ANN.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 12
     }
   ]
 }
