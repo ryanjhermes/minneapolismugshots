@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-26T07:21:26.604526-06:00",
   "total_inmates": 12,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "data": {
@@ -42,8 +42,8 @@
         "Booking_Date": "11/26/2026",
         "Reel_File": "reels/mugshot_STILLDAY_SIMONE_KATHALEEN.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-26T15:25:06.467835-06:00",
       "id": 3
     },
     {
