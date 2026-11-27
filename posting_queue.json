@@ -1,37 +1,8 @@
 {
-  "created_at": "2026-11-26T07:21:26.604526-06:00",
+  "created_at": "2026-11-27T07:16:52.832228-06:00",
   "total_inmates": 12,
-  "posted_count": 4,
+  "posted_count": 2,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "EDWARDS, SHAI TROUBLE KERZEL",
-        "Charge 1": "BURGLARY; OTHER COUNTY/FELONY; DRUGS - 5TH DEGREE - SALE - SCHEDULE IV CONTROLLED SUBSTANCE MIXTURE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_EDWARDS_SHAI_TROUBLE_KERZEL.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/25/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-25T15:36:36.086394-06:00",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "data": {
-        "Full Name": "KANMACHER, TERRY",
-        "Charge 1": "No charge listed",
-        "Bail": "",
-        "Mugshot_File": "mugshots/mugshot_KANMACHER_TERRY.jpg",
-        "Severity": "",
-        "Booking_Date": "11/25/2026",
-        "Description": "Terry Kanmacher was allegedly trying to flee the U.S. after killing a woman with whom he'd had a brief relationship.",
-        "Story": "A 21-year-old French man who’s suspected of killing a woman in Nebraska was arrested Tuesday evening at Minneapolis-St. Paul International Airport before he could board a return flight to France.\n\nAgents with Homeland Security Investigations took Terry Kanmacher, a French national, into custody while he attempted to go through airport security, according to Nebraska’s Omaha Police Department.\n\nPolice believe Kanmacher stabbed 22-year-old Lauren Becker, an employee of the Kids Can Community Center in Omaha, Nebraska, while she was walking into work Tuesday morning. She was pronounced dead in the facility’s parking lot.\n\nInvestigators determined that Kanmacher and Becker had a brief romantic relationship several years ago, and the two only met once in 2023, then Becker broke it off. She eventually reported to police that she was afraid of Kanmacher.\n\nAccording to Omaha PD, Kanmacher traveled to Nebraska on Sunday and originally planned to return to France next week, but he abruptly moved up his flight and drove to Minnesota for its departure roughly 12 hours after Becker was killed.\n\nKanmacher is currently being held in the Hennepin County Jail, but he will eventually be extradited to Nebraska to face charges.\n\n“I extend my deepest condolences to the family and friends of Lauren Becker during this difficult time. I commend Omaha Police Department detectives and our federal partners with Homeland Security Investigations (HSI) for their decisive and diligent actions in securing an arrest. Working against the clock as the investigation unfolded, they stopped at nothing to bring this individual into custody,” Omaha Police Chief Todd Schmaderer said in a statement.\n\nIf you know anyone who is affected by domestic violence, you can find more information on services available here, via the Minnesota DPS. You can also call the Day One Crisis Hotline at 1-866-223-1111.\n\nNote: The details provided in this story are based on law enforcement’s latest version of events, and may be subject to change.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/police-arrest-nebraska-homicide-suspect-at-msp-airport-before-return-flight-to-france"
-      },
-      "posted": true,
-      "posted_at": "2026-11-25T22:06:37.071774-06:00"
-    },
     {
       "data": {
         "Full Name": "STILLDAY, SIMONE KATHALEEN",
@@ -39,12 +10,11 @@
         "Bail": "$500.00 BAIL/BOND W/O CR",
         "Mugshot_File": "mugshots/mugshot_STILLDAY_SIMONE_KATHALEEN.jpg",
         "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/26/2026",
-        "Reel_File": "reels/mugshot_STILLDAY_SIMONE_KATHALEEN.mp4"
+        "Booking_Date": "11/26/2026"
       },
       "posted": true,
       "posted_at": "2026-11-26T15:25:06.467835-06:00",
-      "id": 3
+      "id": 1
     },
     {
       "data": {
@@ -53,22 +23,49 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_WEBB_DEVON_ANTOINE.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/26/2026",
-        "Reel_File": "reels/mugshot_WEBB_DEVON_ANTOINE.mp4"
+        "Booking_Date": "11/26/2026"
       },
       "posted": true,
       "posted_at": "2026-11-26T22:09:35.820082-06:00",
+      "id": 2
+    },
+    {
+      "data": {
+        "Full Name": "MOSBY, DEVIN LEROY",
+        "Charge 1": "RECEIVING/CONCEALING STOLEN PROPERTY; WEAPONS-CARRY WEAPONS WITHOUT PERMIT",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MOSBY_DEVIN_LEROY.jpg",
+        "Severity": "",
+        "Booking_Date": "11/27/2026",
+        "Reel_File": "reels/mugshot_MOSBY_DEVIN_LEROY.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 3
+    },
+    {
+      "data": {
+        "Full Name": "RINDE, JUSTIN EDWARD",
+        "Charge 1": "DRUGS - 1ST DEGREE; DEPARTMENT OF CORRECTIONS; DRUGS - 3RD DEGREE - SALE - NARCOTIC",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_RINDE_JUSTIN_EDWARD.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/27/2026",
+        "Reel_File": "reels/mugshot_RINDE_JUSTIN_EDWARD.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
       "id": 4
     },
     {
       "data": {
-        "Full Name": "MANLEY, DARRELL LAMONT",
-        "Charge 1": "DRUGS - 3RD DEGREE - SALE - NARCOTIC; POSSESS AMMO/ANY FIREARM - CONVICTION OR ADJUDICATED DELINQUENT FOR CRIME OF VIOLENCE; CARRY/POSSESS PISTOL W/OUT PERMIT - PUBLIC PLACE - GROSS MISDEMEANOR; SECOND OR SUBSEQUENT - FELONY",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MANLEY_DARRELL_LAMONT.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/26/2026",
-        "Reel_File": "reels/mugshot_MANLEY_DARRELL_LAMONT.mp4"
+        "Full Name": "SIMBANA CHASI, CARLOS JAVIER",
+        "Charge 1": "NEGLECT OR ENDANGERMENT OF A CHILD; OTHER COUNTY/GM & MISD; THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_SIMBANA_CHASI_CARLOS_JAVIER.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/27/2026",
+        "Reel_File": "reels/mugshot_SIMBANA_CHASI_CARLOS_JAVIER.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -76,13 +73,13 @@
     },
     {
       "data": {
-        "Full Name": "BOYKINS, MICHAEL RONNIE JR",
-        "Charge 1": "THREATS OF VIOLENCE - RECKLESS DISREGARD RISK",
+        "Full Name": "MURPHY, ISAIAH AIDAN",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_BOYKINS_MICHAEL_RONNIE_JR.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/26/2026",
-        "Reel_File": "reels/mugshot_BOYKINS_MICHAEL_RONNIE_JR.mp4"
+        "Mugshot_File": "mugshots/mugshot_MURPHY_ISAIAH_AIDAN.jpg",
+        "Severity": "",
+        "Booking_Date": "11/27/2026",
+        "Reel_File": "reels/mugshot_MURPHY_ISAIAH_AIDAN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -90,13 +87,13 @@
     },
     {
       "data": {
-        "Full Name": "LOVAN, MALANA ANNJALENA",
-        "Charge 1": "AGGRAVATED ROBBERY-1ST DEGREE; ASSAULT-3RD DEGREE-SUBSTANTIAL BODILY HARM; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
-        "Bail": "$100,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_LOVAN_MALANA_ANNJALENA.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/26/2026",
-        "Reel_File": "reels/mugshot_LOVAN_MALANA_ANNJALENA.mp4"
+        "Full Name": "COLEMAN, COLE LARAY",
+        "Charge 1": "TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; 2 OR MORE AGGRAVATING FACTORS",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_COLEMAN_COLE_LARAY.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/27/2026",
+        "Reel_File": "reels/mugshot_COLEMAN_COLE_LARAY.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -104,13 +101,13 @@
     },
     {
       "data": {
-        "Full Name": "MOSLEY, RESHAWNA EUNIQUE",
-        "Charge 1": "EMERGENCY TELEPHONE CALLS AND COMMUNICATION; DOMESTIC ASSAULT",
+        "Full Name": "CUCHIPE LUTUALA, HECTOR FABIAN",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MOSLEY_RESHAWNA_EUNIQUE.jpg",
-        "Severity": "",
-        "Booking_Date": "11/26/2026",
-        "Reel_File": "reels/mugshot_MOSLEY_RESHAWNA_EUNIQUE.mp4"
+        "Mugshot_File": "mugshots/mugshot_CUCHIPE_LUTUALA_HECTOR_FABIAN.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/27/2026",
+        "Reel_File": "reels/mugshot_CUCHIPE_LUTUALA_HECTOR_FABIAN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -118,13 +115,13 @@
     },
     {
       "data": {
-        "Full Name": "CROWELL, KALANIALI ILOA MILEENA",
-        "Charge 1": "DRUGS - 5TH DEG",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CROWELL_KALANIALI_ILOA_MILEENA.jpg",
-        "Severity": "",
-        "Booking_Date": "11/26/2026",
-        "Reel_File": "reels/mugshot_CROWELL_KALANIALI_ILOA_MILEENA.mp4"
+        "Full Name": "MITCHELL, SHYHEIM ALJUWAUN",
+        "Charge 1": "WEAPONS-CARRY WEAPONS WITHOUT PERMIT; RECEIVING/CONCEALING STOLEN PROPERTY; OTHER COUNTY/GM & MISD",
+        "Bail": "$200.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_MITCHELL_SHYHEIM_ALJUWAUN.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/27/2026",
+        "Reel_File": "reels/mugshot_MITCHELL_SHYHEIM_ALJUWAUN.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -132,13 +129,13 @@
     },
     {
       "data": {
-        "Full Name": "ANDERSON, JOSHUA LAMONT",
-        "Charge 1": "DOMESTIC ABUSE NO CONTACT ORDERS",
+        "Full Name": "NOU, TIFFANY",
+        "Charge 1": "DRUGS - 5TH DEG",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_ANDERSON_JOSHUA_LAMONT.jpg",
+        "Mugshot_File": "mugshots/mugshot_NOU_TIFFANY.jpg",
         "Severity": "",
-        "Booking_Date": "11/26/2026",
-        "Reel_File": "reels/mugshot_ANDERSON_JOSHUA_LAMONT.mp4"
+        "Booking_Date": "11/27/2026",
+        "Reel_File": "reels/mugshot_NOU_TIFFANY.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -146,13 +143,13 @@
     },
     {
       "data": {
-        "Full Name": "VONEMANY, TIMMY BONETHAVY",
-        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
-        "Bail": "$0.00 NO BAIL REQUIRED",
-        "Mugshot_File": "mugshots/mugshot_VONEMANY_TIMMY_BONETHAVY.jpg",
-        "Severity": "Misdemeanor",
-        "Booking_Date": "11/26/2026",
-        "Reel_File": "reels/mugshot_VONEMANY_TIMMY_BONETHAVY.mp4"
+        "Full Name": "WHITE, KENDRICK NAHARE",
+        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_WHITE_KENDRICK_NAHARE.jpg",
+        "Severity": "",
+        "Booking_Date": "11/27/2026",
+        "Reel_File": "reels/mugshot_WHITE_KENDRICK_NAHARE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -160,13 +157,13 @@
     },
     {
       "data": {
-        "Full Name": "FUENTES, RILEY MARK",
-        "Charge 1": "FELON CONVICTED CRIME OF VIOLENCE - INELIGIBLE TO POSSESS FIREARM OR AMMUNITION",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_FUENTES_RILEY_MARK.jpg",
-        "Severity": "",
-        "Booking_Date": "11/26/2026",
-        "Reel_File": "reels/mugshot_FUENTES_RILEY_MARK.mp4"
+        "Full Name": "UGSHA HEREDIA, JEFFERSON JAVIER",
+        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS; TRAFFIC - CARELESS DRIVING - OPERATE ANY VEHICLE CARELESSLY ON STREET OR HIGHWAY",
+        "Bail": "$12,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_UGSHA_HEREDIA_JEFFERSON_JAVIER.jpg",
+        "Severity": "Gross Misdemeanor",
+        "Booking_Date": "11/27/2026",
+        "Reel_File": "reels/mugshot_UGSHA_HEREDIA_JEFFERSON_JAVIER.mp4"
       },
       "posted": false,
       "posted_at": null,
