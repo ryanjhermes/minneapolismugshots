@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-27T07:16:52.832228-06:00",
   "total_inmates": 12,
-  "posted_count": 2,
+  "posted_count": 3,
   "inmates": [
     {
       "data": {
@@ -39,8 +39,8 @@
         "Booking_Date": "11/27/2026",
         "Reel_File": "reels/mugshot_MOSBY_DEVIN_LEROY.mp4"
       },
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-27T15:06:13.393743-06:00",
       "id": 3
     },
     {
