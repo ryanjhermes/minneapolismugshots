@@ -1,6 +1,6 @@
 {
   "created_at": "2026-11-27T07:16:52.832228-06:00",
-  "total_inmates": 12,
+  "total_inmates": 13,
   "posted_count": 4,
   "inmates": [
     {
@@ -56,6 +56,22 @@
       "posted": true,
       "posted_at": "2026-11-27T21:16:40.779792-06:00",
       "id": 4
+    },
+    {
+      "id": 13,
+      "data": {
+        "Full Name": "ABDIRISAAQ, SALEEBAAN MOHAMED",
+        "Charge 1": "2ND-DEGREE MURDER",
+        "Bail": "",
+        "Mugshot_File": "mugshots/mugshot_ABDIRISAAQ_SALEEBAAN_MOHAMED.jpg",
+        "Severity": "",
+        "Booking_Date": "11/27/2026",
+        "Description": "Saleebaan Mohamed Abdirisaaq stabbed his former partner multiple times.",
+        "Story": "A St. Cloud man has been sentenced to 40 years in prison in the murder of his pregnant ex-girlfriend last year.\n\nSaleebaan Mohamed Abdirisaaq was sentenced on Wednesday after previously pleading guilty to two counts of 2nd-degree murder, including with intent, and 2nd-degree murder of an unborn child.\n\nHe receive consecutive 20-year sentences for the crime, which was reported on Sept. 23, 2025 at a home on the 1000 block of Germain Street East. Abdirisaaq repeatedly stabbed 24-year-old Falus A. Ali, who was pregnant at the time and was also the mother of another child by Abdirisaaq.\n\nThe pair had previously been in a romantic relationship but no longer were, with Abdirisaaq inflicting horrific stabbing injuries to Ali’s arm, neck and chest.\n\nThe case was prosecuted by Attorney General Keith Ellison’s office at the request of the Benton County Attorney.\n\n“I’m keeping the friends and family of Abdirisaaq’s victim in my prayers today,” said Attorney General Ellison. “I hope today’s sentencing can provide some small measure of solace to them. I’m grateful to the St. Cloud Police Department and Minnesota Bureau of Criminal Apprehension for investigating this heinous crime, and I will continue to partner with law enforcement to hold accountable those who harm their fellow Minnesotans.”\n\nIf you know anyone who is affected by domestic violence, you can find more information on services available here, via the Minnesota DPS. You can also call the Day One Crisis Hotline at 1-866-223-1111.",
+        "Source_URL": "https://bringmethenews.com/minnesota-news/st-cloud-man-sentenced-to-40-years-in-prison-for-killing-his-pregnant-ex"
+      },
+      "posted": false,
+      "posted_at": null
     },
     {
       "data": {
