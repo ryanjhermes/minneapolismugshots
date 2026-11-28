@@ -1,34 +1,8 @@
 {
-  "created_at": "2026-11-27T07:16:52.832228-06:00",
+  "created_at": "2026-11-28T06:33:49.663872-06:00",
   "total_inmates": 13,
-  "posted_count": 4,
+  "posted_count": 2,
   "inmates": [
-    {
-      "data": {
-        "Full Name": "STILLDAY, SIMONE KATHALEEN",
-        "Charge 1": "OTHER COUNTY/GM & MISD",
-        "Bail": "$500.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_STILLDAY_SIMONE_KATHALEEN.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/26/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-26T15:25:06.467835-06:00",
-      "id": 1
-    },
-    {
-      "data": {
-        "Full Name": "WEBB, DEVON ANTOINE",
-        "Charge 1": "OTHER STATE",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WEBB_DEVON_ANTOINE.jpg",
-        "Severity": "Felony",
-        "Booking_Date": "11/26/2026"
-      },
-      "posted": true,
-      "posted_at": "2026-11-26T22:09:35.820082-06:00",
-      "id": 2
-    },
     {
       "data": {
         "Full Name": "MOSBY, DEVIN LEROY",
@@ -36,12 +10,11 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_MOSBY_DEVIN_LEROY.jpg",
         "Severity": "",
-        "Booking_Date": "11/27/2026",
-        "Reel_File": "reels/mugshot_MOSBY_DEVIN_LEROY.mp4"
+        "Booking_Date": "11/27/2026"
       },
       "posted": true,
       "posted_at": "2026-11-27T15:06:13.393743-06:00",
-      "id": 3
+      "id": 1
     },
     {
       "data": {
@@ -50,15 +23,14 @@
         "Bail": "No bail information",
         "Mugshot_File": "mugshots/mugshot_RINDE_JUSTIN_EDWARD.jpg",
         "Severity": "Felony",
-        "Booking_Date": "11/27/2026",
-        "Reel_File": "reels/mugshot_RINDE_JUSTIN_EDWARD.mp4"
+        "Booking_Date": "11/27/2026"
       },
       "posted": true,
       "posted_at": "2026-11-27T21:16:40.779792-06:00",
-      "id": 4
+      "id": 2
     },
     {
-      "id": 13,
+      "id": 3,
       "data": {
         "Full Name": "ABDIRISAAQ, SALEEBAAN MOHAMED",
         "Charge 1": "2ND-DEGREE MURDER",
@@ -68,20 +40,35 @@
         "Booking_Date": "11/27/2026",
         "Description": "Saleebaan Mohamed Abdirisaaq stabbed his former partner multiple times.",
         "Story": "A St. Cloud man has been sentenced to 40 years in prison in the murder of his pregnant ex-girlfriend last year.\n\nSaleebaan Mohamed Abdirisaaq was sentenced on Wednesday after previously pleading guilty to two counts of 2nd-degree murder, including with intent, and 2nd-degree murder of an unborn child.\n\nHe receive consecutive 20-year sentences for the crime, which was reported on Sept. 23, 2025 at a home on the 1000 block of Germain Street East. Abdirisaaq repeatedly stabbed 24-year-old Falus A. Ali, who was pregnant at the time and was also the mother of another child by Abdirisaaq.\n\nThe pair had previously been in a romantic relationship but no longer were, with Abdirisaaq inflicting horrific stabbing injuries to Ali’s arm, neck and chest.\n\nThe case was prosecuted by Attorney General Keith Ellison’s office at the request of the Benton County Attorney.\n\n“I’m keeping the friends and family of Abdirisaaq’s victim in my prayers today,” said Attorney General Ellison. “I hope today’s sentencing can provide some small measure of solace to them. I’m grateful to the St. Cloud Police Department and Minnesota Bureau of Criminal Apprehension for investigating this heinous crime, and I will continue to partner with law enforcement to hold accountable those who harm their fellow Minnesotans.”\n\nIf you know anyone who is affected by domestic violence, you can find more information on services available here, via the Minnesota DPS. You can also call the Day One Crisis Hotline at 1-866-223-1111.",
-        "Source_URL": "https://bringmethenews.com/minnesota-news/st-cloud-man-sentenced-to-40-years-in-prison-for-killing-his-pregnant-ex"
+        "Source_URL": "https://bringmethenews.com/minnesota-news/st-cloud-man-sentenced-to-40-years-in-prison-for-killing-his-pregnant-ex",
+        "Reel_File": "reels/mugshot_ABDIRISAAQ_SALEEBAAN_MOHAMED.mp4"
       },
       "posted": false,
       "posted_at": null
     },
     {
       "data": {
-        "Full Name": "SIMBANA CHASI, CARLOS JAVIER",
-        "Charge 1": "NEGLECT OR ENDANGERMENT OF A CHILD; OTHER COUNTY/GM & MISD; THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT",
-        "Bail": "$300.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_SIMBANA_CHASI_CARLOS_JAVIER.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/27/2026",
-        "Reel_File": "reels/mugshot_SIMBANA_CHASI_CARLOS_JAVIER.mp4"
+        "Full Name": "MILLER, JAMES GRANT DANIEL",
+        "Charge 1": "DEPARTMENT OF CORRECTIONS",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_MILLER_JAMES_GRANT_DANIEL.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/28/2026",
+        "Reel_File": "reels/mugshot_MILLER_JAMES_GRANT_DANIEL.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 4
+    },
+    {
+      "data": {
+        "Full Name": "BEAULIEU, SHANEEQUA NICHOLE",
+        "Charge 1": "DISORDERLY CONDUCT",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_BEAULIEU_SHANEEQUA_NICHOLE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/28/2026",
+        "Reel_File": "reels/mugshot_BEAULIEU_SHANEEQUA_NICHOLE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -89,13 +76,13 @@
     },
     {
       "data": {
-        "Full Name": "MURPHY, ISAIAH AIDAN",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_MURPHY_ISAIAH_AIDAN.jpg",
-        "Severity": "",
-        "Booking_Date": "11/27/2026",
-        "Reel_File": "reels/mugshot_MURPHY_ISAIAH_AIDAN.mp4"
+        "Full Name": "BURNAUGH, COURTNEY LARAE",
+        "Charge 1": "DWI - FOURTH-DEGREE DRIVING WHILE IMPAIRED; DESCRIBED",
+        "Bail": "$0.00 NO BAIL REQUIRED",
+        "Mugshot_File": "mugshots/mugshot_BURNAUGH_COURTNEY_LARAE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/28/2026",
+        "Reel_File": "reels/mugshot_BURNAUGH_COURTNEY_LARAE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -103,13 +90,13 @@
     },
     {
       "data": {
-        "Full Name": "COLEMAN, COLE LARAY",
-        "Charge 1": "TRAFFIC - DWI - SECOND-DEGREE DRIVING WHILE IMPAIRED; 2 OR MORE AGGRAVATING FACTORS",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_COLEMAN_COLE_LARAY.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/27/2026",
-        "Reel_File": "reels/mugshot_COLEMAN_COLE_LARAY.mp4"
+        "Full Name": "LUSSIER, PAIGE LEE",
+        "Charge 1": "THEFT-TAKE/USE/TRANSFER MOVABLE PROP-NO CONSENT; LOITER W/INTENT TO SOLICIT ANY ACT PROHIBITED BY LAW",
+        "Bail": "$300.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_LUSSIER_PAIGE_LEE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/28/2026",
+        "Reel_File": "reels/mugshot_LUSSIER_PAIGE_LEE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -117,13 +104,13 @@
     },
     {
       "data": {
-        "Full Name": "CUCHIPE LUTUALA, HECTOR FABIAN",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS",
-        "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_CUCHIPE_LUTUALA_HECTOR_FABIAN.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/27/2026",
-        "Reel_File": "reels/mugshot_CUCHIPE_LUTUALA_HECTOR_FABIAN.mp4"
+        "Full Name": "ROLAND, MARTIZE DEVONE",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "$10,000.00 BAIL/BOND W/O CR",
+        "Mugshot_File": "mugshots/mugshot_ROLAND_MARTIZE_DEVONE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/28/2026",
+        "Reel_File": "reels/mugshot_ROLAND_MARTIZE_DEVONE.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -131,13 +118,13 @@
     },
     {
       "data": {
-        "Full Name": "MITCHELL, SHYHEIM ALJUWAUN",
-        "Charge 1": "WEAPONS-CARRY WEAPONS WITHOUT PERMIT; RECEIVING/CONCEALING STOLEN PROPERTY; OTHER COUNTY/GM & MISD",
-        "Bail": "$200.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_MITCHELL_SHYHEIM_ALJUWAUN.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/27/2026",
-        "Reel_File": "reels/mugshot_MITCHELL_SHYHEIM_ALJUWAUN.mp4"
+        "Full Name": "ESTES, MYLES RAY",
+        "Charge 1": "FELON IN POSSESSION OF A FIREARM",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_ESTES_MYLES_RAY.jpg",
+        "Severity": "",
+        "Booking_Date": "11/28/2026",
+        "Reel_File": "reels/mugshot_ESTES_MYLES_RAY.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -145,13 +132,13 @@
     },
     {
       "data": {
-        "Full Name": "NOU, TIFFANY",
-        "Charge 1": "DRUGS - 5TH DEG",
+        "Full Name": "MILLER, TROY DMITRI JR",
+        "Charge 1": "OBSTRUCTING LEGAL PROCESS",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_NOU_TIFFANY.jpg",
+        "Mugshot_File": "mugshots/mugshot_MILLER_TROY_DMITRI_JR.jpg",
         "Severity": "",
-        "Booking_Date": "11/27/2026",
-        "Reel_File": "reels/mugshot_NOU_TIFFANY.mp4"
+        "Booking_Date": "11/28/2026",
+        "Reel_File": "reels/mugshot_MILLER_TROY_DMITRI_JR.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -159,13 +146,13 @@
     },
     {
       "data": {
-        "Full Name": "WHITE, KENDRICK NAHARE",
-        "Charge 1": "CONTROLLED SUBSTANCE/NARCOTICS",
+        "Full Name": "WILLIES, EMMANUEL MAKARIOS",
+        "Charge 1": "DOMESTIC ASSAULT - BY STRANGULATION; DOMESTIC ABUSE NO CONTACT ORDER - VIOLATE NO CONTACT ORDER - WITHIN 10 YEARS OF PREVIOUS CONVICTION; STALKING - ENGAGES IN STALKING",
         "Bail": "No bail information",
-        "Mugshot_File": "mugshots/mugshot_WHITE_KENDRICK_NAHARE.jpg",
-        "Severity": "",
-        "Booking_Date": "11/27/2026",
-        "Reel_File": "reels/mugshot_WHITE_KENDRICK_NAHARE.mp4"
+        "Mugshot_File": "mugshots/mugshot_WILLIES_EMMANUEL_MAKARIOS.jpg",
+        "Severity": "Felony",
+        "Booking_Date": "11/28/2026",
+        "Reel_File": "reels/mugshot_WILLIES_EMMANUEL_MAKARIOS.mp4"
       },
       "posted": false,
       "posted_at": null,
@@ -173,17 +160,31 @@
     },
     {
       "data": {
-        "Full Name": "UGSHA HEREDIA, JEFFERSON JAVIER",
-        "Charge 1": "TRAFFIC - DWI - OPERATE MOTOR VEHICLE UNDER INFLUENCE OF ALCOHOL; TRAFFIC - DWI - OPERATE MOTOR VEHICLE - ALCOHOL CONCENTRATION 0.08 WITHIN 2 HOURS; TRAFFIC - CARELESS DRIVING - OPERATE ANY VEHICLE CARELESSLY ON STREET OR HIGHWAY",
-        "Bail": "$12,000.00 BAIL/BOND W/O CR",
-        "Mugshot_File": "mugshots/mugshot_UGSHA_HEREDIA_JEFFERSON_JAVIER.jpg",
-        "Severity": "Gross Misdemeanor",
-        "Booking_Date": "11/27/2026",
-        "Reel_File": "reels/mugshot_UGSHA_HEREDIA_JEFFERSON_JAVIER.mp4"
+        "Full Name": "GRICE, DONTE RASHAD",
+        "Charge 1": "ASSAULT-3RD DEGREE",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_GRICE_DONTE_RASHAD.jpg",
+        "Severity": "",
+        "Booking_Date": "11/28/2026",
+        "Reel_File": "reels/mugshot_GRICE_DONTE_RASHAD.mp4"
       },
       "posted": false,
       "posted_at": null,
       "id": 12
+    },
+    {
+      "data": {
+        "Full Name": "CHRISTIANS, KEVIN JARMAINE",
+        "Charge 1": "DOMESTIC ASSAULT-MISDEMEANOR-COMMITS ACT TO CAUSE FEAR OF IMMEDIATE BODILY HARM OR DEATH",
+        "Bail": "No bail information",
+        "Mugshot_File": "mugshots/mugshot_CHRISTIANS_KEVIN_JARMAINE.jpg",
+        "Severity": "Misdemeanor",
+        "Booking_Date": "11/28/2026",
+        "Reel_File": "reels/mugshot_CHRISTIANS_KEVIN_JARMAINE.mp4"
+      },
+      "posted": false,
+      "posted_at": null,
+      "id": 13
     }
   ]
 }
